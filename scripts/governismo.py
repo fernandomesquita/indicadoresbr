@@ -45,8 +45,9 @@ def baixar(k, ano):
 def norm(s): return (s or "").strip()
 
 def governo(sigla):
-    s = norm(sigla).lower()
-    return s == "governo" or s.startswith("governo")
+    # o arquivo usa "Governo" em alguns anos e "GOV." em outros
+    s = norm(sigla).lower().rstrip(".")
+    return s in ("governo", "gov", "lid.gov", "lid. gov") or s.startswith("governo")
 
 def semestre(data): return 1 if int(data[5:7]) <= 6 else 2
 
@@ -68,7 +69,7 @@ def main(anos):
         ori = baixar("votacoesOrientacoes", ano)
         orient = {}
         for o in ori:
-            bancadas_vistas[norm(o.get("siglaBancada"))] += 1
+            bancadas_vistas[f'{ano}:{norm(o.get("siglaBancada"))}'] += 1
             if not governo(o.get("siglaBancada")): continue
             vid = norm(o.get("idVotacao"))
             if vid not in plen: continue
@@ -100,7 +101,7 @@ def main(anos):
         "camara_semestre": {f"{k[0]}-S{k[1]}": {"pct": pct(*v), "seguiu": v[0], "votos": v[1]} for k, v in sorted(camara_sem.items())},
         "partido_ano": {f"{p}|{a}": {"pct": pct(*v), "seguiu": v[0], "votos": v[1]} for (p, a), v in sorted(por_partido_ano.items())},
         "partido_semestre": {f"{p}|{a}-S{s}": {"pct": pct(*v), "seguiu": v[0], "votos": v[1]} for (p, a, s), v in sorted(por_partido_sem.items())},
-        "bancadas_mais_frequentes": bancadas_vistas.most_common(40),
+        "bancadas_com_gov": sorted([b, n] for b, n in bancadas_vistas.items() if "gov" in b.lower()),
         "valores_de_voto": valores_voto.most_common(),
     }
     (OUT / "governismo.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
