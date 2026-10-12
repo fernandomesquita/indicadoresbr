@@ -8,6 +8,7 @@ Leia nesta ordem antes de mexer em qualquer coisa:
 2. `docs/02_modelo_de_dados.md`: o formato de cada indicador (`data/indicadores/<id>.json`).
 3. `docs/03_coleta_e_manutencao.md`: como atualizar um dado, criar um indicador e tratar reports. **É o roteiro de trabalho.**
 4. `docs/06_estilo_editorial.md`: regras de texto e de equilíbrio. Valem para todo texto que vai ao ar.
+5. `docs/07_pendencias_de_conferencia.md`: divergências abertas, que esperam decisão ou fonte. Comece por aqui quando não houver tarefa específica.
 
 ## Regras que não mudam
 

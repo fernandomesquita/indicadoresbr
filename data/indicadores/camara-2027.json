@@ -67,6 +67,11 @@
       "nome": "SBT News, STF forma maioria para manter 513 deputados nas eleições de 2026",
       "url": "https://sbtnews.sbt.com.br/noticia/politica/stf-forma-maioria-para-manter-513-deputados-federais-nas-eleicoes-de-2026",
       "o_que_sustenta": "Manutenção de 513 cadeiras em 2026 e suspensão da ampliação para 531 (PLP 177/2023)."
+    },
+    {
+      "nome": "Tribunal Superior Eleitoral (TSE), resultados das eleições de 2026",
+      "url": "https://resultados.tse.jus.br/",
+      "o_que_sustenta": "Totalização oficial dos votos e eleitos."
     }
   ],
   "como_ler": "Cada barra representa um partido ou uma federação, e o comprimento é o número de deputados eleitos em 4 de outubro de 2026, de um total de 513. Siglas ligadas por hífen são federações, contadas como uma só bancada porque atuam juntas por pelo menos quatro anos; a federação PT-PCdoB-PV, por exemplo, reúne 70 deputados do PT, 11 do PCdoB e 7 do PV. Duas referências ajudam a ler o tamanho das barras: 257 deputados formam a maioria absoluta, exigida para lei complementar, e 308 formam os três quintos exigidos para emenda à Constituição. O retrato é o do resultado das urnas e muda até a posse, em 1º de fevereiro de 2027, e ao longo da legislatura, com trocas de partido, com eleitos que assumem cargos no Executivo e com a migração permitida a quem se elegeu por legenda que não atingiu a cláusula de desempenho.",

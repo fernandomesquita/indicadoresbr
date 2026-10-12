@@ -31,4 +31,5 @@ python3 -m http.server 8000       # abra http://localhost:8000
 - [`docs/04_publicacao.md`](docs/04_publicacao.md): Supabase, Vercel ou Netlify e domínio.
 - [`docs/05_admin.md`](docs/05_admin.md): uso da área administrativa.
 - [`docs/06_estilo_editorial.md`](docs/06_estilo_editorial.md): regras de texto e de equilíbrio.
+- [`docs/07_pendencias_de_conferencia.md`](docs/07_pendencias_de_conferencia.md): divergências abertas de números e fontes.
 - [`docs/catalogo_de_fontes.md`](docs/catalogo_de_fontes.md): fonte, periodicidade e endereço de atualização de cada indicador (gerado pelo build).

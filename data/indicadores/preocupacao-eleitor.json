@@ -3,7 +3,7 @@
   "categoria": "politicas-publicas",
   "ordem": 9,
   "visivel": true,
-  "titulo": "O que mais pesou no voto",
+  "titulo": "Maior preocupação do eleitor em agosto de 2026",
   "subtitulo": "Maior preocupação ao votar em 2026, em % dos entrevistados",
   "tipo": "barras",
   "x": "Tema",
@@ -49,11 +49,11 @@
       "o_que_sustenta": "Série anterior da Quaest, com violência em primeiro lugar já em 2025."
     }
   ],
-  "como_ler": "Cada barra é um tema e mostra o percentual de entrevistados que o apontaram como maior preocupação ao votar em 2026. A pesquisa ofereceu cinco temas e os percentuais somam 100%; assuntos fora da lista, como emprego, inflação ou impostos, não aparecem. Com margem de erro de 2 pontos percentuais, corrupção (23%) e saúde (22%) estão tecnicamente empatadas, assim como endividamento (14%) e educação (13%), e segurança pública (28%) fica à frente de todas. O retrato é de 1º a 3 de agosto de 2026 e pode ter mudado ao longo da campanha.",
+  "como_ler": "Cada barra é um tema e mostra o percentual de entrevistados que o apontaram como maior preocupação ao votar em 2026. A pergunta foi estimulada, com cinco temas oferecidos,, e os percentuais somam 100%; assuntos fora da lista, como emprego, inflação ou impostos, não aparecem. Com margem de erro de 2 pontos percentuais, corrupção (23%) e saúde (22%) estão tecnicamente empatadas, assim como endividamento (14%) e educação (13%), e segurança pública (28%) fica à frente de todas. O retrato é de 1º a 3 de agosto de 2026 e pode ter mudado ao longo da campanha.",
   "contexto": [
     "O gráfico traz as respostas à pergunta \"Qual será sua maior preocupação ao votar nesta eleição?\", feita pelo instituto Real Time Big Data de 1º a 3 de agosto de 2026. Foram 2 mil entrevistas com pessoas de 16 anos ou mais, com margem de erro de 2 pontos percentuais para mais ou para menos e nível de confiança de 95%. A pesquisa foi contratada pelos portais O Antagonista e G4, e os cinco temas apresentados somam 100%, o que indica uma resposta por entrevistado.",
-    "Pesquisas com métodos diferentes chegam a ordens parecidas, com variações que dependem da pergunta. O Datafolha, de 3 a 5 de março de 2026, perguntou sobre o principal problema do país e registrou saúde com 21% e violência e segurança com 19%. Um levantamento da Quaest com a empresa de tecnologia Pax, divulgado em 2026, apontou violência com 28%, corrupção com 22%, economia com 19% e saúde com 15%. A formulação da pergunta, a lista de opções e o momento da coleta mudam o resultado, por isso comparações entre institutos pedem cautela.",
-    "Para o cidadão, o dado ajuda a entender quais temas dominaram a campanha e a cobrar compromissos depois da eleição. A segurança pública, que lidera a lista, tem competências divididas: as polícias militares e civis são dos estados, e à União cabem a Polícia Federal, a Polícia Rodoviária Federal e a coordenação nacional. Para quem estuda para concurso, as prioridades do eleitorado podem orientar as contratações dos governos que tomam posse em 2027, em especial em segurança, saúde e educação."
+    "Pesquisas com métodos diferentes chegam a temas parecidos no topo, em ordens diferentes. O Datafolha, de 3 a 5 de março de 2026, perguntou sobre o principal problema do país e registrou saúde com 21% e violência e segurança com 19%. Um levantamento da Quaest com a empresa de tecnologia Pax, divulgado em 2026, apontou violência com 28%, corrupção com 22%, economia com 19% e saúde com 15%. A formulação da pergunta, a lista de opções e o momento da coleta mudam o resultado, por isso comparações entre institutos pedem cautela.",
+    "Para o cidadão, o dado ajuda a entender quais temas o eleitor dizia priorizar antes da campanha e a cobrar compromissos depois da eleição. A segurança pública, que lidera a lista, tem competências divididas: as polícias militares e civis são dos estados, e à União cabem a Polícia Federal, a Polícia Rodoviária Federal e a coordenação nacional. Para quem estuda para concurso, as prioridades do eleitorado podem orientar as contratações dos governos que tomam posse em 2027, em especial em segurança, saúde e educação."
   ],
   "glossario": [
     {

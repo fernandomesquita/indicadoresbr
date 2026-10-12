@@ -4,7 +4,7 @@
   "ordem": 10,
   "visivel": true,
   "titulo": "Pedidos de recuperação judicial",
-  "subtitulo": "Empresas que pediram para renegociar dívidas sem fechar as portas, por ano",
+  "subtitulo": "Pedidos de recuperação judicial por ano, de 2012 a 2024",
   "tipo": "colunas",
   "x": "Ano",
   "series": [
@@ -78,14 +78,6 @@
     {
       "termo": "Falência",
       "definicao": "Encerramento judicial da empresa, com venda dos bens para pagar os credores na ordem prevista em lei."
-    },
-    {
-      "termo": "Recuperação extrajudicial",
-      "definicao": "Acordo de renegociação fechado diretamente com parte dos credores e apenas levado à Justiça para homologação."
-    },
-    {
-      "termo": "CNPJ",
-      "definicao": "Cadastro Nacional da Pessoa Jurídica, o número de registro de cada empresa na Receita Federal."
     }
   ],
   "atualizacao": {

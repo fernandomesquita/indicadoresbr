@@ -124,7 +124,7 @@ def escreve(rel, txt):
 def noscript_ind(ind, cat_nome):
     e = html.escape
     partes = [f'<article class="wrap detail"><p class="eyebrow">{e(cat_nome)}</p><h1>{e(ind["titulo"])}</h1><p class="lede">{e(ind["subtitulo"])}</p>']
-    if ind.get("como_ler"): partes.append(f'<h2>Como ler o gráfico</h2><p>{e(ind["como_ler"])}</p>')
+    if ind.get("como_ler"): partes.append(f'<h2>Como ler {"a tabela" if ind.get("tipo") == "tabela" else "o gráfico"}</h2><p>{e(ind["como_ler"])}</p>')
     if ind.get("contexto"): partes.append("<h2>Contexto</h2>" + "".join(f"<p>{e(p)}</p>" for p in ind["contexto"]))
     f = ind["fonte"]
     partes.append(f'<p>Fonte: <a href="{e(f.get("url",""))}">{e(f["nome"])}</a></p></article>')
