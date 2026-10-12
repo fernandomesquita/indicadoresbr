@@ -1,0 +1,31 @@
+name: Governismo na Câmara (dados abertos)
+
+# Roda sob demanda: baixa os arquivos anuais da Câmara e calcula a taxa de
+# governismo por partido (scripts/governismo.py). O resultado sai como
+# artefato; quem roda revisa e faz o commit em data/aux/governismo/.
+on:
+  workflow_dispatch:
+    inputs:
+      anos:
+        description: "Anos separados por espaço"
+        default: "2019 2020 2021 2022 2023 2024 2025"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  calcular:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Calcular
+        run: python3 scripts/governismo.py ${{ github.event.inputs.anos }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: governismo
+          path: data/aux/governismo/
