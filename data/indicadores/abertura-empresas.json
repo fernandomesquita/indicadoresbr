@@ -17,7 +17,7 @@
   "faixasGoverno": false,
   "prefixo": "",
   "sufixo": " mi",
-  "casas": 1,
+  "casas": 2,
   "fonte": {
     "nome": "Sebrae, com dados da Receita Federal",
     "url": "https://agenciasebrae.com.br/economia-e-politica/e-recorde-51-milhoes-de-empresas-foram-abertas-em-2025/"
@@ -57,12 +57,32 @@
       "nome": "Ministério do Empreendedorismo, Mapa de Empresas, 2º quadrimestre de 2025",
       "url": "https://static.poder360.com.br/2025/10/mapa-de-empresas-boletim-2o-quadrimestre-2025.pdf",
       "o_que_sustenta": "Aberturas e encerramentos de empresas no período e peso do MEI no total."
+    },
+    {
+      "nome": "Sebrae, resumo executivo da abertura de pequenos negócios em 2025 (13/01/2026)",
+      "url": "https://datasebrae.com.br/wp-content/uploads/2026/01/13012026_resumo_executivo_aberturas_pn_anual.pdf",
+      "o_que_sustenta": "Cerca de 4,95 milhões de pequenos negócios em 2025, 3,94 milhões em 2021, altas de 10,0% (2023 para 2024) e 19,2% (2024 para 2025); base de 07/01/2026."
+    },
+    {
+      "nome": "Sebrae, infográfico da abertura de empresas em 2025",
+      "url": "https://datasebrae.com.br/wp-content/uploads/2026/01/Anual-2025Infografico-AberturadeEmpresas.v2.pdf",
+      "o_que_sustenta": "2025 por porte: 3.812.452 MEI, 933.092 ME e 209.367 EPP."
+    },
+    {
+      "nome": "Sebrae, relatório técnico da abertura de pequenos negócios em 2023 (23/01/2024)",
+      "url": "https://datasebrae.com.br/wp-content/uploads/2024/02/Relatorio-Tecnico-Abertura-Pequenos-Negocios-Anual-2023-v2.pdf",
+      "o_que_sustenta": "Série 2019 a 2023 (Tabela 5): 3.281.368 em 2020 e 3.739.452 em 2022."
+    },
+    {
+      "nome": "Agência Sebrae, mais de 4,15 milhões de pequenos negócios abertos em 2024 (14/01/2025)",
+      "url": "https://agenciasebrae.com.br/?p=28395",
+      "o_que_sustenta": "4.158.122 em 2024 e 3,78 milhões em 2023 (substitui a reprodução da Fenacon)."
     }
   ],
-  "como_ler": "Cada barra mostra quantos milhões de pequenos negócios (microempreendedores individuais, os MEI, microempresas e empresas de pequeno porte) foram abertos no ano, de 2020 a 2025, segundo levantamento do Sebrae com dados do cadastro da Receita Federal. O eixo horizontal traz os anos e o vertical, a quantidade em milhões. A série conta apenas aberturas e não desconta as empresas fechadas no mesmo período, de modo que mede o fluxo de entrada de negócios; o número de empresas ativas cresce menos, porque parte delas fecha a cada ano. O total de empresas abertas no país é um pouco maior, porque inclui médias e grandes: em 2025, foram 5,1 milhões no total, dos quais 3,8 milhões eram MEI. O Sebrae revisa números antigos, e por isso valores divulgados na época podem diferir dos atuais: 2020 apareceu como 3,3 milhões em 2022 e como 3,2 milhões na série de 2026. Os comunicados de janeiro de 2025 traziam números um pouco maiores para 2023 (cerca de 3,78 milhões) e 2024 (4,16 milhões); o gráfico segue a série mais recente do Sebrae.",
+  "como_ler": "Cada barra mostra quantos milhões de pequenos negócios (microempreendedores individuais, os MEI, microempresas e empresas de pequeno porte) foram abertos no ano, de 2020 a 2025, segundo levantamento do Sebrae com dados do cadastro da Receita Federal. O eixo horizontal traz os anos e o vertical, a quantidade em milhões. A série conta apenas aberturas e não desconta as empresas fechadas no mesmo período, de modo que mede o fluxo de entrada de negócios; o número de empresas ativas cresce menos, porque parte delas fecha a cada ano. O total de empresas abertas no país é um pouco maior, porque inclui médias e grandes: em 2025, foram 5,1 milhões no total, dos quais 3,8 milhões eram MEI. Os valores vêm dos relatórios detalhados do Sebrae; a lista do balanço de janeiro de 2026 corta os números na primeira casa decimal, e por isso mostra 3,7 milhões para 2023 e 4,1 milhões para 2024. O Sebrae atualiza a base a cada divulgação, e anos antigos podem subir alguns milhares com registros tardios.",
   "contexto": [
-    "O indicador conta quantos pequenos negócios ganharam um Cadastro Nacional da Pessoa Jurídica (CNPJ) na Receita Federal em cada ano, em levantamento do Sebrae. Entram três categorias: o microempreendedor individual (MEI), com faturamento de até R$ 81 mil por ano; a microempresa (ME), até R$ 360 mil; e a empresa de pequeno porte (EPP), de R$ 360 mil a R$ 4,8 milhões. O MEI domina a conta: em 2025, foram 3,8 milhões de MEIs, 927 mil microempresas e 207 mil empresas de pequeno porte, somando 4,9 milhões dos 5,1 milhões de empresas abertas no país.",
-    "A série saiu de 3,2 milhões em 2020 para 3,9 milhões em 2021, recorde da época, em que o MEI respondeu por 80% das aberturas. O Sebrae atribuiu o salto à pandemia, que empurrou muita gente ao empreendedorismo por necessidade e outras pessoas a buscar oportunidades, e à redução da burocracia, com a Lei de Liberdade Econômica, de 2019, e a integração das juntas comerciais. Depois de dois anos em torno de 3,7 milhões, as aberturas chegaram a 4,1 milhões em 2024 e a 4,9 milhões em 2025, alta puxada pelo MEI, que cresceu 22% em um ano. O Sebrae credita o recorde de 2025 ao acesso a crédito, com cerca de R$ 12 bilhões garantidos pelo Fundo de Aval às Micro e Pequenas Empresas (Fampe), e ao que o presidente da entidade chamou de \"pleno emprego\" com inflação sob controle.",
+    "O indicador conta quantos pequenos negócios ganharam um Cadastro Nacional da Pessoa Jurídica (CNPJ) na Receita Federal em cada ano, em levantamento do Sebrae. Entram três categorias: o microempreendedor individual (MEI), com faturamento de até R$ 81 mil por ano; a microempresa (ME), até R$ 360 mil; e a empresa de pequeno porte (EPP), de R$ 360 mil a R$ 4,8 milhões. O MEI domina a conta: em 2025, foram 3,81 milhões de MEIs, 933 mil microempresas e 209 mil empresas de pequeno porte, somando 4,95 milhões dos 5,1 milhões de empresas abertas no país.",
+    "A série saiu de 3,28 milhões em 2020 para 3,94 milhões em 2021, recorde da época, em que o MEI respondeu por 80% das aberturas. O Sebrae atribuiu o salto à pandemia, que empurrou muita gente ao empreendedorismo por necessidade e outras pessoas a buscar oportunidades, e à redução da burocracia, com a Lei de Liberdade Econômica, de 2019, e a integração das juntas comerciais. Depois de 3,74 milhões em 2022 e 3,78 milhões em 2023, as aberturas chegaram a 4,16 milhões em 2024 e a 4,95 milhões em 2025, alta puxada pelo MEI, que cresceu 22% em um ano. O Sebrae credita o recorde de 2025 ao acesso a crédito, com cerca de R$ 12 bilhões garantidos pelo Fundo de Aval às Micro e Pequenas Empresas (Fampe), e ao que o presidente da entidade chamou de \"pleno emprego\" com inflação sob controle.",
     "Há leituras diferentes sobre o que esses números significam. Em 2022, os economistas Luiz Rabi, da Serasa Experian, e Bruno Imaizumi, da LCA Consultores, associaram o recorde à fraqueza do emprego formal. Um estudo publicado pela Fundação Getulio Vargas (FGV) estima que 53% dos MEIs trabalham, na prática, como prestadores de serviço de uma só empresa, fenômeno chamado de pejotização, e a Receita Federal calculou em R$ 26,3 bilhões a perda de arrecadação em 2025 caso a troca de carteira assinada por MEI se generalize, tema discutido no Supremo Tribunal Federal (STF) como Tema 1.389 de repercussão geral. Para quem trabalha, o MEI dá acesso a CNPJ, nota fiscal e contribuição previdenciária reduzida; para quem contrata, muda o custo e os direitos envolvidos. A conta também não desconta fechamentos: só no segundo quadrimestre de 2025, o governo registrou 1,67 milhão de aberturas e 942 mil encerramentos."
   ],
   "glossario": [
@@ -97,20 +117,6 @@
       "ok": true
     },
     {
-      "valor_no_portal": "4,1 mi (2024)",
-      "valor_na_fonte": "4,1 na série de 2026; 4.158.122 no release de janeiro de 2025",
-      "fonte": "Agência Sebrae e Fenacon",
-      "ok": false,
-      "obs": "A série atual do Sebrae traz 4,1, mas o número detalhado divulgado em 2025 arredonda para 4,2. Pode ser truncamento no gráfico do Sebrae ou revisão; vale padronizar em 4,2 se não houver revisão confirmada."
-    },
-    {
-      "valor_no_portal": "3,7 mi (2023)",
-      "valor_na_fonte": "3,7 na série de 2026; cerca de 3,78 milhões no release de janeiro de 2025",
-      "fonte": "Agência Sebrae e Fenacon",
-      "ok": false,
-      "obs": "Mesma situação de 2024: 3,78 milhões arredondaria para 3,8."
-    },
-    {
       "valor_no_portal": "3,9 mi (2021)",
       "valor_na_fonte": "mais de 3,9 milhões",
       "fonte": "CNN Brasil (Sebrae), 2022",
@@ -122,14 +128,70 @@
       "fonte": "Agência Sebrae e CNN Brasil",
       "ok": true,
       "obs": "Diferença entre divulgações do próprio Sebrae; o portal segue a série mais recente."
+    },
+    {
+      "valor_no_portal": "casas: 1",
+      "valor_na_fonte": "2 (Com uma casa, 2025 (4.954.911) arredondaria para 5,0, o que conflita com o 'mais de 4,9 milhões' do Sebrae; duas casas mostram os números como o Sebrae os detalha. Se preferir manter uma casa: 3,3; 3,9; 3,7; 3,8; 4,2; 5,0.)",
+      "fonte": "https://datasebrae.com.br/wp-content/uploads/2026/01/Anual-2025Infografico-AberturadeEmpresas.v2.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2020]: 3.2",
+      "valor_na_fonte": "3.28 (3.281.368 (Tabela 5 do relatório técnico anual de 2023, base de 10/01/2024). O 3,2 da lista de 2026 é o número cortado na primeira casa.)",
+      "fonte": "https://datasebrae.com.br/wp-content/uploads/2024/02/Relatorio-Tecnico-Abertura-Pequenos-Negocios-Anual-2023-v2.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2021]: 3.9",
+      "valor_na_fonte": "3.94 ('3,94 milhões' no resumo executivo de 13/01/2026 (no relatório de 2024: 3.930.251).)",
+      "fonte": "https://datasebrae.com.br/wp-content/uploads/2026/01/13012026_resumo_executivo_aberturas_pn_anual.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2022]: 3.7",
+      "valor_na_fonte": "3.74 (3.739.452 (Tabela 5, base de 10/01/2024).)",
+      "fonte": "https://datasebrae.com.br/wp-content/uploads/2024/02/Relatorio-Tecnico-Abertura-Pequenos-Negocios-Anual-2023-v2.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2023]: 3.7",
+      "valor_na_fonte": "3.78 ('3,78 milhões de MPE formalizadas' (Agência Sebrae, 14/01/2025). O resumo de jan/2026 mantém a base: alta de 10,0% de 2023 para 2024 = 4,158 / 3,78.)",
+      "fonte": "https://agenciasebrae.com.br/?p=28395",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2024]: 4.1",
+      "valor_na_fonte": "4.16 (4.158.122 (Agência Sebrae, 14/01/2025). O resumo de jan/2026 mantém: alta de 19,2% de 2024 para 2025 = 4,955 / 4,158 = 1,192.)",
+      "fonte": "https://agenciasebrae.com.br/?p=28395",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2025]: 4.9",
+      "valor_na_fonte": "4.95 (MEI 3.812.452 + ME 933.092 + EPP 209.367 = 4.954.911. O infográfico imprime o total como 4.945.911, mas os percentuais dele (MEI 76,9%, ME 18,8%, EPP 4,2%) só fecham com 4.954.911; o resumo executivo fala em 'aproximadamente 4,95 milhões'.)",
+      "fonte": "https://datasebrae.com.br/wp-content/uploads/2026/01/Anual-2025Infografico-AberturadeEmpresas.v2.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "checagem[2023 e 2024]: ok: false",
+      "valor_na_fonte": "ok: true; sem revisão: a lista da Agência Sebrae de 26/01/2026 corta na primeira casa (3,78 vira 3,7; 4,158 vira 4,1; 3,28 vira 3,2) (Todos os seis números da lista de 2026 coincidem com o corte (não com o arredondamento) dos números detalhados: 3,28→3,2; 3,94→3,9; 3,74→3,7; 3,78→3,7; 4,16→4,1; 4,95→4,9. As revisões do Sebrae entre divulgações foram para cima (2021: 3,93 → 3,94; 2023: 3,77 → 3,78), por registros tardios.)",
+      "fonte": "https://datasebrae.com.br/wp-content/uploads/2026/01/13012026_resumo_executivo_aberturas_pn_anual.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
     }
   ],
   "linhas": [
-    [2020, 3.2],
-    [2021, 3.9],
-    [2022, 3.7],
-    [2023, 3.7],
-    [2024, 4.1],
-    [2025, 4.9]
+    [2020, 3.28],
+    [2021, 3.94],
+    [2022, 3.74],
+    [2023, 3.78],
+    [2024, 4.16],
+    [2025, 4.95]
   ]
 }

@@ -62,17 +62,22 @@
       "o_que_sustenta": "Programas estaduais citados como fatores de queda, entre eles o Infocrim (SP)."
     },
     {
-      "nome": "Politize!, transcrição do art. 144, § 6º, da Constituição",
-      "url": "https://www.politize.com.br/policia-militar-2/",
-      "o_que_sustenta": "Subordinação das polícias militares e civis aos governadores."
+      "nome": "Constituição Federal, art. 144, § 6º (Planalto, texto compilado)",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/ConstituicaoCompilado.htm",
+      "o_que_sustenta": "Subordinação das polícias militares, dos corpos de bombeiros militares, das polícias penais e das polícias civis aos governadores (redação da Emenda Constitucional 104/2019)."
     },
     {
       "nome": "Constituição Federal, art. 21, XIV, e art. 144 (Planalto)",
       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
       "o_que_sustenta": "Polícias estaduais subordinadas aos governadores; polícias do Distrito Federal organizadas e mantidas pela União."
+    },
+    {
+      "nome": "Ministério da Justiça e Segurança Pública (Senasp), Pesquisa Perfil das Instituições de Segurança Pública",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/pesquisaperfil",
+      "o_que_sustenta": "Pesquisa anual (desde 2004, Portaria 265/2021) que, no ano-base 2024, registrou 8.274 bombeiros militares em São Paulo, número citado pelo Raio-X 2026 (nota 7 da Tabela 2, p. 14, e seção 1.3.2, p. 32)."
     }
   ],
-  "como_ler": "Cada linha é uma unidade da federação, ordenada da maior para a menor taxa de mortes violentas intencionais por 100 mil habitantes em 2025, e a barra acompanha essa taxa. A coluna de policiais soma policiais militares e civis em atividade e divide pela população implícita no Anuário (mortes divididas pela taxa), o que pode gerar pequenas diferenças de arredondamento em relação ao Raio-X, que usa a estimativa do Instituto Brasileiro de Geografia e Estatística (IBGE) enviada ao Tribunal de Contas da União (TCU). Em São Paulo, o efetivo da Polícia Militar vem somado ao dos bombeiros, e o portal subtraiu os 8.274 bombeiros militares registrados pela Pesquisa Perfil; no Rio de Janeiro, o efetivo da Polícia Militar é de março de 2022. Uma taxa alta de policiais ao lado de uma taxa alta de mortes não prova que uma coisa causa a outra.",
+  "como_ler": "Cada linha é uma unidade da federação, ordenada da maior para a menor taxa de mortes violentas intencionais por 100 mil habitantes em 2025, e a barra acompanha essa taxa. A coluna de policiais soma policiais militares e civis em atividade e divide pela população implícita no Anuário (mortes divididas pela taxa), o que pode gerar pequenas diferenças de arredondamento em relação ao Raio-X, que usa a estimativa do Instituto Brasileiro de Geografia e Estatística (IBGE) enviada ao Tribunal de Contas da União (TCU). Em São Paulo, o efetivo da Polícia Militar vem somado ao dos bombeiros, e o portal subtraiu os 8.274 bombeiros militares registrados pela Pesquisa Perfil das Instituições de Segurança Pública, do Ministério da Justiça e Segurança Pública (ano-base 2024); no Rio de Janeiro, o efetivo da Polícia Militar é de março de 2022. Uma taxa alta de policiais ao lado de uma taxa alta de mortes não prova que uma coisa causa a outra.",
   "contexto": [
     "A tabela compara, para cada unidade da federação, a taxa de mortes violentas intencionais (MVI) de 2025 e o número de policiais militares e civis por 100 mil habitantes. A distância entre os extremos é grande: o Amapá registrou 42,5 mortes por 100 mil, mais de cinco vezes a taxa de Santa Catarina (7,6) e de São Paulo (7,8). As taxas mais altas se concentram no Norte e no Nordeste, com Amapá, Bahia, Ceará, Alagoas e Pernambuco no topo, e as mais baixas ficam no Sul, no Sudeste e no Distrito Federal. Em 2025, a taxa caiu em 20 unidades da federação e subiu em sete, entre elas Rio Grande do Norte, Rondônia e Rio de Janeiro.",
     "As polícias contadas na tabela são estaduais. Pela Constituição (art. 144), as polícias militares, encarregadas do policiamento ostensivo, e as polícias civis, encarregadas da investigação, são subordinadas aos governadores, e o número de vagas de cada corporação é fixado em lei. No Distrito Federal, a União organiza e mantém as polícias (art. 21, XIV), e no Amapá e em Roraima parte do efetivo vem dos antigos territórios federais e é paga pela União, o que ajuda a explicar as taxas altas de policiais nessas três unidades. O efetivo vem do Raio-X das Forças de Segurança Pública do Brasil 2026, do Fórum Brasileiro de Segurança Pública (FBSP), com dados de março de 2025 obtidos junto aos estados. A Polícia Militar do Rio de Janeiro não enviou dados novos, e o estudo repete o número de março de 2022.",

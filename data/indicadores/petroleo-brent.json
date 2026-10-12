@@ -44,9 +44,9 @@
       "o_que_sustenta": "Queda de mais de 70% nos preços desde meados de 2014 e papel da produção americana de petróleo de xisto."
     },
     {
-      "nome": "Olhar Direto, commodities têm a maior queda da história em 2008",
-      "url": "https://olhardireto.com.br/noticias/commodities-tem-a-maior-queda-da-historia-em-2008",
-      "o_que_sustenta": "Pico de US$ 147 em julho de 2008 e queda com a crise financeira."
+      "nome": "EIA, Europe Brent Spot Price FOB, série mensal",
+      "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M",
+      "o_que_sustenta": "Alta do Brent até US$ 132,72 (média de julho de 2008) e queda para US$ 39,95 (média de dezembro de 2008); média anual de 2008 de US$ 96,94 na série anual."
     },
     {
       "nome": "Agência iNFRA, Brent dispara com Ormuz instável",
@@ -67,7 +67,7 @@
   "como_ler": "A linha mostra o preço médio anual do barril de petróleo Brent, em dólares americanos, de 2006 a 2025. O eixo horizontal traz os anos e o vertical, o preço do barril. Cada ponto é a média dos preços diários do ano, calculada pela Administração de Informação Energética dos Estados Unidos (EIA), e esconde as oscilações dentro dele: em 2020, por exemplo, a média foi de US$ 42, e o barril chegou a US$ 19 em abril. Os valores são nominais, sem correção pela inflação americana, por isso US$ 100 em 2012 compravam mais do que US$ 100 em 2022. O ano de 2026 ainda não entra porque está em curso.",
   "contexto": [
     "O Brent é o petróleo extraído no Mar do Norte e a principal referência de preço do barril no comércio internacional. O gráfico usa a média anual dos preços diários à vista (spot) publicada pela Administração de Informação Energética dos Estados Unidos (EIA, na sigla em inglês), em dólares de cada ano, sem correção pela inflação. Um barril tem 159 litros.",
-    "Os grandes movimentos da série acompanham crises de oferta e de demanda. Em 2008, o barril chegou perto de US$ 145 em julho e despencou no fim do ano com a crise financeira global. Entre 2011 e 2013, o Brent ficou acima de US$ 100 em média; a partir de meados de 2014, os preços caíram mais de 70%, em um período de forte expansão da produção americana de petróleo de xisto. Em 2020, a pandemia derrubou a demanda e o Brent chegou a US$ 19 em 21 de abril, com média anual de US$ 42, a menor desde 2004, até que a Organização dos Países Exportadores de Petróleo e aliados (OPEP+) cortou a produção a partir de maio. A invasão da Ucrânia pela Rússia, em 24 de fevereiro de 2022, e os estoques baixos levaram a média daquele ano a US$ 101; de 2023 a 2025, a expectativa de oferta maior do que a demanda derrubou os preços, e a média de 2025 ficou em US$ 69.",
+    "Os grandes movimentos da série acompanham crises de oferta e de demanda. Em 2008, a média mensal do Brent chegou a US$ 132,72 em julho e caiu para US$ 39,95 em dezembro, com a crise financeira global. Entre 2011 e 2013, o Brent ficou acima de US$ 100 em média; a partir de meados de 2014, os preços caíram mais de 70%, em um período de forte expansão da produção americana de petróleo de xisto. Em 2020, a pandemia derrubou a demanda e o Brent chegou a US$ 19 em 21 de abril, com média anual de US$ 42, a menor desde 2004, até que a Organização dos Países Exportadores de Petróleo e aliados (OPEP+) cortou a produção a partir de maio. A invasão da Ucrânia pela Rússia, em 24 de fevereiro de 2022, e os estoques baixos levaram a média daquele ano a US$ 101; de 2023 a 2025, a expectativa de oferta maior do que a demanda derrubou os preços, e a média de 2025 ficou em US$ 69.",
     "Em 2026, ano ainda fora do gráfico, os ataques dos Estados Unidos e de Israel ao Irã e as restrições à passagem de petroleiros pelo Estreito de Ormuz levaram o Brent a US$ 112 em 20 de março, e a EIA projetou, em outubro, média de US$ 96 no ano. O petróleo chega ao consumidor brasileiro pelo diesel, pela gasolina, pelo gás de cozinha e pelo frete, que pesa no preço dos alimentos. Desde maio de 2023, a Petrobras deixou de seguir automaticamente o Preço de Paridade de Importação (PPI) e reajusta sem periodicidade fixa; em março de 2026, elevou o diesel em 11,6%, e o governo federal zerou os tributos federais PIS e Cofins (Programa de Integração Social e Contribuição para o Financiamento da Seguridade Social) sobre o diesel, com renúncia de arrecadação. Como o Brasil também produz e exporta petróleo, preços altos aumentam a receita do setor e a arrecadação ligada a ele."
   ],
   "glossario": [
@@ -129,6 +129,13 @@
       "fonte": "EIA, série anual RBRTE",
       "ok": true,
       "obs": "Os 20 valores conferem com a tabela da EIA."
+    },
+    {
+      "valor_no_portal": "contexto[1] (2008): Em 2008, o barril chegou perto de US$ 145 em julho e despencou no fim do ano com a crise financeira global.",
+      "valor_na_fonte": "Em 2008, a média mensal do barril chegou a US$ 132,72 em julho e caiu para US$ 39,95 em dezembro, com a crise financeira global. (EIA, série mensal RBRTE: jun/2008 132,32; jul/2008 132,72; dez/2008 39,95. A série diária (pico de cerca de US$ 144 no início de julho) não abriu.)",
+      "fonte": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
     }
   ],
   "linhas": [

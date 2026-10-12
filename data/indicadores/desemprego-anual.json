@@ -62,9 +62,29 @@
       "nome": "Ipea, Carta de Conjuntura, nota sobre rendimentos do 4º trimestre de 2025",
       "url": "https://www.ipea.gov.br/cartadeconjuntura/wp-content/uploads/2026/03/260313_cc_70_nota_14_rendimentos_4_trimestre_2025.pdf",
       "o_que_sustenta": "Fatia de microempreendedores individuais entre os trabalhadores por conta própria (19,1% em 2015; 27,4% no fim de 2025)."
+    },
+    {
+      "nome": "IBGE, Agência de Notícias: desocupação cai para 5,1% em dezembro, e 2025 tem melhores resultados da série histórica (30/01/2026)",
+      "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45761-desocupacao-cai-para-5-1-em-dezembro-e-2025-tem-melhores-resultados-da-serie-historica",
+      "o_que_sustenta": "Taxas anuais de 13,7% em 2020 e 14,0% em 2021, na série atual."
+    },
+    {
+      "nome": "IBGE, apresentação da PNAD Contínua, trimestre de outubro a dezembro de 2025 (30/01/2026)",
+      "url": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf",
+      "o_que_sustenta": "Tabela de valores anuais (força de trabalho e desocupadas, em mil pessoas) de 2012 a 2025, base da conta das taxas anuais de 2013, 2015 a 2023."
+    },
+    {
+      "nome": "IBGE, release: em 2023, taxa anual de desocupação foi de 7,8% (fev/2024)",
+      "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/39025-pnad-continua-em-2023-taxa-anual-de-desocupacao-foi-de-7-8-enquanto-de-taxa-de-subutilizacao-foi-de-18-0",
+      "o_que_sustenta": "Método da base anual por visita (1ª visita; 5ª visita de 2020 a 2022) e 9,6% em 2022."
+    },
+    {
+      "nome": "Poder360, IBGE atualiza pesquisa de desemprego com base no Censo 2022 (28/07/2025)",
+      "url": "https://www.poder360.com.br/poder-economia/ibge-atualiza-pesquisa-de-desemprego-com-base-no-censo-2022/",
+      "o_que_sustenta": "Reponderação da PNAD Contínua com a população do Censo 2022 a partir da divulgação de 31/07/2025, com revisão de toda a série desde 2012."
     }
   ],
-  "como_ler": "A linha mostra a taxa média anual de desemprego (desocupação) no Brasil, em porcentagem da força de trabalho, de 1995 a 2025. De 2012 em diante, os valores são as taxas anuais oficiais do IBGE, da Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua). O IBGE calcula o número anual com a primeira entrevista de cada domicílio (de 2020 a 2022, com a quinta, por causa da pandemia), e por isso ele pode diferir da média simples dos quatro trimestres: em 2021, a taxa anual é 14,0%, e a média dos trimestres, 13,2%. O trecho de 1995 a 2011 é uma reconstrução estatística feita pelos pesquisadores Rafael Bacciotti e Emerson Marçal (2020) para tornar os anos antigos comparáveis à pesquisa atual; trate esses pontos como estimativas, com margem de erro maior. Por isso, compare tendências e evite tirar conclusões de diferenças de poucos décimos entre os dois trechos. O ano de 2026 ainda não entra: o dado mais recente, do trimestre de junho a agosto de 2026, foi de 5,3%, e taxas trimestrais têm efeito sazonal, com valores mais altos no começo do ano.",
+  "como_ler": "A linha mostra a taxa média anual de desemprego (desocupação) no Brasil, em porcentagem da força de trabalho, de 1995 a 2025. De 2012 em diante, os valores são as taxas anuais oficiais do IBGE, da Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua). O IBGE calcula o número anual com a primeira entrevista de cada domicílio (de 2020 a 2022, com a quinta, por causa da pandemia), e por isso ele pode diferir da média simples dos quatro trimestres: em 2021, a taxa anual é 14,0%, e a média dos trimestres, 13,2%. Em julho de 2025, o IBGE refez a série inteira com a população do Censo 2022, e alguns anos mudaram um décimo em relação ao que foi divulgado na época (2023, por exemplo, saiu como 7,8% e hoje é 7,7%). O trecho de 1995 a 2011 é uma reconstrução estatística feita pelos pesquisadores Rafael Bacciotti e Emerson Marçal (2020) para tornar os anos antigos comparáveis à pesquisa atual; trate esses pontos como estimativas, com margem de erro maior. Por isso, compare tendências e evite tirar conclusões de diferenças de poucos décimos entre os dois trechos. O ano de 2026 ainda não entra: o dado mais recente, do trimestre de junho a agosto de 2026, foi de 5,3%, e taxas trimestrais têm efeito sazonal, com valores mais altos no começo do ano.",
   "contexto": [
     "A taxa de desocupação mede a parcela da força de trabalho que está sem emprego e procurou vaga no período de referência da pesquisa; a força de trabalho reúne as pessoas de 14 anos ou mais que trabalham ou procuram trabalho. Quem não procurou vaga, como estudantes, aposentados e desalentados, fica fora da conta. Desde 2012, a fonte é a Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua) do IBGE, e a média anual oficial é calculada com a base anual da pesquisa, formada pelas primeiras entrevistas de cada domicílio (de 2020 a 2022, pelas quintas entrevistas, por causa da pandemia). Para 1995 a 2011, o portal usa a série reconstruída por Rafael Bacciotti (Instituição Fiscal Independente do Senado) e Emerson Marçal (FGV), publicada em 2020 na revista Estudos Econômicos, que combina a PNAD anual e a Pesquisa de Emprego e Desemprego do Departamento Intersindical de Estatística e Estudos Socioeconômicos (Dieese) com um modelo estatístico.",
     "Na segunda metade dos anos 1990, o desemprego subiu de cerca de 7% para 10%; estudo de Marcelo Neri, José Márcio Camargo e Maurício Reis (Instituto de Pesquisa Econômica Aplicada, Ipea, 2000) associa o movimento à abertura comercial, ao câmbio usado como âncora depois do Plano Real, que pesou sobre a indústria, e às crises externas de 1998. A taxa ficou perto de 10% até 2005 e caiu quase sem interrupção até 7,0% em 2014, com uma alta passageira em 2009, ano da crise financeira internacional. A recessão de 2015 e 2016 levou a média a 12,6% em 2017, e a pandemia elevou o desemprego ao maior nível da série, 14,0% na média de 2021. Desde 2022 a taxa cai todo ano, e 2025 fechou em 5,6%, a menor média anual da PNAD Contínua, com 20 unidades da federação também em mínima histórica.",
@@ -155,6 +175,48 @@
       "fonte": "IBGE, Sidra tabela 4099",
       "ok": false,
       "observacao": "Mantido 14,0 (base anual por visita, 5ª visita em 2021, segundo a retrospectiva do IBGE). Diferença explicada em como_ler. Confirmar o número exato na planilha anual do IBGE na próxima atualização."
+    },
+    {
+      "valor_no_portal": "linhas[2016]: 11.7",
+      "valor_na_fonte": "11.6 (11.832 / 101.726 = 11,63% (série reponderada, apresentação do IBGE de 30/01/2026). O 11,7 vinha da série anterior à reponderação: 11.971 / 102.721 = 11,65% (apresentação de jan/2025).)",
+      "fonte": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2018]: 12.2",
+      "valor_na_fonte": "12.1 (12.657 / 104.176 = 12,1497%. Valor no limite: com o arredondamento dos milhares, a taxa fica entre 12,149% e 12,150%, e o IBGE pode publicar 12,1 ou 12,2. Ver nao_resolvido. Na série antiga: 12.851 / 105.622 = 12,17%.)",
+      "fonte": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2020]: 13.8",
+      "valor_na_fonte": "13.7 (Texto do IBGE (30/01/2026): 'nos anos 2020 e 2021 a taxa chegou a 13,7% e 14,0%'. Confere com 13.590 / 98.880 = 13,74%. O 13,8 era da série antiga: 13.823 / 100.496 = 13,75%.)",
+      "fonte": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45761-desocupacao-cai-para-5-1-em-dezembro-e-2025-tem-melhores-resultados-da-serie-historica",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2023]: 7.8",
+      "valor_na_fonte": "7.7 (8.293 / 107.026 = 7,749% (mesmo com o arredondamento dos milhares, no máximo 7,7491%, portanto 7,7). O 7,8 foi o valor divulgado em 2024 e em 31/01/2025, antes da reponderação de julho de 2025 (8.466 / 109.156 = 7,76%).)",
+      "fonte": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "checagem[2021]: ok: false; 'Não localizado em texto'",
+      "valor_na_fonte": "ok: true; valor_na_fonte '14,0% (IBGE, Agência de Notícias, 30/01/2026; 14.324 / 102.253 = 14,01%)' (Confirmado em texto pelo IBGE. A média simples dos quatro trimestres da tabela 4099 continua 13,2% (14,9; 14,2; 12,7; 11,1), e por isso o como_ler segue valendo.)",
+      "fonte": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45761-desocupacao-cai-para-5-1-em-dezembro-e-2025-tem-melhores-resultados-da-serie-historica",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[2012 a 2015, 2017, 2019, 2021, 2022, 2024, 2025]: 7,4; 7,3; 7,0; 8,9; 12,6; 11,8; 14,0; 9,6; 6,6; 5,6",
+      "valor_na_fonte": "sem mudança (Tabela 'Valores anuais (em mil pessoas)' da apresentação de jan/2026, desocupadas / força de trabalho: 2012 7.093/96.354 = 7,36; 2013 7.129/97.943 = 7,28; 2014 6.897/98.516 = 7,00; 2015 8.913/100.562 = 8,86; 2016 11.832/101.726 = 11,63; 2017 13.032/103.204 = 12,63; 2018 12.657/104.176 = 12,15; 2019 12.511/106.046 = 11,80; 2020 13.590/98.880 = 13,74; 2021 14.324/102.253 = 14,01; 2022 10.082/105.241 = 9,58; 2023 8.293/107.026 = 7,75; 2024 7.194/108.502 = 6,63; 2025 6.150/109.132 = 5,64)",
+      "fonte": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
     }
   ],
   "linhas": [
@@ -179,14 +241,14 @@
     [2013, 7.3],
     [2014, 7.0],
     [2015, 8.9],
-    [2016, 11.7],
+    [2016, 11.6],
     [2017, 12.6],
-    [2018, 12.2],
+    [2018, 12.1],
     [2019, 11.8],
-    [2020, 13.8],
+    [2020, 13.7],
     [2021, 14.0],
     [2022, 9.6],
-    [2023, 7.8],
+    [2023, 7.7],
     [2024, 6.6],
     [2025, 5.6]
   ]

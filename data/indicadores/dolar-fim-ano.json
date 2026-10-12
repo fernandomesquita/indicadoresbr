@@ -54,9 +54,9 @@
       "o_que_sustenta": "Queda de 2025, recuo do índice global do dólar e cortes de juros do Fed."
     },
     {
-      "nome": "Olhar Direto, commodities têm a maior queda da história em 2008",
-      "url": "https://olhardireto.com.br/noticias/commodities-tem-a-maior-queda-da-historia-em-2008",
-      "o_que_sustenta": "Contexto da crise financeira global de 2008."
+      "nome": "Banco Central, SGS série 3696 (dólar, venda, fim de período), 2007 e 2008",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.3696/dados?formato=json&dataInicial=01/12/2007&dataFinal=31/12/2008",
+      "o_que_sustenta": "Dólar de R$ 1,7713 no fim de 2007, mínimo de fim de mês de R$ 1,5666 em julho de 2008, salto a partir de setembro (R$ 1,9143) e R$ 2,3370 no fim de 2008."
     }
   ],
   "como_ler": "Cada ponto da linha é a cotação oficial de venda do dólar calculada pelo Banco Central (PTAX), em reais, no último dia útil de cada ano, de 2006 a 2025. O eixo horizontal mostra os anos e o eixo vertical, quantos reais eram necessários para comprar um dólar. Os valores são nominais, sem correção pela inflação, de modo que R$ 2 em 2006 e R$ 2 em 2025 representam poderes de compra diferentes. A foto de um único dia pode destoar da média do ano: em 2020, por exemplo, o dólar passou de R$ 5,90 em maio e terminou dezembro perto de R$ 5,20. O fechamento divulgado pela imprensa costuma ser o do mercado à vista e pode diferir em alguns centavos da PTAX.",

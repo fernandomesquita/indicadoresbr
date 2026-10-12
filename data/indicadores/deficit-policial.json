@@ -44,9 +44,14 @@
       "o_que_sustenta": "Confirma 628,7 mil vagas previstas de PM e 404,8 mil PMs na edição anterior."
     },
     {
-      "nome": "Politize!, transcrição do art. 144, § 6º, da Constituição",
-      "url": "https://www.politize.com.br/policia-militar-2/",
-      "o_que_sustenta": "Subordinação das polícias aos governadores."
+      "nome": "Constituição Federal, art. 144, § 6º (Planalto, texto compilado)",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/ConstituicaoCompilado.htm",
+      "o_que_sustenta": "Subordinação das polícias militares e civis aos governadores."
+    },
+    {
+      "nome": "Ministério da Justiça e Segurança Pública (Senasp), Pesquisa Perfil das Instituições de Segurança Pública",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/pesquisaperfil",
+      "o_que_sustenta": "Efetivo de 8.274 bombeiros militares em São Paulo no ano-base 2024, citado pelo Raio-X 2026 para explicar que o efetivo da PM paulista inclui os bombeiros."
     }
   ],
   "como_ler": "Cada barra mostra a parte do efetivo previsto em lei que está ocupada por policiais ativos, somando todos os estados e o Distrito Federal; 100% significaria quadro completo. Os totais vêm do Raio-X 2026, com dados de março de 2025, e seguem os números informados pelos estados: o efetivo ativo da Polícia Militar de São Paulo inclui os bombeiros militares, e o da Polícia Militar do Rio de Janeiro é de março de 2022. O efetivo previsto é um limite legal de vagas; a ocupação baixa mostra a distância em relação à lei, sem medir quantos policiais cada estado de fato precisa. O total nacional esconde diferenças grandes: na Polícia Militar, o Ceará passa de 100%, e há estados abaixo de 40%.",

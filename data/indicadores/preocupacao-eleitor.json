@@ -34,14 +34,14 @@
       "o_que_sustenta": "Confirmação dos percentuais, nível de confiança de 95% e demais perguntas da mesma pesquisa."
     },
     {
-      "nome": "Brasil de Fato, Datafolha: saúde e segurança lideram lista de principais problemas do país (10/3/2026)",
-      "url": "https://www.brasildefato.com.br/2026/03/10/datafolha-saude-e-seguranca-lideram-lista-de-principais-problemas-do-pais/",
-      "o_que_sustenta": "Resultado de outra metodologia (principal problema do país, março de 2026)."
+      "nome": "InfoMoney, Eleitores veem saúde e segurança como os principais problemas do país, diz Datafolha (10/03/2026)",
+      "url": "https://www.infomoney.com.br/politica/eleitores-veem-saude-e-seguranca-como-os-principais-problemas-do-pais-diz-datafolha/",
+      "o_que_sustenta": "Datafolha, pergunta espontânea de resposta única: saúde 21%, segurança 19%, economia 11%, educação 9%, corrupção 9%; 2.004 entrevistas, margem de 2 pontos, registro BR-03715/2026."
     },
     {
-      "nome": "Correio da Manhã, Violência está no topo das preocupações dos brasileiros para as eleições",
-      "url": "https://www.correiodamanha.com.br/opiniao/2026/10/324372-violencia-esta-no-topo-das-preocupacoes-dos-brasileiros-para-as-eleicoes.html",
-      "o_que_sustenta": "Pesquisa Quaest e Pax com violência 28%, corrupção 22%, economia 19% e saúde 15%."
+      "nome": "CNN Brasil, Violência é principal problema para 28% dos brasileiros, diz Quaest/Pax (18/09/2026)",
+      "url": "https://www.cnnbrasil.com.br/nacional/brasil/violencia-e-principal-problema-para-28-dos-brasileiros-diz-quaest-pax/",
+      "o_que_sustenta": "Pesquisa nacional de segurança e tecnologia da Quaest com a Pax: 2.004 entrevistas presenciais de 12 a 15/09/2026, margem de 2 pontos, 95% de confiança; violência 28%, corrupção 22%, economia 19%, saúde 15%."
     },
     {
       "nome": "Poder360, Violência é a principal preocupação dos brasileiros, diz Quaest (2/4/2025)",
@@ -49,10 +49,10 @@
       "o_que_sustenta": "Série anterior da Quaest, com violência em primeiro lugar já em 2025."
     }
   ],
-  "como_ler": "Cada barra é um tema e mostra o percentual de entrevistados que o apontaram como maior preocupação ao votar em 2026. A pergunta foi estimulada, com cinco temas oferecidos,, e os percentuais somam 100%; assuntos fora da lista, como emprego, inflação ou impostos, não aparecem. Com margem de erro de 2 pontos percentuais, corrupção (23%) e saúde (22%) estão tecnicamente empatadas, assim como endividamento (14%) e educação (13%), e segurança pública (28%) fica à frente de todas. O retrato é de 1º a 3 de agosto de 2026 e pode ter mudado ao longo da campanha.",
+  "como_ler": "Cada barra é um tema e mostra o percentual de entrevistados que o apontaram como maior preocupação ao votar em 2026. A pergunta foi estimulada, com cinco temas oferecidos, e os percentuais somam 100%; assuntos fora da lista, como emprego, inflação ou impostos, não aparecem. Com margem de erro de 2 pontos percentuais, corrupção (23%) e saúde (22%) estão tecnicamente empatadas, assim como endividamento (14%) e educação (13%), e segurança pública (28%) fica à frente de todas. O retrato é de 1º a 3 de agosto de 2026 e pode ter mudado ao longo da campanha.",
   "contexto": [
     "O gráfico traz as respostas à pergunta \"Qual será sua maior preocupação ao votar nesta eleição?\", feita pelo instituto Real Time Big Data de 1º a 3 de agosto de 2026. Foram 2 mil entrevistas com pessoas de 16 anos ou mais, com margem de erro de 2 pontos percentuais para mais ou para menos e nível de confiança de 95%. A pesquisa foi contratada pelos portais O Antagonista e G4, e os cinco temas apresentados somam 100%, o que indica uma resposta por entrevistado.",
-    "Pesquisas com métodos diferentes chegam a temas parecidos no topo, em ordens diferentes. O Datafolha, de 3 a 5 de março de 2026, perguntou sobre o principal problema do país e registrou saúde com 21% e violência e segurança com 19%. Um levantamento da Quaest com a empresa de tecnologia Pax, divulgado em 2026, apontou violência com 28%, corrupção com 22%, economia com 19% e saúde com 15%. A formulação da pergunta, a lista de opções e o momento da coleta mudam o resultado, por isso comparações entre institutos pedem cautela.",
+    "Pesquisas com métodos diferentes chegam a temas parecidos no topo, em ordens diferentes. O Datafolha, de 3 a 5 de março de 2026, perguntou sobre o principal problema do país e registrou saúde com 21% e violência e segurança com 19%. Um levantamento da Quaest com a empresa de tecnologia Pax, feito de 12 a 15 de setembro de 2026, apontou violência com 28%, corrupção com 22%, economia com 19% e saúde com 15%. A formulação da pergunta, a lista de opções e o momento da coleta mudam o resultado, por isso comparações entre institutos pedem cautela.",
     "Para o cidadão, o dado ajuda a entender quais temas o eleitor dizia priorizar antes da campanha e a cobrar compromissos depois da eleição. A segurança pública, que lidera a lista, tem competências divididas: as polícias militares e civis são dos estados, e à União cabem a Polícia Federal, a Polícia Rodoviária Federal e a coordenação nacional. Para quem estuda para concurso, as prioridades do eleitorado podem orientar as contratações dos governos que tomam posse em 2027, em especial em segurança, saúde e educação."
   ],
   "glossario": [
@@ -107,6 +107,13 @@
       "valor_na_fonte": "2.000 entrevistas, 16 anos ou mais, margem de 2 pontos, 95% de confiança, 1º a 3/8/2026",
       "fonte": "Metrópoles",
       "ok": true
+    },
+    {
+      "valor_no_portal": "contexto[1] (Quaest/Pax): divulgado em 2026",
+      "valor_na_fonte": "divulgado em 18 de setembro de 2026, com 2.004 entrevistas presenciais de 12 a 15 de setembro (A pesquisa Quaest/Pax é de setembro de 2026, não de março; só o Datafolha é de março.)",
+      "fonte": "https://www.cnnbrasil.com.br/nacional/brasil/violencia-e-principal-problema-para-28-dos-brasileiros-diz-quaest-pax/",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
     }
   ],
   "linhas": [

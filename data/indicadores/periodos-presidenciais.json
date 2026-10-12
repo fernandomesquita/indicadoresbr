@@ -57,9 +57,9 @@
       "o_que_sustenta": "Desemprego de 1995 a 2011."
     },
     {
-      "nome": "Dieese, Pesquisa Nacional da Cesta Básica, dezembro de 2025",
+      "nome": "Dieese, Pesquisa Nacional da Cesta Básica de Alimentos, dezembro de 2025",
       "url": "https://www.dieese.org.br/analisecestabasica/2025/202512cestabasica.pdf",
-      "o_que_sustenta": "Custo da cesta em São Paulo (R$ 845,95 em dezembro de 2025), usado na conferência da coluna de cestas."
+      "o_que_sustenta": "Cesta de São Paulo em dezembro de 2025 (R$ 845,95), usada na coluna de cestas de Lula 3 (R$ 1.518 / R$ 845,95 = 1,79)."
     },
     {
       "nome": "Barros, Medindo o crescimento do agronegócio: bonança externa e preços relativos (Ipea)",
@@ -85,9 +85,44 @@
       "nome": "Banco Central, carta aberta de julho de 2025 (Ofício 17.431/2025)",
       "url": "https://www.bcb.gov.br/content/controleinflacao/controleinflacao_docs/carta_aberta/OF_CIO_17431_2025_BCB_SECRE_01.pdf",
       "o_que_sustenta": "Fatores apontados pelo Banco Central para a inflação acima da meta e Selic de 15%."
+    },
+    {
+      "nome": "Banco Central, SGS série 7493 (custo da cesta básica em São Paulo, Dieese)",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.7493/dados?formato=json",
+      "o_que_sustenta": "Cesta de São Paulo em dezembro de 1998 (R$ 102,09) e de 2002 (R$ 158,73), meses sem boletim do Dieese acessível. A série confere com os boletins do Dieese em dezembro de 2014 (R$ 354,19), 2015 (R$ 412,12) e 2018 (R$ 471,44)."
+    },
+    {
+      "nome": "Dieese, cesta básica de dezembro de 2006",
+      "url": "https://www.dieese.org.br/analisecestabasica/2006/200612cestabasica.pdf",
+      "o_que_sustenta": "Cesta de São Paulo em dezembro de 2006 (R$ 182,05)."
+    },
+    {
+      "nome": "Dieese, cesta básica de dezembro de 2010",
+      "url": "https://www.dieese.org.br/analisecestabasica/2010/201012cestabasica.pdf",
+      "o_que_sustenta": "Cesta de São Paulo em dezembro de 2010 (R$ 265,15)."
+    },
+    {
+      "nome": "Dieese, cesta básica de dezembro de 2014",
+      "url": "https://www.dieese.org.br/analisecestabasica/2014/201412cestabasica.pdf",
+      "o_que_sustenta": "Cesta de São Paulo em dezembro de 2014 (R$ 354,19)."
+    },
+    {
+      "nome": "Dieese, cesta básica de dezembro de 2015",
+      "url": "https://www.dieese.org.br/analisecestabasica/2015/201512cestabasica.pdf",
+      "o_que_sustenta": "Cesta de São Paulo em dezembro de 2015 (R$ 412,12)."
+    },
+    {
+      "nome": "Dieese, cesta básica de dezembro de 2018",
+      "url": "https://www.dieese.org.br/analisecestabasica/2018/201812cestabasica.pdf",
+      "o_que_sustenta": "Cesta de São Paulo em dezembro de 2018 (R$ 471,44)."
+    },
+    {
+      "nome": "Dieese, cesta básica de dezembro de 2022",
+      "url": "https://www.dieese.org.br/analisecestabasica/2022/202212cestabasica.pdf",
+      "o_que_sustenta": "Cesta de São Paulo em dezembro de 2022 (R$ 791,29)."
     }
   ],
-  "como_ler": "Cada linha da tabela é um período presidencial e cada coluna é um indicador expresso como média por ano dentro do período, em porcentagem, com exceção da última, que está em número de cestas básicas. Inflação (Índice Nacional de Preços ao Consumidor Amplo, IPCA), ganho real do mínimo e Selic usam datas mensais exatas de início e fim (Dilma 2: janeiro de 2015 a maio de 2016; Temer: junho de 2016 a dezembro de 2018; Lula 3: até setembro de 2026). PIB e desemprego usam anos completos e deixam 2016 de fora por ter sido dividido entre dois governos (Dilma 2 = 2015; Temer = 2017 e 2018; Lula 3 = 2023 a 2025). O desemprego de FHC 1 a Dilma 1 usa a série reconstruída por Bacciotti e Marçal, que é uma estimativa, e de 2012 em diante usa a PNAD Contínua. O juro real é a Selic acumulada (série 4390 do Banco Central) descontada a inflação do IPCA no mesmo intervalo. A coluna de cestas mostra quantas cestas básicas de São Paulo, medidas pelo Departamento Intersindical de Estatística e Estudos Socioeconômicos (Dieese), o salário mínimo comprava no último ano completo de cada período; para Lula 3, a conta usa o mínimo de R$ 1.621 e a cesta de setembro de 2026 (R$ 922,51), o que dá 1,76. Lula 3 está em curso, e seus números mudam a cada atualização.",
+  "como_ler": "Cada linha da tabela é um período presidencial e cada coluna é um indicador expresso como média por ano dentro do período, em porcentagem, com exceção da última, que está em número de cestas básicas. Inflação (Índice Nacional de Preços ao Consumidor Amplo, IPCA), ganho real do mínimo e Selic usam datas mensais exatas de início e fim (Dilma 2: janeiro de 2015 a maio de 2016; Temer: junho de 2016 a dezembro de 2018; Lula 3: até setembro de 2026). PIB e desemprego usam anos completos e deixam 2016 de fora por ter sido dividido entre dois governos (Dilma 2 = 2015; Temer = 2017 e 2018; Lula 3 = 2023 a 2025). O desemprego de FHC 1 a Dilma 1 usa a série reconstruída por Bacciotti e Marçal, que é uma estimativa, e de 2012 em diante usa a PNAD Contínua. O juro real é a Selic acumulada (série 4390 do Banco Central) descontada a inflação do IPCA no mesmo intervalo. A coluna de cestas divide o salário mínimo vigente em dezembro do último ano completo de cada período pelo custo da cesta básica de São Paulo medido pelo Departamento Intersindical de Estatística e Estudos Socioeconômicos (Dieese) no mesmo mês: dezembro de 1998, 2002, 2006, 2010, 2014, 2015, 2018, 2022 e 2025. Para Lula 3, a conta usa R$ 1.518 e a cesta de dezembro de 2025 (R$ 845,95), o que dá 1,79. O reajuste do mínimo de cada janeiro fica para o ano seguinte. Lula 3 está em curso, e seus números mudam a cada atualização.",
   "contexto": [
     "A tabela resume sete indicadores para cada período presidencial, do primeiro mandato de Fernando Henrique Cardoso (1995) ao terceiro de Lula (até setembro de 2026), sempre como média por ano para que mandatos de duração diferente fiquem comparáveis. A inflação é o Índice Nacional de Preços ao Consumidor Amplo (IPCA) do IBGE; o mínimo real é o ganho do salário mínimo descontado o Índice Nacional de Preços ao Consumidor (INPC); o desemprego é a média das taxas anuais; o PIB é o crescimento real médio; a Selic é a taxa básica de juros acumulada, e o juro real é a Selic descontada a inflação. A última coluna divide o salário mínimo pelo custo da cesta básica de alimentos de São Paulo medido pelo Departamento Intersindical de Estatística e Estudos Socioeconômicos (Dieese), mostrando quantas cestas um mínimo comprava.",
     "Os números refletem decisões de governo e também condições fora do controle do Poder Executivo. O primeiro mandato de FHC teve juro real de 21,6% ao ano, em um período em que o câmbio servia de âncora para a estabilização do Plano Real; depois da desvalorização de 1999 e da adoção das metas de inflação, os juros caíram aos poucos. Os dois primeiros mandatos de Lula coincidiram com a alta dos preços internacionais das matérias-primas, que melhorou os termos de troca do país, segundo estudo publicado pelo Instituto de Pesquisa Econômica Aplicada (Ipea), e a crise financeira de 2008 interrompeu o crescimento em 2009. O período Dilma 2 concentra a recessão de 2015, cujas causas são disputadas entre economistas (a página do PIB resume as explicações). O período Bolsonaro inclui a pandemia de 2020 e o choque mundial de preços de 2021 e 2022, e Lula 3 tem juros reais altos, que o Banco Central associou a expectativas de inflação acima da meta e atividade aquecida.",
@@ -173,22 +208,98 @@
       "ok": true
     },
     {
-      "valor_no_portal": "Cestas por mínimo Lula 3: 1,76",
-      "valor_na_fonte": "1.621 / 922,51 = 1,757 (cesta de São Paulo, setembro de 2026); com a cesta de dezembro de 2025 daria 1,79",
-      "fonte": "Dieese, cesta básica de dezembro de 2025",
+      "valor_no_portal": "Cestas por mínimo: 1,27; 1,26; 1,92; 1,92; 2,04; 1,91; 2,02; 1,53; 1,79",
+      "valor_na_fonte": "130/102,09; 200/158,73; 350/182,05; 510/265,15; 724/354,19; 788/412,12; 954/471,44; 1.212/791,29; 1.518/845,95 (dezembro do último ano completo de cada período)",
+      "fonte": "Dieese (boletins de dezembro) e Banco Central (SGS 7493 e 1619)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "linhas[FHC 1].Cestas por mínimo: 1.22",
+      "valor_na_fonte": "1.27 (Mínimo vigente em dez/1998: R$ 130 (SGS 1619) / cesta de São Paulo em dez/1998: R$ 102,09 (Banco Central, SGS 7493 (cesta básica de São Paulo, Dieese)) = 1,2734, arredondado 1,27)",
+      "fonte": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.7493/dados?formato=json&dataInicial=01/12/1998&dataFinal=31/12/1998",
       "ok": true,
-      "observacao": "Critério de Lula 3 explicado em como_ler."
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[FHC 2].Cestas por mínimo: 1.42",
+      "valor_na_fonte": "1.26 (Mínimo vigente em dez/2002: R$ 200 (SGS 1619) / cesta de São Paulo em dez/2002: R$ 158,73 (Banco Central, SGS 7493) = 1,2600, arredondado 1,26)",
+      "fonte": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.7493/dados?formato=json&dataInicial=01/12/2002&dataFinal=31/12/2002",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Lula 1].Cestas por mínimo: 1.91",
+      "valor_na_fonte": "1.92 (Mínimo vigente em dez/2006: R$ 350 (SGS 1619) / cesta de São Paulo em dez/2006: R$ 182,05 (Dieese, cesta básica de dezembro de 2006) = 1,9225, arredondado 1,92)",
+      "fonte": "https://www.dieese.org.br/analisecestabasica/2006/200612cestabasica.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Lula 2].Cestas por mínimo: 2.06",
+      "valor_na_fonte": "1.92 (Mínimo vigente em dez/2010: R$ 510 (SGS 1619) / cesta de São Paulo em dez/2010: R$ 265,15 (Dieese, cesta básica de dezembro de 2010) = 1,9234, arredondado 1,92)",
+      "fonte": "https://www.dieese.org.br/analisecestabasica/2010/201012cestabasica.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Dilma 1].Cestas por mínimo: 2.1",
+      "valor_na_fonte": "2.04 (Mínimo vigente em dez/2014: R$ 724 (SGS 1619) / cesta de São Paulo em dez/2014: R$ 354,19 (Dieese, cesta básica de dezembro de 2014) = 2,0441, arredondado 2,04)",
+      "fonte": "https://www.dieese.org.br/analisecestabasica/2014/201412cestabasica.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Dilma 2].Cestas por mínimo: 2.02",
+      "valor_na_fonte": "1.91 (Mínimo vigente em dez/2015: R$ 788 (SGS 1619) / cesta de São Paulo em dez/2015: R$ 412,12 (Dieese, cesta básica de dezembro de 2015) = 1,9121, arredondado 1,91)",
+      "fonte": "https://www.dieese.org.br/analisecestabasica/2015/201512cestabasica.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Temer].Cestas por mínimo: 2.15",
+      "valor_na_fonte": "2.02 (Mínimo vigente em dez/2018: R$ 954 (SGS 1619) / cesta de São Paulo em dez/2018: R$ 471,44 (Dieese, cesta básica de dezembro de 2018) = 2,0236, arredondado 2,02)",
+      "fonte": "https://www.dieese.org.br/analisecestabasica/2018/201812cestabasica.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Bolsonaro].Cestas por mínimo: 1.59",
+      "valor_na_fonte": "1.53 (Mínimo vigente em dez/2022: R$ 1.212 (SGS 1619) / cesta de São Paulo em dez/2022: R$ 791,29 (Dieese, cesta básica de dezembro de 2022) = 1,5317, arredondado 1,53)",
+      "fonte": "https://www.dieese.org.br/analisecestabasica/2022/202212cestabasica.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Lula 3].Cestas por mínimo: 1.76",
+      "valor_na_fonte": "1.79 (Mínimo vigente em dez/2025: R$ 1.518 (SGS 1619) / cesta de São Paulo em dez/2025: R$ 845,95 (Dieese, cesta básica de dezembro de 2025) = 1,7944, arredondado 1,79)",
+      "fonte": "https://www.dieese.org.br/analisecestabasica/2025/202512cestabasica.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Lula 3].Desemprego %: 6.7",
+      "valor_na_fonte": "6.6 (Média de 2023 a 2025 com a série reponderada do IBGE: (7,7 + 6,6 + 5,6) / 3 = 6,63. Só muda se a correção de desemprego-anual for aceita. Com as taxas sem arredondar (7,749; 6,630; 5,635) a média é 6,67, e o valor ficaria 6,7; o portal calcula as médias com os valores arredondados da série (como em Temer: (12,6 + 12,2) / 2 = 12,4).)",
+      "fonte": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Temer e Bolsonaro].Desemprego %: 12,4 e 12,3",
+      "valor_na_fonte": "sem mudança (Temer: (12,6 + 12,1) / 2 = 12,35, arredondado 12,4 (com 2018 = 12,2, também 12,4). Bolsonaro: (11,8 + 13,7 + 14,0 + 9,6) / 4 = 12,28, arredondado 12,3.)",
+      "fonte": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
     }
   ],
   "linhas": [
-    ["FHC 1", 9.4, 6.9, 8.3, 2.5, 33.1, 21.6, 1.22],
-    ["FHC 2", 8.8, 1.8, 9.9, 2.3, 19.8, 10.2, 1.42],
-    ["Lula 1", 6.4, 8.4, 9.8, 3.5, 18.4, 11.3, 1.91],
-    ["Lula 2", 5.1, 4.1, 8.5, 4.6, 11.0, 5.6, 2.06],
-    ["Dilma 1", 6.2, 3.0, 7.3, 2.3, 9.8, 3.4, 2.1],
-    ["Dilma 2", 10.5, 3.1, 8.9, -3.5, 13.4, 2.7, 2.02],
-    ["Temer", 3.4, 0.3, 12.4, 1.5, 9.5, 5.9, 2.15],
-    ["Bolsonaro", 6.1, -0.3, 12.3, 1.4, 6.3, 0.2, 1.59],
-    ["Lula 3", 4.7, 3.5, 6.7, 3.0, 13.0, 7.9, 1.76]
+    ["FHC 1", 9.4, 6.9, 8.3, 2.5, 33.1, 21.6, 1.27],
+    ["FHC 2", 8.8, 1.8, 9.9, 2.3, 19.8, 10.2, 1.26],
+    ["Lula 1", 6.4, 8.4, 9.8, 3.5, 18.4, 11.3, 1.92],
+    ["Lula 2", 5.1, 4.1, 8.5, 4.6, 11.0, 5.6, 1.92],
+    ["Dilma 1", 6.2, 3.0, 7.3, 2.3, 9.8, 3.4, 2.04],
+    ["Dilma 2", 10.5, 3.1, 8.9, -3.5, 13.4, 2.7, 1.91],
+    ["Temer", 3.4, 0.3, 12.4, 1.5, 9.5, 5.9, 2.02],
+    ["Bolsonaro", 6.1, -0.3, 12.3, 1.4, 6.3, 0.2, 1.53],
+    ["Lula 3", 4.7, 3.5, 6.6, 3.0, 13.0, 7.9, 1.79]
   ]
 }

@@ -40,18 +40,18 @@
       "o_que_sustenta": "Meta Selic vigente em cada data, incluindo a mudança para 13,75% em 17/09/2026."
     },
     {
-      "nome": "Observatório Econômico da UFMS, tabela histórica da Selic",
-      "url": "https://obecon.ufms.br/files/2026/04/SELIC-TABELA.pdf",
-      "o_que_sustenta": "Datas e decisões de cada reunião do Copom de 2010 a janeiro de 2026."
+      "nome": "Banco Central, histórico das taxas de juros fixadas pelo Copom",
+      "url": "https://www.bcb.gov.br/controleinflacao/historicotaxasjuros",
+      "o_que_sustenta": "Data e meta Selic de cada reunião do Copom. Meta em dezembro: 10,75 (2010), 11,00 (2011), 7,25 (2012), 10,00 (2013), 11,75 (2014), 14,25 (2015), 13,75 (2016), 7,00 (2017), 6,50 (2018), 4,50 (2019), 2,00 (2020), 9,25 (2021), 13,75 (2022), 11,75 (2023), 12,25 (2024), 15,00 (2025); 13,75 na 281ª reunião, de 16/09/2026."
     },
     {
-      "nome": "Atlas Público, Copom reduz Selic para 13,75%",
-      "url": "https://atlaspublico.com.br/bcb/noticias/copom-reduz-selic-para-13-75pct-ao-ano-em-decisao-unanime-87748",
-      "o_que_sustenta": "Decisão de 16/09/2026 e justificativas do Copom."
+      "nome": "Banco Central, comunicados do Copom (serviço de dados do site do Banco Central)",
+      "url": "https://www.bcb.gov.br/api/servico/sitebcb/copom/comunicados?quantidade=6",
+      "o_que_sustenta": "Títulos dos comunicados de 2026: 15,00% mantida em 28/01; cortes para 14,75% (18/03), 14,50% (29/04), 14,25% (17/06), 14,00% (05/08) e 13,75% (16/09)."
     },
     {
-      "nome": "Itatiaia, terceiro corte da Selic em 2026",
-      "url": "https://www.itatiaia.com.br/economia/copom-realiza-o-terceiro-corte-na-taxa-de-juros-em-2026-selic-vai-a-1425/",
+      "nome": "Banco Central, histórico das taxas de juros fixadas pelo Copom",
+      "url": "https://www.bcb.gov.br/controleinflacao/historicotaxasjuros",
       "o_que_sustenta": "Sequência de cortes de 2026 a partir de 15%."
     },
     {
