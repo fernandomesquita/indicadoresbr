@@ -1,0 +1,194 @@
+{
+  "id": "periodos-presidenciais",
+  "categoria": "economia",
+  "ordem": 6,
+  "visivel": true,
+  "titulo": "Sete números por período presidencial",
+  "subtitulo": "Taxas por ano em cada período, de FHC 1 a Lula 3",
+  "tipo": "tabela",
+  "x": "Período",
+  "series": [],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "fonte": {
+    "nome": "IBGE, Banco Central, Dieese e Bacciotti e Marçal; cálculo próprio",
+    "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Sidra tabela 1737 (IPCA, número-índice)",
+      "url": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2266/p/199412,199812,200212,200612,201012,201412,201605,201812,202212,202609",
+      "o_que_sustenta": "Inflação por período e deflator do juro real."
+    },
+    {
+      "nome": "IBGE, Sidra tabela 1736 (INPC, número-índice)",
+      "url": "https://apisidra.ibge.gov.br/values/t/1736/n1/all/v/2289/p/199412,199812,200212,200612,201012,201412,201605,201812,202212,202608,202609",
+      "o_que_sustenta": "Deflator do salário mínimo."
+    },
+    {
+      "nome": "Banco Central, SGS série 1619 (salário mínimo)",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1619/dados?formato=json",
+      "o_que_sustenta": "Valores do mínimo no início e no fim de cada período."
+    },
+    {
+      "nome": "Banco Central, SGS série 4390 (Selic acumulada no mês)",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados?formato=json",
+      "o_que_sustenta": "Selic por período (conferida para Temer e Lula 3)."
+    },
+    {
+      "nome": "Banco Central, SGS série 7326 (PIB, variação real anual)",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.7326/dados?formato=json",
+      "o_que_sustenta": "Crescimento médio do PIB por período."
+    },
+    {
+      "nome": "IBGE, PNAD Contínua: retrospectiva 2012 a 2025",
+      "url": "https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Principais_destaques_PNAD_continua/2012_2025/PNAD_continua_retrospectiva_2012_2025.pdf",
+      "o_que_sustenta": "Médias anuais oficiais de desemprego a partir de 2012."
+    },
+    {
+      "nome": "Bacciotti e Marçal (2020), série reconstruída de desemprego",
+      "url": "https://revistas.usp.br/ee/article/download/141971/163750/439399",
+      "o_que_sustenta": "Desemprego de 1995 a 2011."
+    },
+    {
+      "nome": "Dieese, Pesquisa Nacional da Cesta Básica, dezembro de 2025",
+      "url": "https://www.dieese.org.br/analisecestabasica/2025/202512cestabasica.pdf",
+      "o_que_sustenta": "Custo da cesta em São Paulo (R$ 845,95 em dezembro de 2025), usado na conferência da coluna de cestas."
+    },
+    {
+      "nome": "Barros, Medindo o crescimento do agronegócio: bonança externa e preços relativos (Ipea)",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/9252/1/Medindo%20o%20crescimento.pdf",
+      "o_que_sustenta": "Alta dos termos de troca do Brasil no ciclo das commodities dos anos 2000."
+    },
+    {
+      "nome": "Neri, Camargo e Reis (Ipea, Texto para Discussão 743, 2000)",
+      "url": "https://cps.fgv.br/sites/cps.fgv.br/files/artigo/Mercado%2520de%2520Trabalho%2520nos%2520Anos%252090%2520Fatos%2520Estilizados%2520e%2520Interpretacoes.pdf",
+      "o_que_sustenta": "Âncora cambial do Plano Real e crises de 1998."
+    },
+    {
+      "nome": "Barbosa Filho, A crise econômica de 2014/2017 (Estudos Avançados, 2017)",
+      "url": "https://revistas.usp.br/eav/article/view/132416",
+      "o_que_sustenta": "Leitura da recessão como resultado de erros de política econômica."
+    },
+    {
+      "nome": "Rossi e Mello, Nota do Cecon/Unicamp n. 1 (2017)",
+      "url": "https://www.eco.unicamp.br/images/arquivos/NotaCecon1_Choque_recessivo_2.pdf",
+      "o_que_sustenta": "Leitura da recessão como resultado do choque contracionista de 2015."
+    },
+    {
+      "nome": "Banco Central, carta aberta de julho de 2025 (Ofício 17.431/2025)",
+      "url": "https://www.bcb.gov.br/content/controleinflacao/controleinflacao_docs/carta_aberta/OF_CIO_17431_2025_BCB_SECRE_01.pdf",
+      "o_que_sustenta": "Fatores apontados pelo Banco Central para a inflação acima da meta e Selic de 15%."
+    }
+  ],
+  "como_ler": "Cada linha da tabela é um período presidencial e cada coluna é um indicador expresso como média por ano dentro do período, em porcentagem, com exceção da última, que está em número de cestas básicas. Inflação (IPCA), ganho real do mínimo e Selic usam datas mensais exatas de início e fim (Dilma 2: janeiro de 2015 a maio de 2016; Temer: junho de 2016 a dezembro de 2018; Lula 3: até setembro de 2026), enquanto PIB e desemprego usam anos completos e deixam 2016 de fora por ter sido dividido entre dois governos (Dilma 2 = 2015; Temer = 2017 e 2018; Lula 3 = 2023 a 2025). O juro real é a Selic acumulada (série 4390 do Banco Central) descontada a inflação do IPCA no mesmo intervalo. A coluna de cestas mostra quantas cestas básicas de São Paulo, medidas pelo Departamento Intersindical de Estatística e Estudos Socioeconômicos (Dieese), o salário mínimo comprava no último ano completo de cada período; para Lula 3, ainda em curso, a conta usa o mínimo de R$ 1.621 e a cesta de setembro de 2026 (R$ 922,51), o que dá 1,76. Lula 3 está em curso, e seus números mudam a cada atualização.",
+  "contexto": [
+    "A tabela resume sete indicadores para cada período presidencial, do primeiro mandato de Fernando Henrique Cardoso (1995) ao terceiro de Lula (até setembro de 2026), sempre como média por ano para que mandatos de duração diferente fiquem comparáveis. A inflação é o Índice Nacional de Preços ao Consumidor Amplo (IPCA) do IBGE; o mínimo real é o ganho do salário mínimo descontado o Índice Nacional de Preços ao Consumidor (INPC); o desemprego é a média das taxas anuais; o PIB é o crescimento real médio; a Selic é a taxa básica de juros acumulada, e o juro real é a Selic descontada a inflação. A última coluna divide o salário mínimo pelo custo da cesta básica de alimentos de São Paulo medido pelo Departamento Intersindical de Estatística e Estudos Socioeconômicos (Dieese), mostrando quantas cestas um mínimo comprava.",
+    "Os números refletem decisões de governo e também condições fora do controle do Poder Executivo. O primeiro mandato de FHC teve juro real de 21,6% ao ano, em um período em que o câmbio servia de âncora para a estabilização do Plano Real; depois da desvalorização de 1999 e da adoção das metas de inflação, os juros caíram aos poucos. Os dois primeiros mandatos de Lula coincidiram com a alta dos preços internacionais das matérias-primas, que melhorou os termos de troca do país, segundo estudo publicado pelo Instituto de Pesquisa Econômica Aplicada (Ipea), e a crise financeira de 2008 interrompeu o crescimento em 2009. O período Dilma 2 concentra a recessão de 2015, cujas causas são disputadas: Fernando de Holanda Barbosa Filho (FGV Ibre) aponta erros de política econômica da Nova Matriz Econômica, e Pedro Rossi e Guilherme Mello (Unicamp) atribuem a queda ao choque contracionista de 2015. O período Bolsonaro inclui a pandemia de 2020 e o choque mundial de preços de 2021 e 2022, e Lula 3 tem juros reais altos, que o Banco Central associou a expectativas de inflação acima da meta e atividade aquecida.",
+    "Por isso a tabela descreve o ambiente econômico de cada período, e qualquer avaliação de governo precisa levar em conta quem decide cada variável: juros são definidos pelo Banco Central, regras como a do salário mínimo passam pelo Congresso, e muitos efeitos aparecem com defasagem de um ou dois anos. Períodos curtos, como Dilma 2 e Temer, são mais sensíveis às datas de corte e a choques pontuais. Lida com essas ressalvas, ela ajuda a comparar o ambiente econômico que cada período enfrentou e o que mudou no bolso de quem vive de salário: inflação, emprego, poder de compra do mínimo e custo do crédito."
+  ],
+  "glossario": [
+    {
+      "termo": "Selic",
+      "definicao": "Taxa básica de juros da economia, definida pelo Comitê de Política Monetária (Copom) do Banco Central."
+    },
+    {
+      "termo": "Juro real",
+      "definicao": "Juro descontada a inflação do mesmo período, que mede o rendimento ou o custo efetivo do dinheiro emprestado."
+    },
+    {
+      "termo": "Cesta básica (Dieese)",
+      "definicao": "Conjunto de alimentos essenciais para um adulto por um mês, cujo custo o Dieese pesquisa mensalmente nas capitais."
+    },
+    {
+      "termo": "Termos de troca",
+      "definicao": "Relação entre os preços das exportações e das importações de um país; sobem quando o que o país vende fica mais caro que o que ele compra."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal para inflação, Selic e mínimo real (Lula 3 em curso); anual para PIB e desemprego; cesta do Dieese mensal, no início de cada mês.",
+    "proxima": "IPCA e INPC de outubro de 2026 por volta de 10/11/2026; Selic de outubro disponível no SGS no início de novembro; PIB e desemprego de 2026 só em 2027 (estimativa).",
+    "onde_buscar": "IPCA: https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2266/p/all ; INPC: https://apisidra.ibge.gov.br/values/t/1736/n1/all/v/2289/p/all ; Selic acumulada no mês: https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados?formato=json ; mínimo: https://api.bcb.gov.br/dados/serie/bcdata.sgs.1619/dados?formato=json ; PIB: https://api.bcb.gov.br/dados/serie/bcdata.sgs.7326/dados?formato=json ; cesta: https://www.dieese.org.br/analisecestabasica/",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Período",
+    "Inflação %",
+    "Mínimo real %",
+    "Desemprego %",
+    "PIB %",
+    "Selic %",
+    "Juro real %",
+    "Cestas por mínimo"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Inflação Lula 3: 4,7%",
+      "valor_na_fonte": "4,72% ao ano (IPCA de dez/2022 a set/2026)",
+      "fonte": "IBGE Sidra 1737",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Inflação Dilma 2: 10,5%",
+      "valor_na_fonte": "10,48% ao ano (dez/2014 a mai/2016)",
+      "fonte": "IBGE Sidra 1737",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Selic Temer: 9,5%; juro real 5,9%",
+      "valor_na_fonte": "9,52% e 5,89% ao ano (jun/2016 a dez/2018)",
+      "fonte": "BCB SGS 4390 e IBGE Sidra 1737",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Selic Lula 3: 13,0%; juro real 7,9%",
+      "valor_na_fonte": "13,04% e 7,95% ao ano (jan/2023 a set/2026)",
+      "fonte": "BCB SGS 4390 e IBGE Sidra 1737",
+      "ok": true,
+      "observacao": "O juro real fica no limite entre 7,9 e 8,0 conforme o arredondamento intermediário."
+    },
+    {
+      "valor_no_portal": "PIB Lula 2: 4,6%; PIB Dilma 2: -3,5%",
+      "valor_na_fonte": "4,60% (2007 a 2010) e -3,55% (2015)",
+      "fonte": "BCB SGS 7326",
+      "ok": true,
+      "observacao": "-3,55 arredondado para uma casa pode aparecer como -3,5 ou -3,6 conforme a regra; o IBGE comunica -3,5%."
+    },
+    {
+      "valor_no_portal": "Desemprego Temer: 12,4%; Lula 3: 6,7%",
+      "valor_na_fonte": "12,4% (média de 2017 e 2018) e 6,67% (média de 2023 a 2025)",
+      "fonte": "IBGE, médias anuais da PNAD Contínua (valores da série do portal)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Mínimo real Bolsonaro: -0,3%",
+      "valor_na_fonte": "-0,30% ao ano",
+      "fonte": "BCB SGS 1619 e IBGE Sidra 1736",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Cestas por mínimo Lula 3: 1,76",
+      "valor_na_fonte": "1.621 / 922,51 = 1,757 (cesta de São Paulo, setembro de 2026); com a cesta de dezembro de 2025 daria 1,79",
+      "fonte": "Dieese, cesta básica de dezembro de 2025",
+      "ok": true,
+      "observacao": "Critério de Lula 3 explicado em como_ler."
+    }
+  ],
+  "linhas": [
+    ["FHC 1", 9.4, 6.9, 8.3, 2.5, 33.1, 21.6, 1.22],
+    ["FHC 2", 8.8, 1.8, 9.9, 2.3, 19.8, 10.2, 1.42],
+    ["Lula 1", 6.4, 8.4, 9.8, 3.5, 18.4, 11.3, 1.91],
+    ["Lula 2", 5.1, 4.1, 8.5, 4.6, 11.0, 5.6, 2.06],
+    ["Dilma 1", 6.2, 3.0, 7.3, 2.3, 9.8, 3.4, 2.1],
+    ["Dilma 2", 10.5, 3.1, 8.9, -3.5, 13.4, 2.7, 2.02],
+    ["Temer", 3.4, 0.3, 12.4, 1.5, 9.5, 5.9, 2.15],
+    ["Bolsonaro", 6.1, -0.3, 12.3, 1.4, 6.3, 0.2, 1.59],
+    ["Lula 3", 4.7, 3.5, 6.7, 3.0, 13.0, 7.9, 1.76]
+  ]
+}

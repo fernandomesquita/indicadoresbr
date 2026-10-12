@@ -1,0 +1,162 @@
+{
+  "id": "pec38-assinaturas",
+  "categoria": "politicas-publicas",
+  "ordem": 5,
+  "visivel": true,
+  "titulo": "Quem assinou a PEC 38, a nova reforma administrativa",
+  "subtitulo": "Assinaturas por partido na proposta protocolada em 24 de outubro de 2025",
+  "tipo": "barras",
+  "x": "Partido",
+  "series": [
+    "Assinaturas"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "fonte": {
+    "nome": "Câmara dos Deputados, ficha da PEC 38/2025",
+    "url": "https://www.congressonacional.leg.br/materias/materias-bicamerais/-/ver/pec-38-2025"
+  },
+  "fontes": [
+    {
+      "nome": "Congresso Nacional, ficha da PEC 38/2025",
+      "url": "https://www.congressonacional.leg.br/materias/materias-bicamerais/-/ver/pec-38-2025",
+      "o_que_sustenta": "Ementa, data de apresentação (24/10/2025), primeiro signatário, situação e indeferimento de pedido de retirada de assinatura em 20/7/2026."
+    },
+    {
+      "nome": "Direção Concursos, Reforma administrativa é protocolada na Câmara",
+      "url": "https://www.direcaoconcursos.com.br/noticias/reforma-adminsitrativa-protocolada-camara",
+      "o_que_sustenta": "Lista de autores por partido usada na checagem e informação de que o relator não assinou."
+    },
+    {
+      "nome": "Congresso em Foco, Sob pressão, deputados retiram apoio à reforma administrativa",
+      "url": "https://www.congressoemfoco.com.br/noticia/113685/sob-pressao-deputados-retiram-apoio-a-reforma-administrativa",
+      "o_que_sustenta": "171 assinaturas, 16 pedidos de retirada por partido e argumentos a favor e contra."
+    },
+    {
+      "nome": "Blog Gran Cursos, Regimento Interno da Câmara, arts. 100 a 113",
+      "url": "https://blog.grancursosonline.com.br/questoes-ineditas-de-regimento-interno-da-camara-dos-deputados-art-100-ao-113/",
+      "o_que_sustenta": "Texto do art. 102, § 4º, do RICD sobre a impossibilidade de retirar assinaturas após a apresentação."
+    },
+    {
+      "nome": "Sindifisco-MS (reprodução do JOTA), Dweck se opõe à reforma administrativa (25/11/2025)",
+      "url": "https://www.sindifisco-ms.org.br/dweck-se-opoe-a-reforma-administrativa-ampla-demais-e-com-excesso-de-constitucionalizacao/",
+      "o_que_sustenta": "Posição do Ministério da Gestão sobre o texto da PEC 38."
+    },
+    {
+      "nome": "Revista Oeste, PEC da reforma administrativa é protocolada na Câmara",
+      "url": "https://revistaoeste.com/politica/pec-da-reforma-administrativa-e-protocolada-na-camara/",
+      "o_que_sustenta": "Data do protocolo, exigência de 308 votos e principais pontos do texto."
+    },
+    {
+      "nome": "Wagner Advogados (Estadão Conteúdo), Placar da PEC 38",
+      "url": "https://wagner.adv.br/placar-da-pec-38-maioria-dos-deputados-resiste-e-pec-nao-ganha-tracao-na-camara/",
+      "o_que_sustenta": "Placar de posições dos deputados em dezembro de 2025 (76 a favor, 134 contra)."
+    }
+  ],
+  "como_ler": "Cada barra é um partido e mostra quantos de seus deputados assinaram a PEC 38/2025 na apresentação, em 24 de outubro de 2025; a soma é 171, o mínimo de um terço da Câmara. Barras com valor zero (PT, PSOL, PCdoB, PDT, PV, Rede e Avante) indicam partidos sem nenhum signatário. O gráfico usa a sigla registrada para cada signatário na ficha da proposta, e quem trocou de partido depois pode aparecer em outra legenda em listas atualizadas. Os 16 pedidos de retirada feitos depois do protocolo não mudam a contagem, porque o regimento não permite retirar assinatura após a apresentação. Listas publicadas pela imprensa variam em uma ou duas assinaturas para MDB, PP e Republicanos.",
+  "contexto": [
+    "A PEC 38/2025 é a proposta de reforma administrativa elaborada a partir de um grupo de trabalho da Câmara relatado pelo deputado Pedro Paulo (PSD-RJ) e protocolada em 24 de outubro de 2025. Para começar a tramitar, uma PEC apresentada por deputados precisa da assinatura de pelo menos um terço da Câmara, ou 171 parlamentares, e a proposta chegou exatamente a esse número. Segundo a imprensa, o relator não assinou o texto, a pedido do presidente da Câmara, Hugo Motta, para preservar a neutralidade; na ficha de tramitação, o primeiro signatário é o deputado Zé Trovão (PL-SC). O gráfico distribui as 171 assinaturas pelo partido de cada signatário.",
+    "O texto trata de avaliação de desempenho ligada à progressão e a bônus, de um bônus por resultado, de uma tabela única de remuneração, de limites aos supersalários e de regras de gasto com pessoal para estados e municípios, entre outros pontos. O relator e outros defensores afirmam que a proposta moderniza a gestão, valoriza o bom servidor e combate privilégios. Entidades de servidores afirmam que ela enfraquece a estabilidade e as carreiras típicas de Estado. A ministra da Gestão, Esther Dweck, disse em novembro de 2025 que o Executivo não concordava com o texto como estava, por considerá-lo amplo demais e por levar à Constituição temas que poderiam ser tratados em normas infralegais.",
+    "A assinatura indica apoio ao início da tramitação e não garante voto favorável. Depois do protocolo, 16 deputados de MDB, PP, PL, União Brasil, Republicanos e PSD pediram para retirar o nome; o Regimento Interno da Câmara dos Deputados (RICD), no art. 102, § 4º, impede retirar assinaturas depois da apresentação, e a Mesa indeferiu ao menos um desses pedidos em julho de 2026. Para ser aprovada, a PEC precisa de 308 votos em dois turnos na Câmara e de 49 no Senado. Para quem estuda para concurso, o tema é central: a proposta mexe em avaliação, progressão e remuneração do serviço público, e seu destino depende da Câmara eleita em 2026."
+  ],
+  "glossario": [
+    {
+      "termo": "Proposta de Emenda à Constituição (PEC)",
+      "definicao": "Proposição que altera o texto da Constituição e exige três quintos dos votos em dois turnos em cada Casa do Congresso."
+    },
+    {
+      "termo": "Signatário",
+      "definicao": "Deputado que assina a proposição e passa a ser considerado coautor dela para fins regimentais."
+    },
+    {
+      "termo": "Estabilidade",
+      "definicao": "Garantia de que o servidor efetivo, depois do estágio probatório, só perde o cargo nas hipóteses previstas na Constituição."
+    },
+    {
+      "termo": "Carreira típica de Estado",
+      "definicao": "Carreira que exerce funções exclusivas do poder público, como fiscalização, diplomacia, advocacia pública e polícia."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Por evento: despacho do presidente da Câmara, criação de comissão, votação ou mudança de legislatura.",
+    "onde_buscar": "Ficha de tramitação da PEC 38/2025 na Câmara e no portal do Congresso Nacional; Agência Câmara.",
+    "proxima": "A partir de 1º/2/2027, quando a nova legislatura e a nova Mesa definirem o andamento da proposta; a contagem de assinaturas de 2025 não muda.",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Partido",
+    "Assinaturas"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Total: 171 assinaturas",
+      "valor_na_fonte": "171",
+      "fonte": "Congresso em Foco; Revista Oeste",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "PL 33; União Brasil 23; PSD 22",
+      "valor_na_fonte": "PL 33; União Brasil 23; PSD 22",
+      "fonte": "Direção Concursos",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "PSDB 7; Podemos 6; Novo 5; Cidadania 2; Solidariedade 2; PRD 1; PSB 1",
+      "valor_na_fonte": "Mesmos valores",
+      "fonte": "Direção Concursos",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "MDB 23",
+      "valor_na_fonte": "24",
+      "fonte": "Direção Concursos (lista de 169 linhas com um nome repetido)",
+      "ok": false
+    },
+    {
+      "valor_no_portal": "PP 26",
+      "valor_na_fonte": "24",
+      "fonte": "Direção Concursos",
+      "ok": false
+    },
+    {
+      "valor_no_portal": "Republicanos 20",
+      "valor_na_fonte": "19",
+      "fonte": "Direção Concursos",
+      "ok": false
+    },
+    {
+      "valor_no_portal": "Assinaturas não podem ser retiradas (RICD, art. 102, § 4º)",
+      "valor_na_fonte": "\"não poderão ser retiradas ou acrescentadas depois da apresentação à Mesa\"",
+      "fonte": "Blog Gran Cursos (texto do RICD); ficha da PEC (indeferimento em 20/7/2026)",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["PL", 33],
+    ["PP", 26],
+    ["União Brasil", 23],
+    ["MDB", 23],
+    ["PSD", 22],
+    ["Republicanos", 20],
+    ["PSDB", 7],
+    ["Podemos", 6],
+    ["Novo", 5],
+    ["Cidadania", 2],
+    ["Solidariedade", 2],
+    ["PRD", 1],
+    ["PSB", 1],
+    ["PT", 0],
+    ["PSOL", 0],
+    ["PCdoB", 0],
+    ["PDT", 0],
+    ["PV", 0],
+    ["Rede", 0],
+    ["Avante", 0]
+  ]
+}

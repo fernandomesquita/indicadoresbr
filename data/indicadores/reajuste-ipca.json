@@ -1,0 +1,168 @@
+{
+  "id": "reajuste-ipca",
+  "categoria": "politicas-publicas",
+  "ordem": 8,
+  "visivel": true,
+  "titulo": "Reajuste geral do servidor contra a inflação",
+  "subtitulo": "Índice geral concedido e IPCA acumulado em cada governo",
+  "tipo": "tabela",
+  "x": "Governo",
+  "series": [],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "fonte": {
+    "nome": "Leis de reajuste (10.331/2001 a 15.141/2025) e IBGE",
+    "url": "https://www.ibge.gov.br/explica/inflacao.php"
+  },
+  "fontes": [
+    {
+      "nome": "Câmara dos Deputados, Lei 10.331/2001 (publicação original)",
+      "url": "https://www2.camara.leg.br/legin/fed/lei/2001/lei-10331-18-dezembro-2001-428599-publicacaooriginal-1-pl.html",
+      "o_que_sustenta": "Regras da revisão geral anual e índice de 3,5% para 2002."
+    },
+    {
+      "nome": "ConJur, Lei que deu aumento de R$ 59 a servidores produziu 30 mil processos (23/10/2017)",
+      "url": "https://www.conjur.com.br/2017-out-23/lei-deu-aumento-59-servidores-produziu-30-mil-processos//?print=1",
+      "o_que_sustenta": "Revisão de 1% (Lei 10.697/2003) e vantagem de R$ 59,87 (Lei 10.698/2003)."
+    },
+    {
+      "nome": "Estado de Minas, reajuste de 15,8% para 24 categorias (6/12/2012)",
+      "url": "https://www.em.com.br/app/noticia/politica/2012/12/06/interna_politica,335109/amp.html",
+      "o_que_sustenta": "Reajuste de 15,8% escalonado de 2013 a 2015."
+    },
+    {
+      "nome": "Congresso em Foco, Mais de 60% dos servidores federais fecham acordo salarial (11/10/2015)",
+      "url": "https://www.congressoemfoco.com.br/noticia/57080/mais-de-60-dos-servidores-federais-fecham-acordo-salarial-com-o-governo",
+      "o_que_sustenta": "Acordo de 10,8% em duas parcelas (5,5% em agosto de 2016 e 5% em janeiro de 2017)."
+    },
+    {
+      "nome": "Movimento Econômico, Ministro diz que governo não conseguirá dar reajuste a servidores (10/6/2022)",
+      "url": "https://movimentoeconomico.com.br/geral/2022/06/10/ministro-diz-que-governo-nao-conseguira-dar-reajuste-a-servidores/",
+      "o_que_sustenta": "Ausência de reajuste geral para o funcionalismo civil em 2022."
+    },
+    {
+      "nome": "Agência Câmara, Câmara aprova MP que concede reajuste salarial a servidores federais (2023)",
+      "url": "https://www.camara.leg.br/noticias/990004-camara-aprova-mp-que-concede-reajuste-salarial-a-servidores-federais/",
+      "o_que_sustenta": "Reajuste de 9% a partir de 1º/5/2023 (MP 1.170/2023)."
+    },
+    {
+      "nome": "O Povo, Lula sanciona lei do reajuste salarial dos servidores federais (3/6/2025)",
+      "url": "https://www.opovo.com.br/noticias/economia/2025/06/03/amp/lula-sanciona-lei-do-reajuste-salarial-dos-servidores-federais-confira.html",
+      "o_que_sustenta": "9% em 2025 e 5% em 2026 para categorias sem acordo (Lei 15.141/2025)."
+    },
+    {
+      "nome": "Folha Vitória, Governo publica medida que dá aumento de 27% a servidores (2/1/2025)",
+      "url": "https://www.folhavitoria.com.br/economia/governo-publica-medida-que-da-aumento-de-27-a-servidores/",
+      "o_que_sustenta": "Aumento médio acumulado de 27% de 2023 a 2026 com os acordos por carreira (MP 1.286/2024)."
+    },
+    {
+      "nome": "Poder360, Lula sanciona reajuste a funcionários federais; impacto é de R$ 73 bi",
+      "url": "https://www.poder360.com.br/poder-governo/lula-sanciona-reajuste-a-funcionarios-federais-impacto-e-de-r-73-bi/",
+      "o_que_sustenta": "Estimativa oficial de impacto de R$ 73,92 bilhões até 2027."
+    },
+    {
+      "nome": "Yahii, IPCA acumulado por ano (série do IBGE)",
+      "url": "https://www.yahii.com.br/ipca.html",
+      "o_que_sustenta": "IPCA anual de 1995 a 2025 e acumulado de 2026 até agosto (3,11%)."
+    },
+    {
+      "nome": "IBGE Explica, Inflação",
+      "url": "https://www.ibge.gov.br/explica/inflacao.php",
+      "o_que_sustenta": "IPCA de setembro de 2026 (0,82%) e indicação das tabelas oficiais da série."
+    }
+  ],
+  "como_ler": "Cada linha é um governo. A segunda coluna traz o índice linear concedido ao conjunto dos servidores; a terceira, o IPCA acumulado nos anos-calendário do mandato (para Lula 3, de janeiro de 2023 a setembro de 2026); a última, o saldo de poder de compra de quem recebeu só esse índice. Um saldo negativo de 21% significa que, ao fim do período, o mesmo contracheque comprava cerca de 21% menos do que no início. Carreiras reestruturadas tiveram trajetórias próprias, muitas vezes acima do índice linear: no governo Lula 3, o MGI informa aumento médio acumulado de 27% de 2023 a 2026 quando se incluem os acordos por carreira. Os anos-calendário não coincidem com os mandatos (2016 inteiro conta para Temer), e a vantagem fixa de R$ 59,87 de 2003 fica fora do saldo de Lula 1 e 2.",
+  "contexto": [
+    "A tabela compara o índice de reajuste linear concedido ao conjunto dos servidores civis do Executivo federal em cada governo com a inflação medida pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA), do IBGE, no mesmo período. O saldo indica o ganho ou a perda de poder de compra de quem recebeu apenas esse índice, calculado pela divisão do fator acumulado do reajuste pelo fator acumulado da inflação. A Constituição prevê, no art. 37, inciso X, revisão geral anual da remuneração, sem distinção de índices; a Lei 10.331/2001 regulamentou a regra, fixou janeiro como mês de referência e condicionou o índice a lei específica, previsão no Orçamento e limites de gasto com pessoal.",
+    "Na prática, a revisão geral formal foi rara, e a maior parte dos aumentos veio de acordos negociados por carreira. Os índices lineares da tabela são 22,07% em 1995 e 3,5% em 2002 (Lei 10.331/2001); em 2003, 1% de revisão geral (Lei 10.697/2003) e uma vantagem fixa de R$ 59,87 (Lei 10.698/2003). Vieram depois 15,8% em três parcelas de 2013 a 2015, aprovados em 2012, e 5,5% em agosto de 2016 e 5% em janeiro de 2017, acordados em 2015 e pagos no governo Temer. De 2019 a 2022 não houve índice geral para civis, período que incluiu a proibição de reajustes até dezembro de 2021 pela Lei Complementar 173/2020. No governo Lula 3, os índices foram 9% em maio de 2023 (Medida Provisória 1.170/2023) e 9% em 2025 e 5% em 2026 para as categorias sem acordo próprio (Lei 15.141/2025).",
+    "Para o cidadão, a remuneração dos servidores é uma das maiores despesas obrigatórias da União, e cada ponto de reajuste tem impacto de bilhões de reais: o governo estimou o custo da Lei 15.141/2025 em R$ 73,9 bilhões até 2027. Defensores de reajustes maiores argumentam que eles repõem perdas acumuladas e ajudam a reter profissionais; defensores de contenção argumentam que a folha limita o espaço para investimentos e políticas públicas. Para quem estuda para concurso, o histórico mostra que a remuneração real de um cargo depende do índice geral e, sobretudo, das negociações de cada carreira."
+  ],
+  "glossario": [
+    {
+      "termo": "Revisão geral anual",
+      "definicao": "Reajuste previsto no art. 37, X, da Constituição, concedido por lei a todos os servidores na mesma data e sem distinção de índices."
+    },
+    {
+      "termo": "IPCA",
+      "definicao": "Índice Nacional de Preços ao Consumidor Amplo, calculado pelo IBGE e usado como inflação oficial do país."
+    },
+    {
+      "termo": "Reestruturação de carreira",
+      "definicao": "Mudança nas tabelas, gratificações e níveis de uma carreira específica, que pode gerar aumento diferente do índice geral."
+    },
+    {
+      "termo": "Poder de compra",
+      "definicao": "Quantidade de bens e serviços que uma remuneração consegue adquirir, considerada a inflação."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal para o IPCA (divulgado pelo IBGE por volta do dia 10); por evento para os reajustes (nova lei ou medida provisória).",
+    "onde_buscar": "IBGE (IPCA, tabela 1737 do Sidra); Diário Oficial da União e portal da Câmara para as leis de reajuste; MGI para os acordos por carreira.",
+    "proxima": "Por volta de 10/11/2026, com o IPCA de outubro; fechamento de Lula 3 em janeiro de 2027, com o IPCA de dezembro de 2026.",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Governo",
+    "Reajuste geral",
+    "IPCA no período",
+    "Saldo"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "IPCA FHC: 100,7%",
+      "valor_na_fonte": "100,6% (produto de 1995 a 2002)",
+      "fonte": "IBGE, via série anual da Yahii",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "IPCA Lula 1 e 2: 56,7%; Dilma: 40,6%",
+      "valor_na_fonte": "56,7%; 40,6%",
+      "fonte": "IBGE, via série anual da Yahii",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "IPCA Temer: 13,5%; Bolsonaro: 26,9%",
+      "valor_na_fonte": "13,5% (2016 a 2018); 26,9% (2019 a 2022)",
+      "fonte": "IBGE, via série anual da Yahii",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "IPCA Lula 3: 18,9%",
+      "valor_na_fonte": "18,9% (4,62% em 2023, 4,83% em 2024, 4,26% em 2025 e 3,96% em 2026 até setembro)",
+      "fonte": "Yahii; IBGE Explica (0,82% em setembro)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Temer: 10,8% em 2016 e 2017",
+      "valor_na_fonte": "5,5% em agosto de 2016 e 5% em janeiro de 2017, total de 10,8%",
+      "fonte": "Congresso em Foco, 2015",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Lula 3: 9% em 2023, 9% em 2025 e 5% em 2026",
+      "valor_na_fonte": "9% desde maio de 2023 (MP 1.170); 9% em 2025 e 5% em 2026 para categorias sem acordo (Lei 15.141). A Agência Brasil descreveu o índice de 2026 como 9%, o que diverge do O Povo",
+      "fonte": "Agência Câmara; O Povo; Agência Brasil",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Saldos de -37%, -36%, -18%, -2%, -21% e +5%",
+      "valor_na_fonte": "Recalculados: -37,0%, -35,5%, -17,7%, -2,4%, -21,2% e +4,9%",
+      "fonte": "Cálculo próprio com os índices acima",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["FHC", "22,07% em 1995 e 3,5% em 2002", "100,7%", "−37%"],
+    ["Lula 1 e 2", "1% e R$ 59,87 fixos em 2003, mais reestruturações por carreira", "56,7%", "−36%"],
+    ["Dilma", "15,8% de 2013 a 2015", "40,6%", "−18%"],
+    ["Temer", "10,8% em 2016 e 2017", "13,5%", "−2%"],
+    ["Bolsonaro", "sem revisão geral para civis", "26,9%", "−21%"],
+    ["Lula 3", "9% em 2023, 9% em 2025 e 5% em 2026", "18,9%", "+5%"]
+  ]
+}

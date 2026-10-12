@@ -1,0 +1,161 @@
+{
+  "id": "credito-pib",
+  "categoria": "economia",
+  "ordem": 9,
+  "visivel": true,
+  "titulo": "O crédito trocou de cliente",
+  "subtitulo": "Saldo do crédito dos bancos a empresas e a famílias, em % do PIB",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Empresas",
+    "Famílias"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "Banco Central, SGS 20623 e 20622",
+    "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20623/dados?formato=json"
+  },
+  "fontes": [
+    {
+      "nome": "Banco Central do Brasil, SGS 20623 (crédito a pessoas jurídicas em % do PIB)",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20623/dados?formato=json",
+      "o_que_sustenta": "Fonte primária da linha das empresas."
+    },
+    {
+      "nome": "Banco Central do Brasil, SGS 20622 (crédito total em % do PIB)",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20622/dados?formato=json",
+      "o_que_sustenta": "Crédito total, do qual se subtrai o das empresas para obter a linha das famílias."
+    },
+    {
+      "nome": "Banco Central, Dados Abertos, metadados da série 20623",
+      "url": "https://dadosabertos.bcb.gov.br/da_DK/dataset/20623-saldo-da-carteira-de-credito-a-pessoas-juridicas-em-relacao-ao-pib",
+      "o_que_sustenta": "Definição da série e do denominador (PIB de doze meses a preços correntes)."
+    },
+    {
+      "nome": "Banco Central, Relatório de Inflação de março de 2018, boxe sobre financiamento das empresas",
+      "url": "https://www.bcb.gov.br/htms/relinf/port/2018/03/ri201803b6p.pdf",
+      "o_que_sustenta": "Queda do crédito direcionado entre 2015 e 2017, substituição por mercado de capitais e dívida externa e acesso restrito a poucas empresas."
+    },
+    {
+      "nome": "Banco Central, nota de estatísticas monetárias e de crédito de janeiro de 2021",
+      "url": "https://bcb.gov.br/content/estatisticas/hist_estatisticasmonetariascredito/202101_Texto_de_estatisticas_monetarias_e_de_credito.pdf",
+      "o_que_sustenta": "Crescimento de 21,8% do crédito às empresas em 2020 com programas de crédito da pandemia; razão crédito/PIB de 54,2% publicada à época."
+    },
+    {
+      "nome": "Banco Central, nota de estatísticas monetárias e de crédito de agosto de 2026 (via Poder360)",
+      "url": "https://static.poder360.com.br/uploads/2026/09/BC-estatisticas-monetarias-credito-agosto-29set2026.pdf",
+      "o_que_sustenta": "Crédito ampliado às empresas de 54,6% do PIB, inadimplência e juros de agosto de 2026."
+    },
+    {
+      "nome": "Mercado & Consumo, juros para famílias sobem em agosto",
+      "url": "https://mercadoeconsumo.com.br/29/09/2026/economia/juros-para-familias-sobem-em-agosto-e-inadimplencia-chega-a-6/",
+      "o_que_sustenta": "Saldos, juros do crédito livre e inadimplência de agosto de 2026."
+    },
+    {
+      "nome": "Banco Central, Relatório de Estabilidade Financeira, maio de 2026",
+      "url": "https://www.bcb.gov.br/conteudo/home-ptbr/TextosApresentacoes/REF_maio_2026.pdf",
+      "o_que_sustenta": "Desaceleração do crédito às famílias nas modalidades de maior risco e crescimento do mercado de capitais em 2025."
+    }
+  ],
+  "como_ler": "As duas linhas mostram o saldo do crédito bancário como percentual do PIB, uma para empresas e outra para famílias, com o valor de dezembro de cada ano entre 2010 e 2025. O ponto de 2026 é agosto, último dado disponível, e por isso é parcial. O denominador é o PIB acumulado em doze meses a preços correntes; quando o Instituto Brasileiro de Geografia e Estatística (IBGE) revisa o PIB, o Banco Central recalcula a razão, e por isso números publicados no passado podem diferir dos atuais. A linha das famílias é o crédito total menos o crédito às empresas. Nenhuma das linhas inclui debêntures, notas comerciais ou dívida no exterior, que hoje financiam boa parte das grandes empresas.",
+  "contexto": [
+    "O indicador compara o saldo de empréstimos e financiamentos concedidos pelas instituições do Sistema Financeiro Nacional (SFN) com o tamanho da economia, medido pelo Produto Interno Bruto (PIB) somado dos últimos doze meses. A linha das empresas usa a série oficial de crédito a pessoas jurídicas; a das famílias é a diferença entre o crédito total e o das empresas, o que equivale ao crédito a pessoas físicas. O retrato inclui apenas a carteira dos bancos e demais instituições financeiras e deixa de fora debêntures, notas comerciais e dívida contraída no exterior.",
+    "Até 2015, os dois tipos de crédito cresceram juntos, e o das empresas chegou a 28,5% do PIB em dezembro daquele ano. Na recessão de 2015 e 2016, o crédito bancário às empresas encolheu: segundo o Banco Central, as concessões do crédito direcionado, em grande parte ligado ao BNDES, caíram cerca de 40% entre 2015 e 2017, e parte das empresas trocou o banco por debêntures, notas comerciais e captação externa. Em 2020, programas de crédito lançados no segundo semestre para enfrentar a pandemia fizeram o crédito às empresas crescer 21,8% no ano, e a razão subiu para 23,4% do PIB; depois disso, voltou para perto de 21%. O crédito às famílias seguiu outra trajetória e subiu quase sem interrupção, de 20,0% do PIB em 2010 para 35,0% em agosto de 2026.",
+    "A troca de cliente tem leituras diferentes. O próprio Banco Central avaliou, em 2018, que o mercado de capitais ajudou as empresas a reduzir o custo da dívida, e registrou que o acesso a esse mercado se limita a um número pequeno de companhias, em geral grandes. Contando títulos e dívida externa, o crédito ampliado às empresas somava 54,6% do PIB em agosto de 2026, bem acima dos 20,4% que aparecem no gráfico. Para as famílias, mais crédito permite comprar imóvel, carro e bens duráveis, e também eleva o peso das parcelas no orçamento: em agosto de 2026, a inadimplência das pessoas físicas era de 6,0%, contra 3,3% das empresas, e o juro médio do crédito livre para famílias chegou a 61,7% ao ano."
+  ],
+  "glossario": [
+    {
+      "termo": "Saldo da carteira de crédito",
+      "definicao": "Valor total que as pessoas e empresas ainda devem aos bancos numa data, somando todas as operações em aberto."
+    },
+    {
+      "termo": "Sistema Financeiro Nacional (SFN)",
+      "definicao": "Conjunto de bancos, cooperativas de crédito, financeiras e demais instituições autorizadas pelo Banco Central."
+    },
+    {
+      "termo": "Debênture",
+      "definicao": "Título de dívida emitido por uma empresa para captar recursos diretamente com investidores, sem passar pelo empréstimo bancário."
+    },
+    {
+      "termo": "Crédito ampliado",
+      "definicao": "Medida do Banco Central que soma ao crédito bancário os títulos de dívida e os empréstimos externos de empresas e famílias."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal, com cerca de um mês de defasagem",
+    "proxima": "Fim de outubro de 2026, com o dado de setembro; dezembro de 2026 sai no fim de janeiro de 2027",
+    "onde_buscar": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20623/dados?formato=json e https://api.bcb.gov.br/dados/serie/bcdata.sgs.20622/dados?formato=json",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Ano",
+    "Empresas",
+    "Famílias"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "20,44% empresas e 35,0% famílias (2026 = agosto)",
+      "valor_na_fonte": "20,44 (PJ) e 55,44 (total) em 08/2026; 55,44 menos 20,44 = 35,00",
+      "fonte": "BCB SGS 20623 e 20622",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "21,21% empresas e 34,82% famílias (2025)",
+      "valor_na_fonte": "21,21 (PJ) e 56,03 (total) em 12/2025",
+      "fonte": "BCB SGS 20623 e 20622",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "28,54% empresas e 25,31% famílias (2015)",
+      "valor_na_fonte": "28,54 (PJ) e 53,85 (total) em 12/2015",
+      "fonte": "BCB SGS 20623 e 20622",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "24,71% empresas (2016)",
+      "valor_na_fonte": "24,71 (12/2016)",
+      "fonte": "BCB SGS 20623",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "23,42% + 29,43% (2020)",
+      "valor_na_fonte": "52,85 (total, 12/2020)",
+      "fonte": "BCB SGS 20622",
+      "ok": true,
+      "obs": "A soma confere com a série atual. A nota do Banco Central de janeiro de 2021 publicou 54,2% para o mesmo mês; a diferença vem das revisões posteriores do PIB pelo IBGE, e o portal usa corretamente a série revisada."
+    },
+    {
+      "valor_no_portal": "24,11% + 19,97% (2010)",
+      "valor_na_fonte": "44,08 (total, 12/2010)",
+      "fonte": "BCB SGS 20622",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2010, 24.11, 19.97],
+    [2011, 25.42, 21.06],
+    [2012, 26.83, 22.36],
+    [2013, 27.42, 23.42],
+    [2014, 27.73, 24.49],
+    [2015, 28.54, 25.31],
+    [2016, 24.71, 25.0],
+    [2017, 21.94, 25.18],
+    [2018, 20.87, 25.72],
+    [2019, 19.76, 27.28],
+    [2020, 23.42, 29.43],
+    [2021, 21.91, 30.05],
+    [2022, 21.61, 31.63],
+    [2023, 20.87, 32.18],
+    [2024, 21.22, 33.66],
+    [2025, 21.21, 34.82],
+    [2026, 20.44, 35.0]
+  ]
+}

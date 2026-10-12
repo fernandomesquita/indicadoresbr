@@ -1,0 +1,119 @@
+{
+  "id": "preocupacao-eleitor",
+  "categoria": "politicas-publicas",
+  "ordem": 9,
+  "visivel": true,
+  "titulo": "O que mais pesou no voto",
+  "subtitulo": "Maior preocupação ao votar em 2026, em % dos entrevistados",
+  "tipo": "barras",
+  "x": "Tema",
+  "series": [
+    "Respostas"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 0,
+  "fonte": {
+    "nome": "Real Time Big Data, 1º a 3/8/2026",
+    "url": "https://www.jornalopcao.com.br/ultimas-noticias/seguranca-publica-lidera-preocupacoes-do-eleitor-aponta-pesquisa-real-time-big-data-853906/"
+  },
+  "fontes": [
+    {
+      "nome": "Jornal Opção, Segurança pública lidera preocupações do eleitor, aponta pesquisa Real Time Big Data",
+      "url": "https://www.jornalopcao.com.br/ultimas-noticias/seguranca-publica-lidera-preocupacoes-do-eleitor-aponta-pesquisa-real-time-big-data-853906/",
+      "o_que_sustenta": "Pergunta, percentuais dos cinco temas, datas de campo, amostra, margem e contratantes."
+    },
+    {
+      "nome": "Metrópoles, Real Time Big Data: segurança pública é maior preocupação do eleitor (4/8/2026)",
+      "url": "https://www.metropoles.com/brasil/real-time-big-data-seguranca-publica-e-maior-preocupacao-do-eleitor",
+      "o_que_sustenta": "Confirmação dos percentuais, nível de confiança de 95% e demais perguntas da mesma pesquisa."
+    },
+    {
+      "nome": "Brasil de Fato, Datafolha: saúde e segurança lideram lista de principais problemas do país (10/3/2026)",
+      "url": "https://www.brasildefato.com.br/2026/03/10/datafolha-saude-e-seguranca-lideram-lista-de-principais-problemas-do-pais/",
+      "o_que_sustenta": "Resultado de outra metodologia (principal problema do país, março de 2026)."
+    },
+    {
+      "nome": "Correio da Manhã, Violência está no topo das preocupações dos brasileiros para as eleições",
+      "url": "https://www.correiodamanha.com.br/opiniao/2026/10/324372-violencia-esta-no-topo-das-preocupacoes-dos-brasileiros-para-as-eleicoes.html",
+      "o_que_sustenta": "Pesquisa Quaest e Pax com violência 28%, corrupção 22%, economia 19% e saúde 15%."
+    },
+    {
+      "nome": "Poder360, Violência é a principal preocupação dos brasileiros, diz Quaest (2/4/2025)",
+      "url": "https://www.poder360.com.br/poder-pesquisas/violencia-e-principal-preocupacao-dos-brasileiros-diz-quaest/",
+      "o_que_sustenta": "Série anterior da Quaest, com violência em primeiro lugar já em 2025."
+    }
+  ],
+  "como_ler": "Cada barra é um tema e mostra o percentual de entrevistados que o apontaram como maior preocupação ao votar em 2026. A pesquisa ofereceu cinco temas e os percentuais somam 100%; assuntos fora da lista, como emprego, inflação ou impostos, não aparecem. Com margem de erro de 2 pontos percentuais, corrupção (23%) e saúde (22%) estão tecnicamente empatadas, assim como endividamento (14%) e educação (13%), e segurança pública (28%) fica à frente de todas. O retrato é de 1º a 3 de agosto de 2026 e pode ter mudado ao longo da campanha.",
+  "contexto": [
+    "O gráfico traz as respostas à pergunta \"Qual será sua maior preocupação ao votar nesta eleição?\", feita pelo instituto Real Time Big Data de 1º a 3 de agosto de 2026. Foram 2 mil entrevistas com pessoas de 16 anos ou mais, com margem de erro de 2 pontos percentuais para mais ou para menos e nível de confiança de 95%. A pesquisa foi contratada pelos portais O Antagonista e G4, e os cinco temas apresentados somam 100%, o que indica uma resposta por entrevistado.",
+    "Pesquisas com métodos diferentes chegam a ordens parecidas, com variações que dependem da pergunta. O Datafolha, de 3 a 5 de março de 2026, perguntou sobre o principal problema do país e registrou saúde com 21% e violência e segurança com 19%. Um levantamento da Quaest com a empresa de tecnologia Pax, divulgado em 2026, apontou violência com 28%, corrupção com 22%, economia com 19% e saúde com 15%. A formulação da pergunta, a lista de opções e o momento da coleta mudam o resultado, por isso comparações entre institutos pedem cautela.",
+    "Para o cidadão, o dado ajuda a entender quais temas dominaram a campanha e a cobrar compromissos depois da eleição. A segurança pública, que lidera a lista, tem competências divididas: as polícias militares e civis são dos estados, e à União cabem a Polícia Federal, a Polícia Rodoviária Federal e a coordenação nacional. Para quem estuda para concurso, as prioridades do eleitorado podem orientar as contratações dos governos que tomam posse em 2027, em especial em segurança, saúde e educação."
+  ],
+  "glossario": [
+    {
+      "termo": "Margem de erro",
+      "definicao": "Intervalo, para mais ou para menos, dentro do qual o resultado real provavelmente está, considerando o tamanho da amostra."
+    },
+    {
+      "termo": "Nível de confiança",
+      "definicao": "Probabilidade de o resultado real estar dentro da margem de erro; 95% significa que, em 100 pesquisas iguais, 95 acertariam dentro dessa faixa."
+    },
+    {
+      "termo": "Empate técnico",
+      "definicao": "Situação em que a diferença entre dois percentuais é menor do que a soma das margens de erro, sem permitir afirmar qual é maior."
+    },
+    {
+      "termo": "Pergunta estimulada",
+      "definicao": "Pergunta em que o entrevistador apresenta as opções de resposta. Na pergunta espontânea, o entrevistado responde livremente."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Pontual: retrato de uma pesquisa única.",
+    "onde_buscar": "Sites dos institutos (Real Time Big Data, Datafolha, Quaest) e sistema de registro de pesquisas do TSE.",
+    "proxima": "Depois do 2º turno (25/10/2026), trocar por pesquisa mais recente ou manter como retrato da campanha, com a data em destaque.",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Tema",
+    "Respostas"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Segurança pública: 28%",
+      "valor_na_fonte": "28%",
+      "fonte": "Jornal Opção; Metrópoles",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Corrupção 23%; Saúde 22%",
+      "valor_na_fonte": "23%; 22%",
+      "fonte": "Jornal Opção; Metrópoles",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Endividamento 14%; Educação 13%",
+      "valor_na_fonte": "14%; 13%",
+      "fonte": "Jornal Opção; Metrópoles",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2 mil entrevistas, margem de 2 pontos, 1º a 3/8/2026",
+      "valor_na_fonte": "2.000 entrevistas, 16 anos ou mais, margem de 2 pontos, 95% de confiança, 1º a 3/8/2026",
+      "fonte": "Metrópoles",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Segurança pública", 28],
+    ["Corrupção", 23],
+    ["Saúde", 22],
+    ["Endividamento", 14],
+    ["Educação", 13]
+  ]
+}

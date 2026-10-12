@@ -1,0 +1,165 @@
+{
+  "id": "pico-inflacao-2022",
+  "categoria": "economia",
+  "ordem": 13,
+  "visivel": true,
+  "titulo": "Em 2022, o mundo inteiro pagou mais caro",
+  "subtitulo": "Pico da inflação em 12 meses durante a crise de 2022",
+  "tipo": "barras",
+  "x": "País",
+  "series": [
+    "Pico"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "IBGE, Eurostat, ONS e BLS",
+    "url": "https://ec.europa.eu/eurostat"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Sidra tabela 1737 (IPCA acumulado em 12 meses)",
+      "url": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2265/p/199312,199412,199512,199812,200212,201512,201712,202012,202112,202204,202212,202312,202412,202512,202608,202609",
+      "o_que_sustenta": "Pico de 12,13% em abril de 2022 e 5,79% em dezembro de 2022."
+    },
+    {
+      "nome": "ONS, Consumer price inflation, UK: October 2022",
+      "url": "https://ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2022",
+      "o_que_sustenta": "Pico de 11,1% em outubro de 2022, maior da série iniciada em 1997; energia doméstica como principal contribuição."
+    },
+    {
+      "nome": "Eurostat, Euro area annual inflation, outubro de 2022 (comunicado de 17/11/2022)",
+      "url": "https://ec.europa.eu/eurostat/documents/2995521/15265521/2-17112022-AP-EN.pdf/",
+      "o_que_sustenta": "Pico de 10,6% em outubro de 2022 e energia com alta de 41,5%."
+    },
+    {
+      "nome": "Eurostat, Annual inflation down to 9.2% in the euro area (dezembro de 2022)",
+      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-18012023-ap",
+      "o_que_sustenta": "Fechamento de 2022 em 9,2% (visto nos resultados de busca)."
+    },
+    {
+      "nome": "BLS, The Economics Daily: consumer prices up 9.1 percent over the year ended June 2022",
+      "url": "https://www.bls.gov/opub/ted/2022/consumer-prices-up-9-1-percent-over-the-year-ended-june-2022-largest-increase-in-40-years.htm",
+      "o_que_sustenta": "Pico de 9,1% em junho de 2022, maior desde novembro de 1981; energia com alta de 41,6%."
+    },
+    {
+      "nome": "BLS, Consumer Price Index, December 2022 (comunicado de 12/01/2023)",
+      "url": "https://www.bls.gov/news.release/archives/cpi_01122023.htm",
+      "o_que_sustenta": "Fechamento de 2022 em 6,5% (visto nos resultados de busca)."
+    },
+    {
+      "nome": "Banco Central, carta aberta sobre a inflação de 2021 (Ofício 823/2022)",
+      "url": "https://www.bcb.gov.br/content/controleinflacao/controleinflacao_docs/carta_aberta/OF_CIO_823_2022_BCB_SECRE_01.pdf",
+      "o_que_sustenta": "Fatores da inflação brasileira de 2021: petróleo, commodities, bandeira de escassez hídrica, combustíveis."
+    },
+    {
+      "nome": "Agência Brasil, Copom eleva juros pela primeira vez em seis anos (março de 2021)",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2021-03/copom-eleva-juros-basicos-da-economia-pela-primeira-vez-em-seis-anos/",
+      "o_que_sustenta": "Início do ciclo de alta da Selic, de 2% para 2,75% (imprensa, como apoio)."
+    },
+    {
+      "nome": "PBS NewsHour, Europe's central bank raises interest rates for first time in 11 years",
+      "url": "https://www.pbs.org/newshour/world/europes-central-bank-raises-interest-rates-for-first-time-in-11-years",
+      "o_que_sustenta": "Primeira alta de juros do Banco Central Europeu em 11 anos, em julho de 2022 (imprensa, como apoio)."
+    },
+    {
+      "nome": "Mattos Filho, novas regras tributárias sobre bens e serviços essenciais (Lei Complementar 194/2022)",
+      "url": "https://www.mattosfilho.com.br/unico/novas-regras-tributarias-bens-servicos-essenciais/",
+      "o_que_sustenta": "Conteúdo da lei que limitou o ICMS de combustíveis, energia, comunicações e transporte coletivo."
+    },
+    {
+      "nome": "Machado Meyer, Lei Complementar 194/2022 e a reação dos estados no STF",
+      "url": "https://www.machadomeyer.com.br/pt/boletim/legislacao-federal-limitacao-do-icms-incidente-sob-combustiveis-energia-eletrica-e-servicos-de-comunicacao-lei-complementar-n-194-2022-e-a-reacao-dos-estados-no-stf",
+      "o_que_sustenta": "Contestação dos estados no Supremo Tribunal Federal (visto nos resultados de busca)."
+    },
+    {
+      "nome": "Bloomberg Línea, IPCA de julho de 2022 tem deflação e menor taxa desde 1980",
+      "url": "https://www.bloomberglinea.com.br/2022/08/09/ipca-de-julho-tem-deflacao-e-menor-taxa-desde-1980-com-queda-dos-combustiveis/",
+      "o_que_sustenta": "Deflação de 0,68% em julho de 2022 puxada por combustíveis (imprensa, como apoio)."
+    }
+  ],
+  "como_ler": "Cada barra mostra o maior valor que a inflação acumulada em 12 meses atingiu em um país ou região durante a alta de preços de 2021 e 2022, em porcentagem, com o mês do pico entre parênteses. Os valores vêm dos índices oficiais de cada lugar: o Índice Nacional de Preços ao Consumidor Amplo (IPCA) do IBGE no Brasil, os índices de preços ao consumidor do Reino Unido e dos Estados Unidos e o índice harmonizado da zona do euro, que seguem métodos semelhantes com diferenças de detalhe. Os picos ocorreram em meses diferentes, de modo que as barras comparam a intensidade máxima de cada episódio, cada uma no seu mês. O resultado no fim do ano foi outro: em dezembro de 2022, o Brasil acumulava 5,79%, abaixo dos Estados Unidos (6,5%) e da zona do euro (9,2%).",
+  "contexto": [
+    "O gráfico compara o ponto mais alto da inflação acumulada em 12 meses no Brasil, no Reino Unido, na zona do euro e nos Estados Unidos durante a onda inflacionária de 2021 e 2022. Cada lugar usa seu índice oficial: o Índice Nacional de Preços ao Consumidor Amplo (IPCA) do IBGE no Brasil, o índice de preços ao consumidor do Office for National Statistics (ONS, o instituto oficial de estatística britânico), o índice harmonizado de preços ao consumidor da Eurostat (agência de estatística da União Europeia) e o índice do Bureau of Labor Statistics (BLS, órgão de estatísticas do trabalho dos Estados Unidos). Os métodos têm diferenças de detalhe, por isso a comparação vale para a ordem de grandeza e o momento do pico. Nos países ricos, os picos foram os maiores em cerca de 40 anos: nos Estados Unidos, a maior alta em 12 meses desde novembro de 1981; no Reino Unido, a maior da série oficial iniciada em 1997.",
+    "Entre as causas comuns estão a reabertura depois da pandemia, com gargalos nas cadeias de produção, e a alta de energia e alimentos, agravada pela guerra na Ucrânia a partir de fevereiro de 2022: a energia subiu 41,5% em 12 meses na zona do euro até outubro e 41,6% nos Estados Unidos até junho. O Brasil chegou ao pico antes, em abril de 2022 (12,13%), porque a inflação começou a subir mais cedo; segundo o Banco Central, em 2021 pesaram a alta do petróleo e de outras matérias-primas, a bandeira tarifária de escassez hídrica e o reajuste de combustíveis. O Banco Central do Brasil também começou a subir juros antes: a taxa básica de juros (Selic) saiu de 2% em março de 2021 e chegou a 13,75% em agosto de 2022, enquanto o Banco Central Europeu fez sua primeira alta em 11 anos só em julho de 2022.",
+    "A queda brasileira no segundo semestre de 2022 também teve um componente tributário: a Lei Complementar 194, de junho de 2022, classificou combustíveis, energia elétrica, comunicações e transporte coletivo como bens essenciais e limitou a alíquota do Imposto sobre Circulação de Mercadorias e Serviços (ICMS) cobrada pelos estados, que contestaram a perda de arrecadação no Supremo Tribunal Federal. Com a queda dos combustíveis, o IPCA de julho de 2022 registrou deflação de 0,68%, a menor taxa mensal desde 1980. O Brasil terminou 2022 com 5,79%, abaixo dos Estados Unidos (6,5%) e da zona do euro (9,2%). A comparação mostra que o choque de preços foi mundial e que o momento das respostas, de juros e de impostos, mudou o desenho da inflação em cada país."
+  ],
+  "glossario": [
+    {
+      "termo": "Inflação acumulada em 12 meses",
+      "definicao": "Alta média dos preços nos 12 meses encerrados em determinado mês, usada para comparar períodos sem depender do calendário."
+    },
+    {
+      "termo": "Índice harmonizado de preços ao consumidor",
+      "definicao": "Índice de inflação calculado com regras comuns em todos os países da União Europeia para permitir comparação entre eles."
+    },
+    {
+      "termo": "Choque de oferta",
+      "definicao": "Alta de preços causada por falta ou encarecimento de insumos, como petróleo, energia ou alimentos."
+    },
+    {
+      "termo": "ICMS",
+      "definicao": "Imposto sobre Circulação de Mercadorias e Serviços, cobrado pelos estados, com peso grande no preço de combustíveis e energia."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Indicador histórico fechado; não precisa de atualização periódica.",
+    "proxima": "Não se aplica.",
+    "onde_buscar": "Brasil: https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2265/p/202204 ; Reino Unido: https://ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2022 ; zona do euro: https://ec.europa.eu/eurostat/documents/2995521/15265521/2-17112022-AP-EN.pdf/ ; Estados Unidos: https://www.bls.gov/opub/ted/2022/consumer-prices-up-9-1-percent-over-the-year-ended-june-2022-largest-increase-in-40-years.htm",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "País",
+    "Pico"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil (abr/2022): 12,13%",
+      "valor_na_fonte": "12,13%",
+      "fonte": "IBGE, Sidra tabela 1737, abril de 2022",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Reino Unido (out/2022): 11,1%",
+      "valor_na_fonte": "11,1%",
+      "fonte": "ONS, boletim de outubro de 2022",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Zona do euro (out/2022): 10,6%",
+      "valor_na_fonte": "10,6%",
+      "fonte": "Eurostat, comunicado de 17/11/2022",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Estados Unidos (jun/2022): 9,1%",
+      "valor_na_fonte": "9,1%",
+      "fonte": "BLS, The Economics Daily",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Nota: Brasil 5,79% no fim de 2022",
+      "valor_na_fonte": "5,79%",
+      "fonte": "IBGE, Sidra tabela 1737, dezembro de 2022",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Nota: EUA 6,5% e zona do euro 9,2% no fim de 2022",
+      "valor_na_fonte": "6,5% e 9,2%",
+      "fonte": "BLS (comunicado de 12/01/2023) e Eurostat (dezembro de 2022), conforme títulos dos comunicados",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Brasil (abr/2022)", 12.13],
+    ["Reino Unido (out/2022)", 11.1],
+    ["Zona do euro (out/2022)", 10.6],
+    ["Estados Unidos (jun/2022)", 9.1]
+  ]
+}

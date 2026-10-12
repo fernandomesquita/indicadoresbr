@@ -1,0 +1,114 @@
+{
+  "id": "deficit-policial",
+  "categoria": "seguranca-publica",
+  "ordem": 5,
+  "visivel": true,
+  "titulo": "Falta gente nas polícias",
+  "subtitulo": "Parte do efetivo previsto em lei que está ocupada, 2025",
+  "tipo": "barras",
+  "x": "Polícia",
+  "series": [
+    "Ocupado (%)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "Fórum Brasileiro de Segurança Pública, Raio-X 2026",
+    "url": "https://forumseguranca.org.br/wp-content/uploads/2026/08/raio-x-forcas-seguranca-2026.pdf"
+  },
+  "fontes": [
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, Raio-X das Forças de Segurança Pública do Brasil 2026 (relatório)",
+      "url": "https://forumseguranca.org.br/wp-content/uploads/2026/08/raio-x-forcas-seguranca-2026.pdf",
+      "o_que_sustenta": "Totais de PM (Tabela 3, p. 22) e de Polícia Civil (Tabela 4, p. 24), ocupação por UF, comparação com 2023 (p. 13), definição de efetivo previsto (p. 20) e ressalvas sobre SP e RJ."
+    },
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, página do Raio-X 2026",
+      "url": "https://forumseguranca.org.br/publicacoes/raio-x-das-forcas-de-seguranca-publica-do-brasil-2026/",
+      "o_que_sustenta": "Página oficial com relatório, infográfico e tabelas em Excel."
+    },
+    {
+      "nome": "Diário do Grande ABC, onde falta policial no Brasil",
+      "url": "https://www.dgabc.com.br/Noticia/4339332/onde-falta-policial-no-brasil-veja-ranking-dos-estados-com-maiores-deficits-de-agentes",
+      "o_que_sustenta": "Confirma 413,3 mil PMs (65,7%) e 96,9 mil policiais civis para 175,4 mil previstos (55,2%), além de Tocantins e Goiás com as menores ocupações."
+    },
+    {
+      "nome": "O Popular, polícias operam com efetivo abaixo do previsto em lei",
+      "url": "https://opopular.com.br/cidades/policias-no-brasil-operam-com-efetivo-abaixo-do-previsto-em-lei-1.3445505",
+      "o_que_sustenta": "Confirma 628,7 mil vagas previstas de PM e 404,8 mil PMs na edição anterior."
+    },
+    {
+      "nome": "Politize!, transcrição do art. 144, § 6º, da Constituição",
+      "url": "https://www.politize.com.br/policia-militar-2/",
+      "o_que_sustenta": "Subordinação das polícias aos governadores."
+    }
+  ],
+  "como_ler": "Cada barra mostra a parte do efetivo previsto em lei que está ocupada por policiais ativos, somando todos os estados e o Distrito Federal; 100% significaria quadro completo. Os totais vêm do Raio-X 2026, com dados de março de 2025, e seguem os números informados pelos estados: o efetivo ativo da Polícia Militar de São Paulo inclui os bombeiros militares, e o da Polícia Militar do Rio de Janeiro é de março de 2022. O efetivo previsto é um limite legal de vagas; a ocupação baixa mostra a distância em relação à lei, sem medir quantos policiais cada estado de fato precisa. A média nacional esconde estados acima de 100% e outros abaixo de 40%.",
+  "contexto": [
+    "Cada estado fixa em lei quantas vagas suas polícias podem ter, o chamado efetivo previsto ou fixado. Segundo o Raio-X das Forças de Segurança Pública do Brasil 2026, do Fórum Brasileiro de Segurança Pública (FBSP), as polícias militares tinham 413.319 integrantes ativos para 628.732 vagas previstas (65,7%), e as polícias civis, 96.902 para 175.477 (55,2%), com dados de março de 2025. A diferença soma cerca de 215 mil policiais militares e 79 mil policiais civis. Em relação à edição anterior, com dados de 2023, o efetivo ativo cresceu 2,1% nas polícias militares (de 404.871 para 413.319) e 1,0% nas civis (de 95.908 para 96.902).",
+    "A situação varia muito entre estados. Na Polícia Militar, o Ceará tem mais policiais que o previsto (100,4%), e Tocantins ocupa 34,9% das vagas e Goiás, 37,4%; na Polícia Civil, o Amapá chega a 98,4%, e Rondônia (28,1%), Rio de Janeiro (34,2%) e Paraíba (34,4%) ficam na base. Como as polícias militares e civis são subordinadas aos governadores (Constituição, art. 144), a lei que fixa o quadro, a abertura de concursos e a folha de pagamento são, em regra, decisões e despesas estaduais. O próprio Raio-X lembra que não existe proporção ótima de policiais por habitante e defende calcular a necessidade de cada força pela carga de trabalho, o que faz do efetivo previsto em lei uma referência legal, sem garantia de que corresponda à necessidade atual.",
+    "O dado importa porque vagas não preenchidas afetam o policiamento nas ruas e a capacidade de investigar, tarefa da Polícia Civil, que tem a menor ocupação. O estudo também aponta distorções na carreira, como mais sargentos (129.402) do que soldados (117.142) nas polícias militares. Para quem acompanha propostas de campanha, o número ajuda a dimensionar promessas de contratação, que dependem de concurso, formação e orçamento de cada estado."
+  ],
+  "glossario": [
+    {
+      "termo": "Efetivo previsto (ou fixado)",
+      "definicao": "Número de vagas de uma corporação definido em lei."
+    },
+    {
+      "termo": "Efetivo ativo",
+      "definicao": "Policiais em atividade na data de referência, sem contar aposentados."
+    },
+    {
+      "termo": "Taxa de ocupação",
+      "definicao": "Efetivo ativo dividido pelo efetivo previsto, em porcentagem."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Sem periodicidade fixa: o Raio-X das Forças de Segurança Pública teve edição anterior com dados de 2023 e a atual, publicada em agosto de 2026, com dados de março de 2025. O Anuário anual não substitui essa base.",
+    "proxima": "Sem data anunciada pelo FBSP; pelo intervalo entre as duas edições, é razoável revisar em 2028.",
+    "onde_buscar": "https://forumseguranca.org.br/publicacoes/raio-x-das-forcas-de-seguranca-publica-do-brasil-2026/ (relatório, infográfico e tabelas em Excel) e repositório https://publicacoes.forumseguranca.org.br.",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Polícia",
+    "Ocupado (%)",
+    "Ativos",
+    "Previstos"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "PM: 413.319 ativos, 628.732 previstos, 65,7%",
+      "valor_na_fonte": "413.319; 628.732; 65,7%",
+      "fonte": "Raio-X 2026, Tabela 3, p. 22",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Polícia Civil: 96.902 ativos, 175.477 previstos, 55,2%",
+      "valor_na_fonte": "96.902; 175.477; 55,2%",
+      "fonte": "Raio-X 2026, p. 23 e Tabela 4, p. 24",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Faltam 215 mil PMs",
+      "valor_na_fonte": "628.732 − 413.319 = 215.413",
+      "fonte": "Cálculo sobre Raio-X 2026",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Faltam 79 mil policiais civis",
+      "valor_na_fonte": "175.477 − 96.902 = 78.575 (arredondado para 79 mil)",
+      "fonte": "Cálculo sobre Raio-X 2026",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Polícia Militar", 65.7, 413319, 628732],
+    ["Polícia Civil", 55.2, 96902, 175477]
+  ]
+}

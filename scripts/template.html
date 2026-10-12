@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta property="og:site_name" content="Indicadores BR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{OG_TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:url" content="{{URL}}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="{{URL}}">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0C6A70">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/style.css?v={{V}}">
+<script src="/config.js?v={{V}}"></script>
+<script type="module" src="/assets/app.js?v={{V}}"></script>
+</head>
+<body>
+<a class="skip" href="#app">Pular para o conteúdo</a>
+<header class="top">
+  <div class="wrap topin">
+    <a class="mark" href="/" data-nav aria-label="Indicadores BR, página inicial">Indicadores <b>BR</b></a>
+    <nav class="mainnav" aria-label="Principal">
+      <a href="/metodo" data-nav>Método</a>
+      <a href="/sugira" data-nav>Sugira dados</a>
+      <a href="/contato" data-nav>Contato</a>
+    </nav>
+    <button class="menubtn" id="menubtn" type="button" aria-expanded="false" aria-controls="catnav-wrap">Menu</button>
+  </div>
+  <div class="catbar" id="catnav-wrap">
+    <nav class="wrap catnav" id="catnav" aria-label="Categorias"></nav>
+    <nav class="wrap mobnav" aria-label="Páginas">
+      <a href="/metodo" data-nav>Método</a>
+      <a href="/sugira" data-nav>Sugira dados</a>
+      <a href="/contato" data-nav>Contato</a>
+    </nav>
+  </div>
+</header>
+<main id="app">{{NOSCRIPT}}</main>
+<footer class="sitefoot">
+  <div class="wrap footgrid">
+    <div>
+      <p class="mark small">Indicadores <b>BR</b></p>
+      <p>Dados públicos do Brasil reunidos, conferidos e explicados. Todo número traz a fonte oficial.</p>
+    </div>
+    <nav aria-label="Rodapé">
+      <a href="/metodo" data-nav>Método</a>
+      <a href="/sugira" data-nav>Sugira dados</a>
+      <a href="/contato" data-nav>Contato</a>
+    </nav>
+    <p class="fine">Os gráficos podem ser compartilhados livremente, sem alteração. © <span id="ano">2026</span> Indicadores BR</p>
+  </div>
+</footer>
+<div class="modal" id="modal" hidden><div class="mbox" id="mbox" role="dialog" aria-modal="true"></div></div>
+</body>
+</html>

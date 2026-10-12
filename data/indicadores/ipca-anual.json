@@ -1,0 +1,177 @@
+{
+  "id": "ipca-anual",
+  "categoria": "economia",
+  "ordem": 1,
+  "visivel": true,
+  "titulo": "Inflação oficial ano a ano",
+  "subtitulo": "IPCA acumulado em cada ano, de 1995 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "IPCA"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 2,
+  "fonte": {
+    "nome": "IBGE, IPCA",
+    "url": "https://www.ibge.gov.br/explica/inflacao.php"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Sidra, tabela 1737 (IPCA, variação acumulada em 12 meses)",
+      "url": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2265/p/199312,199412,199512,199812,200212,201512,201712,202012,202112,202204,202212,202312,202412,202512,202608,202609",
+      "o_que_sustenta": "Dado primário: valores de dezembro de cada ano (1993, 1994, 1995, 1998, 2002, 2015, 2021, 2025) e o acumulado em 12 meses até setembro de 2026 (4,58%)."
+    },
+    {
+      "nome": "IBGE Explica, Inflação",
+      "url": "https://www.ibge.gov.br/explica/inflacao.php",
+      "o_que_sustenta": "Página de referência do IBGE sobre o IPCA indicada pelo portal (não foi possível abri-la nesta pesquisa; a cobertura de 1 a 40 salários mínimos foi confirmada na publicação abaixo)."
+    },
+    {
+      "nome": "IBGE, IPCA-E abril a junho de 2026 (publicação)",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/234/ipca_e_2026_abr_jun.pdf",
+      "o_que_sustenta": "Cobertura dos índices do sistema IPCA: famílias com rendimentos de 1 a 40 salários mínimos residentes em áreas urbanas."
+    },
+    {
+      "nome": "Decreto 3.088, de 21 de junho de 1999",
+      "url": "https://www.legisweb.com.br/legislacao/?id=53665",
+      "o_que_sustenta": "Criação do regime de metas para a inflação."
+    },
+    {
+      "nome": "Banco Central, carta aberta sobre a inflação de 2003",
+      "url": "https://www.bcb.gov.br/content/controleinflacao/controleinflacao_docs/carta_aberta/carta2003.pdf",
+      "o_que_sustenta": "Diagnóstico de que a acentuada depreciação cambial e a crise de confiança do segundo semestre de 2002 foram os principais fatores da inflação daquele ano."
+    },
+    {
+      "nome": "Banco Central, carta aberta sobre a inflação de 2015",
+      "url": "https://www.bcb.gov.br/content/controleinflacao/controleinflacao_docs/carta_aberta/carta2015.pdf",
+      "o_que_sustenta": "Preços administrados com alta de 18,07% (maior desde 1999) e desvalorização de cerca de 47% do real como causas dos 10,67%."
+    },
+    {
+      "nome": "Banco Central, carta aberta sobre a inflação de 2021 (Ofício 823/2022)",
+      "url": "https://www.bcb.gov.br/content/controleinflacao/controleinflacao_docs/carta_aberta/OF_CIO_823_2022_BCB_SECRE_01.pdf",
+      "o_que_sustenta": "Fatores dos 10,06% de 2021: petróleo, commodities, bandeira de escassez hídrica, combustíveis e gargalos na indústria; meta de 3,75% com teto de 5,25%."
+    },
+    {
+      "nome": "Banco Central, carta aberta de julho de 2025 (Ofício 17.431/2025)",
+      "url": "https://www.bcb.gov.br/content/controleinflacao/controleinflacao_docs/carta_aberta/OF_CIO_17431_2025_BCB_SECRE_01.pdf",
+      "o_que_sustenta": "Regras da meta contínua (3%, tolerância de 1,5 ponto, seis meses seguidos), IPCA de 5,35% em junho de 2025, fatores citados e Selic de 15%."
+    },
+    {
+      "nome": "Jornal do Comércio, IPCA de setembro de 2026",
+      "url": "https://www.jornaldocomercio.com/economia/2026/10/1266395-ipca-sobe-mais-do-que-o-esperado-em-setembro-e-fica-acima-da-meta-de-inflacao.html",
+      "o_que_sustenta": "IPCA de 0,82% em setembro de 2026, acumulado de 4,58% em 12 meses e efeito do fim do bônus de Itaipu (imprensa, como apoio)."
+    }
+  ],
+  "como_ler": "Cada coluna mostra a inflação oficial do Brasil, medida pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA) do IBGE, acumulada de janeiro a dezembro de um ano, em porcentagem, de 1995 a 2025. Quanto mais alta a coluna, mais os preços subiram naquele ano; nenhum ano da série teve queda de preços no acumulado. O valor de 1995 ainda reflete a transição do Plano Real, que encerrou a hiperinflação no ano anterior, e por isso destoa do restante. O ano de 2026 ainda não aparece porque está em curso: até setembro, o acumulado em 12 meses foi de 4,58%, número que mede outro intervalo e pode mudar até dezembro. Como referência, a meta de inflação definida pelo Conselho Monetário Nacional mudou ao longo da série e hoje é de 3% ao ano, com tolerância até 4,5%.",
+  "contexto": [
+    "O Índice Nacional de Preços ao Consumidor Amplo (IPCA), calculado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), é a medida oficial da inflação no Brasil e a referência para a meta de inflação fixada pelo Conselho Monetário Nacional. Todo mês, o IBGE coleta preços de alimentos, aluguel, energia, transporte, saúde, educação e outros itens consumidos por famílias com renda de 1 a 40 salários mínimos que vivem em áreas urbanas das regiões cobertas pela pesquisa. Cada item pesa no índice conforme sua participação no orçamento dessas famílias, medida pela Pesquisa de Orçamentos Familiares. Cada coluna do gráfico é a variação acumulada de janeiro a dezembro, ou seja, quanto os preços subiram em média ao longo daquele ano.",
+    "A série começa logo depois do Plano Real, lançado em julho de 1994: o IPCA tinha sido de 2.477% em 1993 e de 916% em 1994, caiu para 22,41% em 1995 e chegou a 1,65% em 1998. Depois da desvalorização do real em janeiro de 1999, o país adotou o regime de metas de inflação (Decreto 3.088, de junho de 1999), e desde então o Banco Central explica em carta aberta ao ministro da Fazenda cada vez que a meta é descumprida. Em 2002, o índice chegou a 12,53%, e o Banco Central apontou a forte desvalorização cambial do segundo semestre e a crise de confiança do período como fatores principais. Em 2015, os 10,67% foram atribuídos sobretudo ao reajuste de preços administrados, como energia elétrica e combustíveis, que subiram 18,07% (a maior alta desde 1999), e à desvalorização de cerca de 47% do real. Em 2021, os 10,06% vieram principalmente da alta do petróleo e de outras matérias-primas, da bandeira tarifária de escassez hídrica na conta de luz e dos gargalos nas cadeias de produção depois da pandemia.",
+    "Desde 2025 vale a meta contínua: 3% ao ano, com tolerância de 1,5 ponto percentual para mais ou para menos, e a meta é considerada descumprida quando o acumulado em 12 meses fica fora desse intervalo por seis meses seguidos. Isso ocorreu em junho de 2025, com o índice em 5,35%; o Banco Central citou a inércia da inflação passada, expectativas acima da meta, atividade econômica aquecida e efeitos do câmbio, e elevou a taxa básica de juros (Selic) até 15% ao ano. Em setembro de 2026, o acumulado em 12 meses estava em 4,58%, pouco acima do teto de 4,5%, depois do fim do bônus de Itaipu que tinha reduzido as contas de luz em agosto. No dia a dia, a inflação define quanto o salário, a aposentadoria e as economias perdem de poder de compra, e o IPCA serve de referência para corrigir contratos e títulos do Tesouro."
+  ],
+  "glossario": [
+    {
+      "termo": "Inflação acumulada no ano",
+      "definicao": "Alta média dos preços entre o fim de dezembro do ano anterior e o fim de dezembro do ano de referência."
+    },
+    {
+      "termo": "Preços administrados",
+      "definicao": "Preços definidos ou autorizados pelo poder público ou por contrato, como tarifas de energia, combustíveis da Petrobras, ônibus e planos de saúde."
+    },
+    {
+      "termo": "Meta contínua de inflação",
+      "definicao": "Regra em vigor desde 2025 que compara, todo mês, a inflação acumulada em 12 meses com a meta de 3%."
+    },
+    {
+      "termo": "Desvalorização cambial",
+      "definicao": "Perda de valor do real frente a outras moedas, que encarece produtos importados e insumos cotados em dólar."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal, divulgado pelo IBGE por volta do dia 10 do mês seguinte; o número anual (dezembro) sai no início de janeiro.",
+    "proxima": "IPCA de outubro de 2026 por volta de 10/11/2026; fechamento de 2026 (nova coluna) por volta de 08 a 12/01/2027, conforme calendário do IBGE (estimativa).",
+    "onde_buscar": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2265/p/last%201 (variável 2265, acumulado em 12 meses; usar o período de dezembro para o valor anual)",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Ano",
+    "IPCA"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "1995: 22,41%",
+      "valor_na_fonte": "22,41%",
+      "fonte": "IBGE, Sidra tabela 1737, dezembro de 1995",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2002: 12,53%",
+      "valor_na_fonte": "12,53%",
+      "fonte": "IBGE, Sidra tabela 1737, dezembro de 2002",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2015: 10,67%",
+      "valor_na_fonte": "10,67%",
+      "fonte": "IBGE, Sidra tabela 1737, dezembro de 2015",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2021: 10,06%",
+      "valor_na_fonte": "10,06%",
+      "fonte": "IBGE, Sidra tabela 1737, dezembro de 2021",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2025: 4,26%",
+      "valor_na_fonte": "4,26%",
+      "fonte": "IBGE, Sidra tabela 1737, dezembro de 2025",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Nota: 4,58% em 12 meses até setembro de 2026",
+      "valor_na_fonte": "4,58%",
+      "fonte": "IBGE, Sidra tabela 1737, setembro de 2026",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [1995, 22.41],
+    [1996, 9.56],
+    [1997, 5.22],
+    [1998, 1.65],
+    [1999, 8.94],
+    [2000, 5.97],
+    [2001, 7.67],
+    [2002, 12.53],
+    [2003, 9.3],
+    [2004, 7.6],
+    [2005, 5.69],
+    [2006, 3.14],
+    [2007, 4.46],
+    [2008, 5.9],
+    [2009, 4.31],
+    [2010, 5.91],
+    [2011, 6.5],
+    [2012, 5.84],
+    [2013, 5.91],
+    [2014, 6.41],
+    [2015, 10.67],
+    [2016, 6.29],
+    [2017, 2.95],
+    [2018, 3.75],
+    [2019, 4.31],
+    [2020, 4.52],
+    [2021, 10.06],
+    [2022, 5.79],
+    [2023, 4.62],
+    [2024, 4.83],
+    [2025, 4.26]
+  ]
+}

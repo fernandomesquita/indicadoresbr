@@ -1,0 +1,142 @@
+{
+  "id": "ingressos-concurso",
+  "categoria": "politicas-publicas",
+  "ordem": 7,
+  "visivel": true,
+  "titulo": "Quantos entraram por concurso",
+  "subtitulo": "Média anual de ingressos no Executivo federal civil, por governo",
+  "tipo": "colunas",
+  "x": "Governo",
+  "series": [
+    "Média anual"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "fonte": {
+    "nome": "Boletim Estatístico de Pessoal, via Ipea e ENAP; Painel Estatístico de Pessoal",
+    "url": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf"
+  },
+  "fontes": [
+    {
+      "nome": "Folha Dirigida (QConcursos), União registrou 210 mil aposentadorias nos últimos 11 anos (27/10/2022)",
+      "url": "https://folha.qconcursos.com/n/numero-de-servidores-publicos-no-brasil-2022",
+      "o_que_sustenta": "Ingressos efetivos e temporários por ano de 2011 a 2022 (PEP), base das médias de Dilma, Temer e Bolsonaro."
+    },
+    {
+      "nome": "Moraes, Silva e Costa (Seges/MPOG), O mito do inchaço",
+      "url": "https://static.congressoemfoco.com.br/2011/11/Mito_Inchaco.pdf",
+      "o_que_sustenta": "Ingressos efetivos de 1995 a 2008 (Boletim Estatístico de Pessoal)."
+    },
+    {
+      "nome": "Cardoso Jr. e Nogueira, Ocupação no setor público brasileiro, Revista do Serviço Público (2011)",
+      "url": "https://revista.enap.gov.br/index.php/RSP/article/download/71/69/224",
+      "o_que_sustenta": "Cerca de 155 mil ingressos de 2003 a 2010 e quase nenhuma admissão no 2º mandato de FHC."
+    },
+    {
+      "nome": "Wagner Advogados (Correio Braziliense), Ministério da Gestão projeta saída de 70 mil servidores até 2030",
+      "url": "https://wagner.adv.br/ministerio-da-gestao-projeta-saida-de-70-mil-servidores-ate-2030/",
+      "o_que_sustenta": "19.381 ingressos até 15/3/2026 e projeção de mais de 70 mil aposentadorias de 2026 a 2030."
+    },
+    {
+      "nome": "Wagner Advogados (Correio Braziliense), Esther Dweck prevê mais de 20 mil contratações",
+      "url": "https://wagner.adv.br/esther-dweck-preve-mais-de-20-mil-contratacoes-ate-o-final-do-governo-lula/",
+      "o_que_sustenta": "Autorização de 11.382 provimentos na proposta orçamentária de 2026 e restrição a posses em ano eleitoral."
+    },
+    {
+      "nome": "TRE-RS, Condutas vedadas: transferência e nomeação de servidores em período eleitoral",
+      "url": "https://www.tre-rs.jus.br/jurisprudencia/emtema-novo/condutas-vedadas-a-agentes-publicos/arquivos-condutas-vedadas-a-agentes-publicos/transferencia-de-servidores-em-periodo-eleitoral",
+      "o_que_sustenta": "Vedação do art. 73, V, da Lei 9.504/1997 e exceção para concursos homologados."
+    },
+    {
+      "nome": "Poder360, Governo Lula tem 4.255 funcionários a menos em 1 ano",
+      "url": "https://www.poder360.com.br/poder-economia/governo-lula-tem-4-255-funcionarios-a-menos-em-1-ano/",
+      "o_que_sustenta": "Vagas das duas edições do CNU (6.640 em 2024 e 3.652 em 2025)."
+    }
+  ],
+  "como_ler": "Cada coluna mostra a média de ingressos por concurso por ano no Executivo federal civil durante cada governo; a taxa de reposição indica quantos servidores entraram para cada 100 que se aposentaram, e 100% significa reposição integral. As séries até 2010 e a partir de 2011 vêm de publicações diferentes e não se comparam diretamente. O ano de 2016, dividido entre Dilma e Temer, fica fora das médias: Dilma cobre 2011 a 2015 e Temer, 2017 e 2018. Para Bolsonaro, 2022 entra até setembro, e o total é dividido por três anos e nove meses. Lula 3 fica fora do gráfico porque o dado disponível (19.381 ingressos até março de 2026, sem a área de educação) está em outra série.",
+  "contexto": [
+    "O gráfico mostra a média anual de servidores que entraram por concurso público no Executivo federal civil em cada governo, e a tabela acrescenta a taxa de reposição, que compara essas entradas com as aposentadorias do mesmo período. Os dados vêm do Boletim Estatístico de Pessoal, para os anos até 2010, consolidado em estudos do Ipea e da Escola Nacional de Administração Pública (Enap), e do Painel Estatístico de Pessoal (PEP) a partir de 2011. Contam apenas os servidores efetivos, aprovados em concurso; as contratações temporárias por processo seletivo ficam de fora e superaram os ingressos efetivos em todos os anos de 2011 a 2022.",
+    "O ingresso depende de três etapas: autorização do concurso, previsão de vagas no Orçamento e nomeação dos aprovados dentro da validade do certame. Em ano de eleição, a Lei 9.504/1997 proíbe nomear servidores nos três meses anteriores ao pleito até a posse dos eleitos, com exceção de concursos homologados antes desse prazo. Os governos Lula 1 e 2 e Dilma tiveram as maiores médias, com reposição acima de 170%; os governos FHC e Bolsonaro tiveram as menores, com reposição abaixo de 50%. No governo Lula 3, o MGI informou 19.381 ingressos até 15 de março de 2026, com apoio das duas edições do Concurso Público Nacional Unificado (CNU).",
+    "Quem defende mais concursos argumenta que a reposição evita a perda de conhecimento acumulado e a piora dos serviços, num momento em que o MGI projeta mais de 70 mil aposentadorias de 2026 a 2030. Quem defende contenção argumenta que a folha de pessoal pesa no Orçamento e que a tecnologia permite reorganizar o trabalho com menos gente. Para quem estuda para concurso, a média de ingressos e a taxa de reposição ajudam a dimensionar o volume de vagas que cada ciclo de governo costuma abrir."
+  ],
+  "glossario": [
+    {
+      "termo": "Ingresso efetivo",
+      "definicao": "Entrada de servidor aprovado em concurso público para cargo permanente."
+    },
+    {
+      "termo": "Taxa de reposição",
+      "definicao": "Número de ingressos por concurso para cada 100 aposentadorias no mesmo período."
+    },
+    {
+      "termo": "Processo seletivo simplificado",
+      "definicao": "Seleção para contratação temporária, sem estabilidade, usada em casos como professores substitutos e recenseadores."
+    },
+    {
+      "termo": "Homologação",
+      "definicao": "Ato que encerra o concurso e confirma a lista final de aprovados, a partir do qual corre o prazo de validade."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal no Painel Estatístico de Pessoal; no gráfico, ao fim de cada governo.",
+    "onde_buscar": "Painel Estatístico de Pessoal (ingressos por forma de ingresso e aposentadorias); balanços do MGI sobre o CNU.",
+    "proxima": "Início de 2027, com o fechamento de 2026, para incluir Lula 3 numa série compatível com as demais.",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Governo",
+    "Média anual",
+    "Reposição (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Dilma: 28.219 por ano",
+      "valor_na_fonte": "141.093 ingressos efetivos de 2011 a 2015, média de 28.219",
+      "fonte": "Folha Dirigida (PEP)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Temer: 15.909 por ano",
+      "valor_na_fonte": "18.435 (2017) + 13.382 (2018) = 31.817, média de 15.909; incluindo 2016, seriam 17.540",
+      "fonte": "Folha Dirigida (PEP)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Bolsonaro: 9.328 por ano",
+      "valor_na_fonte": "34.981 ingressos de 2019 a 2022 (até setembro) ÷ 3,75 anos = 9.328",
+      "fonte": "Folha Dirigida (PEP)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Lula 1 e 2: 19.442 por ano",
+      "valor_na_fonte": "Cerca de 155 mil de 2003 a 2010, média de cerca de 19,4 mil",
+      "fonte": "Cardoso Jr. e Nogueira (RSP, 2011)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "FHC: 6.452 por ano",
+      "valor_na_fonte": "45.657 ingressos efetivos de 1995 a 2002, média de 5.707",
+      "fonte": "Moraes, Silva e Costa (Boletim Estatístico de Pessoal)",
+      "ok": false
+    },
+    {
+      "valor_no_portal": "Lula 3: 19.381 ingressos até março de 2026",
+      "valor_na_fonte": "19.381 até 15/3/2026",
+      "fonte": "MGI via Wagner Advogados",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["FHC", 6452, 33],
+    ["Lula 1 e 2", 19442, 186],
+    ["Dilma", 28219, 174],
+    ["Temer", 15909, 77],
+    ["Bolsonaro", 9328, 49]
+  ]
+}

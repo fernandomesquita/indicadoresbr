@@ -1,0 +1,144 @@
+{
+  "id": "renda-real",
+  "categoria": "economia",
+  "ordem": 4,
+  "visivel": true,
+  "titulo": "Renda média do trabalho",
+  "subtitulo": "Rendimento médio mensal real de todos os trabalhos, em reais de 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Renda"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "R$ ",
+  "sufixo": "",
+  "casas": 0,
+  "fonte": {
+    "nome": "IBGE, PNAD Contínua, tabela 7441",
+    "url": "https://apisidra.ibge.gov.br/values/t/7441/n1/all/v/all/p/all"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Sidra tabela 7441 (PNAD Contínua, rendimento médio real habitual de todos os trabalhos)",
+      "url": "https://apisidra.ibge.gov.br/values/t/7441/n1/all/v/all/p/all",
+      "o_que_sustenta": "Dado primário de 2012 a 2025."
+    },
+    {
+      "nome": "IBGE, PNAD Contínua: retrospectiva 2012 a 2025",
+      "url": "https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Principais_destaques_PNAD_continua/2012_2025/PNAD_continua_retrospectiva_2012_2025.pdf",
+      "o_que_sustenta": "Rendimento de R$ 3.560 em 2025, R$ 192 acima de 2024."
+    },
+    {
+      "nome": "Daniel Duque, Blog do Ibre (FGV), setembro de 2020",
+      "url": "https://blogdoibre.fgv.br/posts/decomposicao-mostra-que-impacto-da-pandemia-influenciou-renda-media-positivamente",
+      "o_que_sustenta": "Decomposição que atribui quase toda a alta da renda média em 2020 à mudança no perfil dos ocupados."
+    },
+    {
+      "nome": "Correio Braziliense, renda do brasileiro é a menor em 8 anos (novembro de 2021)",
+      "url": "https://www.correiobraziliense.com.br/economia/2021/11/4964566-renda-do-brasileiro-e-a-menor-em-8-anos-aponta-ibge.html",
+      "o_que_sustenta": "Saída de cerca de 8,1 milhões de pessoas do mercado de trabalho em 2020, em sua maioria de menor renda (imprensa, como apoio)."
+    },
+    {
+      "nome": "Correio Braziliense, renda do brasileiro caiu 9,7% em um ano (março de 2022)",
+      "url": "https://www.correiobraziliense.com.br/economia/2022/03/4994327-renda-do-brasileiro-caiu-97-em-um-ano.html",
+      "o_que_sustenta": "Leituras de economistas (Fecomercio-SP e FGV Ibre) sobre inflação e vagas de menor salário na recuperação (imprensa, como apoio)."
+    },
+    {
+      "nome": "Ipea, Carta de Conjuntura, nota sobre rendimentos do 4º trimestre de 2025 (Sandro Sacchet de Carvalho)",
+      "url": "https://www.ipea.gov.br/cartadeconjuntura/wp-content/uploads/2026/03/260313_cc_70_nota_14_rendimentos_4_trimestre_2025.pdf",
+      "o_que_sustenta": "Treze trimestres seguidos de alta acima de 3%, ganhos maiores entre conta própria e informais, Gini domiciliar de 0,517."
+    },
+    {
+      "nome": "IBGE, PNAD Contínua, trimestre de junho a agosto de 2026 (cópia hospedada pelo Poder360)",
+      "url": "https://static.poder360.com.br/uploads/2026/09/pnad-continua-agosto2026.pdf",
+      "o_que_sustenta": "Rendimento habitual de R$ 3.777, alta de 3,7% em 12 meses."
+    }
+  ],
+  "como_ler": "A linha mostra o rendimento médio mensal habitual de todos os trabalhos das pessoas ocupadas de 14 anos ou mais, de 2012 a 2025, em reais corrigidos pela inflação para valores médios de 2025. Cada ponto é a média do ano calculada pelo IBGE na Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua, tabela 7441 do sistema Sidra), e a distância entre dois pontos indica ganho ou perda real de poder de compra. A série começa em 2012 porque a pesquisa não existia antes. A alta de 2020 pede cuidado: a média subiu porque quem ganhava menos perdeu o emprego primeiro e saiu da conta (efeito composição), sem que isso reflita aumento generalizado de salários. Valores trimestrais divulgados pela imprensa usam outra base de preços e não devem ser comparados diretamente com esta linha.",
+  "contexto": [
+    "O indicador mostra quanto uma pessoa ocupada de 14 anos ou mais recebe, em média, por mês somando todos os seus trabalhos, formais e informais, segundo a Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua) do IBGE. Usa o rendimento habitual, isto é, o valor que a pessoa costuma receber em um mês normal, sem pagamentos eventuais. Os valores de todos os anos são corrigidos pela inflação e expressos em reais médios de 2025, o que permite comparar o poder de compra ao longo do tempo. Por se tratar de uma média, o número também se move quando muda o grupo de pessoas que está trabalhando, mesmo que os salários de cada um fiquem parados.",
+    "A renda subiu até 2014 (R$ 3.280), caiu na recessão de 2015 (R$ 3.151) e ficou praticamente estável até 2019. Em 2020, a média subiu para R$ 3.310 por efeito composição: cerca de 8 milhões de pessoas, em sua maioria informais e de menor renda, deixaram o mercado de trabalho, e o grupo que continuou ocupado tinha renda média mais alta; o economista Daniel Duque (FGV Ibre) estimou que a mudança de perfil explicava quase toda a alta daquele momento. Em 2021 e 2022 o movimento se inverteu, com a volta de trabalhadores de menor renda e a inflação de 10,06% em 2021, e a média chegou ao menor valor da série em 2022 (R$ 3.032). De 2023 a 2025, a renda subiu três anos seguidos e atingiu R$ 3.560, o maior valor da série, em um período de desemprego em queda, inflação menor e reajustes do salário mínimo acima da inflação.",
+    "A renda do trabalho é a principal fonte de recursos da maioria das famílias e sustenta o consumo, que responde pela maior parte do PIB. O Instituto de Pesquisa Econômica Aplicada (Ipea) registrou, até o início de 2026, treze trimestres seguidos de alta real acima de 3% em relação ao ano anterior, com ganhos maiores entre trabalhadores por conta própria e informais. A média, porém, esconde diferenças: no fim de 2025, o Ipea observou alta do índice de Gini da renda do trabalho, que mede a desigualdade, para 0,517 entre domicílios. O dado trimestral mais recente do IBGE, de junho a agosto de 2026, foi de R$ 3.777, alta de 3,7% sobre um ano antes, em uma base de preços diferente da usada nesta linha."
+  ],
+  "glossario": [
+    {
+      "termo": "Rendimento habitual",
+      "definicao": "Valor que o trabalhador costuma receber em um mês normal, sem pagamentos eventuais ou atrasados."
+    },
+    {
+      "termo": "Valor real",
+      "definicao": "Valor corrigido pela inflação para que anos diferentes possam ser comparados em poder de compra."
+    },
+    {
+      "termo": "Efeito composição",
+      "definicao": "Mudança na média causada pela entrada ou saída de grupos com renda diferente, sem que a renda de cada pessoa tenha mudado."
+    },
+    {
+      "termo": "Índice de Gini",
+      "definicao": "Medida de desigualdade que vai de 0 (todos recebem o mesmo) a 1 (uma pessoa recebe tudo)."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (base anual da PNAD Contínua); os valores de todos os anos são recalculados a preços do último ano a cada nova divulgação.",
+    "proxima": "Valor de 2026 entre fevereiro e maio de 2027, quando o IBGE publicar a base anual da PNAD Contínua (estimativa; o valor de 2025 já constava da retrospectiva do início de 2026). Ao atualizar, substituir a série inteira, porque a base de preços muda.",
+    "onde_buscar": "https://apisidra.ibge.gov.br/values/t/7441/n1/all/v/10774/p/all",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Ano",
+    "Renda"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2012: R$ 3.083",
+      "valor_na_fonte": "R$ 3.083",
+      "fonte": "IBGE, Sidra tabela 7441, variável 10774",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2014: R$ 3.280",
+      "valor_na_fonte": "R$ 3.280",
+      "fonte": "IBGE, Sidra tabela 7441, variável 10774",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2020: R$ 3.310",
+      "valor_na_fonte": "R$ 3.310",
+      "fonte": "IBGE, Sidra tabela 7441, variável 10774",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2022: R$ 3.032",
+      "valor_na_fonte": "R$ 3.032",
+      "fonte": "IBGE, Sidra tabela 7441, variável 10774",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2025: R$ 3.560",
+      "valor_na_fonte": "R$ 3.560",
+      "fonte": "IBGE, Sidra tabela 7441 e retrospectiva 2012 a 2025",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2012, 3083],
+    [2013, 3185],
+    [2014, 3280],
+    [2015, 3151],
+    [2016, 3164],
+    [2017, 3147],
+    [2018, 3217],
+    [2019, 3204],
+    [2020, 3310],
+    [2021, 3101],
+    [2022, 3032],
+    [2023, 3249],
+    [2024, 3368],
+    [2025, 3560]
+  ]
+}

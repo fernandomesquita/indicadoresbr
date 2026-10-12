@@ -1,0 +1,172 @@
+{
+  "id": "juros-selic",
+  "categoria": "economia",
+  "ordem": 8,
+  "visivel": true,
+  "titulo": "O juro das empresas anda colado na Selic",
+  "subtitulo": "Meta Selic e juro médio das operações de crédito com empresas, em dezembro de cada ano",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Juro das empresas",
+    "Selic"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 2,
+  "fonte": {
+    "nome": "Banco Central, SGS 20715 e Copom",
+    "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20715/dados?formato=json"
+  },
+  "fontes": [
+    {
+      "nome": "Banco Central do Brasil, SGS 20715 (taxa média de juros, pessoas jurídicas, total)",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20715/dados?formato=json",
+      "o_que_sustenta": "Fonte primária da linha do juro das empresas."
+    },
+    {
+      "nome": "Banco Central, Dados Abertos, metadados da série 20715",
+      "url": "https://dadosabertos.bcb.gov.br/da_DK/dataset/20715-taxa-media-de-juros-das-operacoes-de-credito---pessoas-juridicas---total",
+      "o_que_sustenta": "Definição da série: média ponderada pelas concessões, recursos livres e direcionados, início em março de 2011."
+    },
+    {
+      "nome": "Banco Central do Brasil, SGS 432 (meta Selic)",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json",
+      "o_que_sustenta": "Meta Selic vigente em cada data, incluindo a mudança para 13,75% em 17/09/2026."
+    },
+    {
+      "nome": "Observatório Econômico da UFMS, tabela histórica da Selic",
+      "url": "https://obecon.ufms.br/files/2026/04/SELIC-TABELA.pdf",
+      "o_que_sustenta": "Datas e decisões de cada reunião do Copom de 2010 a janeiro de 2026."
+    },
+    {
+      "nome": "Atlas Público, Copom reduz Selic para 13,75%",
+      "url": "https://atlaspublico.com.br/bcb/noticias/copom-reduz-selic-para-13-75pct-ao-ano-em-decisao-unanime-87748",
+      "o_que_sustenta": "Decisão de 16/09/2026 e justificativas do Copom."
+    },
+    {
+      "nome": "Itatiaia, terceiro corte da Selic em 2026",
+      "url": "https://www.itatiaia.com.br/economia/copom-realiza-o-terceiro-corte-na-taxa-de-juros-em-2026-selic-vai-a-1425/",
+      "o_que_sustenta": "Sequência de cortes de 2026 a partir de 15%."
+    },
+    {
+      "nome": "Banco Central, Relatório de Estabilidade Financeira, maio de 2026",
+      "url": "https://www.bcb.gov.br/conteudo/home-ptbr/TextosApresentacoes/REF_maio_2026.pdf",
+      "o_que_sustenta": "Peso do custo de captação (39,75%) e da inadimplência (22,03%) no custo do crédito em 2025."
+    },
+    {
+      "nome": "InfoMoney, por que a queda da Selic não chega ao bolso",
+      "url": "https://www.infomoney.com.br/?p=1472283",
+      "o_que_sustenta": "Componentes do spread, argumentos dos bancos (estudo Accenture para a Febraban) e concentração bancária."
+    },
+    {
+      "nome": "Banco Central, nota de estatísticas monetárias e de crédito de agosto de 2026 (via Poder360)",
+      "url": "https://static.poder360.com.br/uploads/2026/09/BC-estatisticas-monetarias-credito-agosto-29set2026.pdf",
+      "o_que_sustenta": "Juro do crédito livre para empresas de 24,2% ao ano em agosto de 2026."
+    }
+  ],
+  "como_ler": "O gráfico tem duas linhas, ambas em percentual ao ano: a meta da Selic definida pelo Copom e o juro médio das novas operações de crédito com empresas, sempre em dezembro de cada ano. O eixo horizontal vai de 2010 a 2026 e o vertical mostra a taxa. A linha das empresas começa em 2011 porque a série do Banco Central só existe a partir de março daquele ano. O ponto de 2026 é parcial: o juro das empresas é o de agosto e a Selic é a vigente desde 17 de setembro de 2026. O juro das empresas é uma média de todas as modalidades, com crédito livre e direcionado; só no crédito livre, a taxa média para empresas foi de 24,2% ao ano em agosto de 2026.",
+  "contexto": [
+    "A Selic é a taxa básica de juros da economia, definida pelo Comitê de Política Monetária (Copom) do Banco Central em oito reuniões por ano, com o objetivo de levar a inflação à meta. A outra linha mostra o juro médio que os bancos cobraram das empresas nos empréstimos novos de cada mês, ponderado pelo valor emprestado. Essa média reúne o crédito com recursos livres, de juros negociados entre banco e cliente, e o crédito direcionado, de regras e taxas definidas em lei ou em programas públicos, como as linhas do Banco Nacional de Desenvolvimento Econômico e Social (BNDES). A série das empresas começa em março de 2011.",
+    "As duas linhas sobem e descem juntas, com o juro das empresas sempre bem acima da Selic. Quando o Copom subiu a Selic de 7,25% (outubro de 2012) para 14,25% (julho de 2015), o juro das empresas foi de 13,8% para 20,8% ao ano. Com os cortes até 2% em agosto de 2020, durante a pandemia, ele caiu a 11,2%, o menor valor de dezembro na série. A alta da Selic para 13,75% entre março de 2021 e agosto de 2022, em resposta à inflação do pós-pandemia, levou o juro das empresas de volta a 20%. Depois de um ciclo de cortes até 10,5% em maio de 2024, o Copom voltou a subir a taxa a partir de setembro de 2024 e chegou a 15% em junho de 2025; em 2026, cortes a partir de março levaram a Selic a 13,75% em setembro, e o juro médio das empresas estava em 19,75% em agosto.",
+    "A distância entre as duas linhas é o spread, que paga o custo de captação dos bancos, as perdas com calote, impostos, despesas administrativas e a margem de lucro. Segundo o Banco Central, em 2025 o custo de captação respondeu por cerca de 40% do custo do crédito e a inadimplência por cerca de 22%. A leitura sobre o tamanho desse spread é disputada: os bancos e a Federação Brasileira de Bancos (Febraban) apontam inadimplência, tributos e custos administrativos, enquanto outra leitura destaca a concentração do setor: segundo estudo da Accenture citado pela imprensa, os cinco maiores bancos detêm 62% da carteira, sem contar o crédito imobiliário e o rural. Para quem tem empresa, a Selic define o custo do capital de giro e do investimento com alguns meses de defasagem, e esse custo acaba repassado a preços, salários e contratações."
+  ],
+  "glossario": [
+    {
+      "termo": "Copom",
+      "definicao": "Comitê de Política Monetária do Banco Central, que se reúne oito vezes por ano para fixar a meta da Selic."
+    },
+    {
+      "termo": "Spread bancário",
+      "definicao": "Diferença entre o juro que o banco cobra do cliente e o custo que ele paga para captar o recurso."
+    },
+    {
+      "termo": "Crédito direcionado",
+      "definicao": "Empréstimos com destinação e condições definidas por lei ou programa público, como crédito rural, imobiliário e do BNDES."
+    },
+    {
+      "termo": "Crédito livre",
+      "definicao": "Empréstimos com taxa e prazo negociados livremente entre banco e cliente, como capital de giro e cheque especial."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Selic: a cada reunião do Copom (oito por ano). Juro das empresas: mensal, com cerca de um mês de defasagem",
+    "proxima": "Copom em 3 e 4/11/2026 e em 8 e 9/12/2026; juro de setembro no fim de outubro de 2026 e juro de dezembro no fim de janeiro de 2027",
+    "onde_buscar": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20715/dados?formato=json e https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Ano",
+    "Juro das empresas",
+    "Selic"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "19,75% (juro das empresas, 2026 = agosto)",
+      "valor_na_fonte": "19,75 (08/2026)",
+      "fonte": "BCB SGS 20715",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "19,9% (juro das empresas, dez/2025)",
+      "valor_na_fonte": "19,90 (12/2025)",
+      "fonte": "BCB SGS 20715",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "11,16% (juro das empresas, dez/2020)",
+      "valor_na_fonte": "11,16 (12/2020)",
+      "fonte": "BCB SGS 20715",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "18,14% (juro das empresas, dez/2011)",
+      "valor_na_fonte": "18,14 (12/2011)",
+      "fonte": "BCB SGS 20715",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "13,75% (Selic, 2026)",
+      "valor_na_fonte": "13,75 desde 17/09/2026",
+      "fonte": "BCB SGS 432",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "15,0% (Selic, 2025)",
+      "valor_na_fonte": "15,00 desde 19/06/2025",
+      "fonte": "BCB SGS 432 e tabela do Copom",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2,0% (Selic, 2020) e 14,25% (2015)",
+      "valor_na_fonte": "2% desde 05/08/2020; 14,25% desde 29/07/2015",
+      "fonte": "Tabela histórica do Copom (UFMS)",
+      "ok": true,
+      "obs": "As demais metas de dezembro de 2012 a 2024 também conferem."
+    }
+  ],
+  "linhas": [
+    [2010, null, 10.75],
+    [2011, 18.14, 11.0],
+    [2012, 13.82, 7.25],
+    [2013, 15.64, 10.0],
+    [2014, 16.6, 11.75],
+    [2015, 20.77, 14.25],
+    [2016, 20.29, 13.75],
+    [2017, 16.96, 7.0],
+    [2018, 14.84, 6.5],
+    [2019, 13.48, 4.5],
+    [2020, 11.16, 2.0],
+    [2021, 17.42, 9.25],
+    [2022, 20.04, 13.75],
+    [2023, 18.09, 11.75],
+    [2024, 19.05, 12.25],
+    [2025, 19.9, 15.0],
+    [2026, 19.75, 13.75]
+  ]
+}

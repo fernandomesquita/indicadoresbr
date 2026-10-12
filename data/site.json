@@ -1,0 +1,81 @@
+{
+  "site": {
+    "nome": "Indicadores BR",
+    "atualizado": "2026-10-11",
+    "governos": [
+      {
+        "de": 1995,
+        "ate": 2002,
+        "rotulo": "FHC"
+      },
+      {
+        "de": 2003,
+        "ate": 2010,
+        "rotulo": "Lula"
+      },
+      {
+        "de": 2011,
+        "ate": 2016,
+        "rotulo": "Dilma"
+      },
+      {
+        "de": 2016,
+        "ate": 2018,
+        "rotulo": "Temer"
+      },
+      {
+        "de": 2019,
+        "ate": 2022,
+        "rotulo": "Bolsonaro"
+      },
+      {
+        "de": 2023,
+        "ate": 2026,
+        "rotulo": "Lula"
+      }
+    ],
+    "destaques": [
+      "ipca-anual",
+      "camara-2027",
+      "mvi-anual"
+    ]
+  },
+  "categorias": [
+    {
+      "id": "economia",
+      "nome": "Economia",
+      "descricao": "Preços, renda, emprego, juros, crédito e empresas.",
+      "ordem": 1
+    },
+    {
+      "id": "politicas-publicas",
+      "nome": "Políticas públicas",
+      "descricao": "Congresso, serviço público e as decisões que mudam a vida de quem depende do Estado.",
+      "ordem": 2
+    },
+    {
+      "id": "seguranca-publica",
+      "nome": "Segurança pública",
+      "descricao": "Mortes violentas, efetivo policial e o que os números dizem sobre os estados.",
+      "ordem": 3
+    },
+    {
+      "id": "corrupcao",
+      "nome": "Corrupção",
+      "descricao": "Condenações, processos e transparência.",
+      "ordem": 4
+    },
+    {
+      "id": "saude",
+      "nome": "Saúde",
+      "descricao": "Atendimento, mortalidade, vacinação e gasto público em saúde.",
+      "ordem": 5
+    },
+    {
+      "id": "educacao",
+      "nome": "Educação",
+      "descricao": "Aprendizagem, matrículas, professores e investimento.",
+      "ordem": 6
+    }
+  ]
+}

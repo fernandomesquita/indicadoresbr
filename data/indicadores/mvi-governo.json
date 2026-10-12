@@ -1,0 +1,130 @@
+{
+  "id": "mvi-governo",
+  "categoria": "seguranca-publica",
+  "ordem": 2,
+  "visivel": true,
+  "titulo": "Mortes violentas: média de cada governo",
+  "subtitulo": "Taxa média por 100 mil habitantes",
+  "tipo": "colunas",
+  "x": "Governo",
+  "series": [
+    "Média"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "fonte": {
+    "nome": "Fórum Brasileiro de Segurança Pública, Anuário 2026; cálculo próprio",
+    "url": "https://publicacoes.forumseguranca.org.br/items/bb542342-3cf8-47a5-a51d-a0eb911914b9"
+  },
+  "fontes": [
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, 20º Anuário Brasileiro de Segurança Pública 2026 (repositório oficial)",
+      "url": "https://publicacoes.forumseguranca.org.br/items/bb542342-3cf8-47a5-a51d-a0eb911914b9",
+      "o_que_sustenta": "Série anual 2012 a 2025 usada no cálculo das médias."
+    },
+    {
+      "nome": "Anuário Brasileiro de Segurança Pública 2026, PDF integral (cópia publicada pelo Jornal do Brasil)",
+      "url": "https://midias.jb.com.br/_midias/pdf/2026/07/24/anuario_2026-1163952.pdf",
+      "o_que_sustenta": "Taxas anuais (p. 30) conferidas uma a uma para recalcular médias e ritmos."
+    },
+    {
+      "nome": "Instituto Igarapé, Robert Muggah, What explains Brazil's homicide decline?",
+      "url": "https://igarape.org.br/en/what-explains-brazils-homicide-decline/",
+      "o_que_sustenta": "Argumento de que a queda começou no início de 2018, antes da troca de governo."
+    },
+    {
+      "nome": "Ipea e FBSP, Atlas da Violência 2020, capítulo 1",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/10353/1/AtlasdaViolencia2020_Cap1.pdf",
+      "o_que_sustenta": "Hipóteses para o pico de 2017 e a queda posterior (facções, demografia, programas estaduais)."
+    },
+    {
+      "nome": "CNN Brasil, Atlas da Violência 2021",
+      "url": "https://www.cnnbrasil.com.br/nacional/atlas-da-violencia-2021-revela-queda-de-homicidios-e-aumento-de-mortes-violentas-no-brasil/",
+      "o_que_sustenta": "Alta de 35,2% nas mortes de causa indeterminada em 2019."
+    },
+    {
+      "nome": "Ipea e FBSP, Atlas da Violência 2026",
+      "url": "https://publicacoes.forumseguranca.org.br/items/e9c64cd8-f18c-4448-94e7-dc0190efa6ae",
+      "o_que_sustenta": "Estimativa de 7.083 homicídios ocultos em 2024."
+    },
+    {
+      "nome": "Constituição Federal, art. 144 (Planalto)",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm",
+      "o_que_sustenta": "Subordinação das polícias militares e civis aos governadores."
+    }
+  ],
+  "como_ler": "Cada coluna mostra a média simples das taxas anuais de mortes violentas intencionais por 100 mil habitantes nos anos completos de cada mandato, indicados entre parênteses. As médias cobrem quantidades diferentes de anos (quatro, dois, quatro e três): 2016 ficou fora por ter sido dividido entre Dilma e Temer, e 2011, primeiro ano de Dilma, não entra porque a série começa em 2012. Uma média baixa pode refletir a tendência herdada do período anterior, e por isso vale olhar junto o gráfico anual e o ritmo de variação por ano, que compara a taxa do último ano do mandato com a do ano anterior ao primeiro ano completo: Temer −1,2 ponto por ano (de 2016 a 2018), Bolsonaro −1,3 (de 2018 a 2022) e Lula −1,2 (de 2022 a 2025). A diferença entre colunas descreve o que aconteceu em cada período. Medir o efeito de um presidente exigiria outro método, porque as polícias são estaduais e muitos fatores agem ao mesmo tempo.",
+  "contexto": [
+    "Este gráfico agrupa a série anual de mortes violentas intencionais (MVI) do Fórum Brasileiro de Segurança Pública (FBSP) pelos anos completos de cada mandato presidencial e calcula a média simples das taxas. A média de Dilma usa 2012 a 2015, porque a série nacional começa em 2012; 2016 fica de fora porque o ano teve dois presidentes. A de Temer reúne 2017, o ano mais violento da série, e 2018; a de Bolsonaro cobre 2019 a 2022; e a de Lula, 2023 a 2025, com o mandato ainda em curso. Como a taxa cai desde 2018, períodos mais recentes tendem a ter médias menores mesmo com ritmos de queda parecidos: medido do último ano do governo anterior ao último ano de cada mandato, o recuo ficou entre 1,2 e 1,3 ponto por ano nos três governos mais recentes.",
+    "A comparação pede cautela porque o presidente comanda uma parte pequena da estrutura que influencia esses números. Pela Constituição (art. 144), as polícias militares e civis respondem aos governadores; à União cabem a Polícia Federal, a Polícia Rodoviária Federal, a Polícia Penal Federal, a coordenação do Sistema Único de Segurança Pública (Susp) e repasses de recursos. Robert Muggah, do Instituto Igarapé, observou em 2019 que a queda começou no início de 2018, antes da troca de governo, e por isso considerou frágil atribuí-la ao presidente que assumiu em 2019. Pelo mesmo critério, a continuidade da queda depois de 2023 também não pode ser creditada só ao governo federal, já que as 27 unidades da federação tiveram governadores de vários partidos e trajetórias distintas no período.",
+    "As explicações que pesquisadores discutem atravessam mandatos. O Atlas da Violência 2020, do Instituto de Pesquisa Econômica Aplicada (Ipea) e do FBSP, liga o pico de 2017 à guerra entre as facções PCC e Comando Vermelho e parte da queda seguinte a um armistício entre elas, ao lado de fatores lentos, como o envelhecimento da população e programas estaduais de redução de homicídios. A qualidade dos dados também pesa dos dois lados da comparação: o Atlas da Violência 2021 registrou alta de 35,2% nas mortes violentas de causa indeterminada nos registros de saúde em 2019, e o Atlas 2026 estimou 7.083 homicídios ocultos em 2024. A série do FBSP vem dos registros policiais, uma fonte distinta, e mesmo assim esses alertas recomendam não tratar pequenas diferenças entre médias como prova de desempenho de um governo."
+  ],
+  "glossario": [
+    {
+      "termo": "Média simples",
+      "definicao": "Soma das taxas anuais do período dividida pelo número de anos, sem ponderar pela população."
+    },
+    {
+      "termo": "Ritmo de variação por ano",
+      "definicao": "Diferença entre a taxa do último ano do mandato e a do ano anterior ao primeiro ano completo do mandato, dividida pelo número de anos entre os dois."
+    },
+    {
+      "termo": "Morte violenta intencional (MVI)",
+      "definicao": "Soma das vítimas de homicídio doloso, latrocínio, lesão corporal seguida de morte e morte decorrente de intervenção policial."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual, junto com o Anuário Brasileiro de Segurança Pública (julho). A média de Lula muda a cada edição enquanto o mandato estiver em curso, e anos anteriores podem ser revisados.",
+    "proxima": "Julho de 2027 (inclui 2026, último ano do mandato atual).",
+    "onde_buscar": "Repositório de publicações do Fórum Brasileiro de Segurança Pública (https://publicacoes.forumseguranca.org.br), item do 20º Anuário (https://publicacoes.forumseguranca.org.br/items/bb542342-3cf8-47a5-a51d-a0eb911914b9), que oferece o relatório completo e a planilha em XLSX; Tabela 01 (MVI por UF) e tabela da série histórica nacional.",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Governo",
+    "Média"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Dilma (2012-2015): 28,6",
+      "valor_na_fonte": "(27,7 + 28,0 + 29,7 + 28,9) / 4 = 28,575, arredonda para 28,6",
+      "fonte": "Cálculo sobre Anuário 2026, p. 30",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Temer (2017-2018): 29,6",
+      "valor_na_fonte": "(31,2 + 27,9) / 2 = 29,55, arredonda para 29,6",
+      "fonte": "Cálculo sobre Anuário 2026, p. 30",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Bolsonaro (2019-2022): 23,2",
+      "valor_na_fonte": "(23,0 + 24,1 + 23,0 + 22,7) / 4 = 23,2",
+      "fonte": "Cálculo sobre Anuário 2026, p. 30",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Lula (2023-2025): 20,6",
+      "valor_na_fonte": "(21,9 + 20,8 + 19,1) / 3 = 20,6",
+      "fonte": "Cálculo sobre Anuário 2026, p. 30",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Ritmo por ano: Temer −1,2; Bolsonaro −1,3; Lula −1,2",
+      "valor_na_fonte": "(27,9 − 30,2) / 2 = −1,15; (22,7 − 27,9) / 4 = −1,3; (19,1 − 22,7) / 3 = −1,2. O ritmo de Temer parte de 2016, ano excluído das médias",
+      "fonte": "Cálculo sobre Anuário 2026, p. 30",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Dilma (2012-2015)", 28.6],
+    ["Temer (2017-2018)", 29.6],
+    ["Bolsonaro (2019-2022)", 23.2],
+    ["Lula (2023-2025)", 20.6]
+  ]
+}

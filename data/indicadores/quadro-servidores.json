@@ -1,0 +1,131 @@
+{
+  "id": "quadro-servidores",
+  "categoria": "politicas-publicas",
+  "ordem": 6,
+  "visivel": true,
+  "titulo": "O quadro de servidores federais",
+  "subtitulo": "Variação dos servidores civis ativos do Executivo federal em cada governo",
+  "tipo": "colunas",
+  "x": "Governo",
+  "series": [
+    "Variação"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "Ipea, Comunicado 110; Painel Estatístico de Pessoal",
+    "url": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf"
+  },
+  "fontes": [
+    {
+      "nome": "Ipea, Comunicado nº 110, Ocupação no setor público brasileiro",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
+      "o_que_sustenta": "Fonte declarada pelo portal para a série até 2010 (documento não pôde ser aberto nesta checagem)."
+    },
+    {
+      "nome": "Moraes, Silva e Costa (Seges/MPOG), O mito do inchaço da força de trabalho do Executivo federal",
+      "url": "https://static.congressoemfoco.com.br/2011/11/Mito_Inchaco.pdf",
+      "o_que_sustenta": "Servidores civis ativos do Executivo: 567.689 em 1995 e 485.741 em 2002 (Boletim Estatístico de Pessoal)."
+    },
+    {
+      "nome": "Enap, Servidores públicos federais 2013",
+      "url": "https://bibliotecadigital.enap.gov.br/bitstream/1/614/6/Folder%20servidores%20p%c3%bablicos%20federais%20servidores_publicos_federais%202013.pdf",
+      "o_que_sustenta": "Totais de 495.803 em 2002 e 633.682 em 2012, mostrando diferenças de cobertura entre edições."
+    },
+    {
+      "nome": "Poder360, Bolsonaro é o 3º presidente que mais cortou funcionários (9/4/2022)",
+      "url": "https://poder360.com.br/governo/bolsonaro-e-3o-entre-presidentes-que-mais-cortaram-funcionarios",
+      "o_que_sustenta": "631 mil servidores no início do governo Bolsonaro e 583 mil em fevereiro de 2022; corte de 12,4% no 1º mandato de FHC."
+    },
+    {
+      "nome": "Folha Dirigida (QConcursos), União registrou 210 mil aposentadorias em 11 anos (27/10/2022)",
+      "url": "https://folha.qconcursos.com/n/numero-de-servidores-publicos-no-brasil-2022",
+      "o_que_sustenta": "567.296 ativos em 2022, 625.673 em 2015 e 37.875 aposentadorias em 2019 (PEP)."
+    },
+    {
+      "nome": "IBGE, Anuário Estatístico, tabela 7.2.1.3 (2023 e 2024)",
+      "url": "https://anuario.ibge.gov.br/images/aeb/2024/s7/2_pdf/s7t2103.pdf",
+      "o_que_sustenta": "571.873 servidores civis ativos em dezembro de 2023 e 574.930 em dezembro de 2024 (fonte: PEP)."
+    },
+    {
+      "nome": "Poder360, Governo Lula tem 4.255 funcionários a menos em 1 ano",
+      "url": "https://www.poder360.com.br/poder-economia/governo-lula-tem-4-255-funcionarios-a-menos-em-1-ano/",
+      "o_que_sustenta": "Série de junho de 2023 a junho de 2026 (556.134 a 569.230) e vagas das duas edições do CNU."
+    },
+    {
+      "nome": "Wagner Advogados (Correio Braziliense), Ministério da Gestão projeta saída de 70 mil servidores até 2030",
+      "url": "https://wagner.adv.br/ministerio-da-gestao-projeta-saida-de-70-mil-servidores-ate-2030/",
+      "o_que_sustenta": "Projeção do MGI de mais de 70 mil aposentadorias de 2026 a 2030 e saldo líquido de 2.800 no governo atual até março de 2026."
+    }
+  ],
+  "como_ler": "Cada coluna é um governo, e a altura mostra a variação percentual do número de servidores civis ativos do Executivo federal entre o início e o fim do período; colunas abaixo de zero indicam redução do quadro. O período de FHC começa em dezembro de 1994; o de Bolsonaro termina em dezembro de 2022, com valor estimado a partir do dado de dezembro de 2023; o de Lula 3 está em curso e pode mudar até dezembro de 2026. Os governos têm durações diferentes (cerca de dois anos e meio no caso de Temer, oito anos nos de FHC e de Lula 1 e 2), por isso a variação acumulada não deve ser lida como taxa anual. As séries até 2010 e a partir de 2011 vêm de publicações distintas, com pequenas diferenças de cobertura: o total de dezembro de 2002, por exemplo, aparece como 485.741 em uma edição e 495.803 em outra.",
+  "contexto": [
+    "O gráfico mostra quanto variou o número de servidores civis ativos do Poder Executivo federal (administração direta, autarquias e fundações) do início ao fim de cada governo, desde 1995. Os dados vêm de duas séries oficiais: o Boletim Estatístico de Pessoal, usado pelo Instituto de Pesquisa Econômica Aplicada (Ipea) em estudos sobre o período até 2010, e o Painel Estatístico de Pessoal (PEP), mantido hoje pelo Ministério da Gestão e da Inovação em Serviços Públicos (MGI). Militares, aposentados e servidores do Legislativo e do Judiciário ficam de fora.",
+    "O tamanho do quadro resulta do saldo entre saídas, sobretudo aposentadorias, e entradas por concurso, que dependem de autorização no Orçamento. Reformas da Previdência costumam antecipar aposentadorias: em 2019, ano da reforma aprovada no governo Bolsonaro, foram 37.875, o maior número da série de 2011 a 2022. Nos governos FHC e Bolsonaro, as saídas superaram as entradas; nos governos Lula 1 e 2 e Dilma, ocorreu o contrário. Quem defende a contenção argumenta que a digitalização e a reorganização de serviços permitem atender com menos pessoal e aliviam as contas públicas; quem critica argumenta que a falta de reposição sobrecarrega os órgãos e prejudica o atendimento.",
+    "Para quem estuda para concurso, a variação do quadro funciona como termômetro de vagas, já que quadro em queda e aposentadorias em alta pressionam por novos concursos. O MGI projeta mais de 70 mil aposentadorias de 2026 a 2030. No terceiro mandato de Lula, o governo fez duas edições do Concurso Público Nacional Unificado (CNU), com 6.640 vagas em 2024 e 3.652 em 2025; mesmo assim, o número de ativos ficou próximo da estabilidade e caiu 0,74% entre junho de 2025 e junho de 2026, segundo o Poder360 com dados do PEP."
+  ],
+  "glossario": [
+    {
+      "termo": "Servidor civil ativo",
+      "definicao": "Servidor em atividade no Executivo federal, sem contar militares, aposentados e pensionistas."
+    },
+    {
+      "termo": "Painel Estatístico de Pessoal (PEP)",
+      "definicao": "Base pública do governo federal com dados mensais de quantidade, ingressos, aposentadorias e despesa com pessoal."
+    },
+    {
+      "termo": "Autarquia e fundação",
+      "definicao": "Entidades da administração indireta, como universidades federais, INSS e agências reguladoras, cujos servidores entram na conta do Executivo federal."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal no Painel Estatístico de Pessoal; no gráfico, ao fim de cada governo.",
+    "onde_buscar": "Painel Estatístico de Pessoal do MGI; Anuário Estatístico do IBGE (tabela de servidores civis ativos); estudos do Ipea.",
+    "proxima": "Início de 2027, com o dado de dezembro de 2026, que fecha o governo Lula 3; até lá, atualizar o parcial a cada trimestre.",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Governo",
+    "Variação"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Bolsonaro: -10,1%",
+      "valor_na_fonte": "631 mil no início do governo e 567.296 em 2022, queda de 10,1%",
+      "fonte": "Poder360 (2022); Folha Dirigida (2022)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "FHC: -17,3% (a partir de dez/1994)",
+      "valor_na_fonte": "567.689 (1995) para 485.741 (2002), queda de 14,4% a partir de dez/1995; o dado de dez/1994 não foi localizado",
+      "fonte": "Moraes, Silva e Costa, com dados do Boletim Estatístico de Pessoal",
+      "ok": false
+    },
+    {
+      "valor_no_portal": "Lula 3: +0,7%",
+      "valor_na_fonte": "Saldo líquido de +2.800 até 15/3/2026 (cerca de +0,5%); 569.230 em jun/2026 contra 567.296 em 2022 (+0,3%)",
+      "fonte": "MGI via Wagner Advogados; Poder360 (2026)",
+      "ok": false
+    },
+    {
+      "valor_no_portal": "Lula 1 e 2: +18,8%",
+      "valor_na_fonte": "Estudo do Ipea indica que o quadro voltou a mais de 600 mil em 2010; sobre 485.741 em 2002, isso daria mais de 23%",
+      "fonte": "Cardoso Jr. e Nogueira, Revista do Serviço Público, 2011",
+      "ok": false
+    }
+  ],
+  "linhas": [
+    ["FHC (1995-2002)", -17.3],
+    ["Lula 1 e 2 (2003-2010)", 18.8],
+    ["Dilma (2011-2015)", 7.2],
+    ["Temer (2016-2018)", -0.3],
+    ["Bolsonaro (2019-2022)", -10.1],
+    ["Lula 3 (2023-2026)", 0.7]
+  ]
+}
