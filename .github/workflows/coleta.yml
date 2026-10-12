@@ -1,0 +1,41 @@
+name: Coleta de dados primários
+
+# Roda um script de scripts/coleta/ que baixa dados de fontes oficiais
+# (Câmara, Tesouro/Siconfi, FNDE/SIOPE, IBGE, Inep) e grava o resultado na
+# branch coleta-<nome do script>, para revisão antes de ir para a main.
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "Nome do script em scripts/coleta (sem .py)"
+        required: true
+      args:
+        description: "Argumentos"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Coletar
+        run: |
+          mkdir -p data/aux/coleta/${{ github.event.inputs.script }}
+          python3 scripts/coleta/${{ github.event.inputs.script }}.py ${{ github.event.inputs.args }} 2>&1 | tee data/aux/coleta/${{ github.event.inputs.script }}/log.txt
+      - name: Publicar na branch
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git checkout -B coleta-${{ github.event.inputs.script }}
+          git add -f data/aux/coleta/${{ github.event.inputs.script }}/
+          git commit -m "coleta: ${{ github.event.inputs.script }} ${{ github.event.inputs.args }}" || true
+          git push -f origin coleta-${{ github.event.inputs.script }}
