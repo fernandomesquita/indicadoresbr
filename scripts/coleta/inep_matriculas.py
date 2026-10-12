@@ -51,9 +51,15 @@ for ano in [int(a) for a in sys.argv[1:]] or list(range(2017, 2026)):
         if uf in UF and not mun:
             v = [num(x) for x in r[4:15]]
             tot, ut, uF, uE, uM, uP, rt, rF, rE, rM, rP = v
-            assert ut == uF + uE + uM + uP and rt == rF + rE + rM + rP and tot == ut + rt, (ano, uf, v)
-            saida.append({"ano": ano, "uf": UF[uf], "total": tot, "federal": uF + rF, "estadual": uE + rE,
-                          "municipal": uM + rM, "privada": uP + rP})
+            if ut == uF + uE + uM + uP and rt == rF + rE + rM + rP and tot == ut + rt:
+                # leiaute até 2024: total; urbana (total, fed, est, mun, priv); rural (idem)
+                F, E, M, P = uF + rF, uE + rE, uM + rM, uP + rP
+            else:
+                # leiaute de 2025: total; pública (total, fed, est, mun); privada (total e 4 categorias); depois localização
+                pub, F, E, M, P = v[1], v[2], v[3], v[4], v[5]
+                assert pub == F + E + M and tot == pub + P and P == sum(v[6:10]), (ano, uf, v)
+            saida.append({"ano": ano, "uf": UF[uf], "total": tot, "federal": F, "estadual": E,
+                          "municipal": M, "privada": P})
             n += 1
     print(ano, n, "UFs", flush=True)
 with open(OUT / "matriculas_uf.csv", "w", newline="", encoding="utf-8") as f:
