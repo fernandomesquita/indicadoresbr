@@ -1,0 +1,4 @@
+2014 ['consulta_cand_2014_BRASIL.csv'] 1
+2018 ['consulta_cand_2018_BRASIL.csv'] 1
+2022 ['consulta_cand_2022_BRASIL.csv'] 1
+1453 fim
