@@ -4,7 +4,7 @@
   "ordem": 4,
   "visivel": true,
   "titulo": "Como cada partido votou em temas do servidor",
-  "subtitulo": "Votos a favor do servidor em 11 votações selecionadas na Câmara, de 2003 a 2025",
+  "subtitulo": "Votos a favor do servidor em 9 votações selecionadas na Câmara, de 2003 a 2025",
   "tipo": "barras",
   "x": "Partido",
   "series": [
@@ -34,9 +34,9 @@
       "o_que_sustenta": "Placar de 251 a 132 pela derrubada, abaixo dos 257 necessários."
     },
     {
-      "nome": "Congresso em Foco, Veto ao aumento do Judiciário: veja como cada deputado votou",
+      "nome": "Câmara dos Deputados, dados abertos: Veto ao reajuste do Judiciário (sessão do Congresso, votação dos deputados) (2015-11 (noticiado em 18/11/2015))",
       "url": "https://www.congressoemfoco.com.br/amp/noticia/52436/veto-ao-aumento-do-judiciario-veja-como-cada-deputado-votou",
-      "o_que_sustenta": "Votos por partido em 2015 (PT 41 pela manutenção e 9 pela derrubada; PSDB 45 pela derrubada; PR 17 pela manutenção)."
+      "o_que_sustenta": "Contagem por partido do Congresso em Foco; placar oficial na Agência Câmara (https://www.camara.leg.br/noticias/475921-congresso-mantem-veto-a-reajuste-de-servidores-do-judiciario)."
     },
     {
       "nome": "Agência Senado, Vetado aumento de 53% a 78,5% para os servidores do Judiciário (22/7/2015)",
@@ -62,12 +62,82 @@
       "nome": "Exame, Câmara aprova projeto que reajusta salários de servidores (22/5/2025)",
       "url": "https://exame.com/brasil/camara-aprova-projeto-que-reajusta-salarios-de-servidores-publicos/",
       "o_que_sustenta": "Placar do reajuste de 2025 (388 a 43)."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: Reforma da Previdência de 2003, PEC 40/2003, 1º turno (Emenda Aglutinativa Substitutiva Global nº 4) (2003-08-05)",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/113716-111/orientacoes",
+      "o_que_sustenta": "Orientação de bancada (API) e disciplina por partido em Melo e Anastasia, Dados 48(2), 2005, tabela 2 (EA nº 4): PT 96,7%, PDT 100%, PSB 62,1%, PPS 94,4%, PV 33,3%, PMDB 53,7%, PTB 76%, PL 84,6%, PP 60,4%, PSDB 44,1%, PFL 50,7%, Prona 100% seguindo o líder."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: Funpresp, PL 1.992/2007, texto-base (2012-02-28)",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/366851-147/orientacoes",
+      "o_que_sustenta": "Orientação (API) e números por partido do Congresso em Foco (PT 69 a 8, PMDB 62 a 3, PSDB 33 a 14, PR 20 a 12, PSD 32 a 10, PSB 9 a 15, PDT 2 sim de 24, PTB 15 a 1, PCdoB 8 a 4, PV 4 sim de 7, PPS 1 sim de 11, PSOL 0 a 3, PRB 9 a 1, DEM orientou não)."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: Teto de gastos, PEC 241/2016, 1º turno (2016-10-10)",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2088351-235/orientacoes",
+      "o_que_sustenta": "Orientação (API) e lista parcial por deputado do TNH1 (PSB 17 a 1, PEN 2 a 1, PTB 13 a 1, PV 5 a 1, PTN 10 a 0)."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: Reforma da Previdência de 2019, PEC 6/2019, 1º turno (2019-07-10)",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2192459-636/orientacoes",
+      "o_que_sustenta": "Orientação (API; PV liberou) e Gazeta do Povo/InfoMoney (PSB 21 não e 11 sim; PDT 19 não e 8 sim; PV com 2 votos sim, sem total)."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: Congelamento de 2020, PLP 39/2020: Emenda nº 11 (PT), que tira os trabalhadores da educação do congelamento (2020-05-05)",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2251392-82/orientacoes",
+      "o_que_sustenta": "Orientação (API): Sim para PT, PSB, PDT, PSOL, PCdoB, Rede, PV, DEM; Não para MDB, PP, PL, PSD, Solidariedade, Novo, PSC, Pros; liberados PSDB, Podemos, Cidadania, Republicanos, PSL. Amostra de 179 dos 466 votos na API (o endpoint /votos chega truncado): PSDB 9 a 0, Republicanos 4 a 8, PSD 6 a 6, Cidadania 2 a 1, PSL 2 a 2, PTB 4 a 3, Patriota 0 a 1, Podemos 0 a 1. Texto da emenda: https://www.sinprodf.org.br/wp-content/uploads/2020/05/Emenda-destaque-11-PT.pdf. Identificada como a 2ª votação do congelamento por engenharia reversa das contagens do portal (PT 7, PDT 9, PSB 8, PCdoB 7, PV 4 e Rede 9 só fecham com ela)."
+    },
+    {
+      "nome": "Congresso em Foco, Veja como cada deputado votou no veto ao reajuste de salário de servidores (2020)",
+      "url": "https://www.congressoemfoco.com.br/noticia/16859/veja-como-cada-deputado-votou-no-veto-ao-reajuste-de-salario-de-servidores",
+      "o_que_sustenta": "Orientação de cada partido e placar de 316 a 165 na manutenção do veto."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: PEC Emergencial, PEC 186/2019, 1º turno (2021-03-09)",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2272137-114/orientacoes",
+      "o_que_sustenta": "Orientação (API): Não para PT, PCdoB, PSB, PSOL, Rede, PDT; Sim para os demais, inclusive PV."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: PEC 32/2020 na comissão especial (parecer do relator) (2021-09-23)",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2262083-597/votos",
+      "o_que_sustenta": "Votos nominais dos 46 membros (API), contados por partido. Observação: o endpoint /orientacoes desta votação de comissão traz orientações incoerentes com os votos (PT 'Sim', Governo 'Não'); por isso a conta usa os votos."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: Arcabouço fiscal, PLP 93/2023, texto-base (2023-05-23)",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2357053-47/orientacoes",
+      "o_que_sustenta": "Money Times (PL 30 a 60, PSOL 0 a 12, Novo 0 a 3, Rede 0 a 1, demais partidos com maioria Sim; Patriota 2 a 1)."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: Reajuste de 2025, PL 1.466/2025 (MP 1.286/2024), subemenda substitutiva global (2025-05-21)",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2494408-30/votos",
+      "o_que_sustenta": "Novo orientou Não. Amostra de 175 dos 431 votos na API: PL 44 a 16, União 13 a 5, Podemos 1 a 1, Novo 0 a 2; como o total de votos Não é 43, nenhuma bancada além do Novo pode ter maioria Não, exceto, em tese, o Podemos (amostra pequena)."
+    },
+    {
+      "nome": "Melo e Anastasia, A reforma da Previdência em dois tempos, Dados 48(2), 2005",
+      "url": "https://www.redalyc.org/pdf/218/21848203.pdf",
+      "o_que_sustenta": "Disciplina de cada partido na votação de 2003 (EA nº 4)."
+    },
+    {
+      "nome": "Congresso em Foco, Funpresp: PDT e PSB foram os menos fiéis ao governo",
+      "url": "https://congressoemfoco.com.br/noticias/funpresp-pdt-e-psb-foram-os-menos-fieis-ao-governo",
+      "o_que_sustenta": "Votos por partido na Funpresp (2012)."
+    },
+    {
+      "nome": "TNH1, Veja como cada deputado votou na PEC do Teto dos Gastos",
+      "url": "https://www.tnh1.com.br/noticia/nid/veja-como-cada-deputado-votou-na-pec-do-teto-dos-gastos/",
+      "o_que_sustenta": "Lista parcial por deputado no 1º turno da PEC 241/2016."
+    },
+    {
+      "nome": "Gazeta do Povo, Como votaram os partidos no texto-base da reforma da Previdência (2019)",
+      "url": "https://www.gazetadopovo.com.br/rodrigo-constantino/artigos/como-votaram-os-partidos-e-unidades-da-federacao-no-texto-base-da-reforma-da-previdencia/",
+      "o_que_sustenta": "Dissidências de PSB, PDT e PV em 2019."
     }
   ],
-  "como_ler": "Cada barra mostra, em porcentagem, em quantas das votações analisadas a maioria da bancada do partido votou do lado classificado como favorável ao servidor; a tabela traz também os números absolutos (por exemplo, 7 de 11). Vale o lado da maioria da bancada, empates ficam de fora e cada partido entra só nas votações em que já tinha deputados, por isso o total varia de 7 (Novo) a 11. Siglas que resultaram de fusão ou mudança de nome, como União Brasil e PRD, aparecem com 11 votações, o que indica que herdaram o histórico das legendas antecessoras. A proposta de emenda à Constituição da reforma administrativa (PEC 32/2020) não chegou ao Plenário, e a votação nominal disponível é a da comissão especial, em 23/9/2021 (28 votos a 18), restrita aos membros do colegiado. Em votações de regra fiscal, como o arcabouço de 2023, votar contra conta como posição favorável ao servidor, qualquer que tenha sido a justificativa do partido. Duas votações tratam do congelamento salarial de 2020, e por isso esse tema pesa em dobro.",
+  "como_ler": "Cada barra mostra, em porcentagem, em quantas das votações analisadas a maioria da bancada do partido votou do lado classificado como favorável ao servidor; a tabela traz também os números absolutos (por exemplo, 6 de 9). Vale o lado da maioria da bancada, empates ficam de fora e cada partido entra só nas votações em que já tinha deputados, por isso o total varia de 5 (Novo) a 9. Siglas criadas por fusão herdam o voto da antecessora que tinha bancada; quando as duas antecessoras tinham bancada e votaram em lados diferentes, a votação fica fora da conta da nova sigla (é o caso de União Brasil em 2003 e 2012 e do PRD na PEC 32). O congelamento salarial de 2020 entra uma vez, pela votação que manteve o veto à exceção para categorias, em agosto de 2020. A proposta de emenda à Constituição da reforma administrativa (PEC 32/2020) não chegou ao Plenário, e a votação usada é a da comissão especial, em 23/9/2021 (28 votos a 18), restrita aos membros do colegiado, com um ou poucos deputados por partido. Votações de regra fiscal sem efeito direto sobre o servidor, como o arcabouço de 2023, ficaram fora.",
   "contexto": [
-    "O indicador resume como cada partido votou em 11 votações da Câmara, de 2003 a 2025, com efeito direto sobre os servidores públicos: as reformas da Previdência de 2003 e de 2019, a criação da Fundação de Previdência Complementar do Servidor Público Federal (Funpresp) em 2012, o veto ao reajuste do Judiciário em 2015, o teto de gastos de 2016, duas votações do congelamento salarial de 2020, a PEC Emergencial de 2021, a PEC 32/2020 (reforma administrativa do governo Bolsonaro), o arcabouço fiscal de 2023 e o reajuste de 2025. Para cada votação, o portal definiu qual voto favorecia o servidor e verificou, nos dados abertos da Câmara, para que lado foi a maioria da bancada de cada partido. O percentual é a parcela de votações em que essa maioria ficou do lado classificado como favorável ao servidor.",
-    "A lista atravessa governos do PT, do MDB e do PL, e o mesmo partido aparece ora na base, ora na oposição. A Previdência de 2003, a Funpresp e o arcabouço fiscal foram propostas de governos do PT e tiveram o voto da bancada petista; o teto de gastos veio do governo Temer (MDB); a Previdência de 2019, a PEC Emergencial e a PEC 32 vieram do governo Bolsonaro. Em 2015, a Câmara manteve o veto da presidente Dilma Rousseff a reajustes de 53% a 78,5% para servidores do Judiciário: 251 deputados votaram pela derrubada, abaixo dos 257 exigidos, com a maior parte do PT e do PR (hoje PL) pela manutenção e a maior parte de PSDB, DEM e PSB pela derrubada. Quem defende essas medidas argumenta que elas equilibram as contas públicas e aproximam as regras do servidor às do setor privado; entidades de servidores argumentam que elas reduzem direitos e enfraquecem a capacidade do Estado.",
+    "O indicador resume como cada partido votou em 9 votações da Câmara, de 2003 a 2025, com efeito direto sobre os servidores públicos: as reformas da Previdência de 2003 e de 2019, a criação da Fundação de Previdência Complementar do Servidor Público Federal (Funpresp) em 2012, o veto ao reajuste do Judiciário em 2015, o teto de gastos de 2016, o veto à exceção do congelamento salarial em 2020, a PEC Emergencial de 2021, a PEC 32/2020 (reforma administrativa do governo Bolsonaro), na comissão especial, e o reajuste de 2025. Para cada votação, o portal definiu qual voto favorecia o servidor e verificou, nos dados abertos da Câmara e em contagens publicadas pela imprensa, para que lado foi a maioria da bancada de cada partido. O percentual é a parcela de votações em que essa maioria ficou do lado classificado como favorável ao servidor.",
+    "A lista atravessa governos do PT, do MDB e do PL, e o mesmo partido aparece ora na base, ora na oposição. A Previdência de 2003 e a Funpresp foram propostas de governos do PT e tiveram o voto da bancada petista; o teto de gastos veio do governo Temer (MDB); a Previdência de 2019, a PEC Emergencial e a PEC 32 vieram do governo Bolsonaro. Em 2015, a Câmara manteve o veto da presidente Dilma Rousseff a reajustes de 53% a 78,5% para servidores do Judiciário: 251 deputados votaram pela derrubada, abaixo dos 257 exigidos, com a maior parte do PT e do PR (hoje PL) pela manutenção e a maior parte de PSDB, DEM e PSB pela derrubada. Quem defende essas medidas argumenta que elas equilibram as contas públicas e aproximam as regras do servidor às do setor privado; entidades de servidores argumentam que elas reduzem direitos e enfraquecem a capacidade do Estado.",
     "Para quem estuda para concurso, o indicador mostra que a posição dos partidos sobre o serviço público varia conforme o tema e conforme a legenda esteja no governo ou na oposição. Ele também ajuda a antecipar o debate da próxima legislatura, que deve examinar a PEC 38/2025 e novas regras de reajuste. A escolha das votações e a definição do voto favorável ao servidor são decisões editoriais do portal; outra seleção poderia produzir outra ordem entre os partidos."
   ],
   "glossario": [
@@ -132,31 +202,32 @@
       "ok": true
     },
     {
-      "valor_no_portal": "Nota: partido criado depois de uma votação fica fora dela",
-      "valor_na_fonte": "União Brasil (2022) e PRD (2023) aparecem com 11 votações, o que só é possível com o histórico das siglas antecessoras",
-      "fonte": "Dados do próprio portal",
-      "ok": false
+      "valor_no_portal": "Método com 11 votações (arcabouço contado; congelamento de 2020 em dobro)",
+      "valor_na_fonte": "Método revisado com 9 votações; matriz partido x votação com fonte por votação",
+      "fonte": "Dados abertos da Câmara e Congresso em Foco (vetos de 2015 e 2020)",
+      "ok": true,
+      "observacao": "Revisão de 12/10/2026. Células indeterminadas fora da conta: PV em 2003 e 2019, PSDB em 2003."
     }
   ],
   "linhas": [
-    ["PSOL", 100.0, 10, 10],
-    ["Rede", 100.0, 9, 9],
-    ["PDT", 81.8, 9, 11],
-    ["PSB", 72.7, 8, 11],
-    ["PT", 63.6, 7, 11],
-    ["PCdoB", 63.6, 7, 11],
-    ["União Brasil", 45.5, 5, 11],
-    ["PV", 36.4, 4, 11],
-    ["Solidariedade", 33.3, 3, 9],
-    ["Cidadania", 27.3, 3, 11],
-    ["PSD", 20.0, 2, 10],
-    ["Republicanos", 20.0, 2, 10],
-    ["Podemos", 20.0, 2, 10],
-    ["PSDB", 18.2, 2, 11],
-    ["PRD", 18.2, 2, 11],
-    ["PP", 18.2, 2, 11],
-    ["MDB", 18.2, 2, 11],
-    ["PL", 18.2, 2, 11],
-    ["Novo", 14.3, 1, 7]
+    ["PSOL", 100.0, 8, 8],
+    ["Rede", 100.0, 7, 7],
+    ["PDT", 88.9, 8, 9],
+    ["PSB", 77.8, 7, 9],
+    ["PCdoB", 66.7, 6, 9],
+    ["PT", 66.7, 6, 9],
+    ["PV", 42.9, 3, 7],
+    ["Podemos", 42.9, 3, 7],
+    ["Solidariedade", 42.9, 3, 7],
+    ["Cidadania", 33.3, 3, 9],
+    ["União Brasil", 28.6, 2, 7],
+    ["PRD", 25.0, 2, 8],
+    ["PSD", 25.0, 2, 8],
+    ["PSDB", 25.0, 2, 8],
+    ["Republicanos", 25.0, 2, 8],
+    ["MDB", 22.2, 2, 9],
+    ["PP", 22.2, 2, 9],
+    ["PL", 12.5, 1, 8],
+    ["Novo", 0.0, 0, 5]
   ]
 }

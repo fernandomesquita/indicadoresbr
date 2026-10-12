@@ -19,8 +19,8 @@
   "sufixo": "",
   "casas": 0,
   "fonte": {
-    "nome": "Câmara dos Deputados, ficha da PEC 38/2025",
-    "url": "https://www.congressonacional.leg.br/materias/materias-bicamerais/-/ver/pec-38-2025"
+    "nome": "Câmara dos Deputados, dados abertos: autores da PEC 38/2025",
+    "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2576168/autores"
   },
   "fontes": [
     {
@@ -39,14 +39,14 @@
       "o_que_sustenta": "171 assinaturas, 16 pedidos de retirada por partido e argumentos a favor e contra."
     },
     {
-      "nome": "Blog Gran Cursos, Regimento Interno da Câmara, arts. 100 a 113",
-      "url": "https://blog.grancursosonline.com.br/questoes-ineditas-de-regimento-interno-da-camara-dos-deputados-art-100-ao-113/",
-      "o_que_sustenta": "Texto do art. 102, § 4º, do RICD sobre a impossibilidade de retirar assinaturas após a apresentação."
+      "nome": "Câmara dos Deputados, Regimento Interno (texto atualizado, Legislação Informatizada)",
+      "url": "https://www2.camara.leg.br/legin/fed/rescad/1989/resolucaodacamaradosdeputados-17-21-setembro-1989-320110-normaatualizada-pl.html",
+      "o_que_sustenta": "Art. 102, § 4º, do RICD (fonte primária no lugar do blog)."
     },
     {
-      "nome": "Sindifisco-MS (reprodução do JOTA), Dweck se opõe à reforma administrativa (25/11/2025)",
-      "url": "https://www.sindifisco-ms.org.br/dweck-se-opoe-a-reforma-administrativa-ampla-demais-e-com-excesso-de-constitucionalizacao/",
-      "o_que_sustenta": "Posição do Ministério da Gestão sobre o texto da PEC 38."
+      "nome": "JOTA, Dweck se opõe à reforma administrativa: 'ampla demais' e com 'excesso de constitucionalização' (25/11/2025)",
+      "url": "https://www.jota.info/executivo/dweck-se-opoe-a-reforma-administrativa-ampla-demais-e-com-excesso-de-constitucionalizacao",
+      "o_que_sustenta": "Posição da ministra da Gestão, Esther Dweck, sobre o texto da PEC 38."
     },
     {
       "nome": "Revista Oeste, PEC da reforma administrativa é protocolada na Câmara",
@@ -57,13 +57,33 @@
       "nome": "Wagner Advogados (Estadão Conteúdo), Placar da PEC 38",
       "url": "https://wagner.adv.br/placar-da-pec-38-maioria-dos-deputados-resiste-e-pec-nao-ganha-tracao-na-camara/",
       "o_que_sustenta": "Placar de posições dos deputados em dezembro de 2025 (76 a favor, 134 contra)."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: autores da PEC 38/2025",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2576168/autores",
+      "o_que_sustenta": "Lista oficial dos 171 signatários, com a ordem de assinatura."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: deputados por partido em 24/10/2025",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/deputados?siglaPartido=PP&dataInicio=2025-10-24&dataFim=2025-10-24&itens=200",
+      "o_que_sustenta": "Partido de cada signatário na data da apresentação (trocar siglaPartido por PL, MDB, UNIÃO, PSD, REPUBLICANOS, PSDB, PODE, NOVO, CIDADANIA, SOLIDARIEDADE, PRD e PSB)."
+    },
+    {
+      "nome": "Câmara dos Deputados, dados abertos: tramitação da PEC 38/2025",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2576168/tramitacoes",
+      "o_que_sustenta": "Apresentação em 24/10/2025, relatório de conferência de assinaturas, 35 requerimentos de retirada e indeferimento do REQ 3698/2026 em 20/7/2026."
+    },
+    {
+      "nome": "Câmara dos Deputados, Ato da Mesa nº 209/2021",
+      "url": "https://www2.camara.leg.br/legin/int/atomes/2021/atodamesa-209-21-outubro-2021-791898-normaatualizada-cd-mesa.docx",
+      "o_que_sustenta": "O envio eletrônico caracteriza a apresentação à Mesa para os fins do art. 102, § 4º, do RICD."
     }
   ],
-  "como_ler": "Cada barra é um partido e mostra quantos de seus deputados assinaram a proposta de emenda à Constituição (PEC) 38/2025 na apresentação, em 24 de outubro de 2025; a soma é 171, o mínimo de um terço da Câmara. Barras com valor zero (PT, PSOL, PCdoB, PDT, PV, Rede e Avante) indicam partidos sem nenhum signatário. O gráfico usa a sigla registrada para cada signatário na ficha da proposta, e quem trocou de partido depois pode aparecer em outra legenda em listas atualizadas. Os 16 pedidos de retirada feitos depois do protocolo não mudam a contagem, porque o regimento não permite retirar assinatura após a apresentação. Listas publicadas pela imprensa variam em uma ou duas assinaturas para MDB, PP e Republicanos.",
+  "como_ler": "Cada barra é um partido e mostra quantos de seus deputados assinaram a proposta de emenda à Constituição (PEC) 38/2025 na apresentação, em 24 de outubro de 2025; a soma é 171, o mínimo de um terço da Câmara. Barras com valor zero (PT, PSOL, PCdoB, PDT, PV, Rede e Avante) indicam partidos sem nenhum signatário. O gráfico usa o partido de cada signatário em 24 de outubro de 2025, segundo os dados abertos da Câmara; quem trocou de partido depois, por exemplo na janela partidária de 2026, continua contado na sigla daquela data. Os pedidos de retirada feitos depois do protocolo não mudam a contagem, porque o regimento não permite retirar assinatura após a apresentação. Listas publicadas pela imprensa na época trazem diferenças de uma ou duas assinaturas em MDB, PP e Republicanos por omissões e nomes repetidos.",
   "contexto": [
     "A PEC 38/2025 é a proposta de reforma administrativa elaborada a partir de um grupo de trabalho da Câmara relatado pelo deputado Pedro Paulo (PSD-RJ) e protocolada em 24 de outubro de 2025. Para começar a tramitar, uma PEC apresentada por deputados precisa da assinatura de pelo menos um terço da Câmara, ou 171 parlamentares, e a proposta chegou exatamente a esse número. Segundo a imprensa, o relator não assinou o texto, a pedido do presidente da Câmara, Hugo Motta, para preservar a neutralidade; na ficha de tramitação, o primeiro signatário é o deputado Zé Trovão (PL-SC). O gráfico distribui as 171 assinaturas pelo partido de cada signatário.",
     "O texto trata de avaliação de desempenho ligada à progressão e a bônus, de um bônus por resultado, de uma tabela única de remuneração, de limites aos supersalários e de regras de gasto com pessoal para estados e municípios, entre outros pontos. O relator e outros defensores afirmam que a proposta moderniza a gestão, valoriza o bom servidor e combate privilégios. Entidades de servidores afirmam que ela enfraquece a estabilidade e as carreiras típicas de Estado. A ministra da Gestão, Esther Dweck, disse em novembro de 2025 que o Executivo não concordava com o texto como estava, por considerá-lo amplo demais e por levar à Constituição temas que poderiam ser tratados em normas infralegais.",
-    "A assinatura indica apoio ao início da tramitação e não garante voto favorável. Depois do protocolo, 16 deputados de MDB, PP, PL, União Brasil, Republicanos e PSD pediram para retirar o nome; o Regimento Interno da Câmara dos Deputados (RICD), no art. 102, § 4º, impede retirar assinaturas depois da apresentação, e a Mesa indeferiu ao menos um desses pedidos em julho de 2026. Para ser aprovada, a PEC precisa de 308 votos em dois turnos na Câmara e de 49 no Senado. Para quem estuda para concurso, o tema é central: a proposta mexe em avaliação, progressão e remuneração do serviço público, e seu destino depende da Câmara eleita em 2026."
+    "A assinatura indica apoio ao início da tramitação; o voto no mérito pode ser outro. Entre outubro de 2025 e julho de 2026, 34 signatários de MDB, PP, PL, União Brasil, Republicanos, PSD e Solidariedade pediram para retirar o nome, e um deputado que não tinha assinado fez o mesmo pedido; o Regimento Interno da Câmara dos Deputados (RICD), no art. 102, § 4º, impede retirar assinaturas depois da apresentação, e a Mesa indeferiu o último desses pedidos em 20 de julho de 2026. Para ser aprovada, a PEC precisa de 308 votos em dois turnos na Câmara e de 49 no Senado. Para quem estuda para concurso, o tema é central: a proposta mexe em avaliação, progressão e remuneração do serviço público, e seu destino depende da Câmara eleita em 2026."
   ],
   "glossario": [
     {
@@ -113,27 +133,21 @@
       "ok": true
     },
     {
-      "valor_no_portal": "MDB 23",
-      "valor_na_fonte": "24",
-      "fonte": "Direção Concursos (lista de 169 linhas com um nome repetido)",
-      "ok": false
-    },
-    {
-      "valor_no_portal": "PP 26",
-      "valor_na_fonte": "24",
-      "fonte": "Direção Concursos",
-      "ok": false
-    },
-    {
-      "valor_no_portal": "Republicanos 20",
-      "valor_na_fonte": "19",
-      "fonte": "Direção Concursos",
-      "ok": false
-    },
-    {
       "valor_no_portal": "Assinaturas não podem ser retiradas (RICD, art. 102, § 4º)",
       "valor_na_fonte": "\"não poderão ser retiradas ou acrescentadas depois da apresentação à Mesa\"",
       "fonte": "Blog Gran Cursos (texto do RICD); ficha da PEC (indeferimento em 20/7/2026)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "MDB 23; PP 26; Republicanos 20; PL 33",
+      "valor_na_fonte": "MDB 23; PP 26; Republicanos 20; PL 33",
+      "fonte": "Câmara dos Deputados, dados abertos (autores e partido em 24/10/2025)",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "MDB 23; PP 26; Republicanos 20",
+      "valor_na_fonte": "MDB 24; PP 24; Republicanos 19",
+      "fonte": "Direção Concursos: Aécio Neves repetido no MDB; faltam Bibo Nunes (PL), Mersinho Lucena (PP) e Luciano Vieira (Republicanos); Zé Adriano (PP) listado no PL",
       "ok": true
     }
   ],

@@ -44,9 +44,9 @@
       "o_que_sustenta": "Data da posse e pastas dos ministros do PP e do Republicanos."
     },
     {
-      "nome": "Poder360, Emendas deixam de aumentar o governismo na Câmara em 2024",
+      "nome": "Poder360, Emendas deixam de aumentar o governismo na Câmara em 2024 (3/6/2024)",
       "url": "https://www.poder360.com.br/congresso/emendas-deixam-de-aumentar-o-governismo-na-camara-em-2024/",
-      "o_que_sustenta": "Continuação da série em 2024 e cautelas metodológicas do próprio levantamento."
+      "o_que_sustenta": "Taxa do MDB em 2023 (81,5%) e em 2024 até maio (67,5%), pelo mesmo método."
     },
     {
       "nome": "Consultor Jurídico, maioria do STF declara inconstitucional o orçamento secreto (19/12/2022)",
@@ -54,7 +54,7 @@
       "o_que_sustenta": "Decisão do STF sobre as emendas de relator em dezembro de 2022."
     }
   ],
-  "como_ler": "Cada coluna é um dos partidos destacados na reportagem do Poder360, e a altura mostra a porcentagem dos votos de seus deputados que seguiram a orientação do governo entre janeiro e 11 de dezembro de 2023. Um valor de 85% significa que, de cada 100 votos dados pelos deputados do partido em votações com orientação do governo, 85 acompanharam essa orientação. Como a conta inclui votações de pouca disputa, em que governo e oposição votam juntos, nenhum partido de oposição chega a zero; abstenções e obstruções contam como votos que não seguiram o governo. A média anual mistura o 1º semestre, antes da entrada de PP e Republicanos nos ministérios, e o 2º, depois dela. Levantamentos com regras próprias, como o Radar do Congresso, chegam a valores próximos, com diferença de um ou dois pontos (31% para o PL no fim de 2023).",
+  "como_ler": "Cada coluna é um dos partidos destacados na reportagem do Poder360, e a altura mostra a porcentagem dos votos de seus deputados que seguiram a orientação do governo entre janeiro e 11 de dezembro de 2023. Um valor de 85% significa que, de cada 100 votos dados pelos deputados do partido em votações com orientação do governo, 85 acompanharam essa orientação. Como a conta inclui votações de pouca disputa, em que governo e oposição votam juntos, nenhum partido de oposição chega a zero; abstenções e obstruções contam como votos que não seguiram o governo. A média anual mistura o 1º semestre, antes da entrada de PP e Republicanos nos ministérios, e o 2º, depois dela. Levantamentos com regras próprias, como o Radar do Congresso, chegam a valores próximos, com diferença de um ou dois pontos (31% para o PL no fim de 2023). O valor do MDB (81,5%) vem de reportagem do mesmo autor e com o mesmo método publicada em junho de 2024, porque a reportagem de dezembro de 2023 cita o MDB entre os partidos que aumentaram a adesão sem informar o número.",
   "contexto": [
     "A taxa de governismo mede com que frequência os deputados de um partido votaram como o governo pediu. No plenário da Câmara, antes de cada votação nominal, o líder do governo e os líderes partidários anunciam a orientação (votar sim, votar não ou liberar a bancada). O levantamento do Poder360 cruzou mais de 100 mil votos individuais, registrados nos dados abertos da Câmara de 1º de janeiro a 11 de dezembro de 2023, com 283 orientações do governo. Votações sem orientação do governo ficaram de fora, e abstenções e obstruções contaram como votos que não seguiram o governo.",
     "Em 2023, primeiro ano do terceiro mandato de Lula, o governo buscou apoio de partidos que não estiveram na sua coligação eleitoral. Em 13 de setembro de 2023, André Fufuca (PP) assumiu o Ministério do Esporte e Silvio Costa Filho (Republicanos), o de Portos e Aeroportos. Segundo o Poder360, a adesão média da Câmara passou de 65,1% no 1º semestre para 75,4% no 2º, e a reportagem associa a alta à distribuição de cargos e à liberação de emendas. A troca de cargos e recursos por apoio no Congresso também marcou governos anteriores: as emendas de relator, peça central da relação entre o governo Bolsonaro e o Congresso de 2020 a 2022, foram declaradas inconstitucionais pelo Supremo Tribunal Federal (STF) em dezembro de 2022. Quem defende esse modelo, chamado de presidencialismo de coalizão, argumenta que ele garante governabilidade num Congresso fragmentado; quem o critica aponta que o apoio passa a depender de cargos e verbas.",
@@ -123,6 +123,7 @@
   "linhas": [
     ["PT", 98],
     ["PSD", 85],
+    ["MDB", 81.5],
     ["Republicanos", 76],
     ["PP", 74],
     ["União Brasil", 68],
