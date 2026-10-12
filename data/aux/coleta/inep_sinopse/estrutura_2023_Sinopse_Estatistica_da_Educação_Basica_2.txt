@@ -1,0 +1,326 @@
+ARQUIVO sinopse_estatistica_censo_escolar_2023/Sinopse_Estatistica_da_Educação_Basica_2023.xlsx
+ABAS: Sinopse Estatística | Resumo | Equipe Técnica | Como Citar | Sumário | 1 - Matrículas | Educação Básica 1.1 | 1.2 | 1.3 | 1.4 | Educação Infantil 1.5 | Creche 1.6 | 1.7 | 1.8 | 1.9 | Pré-Escola 1.10 | 1.11 | 1.12 | 1.13 | Ensino Fundamental 1.14 | Anos Iniciais 1.15 | 1.16 | 1.17 | 1.18 | 1.19 | Anos Finais 1.20 | 1.21 | 1.22 | 1.23 | 1.24 | Ensino Médio 1.25 | 1.26 | 1.27 | 1.28 | 1.29 | Educação Profissional 1.30 | 1.31 | 1.32 | 1.33 | 1.34 | EJA 1.35 | 1.36 | 1.37 | 1.38 | Educação Especial 1.39 | Classes Comuns 1.40 | 1.41 | 1.42 | 1.43 | 1.44 | 1.45 | Classes Exclusivas 1.46 | 1.47 | 1.48 | 1.49 | 1.50 | 1.51 | Educação Indígena 1.52 | 2 - Docentes | Educação Básica 2.1 | 2.2 | 2.3 | 2.4 | 2.5 | Educação Infantil 2.6 | 2.7 | Creche 2.8 | 2.9 | 2.10 | 2.11 | Pré-Escola 2.12 | 2.13 | 2.14 | 2.15 | Ensino Fundamental 2.16 | 2.17 | 2.18 | 2.19 | 2.20 | Anos Iniciais 2.21 | 2.22 | 2.23 | 2.24 | Anos Finais 2.25 | 2.26 | 2.27 | 2.28 | Ensino Médio 2.29 | 2.30 | 2.31 | 2.32 | Educação Profissional 2.33 | 2.34 | 2.35 | 2.36 | 2.37 | EJA 2.38 | 2.39 | 2.40 | 2.41 | 2.42 | Educação Especial 2.43 | Classes Comuns 2.44 | 2.45 | 2.46 | 2.47 | 2.48 | 2.49 | Classes Exclusivas 2.50 | 2.51 | 2.52 | 2.53 | 2.54 | 2.55 | Educação Indígena 2.56 | 3 - Estabelecimentos | Educação Básica 3.1 | 3.2 | 3.3 | Educação Infantil 3.4 | 3.5 | Creche 3.6 | 3.7 | Pré-Escola 3.8 | 3.9 | Ensino Fundamental 3.10 | 3.11 | 3.12 | Anos Iniciais 3.13 | 3.14 | Anos Finais 3.15 | 3.16 | Ensino Médio 3.17 | 3.18 | Educação Profissional 3.19 | 3.20 | EJA 3.21 | 3.22 | EJA Ensino Fundamental 3.23 | EJA Ensino Médio 3.24 | Educação Especial 3.25 | 3.26 | 3.27 | Classes Comuns 3.28 | 3.29 | 3.30 | Classes Exclusivas 3.31 | 3.32 | 3.33 | Educação Indígena 3.34 | 4 - Turmas | Educação Básica 4.1 | 4.2 | Educação Infantil 4.3 | 4.4 | Creche 4.5 | Pré-Escola 4.6 | Ensino Fundamental 4.7 | Anos Iniciais 4.8 | 4.9 | Anos Finais 4.10 | 4.11 | Ensino Médio 4.12 | 4.13 | Educação Profissional 4.14 | 4.15 | EJA 4.16 | 4.17 | Educação Especial 4.18 | Classes Comuns 4.19 | 4.20 | Classes Exclusivas 4.21 | 4.22 | Educação Indígena 4.23
+
+=== Sinopse Estatística
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== Resumo
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== Equipe Técnica
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== Como Citar
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== Sumário
+Sinopse Estatística da Educação Básica de 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Sumário ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1 – MATRÍCULAS ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+EDUCAÇÃO BÁSICA ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.1 –  Número de Matrículas da Educação Básica, por Etapa de Ensino, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.2 – Número de Matrículas da Educação Básica, por Localização e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.3 – Número de Matrículas da Educação Básica, por Sexo e Cor/Raça, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.4 – Número de Matrículas da Educação Básica, por Faixa Etária, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ; 1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023
+Educação Infantil ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.5 – Número de Matrículas da Educação Infantil Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Educação Infantil - CRECHE ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.6 – Número de Matrículas da Creche Regular, por Localização e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.7 – Número de Matrículas da Creche Regular, por Sexo e Cor/Raça, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.8 – Número de Matrículas da Creche Regular, por Faixa Etária, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.9 – Número de Matrículas da Creche Regular em Tempo Integral (Turmas Presenciais) e Parcial, por Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Educação Infantil - PRÉ-ESCOLA ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.10 – Número de Matrículas da Pré-Escola Regular, por Localização e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.11 – Número de Matrículas da Pré-Escola Regular, por Sexo e Cor/Raça, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.12 – Número de Matrículas da Pré-Escola Regular, por Faixa Etária, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.13 – Número de Matrículas da Pré-Escola Regular em Tempo Integral (Turmas Presenciais) e Parcial, por Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ENSINO FUNDAMENTAL ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.14 – Número de Matrículas do Ensino Fundamental Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ENSINO FUNDAMENTAL - ANOS INICIAIS ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.15 – Número de Matrículas nos Anos Iniciais do Ensino Fundamental Regular, por Ano e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== 1 - Matrículas
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ; MATRÍCULAS ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== Educação Básica 1.1
+Voltar ao Sumário ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+MATRÍCULAS ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Educação Básica  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.1 –  Número de Matrículas da Educação Básica, por Etapa de Ensino, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Região Geográfica ; Unidade da Federação ; Município ; Código do Município ;                                                                                                                                          Número de Matrículas da Educação Básica ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ; Total1-4 ;                                                                                                                                  Etapa de Ensino  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Educação Infantil ;  ;  ; Ensino Fundamental ;  ;  ; Ensino Médio ;  ;  ;  ; Educação Profissional ;  ;  ;  ;  ;  ;  ;  ; Educação de Jovens e Adultos (EJA) ;  ;  ; Educação Especial ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Total10 ; Educação Profissional Técnica de Nível Médio ;  ;  ;  ; Educação Profissional - Formação Inicial Continuada (FIC) ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Total5 ; Creche ; Pré-Escola ; Total6 ; Anos Iniciais7 ; Anos Finais8 ; Total9 ; Ensino Médio Propedêutico  ; Ensino Médio Normal/Magistério ; Curso Técnico Integrado (Ensino Médio Integrado) ;  ; Total11 ; Associada ao Ensino Médio12 ; Curso Técnico Concomitante ; Curso Técnico Subsequente ; Total13 ; Curso FIC Concomitante ; Curso FIC Integrado na Modalidade EJA14 ; Total15 ; Ensino Fundamental16 ; Ensino Médio17 ; Total18 ; Classes Comuns19 ; Classes Exclusivas20
+ ;    ;    ;   ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Brasil  ;    ;    ;   ; 47304632 ; 9461155 ; 4122873 ; 5338282 ; 26108208 ; 14426650 ; 11681558 ; 7676743 ; 6853156 ; 41458 ; 782129 ; 2413825 ; 2271607 ; 861900 ; 331514 ; 1078193 ; 142218 ; 59004 ; 83214 ; 2589815 ; 1575804 ; 1014011 ; 1771430 ; 1617420 ; 154010
+Norte  ;    ;    ;   ; 4776303 ; 777419 ; 237920 ; 539499 ; 2864390 ; 1577090 ; 1287300 ; 752000 ; 704575 ; 362 ; 47063 ; 152699 ; 147246 ; 49567 ; 17965 ; 79714 ; 5453 ; 3062 ; 2391 ; 281753 ; 167636 ; 114117 ; 167104 ; 160385 ; 6719
+Norte  ; Rondônia  ;    ;   ; 388322 ; 63373 ; 17625 ; 45748 ; 227246 ; 117463 ; 109783 ; 71396 ; 66026 ; 0 ; 5370 ; 12337 ; 11961 ; 5430 ; 1375 ; 5156 ; 376 ; 264 ; 112 ; 19512 ; 8547 ; 10965 ; 16279 ; 15621 ; 658
+Norte  ; Rondônia  ; Alta Floresta D'Oeste  ; 1100015 ; 4985 ; 818 ; 218 ; 600 ; 3051 ; 1510 ; 1541 ; 942 ; 942 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 174 ; 59 ; 115 ; 161 ; 161 ; 0
+Norte  ; Rondônia  ; Alto Alegre dos Parecis  ; 1100379 ; 2567 ; 463 ; 131 ; 332 ; 1642 ; 806 ; 836 ; 446 ; 446 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 16 ; 0 ; 16 ; 92 ; 92 ; 0
+Norte  ; Rondônia  ; Alto Paraíso  ; 1100403 ; 3163 ; 540 ; 163 ; 377 ; 1927 ; 1012 ; 915 ; 534 ; 534 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 162 ; 80 ; 82 ; 129 ; 129 ; 0
+Norte  ; Rondônia  ; Alvorada D'Oeste  ; 1100346 ; 2850 ; 558 ; 217 ; 341 ; 1567 ; 786 ; 781 ; 559 ; 559 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 166 ; 80 ; 86 ; 207 ; 207 ; 0
+Norte  ; Rondônia  ; Ariquemes  ; 1100023 ; 22892 ; 4378 ; 1471 ; 2907 ; 13078 ; 6983 ; 6095 ; 4333 ; 3795 ; 0 ; 538 ; 755 ; 755 ; 538 ; 64 ; 153 ; 0 ; 0 ; 0 ; 886 ; 435 ; 451 ; 1040 ; 1040 ; 0
+Norte  ; Rondônia  ; Buritis  ; 1100452 ; 6918 ; 1082 ; 254 ; 828 ; 4079 ; 2045 ; 2034 ; 1474 ; 1474 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 283 ; 166 ; 117 ; 322 ; 259 ; 63
+Norte  ; Rondônia  ; Cabixi  ; 1100031 ; 1241 ; 231 ; 87 ; 144 ; 729 ; 368 ; 361 ; 216 ; 216 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 65 ; 28 ; 37 ; 45 ; 45 ; 0
+Norte  ; Rondônia  ; Cacaulândia  ; 1100601 ; 1028 ; 172 ; 37 ; 135 ; 639 ; 321 ; 318 ; 197 ; 197 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 20 ; 20 ; 0 ; 53 ; 53 ; 0
+Norte  ; Rondônia  ; Cacoal  ; 1100049 ; 20487 ; 3420 ; 856 ; 2564 ; 10969 ; 5562 ; 5407 ; 4385 ; 3824 ; 0 ; 561 ; 1364 ; 1364 ; 561 ; 256 ; 547 ; 0 ; 0 ; 0 ; 910 ; 367 ; 543 ; 1126 ; 972 ; 154
+Norte  ; Rondônia  ; Campo Novo de Rondônia  ; 1100700 ; 2302 ; 400 ; 74 ; 326 ; 1531 ; 798 ; 733 ; 361 ; 361 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 10 ; 0 ; 10 ; 60 ; 60 ; 0
+Norte  ; Rondônia  ; Candeias do Jamari  ; 1100809 ; 5809 ; 997 ; 170 ; 827 ; 3598 ; 1884 ; 1714 ; 801 ; 801 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 413 ; 204 ; 209 ; 235 ; 234 ; 1
+
+=== 1.2
+Voltar ao Sumário ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+MATRÍCULAS ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Educação Básica ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.2 – Número de Matrículas da Educação Básica, por Localização e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Região Geográfica ; Unidade da Federação ; Município ; Código do Município ; Número de Matrículas da Educação Básica ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ; Total1-3 ; Localização e Dependência Administrativa  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Urbana ;  ;  ;  ;  ; Rural ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Total ; Federal ; Estadual ; Municipal ; Privada ; Total ; Federal ; Estadual ; Municipal ; Privada ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Brasil  ;    ;    ;   ; 47304632 ; 41993893 ; 329278 ; 13364079 ; 18974050 ; 9326486 ; 5310739 ; 51318 ; 816812 ; 4345768 ; 96841 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ;    ;    ;   ; 4776303 ; 3603843 ; 38302 ; 1320509 ; 1773554 ; 471478 ; 1172460 ; 4525 ; 237614 ; 923089 ; 7232 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ;    ;   ; 388322 ; 344001 ; 4118 ; 167567 ; 130983 ; 41333 ; 44321 ; 1117 ; 9483 ; 31011 ; 2710 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alta Floresta D'Oeste  ; 1100015 ; 4985 ; 4329 ; 0 ; 2068 ; 2261 ; 0 ; 656 ; 0 ; 269 ; 387 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alto Alegre dos Parecis  ; 1100379 ; 2567 ; 1746 ; 0 ; 663 ; 1083 ; 0 ; 821 ; 0 ; 5 ; 816 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alto Paraíso  ; 1100403 ; 3163 ; 2414 ; 0 ; 1227 ; 734 ; 453 ; 749 ; 0 ; 0 ; 749 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alvorada D'Oeste  ; 1100346 ; 2850 ; 2662 ; 0 ; 1563 ; 1099 ; 0 ; 188 ; 0 ; 0 ; 188 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Ariquemes  ; 1100023 ; 22892 ; 20256 ; 0 ; 8348 ; 8518 ; 3390 ; 2636 ; 538 ; 435 ; 1663 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Buritis  ; 1100452 ; 6918 ; 6348 ; 0 ; 3645 ; 2381 ; 322 ; 570 ; 0 ; 0 ; 570 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cabixi  ; 1100031 ; 1241 ; 1135 ; 0 ; 536 ; 599 ; 0 ; 106 ; 0 ; 106 ; 0 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cacaulândia  ; 1100601 ; 1028 ; 867 ; 0 ; 459 ; 408 ; 0 ; 161 ; 0 ; 0 ; 161 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cacoal  ; 1100049 ; 20487 ; 18216 ; 561 ; 8247 ; 4817 ; 4591 ; 2271 ; 0 ; 300 ; 1701 ; 270 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Campo Novo de Rondônia  ; 1100700 ; 2302 ; 1244 ; 0 ; 667 ; 577 ; 0 ; 1058 ; 0 ; 280 ; 778 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Candeias do Jamari  ; 1100809 ; 5809 ; 4608 ; 0 ; 2696 ; 1912 ; 0 ; 1201 ; 0 ; 9 ; 1192 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Castanheiras  ; 1100908 ; 650 ; 164 ; 0 ; 164 ; 0 ; 0 ; 486 ; 0 ; 0 ; 486 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== 1.3
+Voltar ao Sumário ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+MATRÍCULAS ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Educação Básica ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.3 – Número de Matrículas da Educação Básica, por Sexo e Cor/Raça, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Região Geográfica ; Unidade da Federação ; Município ; Código do Município ; Número de Matrículas da Educação Básica ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ; Total1-3 ; Sexo e Cor/Raça ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Feminino ;  ;  ;  ;  ;  ;  ; Masculino ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Total ; Não Declarada ; Branca ; Preta ; Parda ; Amarela ; Indígena ; Total ; Não Declarada ; Branca ; Preta ; Parda ; Amarela ; Indígena ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Brasil  ;    ;    ;   ; 47304632 ; 23382759 ; 5979385 ; 7610053 ; 849683 ; 8660364 ; 100634 ; 182640 ; 23921873 ; 6091437 ; 7675693 ; 884560 ; 8982269 ; 99160 ; 188754 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ;    ;    ;   ; 4776303 ; 2351834 ; 699664 ; 245075 ; 44025 ; 1271936 ; 5604 ; 85530 ; 2424469 ; 720286 ; 237493 ; 48918 ; 1322512 ; 5628 ; 89632 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ;    ;   ; 388322 ; 191178 ; 22849 ; 47441 ; 5019 ; 112186 ; 902 ; 2781 ; 197144 ; 24015 ; 46485 ; 5673 ; 117244 ; 918 ; 2809 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alta Floresta D'Oeste  ; 1100015 ; 4985 ; 2439 ; 6 ; 876 ; 33 ; 1328 ; 4 ; 192 ; 2546 ; 9 ; 845 ; 43 ; 1472 ; 6 ; 171 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alto Alegre dos Parecis  ; 1100379 ; 2567 ; 1283 ; 1 ; 360 ; 39 ; 844 ; 20 ; 19 ; 1284 ; 0 ; 386 ; 42 ; 826 ; 17 ; 13 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alto Paraíso  ; 1100403 ; 3163 ; 1568 ; 194 ; 389 ; 108 ; 867 ; 8 ; 2 ; 1595 ; 240 ; 410 ; 102 ; 821 ; 22 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alvorada D'Oeste  ; 1100346 ; 2850 ; 1384 ; 125 ; 378 ; 37 ; 842 ; 1 ; 1 ; 1466 ; 124 ; 401 ; 51 ; 883 ; 5 ; 2 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Ariquemes  ; 1100023 ; 22892 ; 11227 ; 739 ; 3339 ; 607 ; 6406 ; 117 ; 19 ; 11665 ; 774 ; 3351 ; 663 ; 6758 ; 106 ; 13 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Buritis  ; 1100452 ; 6918 ; 3472 ; 127 ; 1036 ; 85 ; 2206 ; 16 ; 2 ; 3446 ; 137 ; 1056 ; 106 ; 2137 ; 9 ; 1 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cabixi  ; 1100031 ; 1241 ; 614 ; 47 ; 283 ; 5 ; 279 ; 0 ; 0 ; 627 ; 38 ; 284 ; 6 ; 299 ; 0 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cacaulândia  ; 1100601 ; 1028 ; 474 ; 0 ; 147 ; 29 ; 291 ; 7 ; 0 ; 554 ; 0 ; 149 ; 43 ; 354 ; 8 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cacoal  ; 1100049 ; 20487 ; 10307 ; 54 ; 3595 ; 306 ; 6014 ; 37 ; 301 ; 10180 ; 63 ; 3333 ; 294 ; 6156 ; 23 ; 311 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Campo Novo de Rondônia  ; 1100700 ; 2302 ; 1095 ; 42 ; 324 ; 29 ; 697 ; 2 ; 1 ; 1207 ; 65 ; 334 ; 36 ; 768 ; 2 ; 2 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Candeias do Jamari  ; 1100809 ; 5809 ; 2841 ; 822 ; 407 ; 79 ; 1516 ; 9 ; 8 ; 2968 ; 851 ; 453 ; 81 ; 1572 ; 3 ; 8 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Castanheiras  ; 1100908 ; 650 ; 319 ; 32 ; 86 ; 6 ; 194 ; 0 ; 1 ; 331 ; 37 ; 88 ; 7 ; 198 ; 0 ; 1 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== 1.4
+Voltar ao Sumário ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+MATRÍCULAS ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Educação Básica ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.4 – Número de Matrículas da Educação Básica, por Faixa Etária, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Região Geográfica ; Unidade da Federação ; Município ; Código do Município ; Número de Matrículas da Educação Básica ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ; Total1-3 ; Faixa Etária4 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Até 3 anos ; 4 a 5 anos ; 6 a 10 anos ; 11 a 14 anos ; 15 a 17 anos ; 18 a 19 anos ; 20 a 24 anos ; 25 a 29 anos ; 30 a 34 anos ; 35 a 39 anos ; 40 anos ou mais ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Brasil  ;    ;    ;   ; 47304632 ; 3828402 ; 5220530 ; 14094134 ; 11242604 ; 8190180 ; 1441538 ; 880204 ; 500400 ; 395522 ; 362244 ; 1148874 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ;    ;    ;   ; 4776303 ; 214529 ; 523573 ; 1492242 ; 1199989 ; 834165 ; 184612 ; 113604 ; 56908 ; 41811 ; 35104 ; 79766 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ;    ;   ; 388322 ; 15477 ; 44074 ; 126146 ; 99696 ; 71264 ; 12701 ; 6653 ; 3650 ; 2791 ; 2273 ; 3597 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alta Floresta D'Oeste  ; 1100015 ; 4985 ; 199 ; 576 ; 1634 ; 1346 ; 916 ; 162 ; 56 ; 24 ; 34 ; 13 ; 25 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alto Alegre dos Parecis  ; 1100379 ; 2567 ; 126 ; 309 ; 896 ; 701 ; 453 ; 71 ; 7 ; 2 ; 1 ; 0 ; 1 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alto Paraíso  ; 1100403 ; 3163 ; 151 ; 353 ; 1065 ; 858 ; 534 ; 108 ; 35 ; 7 ; 16 ; 13 ; 23 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alvorada D'Oeste  ; 1100346 ; 2850 ; 202 ; 337 ; 864 ; 733 ; 515 ; 72 ; 23 ; 16 ; 18 ; 27 ; 43 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Ariquemes  ; 1100023 ; 22892 ; 1289 ; 2796 ; 7543 ; 5713 ; 4199 ; 675 ; 224 ; 108 ; 83 ; 79 ; 183 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Buritis  ; 1100452 ; 6918 ; 218 ; 788 ; 2312 ; 1848 ; 1323 ; 214 ; 75 ; 32 ; 25 ; 29 ; 54 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cabixi  ; 1100031 ; 1241 ; 83 ; 134 ; 401 ; 334 ; 213 ; 20 ; 9 ; 11 ; 8 ; 10 ; 18 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cacaulândia  ; 1100601 ; 1028 ; 27 ; 137 ; 341 ; 289 ; 189 ; 22 ; 7 ; 3 ; 2 ; 3 ; 8 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cacoal  ; 1100049 ; 20487 ; 751 ; 2460 ; 6291 ; 5093 ; 4033 ; 622 ; 319 ; 276 ; 220 ; 181 ; 241 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Campo Novo de Rondônia  ; 1100700 ; 2302 ; 72 ; 298 ; 860 ; 608 ; 384 ; 59 ; 15 ; 2 ; 3 ; 0 ; 1 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Candeias do Jamari  ; 1100809 ; 5809 ; 143 ; 779 ; 1886 ; 1556 ; 1020 ; 180 ; 94 ; 49 ; 30 ; 27 ; 45 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Castanheiras  ; 1100908 ; 650 ; 0 ; 95 ; 240 ; 193 ; 106 ; 14 ; 1 ; 1 ; 0 ; 0 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cerejeiras  ; 1100056 ; 3692 ; 228 ; 515 ; 1257 ; 940 ; 594 ; 88 ; 24 ; 11 ; 4 ; 9 ; 22 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== Educação Infantil 1.5
+Voltar ao Sumário ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+MATRÍCULAS ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Educação Infantil ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.5 – Número de Matrículas da Educação Infantil Regular, por Etapa de Ensino e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Região Geográfica ; Unidade da Federação ; Município ; Código do Município ; Número de Matrículas da Educação Infantil ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ; Total1-3 ; Etapa de Ensino e Dependência Administrativa ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Creche ;  ;  ;  ;  ; Pré-Escola ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Total ; Federal ; Estadual ; Municipal ; Privada ; Total ; Federal ; Estadual ; Municipal ; Privada ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Brasil  ;    ;    ;   ; 9461155 ; 4122873 ; 942 ; 3905 ; 2748671 ; 1369355 ; 5338282 ; 1525 ; 56192 ; 4112950 ; 1167615 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ;    ;    ;   ; 777419 ; 237920 ; 0 ; 465 ; 206610 ; 30845 ; 539499 ; 93 ; 1057 ; 479291 ; 59058 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ;    ;   ; 63373 ; 17625 ; 0 ; 0 ; 13977 ; 3648 ; 45748 ; 0 ; 0 ; 39914 ; 5834 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alta Floresta D'Oeste  ; 1100015 ; 818 ; 218 ; 0 ; 0 ; 218 ; 0 ; 600 ; 0 ; 0 ; 600 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alto Alegre dos Parecis  ; 1100379 ; 463 ; 131 ; 0 ; 0 ; 131 ; 0 ; 332 ; 0 ; 0 ; 332 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alto Paraíso  ; 1100403 ; 540 ; 163 ; 0 ; 0 ; 163 ; 0 ; 377 ; 0 ; 0 ; 227 ; 150 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Alvorada D'Oeste  ; 1100346 ; 558 ; 217 ; 0 ; 0 ; 217 ; 0 ; 341 ; 0 ; 0 ; 341 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Ariquemes  ; 1100023 ; 4378 ; 1471 ; 0 ; 0 ; 921 ; 550 ; 2907 ; 0 ; 0 ; 2192 ; 715 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Buritis  ; 1100452 ; 1082 ; 254 ; 0 ; 0 ; 229 ; 25 ; 828 ; 0 ; 0 ; 765 ; 63 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cabixi  ; 1100031 ; 231 ; 87 ; 0 ; 0 ; 87 ; 0 ; 144 ; 0 ; 0 ; 144 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cacaulândia  ; 1100601 ; 172 ; 37 ; 0 ; 0 ; 37 ; 0 ; 135 ; 0 ; 0 ; 135 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Cacoal  ; 1100049 ; 3420 ; 856 ; 0 ; 0 ; 558 ; 298 ; 2564 ; 0 ; 0 ; 2090 ; 474 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Campo Novo de Rondônia  ; 1100700 ; 400 ; 74 ; 0 ; 0 ; 74 ; 0 ; 326 ; 0 ; 0 ; 326 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Candeias do Jamari  ; 1100809 ; 997 ; 170 ; 0 ; 0 ; 170 ; 0 ; 827 ; 0 ; 0 ; 827 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Norte  ; Rondônia  ; Castanheiras  ; 1100908 ; 99 ; 0 ; 0 ; 0 ; 0 ; 0 ; 99 ; 0 ; 0 ; 99 ; 0 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+
+=== Creche 1.6
+Voltar ao Sumário ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+MATRÍCULAS ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Creche ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+1.6 – Número de Matrículas da Creche Regular, por Localização e Dependência Administrativa, segundo a Região Geográfica, a Unidade da Federação e o Município - 2023 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Região Geográfica ; Unidade da Federação ; Município ; Código do Município ; Número de Matrículas da Creche ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ; Total1-3 ; Localização e Dependência Administrativa ;  ;  ;  ;  ;  ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Urbana ;  ;  ;  ;  ; Rural ;  ;  ;  ; 
+ ;  ;  ;  ;  ; Total ; Federal ; Estadual ; Municipal ; Privada ; Total ; Federal ; Estadual ; Municipal ; Privada
+ ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+Brasil  ;    ;    ;   ; 4122873 ; 3781111 ; 868 ; 2170 ; 2426893 ; 1351180 ; 341762 ; 74 ; 1735 ; 321778 ; 18175
+Norte  ;    ;    ;   ; 237920 ; 192910 ; 0 ; 442 ; 161716 ; 30752 ; 45010 ; 0 ; 23 ; 44894 ; 93
+Norte  ; Rondônia  ;    ;   ; 17625 ; 17354 ; 0 ; 0 ; 13706 ; 3648 ; 271 ; 0 ; 0 ; 271 ; 0
+Norte  ; Rondônia  ; Alta Floresta D'Oeste  ; 1100015 ; 218 ; 218 ; 0 ; 0 ; 218 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Alto Alegre dos Parecis  ; 1100379 ; 131 ; 131 ; 0 ; 0 ; 131 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Alto Paraíso  ; 1100403 ; 163 ; 163 ; 0 ; 0 ; 163 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Alvorada D'Oeste  ; 1100346 ; 217 ; 217 ; 0 ; 0 ; 217 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Ariquemes  ; 1100023 ; 1471 ; 1428 ; 0 ; 0 ; 878 ; 550 ; 43 ; 0 ; 0 ; 43 ; 0
+Norte  ; Rondônia  ; Buritis  ; 1100452 ; 254 ; 254 ; 0 ; 0 ; 229 ; 25 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Cabixi  ; 1100031 ; 87 ; 87 ; 0 ; 0 ; 87 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Cacaulândia  ; 1100601 ; 37 ; 37 ; 0 ; 0 ; 37 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Cacoal  ; 1100049 ; 856 ; 856 ; 0 ; 0 ; 558 ; 298 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Campo Novo de Rondônia  ; 1100700 ; 74 ; 74 ; 0 ; 0 ; 74 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Candeias do Jamari  ; 1100809 ; 170 ; 170 ; 0 ; 0 ; 170 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0
+Norte  ; Rondônia  ; Castanheiras  ; 1100908 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0
