@@ -1,0 +1,59 @@
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoes/csv/votacoes-2019.csv
+  8730 linhas; colunas: ['id', 'uri', 'data', 'dataHoraRegistro', 'idOrgao', 'uriOrgao', 'siglaOrgao', 'idEvento', 'uriEvento', 'aprovacao', 'votosSim', 'votosNao', 'votosOutros', 'descricao', 'ultimaAberturaVotacao_dataHoraRegistro', 'ultimaAberturaVotacao_descricao', 'ultimaApresentacaoProposicao_dataHoraRegistro', 'ultimaApresentacaoProposicao_descricao', 'ultimaApresentacaoProposicao_idProposicao', 'ultimaApresentacaoProposicao_uriProposicao']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-2019.csv
+  7085 linhas; colunas: ['idVotacao', 'uriVotacao', 'siglaOrgao', 'descricao', 'siglaBancada', 'uriBancada', 'orientacao']
+  2019: 962 votações de Plenário; 248 com orientação Sim/Não do governo
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2019.csv
+  120998 linhas; colunas: ['idVotacao', 'uriVotacao', 'dataHoraVoto', 'voto', 'deputado_id', 'deputado_uri', 'deputado_nome', 'deputado_siglaPartido', 'deputado_uriPartido', 'deputado_siglaUf', 'deputado_idLegislatura', 'deputado_urlFoto']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoes/csv/votacoes-2020.csv
+  1493 linhas; colunas: ['id', 'uri', 'data', 'dataHoraRegistro', 'idOrgao', 'uriOrgao', 'siglaOrgao', 'idEvento', 'uriEvento', 'aprovacao', 'votosSim', 'votosNao', 'votosOutros', 'descricao', 'ultimaAberturaVotacao_dataHoraRegistro', 'ultimaAberturaVotacao_descricao', 'ultimaApresentacaoProposicao_dataHoraRegistro', 'ultimaApresentacaoProposicao_descricao', 'ultimaApresentacaoProposicao_idProposicao', 'ultimaApresentacaoProposicao_uriProposicao']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-2020.csv
+  9352 linhas; colunas: ['idVotacao', 'uriVotacao', 'siglaOrgao', 'descricao', 'siglaBancada', 'uriBancada', 'orientacao']
+  2020: 1313 votações de Plenário; 346 com orientação Sim/Não do governo
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2020.csv
+  159717 linhas; colunas: ['idVotacao', 'uriVotacao', 'dataHoraVoto', 'voto', 'deputado_id', 'deputado_uri', 'deputado_nome', 'deputado_siglaPartido', 'deputado_uriPartido', 'deputado_siglaUf', 'deputado_idLegislatura', 'deputado_urlFoto']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoes/csv/votacoes-2021.csv
+  9998 linhas; colunas: ['id', 'uri', 'data', 'dataHoraRegistro', 'idOrgao', 'uriOrgao', 'siglaOrgao', 'idEvento', 'uriEvento', 'aprovacao', 'votosSim', 'votosNao', 'votosOutros', 'descricao', 'ultimaAberturaVotacao_dataHoraRegistro', 'ultimaAberturaVotacao_descricao', 'ultimaApresentacaoProposicao_dataHoraRegistro', 'ultimaApresentacaoProposicao_descricao', 'ultimaApresentacaoProposicao_idProposicao', 'ultimaApresentacaoProposicao_uriProposicao']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-2021.csv
+  22415 linhas; colunas: ['idVotacao', 'uriVotacao', 'siglaOrgao', 'descricao', 'siglaBancada', 'uriBancada', 'orientacao']
+  2021: 1572 votações de Plenário; 598 com orientação Sim/Não do governo
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2021.csv
+  322237 linhas; colunas: ['idVotacao', 'uriVotacao', 'dataHoraVoto', 'voto', 'deputado_id', 'deputado_uri', 'deputado_nome', 'deputado_siglaPartido', 'deputado_uriPartido', 'deputado_siglaUf', 'deputado_idLegislatura', 'deputado_urlFoto']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoes/csv/votacoes-2022.csv
+  5580 linhas; colunas: ['id', 'uri', 'data', 'dataHoraRegistro', 'idOrgao', 'uriOrgao', 'siglaOrgao', 'idEvento', 'uriEvento', 'aprovacao', 'votosSim', 'votosNao', 'votosOutros', 'descricao', 'ultimaAberturaVotacao_dataHoraRegistro', 'ultimaAberturaVotacao_descricao', 'ultimaApresentacaoProposicao_dataHoraRegistro', 'ultimaApresentacaoProposicao_descricao', 'ultimaApresentacaoProposicao_idProposicao', 'ultimaApresentacaoProposicao_uriProposicao']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-2022.csv
+  14415 linhas; colunas: ['idVotacao', 'uriVotacao', 'siglaOrgao', 'descricao', 'siglaBancada', 'uriBancada', 'orientacao']
+  2022: 1339 votações de Plenário; 403 com orientação Sim/Não do governo
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2022.csv
+  197189 linhas; colunas: ['idVotacao', 'uriVotacao', 'dataHoraVoto', 'voto', 'deputado_id', 'deputado_uri', 'deputado_nome', 'deputado_siglaPartido', 'deputado_uriPartido', 'deputado_siglaUf', 'deputado_idLegislatura', 'deputado_urlFoto']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoes/csv/votacoes-2023.csv
+  10851 linhas; colunas: ['id', 'uri', 'data', 'dataHoraRegistro', 'idOrgao', 'uriOrgao', 'siglaOrgao', 'idEvento', 'uriEvento', 'aprovacao', 'votosSim', 'votosNao', 'votosOutros', 'descricao', 'ultimaAberturaVotacao_dataHoraRegistro', 'ultimaAberturaVotacao_descricao', 'ultimaApresentacaoProposicao_dataHoraRegistro', 'ultimaApresentacaoProposicao_descricao', 'ultimaApresentacaoProposicao_idProposicao', 'ultimaApresentacaoProposicao_uriProposicao']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-2023.csv
+  4359 linhas; colunas: ['idVotacao', 'uriVotacao', 'siglaOrgao', 'descricao', 'siglaBancada', 'uriBancada', 'orientacao']
+  2023: 1090 votações de Plenário; 238 com orientação Sim/Não do governo
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv
+  128679 linhas; colunas: ['idVotacao', 'uriVotacao', 'dataHoraVoto', 'voto', 'deputado_id', 'deputado_uri', 'deputado_nome', 'deputado_siglaPartido', 'deputado_uriPartido', 'deputado_siglaUf', 'deputado_idLegislatura', 'deputado_urlFoto']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoes/csv/votacoes-2024.csv
+  10373 linhas; colunas: ['id', 'uri', 'data', 'dataHoraRegistro', 'idOrgao', 'uriOrgao', 'siglaOrgao', 'idEvento', 'uriEvento', 'aprovacao', 'votosSim', 'votosNao', 'votosOutros', 'descricao', 'ultimaAberturaVotacao_dataHoraRegistro', 'ultimaAberturaVotacao_descricao', 'ultimaApresentacaoProposicao_dataHoraRegistro', 'ultimaApresentacaoProposicao_descricao', 'ultimaApresentacaoProposicao_idProposicao', 'ultimaApresentacaoProposicao_uriProposicao']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-2024.csv
+  4361 linhas; colunas: ['idVotacao', 'uriVotacao', 'siglaOrgao', 'descricao', 'siglaBancada', 'uriBancada', 'orientacao']
+  2024: 2144 votações de Plenário; 224 com orientação Sim/Não do governo
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv
+  116400 linhas; colunas: ['idVotacao', 'uriVotacao', 'dataHoraVoto', 'voto', 'deputado_id', 'deputado_uri', 'deputado_nome', 'deputado_siglaPartido', 'deputado_uriPartido', 'deputado_siglaUf', 'deputado_idLegislatura', 'deputado_urlFoto']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoes/csv/votacoes-2025.csv
+  13827 linhas; colunas: ['id', 'uri', 'data', 'dataHoraRegistro', 'idOrgao', 'uriOrgao', 'siglaOrgao', 'idEvento', 'uriEvento', 'aprovacao', 'votosSim', 'votosNao', 'votosOutros', 'descricao', 'ultimaAberturaVotacao_dataHoraRegistro', 'ultimaAberturaVotacao_descricao', 'ultimaApresentacaoProposicao_dataHoraRegistro', 'ultimaApresentacaoProposicao_descricao', 'ultimaApresentacaoProposicao_idProposicao', 'ultimaApresentacaoProposicao_uriProposicao']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-2025.csv
+  4947 linhas; colunas: ['idVotacao', 'uriVotacao', 'siglaOrgao', 'descricao', 'siglaBancada', 'uriBancada', 'orientacao']
+  2025: 2041 votações de Plenário; 316 com orientação Sim/Não do governo
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv
+  175067 linhas; colunas: ['idVotacao', 'uriVotacao', 'dataHoraVoto', 'voto', 'deputado_id', 'deputado_uri', 'deputado_nome', 'deputado_siglaPartido', 'deputado_uriPartido', 'deputado_siglaUf', 'deputado_idLegislatura', 'deputado_urlFoto']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoes/csv/votacoes-2026.csv
+  7360 linhas; colunas: ['id', 'uri', 'data', 'dataHoraRegistro', 'idOrgao', 'uriOrgao', 'siglaOrgao', 'idEvento', 'uriEvento', 'aprovacao', 'votosSim', 'votosNao', 'votosOutros', 'descricao', 'ultimaAberturaVotacao_dataHoraRegistro', 'ultimaAberturaVotacao_descricao', 'ultimaApresentacaoProposicao_dataHoraRegistro', 'ultimaApresentacaoProposicao_descricao', 'ultimaApresentacaoProposicao_idProposicao', 'ultimaApresentacaoProposicao_uriProposicao']
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-2026.csv
+  1859 linhas; colunas: ['idVotacao', 'uriVotacao', 'siglaOrgao', 'descricao', 'siglaBancada', 'uriBancada', 'orientacao']
+  2026: 1356 votações de Plenário; 94 com orientação Sim/Não do governo
+baixando https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv
+  51832 linhas; colunas: ['idVotacao', 'uriVotacao', 'dataHoraVoto', 'voto', 'deputado_id', 'deputado_uri', 'deputado_nome', 'deputado_siglaPartido', 'deputado_uriPartido', 'deputado_siglaUf', 'deputado_idLegislatura', 'deputado_urlFoto']
+/home/runner/work/indicadoresbr/indicadoresbr/scripts/governismo.py:97: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "gerado_em": datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z",
+ok: /home/runner/work/indicadoresbr/indicadoresbr/data/aux/governismo/governismo.json
