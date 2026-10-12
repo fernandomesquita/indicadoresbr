@@ -18,21 +18,27 @@ def get(url, nome, limite=200000):
         (OUT / f"{nome}.txt").write_text(f"URL: {url}\nERRO: {e}\n", encoding="utf-8"); print("erro", nome, e, flush=True)
 def siope(rec, ano, uf, extra=""):
     return f"{SIOPE}/{rec}(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)?@Ano_Consulta={ano}&@Num_Peri=6&@Sig_UF='{uf}'&$format=json&$top=5000{extra}"
-# Rodada 2
-get(siope("Informacoes_Complementares_Siope", 2024, "AC"), "siope_infocompl_AC_2024", 400000)
-get(siope("Despesas_Funcao_Educacao_Siope", 2024, "AC"), "siope_despfuncao_AC_2024", 400000)
-get(siope("Despesas_Siope", 2024, "AC") .replace("$top=5000", "$top=300"), "siope_despesas_AC_2024", 400000)
-q = lambda d: SICONFI + d
-for ano in (2006, 2010, 2014):
-    get(q(f"/rreo?an_exercicio={ano}&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=" + urllib.parse.quote("RREO-Anexo 02") + "&co_esfera=U&id_ente=1"), f"siconfi_rreo02_uniao_{ano}", 3000)
-txt = get(q("/rreo?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=" + urllib.parse.quote("RREO-Anexo 02") + "&co_esfera=U&id_ente=1"), "siconfi_rreo02_uniao_2024_full", 10)
-if txt:
-    j = json.loads(txt); sup = [x for x in j["items"] if "Superior" in x["conta"]]
-    (OUT / "siconfi_rreo02_uniao_2024_superior.json").write_text(json.dumps(sup, ensure_ascii=False, indent=1), encoding="utf-8")
-for url, nome in [("https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2024.zip", "inep_sinopse_2024"),]:
+# Rodada 3
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
+def cabeca(url, nome):
     try:
-        r = urllib.request.urlopen(urllib.request.Request(url, method="HEAD", headers={"User-Agent": "IndicadoresBR/1.0"}), timeout=60)
-        (OUT / f"{nome}.txt").write_text(f"{url}\n{r.status} {dict(r.headers)}", encoding="utf-8"); print("ok", nome)
+        req = urllib.request.Request(url, headers={**UA, "Range": "bytes=0-1023"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            (OUT / f"{nome}.txt").write_text(f"{url}\n{r.status} {dict(r.headers)}", encoding="utf-8"); print("ok", nome)
     except Exception as e:
         (OUT / f"{nome}.txt").write_text(f"{url}\nERRO {e}", encoding="utf-8"); print("erro", nome, e)
+cabeca("https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2024.zip", "inep_sinopse_2024")
+cabeca("https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_2024.zip", "inep_microdados_2024")
+cabeca("https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2018.zip", "tse_cand_2018")
+get(siope("Indicadores_Siope", 2016, "AC").replace("$top=5000", "$top=60"), "siope_indicadores_AC_2016", 60000)
+get(siope("Despesas_Funcao_Educacao_Siope", 2016, "AC").replace("$top=5000", "$top=40"), "siope_despfuncao_AC_2016", 20000)
+SPARQL = "https://www1.siop.planejamento.gov.br/sparql/"
+for ano in (2006, 2014, 2024):
+    qq = f"""PREFIX loa: <http://vocab.e.gov.br/2013/09/loa#>
+SELECT ?cod (SUM(?liq) AS ?liquidado) (SUM(?pago) AS ?pago) WHERE {{
+  GRAPH <http://orcamento.dados.gov.br/{ano}/> {{
+    ?i loa:temSubfuncao ?sf . ?sf loa:codigo ?cod . FILTER(?cod = "364")
+    OPTIONAL {{ ?i loa:valorLiquidado ?liq }} OPTIONAL {{ ?i loa:valorPago ?pago }}
+  }} }} GROUP BY ?cod"""
+    get(SPARQL + "?" + urllib.parse.urlencode({"query": qq, "format": "json", "default-graph-uri": ""}), f"siop_sparql_364_{ano}", 20000)
 print("fim")
