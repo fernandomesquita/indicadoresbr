@@ -62,3 +62,60 @@ if __name__ == "__main__":
     m = municipios()
     for a in ANOS:
         print(a, round(sum(sum(v.values()) for (ano, uf), v in m.items() if ano == a) * FATOR[a] / 1e9, 1))
+
+# ---------------------------------------------------------------- estados
+PREV = {"271", "272", "273", "274"}
+
+def estados_siope():
+    """R$ correntes por (ano, uf): mesma régua dos municípios, e previdência declarada à parte."""
+    out = collections.defaultdict(collections.Counter)
+    for r in csv.DictReader(gzip.open(SIOPE, "rt", encoding="utf-8"), delimiter=";"):
+        if r["tipo"] != "Estadual": continue
+        s = r["subfuncao"].strip()
+        if s.upper().startswith("TOTAL"): continue
+        soma, mx, n = float(r["liquidado_soma"]), float(r["liquidado_max"]), int(r["linhas"])
+        v = mx if (n >= 2 and abs(mx - soma / 2) < 1) else soma
+        c = codigo(s); k = (int(r["ano"]), r["uf"])
+        out[k]["tudo"] += v
+        if c in ETAPAS | APOIO | PROGRAMAS: out[k]["basica"] += v
+        if c in PREV: out[k]["prev_sub"] += v
+        if s.startswith("Inativos"): out[k]["prev_inat"] += v
+        if c == "364": out[k]["superior"] += v
+    # Quando o estado declara os inativos numa linha "Inativos" e também na subfunção 272
+    # (São Paulo em 2019 e 2020), desconta-se a maior das duas, para não descontar duas vezes.
+    for k, d in out.items(): d["prev"] = max(d["prev_sub"], d["prev_inat"])
+    return out
+
+def estados_siconfi(siope):
+    """Função Educação (inclusive intraorçamentária) menos Ensino Superior e menos a previdência
+    que o estado declara dentro da educação no SIOPE (São Paulo, DF, Goiás, Acre e outros poucos)."""
+    tot, intra, sup = collections.Counter(), collections.Counter(), collections.Counter()
+    bloco = None
+    for r in csv.DictReader(open(SICONFI, encoding="utf-8"), delimiter=";"):
+        k = (int(r["ano"]), r["uf"]); c = r["conta"]; cc = r["cod_conta"]
+        if c == "Educação":
+            if cc == "RREO2TotalDespesas": tot[k] = float(r["valor"]); bloco = k
+            elif "Intra" in cc: intra[k] = float(r["valor"])
+            continue
+        if c == "Cultura": bloco = None; continue
+        if bloco == k and cc == "RREO2TotalDespesas" and c == "Ensino Superior": sup[k] += float(r["valor"])
+    out = {}
+    for k in tot:
+        out[k] = {"total": tot[k] + intra[k], "superior": sup[k], "prev": siope.get(k, {}).get("prev", 0.0),
+                  "basica": tot[k] + intra[k] - sup[k] - siope.get(k, {}).get("prev", 0.0)}
+    return out
+
+def calcula(fonte_estado):
+    mun, mat = municipios(), matriculas()
+    es = estados_siope(); ec = estados_siconfi(es)
+    linhas = []
+    for (a, uf), m in sorted(mat.items()):
+        if a not in FATOR: continue
+        vm = sum(mun.get((a, uf), {}).values())
+        if fonte_estado == "siope" and (a, uf) in es: ve, orig = es[(a, uf)]["basica"], "SIOPE"
+        else: ve, orig = ec[(a, uf)]["basica"], "Siconfi"
+        alunos = int(m["estadual"]) + int(m["municipal"])
+        linhas.append({"ano": a, "uf": uf, "gasto_estado": ve * FATOR[a], "gasto_municipios": vm * FATOR[a],
+                       "fonte_estado": orig, "matriculas": alunos,
+                       "por_aluno": (ve + vm) * FATOR[a] / alunos})
+    return linhas
