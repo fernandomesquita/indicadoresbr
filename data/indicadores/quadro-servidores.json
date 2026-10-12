@@ -24,9 +24,9 @@
   },
   "fontes": [
     {
-      "nome": "Ipea, Comunicado nº 110, Ocupação no setor público brasileiro",
+      "nome": "Ipea, Comunicado nº 110 (8/9/2011), Quadro 2",
       "url": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
-      "o_que_sustenta": "Série de servidores civis ativos até 2010."
+      "o_que_sustenta": "Servidores civis ativos do Executivo federal: 641.564 em 1994, 530.662 em 2002 e 630.542 em 2010 (Boletim Estatístico de Pessoal)."
     },
     {
       "nome": "Moraes, Silva e Costa (Seges/MPOG), O mito do inchaço da força de trabalho do Executivo federal",
@@ -34,9 +34,9 @@
       "o_que_sustenta": "Servidores civis ativos do Executivo: 567.689 em 1995 e 485.741 em 2002 (Boletim Estatístico de Pessoal)."
     },
     {
-      "nome": "Enap, Servidores públicos federais 2013",
+      "nome": "Enap, Servidores públicos federais 2013 (folder)",
       "url": "https://bibliotecadigital.enap.gov.br/bitstream/1/614/6/Folder%20servidores%20p%c3%bablicos%20federais%20servidores_publicos_federais%202013.pdf",
-      "o_que_sustenta": "Totais de 495.803 em 2002 e 633.682 em 2012, mostrando diferenças de cobertura entre edições."
+      "o_que_sustenta": "Boletim Estatístico de Pessoal com empresas públicas e sociedades de economia mista dependentes do Tesouro (34.387 servidores em dez/2002), provável origem da diferença entre as séries."
     },
     {
       "nome": "Poder360, Bolsonaro é o 3º presidente que mais cortou funcionários (9/4/2022)",
@@ -62,9 +62,24 @@
       "nome": "Wagner Advogados (Correio Braziliense), Ministério da Gestão projeta saída de 70 mil servidores até 2030",
       "url": "https://wagner.adv.br/ministerio-da-gestao-projeta-saida-de-70-mil-servidores-ate-2030/",
       "o_que_sustenta": "Projeção do MGI de mais de 70 mil aposentadorias de 2026 a 2030 e saldo líquido de 2.800 no governo atual até março de 2026."
+    },
+    {
+      "nome": "IBGE, Anuário Estatístico do Brasil 2023, tabela 7.2.1.3",
+      "url": "https://anuario.ibge.gov.br/images/aeb/2023/s7/2_pdf/s7t2103.pdf",
+      "o_que_sustenta": "571.873 servidores civis ativos do Executivo (administração direta, autarquias e fundações) em dezembro de 2023, pelo PEP."
+    },
+    {
+      "nome": "Poder360, Governo amplia funcionalismo pela 1ª vez em 6 anos (19/1/2024)",
+      "url": "https://www.poder360.com.br/governo/governo-amplia-funcionalismo-pela-1a-vez-em-6-anos/",
+      "o_que_sustenta": "Aumento de 6.874 servidores civis em 2023 em relação a dezembro de 2022 (PEP de 18/1/2024), usado para obter o total de dezembro de 2022."
+    },
+    {
+      "nome": "Poder360, Governo Lula tem 3.057 funcionários públicos a mais em 2024 (8/2/2025)",
+      "url": "https://www.poder360.com.br/poder-economia/governo-lula-tem-3-057-funcionarios-publicos-a-mais-em-2024/",
+      "o_que_sustenta": "574.930 em 2024, 571.873 em 2023 e 493.272 em 2002 pelo PEP, número que mostra a diferença de cobertura em relação ao Boletim (530.662 em 2002)."
     }
   ],
-  "como_ler": "Cada coluna é um governo, e a altura mostra a variação percentual do número de servidores civis ativos do Executivo federal entre o início e o fim do período; colunas abaixo de zero indicam redução do quadro. A série usa o número de dezembro de cada ano: o período de FHC começa em dezembro de 1994, Dilma vai de dezembro de 2010 a dezembro de 2015 e Temer, de dezembro de 2015 a dezembro de 2018; o de Bolsonaro termina em dezembro de 2022, com valor estimado a partir do dado de dezembro de 2023; o de Lula 3 vai de dezembro de 2022 ao dado mais recente e pode mudar até dezembro de 2026. Os governos têm durações diferentes (cerca de dois anos e meio no caso de Temer, oito anos nos de FHC e de Lula 1 e 2), por isso a variação acumulada não deve ser lida como taxa anual. As séries até 2010 e a partir de 2011 vêm de publicações distintas, com pequenas diferenças de cobertura: o total de dezembro de 2002, por exemplo, aparece como 485.741 em uma edição e 495.803 em outra.",
+  "como_ler": "Cada coluna é um governo, e a altura mostra a variação percentual do número de servidores civis ativos do Executivo federal entre o início e o fim do período; colunas abaixo de zero indicam redução do quadro. A série usa a posição de dezembro de cada ano. FHC vai de dezembro de 1994 (641.564) a dezembro de 2002 (530.662), e Lula 1 e 2, até dezembro de 2010 (630.542), pelo Comunicado 110 do Ipea, com dados do Boletim Estatístico de Pessoal. Os demais períodos usam o Painel Estatístico de Pessoal (PEP): Dilma vai de dezembro de 2011 (583.657) a dezembro de 2015 (625.673) e deixa de fora o ano de 2011, porque o dado de dezembro de 2010 nessa série não foi localizado; Temer vai de dezembro de 2015 a dezembro de 2018 (628.750); Bolsonaro, de dezembro de 2018 a dezembro de 2022. O total de dezembro de 2022 (564.999) é cálculo próprio: 571.873 servidores em dezembro de 2023 menos o aumento de 6.874 registrado em 2023. Lula 3 vai de dezembro de 2022 a junho de 2026 (569.230), dado mais recente localizado, e pode mudar até dezembro de 2026. Os governos têm durações diferentes (cerca de dois anos e meio no caso de Temer, oito anos nos de FHC e de Lula 1 e 2), por isso a variação acumulada não deve ser lida como taxa anual. As duas séries têm coberturas diferentes e não se emendam: para dezembro de 2002, o Boletim usado pelo Ipea registra 530.662 servidores, e o PEP, 493.272. O PEP também revisa números antigos a cada atualização, o que pode mover as variações em alguns décimos.",
   "contexto": [
     "O gráfico mostra quanto variou o número de servidores civis ativos do Poder Executivo federal (administração direta, autarquias e fundações) do início ao fim de cada governo, desde 1995. Os dados vêm de duas séries oficiais: o Boletim Estatístico de Pessoal, usado pelo Instituto de Pesquisa Econômica Aplicada (Ipea) em estudos sobre o período até 2010, e o Painel Estatístico de Pessoal (PEP), mantido hoje pelo Ministério da Gestão e da Inovação em Serviços Públicos (MGI). Militares, aposentados e servidores do Legislativo e do Judiciário ficam de fora.",
     "O tamanho do quadro resulta do saldo entre saídas, sobretudo aposentadorias, e entradas por concurso, que dependem de autorização no Orçamento. Reformas da Previdência costumam antecipar aposentadorias: em 2019, ano da reforma aprovada no governo Bolsonaro, foram 37.875, o maior número da série de 2011 a 2022. Nos governos FHC e Bolsonaro, as saídas superaram as entradas; nos governos Lula 1 e 2 e Dilma, ocorreu o contrário; em Temer e, até agora, em Lula 3, o quadro ficou perto da estabilidade. Quem defende a contenção argumenta que a digitalização e a reorganização de serviços permitem atender com menos pessoal e aliviam as contas públicas; quem critica argumenta que a falta de reposição sobrecarrega os órgãos e prejudica o atendimento.",
@@ -118,13 +133,62 @@
       "valor_na_fonte": "Estudo do Ipea indica que o quadro voltou a mais de 600 mil em 2010; sobre 485.741 em 2002, isso daria mais de 23%",
       "fonte": "Cardoso Jr. e Nogueira, Revista do Serviço Público, 2011",
       "ok": false
+    },
+    {
+      "valor_no_portal": "linhas[FHC]: -17.3",
+      "valor_na_fonte": "-17.3 (Mantido. Origem localizada: Comunicado Ipea 110, Quadro 2. 530.662 (2002) / 641.564 (1994) - 1 = -17,29%. Os -14,4% da conferência anterior usavam outra série (força de trabalho de Moraes, Silva e Costa, 567.689 em 1995 e 485.741 em 2002) e outro ponto de partida (1995).)",
+      "fonte": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Lula 1 e 2]: 18.8",
+      "valor_na_fonte": "18.8 (Mantido. 630.542 (2010) / 530.662 (2002) - 1 = +18,82%. A 'volta a mais de 600 mil' citada na Revista do Serviço Público é este mesmo 630.542; a conta de 'mais de 23%' dividia por 485.741, que é de outra série.)",
+      "fonte": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Dilma]: 7.2",
+      "valor_na_fonte": "7.2 (Valor mantido, rótulo do período corrigido no texto. 625.673 (dez/2015) / 583.657 (dez/2011) - 1 = +7,20%. O portal já usava dez/2011 como base; o como_ler diz dez/2010. O dado do PEP de dez/2010 não foi localizado; o 630.542 do Ipea para 2010 é de outra série e não pode ser usado como base.)",
+      "fonte": "https://folha.qconcursos.com/n/numero-de-servidores-publicos-no-brasil-2022",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Temer]: -0.3",
+      "valor_na_fonte": "0.5 (O -0,3% vinha de 628.750 (dez/2018) / 630.525 (dez/2016) - 1 = -0,28%, base diferente da declarada no como_ler. Com a base declarada, encadeada com o fim de Dilma: 628.750 / 625.673 (dez/2015) - 1 = +0,49%, arredondado para +0,5%.)",
+      "fonte": "https://folha.qconcursos.com/n/numero-de-servidores-publicos-no-brasil-2022",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Bolsonaro]: -10.1",
+      "valor_na_fonte": "-10.1 (Mantido, com a conta explicitada. Dez/2022 = 571.873 (dez/2023, Anuário IBGE com PEP) - 6.874 (aumento de 2023, Poder360 com PEP de 18/1/2024) = 564.999. 564.999 / 628.750 (dez/2018) - 1 = -10,14%. Usar 567.296 daria -9,8%, mas esse número é de setembro de 2022.)",
+      "fonte": "https://www.poder360.com.br/governo/governo-amplia-funcionalismo-pela-1a-vez-em-6-anos/",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Lula 3]: 0.7",
+      "valor_na_fonte": "0.7 (Mantido, com a conta explicitada. 569.230 (jun/2026) / 564.999 (dez/2022) - 1 = +0,75%. Os +0,3% da conferência anterior usavam setembro de 2022 como base (567.296).)",
+      "fonte": "https://www.poder360.com.br/poder-economia/governo-lula-tem-4-255-funcionarios-a-menos-em-1-ano/",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "checagem: FHC ok false; Lula 1 e 2 ok false; Lula 3 ok false",
+      "valor_na_fonte": "FHC: 641.564 (dez/1994) para 530.662 (dez/2002), -17,3%, Comunicado Ipea 110, ok true. Lula 1 e 2: 530.662 para 630.542 (dez/2010), +18,8%, ok true. Temer: 625.673 (dez/2015) para 628.750 (dez/2018), +0,5%, ok após a troca. Lula 3: 564.999 (dez/2022, cálculo) para 569.230 (jun/2026), +0,7%, ok true. (Ver linhas acima.)",
+      "fonte": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
     }
   ],
   "linhas": [
     ["FHC (1995-2002)", -17.3],
     ["Lula 1 e 2 (2003-2010)", 18.8],
     ["Dilma (2011-2015)", 7.2],
-    ["Temer (2016-2018)", -0.3],
+    ["Temer (2016-2018)", 0.5],
     ["Bolsonaro (2019-2022)", -10.1],
     ["Lula 3 (2023-2026)", 0.7]
   ]

@@ -17,15 +17,10 @@
   "sufixo": "",
   "casas": 0,
   "fonte": {
-    "nome": "Leis de reajuste (10.331/2001 a 15.141/2025) e IBGE",
-    "url": "https://www.ibge.gov.br/explica/inflacao.php"
+    "nome": "Leis de reajuste (Planalto) e IBGE, IPCA (Sidra, tabela 1737)",
+    "url": "https://sidra.ibge.gov.br/tabela/1737"
   },
   "fontes": [
-    {
-      "nome": "Câmara dos Deputados, Lei 10.331/2001 (publicação original)",
-      "url": "https://www2.camara.leg.br/legin/fed/lei/2001/lei-10331-18-dezembro-2001-428599-publicacaooriginal-1-pl.html",
-      "o_que_sustenta": "Regras da revisão geral anual e índice de 3,5% para 2002."
-    },
     {
       "nome": "ConJur, Lei que deu aumento de R$ 59 a servidores produziu 30 mil processos (23/10/2017)",
       "url": "https://www.conjur.com.br/2017-out-23/lei-deu-aumento-59-servidores-produziu-30-mil-processos//?print=1",
@@ -67,20 +62,70 @@
       "o_que_sustenta": "Estimativa oficial de impacto de R$ 73,92 bilhões até 2027."
     },
     {
-      "nome": "Yahii, IPCA acumulado por ano (série do IBGE)",
-      "url": "https://www.yahii.com.br/ipca.html",
-      "o_que_sustenta": "IPCA anual de 1995 a 2025 e acumulado de 2026 até agosto (3,11%)."
-    },
-    {
       "nome": "IBGE Explica, Inflação",
       "url": "https://www.ibge.gov.br/explica/inflacao.php",
       "o_que_sustenta": "IPCA de setembro de 2026 (0,82%) e indicação das tabelas oficiais da série."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737 (IPCA, número-índice)",
+      "url": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2266/p/199412,200212,201012,201512,201812,202212,202509,202512,202608,202609",
+      "o_que_sustenta": "Números-índice de dezembro de 1994 a setembro de 2026 usados no IPCA acumulado de cada governo."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737 (IPCA, variação mensal e acumulada no ano)",
+      "url": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63,69/p/202512,202608,202609",
+      "o_que_sustenta": "0,82% em setembro de 2026 e 3,95% de janeiro a setembro de 2026."
+    },
+    {
+      "nome": "Planalto, Lei 8.880, de 27/5/1994",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8880.htm",
+      "o_que_sustenta": "Regra da revisão de janeiro de 1995 (arts. 28 e 29, § 5º): tabelas reajustadas pela variação acumulada do IPC-r a partir da primeira emissão do real; lei sancionada por Itamar Franco."
+    },
+    {
+      "nome": "Planalto, Medida Provisória 2.225-45, de 4/9/2001",
+      "url": "https://www.planalto.gov.br/ccivil_03/mpv/2225-45.htm",
+      "o_que_sustenta": "Arts. 8º e 9º: os civis do Executivo receberam 22,07% em janeiro de 1995, contra 25,94% dos militares e dos demais Poderes; a diferença passa a ser paga e é incorporada a partir de janeiro de 2002."
+    },
+    {
+      "nome": "Yahii, IPC-r mensal (série do IBGE)",
+      "url": "https://yahii.com.br/indices/IpcR.php",
+      "o_que_sustenta": "IPC-r de julho a dezembro de 1994, cujo produto dá 22,07%. Fonte agregadora; trocar pela publicação do IBGE quando localizada."
+    },
+    {
+      "nome": "Planalto, Lei 10.331, de 18/12/2001",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10331.htm",
+      "o_que_sustenta": "Art. 5º: índice de revisão geral de 3,5% para 2002, para servidores dos três Poderes, autarquias e fundações. Versão do Planalto no lugar da publicação original na Câmara (as duas servem)."
+    },
+    {
+      "nome": "Planalto, Lei 10.697, de 2/7/2003",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.697.htm",
+      "o_que_sustenta": "Revisão geral de 1% a partir de 1º/1/2003, para servidores dos três Poderes, autarquias e fundações."
+    },
+    {
+      "nome": "Planalto, Medida Provisória 1.170, de 28/4/2023",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/mpv/mpv1170.htm",
+      "o_que_sustenta": "Novas tabelas de remuneração do Executivo a partir de 1º/5/2023; convertida na Lei 14.673/2023. O percentual de 9% está embutido nas tabelas, sem artigo que o enuncie."
+    },
+    {
+      "nome": "Planalto, Lei 14.673, de 14/9/2023",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14673.htm",
+      "o_que_sustenta": "Lei de conversão da MP 1.170/2023."
+    },
+    {
+      "nome": "Planalto, Lei 15.141, de 2/6/2025",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15141.htm",
+      "o_que_sustenta": "Art. 23: 9% a partir de 1º/1/2025 e 5% a partir de 1º/4/2026."
+    },
+    {
+      "nome": "Agência Brasil, Governo federal assina acordos com mais duas categorias de servidores (jun/2024)",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2024-06/governo-federal-assina-acordos-com-mais-duas-categorias-de-servidores",
+      "o_que_sustenta": "Acordos do PGPE e do PST, com cerca de 345 mil ativos e aposentados: 9% em janeiro de 2025 e 5% em abril de 2026."
     }
   ],
-  "como_ler": "Cada linha é um governo. A segunda coluna traz o índice de reajuste mais amplo do período, ou seja, aquele que alcançou o conjunto ou a maior parte dos servidores civis; a terceira, a inflação oficial (Índice Nacional de Preços ao Consumidor Amplo, IPCA) acumulada nos anos-calendário do mandato (para Lula 3, de janeiro de 2023 a setembro de 2026); a última, o saldo de poder de compra de quem recebeu só esse índice. Um saldo negativo de 21% significa que, ao fim do período, o mesmo contracheque comprava cerca de 21% menos do que no início. O critério varia entre os períodos, porque cada governo usou instrumentos diferentes: em 1995, 2002, 2003 e 2023, o índice valeu para todos os servidores civis; os 15,8% de Dilma e os 10,8% de Temer vieram de acordos que cobriram a maioria das categorias; os 9% de 2025 e os 5% de 2026 valem para as categorias sem acordo próprio. Carreiras reestruturadas tiveram trajetórias próprias, muitas vezes acima do índice da tabela, em todos os governos; em Lula 1 e 2, quando as reestruturações por carreira foram a regra, o saldo de −36% considera só o 1% de 2003. Os anos-calendário não coincidem com os mandatos (2016 inteiro conta para Temer), e a vantagem fixa de R$ 59,87 de 2003 fica fora do saldo de Lula 1 e 2.",
+  "como_ler": "Cada linha é um governo. A segunda coluna traz o índice de reajuste mais amplo do período, ou seja, aquele que alcançou o conjunto ou a maior parte dos servidores civis; a terceira, a inflação oficial (Índice Nacional de Preços ao Consumidor Amplo, IPCA) acumulada nos anos-calendário do mandato (para Lula 3, de janeiro de 2023 a setembro de 2026), calculada pelo número-índice da tabela 1737 do Sidra, do IBGE; a última, o saldo de poder de compra de quem recebeu só esse índice. Um saldo negativo de 21% significa que, ao fim do período, o mesmo contracheque comprava cerca de 21% menos do que no início. O critério varia entre os períodos, porque cada governo usou instrumentos diferentes: em 1995, 2002, 2003 e 2023, o índice valeu para todos os servidores civis do Executivo; os 15,8% de Dilma e os 10,8% de Temer vieram de acordos que cobriram a maioria das categorias; os 9% de janeiro de 2025 e os 5% de abril de 2026 vieram dos acordos do maior grupo de servidores e valem para as categorias sem acordo próprio. Carreiras reestruturadas tiveram trajetórias próprias, muitas vezes acima do índice da tabela, em todos os governos; em Lula 1 e 2, quando as reestruturações por carreira foram a regra, o saldo de −36% considera só o 1% de 2003. Os anos-calendário não coincidem com os mandatos (2016 inteiro conta para Temer), a vantagem fixa de R$ 59,87 de 2003 fica fora do saldo de Lula 1 e 2, e a diferença de 3,17% sobre o índice de 1995, reconhecida em 2001, fica fora do saldo de FHC.",
   "contexto": [
     "A tabela compara o índice de reajuste mais amplo concedido aos servidores civis do Executivo federal em cada governo com a inflação medida pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA), do IBGE, no mesmo período. O saldo indica o ganho ou a perda de poder de compra de quem recebeu apenas esse índice, calculado pela divisão do fator acumulado do reajuste pelo fator acumulado da inflação. A Constituição prevê, no art. 37, inciso X, revisão geral anual da remuneração, sem distinção de índices; a Lei 10.331/2001 regulamentou a regra, fixou janeiro como mês de referência e condicionou o índice a lei específica, previsão no Orçamento e limites de gasto com pessoal.",
-    "Na prática, a revisão geral formal foi rara, e a maior parte dos aumentos veio de acordos negociados por carreira. Os índices da tabela são 22,07% em janeiro de 1995 e 3,5% em 2002 (este pela Lei 10.331/2001); em 2003, 1% de revisão geral (Lei 10.697/2003) e uma vantagem fixa de R$ 59,87 (Lei 10.698/2003). Vieram depois 15,8% em três parcelas de 2013 a 2015, aprovados em 2012, e 5,5% em agosto de 2016 e 5% em janeiro de 2017, acordados em 2015 e pagos no governo Temer. De 2019 a 2022 não houve índice geral para civis, período que incluiu a proibição de reajustes até dezembro de 2021 pela Lei Complementar 173/2020. No governo Lula 3, os índices foram 9% para todos os servidores civis em maio de 2023 (Medida Provisória 1.170/2023) e 9% em 2025 e 5% em 2026 para as categorias sem acordo próprio (Lei 15.141/2025).",
+    "Na prática, a revisão geral formal foi rara, e a maior parte dos aumentos veio de acordos negociados por carreira. Em janeiro de 1995, as tabelas do Executivo subiram 22,07%, a variação do Índice de Preços ao Consumidor, Série r (IPC-r), de julho a dezembro de 1994, pela regra da Lei 8.880/1994, aprovada no governo Itamar Franco; militares e servidores dos demais Poderes receberam 25,94%, e a diferença de 3,17% só foi reconhecida aos civis do Executivo em 2001, pela Medida Provisória 2.225-45, com incorporação a partir de janeiro de 2002. Vieram depois 3,5% em 2002 (Lei 10.331/2001) e, em 2003, 1% de revisão geral (Lei 10.697/2003) e uma vantagem fixa de R$ 59,87 (Lei 10.698/2003). Em seguida, 15,8% em três parcelas de 2013 a 2015, aprovados em 2012, e 5,5% em agosto de 2016 e 5% em janeiro de 2017, acordados em 2015 e pagos no governo Temer. De 2019 a 2022 não houve índice geral para civis, período que incluiu a proibição de reajustes até dezembro de 2021 pela Lei Complementar 173/2020. No governo Lula 3, os índices foram 9% para todos os servidores civis do Executivo em maio de 2023 (Medida Provisória 1.170/2023, convertida na Lei 14.673/2023) e 9% em janeiro de 2025 e 5% em abril de 2026 (Lei 15.141/2025), índices dos acordos do maior grupo de servidores que valeram também para as categorias sem acordo próprio.",
     "Para o cidadão, a remuneração dos servidores é uma das maiores despesas obrigatórias da União, e cada ponto de reajuste tem impacto de bilhões de reais: o governo estimou o custo da Lei 15.141/2025 em R$ 73,9 bilhões até 2027. Defensores de reajustes maiores argumentam que eles repõem perdas acumuladas e ajudam a reter profissionais; defensores de contenção argumentam que a folha limita o espaço para investimentos e políticas públicas. Para quem estuda para concurso, o histórico mostra que a remuneração real de um cargo depende do índice geral e, sobretudo, das negociações de cada carreira."
   ],
   "glossario": [
@@ -155,44 +200,56 @@
       "valor_na_fonte": "Recalculados: -37,0%, -35,5%, -17,7%, -2,4%, -21,2% e +4,9%",
       "fonte": "Cálculo próprio com os índices acima",
       "ok": true
+    },
+    {
+      "valor_no_portal": "IPCA por governo (coluna 'IPCA no período'): 100,7%; 56,7%; 40,6%; 13,5%; 26,9%; 18,9%",
+      "valor_na_fonte": "sem mudança (Número-índice do IPCA, Sidra tabela 1737, variável 2266 (dez/1993 = 100): dez/1994 1016,46; dez/2002 2039,78; dez/2010 3195,89; dez/2015 4493,17; dez/2018 5100,61; dez/2022 6474,09; set/2026 7695,82. FHC 2039,78 / 1016,46 - 1 = 100,67%; Lula 1 e 2 3195,89 / 2039,78 - 1 = 56,68%; Dilma 4493,17 / 3195,89 - 1 = 40,59%; Temer 5100,61 / 4493,17 - 1 = 13,52%; Bolsonaro 6474,09 / 5100,61 - 1 = 26,93%; Lula 3 7695,82 / 6474,09 - 1 = 18,87%.)",
+      "fonte": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2266/p/199412,200212,201012,201512,201812,202212,202509,202512,202608,202609",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "Saldo: −37%; −36%; −18%; −2%; −21%; +5%",
+      "valor_na_fonte": "sem mudança (Fator do reajuste / fator do IPCA - 1. FHC 1,2207 x 1,035 = 1,2634; 1,2634 / 2,0067 - 1 = -37,0%. Lula 1 e 2 1,01 / 1,5668 - 1 = -35,5%. Dilma 1,158 / 1,4059 - 1 = -17,6%. Temer 1,055 x 1,05 = 1,1078; 1,1078 / 1,1352 - 1 = -2,4%. Bolsonaro 1 / 1,2693 - 1 = -21,2%. Lula 3 1,09 x 1,09 x 1,05 = 1,2475; 1,2475 / 1,1887 - 1 = +4,9%.)",
+      "fonte": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2266/p/199412,200212,201012,201512,201812,202212,202509,202512,202608,202609",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "checagem[IPCA Lula 3]: 3,96% em 2026 até setembro",
+      "valor_na_fonte": "3,95% em 2026 até setembro (Sidra 1737, variável 69; 0,82% em setembro, variável 63). O acumulado de 18,9% não muda. (7695,82 / 7403,29 - 1 = 3,95%.)",
+      "fonte": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63,69/p/202512,202608,202609",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "fonte (principal) e fontes[Yahii]: IBGE Explica e Yahii (agregador)",
+      "valor_na_fonte": "Sidra, tabela 1737 (Troca de fonte sem mudança de valor.)",
+      "fonte": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2266/p/199412,200212,201012,201512,201812,202212,202509,202512,202608,202609",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "Lula 3, índice de 2026: 5% em 2026 (divergência com Agência Brasil, que falou em 9%)",
+      "valor_na_fonte": "5% a partir de 1º/4/2026, confirmado (A Lei 15.141/2025, art. 23 (que altera o art. 310, § 6º, da Lei 11.907/2009), traz em texto '9% (nove por cento), a partir de 1º de janeiro de 2025' e '5% (cinco por cento), a partir de 1º de abril de 2026'. A Agência Brasil de jun/2024 descreve os acordos do PGPE e do PST com os mesmos índices e datas. O '9% em 2026' da Agência Brasil de jun/2025 é erro da notícia.)",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15141.htm",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "Ato do reajuste de janeiro de 1995: 22,07% confirmado só em imprensa",
+      "valor_na_fonte": "22,07% = variação do IPC-r de julho a dezembro de 1994, regra da Lei 8.880/1994 (Itamar); valor confirmado em ato oficial pela MP 2.225-45/2001, art. 8º (IPC-r mensal de jul a dez/1994: 6,08%, 5,46%, 1,51%, 1,86%, 3,27%, 2,19%; produto = 1,22072, ou 22,07%. A MP 2.225-45, de 4/9/2001, art. 8º, aplica aos servidores civis do Executivo, a partir de janeiro de 1995, o reajuste de 25,94% concedido aos militares e aos servidores dos demais Poderes, 'deduzido o percentual já recebido de 22,07%'; a diferença é 1,2594 / 1,2207 - 1 = 3,17%, incorporada aos vencimentos a partir de 1º/1/2002 (art. 9º).)",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/mpv/2225-45.htm",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
     }
   ],
   "linhas": [
-    [
-      "FHC",
-      "22,07% em 1995 e 3,5% em 2002",
-      "100,7%",
-      "−37%"
-    ],
-    [
-      "Lula 1 e 2",
-      "1% e R$ 59,87 fixos em 2003, mais reestruturações por carreira",
-      "56,7%",
-      "−36%"
-    ],
-    [
-      "Dilma",
-      "15,8% de 2013 a 2015",
-      "40,6%",
-      "−18%"
-    ],
-    [
-      "Temer",
-      "10,8% em 2016 e 2017",
-      "13,5%",
-      "−2%"
-    ],
-    [
-      "Bolsonaro",
-      "sem revisão geral para civis",
-      "26,9%",
-      "−21%"
-    ],
-    [
-      "Lula 3",
-      "9% em 2023, 9% em 2025 e 5% em 2026",
-      "18,9%",
-      "+5%"
-    ]
+    ["FHC", "22,07% em 1995 e 3,5% em 2002", "100,7%", "−37%"],
+    ["Lula 1 e 2", "1% e R$ 59,87 fixos em 2003, mais reestruturações por carreira", "56,7%", "−36%"],
+    ["Dilma", "15,8% de 2013 a 2015", "40,6%", "−18%"],
+    ["Temer", "10,8% em 2016 e 2017", "13,5%", "−2%"],
+    ["Bolsonaro", "sem revisão geral para civis", "26,9%", "−21%"],
+    ["Lula 3", "9% em 2023, 9% em 2025 e 5% em abril de 2026", "18,9%", "+5%"]
   ]
 }

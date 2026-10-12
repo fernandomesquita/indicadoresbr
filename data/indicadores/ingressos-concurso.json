@@ -57,9 +57,24 @@
       "nome": "Poder360, Governo Lula tem 4.255 funcionários a menos em 1 ano",
       "url": "https://www.poder360.com.br/poder-economia/governo-lula-tem-4-255-funcionarios-a-menos-em-1-ano/",
       "o_que_sustenta": "Vagas das duas edições do CNU (6.640 em 2024 e 3.652 em 2025)."
+    },
+    {
+      "nome": "Ipea, Comunicado nº 110, Ocupação no setor público brasileiro: tendências recentes e questões em aberto (8/9/2011), Quadro 2",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
+      "o_que_sustenta": "Admitidos por concurso e aposentados por ano, de 1991 a 2010 (Boletim Estatístico de Pessoal): 51.613 e 134.634 de 1995 a 2002; 155.534 e 79.302 de 2003 a 2010."
+    },
+    {
+      "nome": "Diário Online (Contas Abertas), Lula contratou 99,6 mil concursados a mais que FHC (dez/2010)",
+      "url": "https://dol.com.br/noticias/brasil/noticia-126617-lula-contratou-996-mil-concursados-a-mais-que-fhc.html",
+      "o_que_sustenta": "Conferência independente: 51,6 mil ingressos por concurso no governo FHC, pelo Boletim Estatístico de Pessoal."
+    },
+    {
+      "nome": "IBGE, Anuário Estatístico do Brasil 2023, tabela 7.2.1.2 (aposentados civis da União, 2009 a 2023)",
+      "url": "https://anuario.ibge.gov.br/images/aeb/2023/s7/2_pdf/s7t2102.pdf",
+      "o_que_sustenta": "Aposentadorias anuais do PEP (posição de dez/2023), usadas para conferir as taxas de reposição de Dilma e Temer."
     }
   ],
-  "como_ler": "Cada coluna mostra a média de ingressos por concurso por ano no Executivo federal civil durante cada governo; a taxa de reposição indica quantos servidores entraram para cada 100 que se aposentaram, e 100% significa reposição integral. As séries até 2010 e a partir de 2011 vêm de publicações diferentes e não se comparam diretamente. O ano de 2016, dividido entre Dilma e Temer, fica fora das médias: Dilma cobre 2011 a 2015 e Temer, 2017 e 2018. Para Bolsonaro, 2022 entra até setembro, e o total é dividido por três anos e nove meses. Lula 3 fica fora do gráfico porque o dado disponível (19.381 ingressos até março de 2026, sem a área de educação) está em outra série.",
+  "como_ler": "Cada coluna mostra a média de ingressos por concurso por ano no Executivo federal civil durante cada governo; a taxa de reposição indica quantos servidores entraram para cada 100 que se aposentaram, e 100% significa reposição integral. Até 2010, ingressos e aposentadorias vêm do Quadro 2 do Comunicado 110 do Ipea, com dados do Boletim Estatístico de Pessoal; a partir de 2011, do Painel Estatístico de Pessoal (PEP). As duas séries vêm de publicações diferentes e não se comparam diretamente. O ano de 2016, dividido entre Dilma e Temer, fica fora das médias: Dilma cobre 2011 a 2015 e Temer, 2017 e 2018. Para Bolsonaro, 2022 entra até setembro, e o total é dividido por três anos e nove meses. Lula 3 fica fora do gráfico porque o dado disponível (19.381 ingressos até março de 2026, sem a área de educação) está em outra série.",
   "contexto": [
     "O gráfico mostra a média anual de servidores que entraram por concurso público no Executivo federal civil em cada governo, e a tabela acrescenta a taxa de reposição, que compara essas entradas com as aposentadorias do mesmo período. Os dados vêm do Boletim Estatístico de Pessoal, para os anos até 2010, consolidado em estudos do Instituto de Pesquisa Econômica Aplicada (Ipea) e da Escola Nacional de Administração Pública (Enap), e do Painel Estatístico de Pessoal (PEP) a partir de 2011. Contam apenas os servidores efetivos, aprovados em concurso; as contratações temporárias por processo seletivo ficam de fora e superaram os ingressos efetivos em todos os anos de 2011 a 2022.",
     "O ingresso depende de três etapas: autorização do concurso, previsão de vagas no Orçamento e nomeação dos aprovados dentro da validade do certame. Em ano de eleição, a Lei 9.504/1997 proíbe nomear servidores nos três meses anteriores ao pleito até a posse dos eleitos, com exceção de concursos homologados antes desse prazo. Com a ressalva de que as séries antes e depois de 2011 não se comparam diretamente, os governos Lula 1 e 2 e Dilma tiveram as maiores médias, com reposição acima de 170%, e os governos FHC e Bolsonaro, as menores, com reposição abaixo de 50%; no período Bolsonaro, a Lei Complementar 173/2020 restringiu novas admissões até dezembro de 2021, durante a pandemia. No governo Lula 3, o Ministério da Gestão e da Inovação em Serviços Públicos (MGI) informou 19.381 ingressos de janeiro de 2023 a 15 de março de 2026, sem a área de educação, em série diferente da usada no gráfico.",
@@ -130,11 +145,46 @@
       "valor_na_fonte": "19.381 até 15/3/2026",
       "fonte": "MGI via Wagner Advogados",
       "ok": true
+    },
+    {
+      "valor_no_portal": "linhas[FHC] Média anual: 6452",
+      "valor_na_fonte": "6452 (Mantido. Quadro 2 do Comunicado Ipea 110 (Boletim Estatístico de Pessoal), admitidos por concurso: 19.675 (1995) + 9.927 + 9.055 + 7.815 + 2.927 + 1.524 + 660 + 30 (2002) = 51.613; 51.613 / 8 = 6.451,6, arredondado para 6.452. A Contas Abertas, com o Boletim de dezembro de 2010, dá o mesmo total (51,6 mil). O 45.657 da conferência anterior é erro de leitura da tabela de Moraes, Silva e Costa, cujas colunas saem desalinhadas na extração do texto: ele soma 19.675 (ingressos de 1995) com a coluna de vagas autorizadas de 1996 a 2002 (3.883 + 129 + 3.523 + 80 + 424 + 4.915 + 13.028 = 25.982). A leitura correta é a que fecha efetivos + temporários = total em todas as linhas (ex.: 2002: 30 + 4.334 = 4.364; 1996: 9.927 + 8.773 = 18.700).)",
+      "fonte": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[FHC] Reposição (%): 33",
+      "valor_na_fonte": "38 (Mesma régua dos ingressos (Quadro 2 do Comunicado Ipea 110). Aposentados de 1995 a 2002: 34.253 + 27.546 + 24.659 + 19.755 + 8.783 + 5.951 + 6.222 + 7.465 = 134.634. Reposição = 51.613 / 134.634 = 38,3%. A origem do 33% não foi localizada.)",
+      "fonte": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Lula 1 e 2] Reposição (%): 186",
+      "valor_na_fonte": "196 (Quadro 2 do Comunicado Ipea 110. Admitidos de 2003 a 2010: 7.220 + 16.122 + 12.453 + 22.112 + 11.939 + 19.360 + 29.728 + 36.600 = 155.534 (média 19.441,75, o 19.442 do portal confere). Aposentados: 17.453 + 6.486 + 5.789 + 6.658 + 8.156 + 10.654 + 10.384 + 13.722 = 79.302. Reposição = 155.534 / 79.302 = 196,1%. A origem do 186% não foi localizada.)",
+      "fonte": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "linhas[Dilma], linhas[Temer], linhas[Bolsonaro]: 28.219 e 174%; 15.909 e 77%; 9.328 e 49%",
+      "valor_na_fonte": "sem mudança (PEP via Folha Dirigida. Dilma: efetivos 24.125 + 24.029 + 31.117 + 40.024 + 21.798 = 141.093, / 5 = 28.219; aposentadorias 15.632 + 16.047 + 16.704 + 16.149 + 16.687 = 81.219; 141.093 / 81.219 = 173,7%. Temer: 18.435 + 13.382 = 31.817, / 2 = 15.909; aposentadorias 22.397 + 18.801 = 41.198; 77,2%. Bolsonaro: 13.424 + 6.529 + 5.067 + 9.961 = 34.981, / 3,75 = 9.328; aposentadorias 37.875 + 14.161 + 10.773 + 9.275 = 72.084; 48,5%. Conferência com o Anuário do IBGE (tabela 7.2.1.2, PEP de dez/2023): Dilma 141.093 / 80.798 = 174,6% e Temer 31.817 / 41.173 = 77,3%, diferenças de arredondamento.)",
+      "fonte": "https://folha.qconcursos.com/n/numero-de-servidores-publicos-no-brasil-2022",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
+    },
+    {
+      "valor_no_portal": "checagem[FHC]: valor_na_fonte: 45.657 ingressos efetivos de 1995 a 2002, média de 5.707; ok: false",
+      "valor_na_fonte": "valor_na_fonte: 51.613 admitidos por concurso de 1995 a 2002 (Quadro 2), média de 6.452; 134.634 aposentados, reposição de 38%; ok: true (Ver acima.)",
+      "fonte": "https://repositorio.ipea.gov.br/bitstream/11058/3553/1/Comunicados_n110_Ocupa%c3%a7%c3%a3o.pdf",
+      "ok": true,
+      "observacao": "Corrigido em 12/10/2026."
     }
   ],
   "linhas": [
-    ["FHC", 6452, 33],
-    ["Lula 1 e 2", 19442, 186],
+    ["FHC", 6452, 38],
+    ["Lula 1 e 2", 19442, 196],
     ["Dilma", 28219, 174],
     ["Temer", 15909, 77],
     ["Bolsonaro", 9328, 49]
