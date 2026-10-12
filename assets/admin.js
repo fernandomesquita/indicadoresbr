@@ -107,7 +107,7 @@ async function inbox(body, tabela) {
     } }, "Salvar");
     let corpo;
     if (tabela === "reports") corpo = [h("p", { class: "itt" }, h("a", { href: "/indicador/" + r.indicador_id, target: "_blank", rel: "noopener", text: titulo(r.indicador_id) }), r.ponto ? h("span", { class: "pt", text: r.ponto }) : null), h("p", { class: "txt", text: r.motivo })];
-    else if (tabela === "sugestoes") corpo = [h("p", { class: "itt", text: r.categoria ? "Categoria: " + ((A.data.categorias.find(c => c.id === r.categoria) || {}).nome || r.categoria) : "Sem categoria" }), h("p", { class: "txt", text: r.texto }), r.onde ? h("p", { class: "hint", text: "Onde pode estar: " + r.onde }) : null];
+    else if (tabela === "sugestoes") corpo = [h("p", { class: "itt", text: r.categoria ? "Categoria: " + ((A.data.categorias.find(c => c.id === r.categoria) || {}).nome || r.categoria) : "Sem categoria" }), h("p", { class: "txt", text: r.texto }), r.onde ? h("p", { class: "hint", text: "Fonte sugerida: " + r.onde }) : null];
     else corpo = [h("p", { class: "itt" }, h("strong", { text: r.nome }), " · ", r.assunto), h("p", { class: "txt", text: r.mensagem })];
     return h("article", { class: "item st-" + r.status },
       h("div", { class: "imeta" }, h("time", { text: dt(r.criado_em) }), r.email ? h("span", { class: "mono", text: r.email }) : h("span", { class: "hint", text: "sem e-mail" })),

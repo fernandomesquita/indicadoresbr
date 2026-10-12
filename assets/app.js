@@ -92,7 +92,7 @@ function emptyCat(cat) {
 function sugiraBand() {
   return h("section", { class: "band" }, h("div", { class: "wrap bandin" },
     h("div", {}, h("h2", { text: "Que dado você gostaria de ver aqui?" }),
-      h("p", { text: "Conte qual número você procura e, se souber, onde ele está. As sugestões orientam os próximos indicadores." })),
+      h("p", { text: "Conte qual número você procura e, se souber, em que fonte ele aparece. As sugestões orientam os próximos indicadores." })),
     link("/sugira", { class: "btn pri big" }, "Sugerir dados")));
 }
 
@@ -208,7 +208,7 @@ function pageIndicador(id) {
             h("dl", { class: "upd" },
               up.periodicidade ? [h("dt", { text: "Periodicidade" }), h("dd", { text: up.periodicidade })] : null,
               up.proxima ? [h("dt", { text: "Próxima divulgação" }), h("dd", { text: up.proxima })] : null)) : null,
-          h("section", { class: "repbox" }, h("h2", { text: "Achou um erro?" }), h("p", { text: "Conte o que está errado e, se puder, onde está o número certo. Cada aviso é conferido contra a fonte." }), ibtn("flag", "Reportar erro", () => openReport(ind), "pri"))))),
+          h("section", { class: "repbox" }, h("h2", { text: "Achou um erro?" }), h("p", { text: "Conte o que está errado e, se puder, qual é o número certo e em que fonte ele aparece. Cada aviso é conferido contra a fonte." }), ibtn("flag", "Reportar erro", () => openReport(ind), "pri"))))),
     outros.length ? h("section", { class: "wrap" }, h("div", { class: "sechead" }, h("h2", { text: "Mais em " + cat.nome })), h("div", { class: "grid three" }, outros.map(i => card(i, { compact: true })))) : null,
     sugiraBand(),
   ];
@@ -272,7 +272,7 @@ function pageSugira() {
     h("div", { class: "f" }, h("label", { for: "s-texto", text: "Que dado você gostaria de ver?" }), texto, h("p", { class: "fhelp", text: "Descreva com suas palavras. Pelo menos três palavras." })),
     h("div", { class: "f2" },
       h("div", { class: "f" }, h("label", { for: "s-cat", text: "Categoria" }), catSel),
-      h("div", { class: "f" }, h("label", { for: "s-onde", text: "Onde esse dado pode estar (opcional)" }), onde)),
+      h("div", { class: "f" }, h("label", { for: "s-onde", text: "Em que fonte esse dado pode estar (opcional)" }), onde)),
     h("div", { class: "f" }, h("label", { for: "s-email", text: "Seu e-mail (opcional)" }), email, h("p", { class: "fhelp", text: "Só para avisar quando o dado entrar no portal." })),
     honeypot(),
     h("button", { class: "btn pri big", type: "submit", disabled: !store.hasBackend }, "Enviar sugestão"), st);
@@ -293,7 +293,7 @@ function pageSugira() {
   return [h("section", { class: "wrap narrow textpage" },
     h("nav", { class: "crumbs", "aria-label": "Você está em" }, link("/", {}, "Início"), h("span", { "aria-hidden": "true", text: "›" }), h("span", { text: "Sugira dados" })),
     h("h1", { text: "Sugira dados" }),
-    h("p", { class: "lede", text: "Procurou um número e não achou? Conte qual é. Se souber onde ele está publicado, ajuda muito." }), form)];
+    h("p", { class: "lede", text: "Procurou um número e não achou? Conte qual é. Se souber em que fonte ele é publicado, ajuda muito." }), form)];
 }
 
 function pageContato() {
@@ -369,7 +369,7 @@ function openReport(ind, ponto) {
   const form = h("form", { class: "form", novalidate: true },
     offlineNote(),
     h("p", { class: "rctx" }, h("strong", { text: ind.titulo }), ponto ? h("span", { text: "Valor apontado: " + ponto }) : h("span", { text: "Reporte sobre o gráfico como um todo. Para um valor específico, use o botão na linha da tabela, na página do indicador." })),
-    h("div", { class: "f" }, h("label", { for: "r-motivo", text: "Por que este dado parece errado?" }), motivo, h("div", { class: "fhelp row" }, h("span", { text: "Mínimo de 5 palavras. Se souber o valor certo e onde ele está, diga." }), cnt)),
+    h("div", { class: "f" }, h("label", { for: "r-motivo", text: "Por que este dado parece errado?" }), motivo, h("div", { class: "fhelp row" }, h("span", { text: "Mínimo de 5 palavras. Se souber o valor certo e a fonte, diga." }), cnt)),
     h("div", { class: "f" }, h("label", { for: "r-email", text: "Seu e-mail (opcional)" }), email, h("p", { class: "fhelp", text: "Só para contar o resultado da conferência." })),
     honeypot(),
     h("div", { class: "row" }, h("button", { class: "btn pri", type: "submit", disabled: !store.hasBackend }, "Enviar report"), h("button", { class: "btn", type: "button", onclick: closeModal }, "Cancelar")), st);

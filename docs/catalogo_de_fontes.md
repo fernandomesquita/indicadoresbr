@@ -4,7 +4,7 @@ Gerado por `scripts/build.py` em 2026-10-12. Não edite à mão: mude o indicado
 
 ## Economia
 
-| Indicador | Fonte principal | Periodicidade | Onde buscar | Próxima divulgação | Última conferência |
+| Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |
 |---|---|---|---|---|---|
 | `ipca-anual`: Inflação oficial ano a ano | [IBGE, IPCA (Sidra, tabela 1737)](https://sidra.ibge.gov.br/tabela/1737) | Mensal, divulgado pelo IBGE por volta do dia 10 do mês seguinte; o número anual (dezembro) sai no início de janeiro. | https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2265/p/last%201 (variável 2265, acumulado em 12 meses; usar o período de dezembro para o valor anual) | IPCA de outubro de 2026 por volta de 10/11/2026; fechamento de 2026 (nova coluna) por volta de 08 a 12/01/2027, conforme calendário do IBGE (estimativa). | 2026-10-12 |
 | `pib-anual`: Quanto a economia cresceu | [IBGE, Contas Nacionais (BCB SGS 7326)](https://api.bcb.gov.br/dados/serie/bcdata.sgs.7326/dados?formato=json) | Trimestral; o resultado do ano sai com o 4º trimestre, no início de março do ano seguinte, e é revisto nos anos seguintes. | https://api.bcb.gov.br/dados/serie/bcdata.sgs.7326/dados?formato=json | PIB do 3º trimestre de 2026 em 02/12/2026 (calendário do IBGE); PIB anual de 2026 (nova coluna) no início de março de 2027 (estimativa). | 2026-10-12 |
@@ -22,7 +22,7 @@ Gerado por `scripts/build.py` em 2026-10-12. Não edite à mão: mude o indicado
 
 ## Políticas públicas
 
-| Indicador | Fonte principal | Periodicidade | Onde buscar | Próxima divulgação | Última conferência |
+| Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |
 |---|---|---|---|---|---|
 | `camara-2027`: A Câmara que toma posse em 2027 | [Congresso em Foco, resultado da eleição de 2026](https://www.congressoemfoco.com.br/noticia/122927/nova-camara-veja-os-513-deputados-federais-eleitos-em-2026) | Por evento: diplomação dos eleitos em dezembro de 2026, posse em 1º/2/2027 e, depois, a cada troca de partido relevante. | Página de bancadas atuais e dados abertos da Câmara dos Deputados; resultados de totalização do TSE; registro de federações do TSE. | 1º/2/2027, data da posse. Antes disso, acompanhar as migrações dos 34 eleitos por PSOL-Rede, PRD-Solidariedade, PDT, Avante e Missão, que ficaram abaixo da cláusula de desempenho. | 2026-10-12 |
 | `senado-2027`: O Senado a partir de 2027 | [Gazeta do Povo, Poder360 e Agência Senado](https://www12.senado.leg.br/noticias/audios/2026/10/senado-tera-13-partidos-representados-a-partir-de-2027) | Por evento: depois do 2º turno (25/10/2026), na posse (1º/2/2027) e a cada troca de partido ou posse de suplente. | Página de senadores em exercício e bancadas do Senado Federal; Agência Senado; resultados do TSE para o 2º turno de governador. | Fim de outubro de 2026, após o 2º turno; revisão definitiva em 1º/2/2027. | 2026-10-12 |
@@ -36,7 +36,7 @@ Gerado por `scripts/build.py` em 2026-10-12. Não edite à mão: mude o indicado
 
 ## Segurança pública
 
-| Indicador | Fonte principal | Periodicidade | Onde buscar | Próxima divulgação | Última conferência |
+| Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |
 |---|---|---|---|---|---|
 | `mvi-anual`: Mortes violentas no Brasil | [Fórum Brasileiro de Segurança Pública, Anuário 2026](https://publicacoes.forumseguranca.org.br/items/bb542342-3cf8-47a5-a51d-a0eb911914b9) | Anual. O Anuário Brasileiro de Segurança Pública sai uma vez por ano, em julho (a edição de 2026 foi divulgada em 23/07/2026, com dados de 2025). Cada edição pode revisar os anos anteriores. | Repositório de publicações do Fórum Brasileiro de Segurança Pública (https://publicacoes.forumseguranca.org.br), item do 20º Anuário (https://publicacoes.forumseguranca.org.br/items/bb542342-3cf8-47a5-a51d-a0eb911914b9), que oferece o relatório completo e a planilha em XLSX; Tabela 01 (MVI por UF) e tabela da série histórica nacional. | Julho de 2027 (Anuário 2027, com dados de 2026). | 2026-10-12 |
 | `mvi-governo`: Mortes violentas: média de cada governo | [Fórum Brasileiro de Segurança Pública, Anuário 2026; cálculo próprio](https://publicacoes.forumseguranca.org.br/items/bb542342-3cf8-47a5-a51d-a0eb911914b9) | Anual, junto com o Anuário Brasileiro de Segurança Pública (julho). A média de Lula muda a cada edição enquanto o mandato estiver em curso, e anos anteriores podem ser revisados. | Repositório de publicações do Fórum Brasileiro de Segurança Pública (https://publicacoes.forumseguranca.org.br), item do 20º Anuário (https://publicacoes.forumseguranca.org.br/items/bb542342-3cf8-47a5-a51d-a0eb911914b9), que oferece o relatório completo e a planilha em XLSX; Tabela 01 (MVI por UF) e tabela da série histórica nacional. | Julho de 2027 (inclui 2026, último ano do mandato atual). | 2026-10-12 |

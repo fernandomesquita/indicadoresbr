@@ -184,7 +184,7 @@ def build():
     for c in cats:
         dos = [i for i in inds if i["categoria"] == c["id"]]
         if not dos: continue
-        md += [f"## {c['nome']}", "", "| Indicador | Fonte principal | Periodicidade | Onde buscar | Próxima divulgação | Última conferência |", "|---|---|---|---|---|---|"]
+        md += [f"## {c['nome']}", "", "| Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |", "|---|---|---|---|---|---|"]
         for i in sorted(dos, key=lambda i: i.get("ordem", 0)):
             a = i.get("atualizacao") or {}
             cel = lambda s: str(s or "").replace("|", "/").replace("\n", " ")
