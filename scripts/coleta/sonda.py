@@ -18,27 +18,24 @@ def get(url, nome, limite=200000):
         (OUT / f"{nome}.txt").write_text(f"URL: {url}\nERRO: {e}\n", encoding="utf-8"); print("erro", nome, e, flush=True)
 def siope(rec, ano, uf, extra=""):
     return f"{SIOPE}/{rec}(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)?@Ano_Consulta={ano}&@Num_Peri=6&@Sig_UF='{uf}'&$format=json&$top=5000{extra}"
-# Rodada 3
-UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
-def cabeca(url, nome):
-    try:
-        req = urllib.request.Request(url, headers={**UA, "Range": "bytes=0-1023"})
-        with urllib.request.urlopen(req, timeout=120) as r:
-            (OUT / f"{nome}.txt").write_text(f"{url}\n{r.status} {dict(r.headers)}", encoding="utf-8"); print("ok", nome)
-    except Exception as e:
-        (OUT / f"{nome}.txt").write_text(f"{url}\nERRO {e}", encoding="utf-8"); print("erro", nome, e)
-cabeca("https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2024.zip", "inep_sinopse_2024")
-cabeca("https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_2024.zip", "inep_microdados_2024")
-cabeca("https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2018.zip", "tse_cand_2018")
-get(siope("Indicadores_Siope", 2016, "AC").replace("$top=5000", "$top=60"), "siope_indicadores_AC_2016", 60000)
-get(siope("Despesas_Funcao_Educacao_Siope", 2016, "AC").replace("$top=5000", "$top=40"), "siope_despfuncao_AC_2016", 20000)
+# Rodada 4
+import subprocess
+for ano in range(2017, 2026):
+    get(siope("Indicadores_Siope", ano, "AC").replace("$top=5000", "$top=3"), f"siope_ind_AC_{ano}", 3000)
+for url, nome in [("https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2024.zip", "inep_sinopse_2024_curl"),
+                  ("https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_2024.zip", "inep_microdados_2024_curl")]:
+    r = subprocess.run(["curl", "-sS", "-I", "-L", "-m", "60", "-A", "Mozilla/5.0", url], capture_output=True, text=True)
+    (OUT / f"{nome}.txt").write_text(url + "\n" + r.stdout[-2000:] + "\n" + r.stderr[-2000:], encoding="utf-8"); print(nome, r.returncode, r.stderr[:200])
 SPARQL = "https://www1.siop.planejamento.gov.br/sparql/"
-for ano in (2006, 2014, 2024):
-    qq = f"""PREFIX loa: <http://vocab.e.gov.br/2013/09/loa#>
-SELECT ?cod (SUM(?liq) AS ?liquidado) (SUM(?pago) AS ?pago) WHERE {{
-  GRAPH <http://orcamento.dados.gov.br/{ano}/> {{
-    ?i loa:temSubfuncao ?sf . ?sf loa:codigo ?cod . FILTER(?cod = "364")
-    OPTIONAL {{ ?i loa:valorLiquidado ?liq }} OPTIONAL {{ ?i loa:valorPago ?pago }}
-  }} }} GROUP BY ?cod"""
-    get(SPARQL + "?" + urllib.parse.urlencode({"query": qq, "format": "json", "default-graph-uri": ""}), f"siop_sparql_364_{ano}", 20000)
+def sparql(qq, nome):
+    url = SPARQL + "?" + urllib.parse.urlencode({"query": qq})
+    try:
+        req = urllib.request.Request(url, headers={"Accept": "application/sparql-results+json", "User-Agent": "IndicadoresBR/1.0"})
+        with urllib.request.urlopen(req, timeout=300) as r: t = r.read().decode("utf-8", "replace")
+        (OUT / f"{nome}.txt").write_text(t[:50000], encoding="utf-8"); print("ok", nome, len(t))
+    except Exception as e:
+        (OUT / f"{nome}.txt").write_text(f"ERRO {e}", encoding="utf-8"); print("erro", nome, e)
+sparql("SELECT DISTINCT ?g WHERE { GRAPH ?g { ?s ?p ?o } } LIMIT 60", "siop_grafos")
+sparql("""PREFIX loa: <http://vocab.e.gov.br/2013/09/loa#>
+SELECT ?p (COUNT(*) AS ?n) WHERE { GRAPH <http://orcamento.dados.gov.br/2014/> { ?i a loa:ItemDespesa ; ?p ?o } } GROUP BY ?p""", "siop_props_2014")
 print("fim")
