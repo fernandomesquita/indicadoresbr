@@ -1,0 +1,24 @@
+2006 19.67
+2007 24.35
+2008 28.25
+2009 36.68
+2010 48.5
+2011 58.45
+2012 72.58
+2013 82.25
+2014 93.9
+2015 90.33
+2016 95.51
+2017 102.14
+2018 99.45
+2019 98.45
+2020 92.06
+2021 100.28
+2022 114.58
+2023 136.08
+2024 144.04
+2025 170.07
+  tentativa 1 falhou em https://www1.siop.planejamento.gov.br/sparql/?query=PREFIX+loa%3A+%3Chttp%3A%2F%2Fvocab.e.gov.br%2F2013%2F09%2Floa%23%3E%0ASELECT+%3Fsf+%3Fgnd+%28SUM%28xsd%3Adecimal%28%3Fliq%29%29+AS+%3Fliquidado%29+%28SUM%28xsd%3Adecimal%28%3Fpag%29%29+AS+%3Fpago%29+%28SUM%28xsd%3Adecimal%28%3Fdot%29%29+AS+%3Fdotacao%29%0AWHERE+%7B+GRAPH+%3Chttp%3A%2F%2Forcamento.dados.gov.br%2F2026%2F%3E+%7B%0A+%3Fi+loa%3AtemFuncao+%3Ff+.+%3Ff+loa%3Acodigo+%2212%22+.+%3Fi+loa%3AtemSubfuncao+%3Fs+.+%3Fs+loa%3Acodigo+%3Fsf+.+%3Fi+loa%3AtemGND+%3Fg+.+%3Fg+loa%3Acodigo+%3Fgnd+.%0A+OPTIONAL+%7B+%3Fi+loa%3AvalorLiquidado+%3Fliq+%7D+OPTIONAL+%7B+%3Fi+loa%3AvalorPago+%3Fpag+%7D+OPTIONAL+%7B+%3Fi+loa%3AvalorDotacaoInicial+%3Fdot+%7D%0A%7D+%7D+GROUP+BY+%3Fsf+%3Fgnd+ORDER+BY+%3Fsf+%3Fgnd: <urlopen error [Errno 111] Connection refused>
+  tentativa 2 falhou em https://www1.siop.planejamento.gov.br/sparql/?query=PREFIX+loa%3A+%3Chttp%3A%2F%2Fvocab.e.gov.br%2F2013%2F09%2Floa%23%3E%0ASELECT+%3Fsf+%3Fgnd+%28SUM%28xsd%3Adecimal%28%3Fliq%29%29+AS+%3Fliquidado%29+%28SUM%28xsd%3Adecimal%28%3Fpag%29%29+AS+%3Fpago%29+%28SUM%28xsd%3Adecimal%28%3Fdot%29%29+AS+%3Fdotacao%29%0AWHERE+%7B+GRAPH+%3Chttp%3A%2F%2Forcamento.dados.gov.br%2F2026%2F%3E+%7B%0A+%3Fi+loa%3AtemFuncao+%3Ff+.+%3Ff+loa%3Acodigo+%2212%22+.+%3Fi+loa%3AtemSubfuncao+%3Fs+.+%3Fs+loa%3Acodigo+%3Fsf+.+%3Fi+loa%3AtemGND+%3Fg+.+%3Fg+loa%3Acodigo+%3Fgnd+.%0A+OPTIONAL+%7B+%3Fi+loa%3AvalorLiquidado+%3Fliq+%7D+OPTIONAL+%7B+%3Fi+loa%3AvalorPago+%3Fpag+%7D+OPTIONAL+%7B+%3Fi+loa%3AvalorDotacaoInicial+%3Fdot+%7D%0A%7D+%7D+GROUP+BY+%3Fsf+%3Fgnd+ORDER+BY+%3Fsf+%3Fgnd: <urlopen error [Errno 111] Connection refused>
+2026 143.11
+fim
