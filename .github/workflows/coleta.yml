@@ -26,6 +26,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Dependências
+        run: pip install --quiet openpyxl cryptography certifi xlrd
       - name: Coletar
         run: |
           mkdir -p data/aux/coleta/${{ github.event.inputs.script }}
