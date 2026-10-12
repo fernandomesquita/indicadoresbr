@@ -1,0 +1,128 @@
+{
+  "id": "educacao-superior-governo",
+  "categoria": "educacao",
+  "ordem": 2,
+  "visivel": true,
+  "titulo": "Ensino superior federal: média de cada governo",
+  "subtitulo": "Despesa liquidada da União com ensino superior, média por ano de cada mandato, em R$ bilhões de 2025, de 2007 a 2025",
+  "tipo": "tabela",
+  "x": "",
+  "series": [],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "Total",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "fonte": {
+    "nome": "Ministério do Planejamento e Orçamento, SIOP; cálculo do Indicadores BR",
+    "url": "https://www1.siop.planejamento.gov.br/sparql/"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério do Planejamento e Orçamento, SIOP, dados abertos do orçamento federal (consulta SPARQL)",
+      "url": "https://www1.siop.planejamento.gov.br/sparql/",
+      "o_que_sustenta": "Despesa liquidada da União na subfunção Ensino Superior (364), por grupo de despesa, de 2006 a 2025."
+    },
+    {
+      "nome": "Tesouro Nacional, Siconfi, Relatório Resumido da Execução Orçamentária da União, Anexo 2",
+      "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1",
+      "o_que_sustenta": "Conferência de 2017 a 2025: a despesa liquidada com ensino superior coincide com a do SIOP, com diferença menor que R$ 50 milhões por ano."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737 (IPCA, número-índice)",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção dos valores para reais de 2025 pela média anual do IPCA."
+    },
+    {
+      "nome": "Indicadores BR, dados coletados e cálculo (scripts/coleta/educacao_superior.py e scripts/calculos/educacao_superior.py)",
+      "url": "https://github.com/fernandomesquita/indicadoresbr/blob/main/scripts/calculos/educacao_superior.py",
+      "o_que_sustenta": "Coleta automática nas fontes oficiais e conta usada no gráfico, para conferência."
+    },
+    {
+      "nome": "Planalto, Decreto 6.096/2007 (Reuni)",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6096.htm",
+      "o_que_sustenta": "Programa de Apoio a Planos de Reestruturação e Expansão das Universidades Federais, de 2007."
+    },
+    {
+      "nome": "Planalto, Lei 11.892/2008 (institutos federais)",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11892.htm",
+      "o_que_sustenta": "Criação da Rede Federal de Educação Profissional, Científica e Tecnológica e dos institutos federais."
+    },
+    {
+      "nome": "Planalto, Emenda Constitucional 95/2016 (teto de gastos)",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc95.htm",
+      "o_que_sustenta": "Limite de crescimento das despesas primárias da União a partir de 2017."
+    },
+    {
+      "nome": "Planalto, Lei Complementar 200/2023 (regime fiscal sustentável)",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm",
+      "o_que_sustenta": "Regra fiscal que substituiu o teto de gastos a partir de 2024."
+    }
+  ],
+  "como_ler": "Cada linha é um governo e mostra a média por ano da despesa, considerando só os anos completos de cada mandato, indicados entre parênteses; 2016 fica fora por ter sido dividido entre Dilma e Temer, e 2006, último ano do primeiro mandato de Lula, não entra por ser o único da série naquele mandato. Valores em bilhões de reais de 2025, corrigidos pela média anual do IPCA. Entra a despesa liquidada da União na subfunção Ensino Superior: folha de pessoal das universidades e institutos federais, custeio (contas, bolsas e assistência estudantil) e investimentos em obras e equipamentos. Ficam de fora as aposentadorias e pensões, registradas em geral na função Previdência, e os empréstimos do Fies, que apareceram nessa subfunção só de 2009 a 2011 e foram retirados para a série ficar comparável. A coluna de investimentos tem duas casas decimais porque os valores ficaram abaixo de R$ 1 bilhão por ano a partir de 2015. Médias de períodos curtos, como Dilma 2 e Temer, são mais sensíveis a um único ano.",
+  "contexto": [
+    "O gráfico mostra quanto a União gastou com ensino superior em cada ano, de 2006 a 2025, segundo os dados abertos do orçamento federal do Ministério do Planejamento. A conta usa a despesa liquidada, ou seja, o que foi efetivamente executado, e não o que foi apenas previsto no orçamento. De 2017 a 2025, o resultado coincide com o relatório que o Tesouro Nacional publica sobre a execução do orçamento da União.",
+    "Em valores de 2025, a despesa passou de R$ 27.1 bilhões em 2006 para R$ 51.6 bilhões em 2014, período que incluiu o programa de expansão das universidades federais (Reuni, de 2007) e a criação dos institutos federais (Lei 11.892/2008); os investimentos em obras e equipamentos chegaram a R$ 5.9 bilhões em 2012. A partir de 2015 a despesa real caiu, chegou a R$ 37.4 bilhões em 2022 e voltou a R$ 45.3 bilhões em 2025, com investimentos abaixo de R$ 0,4 bilhão por ano desde 2019. No mesmo período, a folha de pessoal cresceu e passou a ocupar a maior parte do total. As regras fiscais pesaram sobre as despesas que o governo pode ajustar, como custeio e obras: o teto de gastos (Emenda Constitucional 95/2016) valeu de 2017 a 2023, e o regime fiscal da Lei Complementar 200/2023, a partir de 2024.",
+    "O orçamento de cada ano é proposto pelo governo e votado pelo Congresso, e a execução depende também de bloqueios e de decisões de cada instituição. Por isso o gráfico descreve o que foi gasto em cada período, sem medir a qualidade do ensino nem o número de alunos atendidos. Para quem estuda e para quem trabalha nas universidades, a série mostra o espaço para obras, bolsas e contratações, que depende do que sobra depois da folha."
+  ],
+  "glossario": [
+    {
+      "termo": "Despesa liquidada",
+      "definicao": "Etapa em que o governo confirma que o serviço foi prestado ou o bem entregue, antes do pagamento."
+    },
+    {
+      "termo": "Subfunção Ensino Superior (364)",
+      "definicao": "Código da classificação orçamentária que reúne as despesas com graduação e pós-graduação em instituições federais."
+    },
+    {
+      "termo": "Custeio",
+      "definicao": "Despesas para manter o funcionamento: contas de luz e água, limpeza, segurança, bolsas e assistência estudantil."
+    },
+    {
+      "termo": "Investimentos",
+      "definicao": "Obras, equipamentos e material permanente."
+    },
+    {
+      "termo": "Reais de 2025",
+      "definicao": "Valores de anos anteriores corrigidos pela inflação (IPCA) para o poder de compra médio de 2025."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual, com a execução orçamentária fechada em janeiro.",
+    "proxima": "Fevereiro de 2027, com o ano de 2026 completo.",
+    "onde_buscar": "Rodar o workflow \"Coleta de dados primários\" com o script educacao_superior e depois python3 scripts/calculos/educacao_superior.py",
+    "ultima_conferencia": "2026-10-12"
+  },
+  "colunas": [
+    "Governo",
+    "Total",
+    "Pessoal",
+    "Custeio",
+    "Investimentos"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2024: R$ 38,61 bilhões liquidados (valor corrente)",
+      "valor_na_fonte": "Siconfi RREO Anexo 2: R$ 38,08 bi + R$ 0,51 bi intraorçamentário = R$ 38,59 bi",
+      "fonte": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Inversões financeiras de 2009 a 2011 excluídas",
+      "valor_na_fonte": "Ação 0579, Concessão de Financiamento a Estudantes do Ensino Superior Não Gratuito (Fies): R$ 1,29 bi, 1,61 bi e 2,32 bi",
+      "fonte": "https://www1.siop.planejamento.gov.br/sparql/",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Lula 2 (2007 a 2010)", 34.4, 21.6, 9.1, 3.71],
+    ["Dilma 1 (2011 a 2014)", 47.5, 26.1, 16.2, 5.16],
+    ["Dilma 2 (2015)", 50.9, 30.1, 19.8, 1.09],
+    ["Temer (2017 e 2018)", 46.2, 32.9, 12.7, 0.58],
+    ["Bolsonaro (2019 a 2022)", 41.0, 31.0, 9.8, 0.23],
+    ["Lula 3 (2023 a 2025)", 42.2, 30.5, 11.5, 0.29]
+  ]
+}

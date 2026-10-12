@@ -1,0 +1,92 @@
+[
+ {
+  "ano": 2017,
+  "conta": "RREO2TotalDespesas",
+  "liquidado": 30502211052.02
+ },
+ {
+  "ano": 2017,
+  "conta": "RREO2TotalDespesasIntra",
+  "liquidado": 294705626.01
+ },
+ {
+  "ano": 2018,
+  "conta": "RREO2TotalDespesas",
+  "liquidado": 31087227249.79
+ },
+ {
+  "ano": 2018,
+  "conta": "RREO2TotalDespesasIntra",
+  "liquidado": 628507024.19
+ },
+ {
+  "ano": 2019,
+  "conta": "RREO2TotalDespesas",
+  "liquidado": 32022343112.03
+ },
+ {
+  "ano": 2019,
+  "conta": "RREO2TotalDespesasIntra",
+  "liquidado": 515932358.57
+ },
+ {
+  "ano": 2020,
+  "conta": "RREO2TotalDespesas",
+  "liquidado": 30775754330.05
+ },
+ {
+  "ano": 2020,
+  "conta": "RREO2TotalDespesasIntra",
+  "liquidado": 387972485.68
+ },
+ {
+  "ano": 2021,
+  "conta": "RREO2TotalDespesas",
+  "liquidado": 30544326094.86
+ },
+ {
+  "ano": 2021,
+  "conta": "RREO2TotalDespesasIntra",
+  "liquidado": 402943316.77
+ },
+ {
+  "ano": 2022,
+  "conta": "RREO2TotalDespesas",
+  "liquidado": 32224162792.32
+ },
+ {
+  "ano": 2022,
+  "conta": "RREO2TotalDespesasIntra",
+  "liquidado": 421283210.45
+ },
+ {
+  "ano": 2023,
+  "conta": "RREO2TotalDespesas",
+  "liquidado": 36695199996.32
+ },
+ {
+  "ano": 2023,
+  "conta": "RREO2TotalDespesasIntra",
+  "liquidado": 494445919.9
+ },
+ {
+  "ano": 2024,
+  "conta": "RREO2TotalDespesas",
+  "liquidado": 38077869726.56
+ },
+ {
+  "ano": 2024,
+  "conta": "RREO2TotalDespesasIntra",
+  "liquidado": 509121262.11
+ },
+ {
+  "ano": 2025,
+  "conta": "RREO2TotalDespesas",
+  "liquidado": 44793147698.6
+ },
+ {
+  "ano": 2025,
+  "conta": "RREO2TotalDespesasIntra",
+  "liquidado": 555857678.16
+ }
+]
