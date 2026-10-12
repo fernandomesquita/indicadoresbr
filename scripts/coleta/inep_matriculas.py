@@ -24,7 +24,8 @@ for ano in [int(a) for a in sys.argv[1:]] or list(range(2017, 2026)):
     z = f"/tmp/sinopse_{ano}.zip"
     nomes_url = [f"https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_{ano}.zip",
                  f"https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_{ano}.zip",
-                 f"https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_{ano}.zip"]
+                 f"https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_{ano}.zip",
+                 f"https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_educacao_basica_{ano}.zip"]
     ok = False
     for u in nomes_url:
         try: baixar(u, z, tentativas=3); ok = True; print(ano, "baixado de", u, flush=True); break
@@ -37,10 +38,12 @@ for ano in [int(a) for a in sys.argv[1:]] or list(range(2017, 2026)):
     wb = openpyxl.load_workbook(p, read_only=True, data_only=True)
     alvo = None
     for aba in wb.sheetnames:
+        if "sum" in aba.lower() or "resumo" in aba.lower(): continue
         ws = wb[aba]
-        topo = " ".join(norm(c) for r in ws.iter_rows(min_row=1, max_row=8, values_only=True) for c in r if c)
-        if re.search(r"\b1\.2\s*[–-]", topo) and "Dependência Administrativa" in topo and "Localização" in topo:
-            alvo = ws; print(ano, "aba", aba, flush=True); break
+        linhas_topo = [" ".join(norm(c) for c in r if c) for r in ws.iter_rows(min_row=1, max_row=10, values_only=True)]
+        titulo = [t for t in linhas_topo if re.match(r"^1\.2\s*[–-]", t)]
+        if titulo and "Dependência Administrativa" in titulo[0] and "Localização" in titulo[0] and "Educação Básica" in titulo[0]:
+            alvo = ws; print(ano, "aba", aba, "|", titulo[0][:120], flush=True); break
     if alvo is None: print(ano, "tabela 1.2 não encontrada"); continue
     n = 0
     for r in alvo.iter_rows(values_only=True):
