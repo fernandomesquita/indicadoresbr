@@ -9,6 +9,9 @@ Comandos:
   python3 scripts/sync.py baixar            banco -> data/ (traz o que foi editado no admin)
   python3 scripts/sync.py enviar [ids...]   data/ -> banco (publica o que foi editado nos arquivos)
       --forcar   envia mesmo se o banco tiver uma versão mais nova que a última sincronização
+      --ci       modo do GitHub Actions: em vez de data/.sync.json, usa a data da última
+                 sincronização gravada no próprio banco (config, chave "sync") e não envia
+                 indicadores editados no admin depois dela
 
 Precisa de duas variáveis de ambiente (nunca grave em arquivo do repositório):
   SUPABASE_URL                 ex.: https://sfroiqakkcphhnsqibsh.supabase.co
@@ -87,13 +90,18 @@ def baixar():
     SYNC.write_text(json.dumps(st, indent=1))
     print(f"baixados {len(rem)} indicadores. Rode python3 scripts/build.py e faça o commit.")
 
-def enviar(ids, forcar):
+def enviar(ids, forcar, ci=False):
     site, inds = carregar()
     erros, _ = validar(site, inds)
     if erros: sys.exit("Corrija antes de enviar:\n" + "\n".join(erros))
     rem, st = remoto(), estado()
     alvo = [i for i in inds if not ids or i["id"] in ids]
-    conflitos = [i["id"] for i in alvo if i["id"] in rem and st.get(i["id"]) and rem[i["id"]]["atualizado_em"] != st[i["id"]]]
+    if ci:
+        cfg = {r["chave"]: r["valor"] for r in api("GET", "config?select=chave,valor&chave=eq.sync")}
+        ultima = (cfg.get("sync") or {}).get("em", "")
+        conflitos = [i["id"] for i in alvo if i["id"] in rem and ultima and rem[i["id"]]["atualizado_em"] > ultima]
+    else:
+        conflitos = [i["id"] for i in alvo if i["id"] in rem and st.get(i["id"]) and rem[i["id"]]["atualizado_em"] != st[i["id"]]]
     if conflitos and not forcar:
         sys.exit("O banco mudou depois da última sincronização (alguém editou no admin): " + ", ".join(conflitos) +
                  "\nRode 'baixar' primeiro, junte as mudanças e envie de novo, ou use --forcar para sobrescrever.")
@@ -104,7 +112,11 @@ def enviar(ids, forcar):
                   prefer="resolution=merge-duplicates,return=representation")
         st[i["id"]] = out[0]["atualizado_em"]
         print("enviado", i["id"])
-    SYNC.write_text(json.dumps(st, indent=1))
+    if ci:
+        agora = api("GET", "indicadores?select=atualizado_em&order=atualizado_em.desc&limit=1")[0]["atualizado_em"]
+        api("POST", "config?on_conflict=chave", [{"chave": "sync", "valor": {"em": agora}}], prefer="resolution=merge-duplicates")
+    else:
+        SYNC.write_text(json.dumps(st, indent=1))
     print(f"{len(alvo)} indicadores publicados no banco.")
 
 if __name__ == "__main__":
@@ -113,5 +125,5 @@ if __name__ == "__main__":
     cmd = args[0]
     if cmd == "status": status()
     elif cmd == "baixar": baixar()
-    elif cmd == "enviar": enviar(args[1:], "--forcar" in sys.argv)
+    elif cmd == "enviar": enviar(args[1:], "--forcar" in sys.argv, "--ci" in sys.argv)
     else: print(__doc__)

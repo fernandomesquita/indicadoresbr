@@ -23,7 +23,7 @@ O catálogo com a fonte, a periodicidade e o endereço de atualização de cada 
 4. Atualize os textos que citam o último valor (`subtitulo`, `como_ler`, `contexto`) e o período no subtítulo.
 5. Preencha `checagem` (pelo menos 3 valores, incluindo o novo) e `atualizacao.ultima_conferencia`.
 6. `python3 scripts/build.py` (precisa terminar sem ERRO).
-7. `python3 scripts/sync.py enviar <id>` para publicar no banco.
+7. Publicar no banco: o push na `main` dispara o workflow **Sincronizar banco**, que envia os indicadores alterados (precisa dos segredos descritos em `04_publicacao.md`). Com a chave secreta no ambiente local, também dá para rodar `python3 scripts/sync.py enviar <id>`.
 8. Opcional: `python3 scripts/gerar_og.py <id>` para atualizar a prévia de link.
 9. Commit com a mensagem `dados(<id>): <o que mudou>` e a origem de cada valor alterado.
 

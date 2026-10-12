@@ -19,6 +19,15 @@ Para refazer em outro projeto:
 Para incluir outro administrador: crie o usuário e rode no SQL Editor
 `insert into public.admins (email) values ('email@exemplo.com');`
 
+## 1b. Sincronização automática do banco
+
+O workflow **Sincronizar banco (Supabase)** (`.github/workflows/sincronizar-banco.yml`) envia ao Supabase, a cada push na `main`, os indicadores cujos arquivos mudaram. Ele precisa de dois segredos no GitHub (Settings › Secrets and variables › Actions › New repository secret):
+
+- `SUPABASE_URL`: `https://sfroiqakkcphhnsqibsh.supabase.co`
+- `SUPABASE_SERVICE_ROLE_KEY`: a chave secreta do projeto (Supabase › Project Settings › API Keys › secret). Ela fica só no cofre do GitHub; nunca em arquivo do repositório.
+
+Sem os segredos, o workflow avisa e não envia nada; a alternativa continua sendo colar `supabase/seed.sql` no SQL Editor. Para enviar tudo de uma vez, rode o workflow manualmente (aba Actions › Sincronizar banco › Run workflow) com o campo de indicadores vazio. Se alguém editou um indicador no `/admin` depois da última sincronização, o envio para e pede `python3 scripts/sync.py baixar` antes.
+
 ## 2. Site (Vercel ou Netlify)
 
 **Publicado na Vercel em 12/10/2026:** projeto `indicadoresbr` na conta fernandomesquitas-projects, endereço provisório https://indicadoresbr-seven.vercel.app. Cada push na branch `main` publica de novo.

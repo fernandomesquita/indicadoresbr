@@ -1,0 +1,74 @@
+name: Sincronizar banco (Supabase)
+
+# A cada push na main que mexa em data/, envia ao Supabase os indicadores
+# alterados. Precisa de dois segredos do repositório (Settings > Secrets and
+# variables > Actions): SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY.
+# Se alguém editou um indicador no /admin depois da última sincronização,
+# o envio para e pede que o banco seja baixado antes (scripts/sync.py baixar).
+on:
+  push:
+    branches: [main]
+    paths: ["data/**"]
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Indicadores a enviar (vazio = todos)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Conferir segredos
+        id: seg
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::warning::Segredos SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY ausentes; nada foi enviado."
+            echo "ok=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=1" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Validar
+        run: python3 scripts/build.py --checar
+      - name: Escolher indicadores
+        if: steps.seg.outputs.ok == '1'
+        id: ids
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "ids=${{ github.event.inputs.ids }}" >> "$GITHUB_OUTPUT"
+            echo "todos=$([ -z '${{ github.event.inputs.ids }}' ] && echo 1 || echo 0)" >> "$GITHUB_OUTPUT"
+          else
+            BEFORE="${{ github.event.before }}"
+            if git cat-file -e "$BEFORE" 2>/dev/null; then
+              IDS=$(git diff --name-only "$BEFORE" "${{ github.sha }}" -- data/indicadores/ | sed -n 's#data/indicadores/\(.*\)\.json#\1#p' | while read i; do [ -f "data/indicadores/$i.json" ] && echo "$i"; done | tr '\n' ' ')
+              SITE=$(git diff --name-only "$BEFORE" "${{ github.sha }}" -- data/site.json | wc -l)
+            else
+              IDS=""; SITE=1
+            fi
+            echo "ids=$IDS" >> "$GITHUB_OUTPUT"
+            if [ -z "$IDS" ] && [ "$SITE" = "0" ]; then echo "todos=nada" >> "$GITHUB_OUTPUT"; elif [ -z "$IDS" ]; then echo "todos=site" >> "$GITHUB_OUTPUT"; else echo "todos=0" >> "$GITHUB_OUTPUT"; fi
+          fi
+      - name: Enviar
+        if: steps.seg.outputs.ok == '1' && steps.ids.outputs.todos != 'nada'
+        run: |
+          if [ "${{ steps.ids.outputs.todos }}" = "1" ]; then
+            python3 scripts/sync.py enviar --ci
+          elif [ "${{ steps.ids.outputs.todos }}" = "site" ]; then
+            python3 scripts/sync.py enviar __nenhum__ --ci
+          else
+            python3 scripts/sync.py enviar ${{ steps.ids.outputs.ids }} --ci
+          fi
