@@ -1,0 +1,14 @@
+  tentativa 1 falhou em https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2016.zip: <urlopen error [Errno 104] Connection reset by peer>
+  tentativa 2 falhou em https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2016.zip: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>
+  TLS: download.inep.gov.br verificado com intermediário de ['http://secure.globalsign.com/cacert/rnpicpedugr46ovtlsca2025.crt']
+  tentativa 3 falhou em https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2016.zip: HTTP Error 404: Not Found
+2016 falhou https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2016.zip falhou: https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopse_estatistica_censo_escolar_2016.zip
+  tentativa 1 falhou em https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2016.zip: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>
+  tentativa 2 falhou em https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2016.zip: HTTP Error 404: Not Found
+  tentativa 3 falhou em https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2016.zip: HTTP Error 404: Not Found
+2016 falhou https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2016.zip falhou: https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2016.zip
+  tentativa 1 falhou em https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2016.zip: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>
+2016 baixado de https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_educacao_basica/sinopse_estatistica_da_educacao_basica_2016.zip
+2016 aba 1.2 | 1.2 – Número de Matrículas da Educação Básica, por Localização e Dependência Administrativa, segundo a Região Geográfica
+2016 27 UFs
+fim
