@@ -1,0 +1,296 @@
+{
+ "sf847=2024": [
+  {
+   "acao": "00SB",
+   "nome": "Complementação da União ao Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação – Fundeb",
+   "liquidado": "41217176467.13"
+  },
+  {
+   "acao": "0515",
+   "nome": "Dinheiro Direto na Escola para a Educação Básica",
+   "liquidado": "1732411658.09"
+  }
+ ],
+ "sf847=2020": [
+  {
+   "acao": "0E36",
+   "nome": "Complementação da União ao Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - FUNDEB",
+   "liquidado": "12731488809.54"
+  },
+  {
+   "acao": "0515",
+   "nome": "Dinheiro Direto na Escola para a Educação Básica",
+   "liquidado": "1347420933.73"
+  }
+ ],
+ "sf847=2010": [
+  {
+   "acao": "0E36",
+   "nome": "Complementação da União ao Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - FUNDEB",
+   "liquidado": "6714479642"
+  },
+  {
+   "acao": "0515",
+   "nome": "Dinheiro Direto na Escola para a Educação Básica",
+   "liquidado": "1427454061.77"
+  },
+  {
+   "acao": "0509",
+   "nome": "Apoio ao Desenvolvimento da Educação Básica",
+   "liquidado": "1256722573.77"
+  },
+  {
+   "acao": "09CW",
+   "nome": "Apoio à Reestruturação da Rede Física Pública da Educação Básica",
+   "liquidado": "882296199.53"
+  },
+  {
+   "acao": "0969",
+   "nome": "Apoio ao Transporte Escolar na Educação Básica",
+   "liquidado": "596461274.66"
+  },
+  {
+   "acao": "00FA",
+   "nome": "Apoio à Recuperação da Rede Física Escolar Pública",
+   "liquidado": "449997399.98"
+  },
+  {
+   "acao": "0E53",
+   "nome": "Apoio ao Transporte Escolar para a Educação Básica - Caminho da Escola",
+   "liquidado": "156403707.81"
+  },
+  {
+   "acao": "20CV",
+   "nome": "Fomento a Estudos e Pesquisas para o Desenvolvimento da Educação Básica",
+   "liquidado": "32160045.72"
+  }
+ ],
+ "gnd4=2012": [
+  {
+   "acao": "0509",
+   "nome": "Apoio ao Desenvolvimento da Educação Básica",
+   "liquidado": "1989199879.21"
+  },
+  {
+   "acao": "12KU",
+   "nome": "Implantação de Escolas para Educação Infantil",
+   "liquidado": "1783999999.83"
+  },
+  {
+   "acao": "20RP",
+   "nome": "Infraestrutura para a Educação Básica",
+   "liquidado": "1574067348.16"
+  },
+  {
+   "acao": "12KV",
+   "nome": "Implantação e Adequação de Estruturas Esportivas Escolares",
+   "liquidado": "1063445357.29"
+  },
+  {
+   "acao": "8282",
+   "nome": "Reestruturação e Expansão das Universidades Federais",
+   "liquidado": "1062685518.75"
+  },
+  {
+   "acao": "20RK",
+   "nome": "Funcionamento das Universidades Federais",
+   "liquidado": "962799314.7"
+  },
+  {
+   "acao": "20RG",
+   "nome": "Expansão e Reestruturação de Instituições Federais de Educação Profissional e Tecnológica",
+   "liquidado": "800474519.17"
+  },
+  {
+   "acao": "0E53",
+   "nome": "Apoio ao Transporte Escolar para a Educação Básica - Caminho da Escola",
+   "liquidado": "699271380.5"
+  },
+  {
+   "acao": "20RL",
+   "nome": "Funcionamento das Instituições Federais de Educação Profissional e Tecnológica",
+   "liquidado": "661406347.03"
+  },
+  {
+   "acao": "0515",
+   "nome": "Dinheiro Direto na Escola para a Educação Básica",
+   "liquidado": "518241972.57"
+  },
+  {
+   "acao": "20RX",
+   "nome": "Reestruturação e Modernização de Instituições Hospitalares Federais",
+   "liquidado": "317860257.07"
+  },
+  {
+   "acao": "8652",
+   "nome": "Modernização da Rede Pública Não Federal de Educação Profissional e Tecnológica",
+   "liquidado": "310324026.44"
+  },
+  {
+   "acao": "4019",
+   "nome": "Fomento à Pós-Graduação",
+   "liquidado": "132798549.23"
+  },
+  {
+   "acao": "2000",
+   "nome": "Administração da Unidade",
+   "liquidado": "110949761.05"
+  },
+  {
+   "acao": "20RF",
+   "nome": "Tecnologia da Informação e Comunicação para a Educação Básica",
+   "liquidado": "74965401.69"
+  },
+  {
+   "acao": "11G1",
+   "nome": "Implantação da Universidade Federal da Integração Latino-Americana - UNILA",
+   "liquidado": "69811299.92"
+  },
+  {
+   "acao": "12EL",
+   "nome": "Implantação da Universidade Federal do ABC",
+   "liquidado": "68616050.18"
+  },
+  {
+   "acao": "4002",
+   "nome": "Assistência ao Estudante de Ensino Superior",
+   "liquidado": "65360972.46"
+  },
+  {
+   "acao": "4086",
+   "nome": "Funcionamento e Gestão de Instituições Hospitalares Federais",
+   "liquidado": "54741083.52"
+  },
+  {
+   "acao": "14IM",
+   "nome": "Construção de Prédios do Hospital Universitário da Universidade Federal de Juiz de Fora",
+   "liquidado": "50000000"
+  }
+ ],
+ "gnd4=2024": [
+  {
+   "acao": "00VI",
+   "nome": "Apoio à Implantação de Escolas em Tempo Integral",
+   "liquidado": "1023920549.84"
+  },
+  {
+   "acao": "0515",
+   "nome": "Dinheiro Direto na Escola para a Educação Básica",
+   "liquidado": "639819481.09"
+  },
+  {
+   "acao": "0E53",
+   "nome": "Aquisição de Veículos para o Transporte Escolar da Educação Básica - Caminho da Escola",
+   "liquidado": "229567268.53"
+  },
+  {
+   "acao": "20RP",
+   "nome": "Apoio à Infraestrutura para a Educação Básica",
+   "liquidado": "206716875.9"
+  },
+  {
+   "acao": "00SU",
+   "nome": "Apoio à Implantação de Escolas para Educação Infantil",
+   "liquidado": "141876702.43"
+  },
+  {
+   "acao": "20RG",
+   "nome": "Reestruturação e Modernização das Instituições da Rede Federal de Educação Profissional, Científica e Tecnológica",
+   "liquidado": "108939489.85"
+  },
+  {
+   "acao": "15R4",
+   "nome": "Apoio à Expansão, Consolidação, Reestruturação das Instituições da Rede Federal de Educação Profissional, Científica e Tecnológica",
+   "liquidado": "99876860.8"
+  },
+  {
+   "acao": "20RK",
+   "nome": "Funcionamento de Instituições Federais de Ensino Superior",
+   "liquidado": "85323370.44"
+  },
+  {
+   "acao": "0509",
+   "nome": "Apoio ao Desenvolvimento da Educação Básica",
+   "liquidado": "59435000.11"
+  },
+  {
+   "acao": "4086",
+   "nome": "Funcionamento e Gestão de Instituições Hospitalares Federais",
+   "liquidado": "56866263.49"
+  },
+  {
+   "acao": "8282",
+   "nome": "Reestruturação e Modernização das Instituições Federais de Ensino Superior",
+   "liquidado": "53209958.52"
+  },
+  {
+   "acao": "20RX",
+   "nome": "Reestruturação e Modernização dos Hospitais Universitários Federais - REHUF",
+   "liquidado": "45378693.03"
+  },
+  {
+   "acao": "20RL",
+   "nome": "Funcionamento das Instituições da Rede Federal de Educação Profissional, Científica e Tecnológica",
+   "liquidado": "43082509.4"
+  },
+  {
+   "acao": "15R3",
+   "nome": "Apoio à Consolidação, Reestruturação e Modernização das Instituições Federais de Ensino Superior",
+   "liquidado": "35853279.28"
+  },
+  {
+   "acao": "2000",
+   "nome": "Administração da Unidade",
+   "liquidado": "23476998.32"
+  },
+  {
+   "acao": "21D8",
+   "nome": "Adequação e Modernização dos Hospitais Universitários Federais",
+   "liquidado": "5999410.69"
+  },
+  {
+   "acao": "7XE1",
+   "nome": "Reconstrução e Modernização do Museu Nacional",
+   "liquidado": "5854324.41"
+  },
+  {
+   "acao": "20GK",
+   "nome": "Fomento às Ações de Graduação, Pós-Graduação, Ensino, Pesquisa e Extensão",
+   "liquidado": "4491798.64"
+  },
+  {
+   "acao": "20RJ",
+   "nome": "Apoio à Capacitação e Formação Inicial e Continuada para a Educação Básica",
+   "liquidado": "3655724.7"
+  },
+  {
+   "acao": "4002",
+   "nome": "Assistência ao Estudante de Ensino Superior",
+   "liquidado": "2922046.06"
+  }
+ ],
+ "sf331=2024": [
+  {
+   "acao": "212B",
+   "nome": "Benefícios Obrigatórios aos Servidores Civis, Empregados, Militares e seus Dependentes",
+   "liquidado": "4035168060.57"
+  },
+  {
+   "acao": "2004",
+   "nome": "Assistência Médica e Odontológica aos Servidores Civis, Empregados, Militares e seus Dependentes",
+   "liquidado": "905872779.78"
+  }
+ ],
+ "sf846=2024": [
+  {
+   "acao": "09HB",
+   "nome": "Contribuição da União, de suas Autarquias e Fundações para o Custeio do Regime de Previdência dos Servidores Públicos Federais",
+   "liquidado": "8901477664.55"
+  },
+  {
+   "acao": "00M2",
+   "nome": "Integralização de Cotas em Fundos de Garantia de Operações de Crédito Educativo",
+   "liquidado": "500000000"
+  }
+ ]
+}
