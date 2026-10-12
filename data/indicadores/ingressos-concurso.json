@@ -1,7 +1,7 @@
 {
   "id": "ingressos-concurso",
   "categoria": "politicas-publicas",
-  "ordem": 7,
+  "ordem": 9,
   "visivel": true,
   "titulo": "Quantos entraram por concurso",
   "subtitulo": "Média anual de ingressos no Executivo federal civil, por governo",

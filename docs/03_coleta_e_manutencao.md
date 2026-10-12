@@ -17,7 +17,7 @@ O catálogo com a fonte, a periodicidade e o endereço de atualização de cada 
 2. Baixe o dado novo direto da fonte. Exemplos de acesso:
    - **Banco Central (SGS):** `https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados?formato=json&dataInicial=01/01/2025&dataFinal=31/12/2026`. Peça intervalos curtos; resumidores automáticos erram em séries longas.
    - **IBGE (SIDRA):** `https://apisidra.ibge.gov.br/values/t/{tabela}/n1/all/v/{variavel}/p/all`. Quando a API vier vazia, use o comunicado oficial da Agência de Notícias do IBGE.
-   - **Câmara dos Deputados:** `https://dadosabertos.camara.leg.br/api/v2/...` (votações, orientações, proposições).
+   - **Câmara dos Deputados:** `https://dadosabertos.camara.leg.br/api/v2/...` (votações, orientações, proposições) e os arquivos anuais em `https://dadosabertos.camara.leg.br/arquivos/`. Quando o ambiente não alcança o site da Câmara, rode o workflow do GitHub Actions (aba Actions do repositório): ele baixa os arquivos, calcula e grava o resultado na branch `dados-governismo`.
    - **Relatórios anuais em documento (Anuário do FBSP, Raio-X, notas técnicas):** transcreva a tabela inteira, com página e número da tabela.
 3. Se a série for estável (só um ponto novo): antes de editar, rode `python3 scripts/sync.py baixar` para trazer qualquer ajuste feito no admin. Edite `linhas` em `data/indicadores/<id>.json`.
 4. Atualize os textos que citam o último valor (`subtitulo`, `como_ler`, `contexto`) e o período no subtítulo.

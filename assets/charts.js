@@ -238,6 +238,8 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   if (!all.length) return;
   let lo = Math.min(...all), hi = Math.max(...all);
   if (lo > 0 && lo < hi * .35) lo = 0;
+  if (isNum(ind.ymin)) lo = Math.min(lo, ind.ymin); // eixo fixo, quando o indicador pede
+  if (isNum(ind.ymax)) hi = Math.max(hi, ind.ymax);
   const sc = nice(lo, hi, 5), multi = ys.length > 1;
   const yw = yLabelWidth(ctx, ind, sc, s);
   const bandsH = ind.faixasGoverno && numX ? 20 * s : 0, legH = multi ? 26 * s : 0;

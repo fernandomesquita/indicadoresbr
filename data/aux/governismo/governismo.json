@@ -1,0 +1,3083 @@
+{
+ "gerado_em": "2026-10-12T14:21:57Z",
+ "metodo": "Indicadores BR · taxa de governismo na Câmara a partir dos dados abertos\n\nBaixa os arquivos anuais oficiais da Câmara dos Deputados e calcula, para cada\npartido, a porcentagem dos votos dos seus deputados que seguiram a orientação\ndo governo nas votações nominais do Plenário.\n\nMétodo (o mesmo descrito pelo Poder360 para 2023):\n  - entram só votações do Plenário (siglaOrgao = PLEN) com orientação do\n    governo igual a Sim ou Não; orientação \"Liberado\" e votações sem\n    orientação ficam fora;\n  - cada voto individual Sim ou Não conta como seguir ou não seguir;\n    Abstenção e Obstrução contam como não seguir;\n  - \"Artigo 17\" (presidente da sessão) fica fora;\n  - o partido é o registrado no voto (deputado_siglaPartido), ou seja, o\n    partido do deputado na data da votação.",
+ "votacoes_contadas": {
+  "2019": 248,
+  "2020": 346,
+  "2021": 598,
+  "2022": 403,
+  "2023": 238,
+  "2024": 224,
+  "2025": 316,
+  "2026": 93
+ },
+ "camara_ano": {
+  "2019": {
+   "pct": 76.3,
+   "seguiu": 72259,
+   "votos": 94723
+  },
+  "2020": {
+   "pct": 75.0,
+   "seguiu": 106050,
+   "votos": 141329
+  },
+  "2021": {
+   "pct": 74.1,
+   "seguiu": 183917,
+   "votos": 248055
+  },
+  "2022": {
+   "pct": 73.5,
+   "seguiu": 111654,
+   "votos": 151949
+  },
+  "2023": {
+   "pct": 73.3,
+   "seguiu": 71770,
+   "votos": 97919
+  },
+  "2024": {
+   "pct": 71.8,
+   "seguiu": 65555,
+   "votos": 91321
+  },
+  "2025": {
+   "pct": 67.1,
+   "seguiu": 84815,
+   "votos": 126389
+  },
+  "2026": {
+   "pct": 71.6,
+   "seguiu": 27313,
+   "votos": 38160
+  }
+ },
+ "camara_semestre": {
+  "2019-S1": {
+   "pct": 75.5,
+   "seguiu": 21004,
+   "votos": 27821
+  },
+  "2019-S2": {
+   "pct": 76.6,
+   "seguiu": 51255,
+   "votos": 66902
+  },
+  "2020-S1": {
+   "pct": 72.7,
+   "seguiu": 42034,
+   "votos": 57791
+  },
+  "2020-S2": {
+   "pct": 76.6,
+   "seguiu": 64016,
+   "votos": 83538
+  },
+  "2021-S1": {
+   "pct": 74.6,
+   "seguiu": 92148,
+   "votos": 123584
+  },
+  "2021-S2": {
+   "pct": 73.7,
+   "seguiu": 91769,
+   "votos": 124471
+  },
+  "2022-S1": {
+   "pct": 72.8,
+   "seguiu": 76997,
+   "votos": 105731
+  },
+  "2022-S2": {
+   "pct": 75.0,
+   "seguiu": 34657,
+   "votos": 46218
+  },
+  "2023-S1": {
+   "pct": 65.2,
+   "seguiu": 14910,
+   "votos": 22862
+  },
+  "2023-S2": {
+   "pct": 75.8,
+   "seguiu": 56860,
+   "votos": 75057
+  },
+  "2024-S1": {
+   "pct": 69.0,
+   "seguiu": 23484,
+   "votos": 34055
+  },
+  "2024-S2": {
+   "pct": 73.5,
+   "seguiu": 42071,
+   "votos": 57266
+  },
+  "2025-S1": {
+   "pct": 70.9,
+   "seguiu": 28993,
+   "votos": 40869
+  },
+  "2025-S2": {
+   "pct": 65.3,
+   "seguiu": 55822,
+   "votos": 85520
+  },
+  "2026-S1": {
+   "pct": 73.2,
+   "seguiu": 24269,
+   "votos": 33177
+  },
+  "2026-S2": {
+   "pct": 61.1,
+   "seguiu": 3044,
+   "votos": 4983
+  }
+ },
+ "partido_ano": {
+  "AVANTE|2019": {
+   "pct": 77.2,
+   "seguiu": 1039,
+   "votos": 1346
+  },
+  "AVANTE|2020": {
+   "pct": 82.9,
+   "seguiu": 1624,
+   "votos": 1959
+  },
+  "AVANTE|2021": {
+   "pct": 80.0,
+   "seguiu": 3120,
+   "votos": 3901
+  },
+  "AVANTE|2022": {
+   "pct": 74.0,
+   "seguiu": 1430,
+   "votos": 1933
+  },
+  "AVANTE|2023": {
+   "pct": 88.4,
+   "seguiu": 1139,
+   "votos": 1289
+  },
+  "AVANTE|2024": {
+   "pct": 86.4,
+   "seguiu": 1033,
+   "votos": 1196
+  },
+  "AVANTE|2025": {
+   "pct": 77.2,
+   "seguiu": 1445,
+   "votos": 1872
+  },
+  "AVANTE|2026": {
+   "pct": 78.9,
+   "seguiu": 423,
+   "votos": 536
+  },
+  "CIDADANIA|2019": {
+   "pct": 85.7,
+   "seguiu": 1284,
+   "votos": 1499
+  },
+  "CIDADANIA|2020": {
+   "pct": 74.7,
+   "seguiu": 1815,
+   "votos": 2429
+  },
+  "CIDADANIA|2021": {
+   "pct": 76.1,
+   "seguiu": 2857,
+   "votos": 3753
+  },
+  "CIDADANIA|2022": {
+   "pct": 76.7,
+   "seguiu": 1473,
+   "votos": 1920
+  },
+  "CIDADANIA|2023": {
+   "pct": 68.0,
+   "seguiu": 457,
+   "votos": 672
+  },
+  "CIDADANIA|2024": {
+   "pct": 66.1,
+   "seguiu": 463,
+   "votos": 700
+  },
+  "CIDADANIA|2025": {
+   "pct": 54.1,
+   "seguiu": 438,
+   "votos": 809
+  },
+  "CIDADANIA|2026": {
+   "pct": 64.8,
+   "seguiu": 127,
+   "votos": 196
+  },
+  "DC|2019": {
+   "pct": 81.8,
+   "seguiu": 9,
+   "votos": 11
+  },
+  "DC|2026": {
+   "pct": 71.4,
+   "seguiu": 5,
+   "votos": 7
+  },
+  "DEM|2019": {
+   "pct": 93.3,
+   "seguiu": 4387,
+   "votos": 4704
+  },
+  "DEM|2020": {
+   "pct": 88.8,
+   "seguiu": 6532,
+   "votos": 7354
+  },
+  "DEM|2021": {
+   "pct": 89.3,
+   "seguiu": 11324,
+   "votos": 12684
+  },
+  "DEM|2022": {
+   "pct": 84.8,
+   "seguiu": 675,
+   "votos": 796
+  },
+  "MDB|2019": {
+   "pct": 91.4,
+   "seguiu": 5553,
+   "votos": 6073
+  },
+  "MDB|2020": {
+   "pct": 90.4,
+   "seguiu": 8227,
+   "votos": 9097
+  },
+  "MDB|2021": {
+   "pct": 83.1,
+   "seguiu": 12514,
+   "votos": 15058
+  },
+  "MDB|2022": {
+   "pct": 87.1,
+   "seguiu": 8446,
+   "votos": 9692
+  },
+  "MDB|2023": {
+   "pct": 81.7,
+   "seguiu": 6326,
+   "votos": 7745
+  },
+  "MDB|2024": {
+   "pct": 77.3,
+   "seguiu": 5514,
+   "votos": 7131
+  },
+  "MDB|2025": {
+   "pct": 66.4,
+   "seguiu": 6271,
+   "votos": 9438
+  },
+  "MDB|2026": {
+   "pct": 73.4,
+   "seguiu": 1926,
+   "votos": 2624
+  },
+  "MISSÃO|2026": {
+   "pct": 15.4,
+   "seguiu": 10,
+   "votos": 65
+  },
+  "NOVO|2019": {
+   "pct": 92.1,
+   "seguiu": 1715,
+   "votos": 1863
+  },
+  "NOVO|2020": {
+   "pct": 82.1,
+   "seguiu": 2210,
+   "votos": 2691
+  },
+  "NOVO|2021": {
+   "pct": 68.0,
+   "seguiu": 3159,
+   "votos": 4645
+  },
+  "NOVO|2022": {
+   "pct": 67.2,
+   "seguiu": 2027,
+   "votos": 3016
+  },
+  "NOVO|2023": {
+   "pct": 20.8,
+   "seguiu": 146,
+   "votos": 702
+  },
+  "NOVO|2024": {
+   "pct": 21.9,
+   "seguiu": 156,
+   "votos": 712
+  },
+  "NOVO|2025": {
+   "pct": 14.7,
+   "seguiu": 200,
+   "votos": 1363
+  },
+  "NOVO|2026": {
+   "pct": 14.8,
+   "seguiu": 62,
+   "votos": 419
+  },
+  "PATRI|2019": {
+   "pct": 90.1,
+   "seguiu": 218,
+   "votos": 242
+  },
+  "PATRIOTA|2019": {
+   "pct": 94.2,
+   "seguiu": 720,
+   "votos": 764
+  },
+  "PATRIOTA|2020": {
+   "pct": 95.7,
+   "seguiu": 1467,
+   "votos": 1533
+  },
+  "PATRIOTA|2021": {
+   "pct": 95.4,
+   "seguiu": 2640,
+   "votos": 2767
+  },
+  "PATRIOTA|2022": {
+   "pct": 91.7,
+   "seguiu": 1210,
+   "votos": 1319
+  },
+  "PATRIOTA|2023": {
+   "pct": 64.8,
+   "seguiu": 507,
+   "votos": 782
+  },
+  "PCdoB|2019": {
+   "pct": 31.1,
+   "seguiu": 472,
+   "votos": 1520
+  },
+  "PCdoB|2020": {
+   "pct": 26.7,
+   "seguiu": 635,
+   "votos": 2381
+  },
+  "PCdoB|2021": {
+   "pct": 29.3,
+   "seguiu": 1166,
+   "votos": 3974
+  },
+  "PCdoB|2022": {
+   "pct": 27.2,
+   "seguiu": 718,
+   "votos": 2644
+  },
+  "PCdoB|2023": {
+   "pct": 96.7,
+   "seguiu": 1369,
+   "votos": 1415
+  },
+  "PCdoB|2024": {
+   "pct": 97.1,
+   "seguiu": 1379,
+   "votos": 1420
+  },
+  "PCdoB|2025": {
+   "pct": 97.3,
+   "seguiu": 2362,
+   "votos": 2428
+  },
+  "PCdoB|2026": {
+   "pct": 96.2,
+   "seguiu": 812,
+   "votos": 844
+  },
+  "PDT|2019": {
+   "pct": 46.0,
+   "seguiu": 2301,
+   "votos": 4997
+  },
+  "PDT|2020": {
+   "pct": 45.1,
+   "seguiu": 3587,
+   "votos": 7956
+  },
+  "PDT|2021": {
+   "pct": 42.9,
+   "seguiu": 5490,
+   "votos": 12799
+  },
+  "PDT|2022": {
+   "pct": 42.6,
+   "seguiu": 2811,
+   "votos": 6604
+  },
+  "PDT|2023": {
+   "pct": 92.4,
+   "seguiu": 3335,
+   "votos": 3608
+  },
+  "PDT|2024": {
+   "pct": 89.3,
+   "seguiu": 3075,
+   "votos": 3443
+  },
+  "PDT|2025": {
+   "pct": 88.7,
+   "seguiu": 3888,
+   "votos": 4384
+  },
+  "PDT|2026": {
+   "pct": 93.8,
+   "seguiu": 1006,
+   "votos": 1073
+  },
+  "PHS|2019": {
+   "pct": 94.0,
+   "seguiu": 126,
+   "votos": 134
+  },
+  "PL|2019": {
+   "pct": 89.7,
+   "seguiu": 5305,
+   "votos": 5917
+  },
+  "PL|2020": {
+   "pct": 94.3,
+   "seguiu": 9944,
+   "votos": 10543
+  },
+  "PL|2021": {
+   "pct": 92.7,
+   "seguiu": 17936,
+   "votos": 19352
+  },
+  "PL|2022": {
+   "pct": 93.5,
+   "seguiu": 19670,
+   "votos": 21040
+  },
+  "PL|2023": {
+   "pct": 32.9,
+   "seguiu": 6094,
+   "votos": 18546
+  },
+  "PL|2024": {
+   "pct": 31.9,
+   "seguiu": 5419,
+   "votos": 16963
+  },
+  "PL|2025": {
+   "pct": 27.6,
+   "seguiu": 6061,
+   "votos": 21992
+  },
+  "PL|2026": {
+   "pct": 34.9,
+   "seguiu": 2447,
+   "votos": 7017
+  },
+  "PMN|2019": {
+   "pct": 76.2,
+   "seguiu": 221,
+   "votos": 290
+  },
+  "PODE|2019": {
+   "pct": 81.6,
+   "seguiu": 1498,
+   "votos": 1835
+  },
+  "PODE|2020": {
+   "pct": 79.4,
+   "seguiu": 2271,
+   "votos": 2861
+  },
+  "PODE|2021": {
+   "pct": 78.9,
+   "seguiu": 3872,
+   "votos": 4905
+  },
+  "PODE|2022": {
+   "pct": 81.8,
+   "seguiu": 2175,
+   "votos": 2659
+  },
+  "PODE|2023": {
+   "pct": 80.8,
+   "seguiu": 2243,
+   "votos": 2776
+  },
+  "PODE|2024": {
+   "pct": 79.0,
+   "seguiu": 2108,
+   "votos": 2669
+  },
+  "PODE|2025": {
+   "pct": 76.7,
+   "seguiu": 3090,
+   "votos": 4029
+  },
+  "PODE|2026": {
+   "pct": 75.9,
+   "seguiu": 1153,
+   "votos": 1519
+  },
+  "PP|2019": {
+   "pct": 90.7,
+   "seguiu": 6010,
+   "votos": 6624
+  },
+  "PP|2020": {
+   "pct": 94.3,
+   "seguiu": 9710,
+   "votos": 10299
+  },
+  "PP|2021": {
+   "pct": 93.8,
+   "seguiu": 17103,
+   "votos": 18242
+  },
+  "PP|2022": {
+   "pct": 93.3,
+   "seguiu": 13418,
+   "votos": 14383
+  },
+  "PP|2023": {
+   "pct": 76.7,
+   "seguiu": 7039,
+   "votos": 9176
+  },
+  "PP|2024": {
+   "pct": 76.2,
+   "seguiu": 6689,
+   "votos": 8782
+  },
+  "PP|2025": {
+   "pct": 65.4,
+   "seguiu": 7635,
+   "votos": 11674
+  },
+  "PP|2026": {
+   "pct": 71.3,
+   "seguiu": 2365,
+   "votos": 3315
+  },
+  "PPL|2019": {
+   "pct": 57.1,
+   "seguiu": 12,
+   "votos": 21
+  },
+  "PPS|2019": {
+   "pct": 98.9,
+   "seguiu": 186,
+   "votos": 188
+  },
+  "PR|2019": {
+   "pct": 96.1,
+   "seguiu": 1048,
+   "votos": 1091
+  },
+  "PRB|2019": {
+   "pct": 90.6,
+   "seguiu": 3032,
+   "votos": 3345
+  },
+  "PRD|2024": {
+   "pct": 62.8,
+   "seguiu": 454,
+   "votos": 723
+  },
+  "PRD|2025": {
+   "pct": 50.7,
+   "seguiu": 561,
+   "votos": 1107
+  },
+  "PRD|2026": {
+   "pct": 66.1,
+   "seguiu": 185,
+   "votos": 280
+  },
+  "PROS|2019": {
+   "pct": 77.5,
+   "seguiu": 1425,
+   "votos": 1838
+  },
+  "PROS|2020": {
+   "pct": 80.7,
+   "seguiu": 2312,
+   "votos": 2864
+  },
+  "PROS|2021": {
+   "pct": 88.0,
+   "seguiu": 4616,
+   "votos": 5248
+  },
+  "PROS|2022": {
+   "pct": 87.1,
+   "seguiu": 1554,
+   "votos": 1784
+  },
+  "PROS|2023": {
+   "pct": 100.0,
+   "seguiu": 8,
+   "votos": 8
+  },
+  "PRP|2019": {
+   "pct": 88.2,
+   "seguiu": 45,
+   "votos": 51
+  },
+  "PSB|2019": {
+   "pct": 47.9,
+   "seguiu": 2972,
+   "votos": 6202
+  },
+  "PSB|2020": {
+   "pct": 44.1,
+   "seguiu": 3803,
+   "votos": 8631
+  },
+  "PSB|2021": {
+   "pct": 43.9,
+   "seguiu": 6614,
+   "votos": 15073
+  },
+  "PSB|2022": {
+   "pct": 34.7,
+   "seguiu": 2719,
+   "votos": 7838
+  },
+  "PSB|2023": {
+   "pct": 93.7,
+   "seguiu": 2823,
+   "votos": 3013
+  },
+  "PSB|2024": {
+   "pct": 94.1,
+   "seguiu": 2471,
+   "votos": 2626
+  },
+  "PSB|2025": {
+   "pct": 90.1,
+   "seguiu": 3529,
+   "votos": 3915
+  },
+  "PSB|2026": {
+   "pct": 91.6,
+   "seguiu": 1160,
+   "votos": 1266
+  },
+  "PSC|2019": {
+   "pct": 89.2,
+   "seguiu": 1382,
+   "votos": 1550
+  },
+  "PSC|2020": {
+   "pct": 91.9,
+   "seguiu": 2222,
+   "votos": 2419
+  },
+  "PSC|2021": {
+   "pct": 93.9,
+   "seguiu": 4776,
+   "votos": 5086
+  },
+  "PSC|2022": {
+   "pct": 92.3,
+   "seguiu": 2556,
+   "votos": 2768
+  },
+  "PSC|2023": {
+   "pct": 82.6,
+   "seguiu": 180,
+   "votos": 218
+  },
+  "PSD|2019": {
+   "pct": 90.3,
+   "seguiu": 6124,
+   "votos": 6781
+  },
+  "PSD|2020": {
+   "pct": 91.9,
+   "seguiu": 8644,
+   "votos": 9406
+  },
+  "PSD|2021": {
+   "pct": 89.9,
+   "seguiu": 14823,
+   "votos": 16491
+  },
+  "PSD|2022": {
+   "pct": 86.1,
+   "seguiu": 10754,
+   "votos": 12493
+  },
+  "PSD|2023": {
+   "pct": 86.1,
+   "seguiu": 6758,
+   "votos": 7853
+  },
+  "PSD|2024": {
+   "pct": 77.5,
+   "seguiu": 5808,
+   "votos": 7495
+  },
+  "PSD|2025": {
+   "pct": 71.2,
+   "seguiu": 7561,
+   "votos": 10619
+  },
+  "PSD|2026": {
+   "pct": 77.4,
+   "seguiu": 2592,
+   "votos": 3347
+  },
+  "PSDB|2019": {
+   "pct": 91.8,
+   "seguiu": 5237,
+   "votos": 5703
+  },
+  "PSDB|2020": {
+   "pct": 82.7,
+   "seguiu": 7338,
+   "votos": 8877
+  },
+  "PSDB|2021": {
+   "pct": 81.3,
+   "seguiu": 12638,
+   "votos": 15548
+  },
+  "PSDB|2022": {
+   "pct": 79.1,
+   "seguiu": 5517,
+   "votos": 6977
+  },
+  "PSDB|2023": {
+   "pct": 71.1,
+   "seguiu": 1882,
+   "votos": 2646
+  },
+  "PSDB|2024": {
+   "pct": 73.5,
+   "seguiu": 1594,
+   "votos": 2168
+  },
+  "PSDB|2025": {
+   "pct": 66.9,
+   "seguiu": 2214,
+   "votos": 3310
+  },
+  "PSDB|2026": {
+   "pct": 74.3,
+   "seguiu": 927,
+   "votos": 1248
+  },
+  "PSL|2019": {
+   "pct": 97.6,
+   "seguiu": 10484,
+   "votos": 10740
+  },
+  "PSL|2020": {
+   "pct": 94.5,
+   "seguiu": 14915,
+   "votos": 15783
+  },
+  "PSL|2021": {
+   "pct": 93.3,
+   "seguiu": 25653,
+   "votos": 27498
+  },
+  "PSL|2022": {
+   "pct": 90.9,
+   "seguiu": 1886,
+   "votos": 2075
+  },
+  "PSOL|2019": {
+   "pct": 15.8,
+   "seguiu": 297,
+   "votos": 1881
+  },
+  "PSOL|2020": {
+   "pct": 17.2,
+   "seguiu": 436,
+   "votos": 2532
+  },
+  "PSOL|2021": {
+   "pct": 18.9,
+   "seguiu": 837,
+   "votos": 4418
+  },
+  "PSOL|2022": {
+   "pct": 20.1,
+   "seguiu": 522,
+   "votos": 2595
+  },
+  "PSOL|2023": {
+   "pct": 81.5,
+   "seguiu": 2078,
+   "votos": 2550
+  },
+  "PSOL|2024": {
+   "pct": 76.3,
+   "seguiu": 1771,
+   "votos": 2321
+  },
+  "PSOL|2025": {
+   "pct": 89.0,
+   "seguiu": 3091,
+   "votos": 3473
+  },
+  "PSOL|2026": {
+   "pct": 90.0,
+   "seguiu": 850,
+   "votos": 944
+  },
+  "PT|2019": {
+   "pct": 21.2,
+   "seguiu": 1949,
+   "votos": 9178
+  },
+  "PT|2020": {
+   "pct": 22.4,
+   "seguiu": 3258,
+   "votos": 14541
+  },
+  "PT|2021": {
+   "pct": 25.7,
+   "seguiu": 7041,
+   "votos": 27363
+  },
+  "PT|2022": {
+   "pct": 27.1,
+   "seguiu": 4855,
+   "votos": 17927
+  },
+  "PT|2023": {
+   "pct": 97.2,
+   "seguiu": 13265,
+   "votos": 13648
+  },
+  "PT|2024": {
+   "pct": 97.9,
+   "seguiu": 12567,
+   "votos": 12833
+  },
+  "PT|2025": {
+   "pct": 97.9,
+   "seguiu": 17439,
+   "votos": 17815
+  },
+  "PT|2026": {
+   "pct": 98.1,
+   "seguiu": 5213,
+   "votos": 5313
+  },
+  "PTB|2019": {
+   "pct": 90.6,
+   "seguiu": 2069,
+   "votos": 2283
+  },
+  "PTB|2020": {
+   "pct": 91.4,
+   "seguiu": 2775,
+   "votos": 3036
+  },
+  "PTB|2021": {
+   "pct": 91.4,
+   "seguiu": 4299,
+   "votos": 4701
+  },
+  "PTB|2022": {
+   "pct": 89.4,
+   "seguiu": 1234,
+   "votos": 1381
+  },
+  "PTC|2019": {
+   "pct": 78.9,
+   "seguiu": 15,
+   "votos": 19
+  },
+  "PV|2019": {
+   "pct": 66.9,
+   "seguiu": 531,
+   "votos": 794
+  },
+  "PV|2020": {
+   "pct": 50.9,
+   "seguiu": 597,
+   "votos": 1174
+  },
+  "PV|2021": {
+   "pct": 49.1,
+   "seguiu": 991,
+   "votos": 2020
+  },
+  "PV|2022": {
+   "pct": 32.3,
+   "seguiu": 339,
+   "votos": 1051
+  },
+  "PV|2023": {
+   "pct": 96.4,
+   "seguiu": 1083,
+   "votos": 1124
+  },
+  "PV|2024": {
+   "pct": 96.6,
+   "seguiu": 886,
+   "votos": 917
+  },
+  "PV|2025": {
+   "pct": 97.1,
+   "seguiu": 1050,
+   "votos": 1081
+  },
+  "PV|2026": {
+   "pct": 97.4,
+   "seguiu": 371,
+   "votos": 381
+  },
+  "REDE|2019": {
+   "pct": 34.5,
+   "seguiu": 61,
+   "votos": 177
+  },
+  "REDE|2020": {
+   "pct": 34.0,
+   "seguiu": 105,
+   "votos": 309
+  },
+  "REDE|2021": {
+   "pct": 31.0,
+   "seguiu": 174,
+   "votos": 562
+  },
+  "REDE|2022": {
+   "pct": 24.6,
+   "seguiu": 139,
+   "votos": 565
+  },
+  "REDE|2023": {
+   "pct": 88.3,
+   "seguiu": 181,
+   "votos": 205
+  },
+  "REDE|2024": {
+   "pct": 90.5,
+   "seguiu": 162,
+   "votos": 179
+  },
+  "REDE|2025": {
+   "pct": 89.3,
+   "seguiu": 334,
+   "votos": 374
+  },
+  "REDE|2026": {
+   "pct": 90.5,
+   "seguiu": 287,
+   "votos": 317
+  },
+  "REPUBLICANOS|2019": {
+   "pct": 89.5,
+   "seguiu": 2206,
+   "votos": 2466
+  },
+  "REPUBLICANOS|2020": {
+   "pct": 93.7,
+   "seguiu": 8297,
+   "votos": 8856
+  },
+  "REPUBLICANOS|2021": {
+   "pct": 94.3,
+   "seguiu": 14856,
+   "votos": 15749
+  },
+  "REPUBLICANOS|2022": {
+   "pct": 90.8,
+   "seguiu": 11178,
+   "votos": 12314
+  },
+  "REPUBLICANOS|2023": {
+   "pct": 77.5,
+   "seguiu": 6290,
+   "votos": 8111
+  },
+  "REPUBLICANOS|2024": {
+   "pct": 81.2,
+   "seguiu": 6491,
+   "votos": 7995
+  },
+  "REPUBLICANOS|2025": {
+   "pct": 72.7,
+   "seguiu": 8126,
+   "votos": 11170
+  },
+  "REPUBLICANOS|2026": {
+   "pct": 76.3,
+   "seguiu": 2478,
+   "votos": 3248
+  },
+  "S.PART.|2019": {
+   "pct": 93.7,
+   "seguiu": 104,
+   "votos": 111
+  },
+  "S.PART.|2021": {
+   "pct": 33.3,
+   "seguiu": 43,
+   "votos": 129
+  },
+  "S.PART.|2022": {
+   "pct": 52.8,
+   "seguiu": 19,
+   "votos": 36
+  },
+  "S.PART.|2023": {
+   "pct": 86.5,
+   "seguiu": 45,
+   "votos": 52
+  },
+  "SOLIDARIEDADE|2019": {
+   "pct": 89.4,
+   "seguiu": 2222,
+   "votos": 2485
+  },
+  "SOLIDARIEDADE|2020": {
+   "pct": 87.6,
+   "seguiu": 3326,
+   "votos": 3798
+  },
+  "SOLIDARIEDADE|2021": {
+   "pct": 88.3,
+   "seguiu": 5375,
+   "votos": 6089
+  },
+  "SOLIDARIEDADE|2022": {
+   "pct": 84.5,
+   "seguiu": 1882,
+   "votos": 2226
+  },
+  "SOLIDARIEDADE|2023": {
+   "pct": 87.9,
+   "seguiu": 748,
+   "votos": 851
+  },
+  "SOLIDARIEDADE|2024": {
+   "pct": 79.9,
+   "seguiu": 641,
+   "votos": 802
+  },
+  "SOLIDARIEDADE|2025": {
+   "pct": 82.4,
+   "seguiu": 905,
+   "votos": 1098
+  },
+  "SOLIDARIEDADE|2026": {
+   "pct": 81.3,
+   "seguiu": 300,
+   "votos": 369
+  },
+  "UNIÃO|2022": {
+   "pct": 89.5,
+   "seguiu": 12447,
+   "votos": 13913
+  },
+  "UNIÃO|2023": {
+   "pct": 71.1,
+   "seguiu": 7774,
+   "votos": 10929
+  },
+  "UNIÃO|2024": {
+   "pct": 67.1,
+   "seguiu": 6874,
+   "votos": 10246
+  },
+  "UNIÃO|2025": {
+   "pct": 59.7,
+   "seguiu": 8615,
+   "votos": 14438
+  },
+  "UNIÃO|2026": {
+   "pct": 68.2,
+   "seguiu": 2614,
+   "votos": 3832
+  }
+ },
+ "partido_semestre": {
+  "AVANTE|2019-S1": {
+   "pct": 71.8,
+   "seguiu": 282,
+   "votos": 393
+  },
+  "AVANTE|2019-S2": {
+   "pct": 79.4,
+   "seguiu": 757,
+   "votos": 953
+  },
+  "AVANTE|2020-S1": {
+   "pct": 76.4,
+   "seguiu": 574,
+   "votos": 751
+  },
+  "AVANTE|2020-S2": {
+   "pct": 86.9,
+   "seguiu": 1050,
+   "votos": 1208
+  },
+  "AVANTE|2021-S1": {
+   "pct": 80.9,
+   "seguiu": 1627,
+   "votos": 2011
+  },
+  "AVANTE|2021-S2": {
+   "pct": 79.0,
+   "seguiu": 1493,
+   "votos": 1890
+  },
+  "AVANTE|2022-S1": {
+   "pct": 74.8,
+   "seguiu": 1072,
+   "votos": 1434
+  },
+  "AVANTE|2022-S2": {
+   "pct": 71.7,
+   "seguiu": 358,
+   "votos": 499
+  },
+  "AVANTE|2023-S1": {
+   "pct": 78.4,
+   "seguiu": 236,
+   "votos": 301
+  },
+  "AVANTE|2023-S2": {
+   "pct": 91.4,
+   "seguiu": 903,
+   "votos": 988
+  },
+  "AVANTE|2024-S1": {
+   "pct": 84.3,
+   "seguiu": 388,
+   "votos": 460
+  },
+  "AVANTE|2024-S2": {
+   "pct": 87.6,
+   "seguiu": 645,
+   "votos": 736
+  },
+  "AVANTE|2025-S1": {
+   "pct": 83.9,
+   "seguiu": 480,
+   "votos": 572
+  },
+  "AVANTE|2025-S2": {
+   "pct": 74.2,
+   "seguiu": 965,
+   "votos": 1300
+  },
+  "AVANTE|2026-S1": {
+   "pct": 80.4,
+   "seguiu": 393,
+   "votos": 489
+  },
+  "AVANTE|2026-S2": {
+   "pct": 63.8,
+   "seguiu": 30,
+   "votos": 47
+  },
+  "CIDADANIA|2019-S1": {
+   "pct": 84.7,
+   "seguiu": 238,
+   "votos": 281
+  },
+  "CIDADANIA|2019-S2": {
+   "pct": 85.9,
+   "seguiu": 1046,
+   "votos": 1218
+  },
+  "CIDADANIA|2020-S1": {
+   "pct": 74.3,
+   "seguiu": 723,
+   "votos": 973
+  },
+  "CIDADANIA|2020-S2": {
+   "pct": 75.0,
+   "seguiu": 1092,
+   "votos": 1456
+  },
+  "CIDADANIA|2021-S1": {
+   "pct": 80.7,
+   "seguiu": 1450,
+   "votos": 1796
+  },
+  "CIDADANIA|2021-S2": {
+   "pct": 71.9,
+   "seguiu": 1407,
+   "votos": 1957
+  },
+  "CIDADANIA|2022-S1": {
+   "pct": 75.4,
+   "seguiu": 1006,
+   "votos": 1334
+  },
+  "CIDADANIA|2022-S2": {
+   "pct": 79.7,
+   "seguiu": 467,
+   "votos": 586
+  },
+  "CIDADANIA|2023-S1": {
+   "pct": 55.4,
+   "seguiu": 87,
+   "votos": 157
+  },
+  "CIDADANIA|2023-S2": {
+   "pct": 71.8,
+   "seguiu": 370,
+   "votos": 515
+  },
+  "CIDADANIA|2024-S1": {
+   "pct": 65.8,
+   "seguiu": 156,
+   "votos": 237
+  },
+  "CIDADANIA|2024-S2": {
+   "pct": 66.3,
+   "seguiu": 307,
+   "votos": 463
+  },
+  "CIDADANIA|2025-S1": {
+   "pct": 58.4,
+   "seguiu": 153,
+   "votos": 262
+  },
+  "CIDADANIA|2025-S2": {
+   "pct": 52.1,
+   "seguiu": 285,
+   "votos": 547
+  },
+  "CIDADANIA|2026-S1": {
+   "pct": 65.2,
+   "seguiu": 120,
+   "votos": 184
+  },
+  "CIDADANIA|2026-S2": {
+   "pct": 58.3,
+   "seguiu": 7,
+   "votos": 12
+  },
+  "DC|2019-S1": {
+   "pct": 81.8,
+   "seguiu": 9,
+   "votos": 11
+  },
+  "DC|2026-S2": {
+   "pct": 71.4,
+   "seguiu": 5,
+   "votos": 7
+  },
+  "DEM|2019-S1": {
+   "pct": 93.0,
+   "seguiu": 1277,
+   "votos": 1373
+  },
+  "DEM|2019-S2": {
+   "pct": 93.4,
+   "seguiu": 3110,
+   "votos": 3331
+  },
+  "DEM|2020-S1": {
+   "pct": 85.7,
+   "seguiu": 2495,
+   "votos": 2913
+  },
+  "DEM|2020-S2": {
+   "pct": 90.9,
+   "seguiu": 4037,
+   "votos": 4441
+  },
+  "DEM|2021-S1": {
+   "pct": 89.7,
+   "seguiu": 5898,
+   "votos": 6573
+  },
+  "DEM|2021-S2": {
+   "pct": 88.8,
+   "seguiu": 5426,
+   "votos": 6111
+  },
+  "DEM|2022-S1": {
+   "pct": 84.8,
+   "seguiu": 675,
+   "votos": 796
+  },
+  "MDB|2019-S1": {
+   "pct": 91.3,
+   "seguiu": 1687,
+   "votos": 1847
+  },
+  "MDB|2019-S2": {
+   "pct": 91.5,
+   "seguiu": 3866,
+   "votos": 4226
+  },
+  "MDB|2020-S1": {
+   "pct": 90.8,
+   "seguiu": 3497,
+   "votos": 3850
+  },
+  "MDB|2020-S2": {
+   "pct": 90.1,
+   "seguiu": 4730,
+   "votos": 5247
+  },
+  "MDB|2021-S1": {
+   "pct": 83.5,
+   "seguiu": 6483,
+   "votos": 7762
+  },
+  "MDB|2021-S2": {
+   "pct": 82.7,
+   "seguiu": 6031,
+   "votos": 7296
+  },
+  "MDB|2022-S1": {
+   "pct": 86.5,
+   "seguiu": 5879,
+   "votos": 6793
+  },
+  "MDB|2022-S2": {
+   "pct": 88.5,
+   "seguiu": 2567,
+   "votos": 2899
+  },
+  "MDB|2023-S1": {
+   "pct": 73.5,
+   "seguiu": 1280,
+   "votos": 1742
+  },
+  "MDB|2023-S2": {
+   "pct": 84.1,
+   "seguiu": 5046,
+   "votos": 6003
+  },
+  "MDB|2024-S1": {
+   "pct": 70.0,
+   "seguiu": 1854,
+   "votos": 2648
+  },
+  "MDB|2024-S2": {
+   "pct": 81.6,
+   "seguiu": 3660,
+   "votos": 4483
+  },
+  "MDB|2025-S1": {
+   "pct": 72.0,
+   "seguiu": 2231,
+   "votos": 3097
+  },
+  "MDB|2025-S2": {
+   "pct": 63.7,
+   "seguiu": 4040,
+   "votos": 6341
+  },
+  "MDB|2026-S1": {
+   "pct": 74.5,
+   "seguiu": 1708,
+   "votos": 2292
+  },
+  "MDB|2026-S2": {
+   "pct": 65.7,
+   "seguiu": 218,
+   "votos": 332
+  },
+  "MISSÃO|2026-S1": {
+   "pct": 15.1,
+   "seguiu": 8,
+   "votos": 53
+  },
+  "MISSÃO|2026-S2": {
+   "pct": 16.7,
+   "seguiu": 2,
+   "votos": 12
+  },
+  "NOVO|2019-S1": {
+   "pct": 97.1,
+   "seguiu": 545,
+   "votos": 561
+  },
+  "NOVO|2019-S2": {
+   "pct": 89.9,
+   "seguiu": 1170,
+   "votos": 1302
+  },
+  "NOVO|2020-S1": {
+   "pct": 80.2,
+   "seguiu": 844,
+   "votos": 1053
+  },
+  "NOVO|2020-S2": {
+   "pct": 83.4,
+   "seguiu": 1366,
+   "votos": 1638
+  },
+  "NOVO|2021-S1": {
+   "pct": 70.3,
+   "seguiu": 1586,
+   "votos": 2255
+  },
+  "NOVO|2021-S2": {
+   "pct": 65.8,
+   "seguiu": 1573,
+   "votos": 2390
+  },
+  "NOVO|2022-S1": {
+   "pct": 67.1,
+   "seguiu": 1401,
+   "votos": 2087
+  },
+  "NOVO|2022-S2": {
+   "pct": 67.4,
+   "seguiu": 626,
+   "votos": 929
+  },
+  "NOVO|2023-S1": {
+   "pct": 22.0,
+   "seguiu": 36,
+   "votos": 164
+  },
+  "NOVO|2023-S2": {
+   "pct": 20.4,
+   "seguiu": 110,
+   "votos": 538
+  },
+  "NOVO|2024-S1": {
+   "pct": 25.4,
+   "seguiu": 60,
+   "votos": 236
+  },
+  "NOVO|2024-S2": {
+   "pct": 20.2,
+   "seguiu": 96,
+   "votos": 476
+  },
+  "NOVO|2025-S1": {
+   "pct": 9.5,
+   "seguiu": 41,
+   "votos": 431
+  },
+  "NOVO|2025-S2": {
+   "pct": 17.1,
+   "seguiu": 159,
+   "votos": 932
+  },
+  "NOVO|2026-S1": {
+   "pct": 13.4,
+   "seguiu": 49,
+   "votos": 366
+  },
+  "NOVO|2026-S2": {
+   "pct": 24.5,
+   "seguiu": 13,
+   "votos": 53
+  },
+  "PATRI|2019-S1": {
+   "pct": 90.1,
+   "seguiu": 218,
+   "votos": 242
+  },
+  "PATRIOTA|2019-S1": {
+   "pct": 92.9,
+   "seguiu": 39,
+   "votos": 42
+  },
+  "PATRIOTA|2019-S2": {
+   "pct": 94.3,
+   "seguiu": 681,
+   "votos": 722
+  },
+  "PATRIOTA|2020-S1": {
+   "pct": 95.1,
+   "seguiu": 605,
+   "votos": 636
+  },
+  "PATRIOTA|2020-S2": {
+   "pct": 96.1,
+   "seguiu": 862,
+   "votos": 897
+  },
+  "PATRIOTA|2021-S1": {
+   "pct": 97.3,
+   "seguiu": 1346,
+   "votos": 1383
+  },
+  "PATRIOTA|2021-S2": {
+   "pct": 93.5,
+   "seguiu": 1294,
+   "votos": 1384
+  },
+  "PATRIOTA|2022-S1": {
+   "pct": 91.3,
+   "seguiu": 877,
+   "votos": 961
+  },
+  "PATRIOTA|2022-S2": {
+   "pct": 93.0,
+   "seguiu": 333,
+   "votos": 358
+  },
+  "PATRIOTA|2023-S1": {
+   "pct": 61.2,
+   "seguiu": 101,
+   "votos": 165
+  },
+  "PATRIOTA|2023-S2": {
+   "pct": 65.8,
+   "seguiu": 406,
+   "votos": 617
+  },
+  "PCdoB|2019-S1": {
+   "pct": 19.6,
+   "seguiu": 83,
+   "votos": 424
+  },
+  "PCdoB|2019-S2": {
+   "pct": 35.5,
+   "seguiu": 389,
+   "votos": 1096
+  },
+  "PCdoB|2020-S1": {
+   "pct": 24.4,
+   "seguiu": 237,
+   "votos": 972
+  },
+  "PCdoB|2020-S2": {
+   "pct": 28.2,
+   "seguiu": 398,
+   "votos": 1409
+  },
+  "PCdoB|2021-S1": {
+   "pct": 24.6,
+   "seguiu": 447,
+   "votos": 1814
+  },
+  "PCdoB|2021-S2": {
+   "pct": 33.3,
+   "seguiu": 719,
+   "votos": 2160
+  },
+  "PCdoB|2022-S1": {
+   "pct": 25.9,
+   "seguiu": 473,
+   "votos": 1825
+  },
+  "PCdoB|2022-S2": {
+   "pct": 29.9,
+   "seguiu": 245,
+   "votos": 819
+  },
+  "PCdoB|2023-S1": {
+   "pct": 97.6,
+   "seguiu": 329,
+   "votos": 337
+  },
+  "PCdoB|2023-S2": {
+   "pct": 96.5,
+   "seguiu": 1040,
+   "votos": 1078
+  },
+  "PCdoB|2024-S1": {
+   "pct": 97.9,
+   "seguiu": 525,
+   "votos": 536
+  },
+  "PCdoB|2024-S2": {
+   "pct": 96.6,
+   "seguiu": 854,
+   "votos": 884
+  },
+  "PCdoB|2025-S1": {
+   "pct": 97.1,
+   "seguiu": 742,
+   "votos": 764
+  },
+  "PCdoB|2025-S2": {
+   "pct": 97.4,
+   "seguiu": 1620,
+   "votos": 1664
+  },
+  "PCdoB|2026-S1": {
+   "pct": 98.6,
+   "seguiu": 712,
+   "votos": 722
+  },
+  "PCdoB|2026-S2": {
+   "pct": 82.0,
+   "seguiu": 100,
+   "votos": 122
+  },
+  "PDT|2019-S1": {
+   "pct": 40.9,
+   "seguiu": 552,
+   "votos": 1351
+  },
+  "PDT|2019-S2": {
+   "pct": 48.0,
+   "seguiu": 1749,
+   "votos": 3646
+  },
+  "PDT|2020-S1": {
+   "pct": 42.9,
+   "seguiu": 1410,
+   "votos": 3290
+  },
+  "PDT|2020-S2": {
+   "pct": 46.7,
+   "seguiu": 2177,
+   "votos": 4666
+  },
+  "PDT|2021-S1": {
+   "pct": 39.4,
+   "seguiu": 2445,
+   "votos": 6207
+  },
+  "PDT|2021-S2": {
+   "pct": 46.2,
+   "seguiu": 3045,
+   "votos": 6592
+  },
+  "PDT|2022-S1": {
+   "pct": 41.0,
+   "seguiu": 1930,
+   "votos": 4707
+  },
+  "PDT|2022-S2": {
+   "pct": 46.4,
+   "seguiu": 881,
+   "votos": 1897
+  },
+  "PDT|2023-S1": {
+   "pct": 88.2,
+   "seguiu": 762,
+   "votos": 864
+  },
+  "PDT|2023-S2": {
+   "pct": 93.8,
+   "seguiu": 2573,
+   "votos": 2744
+  },
+  "PDT|2024-S1": {
+   "pct": 87.0,
+   "seguiu": 1147,
+   "votos": 1318
+  },
+  "PDT|2024-S2": {
+   "pct": 90.7,
+   "seguiu": 1928,
+   "votos": 2125
+  },
+  "PDT|2025-S1": {
+   "pct": 93.2,
+   "seguiu": 1394,
+   "votos": 1495
+  },
+  "PDT|2025-S2": {
+   "pct": 86.3,
+   "seguiu": 2494,
+   "votos": 2889
+  },
+  "PDT|2026-S1": {
+   "pct": 95.6,
+   "seguiu": 926,
+   "votos": 969
+  },
+  "PDT|2026-S2": {
+   "pct": 76.9,
+   "seguiu": 80,
+   "votos": 104
+  },
+  "PHS|2019-S1": {
+   "pct": 91.5,
+   "seguiu": 86,
+   "votos": 94
+  },
+  "PHS|2019-S2": {
+   "pct": 100.0,
+   "seguiu": 40,
+   "votos": 40
+  },
+  "PL|2019-S1": {
+   "pct": 85.8,
+   "seguiu": 741,
+   "votos": 864
+  },
+  "PL|2019-S2": {
+   "pct": 90.3,
+   "seguiu": 4564,
+   "votos": 5053
+  },
+  "PL|2020-S1": {
+   "pct": 92.7,
+   "seguiu": 4013,
+   "votos": 4331
+  },
+  "PL|2020-S2": {
+   "pct": 95.5,
+   "seguiu": 5931,
+   "votos": 6212
+  },
+  "PL|2021-S1": {
+   "pct": 94.9,
+   "seguiu": 9068,
+   "votos": 9556
+  },
+  "PL|2021-S2": {
+   "pct": 90.5,
+   "seguiu": 8868,
+   "votos": 9796
+  },
+  "PL|2022-S1": {
+   "pct": 93.4,
+   "seguiu": 13036,
+   "votos": 13960
+  },
+  "PL|2022-S2": {
+   "pct": 93.7,
+   "seguiu": 6634,
+   "votos": 7080
+  },
+  "PL|2023-S1": {
+   "pct": 27.1,
+   "seguiu": 1202,
+   "votos": 4441
+  },
+  "PL|2023-S2": {
+   "pct": 34.7,
+   "seguiu": 4892,
+   "votos": 14105
+  },
+  "PL|2024-S1": {
+   "pct": 31.9,
+   "seguiu": 2068,
+   "votos": 6479
+  },
+  "PL|2024-S2": {
+   "pct": 32.0,
+   "seguiu": 3351,
+   "votos": 10484
+  },
+  "PL|2025-S1": {
+   "pct": 25.4,
+   "seguiu": 1846,
+   "votos": 7257
+  },
+  "PL|2025-S2": {
+   "pct": 28.6,
+   "seguiu": 4215,
+   "votos": 14735
+  },
+  "PL|2026-S1": {
+   "pct": 35.7,
+   "seguiu": 2160,
+   "votos": 6051
+  },
+  "PL|2026-S2": {
+   "pct": 29.7,
+   "seguiu": 287,
+   "votos": 966
+  },
+  "PMN|2019-S1": {
+   "pct": 83.9,
+   "seguiu": 135,
+   "votos": 161
+  },
+  "PMN|2019-S2": {
+   "pct": 66.7,
+   "seguiu": 86,
+   "votos": 129
+  },
+  "PODE|2019-S1": {
+   "pct": 75.7,
+   "seguiu": 431,
+   "votos": 569
+  },
+  "PODE|2019-S2": {
+   "pct": 84.3,
+   "seguiu": 1067,
+   "votos": 1266
+  },
+  "PODE|2020-S1": {
+   "pct": 78.3,
+   "seguiu": 940,
+   "votos": 1200
+  },
+  "PODE|2020-S2": {
+   "pct": 80.1,
+   "seguiu": 1331,
+   "votos": 1661
+  },
+  "PODE|2021-S1": {
+   "pct": 81.8,
+   "seguiu": 2037,
+   "votos": 2490
+  },
+  "PODE|2021-S2": {
+   "pct": 76.0,
+   "seguiu": 1835,
+   "votos": 2415
+  },
+  "PODE|2022-S1": {
+   "pct": 80.2,
+   "seguiu": 1488,
+   "votos": 1855
+  },
+  "PODE|2022-S2": {
+   "pct": 85.4,
+   "seguiu": 687,
+   "votos": 804
+  },
+  "PODE|2023-S1": {
+   "pct": 72.9,
+   "seguiu": 408,
+   "votos": 560
+  },
+  "PODE|2023-S2": {
+   "pct": 82.8,
+   "seguiu": 1835,
+   "votos": 2216
+  },
+  "PODE|2024-S1": {
+   "pct": 73.6,
+   "seguiu": 751,
+   "votos": 1020
+  },
+  "PODE|2024-S2": {
+   "pct": 82.3,
+   "seguiu": 1357,
+   "votos": 1649
+  },
+  "PODE|2025-S1": {
+   "pct": 82.1,
+   "seguiu": 1003,
+   "votos": 1222
+  },
+  "PODE|2025-S2": {
+   "pct": 74.3,
+   "seguiu": 2087,
+   "votos": 2807
+  },
+  "PODE|2026-S1": {
+   "pct": 78.4,
+   "seguiu": 999,
+   "votos": 1274
+  },
+  "PODE|2026-S2": {
+   "pct": 62.9,
+   "seguiu": 154,
+   "votos": 245
+  },
+  "PP|2019-S1": {
+   "pct": 90.2,
+   "seguiu": 1728,
+   "votos": 1915
+  },
+  "PP|2019-S2": {
+   "pct": 90.9,
+   "seguiu": 4282,
+   "votos": 4709
+  },
+  "PP|2020-S1": {
+   "pct": 92.3,
+   "seguiu": 3895,
+   "votos": 4218
+  },
+  "PP|2020-S2": {
+   "pct": 95.6,
+   "seguiu": 5815,
+   "votos": 6081
+  },
+  "PP|2021-S1": {
+   "pct": 95.2,
+   "seguiu": 8673,
+   "votos": 9106
+  },
+  "PP|2021-S2": {
+   "pct": 92.3,
+   "seguiu": 8430,
+   "votos": 9136
+  },
+  "PP|2022-S1": {
+   "pct": 93.0,
+   "seguiu": 8800,
+   "votos": 9459
+  },
+  "PP|2022-S2": {
+   "pct": 93.8,
+   "seguiu": 4618,
+   "votos": 4924
+  },
+  "PP|2023-S1": {
+   "pct": 61.8,
+   "seguiu": 1286,
+   "votos": 2080
+  },
+  "PP|2023-S2": {
+   "pct": 81.1,
+   "seguiu": 5753,
+   "votos": 7096
+  },
+  "PP|2024-S1": {
+   "pct": 67.6,
+   "seguiu": 2158,
+   "votos": 3192
+  },
+  "PP|2024-S2": {
+   "pct": 81.1,
+   "seguiu": 4531,
+   "votos": 5590
+  },
+  "PP|2025-S1": {
+   "pct": 72.1,
+   "seguiu": 2638,
+   "votos": 3657
+  },
+  "PP|2025-S2": {
+   "pct": 62.3,
+   "seguiu": 4997,
+   "votos": 8017
+  },
+  "PP|2026-S1": {
+   "pct": 73.0,
+   "seguiu": 2111,
+   "votos": 2892
+  },
+  "PP|2026-S2": {
+   "pct": 60.0,
+   "seguiu": 254,
+   "votos": 423
+  },
+  "PPL|2019-S1": {
+   "pct": 57.1,
+   "seguiu": 12,
+   "votos": 21
+  },
+  "PPS|2019-S1": {
+   "pct": 98.9,
+   "seguiu": 186,
+   "votos": 188
+  },
+  "PR|2019-S1": {
+   "pct": 96.1,
+   "seguiu": 1048,
+   "votos": 1091
+  },
+  "PRB|2019-S1": {
+   "pct": 86.3,
+   "seguiu": 1463,
+   "votos": 1695
+  },
+  "PRB|2019-S2": {
+   "pct": 95.1,
+   "seguiu": 1569,
+   "votos": 1650
+  },
+  "PRD|2024-S1": {
+   "pct": 50.9,
+   "seguiu": 140,
+   "votos": 275
+  },
+  "PRD|2024-S2": {
+   "pct": 70.1,
+   "seguiu": 314,
+   "votos": 448
+  },
+  "PRD|2025-S1": {
+   "pct": 55.2,
+   "seguiu": 180,
+   "votos": 326
+  },
+  "PRD|2025-S2": {
+   "pct": 48.8,
+   "seguiu": 381,
+   "votos": 781
+  },
+  "PRD|2026-S1": {
+   "pct": 66.4,
+   "seguiu": 168,
+   "votos": 253
+  },
+  "PRD|2026-S2": {
+   "pct": 63.0,
+   "seguiu": 17,
+   "votos": 27
+  },
+  "PROS|2019-S1": {
+   "pct": 73.5,
+   "seguiu": 391,
+   "votos": 532
+  },
+  "PROS|2019-S2": {
+   "pct": 79.2,
+   "seguiu": 1034,
+   "votos": 1306
+  },
+  "PROS|2020-S1": {
+   "pct": 79.9,
+   "seguiu": 909,
+   "votos": 1138
+  },
+  "PROS|2020-S2": {
+   "pct": 81.3,
+   "seguiu": 1403,
+   "votos": 1726
+  },
+  "PROS|2021-S1": {
+   "pct": 87.8,
+   "seguiu": 2389,
+   "votos": 2722
+  },
+  "PROS|2021-S2": {
+   "pct": 88.2,
+   "seguiu": 2227,
+   "votos": 2526
+  },
+  "PROS|2022-S1": {
+   "pct": 87.9,
+   "seguiu": 1202,
+   "votos": 1368
+  },
+  "PROS|2022-S2": {
+   "pct": 84.6,
+   "seguiu": 352,
+   "votos": 416
+  },
+  "PROS|2023-S1": {
+   "pct": 100.0,
+   "seguiu": 8,
+   "votos": 8
+  },
+  "PRP|2019-S1": {
+   "pct": 88.2,
+   "seguiu": 45,
+   "votos": 51
+  },
+  "PSB|2019-S1": {
+   "pct": 38.4,
+   "seguiu": 724,
+   "votos": 1887
+  },
+  "PSB|2019-S2": {
+   "pct": 52.1,
+   "seguiu": 2248,
+   "votos": 4315
+  },
+  "PSB|2020-S1": {
+   "pct": 36.3,
+   "seguiu": 1317,
+   "votos": 3628
+  },
+  "PSB|2020-S2": {
+   "pct": 49.7,
+   "seguiu": 2486,
+   "votos": 5003
+  },
+  "PSB|2021-S1": {
+   "pct": 41.1,
+   "seguiu": 2992,
+   "votos": 7287
+  },
+  "PSB|2021-S2": {
+   "pct": 46.5,
+   "seguiu": 3622,
+   "votos": 7786
+  },
+  "PSB|2022-S1": {
+   "pct": 33.9,
+   "seguiu": 1896,
+   "votos": 5598
+  },
+  "PSB|2022-S2": {
+   "pct": 36.7,
+   "seguiu": 823,
+   "votos": 2240
+  },
+  "PSB|2023-S1": {
+   "pct": 90.2,
+   "seguiu": 620,
+   "votos": 687
+  },
+  "PSB|2023-S2": {
+   "pct": 94.7,
+   "seguiu": 2203,
+   "votos": 2326
+  },
+  "PSB|2024-S1": {
+   "pct": 96.7,
+   "seguiu": 943,
+   "votos": 975
+  },
+  "PSB|2024-S2": {
+   "pct": 92.5,
+   "seguiu": 1528,
+   "votos": 1651
+  },
+  "PSB|2025-S1": {
+   "pct": 94.2,
+   "seguiu": 1177,
+   "votos": 1249
+  },
+  "PSB|2025-S2": {
+   "pct": 88.2,
+   "seguiu": 2352,
+   "votos": 2666
+  },
+  "PSB|2026-S1": {
+   "pct": 93.9,
+   "seguiu": 1034,
+   "votos": 1101
+  },
+  "PSB|2026-S2": {
+   "pct": 76.4,
+   "seguiu": 126,
+   "votos": 165
+  },
+  "PSC|2019-S1": {
+   "pct": 90.8,
+   "seguiu": 417,
+   "votos": 459
+  },
+  "PSC|2019-S2": {
+   "pct": 88.5,
+   "seguiu": 965,
+   "votos": 1091
+  },
+  "PSC|2020-S1": {
+   "pct": 89.1,
+   "seguiu": 887,
+   "votos": 995
+  },
+  "PSC|2020-S2": {
+   "pct": 93.8,
+   "seguiu": 1335,
+   "votos": 1424
+  },
+  "PSC|2021-S1": {
+   "pct": 94.7,
+   "seguiu": 2357,
+   "votos": 2489
+  },
+  "PSC|2021-S2": {
+   "pct": 93.1,
+   "seguiu": 2419,
+   "votos": 2597
+  },
+  "PSC|2022-S1": {
+   "pct": 92.4,
+   "seguiu": 1933,
+   "votos": 2093
+  },
+  "PSC|2022-S2": {
+   "pct": 92.3,
+   "seguiu": 623,
+   "votos": 675
+  },
+  "PSC|2023-S1": {
+   "pct": 79.7,
+   "seguiu": 106,
+   "votos": 133
+  },
+  "PSC|2023-S2": {
+   "pct": 87.1,
+   "seguiu": 74,
+   "votos": 85
+  },
+  "PSD|2019-S1": {
+   "pct": 91.8,
+   "seguiu": 1827,
+   "votos": 1990
+  },
+  "PSD|2019-S2": {
+   "pct": 89.7,
+   "seguiu": 4297,
+   "votos": 4791
+  },
+  "PSD|2020-S1": {
+   "pct": 90.4,
+   "seguiu": 3554,
+   "votos": 3931
+  },
+  "PSD|2020-S2": {
+   "pct": 93.0,
+   "seguiu": 5090,
+   "votos": 5475
+  },
+  "PSD|2021-S1": {
+   "pct": 93.4,
+   "seguiu": 7670,
+   "votos": 8208
+  },
+  "PSD|2021-S2": {
+   "pct": 86.4,
+   "seguiu": 7153,
+   "votos": 8283
+  },
+  "PSD|2022-S1": {
+   "pct": 86.6,
+   "seguiu": 7318,
+   "votos": 8454
+  },
+  "PSD|2022-S2": {
+   "pct": 85.1,
+   "seguiu": 3436,
+   "votos": 4039
+  },
+  "PSD|2023-S1": {
+   "pct": 75.9,
+   "seguiu": 1363,
+   "votos": 1795
+  },
+  "PSD|2023-S2": {
+   "pct": 89.1,
+   "seguiu": 5395,
+   "votos": 6058
+  },
+  "PSD|2024-S1": {
+   "pct": 74.5,
+   "seguiu": 2113,
+   "votos": 2837
+  },
+  "PSD|2024-S2": {
+   "pct": 79.3,
+   "seguiu": 3695,
+   "votos": 4658
+  },
+  "PSD|2025-S1": {
+   "pct": 79.0,
+   "seguiu": 2647,
+   "votos": 3350
+  },
+  "PSD|2025-S2": {
+   "pct": 67.6,
+   "seguiu": 4914,
+   "votos": 7269
+  },
+  "PSD|2026-S1": {
+   "pct": 79.4,
+   "seguiu": 2303,
+   "votos": 2900
+  },
+  "PSD|2026-S2": {
+   "pct": 64.7,
+   "seguiu": 289,
+   "votos": 447
+  },
+  "PSDB|2019-S1": {
+   "pct": 91.8,
+   "seguiu": 1472,
+   "votos": 1603
+  },
+  "PSDB|2019-S2": {
+   "pct": 91.8,
+   "seguiu": 3765,
+   "votos": 4100
+  },
+  "PSDB|2020-S1": {
+   "pct": 83.9,
+   "seguiu": 2992,
+   "votos": 3568
+  },
+  "PSDB|2020-S2": {
+   "pct": 81.9,
+   "seguiu": 4346,
+   "votos": 5309
+  },
+  "PSDB|2021-S1": {
+   "pct": 85.3,
+   "seguiu": 6756,
+   "votos": 7917
+  },
+  "PSDB|2021-S2": {
+   "pct": 77.1,
+   "seguiu": 5882,
+   "votos": 7631
+  },
+  "PSDB|2022-S1": {
+   "pct": 79.0,
+   "seguiu": 4037,
+   "votos": 5113
+  },
+  "PSDB|2022-S2": {
+   "pct": 79.4,
+   "seguiu": 1480,
+   "votos": 1864
+  },
+  "PSDB|2023-S1": {
+   "pct": 57.6,
+   "seguiu": 365,
+   "votos": 634
+  },
+  "PSDB|2023-S2": {
+   "pct": 75.4,
+   "seguiu": 1517,
+   "votos": 2012
+  },
+  "PSDB|2024-S1": {
+   "pct": 66.8,
+   "seguiu": 587,
+   "votos": 879
+  },
+  "PSDB|2024-S2": {
+   "pct": 78.1,
+   "seguiu": 1007,
+   "votos": 1289
+  },
+  "PSDB|2025-S1": {
+   "pct": 77.2,
+   "seguiu": 798,
+   "votos": 1034
+  },
+  "PSDB|2025-S2": {
+   "pct": 62.2,
+   "seguiu": 1416,
+   "votos": 2276
+  },
+  "PSDB|2026-S1": {
+   "pct": 76.2,
+   "seguiu": 805,
+   "votos": 1057
+  },
+  "PSDB|2026-S2": {
+   "pct": 63.9,
+   "seguiu": 122,
+   "votos": 191
+  },
+  "PSL|2019-S1": {
+   "pct": 98.5,
+   "seguiu": 3305,
+   "votos": 3357
+  },
+  "PSL|2019-S2": {
+   "pct": 97.2,
+   "seguiu": 7179,
+   "votos": 7383
+  },
+  "PSL|2020-S1": {
+   "pct": 93.4,
+   "seguiu": 5789,
+   "votos": 6199
+  },
+  "PSL|2020-S2": {
+   "pct": 95.2,
+   "seguiu": 9126,
+   "votos": 9584
+  },
+  "PSL|2021-S1": {
+   "pct": 94.6,
+   "seguiu": 12842,
+   "votos": 13574
+  },
+  "PSL|2021-S2": {
+   "pct": 92.0,
+   "seguiu": 12811,
+   "votos": 13924
+  },
+  "PSL|2022-S1": {
+   "pct": 90.9,
+   "seguiu": 1886,
+   "votos": 2075
+  },
+  "PSOL|2019-S1": {
+   "pct": 18.4,
+   "seguiu": 105,
+   "votos": 570
+  },
+  "PSOL|2019-S2": {
+   "pct": 14.6,
+   "seguiu": 192,
+   "votos": 1311
+  },
+  "PSOL|2020-S1": {
+   "pct": 15.0,
+   "seguiu": 163,
+   "votos": 1084
+  },
+  "PSOL|2020-S2": {
+   "pct": 18.9,
+   "seguiu": 273,
+   "votos": 1448
+  },
+  "PSOL|2021-S1": {
+   "pct": 14.4,
+   "seguiu": 333,
+   "votos": 2309
+  },
+  "PSOL|2021-S2": {
+   "pct": 23.9,
+   "seguiu": 504,
+   "votos": 2109
+  },
+  "PSOL|2022-S1": {
+   "pct": 19.6,
+   "seguiu": 358,
+   "votos": 1831
+  },
+  "PSOL|2022-S2": {
+   "pct": 21.5,
+   "seguiu": 164,
+   "votos": 764
+  },
+  "PSOL|2023-S1": {
+   "pct": 79.3,
+   "seguiu": 467,
+   "votos": 589
+  },
+  "PSOL|2023-S2": {
+   "pct": 82.2,
+   "seguiu": 1611,
+   "votos": 1961
+  },
+  "PSOL|2024-S1": {
+   "pct": 90.2,
+   "seguiu": 806,
+   "votos": 894
+  },
+  "PSOL|2024-S2": {
+   "pct": 67.6,
+   "seguiu": 965,
+   "votos": 1427
+  },
+  "PSOL|2025-S1": {
+   "pct": 93.1,
+   "seguiu": 1076,
+   "votos": 1156
+  },
+  "PSOL|2025-S2": {
+   "pct": 87.0,
+   "seguiu": 2015,
+   "votos": 2317
+  },
+  "PSOL|2026-S1": {
+   "pct": 92.5,
+   "seguiu": 741,
+   "votos": 801
+  },
+  "PSOL|2026-S2": {
+   "pct": 76.2,
+   "seguiu": 109,
+   "votos": 143
+  },
+  "PT|2019-S1": {
+   "pct": 19.8,
+   "seguiu": 495,
+   "votos": 2497
+  },
+  "PT|2019-S2": {
+   "pct": 21.8,
+   "seguiu": 1454,
+   "votos": 6681
+  },
+  "PT|2020-S1": {
+   "pct": 17.5,
+   "seguiu": 1043,
+   "votos": 5955
+  },
+  "PT|2020-S2": {
+   "pct": 25.8,
+   "seguiu": 2215,
+   "votos": 8586
+  },
+  "PT|2021-S1": {
+   "pct": 18.4,
+   "seguiu": 2442,
+   "votos": 13289
+  },
+  "PT|2021-S2": {
+   "pct": 32.7,
+   "seguiu": 4599,
+   "votos": 14074
+  },
+  "PT|2022-S1": {
+   "pct": 24.1,
+   "seguiu": 2983,
+   "votos": 12392
+  },
+  "PT|2022-S2": {
+   "pct": 33.8,
+   "seguiu": 1872,
+   "votos": 5535
+  },
+  "PT|2023-S1": {
+   "pct": 99.0,
+   "seguiu": 3156,
+   "votos": 3188
+  },
+  "PT|2023-S2": {
+   "pct": 96.6,
+   "seguiu": 10109,
+   "votos": 10460
+  },
+  "PT|2024-S1": {
+   "pct": 99.4,
+   "seguiu": 4679,
+   "votos": 4705
+  },
+  "PT|2024-S2": {
+   "pct": 97.0,
+   "seguiu": 7888,
+   "votos": 8128
+  },
+  "PT|2025-S1": {
+   "pct": 99.1,
+   "seguiu": 5832,
+   "votos": 5884
+  },
+  "PT|2025-S2": {
+   "pct": 97.3,
+   "seguiu": 11607,
+   "votos": 11931
+  },
+  "PT|2026-S1": {
+   "pct": 99.4,
+   "seguiu": 4617,
+   "votos": 4647
+  },
+  "PT|2026-S2": {
+   "pct": 89.5,
+   "seguiu": 596,
+   "votos": 666
+  },
+  "PTB|2019-S1": {
+   "pct": 87.3,
+   "seguiu": 568,
+   "votos": 651
+  },
+  "PTB|2019-S2": {
+   "pct": 92.0,
+   "seguiu": 1501,
+   "votos": 1632
+  },
+  "PTB|2020-S1": {
+   "pct": 89.1,
+   "seguiu": 1121,
+   "votos": 1258
+  },
+  "PTB|2020-S2": {
+   "pct": 93.0,
+   "seguiu": 1654,
+   "votos": 1778
+  },
+  "PTB|2021-S1": {
+   "pct": 93.8,
+   "seguiu": 2269,
+   "votos": 2420
+  },
+  "PTB|2021-S2": {
+   "pct": 89.0,
+   "seguiu": 2030,
+   "votos": 2281
+  },
+  "PTB|2022-S1": {
+   "pct": 87.6,
+   "seguiu": 945,
+   "votos": 1079
+  },
+  "PTB|2022-S2": {
+   "pct": 95.7,
+   "seguiu": 289,
+   "votos": 302
+  },
+  "PTC|2019-S1": {
+   "pct": 78.9,
+   "seguiu": 15,
+   "votos": 19
+  },
+  "PV|2019-S1": {
+   "pct": 63.5,
+   "seguiu": 141,
+   "votos": 222
+  },
+  "PV|2019-S2": {
+   "pct": 68.2,
+   "seguiu": 390,
+   "votos": 572
+  },
+  "PV|2020-S1": {
+   "pct": 50.5,
+   "seguiu": 242,
+   "votos": 479
+  },
+  "PV|2020-S2": {
+   "pct": 51.1,
+   "seguiu": 355,
+   "votos": 695
+  },
+  "PV|2021-S1": {
+   "pct": 48.4,
+   "seguiu": 498,
+   "votos": 1028
+  },
+  "PV|2021-S2": {
+   "pct": 49.7,
+   "seguiu": 493,
+   "votos": 992
+  },
+  "PV|2022-S1": {
+   "pct": 31.3,
+   "seguiu": 232,
+   "votos": 741
+  },
+  "PV|2022-S2": {
+   "pct": 34.5,
+   "seguiu": 107,
+   "votos": 310
+  },
+  "PV|2023-S1": {
+   "pct": 95.5,
+   "seguiu": 252,
+   "votos": 264
+  },
+  "PV|2023-S2": {
+   "pct": 96.6,
+   "seguiu": 831,
+   "votos": 860
+  },
+  "PV|2024-S1": {
+   "pct": 98.3,
+   "seguiu": 349,
+   "votos": 355
+  },
+  "PV|2024-S2": {
+   "pct": 95.6,
+   "seguiu": 537,
+   "votos": 562
+  },
+  "PV|2025-S1": {
+   "pct": 97.9,
+   "seguiu": 374,
+   "votos": 382
+  },
+  "PV|2025-S2": {
+   "pct": 96.7,
+   "seguiu": 676,
+   "votos": 699
+  },
+  "PV|2026-S1": {
+   "pct": 99.1,
+   "seguiu": 314,
+   "votos": 317
+  },
+  "PV|2026-S2": {
+   "pct": 89.1,
+   "seguiu": 57,
+   "votos": 64
+  },
+  "REDE|2019-S1": {
+   "pct": 56.2,
+   "seguiu": 27,
+   "votos": 48
+  },
+  "REDE|2019-S2": {
+   "pct": 26.4,
+   "seguiu": 34,
+   "votos": 129
+  },
+  "REDE|2020-S1": {
+   "pct": 30.8,
+   "seguiu": 41,
+   "votos": 133
+  },
+  "REDE|2020-S2": {
+   "pct": 36.4,
+   "seguiu": 64,
+   "votos": 176
+  },
+  "REDE|2021-S1": {
+   "pct": 25.9,
+   "seguiu": 72,
+   "votos": 278
+  },
+  "REDE|2021-S2": {
+   "pct": 35.9,
+   "seguiu": 102,
+   "votos": 284
+  },
+  "REDE|2022-S1": {
+   "pct": 23.4,
+   "seguiu": 84,
+   "votos": 359
+  },
+  "REDE|2022-S2": {
+   "pct": 26.7,
+   "seguiu": 55,
+   "votos": 206
+  },
+  "REDE|2023-S1": {
+   "pct": 82.6,
+   "seguiu": 38,
+   "votos": 46
+  },
+  "REDE|2023-S2": {
+   "pct": 89.9,
+   "seguiu": 143,
+   "votos": 159
+  },
+  "REDE|2024-S1": {
+   "pct": 93.7,
+   "seguiu": 74,
+   "votos": 79
+  },
+  "REDE|2024-S2": {
+   "pct": 88.0,
+   "seguiu": 88,
+   "votos": 100
+  },
+  "REDE|2025-S1": {
+   "pct": 95.8,
+   "seguiu": 69,
+   "votos": 72
+  },
+  "REDE|2025-S2": {
+   "pct": 87.7,
+   "seguiu": 265,
+   "votos": 302
+  },
+  "REDE|2026-S1": {
+   "pct": 90.5,
+   "seguiu": 258,
+   "votos": 285
+  },
+  "REDE|2026-S2": {
+   "pct": 90.6,
+   "seguiu": 29,
+   "votos": 32
+  },
+  "REPUBLICANOS|2019-S2": {
+   "pct": 89.5,
+   "seguiu": 2206,
+   "votos": 2466
+  },
+  "REPUBLICANOS|2020-S1": {
+   "pct": 93.8,
+   "seguiu": 3400,
+   "votos": 3623
+  },
+  "REPUBLICANOS|2020-S2": {
+   "pct": 93.6,
+   "seguiu": 4897,
+   "votos": 5233
+  },
+  "REPUBLICANOS|2021-S1": {
+   "pct": 96.7,
+   "seguiu": 7680,
+   "votos": 7941
+  },
+  "REPUBLICANOS|2021-S2": {
+   "pct": 91.9,
+   "seguiu": 7176,
+   "votos": 7808
+  },
+  "REPUBLICANOS|2022-S1": {
+   "pct": 91.5,
+   "seguiu": 7605,
+   "votos": 8314
+  },
+  "REPUBLICANOS|2022-S2": {
+   "pct": 89.3,
+   "seguiu": 3573,
+   "votos": 4000
+  },
+  "REPUBLICANOS|2023-S1": {
+   "pct": 60.6,
+   "seguiu": 1153,
+   "votos": 1903
+  },
+  "REPUBLICANOS|2023-S2": {
+   "pct": 82.7,
+   "seguiu": 5137,
+   "votos": 6208
+  },
+  "REPUBLICANOS|2024-S1": {
+   "pct": 71.7,
+   "seguiu": 2055,
+   "votos": 2868
+  },
+  "REPUBLICANOS|2024-S2": {
+   "pct": 86.5,
+   "seguiu": 4436,
+   "votos": 5127
+  },
+  "REPUBLICANOS|2025-S1": {
+   "pct": 81.2,
+   "seguiu": 2923,
+   "votos": 3599
+  },
+  "REPUBLICANOS|2025-S2": {
+   "pct": 68.7,
+   "seguiu": 5203,
+   "votos": 7571
+  },
+  "REPUBLICANOS|2026-S1": {
+   "pct": 78.7,
+   "seguiu": 2248,
+   "votos": 2856
+  },
+  "REPUBLICANOS|2026-S2": {
+   "pct": 58.7,
+   "seguiu": 230,
+   "votos": 392
+  },
+  "S.PART.|2019-S1": {
+   "pct": 87.7,
+   "seguiu": 50,
+   "votos": 57
+  },
+  "S.PART.|2019-S2": {
+   "pct": 100.0,
+   "seguiu": 54,
+   "votos": 54
+  },
+  "S.PART.|2021-S1": {
+   "pct": 41.7,
+   "seguiu": 10,
+   "votos": 24
+  },
+  "S.PART.|2021-S2": {
+   "pct": 31.4,
+   "seguiu": 33,
+   "votos": 105
+  },
+  "S.PART.|2022-S1": {
+   "pct": 55.9,
+   "seguiu": 19,
+   "votos": 34
+  },
+  "S.PART.|2022-S2": {
+   "pct": 0.0,
+   "seguiu": 0,
+   "votos": 2
+  },
+  "S.PART.|2023-S1": {
+   "pct": 76.2,
+   "seguiu": 16,
+   "votos": 21
+  },
+  "S.PART.|2023-S2": {
+   "pct": 93.5,
+   "seguiu": 29,
+   "votos": 31
+  },
+  "SOLIDARIEDADE|2019-S1": {
+   "pct": 87.7,
+   "seguiu": 662,
+   "votos": 755
+  },
+  "SOLIDARIEDADE|2019-S2": {
+   "pct": 90.2,
+   "seguiu": 1560,
+   "votos": 1730
+  },
+  "SOLIDARIEDADE|2020-S1": {
+   "pct": 83.3,
+   "seguiu": 1343,
+   "votos": 1613
+  },
+  "SOLIDARIEDADE|2020-S2": {
+   "pct": 90.8,
+   "seguiu": 1983,
+   "votos": 2185
+  },
+  "SOLIDARIEDADE|2021-S1": {
+   "pct": 88.3,
+   "seguiu": 2778,
+   "votos": 3145
+  },
+  "SOLIDARIEDADE|2021-S2": {
+   "pct": 88.2,
+   "seguiu": 2597,
+   "votos": 2944
+  },
+  "SOLIDARIEDADE|2022-S1": {
+   "pct": 86.4,
+   "seguiu": 1443,
+   "votos": 1671
+  },
+  "SOLIDARIEDADE|2022-S2": {
+   "pct": 79.1,
+   "seguiu": 439,
+   "votos": 555
+  },
+  "SOLIDARIEDADE|2023-S1": {
+   "pct": 83.1,
+   "seguiu": 157,
+   "votos": 189
+  },
+  "SOLIDARIEDADE|2023-S2": {
+   "pct": 89.3,
+   "seguiu": 591,
+   "votos": 662
+  },
+  "SOLIDARIEDADE|2024-S1": {
+   "pct": 81.7,
+   "seguiu": 276,
+   "votos": 338
+  },
+  "SOLIDARIEDADE|2024-S2": {
+   "pct": 78.7,
+   "seguiu": 365,
+   "votos": 464
+  },
+  "SOLIDARIEDADE|2025-S1": {
+   "pct": 88.8,
+   "seguiu": 302,
+   "votos": 340
+  },
+  "SOLIDARIEDADE|2025-S2": {
+   "pct": 79.6,
+   "seguiu": 603,
+   "votos": 758
+  },
+  "SOLIDARIEDADE|2026-S1": {
+   "pct": 85.8,
+   "seguiu": 283,
+   "votos": 330
+  },
+  "SOLIDARIEDADE|2026-S2": {
+   "pct": 43.6,
+   "seguiu": 17,
+   "votos": 39
+  },
+  "UNIÃO|2022-S1": {
+   "pct": 89.6,
+   "seguiu": 8419,
+   "votos": 9398
+  },
+  "UNIÃO|2022-S2": {
+   "pct": 89.2,
+   "seguiu": 4028,
+   "votos": 4515
+  },
+  "UNIÃO|2023-S1": {
+   "pct": 57.1,
+   "seguiu": 1482,
+   "votos": 2594
+  },
+  "UNIÃO|2023-S2": {
+   "pct": 75.5,
+   "seguiu": 6292,
+   "votos": 8335
+  },
+  "UNIÃO|2024-S1": {
+   "pct": 63.2,
+   "seguiu": 2355,
+   "votos": 3724
+  },
+  "UNIÃO|2024-S2": {
+   "pct": 69.3,
+   "seguiu": 4519,
+   "votos": 6522
+  },
+  "UNIÃO|2025-S1": {
+   "pct": 65.4,
+   "seguiu": 3087,
+   "votos": 4720
+  },
+  "UNIÃO|2025-S2": {
+   "pct": 56.9,
+   "seguiu": 5528,
+   "votos": 9718
+  },
+  "UNIÃO|2026-S1": {
+   "pct": 69.3,
+   "seguiu": 2312,
+   "votos": 3338
+  },
+  "UNIÃO|2026-S2": {
+   "pct": 61.1,
+   "seguiu": 302,
+   "votos": 494
+  }
+ },
+ "bancadas_com_gov": [
+  [
+   "2019:GOV.",
+   254
+  ],
+  [
+   "2019:Governo",
+   23
+  ],
+  [
+   "2020:GOV.",
+   15
+  ],
+  [
+   "2020:Governo",
+   345
+  ],
+  [
+   "2021:GOV.",
+   639
+  ],
+  [
+   "2021:Governo",
+   194
+  ],
+  [
+   "2022:GOV.",
+   507
+  ],
+  [
+   "2022:Governo",
+   46
+  ],
+  [
+   "2023:Governo",
+   401
+  ],
+  [
+   "2024:Governo",
+   390
+  ],
+  [
+   "2025:Governo",
+   486
+  ],
+  [
+   "2026:Governo",
+   140
+  ]
+ ],
+ "valores_de_voto": [
+  [
+   "Sim",
+   542077
+  ],
+  [
+   "Não",
+   429150
+  ],
+  [
+   "Obstrução",
+   16667
+  ],
+  [
+   "Artigo 17",
+   2227
+  ],
+  [
+   "Abstenção",
+   1951
+  ],
+  [
+   "",
+   466
+  ]
+ ]
+}

@@ -22,7 +22,7 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **`partidos-servidor`:** 9 votações. O arcabouço fiscal de 2023 saiu (regra fiscal sem efeito direto sobre o servidor); o congelamento de 2020 entra uma vez (veto de agosto de 2020); a PEC 32 entra pela votação da comissão especial, declarada no texto. Siglas de fusão herdam o voto da antecessora com bancada; se as antecessoras votaram em lados diferentes, a votação sai da conta da sigla. A matriz partido x votação, com fonte por votação, está em `data/aux/partidos-servidor_matriz.json`.
 - **`periodos-presidenciais`:** cestas por mínimo com o mínimo vigente em dezembro do último ano completo de cada período dividido pela cesta do Dieese em São Paulo no mesmo mês.
 - **`reajuste-ipca`:** coluna "Índice mais amplo", com o critério declarado. 1995 fica com 22,07% (o que foi pago em janeiro de 1995); a diferença de 3,17% reconhecida em 2001 fica fora do saldo de FHC e está dita no texto.
-- **`governismo-2023`:** MDB incluído (81,5%, Poder360 de junho de 2024, mesmo método). Falta uma série de 2019 a 2022 com o mesmo método: exigiria calcular a partir dos arquivos anuais de votações e orientações da Câmara.
+- **Governismo (`governismo-governos`, `governismo-camara`, `governismo-2023`):** calculado pelo próprio portal a partir dos arquivos anuais da Câmara (`scripts/governismo.py`, workflow no GitHub Actions), de 2019 a 2026, com a mesma régua para Bolsonaro e Lula 3. Conferido com o Poder360 (2023) e o Radar do Congresso (2019 a 2022). Atualizar em janeiro de 2027 com 2026 completo.
 
 ## Atualizações com data marcada
 

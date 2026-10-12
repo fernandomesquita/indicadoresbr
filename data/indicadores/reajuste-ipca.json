@@ -1,7 +1,7 @@
 {
   "id": "reajuste-ipca",
   "categoria": "politicas-publicas",
-  "ordem": 8,
+  "ordem": 10,
   "visivel": true,
   "titulo": "Índice de reajuste do servidor e inflação",
   "subtitulo": "Índice mais amplo concedido aos servidores civis do Executivo federal e IPCA acumulado em cada governo, de 1995 a 2026",

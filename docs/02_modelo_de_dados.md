@@ -42,6 +42,7 @@ Um arquivo por indicador. O nome do arquivo é o `id`.
 | `faixasGoverno` | sim/não | não | Faixas de governo atrás de séries anuais (linha e colunas). |
 | `prefixo`, `sufixo` | texto | não | Unidade nos valores (`"R$ "`, `"%"`, `" mi"`). |
 | `casas` | número | não | Casas decimais nos rótulos do gráfico. |
+| `ymin`, `ymax` | número | não | Limites mínimos do eixo vertical no gráfico de linha (por exemplo 0 e 100 para porcentagens), para o eixo não exagerar variações pequenas. |
 | `fonte` | `{nome, url}` | sim | Fonte principal. Vai no rodapé da ficha e na imagem PNG. |
 | `fontes` | lista de `{nome, url, o_que_sustenta}` | sim (mínimo 3) | Todas as fontes usadas no texto, cada uma dizendo o que sustenta. |
 | `como_ler` | texto | sim | Um parágrafo autocontido: o que cada barra ou linha representa, unidade, período e cuidados. |
