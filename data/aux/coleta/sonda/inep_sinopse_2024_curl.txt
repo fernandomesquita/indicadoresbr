@@ -1,0 +1,3 @@
+https://download.inep.gov.br/dados_abertos/sinopses_estatisticas/sinopses_estatisticas_censo_escolar_2024.zip
+
+curl: (35) Recv failure: Connection reset by peer

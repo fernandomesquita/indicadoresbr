@@ -1,0 +1,18 @@
+ok siope_ind_AC_2017 1235
+ok siope_ind_AC_2018 1235
+ok siope_ind_AC_2019 1235
+ok siope_ind_AC_2020 1235
+ok siope_ind_AC_2021 1217
+ok siope_ind_AC_2022 1412
+ok siope_ind_AC_2023 1218
+ok siope_ind_AC_2024 1217
+ok siope_ind_AC_2025 1233
+inep_sinopse_2024_curl 35 curl: (35) Recv failure: Connection reset by peer
+
+inep_microdados_2024_curl 60 curl: (60) SSL certificate problem: unable to get local issuer certificate
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could
+ok siop_grafos 2714
+ok siop_props_2014 4779
+fim
