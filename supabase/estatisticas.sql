@@ -51,7 +51,7 @@ create policy "eventos: admin le" on public.eventos for select to authenticated 
 -- Resumo para a aba Estatísticas do /admin. Datas no fuso de Brasília.
 create or replace function public.estatisticas(dias int default 30) returns jsonb
 language plpgsql stable security definer set search_path = public as $$
-declare ini timestamptz; r jsonb;
+declare ini timestamptz; resumo jsonb;
 begin
   if not public.is_admin() then raise exception 'acesso restrito' using errcode = '42501'; end if;
   dias := greatest(1, least(coalesce(dias, 30), 365));
@@ -76,16 +76,16 @@ begin
     'indicadores', (select coalesce(jsonb_agg(jsonb_build_object('id', indicador_id, 'visitas', v, 'png', p, 'csv', c) order by v desc, p desc), '[]') from (
         select indicador_id, count(*) filter (where tipo = 'pagina') v, count(*) filter (where tipo = 'png') p, count(*) filter (where tipo = 'csv') c
         from e where indicador_id is not null group by indicador_id order by 2 desc, 3 desc limit 50) x),
-    'buscas', (select coalesce(jsonb_agg(jsonb_build_object('termo', termo, 'vezes', n, 'resultados', r) order by n desc), '[]') from (
-        select termo, count(*) n, round(avg(resultados))::int r from e where tipo = 'busca' group by termo order by n desc limit 40) x),
+    'buscas', (select coalesce(jsonb_agg(jsonb_build_object('termo', termo, 'vezes', n, 'resultados', media) order by n desc), '[]') from (
+        select termo, count(*) n, round(avg(resultados))::int media from e where tipo = 'busca' group by termo order by n desc limit 40) x),
     'sem_resultado', (select coalesce(jsonb_agg(jsonb_build_object('termo', termo, 'vezes', n) order by n desc), '[]') from (
         select termo, count(*) n from e where tipo = 'busca' and resultados = 0 group by termo order by n desc limit 40) x),
     'origens', (select coalesce(jsonb_agg(jsonb_build_object('origem', o, 'visitas', n) order by n desc), '[]') from (
         select coalesce(nullif(origem, ''), 'direto ou sem informação') o, count(*) n from e where tipo = 'pagina' group by 1 order by n desc limit 20) x),
     'telas', (select coalesce(jsonb_agg(jsonb_build_object('tela', t, 'visitas', n) order by n desc), '[]') from (
         select coalesce(tela, 'sem informação') t, count(*) n from e where tipo = 'pagina' group by 1) x)
-  ) into r;
-  return r;
+  ) into resumo;
+  return resumo;
 end $$;
 revoke all on function public.estatisticas(int) from public;
 grant execute on function public.estatisticas(int) to authenticated;
