@@ -1,5 +1,6 @@
 // Indicadores BR · motor de gráficos e tabelas
 // Um único desenhista em Canvas serve à tela (animado) e à imagem PNG (estático, alta resolução).
+import { MAPA_BR } from "./mapa-br.js";
 
 export const F = {
   disp: "'Barlow Condensed','Arial Narrow',Arial,sans-serif",
@@ -116,7 +117,7 @@ export function drawChart(ctx, ind, b, th, s, t, hits, hover) {
     setFont(ctx, 500, 13 * s, F.body); ctx.fillStyle = th.muted; ctx.textAlign = "center";
     ctx.fillText("Escolha a coluna do eixo e ao menos uma série com números.", b.x + b.w / 2, b.y + b.h / 2); return;
   }
-  const fn = { colunas: drawCols, barras: drawBars, linha: drawLine, dispersao: drawScatter }[ind.tipo] || drawCols;
+  const fn = { colunas: drawCols, barras: drawBars, linha: drawLine, dispersao: drawScatter, mapa: drawMap }[ind.tipo] || drawCols;
   fn(ctx, ind, b, th, s, t, hits || [], hover, xi, ys);
 }
 function yAxis(ctx, ind, sc, plot, th, s, Y) {
@@ -433,10 +434,62 @@ export const ICON = {
   arrow: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10m0 0-4-4m4 4-4 4"/></svg>',
 };
 
+/* ------------------------------------------------------------ mapa do Brasil por região */
+const hexRGB = c => {
+  const t = String(c).trim(), m = /^#?([0-9a-f]{6})$/i.exec(t);
+  if (m) { const n = parseInt(m[1], 16); return [n >> 16, (n >> 8) & 255, n & 255]; }
+  const r = /^rgba?\(\s*(\d+)[\s,]+(\d+)[\s,]+(\d+)/i.exec(t);
+  return r ? [+r[1], +r[2], +r[3]] : null;
+};
+function mix(a, b, t) { const A = hexRGB(a), B = hexRGB(b); if (!A || !B) return b; return `rgb(${A.map((v, k) => Math.round(v + (B[k] - v) * t)).join(",")})`; }
+const PATHS = {};
+const pathOf = nome => PATHS[nome] || (PATHS[nome] = MAPA_BR.regioes[nome] ? new Path2D(MAPA_BR.regioes[nome].d) : null);
+function drawMap(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
+  const yi = ys[0], rows = ind.linhas.filter(r => isNum(r[yi]) && MAPA_BR.regioes[String(r[xi])]);
+  if (!rows.length) return;
+  const vals = rows.map(r => r[yi]), lo = Math.min(...vals), hi = Math.max(...vals), rg = hi - lo || 1;
+  const legH = 34 * s;
+  const sc = Math.min(b.w / MAPA_BR.w, (b.h - legH) / MAPA_BR.h);
+  const ox = b.x + (b.w - MAPA_BR.w * sc) / 2, oy = b.y;
+  const claro = mix(th.bg, th.accent, .14), escuro = th.accent;
+  const e = ease(t);
+  ctx.save(); ctx.translate(ox, oy); ctx.scale(sc, sc);
+  rows.forEach((r, i) => {
+    const p = pathOf(String(r[xi])); if (!p) return;
+    ctx.globalAlpha = (hover != null && hover !== i ? .55 : 1) * (.25 + .75 * e);
+    ctx.fillStyle = mix(claro, escuro, (r[yi] - lo) / rg * .85 + .15);
+    ctx.fill(p, "evenodd");
+    ctx.globalAlpha = 1; ctx.strokeStyle = th.bg; ctx.lineWidth = 3 * s / sc; ctx.lineJoin = "round"; ctx.stroke(p);
+  });
+  ctx.restore();
+  // rótulos: nome da região e valor, com contorno da cor do fundo para ler sobre qualquer tom
+  const big = Math.max(16 * s, Math.min(34 * s, MAPA_BR.w * sc * .055));
+  rows.forEach((r, i) => {
+    const reg = MAPA_BR.regioes[String(r[xi])], cx = ox + reg.rot[0] * sc, cy = oy + reg.rot[1] * sc;
+    ctx.globalAlpha = clamp01((e - .35) / .5); ctx.textAlign = "center"; ctx.lineJoin = "round";
+    setFont(ctx, 600, big * .48, F.body); ctx.lineWidth = 4 * s; ctx.strokeStyle = th.bg; ctx.fillStyle = th.ink; ctx.textBaseline = "alphabetic";
+    ctx.strokeText(String(r[xi]), cx, cy - big * .2); ctx.fillText(String(r[xi]), cx, cy - big * .2);
+    setFont(ctx, 700, big, F.disp); ctx.lineWidth = 5 * s;
+    ctx.strokeText(fmtV(r[yi], ind), cx, cy + big * .78); ctx.fillText(fmtV(r[yi], ind), cx, cy + big * .78);
+    ctx.globalAlpha = 1;
+    const extra = ind.colunas.map((c, k) => [c, r[k]]).filter((q, k) => k !== xi && k !== yi && q[1] != null && q[1] !== "").map(q => [q[0], fmtCell(q[1])]);
+    hits.push({ kind: "circle", cx, cy, r: Math.max(28 * s, big * 1.6), i, title: String(r[xi]), lines: [[ind.colunas[yi], fmtV(r[yi], ind)], ...extra] });
+  });
+  // legenda: escala do menor ao maior valor
+  const lw = Math.min(220 * s, b.w * .45), lx = b.x + (b.w - lw) / 2, ly = b.y + b.h - legH + 6 * s;
+  const gr = ctx.createLinearGradient(lx, 0, lx + lw, 0); gr.addColorStop(0, mix(claro, escuro, .15)); gr.addColorStop(1, escuro);
+  ctx.fillStyle = gr; ctx.fillRect(lx, ly, lw, 8 * s);
+  setFont(ctx, 500, 11.5 * s, F.mono); ctx.fillStyle = th.muted; ctx.textBaseline = "top";
+  ctx.textAlign = "left"; ctx.fillText(fmtV(lo, ind), lx, ly + 12 * s);
+  ctx.textAlign = "right"; ctx.fillText(fmtV(hi, ind), lx + lw, ly + 12 * s);
+  ctx.textBaseline = "alphabetic";
+}
+
 /* ------------------------------------------------------------ gráfico na tela */
 const CHARTS = new Set();
 export function heightFor(ind, w, big) {
   if (ind.tipo === "barras") { const n = ind.linhas.length; return Math.max(160, n * (w < 500 ? 30 : big ? 36 : 32) + 8); }
+  if (ind.tipo === "mapa") return Math.round(Math.max(300, Math.min(big ? 600 : 420, w * MAPA_BR.h / MAPA_BR.w + 34)));
   return Math.round(Math.max(250, Math.min(big ? 460 : 390, w * (big ? .5 : .56))));
 }
 export function makeChart(ind, wrap, { big = false, still = false } = {}) {

@@ -76,6 +76,12 @@
       "nome": "Educação",
       "descricao": "Aprendizagem, matrículas, professores e investimento.",
       "ordem": 6
+    },
+    {
+      "id": "mundo",
+      "nome": "Mundo",
+      "descricao": "O Brasil comparado aos outros países: economia, desenvolvimento, violência e contas públicas.",
+      "ordem": 7
     }
   ]
 }

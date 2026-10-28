@@ -18,6 +18,7 @@
   "prefixo": "",
   "sufixo": "%",
   "casas": 1,
+  "ultimo": "até outubro de 2026",
   "fonte": {
     "nome": "Câmara dos Deputados, dados abertos; cálculo do Indicadores BR",
     "url": "https://dadosabertos.camara.leg.br/swagger/api.html#staticfile"
@@ -105,38 +106,13 @@
   "ymin": 0,
   "ymax": 100,
   "linhas": [
-    [
-      2019,
-      76.3
-    ],
-    [
-      2020,
-      75.0
-    ],
-    [
-      2021,
-      74.1
-    ],
-    [
-      2022,
-      73.5
-    ],
-    [
-      2023,
-      73.3
-    ],
-    [
-      2024,
-      71.8
-    ],
-    [
-      2025,
-      67.1
-    ],
-    [
-      2026,
-      71.6
-    ]
-  ],
-  "ultimo": "até outubro de 2026"
+    [2019, 76.3],
+    [2020, 75.0],
+    [2021, 74.1],
+    [2022, 73.5],
+    [2023, 73.3],
+    [2024, 71.8],
+    [2025, 67.1],
+    [2026, 71.6]
+  ]
 }

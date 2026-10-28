@@ -16,6 +16,7 @@
   "prefixo": "",
   "sufixo": "",
   "casas": 1,
+  "ultimo": "Lula 3, média de 2023 a 2025",
   "fonte": {
     "nome": "Banco Central, SGS 13762, 4513 e 5760",
     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13762/dados?formato=json"
@@ -118,48 +119,11 @@
     }
   ],
   "linhas": [
-    [
-      "Lula 1",
-      "dez/2002 a dez/2006",
-      null,
-      -13.4,
-      7.2
-    ],
-    [
-      "Lula 2",
-      "dez/2006 a dez/2010",
-      -3.7,
-      -8.5,
-      5.4
-    ],
-    [
-      "Dilma",
-      "dez/2010 a dez/2015",
-      13.7,
-      -2.3,
-      5.7
-    ],
-    [
-      "Temer",
-      "dez/2015 a dez/2018",
-      9.8,
-      17.1,
-      6.0
-    ],
-    [
-      "Bolsonaro",
-      "dez/2018 a dez/2022",
-      -3.6,
-      3.4,
-      5.0
-    ],
-    [
-      "Lula 3 (parcial)",
-      "dez/2022 a ago/2026",
-      11.2,
-      13.1,
-      7.5
-    ]
-  ],
-  "ultimo": "Lula 3, média de 2023 a 2025"
+    ["Lula 1", "dez/2002 a dez/2006", null, -13.4, 7.2],
+    ["Lula 2", "dez/2006 a dez/2010", -3.7, -8.5, 5.4],
+    ["Dilma", "dez/2010 a dez/2015", 13.7, -2.3, 5.7],
+    ["Temer", "dez/2015 a dez/2018", 9.8, 17.1, 6.0],
+    ["Bolsonaro", "dez/2018 a dez/2022", -3.6, 3.4, 5.0],
+    ["Lula 3 (parcial)", "dez/2022 a ago/2026", 11.2, 13.1, 7.5]
+  ]
 }

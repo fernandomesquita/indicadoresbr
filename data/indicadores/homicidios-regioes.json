@@ -1,0 +1,120 @@
+{
+  "id": "homicidios-regioes",
+  "categoria": "seguranca-publica",
+  "ordem": 6,
+  "visivel": true,
+  "titulo": "Homicídios por região",
+  "subtitulo": "Homicídios registrados por 100 mil habitantes em cada grande região, em 2024",
+  "tipo": "mapa",
+  "x": "Região",
+  "series": [
+    "Homicídios por 100 mil (2024)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "ultimo": "2024",
+  "fonte": {
+    "nome": "Atlas da Violência 2026 (Ipea e FBSP), com dados do SIM/Ministério da Saúde",
+    "url": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf"
+  },
+  "fontes": [
+    {
+      "nome": "Ipea e Fórum Brasileiro de Segurança Pública, Atlas da Violência 2026, Tabelas 2.1 e 2.2",
+      "url": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf",
+      "o_que_sustenta": "Taxa e número de homicídios registrados por estado em 2023 e 2024, com dados do Sistema de Informações sobre Mortalidade (SIM)."
+    },
+    {
+      "nome": "Ipea, notícia de lançamento do Atlas da Violência 2026",
+      "url": "https://www.ipea.gov.br/portal/categorias/45-todas-as-noticias/noticias/16394-atlas-da-violencia-brasil-registrou-42-590-homicidios-em-2024-menor-resultado-da-serie-historica-mas-subnotificacao-preocupa",
+      "o_que_sustenta": "Total de 42.590 homicídios em 2024, o menor da série, e alerta sobre subnotificação."
+    },
+    {
+      "nome": "Agência Gov, Atlas da Violência: taxa de homicídios no Brasil é a menor em 11 anos",
+      "url": "https://agenciagov.ebc.com.br/noticias/202605/atlas-da-violencia-brasil-registrou-42-590-homicidios-em-2024-menor-resultado-da-serie-historica-mas-subnotificacao-preocupa",
+      "o_que_sustenta": "Conferência independente do total de 2024."
+    }
+  ],
+  "como_ler": "O mapa pinta cada grande região pela taxa de homicídios por 100 mil habitantes em 2024: quanto mais escura a cor, maior a taxa. O número dentro de cada região é a taxa. As taxas regionais são cálculo do Indicadores BR: a soma dos homicídios dos estados de cada região dividida pela soma das populações, obtidas das taxas e dos números publicados pelo Atlas da Violência; a conta reproduz a taxa do Brasil (20,1). Os homicídios contam as mortes por agressão e por intervenção legal registradas no Sistema de Informações sobre Mortalidade (SIM), do Ministério da Saúde, pelo local de residência da vítima; mortes violentas de causa indeterminada ficam de fora.",
+  "contexto": [
+    "O Atlas da Violência, produzido pelo Instituto de Pesquisa Econômica Aplicada (Ipea) e pelo Fórum Brasileiro de Segurança Pública (FBSP), usa os registros de óbito do Ministério da Saúde, que seguem o mesmo critério em todo o país.",
+    "Em 2024, o Brasil registrou 42.590 homicídios, o menor número da série, com taxa de 20,1 por 100 mil. O Nordeste teve a maior taxa (33,7), seguido de Norte (28,6) e Centro-Oeste (19,3); Sul (14,6) e Sudeste (11,7) ficaram com as menores. As cinco regiões tiveram queda em relação a 2023.",
+    "O próprio Atlas alerta que parte das mortes violentas é registrada sem causa definida, e estima que os homicídios ocultos tenham crescido em 2024; a queda dos números oficiais deve ser lida com essa ressalva. A taxa por região serve para dimensionar a violência letal, e as políticas de segurança, a cargo sobretudo dos estados, são comparadas no indicador por estado."
+  ],
+  "glossario": [
+    {
+      "termo": "Homicídio registrado",
+      "definicao": "Óbito por agressão, intervenção legal ou operação de guerra registrado no SIM (códigos X85 a Y09 e Y35 a Y36 da Classificação Internacional de Doenças)."
+    },
+    {
+      "termo": "Homicídio oculto",
+      "definicao": "Estimativa do Atlas para homicídios registrados como morte violenta de causa indeterminada."
+    },
+    {
+      "termo": "Sistema de Informações sobre Mortalidade (SIM)",
+      "definicao": "Base nacional de declarações de óbito do Ministério da Saúde."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Atlas da Violência, com cerca de um ano e meio de defasagem)",
+    "onde_buscar": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf",
+    "proxima": "Atlas da Violência 2027, com os dados de 2025",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Região",
+    "Homicídios por 100 mil (2024)",
+    "Homicídios por 100 mil (2023)",
+    "Homicídios registrados (2024)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Soma das UFs: 42.590 homicídios, taxa 20,09",
+      "valor_na_fonte": "Atlas: Brasil 42.590, taxa 20,1",
+      "fonte": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Norte: 28,6",
+      "valor_na_fonte": "5235 homicídios / população implícita de 18,32 milhões",
+      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Nordeste: 33,7",
+      "valor_na_fonte": "19167 homicídios / população implícita de 56,92 milhões",
+      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Sudeste: 11,7",
+      "valor_na_fonte": "10356 homicídios / população implícita de 88,76 milhões",
+      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Sul: 14,6",
+      "valor_na_fonte": "4549 homicídios / população implícita de 31,06 milhões",
+      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Centro-Oeste: 19,3",
+      "valor_na_fonte": "3283 homicídios / população implícita de 16,97 milhões",
+      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Norte", 28.6, 33.1, 5235],
+    ["Nordeste", 33.7, 35.2, 19167],
+    ["Sudeste", 11.7, 12.7, 10356],
+    ["Sul", 14.6, 15.7, 4549],
+    ["Centro-Oeste", 19.3, 21.6, 3283]
+  ]
+}

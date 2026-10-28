@@ -21,7 +21,7 @@ const resumoPer = t => { const c = String(t).split(/[;(.]/)[0].trim(); return c.
 
 function maisRecente(ind) {
   const xi = ind.colunas.indexOf(ind.x);
-  if (xi < 0 || ind.tipo === "tabela" || ind.tipo === "barras" || ind.tipo === "dispersao") return null;
+  if (xi < 0 || ["tabela", "barras", "dispersao", "mapa"].includes(ind.tipo)) return null;
   const v = ind.linhas.map(r => r[xi]).filter(x => x != null && x !== "");
   return v.length ? String(v[v.length - 1]) : null;
 }

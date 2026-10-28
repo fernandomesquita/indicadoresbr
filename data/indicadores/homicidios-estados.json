@@ -1,0 +1,116 @@
+{
+  "id": "homicidios-estados",
+  "categoria": "seguranca-publica",
+  "ordem": 7,
+  "visivel": true,
+  "titulo": "Homicídios por estado",
+  "subtitulo": "Homicídios registrados por 100 mil habitantes em cada estado, em 2024",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "Homicídios por 100 mil (2024)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Brasil"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "fonte": {
+    "nome": "Atlas da Violência 2026 (Ipea e FBSP), com dados do SIM/Ministério da Saúde",
+    "url": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf"
+  },
+  "fontes": [
+    {
+      "nome": "Ipea e Fórum Brasileiro de Segurança Pública, Atlas da Violência 2026, Tabelas 2.1 e 2.2",
+      "url": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf",
+      "o_que_sustenta": "Taxa e número de homicídios registrados por estado em 2023 e 2024, com dados do Sistema de Informações sobre Mortalidade (SIM)."
+    },
+    {
+      "nome": "Ipea, notícia de lançamento do Atlas da Violência 2026",
+      "url": "https://www.ipea.gov.br/portal/categorias/45-todas-as-noticias/noticias/16394-atlas-da-violencia-brasil-registrou-42-590-homicidios-em-2024-menor-resultado-da-serie-historica-mas-subnotificacao-preocupa",
+      "o_que_sustenta": "Total de 42.590 homicídios em 2024, o menor da série, e alerta sobre subnotificação."
+    },
+    {
+      "nome": "Agência Gov, Atlas da Violência: taxa de homicídios no Brasil é a menor em 11 anos",
+      "url": "https://agenciagov.ebc.com.br/noticias/202605/atlas-da-violencia-brasil-registrou-42-590-homicidios-em-2024-menor-resultado-da-serie-historica-mas-subnotificacao-preocupa",
+      "o_que_sustenta": "Conferência independente do total de 2024."
+    }
+  ],
+  "como_ler": "Cada barra é a taxa de homicídios por 100 mil habitantes de um estado em 2024, do maior para o menor; a barra do Brasil, em destaque, serve de referência. A tabela traz também as taxas de 2023 e de 2014. Os homicídios contam as mortes por agressão e por intervenção legal registradas no Sistema de Informações sobre Mortalidade (SIM), do Ministério da Saúde, pelo estado de residência da vítima, como publicado no Atlas da Violência 2026. O número difere do indicador de mortes violentas intencionais do site, que usa os registros policiais do Fórum Brasileiro de Segurança Pública; as duas bases contam fatos parecidos por caminhos diferentes.",
+  "contexto": [
+    "O Atlas da Violência, do Instituto de Pesquisa Econômica Aplicada (Ipea) e do Fórum Brasileiro de Segurança Pública (FBSP), calcula a taxa de homicídios de cada estado a partir das declarações de óbito do Ministério da Saúde, com o mesmo critério para todos.",
+    "Em 2024, Amapá (45,7), Bahia (40,9) e Pernambuco (37,3) tiveram as maiores taxas; São Paulo (6,6), Santa Catarina (8,1) e Distrito Federal (10,3), as menores. Ceará e Maranhão foram os únicos estados com alta em relação a 2023, e São Paulo ficou estável. De 2014 a 2024, a taxa do Brasil caiu de 30,2 para 20,1.",
+    "A segurança pública é responsabilidade principal dos estados, que comandam as polícias civil e militar, e por isso a comparação entre eles ajuda a avaliar políticas. O Atlas ressalta que a qualidade do registro varia: estados com muitas mortes violentas sem causa definida podem ter taxa oficial abaixo da real."
+  ],
+  "glossario": [
+    {
+      "termo": "Homicídio registrado",
+      "definicao": "Óbito por agressão, intervenção legal ou operação de guerra registrado no SIM."
+    },
+    {
+      "termo": "Sistema de Informações sobre Mortalidade (SIM)",
+      "definicao": "Base nacional de declarações de óbito do Ministério da Saúde."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Atlas da Violência, com cerca de um ano e meio de defasagem)",
+    "onde_buscar": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf",
+    "proxima": "Atlas da Violência 2027, com os dados de 2025",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Estado",
+    "Homicídios por 100 mil (2024)",
+    "Homicídios por 100 mil (2023)",
+    "Homicídios por 100 mil (2014)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Amapá 45,7; Bahia 40,9; São Paulo 6,6",
+      "valor_na_fonte": "Tabela 2.1 do Atlas, coluna 2024",
+      "fonte": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Brasil 20,1 (2024) e 30,2 (2014)",
+      "valor_na_fonte": "Tabela 2.1, linha Brasil",
+      "fonte": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Amapá", 45.7, 65.3, 35.1],
+    ["Bahia", 40.9, 44.7, 42.1],
+    ["Pernambuco", 37.3, 39.1, 36.9],
+    ["Alagoas", 35.9, 37.2, 65.9],
+    ["Ceará", 34.3, 32.6, 52.9],
+    ["Amazonas", 32.2, 38.1, 34.0],
+    ["Maranhão", 31.1, 28.9, 36.4],
+    ["Rondônia", 30.3, 32.0, 35.2],
+    ["Mato Grosso", 29.1, 29.6, 42.1],
+    ["Roraima", 27.8, 36.0, 34.3],
+    ["Pará", 27.4, 29.7, 43.1],
+    ["Espírito Santo", 26.0, 28.5, 42.5],
+    ["Paraíba", 25.7, 26.3, 39.9],
+    ["Rio Grande do Norte", 23.5, 27.8, 48.6],
+    ["Sergipe", 23.0, 30.6, 50.7],
+    ["Piauí", 20.6, 21.5, 22.1],
+    ["Rio de Janeiro", 20.4, 24.9, 33.9],
+    ["Acre", 20.2, 25.4, 29.0],
+    ["Brasil", 20.1, 21.7, 30.2],
+    ["Tocantins", 19.8, 27.0, 26.4],
+    ["Paraná", 18.6, 18.9, 27.1],
+    ["Goiás", 18.4, 21.8, 44.2],
+    ["Mato Grosso do Sul", 18.3, 20.8, 27.4],
+    ["Rio Grande do Sul", 15.2, 17.7, 24.7],
+    ["Minas Gerais", 12.8, 13.2, 23.2],
+    ["Distrito Federal", 10.3, 11.7, 30.5],
+    ["Santa Catarina", 8.1, 8.3, 13.4],
+    ["São Paulo", 6.6, 6.6, 14.1]
+  ]
+}

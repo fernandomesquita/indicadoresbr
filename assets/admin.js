@@ -3,7 +3,7 @@
 import { h, isNum, renderTable, makeChart, composePNG, setGovernos } from "./charts.js";
 import * as store from "./store.js";
 
-const TYPES = [["colunas", "Colunas"], ["barras", "Barras horizontais"], ["linha", "Linha"], ["dispersao", "Dispersão"], ["tabela", "Tabela"]];
+const TYPES = [["colunas", "Colunas"], ["barras", "Barras horizontais"], ["linha", "Linha"], ["dispersao", "Dispersão"], ["tabela", "Tabela"], ["mapa", "Mapa do Brasil (regiões)"]];
 const STATUS = [["novo", "Novo"], ["em_analise", "Em análise"], ["resolvido", "Resolvido"], ["descartado", "Descartado"]];
 const TABS = [["reports", "Reports de erro"], ["sugestoes", "Sugestões"], ["contatos", "Contatos"], ["dados", "Indicadores"], ["config", "Categorias e site"]];
 let A = { tab: "reports", filtro: "novo", sel: null, data: null, novos: {}, msg: null, dirty: new Set() };

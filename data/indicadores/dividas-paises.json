@@ -1,0 +1,133 @@
+{
+  "id": "dividas-paises",
+  "categoria": "mundo",
+  "ordem": 4,
+  "visivel": true,
+  "titulo": "As 30 maiores dívidas públicas do mundo",
+  "subtitulo": "Dívida bruta do governo geral em % do PIB, em 2025, pelo critério do Fundo Monetário Internacional",
+  "tipo": "barras",
+  "x": "País",
+  "series": [
+    "Dívida bruta (% do PIB)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Brasil"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "Fundo Monetário Internacional (FMI), Panorama Econômico Mundial de outubro de 2026 (GGXWDG_NGDP)",
+    "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024,2025"
+  },
+  "fontes": [
+    {
+      "nome": "FMI, Panorama Econômico Mundial de outubro de 2026, dívida bruta do governo geral em % do PIB (GGXWDG_NGDP)",
+      "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024,2025",
+      "o_que_sustenta": "Dívida de 2025 de cada país, base do ranking."
+    },
+    {
+      "nome": "FMI, Panorama Econômico Mundial de outubro de 2026, PIB em dólares (NGDPD)",
+      "url": "https://www.imf.org/external/datamapper/api/v1/NGDPD?periods=2024,2025",
+      "o_que_sustenta": "PIB em dólares de 2025, usado para calcular a dívida em dólares da tabela."
+    },
+    {
+      "nome": "FMI, definição dos indicadores do Panorama Econômico Mundial",
+      "url": "https://www.imf.org/external/datamapper/api/v1/indicators",
+      "o_que_sustenta": "Definição de dívida bruta: todas as obrigações que exigem pagamento de juros ou principal."
+    },
+    {
+      "nome": "Nelson Barbosa, Dois conceitos de dívida bruta e um conceito de dívida líquida, Blog do Ibre/FGV (19/05/2020)",
+      "url": "https://blogdoibre.fgv.br/posts/dois-conceitos-de-divida-bruta-e-um-conceito-de-divida-liquida",
+      "o_que_sustenta": "Diferença entre o critério do FMI e o do Banco Central para a dívida bruta brasileira."
+    },
+    {
+      "nome": "Banco Central, SGS 13762, dívida bruta do governo geral (% PIB)",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13762/dados?formato=json",
+      "o_que_sustenta": "Dívida bruta do Brasil pelo critério do Banco Central em dezembro de 2025 (78,6% do PIB)."
+    }
+  ],
+  "como_ler": "Cada barra é a dívida bruta do governo geral de um país em 2025, em percentual do Produto Interno Bruto (PIB). O Brasil, em destaque, ficou em 29º lugar, com 93,3%. A tabela traz também a dívida em bilhões de dólares, calculada multiplicando o percentual pelo PIB em dólares do Fundo Monetário Internacional (FMI). Os valores de 2025 podem incluir estimativas do FMI para países que ainda não fecharam as contas do ano. Pelo critério do FMI, a dívida brasileira é maior do que a divulgada pelo Banco Central (78,6% do PIB em dezembro de 2025), porque o FMI conta como dívida todos os títulos do Tesouro na carteira do Banco Central.",
+  "contexto": [
+    "A dívida bruta do governo geral soma tudo o que governo central, governos regionais e previdência pública devem, sem descontar o que têm a receber. O FMI calcula o número para quase todos os países com o mesmo critério e o divulga duas vezes por ano no Panorama Econômico Mundial, o que permite comparar países.",
+    "Em 2025, o Japão teve a maior dívida em relação ao PIB (204,8%), seguido de Sudão (204,4%) e Singapura (165,7%). Entre as maiores economias, Itália, Estados Unidos, França, Canadá, Reino Unido, Espanha e China ficaram acima de 98%. O Brasil teve 93,3% do PIB pelo critério do FMI, ou cerca de US$ 2,13 trilhões.",
+    "A relação com o PIB mostra o tamanho da dívida diante da economia que a sustenta. O custo e o risco de cada caso dependem também dos juros pagos, da moeda em que a dívida foi emitida e de quem são os credores; o indicador de juros da dívida mostra esse custo para o Brasil."
+  ],
+  "glossario": [
+    {
+      "termo": "Dívida bruta do governo geral",
+      "definicao": "Total das dívidas dos governos e da previdência pública, sem descontar ativos."
+    },
+    {
+      "termo": "Critério do FMI",
+      "definicao": "No caso brasileiro, inclui todos os títulos do Tesouro na carteira do Banco Central; o critério do Banco Central inclui só os usados em operações com o mercado."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Duas vezes por ano (Panorama Econômico Mundial do FMI, em abril e outubro)",
+    "onde_buscar": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024,2025",
+    "proxima": "Abril de 2027",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "País",
+    "Dívida bruta (% do PIB)",
+    "Dívida (US$ bilhões)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil: 93,3% (29º)",
+      "valor_na_fonte": "GGXWDG_NGDP, BRA, 2025 = 93,3",
+      "fonte": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024,2025",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Japão 204,8%",
+      "valor_na_fonte": "GGXWDG_NGDP, JPN, 2025 = 204,8",
+      "fonte": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP?periods=2024,2025",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Brasil pelo Banco Central: 78,6% (dez/2025)",
+      "valor_na_fonte": "SGS 13762, 12/2025 = 78,64",
+      "fonte": "Banco Central",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Japão", 204.8, 9120],
+    ["Sudão", 204.4, 75],
+    ["Singapura", 165.7, 1001],
+    ["Líbia", 153.8, 69],
+    ["Grécia", 146.6, 411],
+    ["Barein", 144.3, 71],
+    ["Líbano", 139.4, 48],
+    ["Itália", 137.1, 3496],
+    ["Maldivas", 129.4, 10],
+    ["Senegal", 127.7, 47],
+    ["Estados Unidos", 124.4, 38391],
+    ["França", 115.5, 3907],
+    ["Cabo Verde", 115.4, 4],
+    ["Canadá", 113.6, 2637],
+    ["Bélgica", 107.9, 782],
+    ["São Vicente e Granadinas", 107.7, 1],
+    ["Ucrânia", 107.1, 229],
+    ["Butão", 102.6, 4],
+    ["Reino Unido", 102.1, 4096],
+    ["Zâmbia", 100.6, 29],
+    ["Espanha", 100.5, 1918],
+    ["República do Congo", 100.4, 15],
+    ["Dominica", 99.9, 1],
+    ["China", 98.6, 19351],
+    ["Suriname", 96.9, 5],
+    ["Sri Lanka", 96.8, 105],
+    ["Malaui", 96.6, 15],
+    ["Barbados", 96.2, 8],
+    ["Brasil", 93.3, 2127],
+    ["Moçambique", 90.3, 21]
+  ]
+}

@@ -30,7 +30,7 @@ Um arquivo por indicador. O nome do arquivo é o `id`.
 | `visivel` | sim/não | não | `false` esconde do site público (rascunho). |
 | `titulo` | texto | sim | Frase curta que diga o que o gráfico mostra ("Mortes violentas no Brasil"). |
 | `subtitulo` | texto | sim | Medida, unidade e período ("Mortes violentas intencionais por 100 mil habitantes, de 2012 a 2025"). |
-| `tipo` | texto | sim | `colunas`, `barras` (horizontais), `linha`, `dispersao` ou `tabela`. |
+| `tipo` | texto | sim | `colunas`, `barras` (horizontais), `linha`, `dispersao`, `tabela` ou `mapa`. O `mapa` pinta as cinco grandes regiões do Brasil pela primeira série: a coluna `x` traz o nome da região exatamente como em `assets/mapa-br.js` (Norte, Nordeste, Sudeste, Sul, Centro-Oeste). |
 | `colunas` | lista | sim | Nomes das colunas dos dados. |
 | `linhas` | lista de listas | sim | Uma lista por linha, na ordem das colunas. Números como número (`10.67`), sem aspas; vazio como `null`. |
 | `x` | texto | sim (exceto tabela) | Coluna do eixo ou dos rótulos. Na dispersão, o eixo horizontal. |

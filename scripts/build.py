@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-TIPOS = {"colunas", "barras", "linha", "dispersao", "tabela"}
+TIPOS = {"colunas", "barras", "linha", "dispersao", "tabela", "mapa"}
 CAMPOS = ["id", "categoria", "ordem", "visivel", "titulo", "subtitulo", "tipo", "x", "series", "rotulo", "tendencia", "barra",
           "destaque", "faixasGoverno", "prefixo", "sufixo", "casas", "ultimo", "fonte", "fontes", "como_ler", "contexto", "glossario",
           "atualizacao", "colunas", "linhas", "checagem"]

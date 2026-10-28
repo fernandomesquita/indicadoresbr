@@ -1,0 +1,117 @@
+{
+  "id": "pib-20-maiores",
+  "categoria": "mundo",
+  "ordem": 1,
+  "visivel": true,
+  "titulo": "As 20 maiores economias do mundo",
+  "subtitulo": "Produto Interno Bruto (PIB) em trilhões de dólares correntes, em 2025",
+  "tipo": "barras",
+  "x": "País",
+  "series": [
+    "PIB (US$ trilhões)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Brasil"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "US$ ",
+  "sufixo": " tri",
+  "casas": 2,
+  "fonte": {
+    "nome": "Banco Mundial, Indicadores de Desenvolvimento Mundial (NY.GDP.MKTP.CD)",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=400"
+  },
+  "fontes": [
+    {
+      "nome": "Banco Mundial, API dos Indicadores de Desenvolvimento Mundial, PIB em dólares correntes (NY.GDP.MKTP.CD), atualizada em 08/10/2026",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=400",
+      "o_que_sustenta": "PIB de cada país e do mundo em 2025, base do ranking e da participação."
+    },
+    {
+      "nome": "Banco Mundial, lista de países e agregados regionais",
+      "url": "https://api.worldbank.org/v2/country?format=json&per_page=400",
+      "o_que_sustenta": "Separação entre países e agregados (regiões e faixas de renda), que ficam fora do ranking."
+    },
+    {
+      "nome": "Fundo Monetário Internacional (FMI), Panorama Econômico Mundial de outubro de 2026, PIB em dólares (NGDPD)",
+      "url": "https://www.imf.org/external/datamapper/api/v1/NGDPD?periods=2024,2025",
+      "o_que_sustenta": "Conferência dos valores (Brasil: US$ 2,28 trilhões) e PIB de Taiwan, que o Banco Mundial não publica."
+    }
+  ],
+  "como_ler": "Cada barra é o Produto Interno Bruto (PIB) de um país em 2025, em trilhões de dólares, convertido pela taxa de câmbio média do ano. O Brasil, em destaque, ficou em 11º lugar. A conversão em dólar faz o ranking mudar com o câmbio: uma moeda que se desvaloriza diminui o PIB medido em dólares mesmo quando a economia cresce. A tabela traz a participação de cada país no PIB mundial, que somou US$ 118,4 trilhões. Taiwan, que o Banco Mundial não inclui, teria US$ 0,92 trilhão em 2025 pelo Fundo Monetário Internacional (FMI) e ficaria fora da lista.",
+  "contexto": [
+    "O PIB soma o valor de todos os bens e serviços finais produzidos num país em um ano e é a medida mais usada para comparar o tamanho das economias. O Banco Mundial reúne os números enviados pelos institutos de estatística de cada país, como o IBGE no Brasil, e os converte para dólares pela taxa de câmbio média do ano, o que permite colocar todos na mesma unidade.",
+    "Em 2025, os 20 maiores somaram 80,2% do PIB mundial. Estados Unidos e China, juntos, responderam por 42,5%. O Brasil teve PIB de US$ 2,28 trilhões, 1,9% do total do mundo.",
+    "Comparações pelo câmbio de mercado medem o peso de cada economia no comércio e nas finanças internacionais. Para comparar o padrão de vida, os organismos internacionais usam também a paridade do poder de compra, que corrige as diferenças de preço entre os países, e o PIB por habitante, que divide o total pela população."
+  ],
+  "glossario": [
+    {
+      "termo": "Produto Interno Bruto (PIB)",
+      "definicao": "Valor de todos os bens e serviços finais produzidos num país em um período."
+    },
+    {
+      "termo": "Dólares correntes",
+      "definicao": "Valores convertidos pela taxa de câmbio de cada ano, sem correção pela inflação."
+    },
+    {
+      "termo": "Paridade do poder de compra",
+      "definicao": "Conversão que iguala o poder de compra das moedas, usada para comparar padrão de vida."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Banco Mundial, com revisões ao longo do ano)",
+    "onde_buscar": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2025&format=json&per_page=400",
+    "proxima": "Meados de 2027, com o PIB de 2026",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "País",
+    "PIB (US$ trilhões)",
+    "Participação no PIB mundial (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil: US$ 2,28 tri (11º)",
+      "valor_na_fonte": "FMI NGDPD 2025: US$ 2,28 tri",
+      "fonte": "FMI, Panorama Econômico Mundial de outubro de 2026",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Estados Unidos: US$ 30,77 tri",
+      "valor_na_fonte": "FMI NGDPD 2025: US$ 30,86 tri",
+      "fonte": "FMI",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "20º lugar: Suíça, US$ 1,04 tri",
+      "valor_na_fonte": "FMI: Taiwan US$ 0,92 tri, abaixo do 20º",
+      "fonte": "FMI",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Estados Unidos", 30.77, 26.0],
+    ["China", 19.5, 16.5],
+    ["Alemanha", 5.05, 4.3],
+    ["Japão", 4.44, 3.7],
+    ["Reino Unido", 4.0, 3.4],
+    ["Índia", 3.96, 3.3],
+    ["França", 3.37, 2.8],
+    ["Rússia", 2.56, 2.2],
+    ["Itália", 2.55, 2.2],
+    ["Canadá", 2.32, 2.0],
+    ["Brasil", 2.28, 1.9],
+    ["Espanha", 1.91, 1.6],
+    ["Coreia do Sul", 1.87, 1.6],
+    ["México", 1.83, 1.5],
+    ["Austrália", 1.8, 1.5],
+    ["Turquia", 1.6, 1.3],
+    ["Indonésia", 1.45, 1.2],
+    ["Países Baixos", 1.33, 1.1],
+    ["Arábia Saudita", 1.28, 1.1],
+    ["Suíça", 1.04, 0.9]
+  ]
+}
