@@ -25,25 +25,35 @@
   },
   "fontes": [
     {
-      "nome": "Ipea e Fórum Brasileiro de Segurança Pública, Atlas da Violência 2026, Tabelas 2.1 e 2.2",
+      "nome": "Ministério da Saúde, Sistema de Informações sobre Mortalidade (SIM), microdados no OpenDataSUS (1979 a 2023)",
+      "url": "https://dadosabertos.saude.gov.br/dataset/sim",
+      "o_que_sustenta": "Óbitos por causa e por estado de residência da vítima."
+    },
+    {
+      "nome": "Ministério da Saúde, DATASUS, TabNet: óbitos por causas externas (2024)",
+      "url": "https://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/ext10uf.def",
+      "o_que_sustenta": "Dado final de 2024, já fechado (o arquivo de microdados de 2024 publicado é uma extração anterior)."
+    },
+    {
+      "nome": "IBGE, Projeções da População, revisão 2024",
+      "url": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab1_idade_simples.xlsx",
+      "o_que_sustenta": "População de 2000 a 2024, a mesma usada na base de dados do Atlas da Violência."
+    },
+    {
+      "nome": "DATASUS/IBGE, população residente (censos, contagem e estimativas), 1980 a 1999",
+      "url": "https://tabnet.datasus.gov.br/cgi/deftohtm.exe?ibge/cnv/popuf.def",
+      "o_que_sustenta": "População de 1980 a 1999."
+    },
+    {
+      "nome": "Ipea e Fórum Brasileiro de Segurança Pública, Atlas da Violência 2026",
       "url": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf",
-      "o_que_sustenta": "Taxa e número de homicídios registrados por estado em 2023 e 2024, com dados do Sistema de Informações sobre Mortalidade (SIM)."
-    },
-    {
-      "nome": "Ipea, notícia de lançamento do Atlas da Violência 2026",
-      "url": "https://www.ipea.gov.br/portal/categorias/45-todas-as-noticias/noticias/16394-atlas-da-violencia-brasil-registrou-42-590-homicidios-em-2024-menor-resultado-da-serie-historica-mas-subnotificacao-preocupa",
-      "o_que_sustenta": "Total de 42.590 homicídios em 2024, o menor da série, e alerta sobre subnotificação."
-    },
-    {
-      "nome": "Agência Gov, Atlas da Violência: taxa de homicídios no Brasil é a menor em 11 anos",
-      "url": "https://agenciagov.ebc.com.br/noticias/202605/atlas-da-violencia-brasil-registrou-42-590-homicidios-em-2024-menor-resultado-da-serie-historica-mas-subnotificacao-preocupa",
-      "o_que_sustenta": "Conferência independente do total de 2024."
+      "o_que_sustenta": "Conferência: os números de homicídios de todos os estados de 2014 a 2024 batem com as Tabelas 2.1 e 2.2."
     }
   ],
-  "como_ler": "O mapa pinta cada grande região pela taxa de homicídios por 100 mil habitantes em 2024: quanto mais escura a cor, maior a taxa. O número dentro de cada região é a taxa. As taxas regionais são cálculo do Indicadores BR: a soma dos homicídios dos estados de cada região dividida pela soma das populações, obtidas das taxas e dos números publicados pelo Atlas da Violência; a conta reproduz a taxa do Brasil (20,1). Os homicídios contam as mortes por agressão e por intervenção legal registradas no Sistema de Informações sobre Mortalidade (SIM), do Ministério da Saúde, pelo local de residência da vítima; mortes violentas de causa indeterminada ficam de fora.",
+  "como_ler": "O mapa pinta cada grande região pela taxa de homicídios por 100 mil habitantes em 2024: quanto mais escura a cor, maior a taxa. O número dentro de cada região é a taxa, calculada pela soma dos homicídios dos estados da região dividida pela soma das populações. Os homicídios contam as mortes por agressão e por intervenção legal registradas no Sistema de Informações sobre Mortalidade (SIM), do Ministério da Saúde, pelo local de residência da vítima; mortes violentas de causa indeterminada ficam de fora. As taxas usam a população do IBGE (estimativas e censos de 1980 a 1999; Projeções da População, revisão 2024, de 2000 em diante), a mesma da base de dados do Atlas da Violência. A publicação impressa do Atlas usa a população da PNAD Contínua, por isso algumas taxas diferem em décimos (Brasil 2024: 20,0 aqui e 20,1 no Atlas) e, em Roraima, em alguns pontos, por causa da migração venezuelana. A troca de fonte da população entre 1999 e 2000 cria uma pequena quebra. A série desde 1980 está no indicador Violência por região.",
   "contexto": [
     "O Atlas da Violência, produzido pelo Instituto de Pesquisa Econômica Aplicada (Ipea) e pelo Fórum Brasileiro de Segurança Pública (FBSP), usa os registros de óbito do Ministério da Saúde, que seguem o mesmo critério em todo o país.",
-    "Em 2024, o Brasil registrou 42.590 homicídios, o menor número da série, com taxa de 20,1 por 100 mil. O Nordeste teve a maior taxa (33,7), seguido de Norte (28,6) e Centro-Oeste (19,3); Sul (14,6) e Sudeste (11,7) ficaram com as menores. As cinco regiões tiveram queda em relação a 2023.",
+    "Em 2024, o Brasil registrou 42.590 homicídios, o menor número desde 1998, com taxa de 20,0 por 100 mil. O Nordeste teve a maior taxa (33,6), seguido de Norte (28,0) e Centro-Oeste (19,2); Sul (14,6) e Sudeste (11,7) ficaram com as menores. As cinco regiões tiveram queda em relação a 2023.",
     "O próprio Atlas alerta que parte das mortes violentas é registrada sem causa definida, e estima que os homicídios ocultos tenham crescido em 2024; a queda dos números oficiais deve ser lida com essa ressalva. A taxa por região serve para dimensionar a violência letal, e as políticas de segurança, a cargo sobretudo dos estados, são comparadas no indicador por estado."
   ],
   "glossario": [
@@ -74,47 +84,24 @@
   ],
   "checagem": [
     {
-      "valor_no_portal": "Soma das UFs: 42.590 homicídios, taxa 20,09",
-      "valor_na_fonte": "Atlas: Brasil 42.590, taxa 20,1",
+      "valor_no_portal": "Homicídios por região em 2024: Norte 5.235; Nordeste 19.167; Sudeste 10.356; Sul 4.549; Centro-Oeste 3.283",
+      "valor_na_fonte": "Soma das UFs das Tabelas 2.2 do Atlas da Violência 2026: iguais",
       "fonte": "https://www.ipea.gov.br/portal/images/PDF/260526_atlas-violencia-2026.pdf",
       "ok": true
     },
     {
-      "valor_no_portal": "Norte: 28,6",
-      "valor_na_fonte": "5235 homicídios / população implícita de 18,32 milhões",
-      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
-      "ok": true
-    },
-    {
-      "valor_no_portal": "Nordeste: 33,7",
-      "valor_na_fonte": "19167 homicídios / população implícita de 56,92 milhões",
-      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
-      "ok": true
-    },
-    {
-      "valor_no_portal": "Sudeste: 11,7",
-      "valor_na_fonte": "10356 homicídios / população implícita de 88,76 milhões",
-      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
-      "ok": true
-    },
-    {
-      "valor_no_portal": "Sul: 14,6",
-      "valor_na_fonte": "4549 homicídios / população implícita de 31,06 milhões",
-      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
-      "ok": true
-    },
-    {
-      "valor_no_portal": "Centro-Oeste: 19,3",
-      "valor_na_fonte": "3283 homicídios / população implícita de 16,97 milhões",
-      "fonte": "Cálculo sobre as Tabelas 2.1 e 2.2 do Atlas",
-      "ok": true
+      "valor_no_portal": "Taxas de 2024 com a população do IBGE (Projeção 2024)",
+      "valor_na_fonte": "Base de dados do Atlas (série 20): iguais; a publicação impressa, com população da PNAD Contínua, dá Norte 28,6, Nordeste 33,7, Sudeste 11,7, Sul 14,6 e Centro-Oeste 19,3",
+      "fonte": "https://www.ipea.gov.br/atlasviolencia/",
+      "ok": true,
+      "observacao": "Atualizado em 28/10/2026 para a mesma população da série desde 1980."
     }
   ],
   "linhas": [
-    ["Norte", 28.6, 33.1, 5235],
-    ["Nordeste", 33.7, 35.2, 19167],
-    ["Sudeste", 11.7, 12.7, 10356],
+    ["Norte", 28.0, 32.5, 5235],
+    ["Nordeste", 33.6, 35.0, 19167],
+    ["Sudeste", 11.7, 12.8, 10356],
     ["Sul", 14.6, 15.7, 4549],
-    ["Centro-Oeste", 19.3, 21.6, 3283]
+    ["Centro-Oeste", 19.2, 21.4, 3283]
   ]
 }
