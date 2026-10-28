@@ -1,0 +1,91 @@
+{
+  "id": "renda-servidor-x-carteira",
+  "categoria": "politicas-publicas",
+  "ordem": 18,
+  "visivel": true,
+  "titulo": "Servidor e trabalhador com carteira: quanto ganha cada um",
+  "subtitulo": "Rendimento médio mensal no trabalho principal, em reais de 2025, de 2012 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Servidor estatutário e militar",
+    "Empregado do setor privado com carteira"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "R$ ",
+  "sufixo": "",
+  "casas": 0,
+  "fonte": {
+    "nome": "IBGE, PNAD Contínua (Sidra, tabela 5440)",
+    "url": "https://sidra.ibge.gov.br/tabela/5440"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Sidra, tabela 5440: rendimento médio real habitual do trabalho principal, por posição na ocupação",
+      "url": "https://sidra.ibge.gov.br/tabela/5440",
+      "o_que_sustenta": "Rendimento de servidores estatutários e militares, de empregados com carteira e do setor público, de 2012 a 2025."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737: IPCA",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Conversão para reais médios de 2025."
+    },
+    {
+      "nome": "Ipea, Atlas do Estado Brasileiro, série 118",
+      "url": "https://www.ipea.gov.br/atlasestado/consulta/118",
+      "o_que_sustenta": "Série por esfera, de outra fonte, de 1985 a 2021, para comparação."
+    }
+  ],
+  "como_ler": "As linhas mostram o rendimento médio mensal que as pessoas dizem receber habitualmente no trabalho principal, na Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua) do IBGE. Servidor estatutário e militar reúne as três esferas, sem separar União, estados e municípios; a tabela traz também todos os empregados do setor público, incluindo celetistas e temporários. O valor de cada ano é a média dos quatro trimestres, levada a reais médios de 2025 pelo IPCA. A pesquisa conta pessoas e o que elas declaram, por isso os números diferem da RAIS, que conta vínculos registrados pelos empregadores. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "A Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua), do IBGE, pergunta a cada morador entrevistado a posição na ocupação e o rendimento. É a fonte que cobre os anos mais recentes para comparar servidores e trabalhadores com carteira.",
+    "Em 2025, servidores estatutários e militares recebiam em média R$ 6.215 por mês, e empregados do setor privado com carteira, R$ 3.184, em reais de 2025. Em 2012, os valores eram de R$ 5.265 e R$ 2.911. Os dois rendimentos caíram de 2020 para 2022 e voltaram a subir depois.",
+    "A diferença média entre servidores e empregados com carteira reflete também a escolaridade e o tipo de ocupação de cada grupo. Ela entra no debate sobre a reforma administrativa: quem defende mudanças aponta o custo da folha e a distância para o setor privado; quem se opõe argumenta que a comparação deve considerar formação e função."
+  ],
+  "glossario": [
+    {
+      "termo": "Servidor estatutário",
+      "definicao": "Servidor público regido por regime jurídico próprio, como a Lei 8.112/1990 na União, e não pela CLT."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Trimestral",
+    "onde_buscar": "https://sidra.ibge.gov.br/tabela/5440",
+    "proxima": "Média de 2026, no início de 2027",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Servidor estatutário e militar",
+    "Empregado do setor privado com carteira",
+    "Empregado do setor público (total)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2025: R$ 6.215 e R$ 3.184",
+      "valor_na_fonte": "Sidra 5440, média dos 4 trimestres de 2025, a preços do 2º trimestre de 2026 × 0,956918",
+      "fonte": "https://sidra.ibge.gov.br/tabela/5440",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2012, 5265, 2911, 4600],
+    [2013, 5384, 2976, 4708],
+    [2014, 5545, 3039, 4818],
+    [2015, 5517, 3012, 4773],
+    [2016, 5543, 2980, 4852],
+    [2017, 5621, 3050, 4928],
+    [2018, 5792, 3043, 5067],
+    [2019, 5856, 3028, 5127],
+    [2020, 5878, 3101, 5191],
+    [2021, 5552, 2941, 4955],
+    [2022, 5438, 2925, 4665],
+    [2023, 5725, 3011, 4845],
+    [2024, 6051, 3106, 5044],
+    [2025, 6215, 3184, 5209]
+  ]
+}
