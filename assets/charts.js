@@ -139,13 +139,16 @@ function xTickEvery(ctx, labels, avail, s) {
 }
 
 function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
-  const yi = ys[0], rows = ind.linhas.filter(r => isNum(r[yi])), n = rows.length;
+  // sobrepor: com duas séries, a primeira (ex.: previsto) vira barra clara ao fundo e a segunda (ex.: executado) fica na frente
+  const sob = !!ind.sobrepor && ys.length >= 2, bi = sob ? ys[0] : null;
+  const yi = sob ? ys[1] : ys[0], rows = ind.linhas.filter(r => isNum(r[yi]) || (sob && isNum(r[bi]))), n = rows.length;
   if (!n) return;
-  const vals = rows.map(r => r[yi]), lo = Math.min(0, ...vals), hi = Math.max(0, ...vals), sc = nice(lo, hi, 5);
+  const vals = rows.map(r => isNum(r[yi]) ? r[yi] : 0), back = sob ? rows.map(r => isNum(r[bi]) ? r[bi] : 0) : [];
+  const lo = Math.min(0, ...vals, ...back), hi = Math.max(0, ...vals, ...back), sc = nice(lo, hi, 5);
   const isYearish = rows.every(r => isNum(r[xi]));
   const numX = isYearish && ind.faixasGoverno;
   const yw = yLabelWidth(ctx, ind, sc, s);
-  const bandsH = numX ? 20 * s : 0, valH = 20 * s;
+  const bandsH = numX ? 20 * s : 0, valH = (sob ? 34 : 20) * s;
   const catLabels = rows.map(r => String(r[xi]));
   const bwGuess = (b.w - yw) / n;
   setFont(ctx, 500, 11.5 * s, F.body);
@@ -163,14 +166,29 @@ function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   const dest = (ind.destaque || []).map(String);
   const showAll = n <= 16;
   const iMax = vals.indexOf(Math.max(...vals)), iMin = vals.indexOf(Math.min(...vals));
+  if (sob) {
+    // legenda das duas séries, acima da área do gráfico
+    setFont(ctx, 500, 11.5 * s, F.body); ctx.textBaseline = "middle"; ctx.textAlign = "left";
+    let lx = plot.x; const ly = b.y + bandsH + 9 * s;
+    [[ind.colunas[bi], .3], [ind.colunas[yi], 1]].forEach(([nome, a]) => {
+      ctx.globalAlpha = a; ctx.fillStyle = th.accent; ctx.fillRect(lx, ly - 5 * s, 10 * s, 10 * s); ctx.globalAlpha = 1;
+      ctx.fillStyle = th.ink; ctx.fillText(nome, lx + 15 * s, ly); lx += ctx.measureText(nome).width + 34 * s;
+    });
+    ctx.textBaseline = "alphabetic";
+  }
   rows.forEach((r, i) => {
     const e = ease((t * 1.5) - (i / n) * .5);
     const v = vals[i] * e, x = plot.x + i * bw + gap / 2, w = bw - gap, y0 = Y(0), y1 = Y(v);
-    ctx.fillStyle = dest.includes(String(r[xi])) ? th.accent2 : th.accent;
     if (hover != null && hover !== i) ctx.globalAlpha = .55;
+    if (sob) {
+      const yb = Y(back[i] * e);
+      ctx.save(); ctx.globalAlpha *= .3; ctx.fillStyle = th.accent; ctx.fillRect(x, Math.min(y0, yb), w, Math.max(1, Math.abs(yb - y0))); ctx.restore();
+    }
+    ctx.fillStyle = dest.includes(String(r[xi])) ? th.accent2 : th.accent;
     ctx.fillRect(x, Math.min(y0, y1), w, Math.max(1, Math.abs(y1 - y0)));
     ctx.globalAlpha = 1;
-    hits.push({ kind: "rect", x: plot.x + i * bw, y: plot.y, w: bw, h: plot.h, cx: x + w / 2, cy: Math.min(y0, Y(vals[i])), i, title: String(r[xi]), lines: [[ind.colunas[yi], fmtV(vals[i], ind)]] });
+    const lines = sob ? [[ind.colunas[bi], fmtV(back[i], ind)], [ind.colunas[yi], fmtV(vals[i], ind)], ...(back[i] ? [["Executado", nf(0).format(vals[i] / back[i] * 100) + "%"]] : [])] : [[ind.colunas[yi], fmtV(vals[i], ind)]];
+    hits.push({ kind: "rect", x: plot.x + i * bw, y: plot.y, w: bw, h: plot.h, cx: x + w / 2, cy: Math.min(y0, Y(sob ? Math.max(vals[i], back[i]) : vals[i])), i, title: String(r[xi]), lines });
   });
   rows.forEach((r, i) => {
     const e = ease((t * 1.5) - (i / n) * .5);
