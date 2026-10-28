@@ -597,7 +597,13 @@ function prepara(d) {
   return d;
 }
 async function boot() {
-  const conferencia = store.revalidar();
+  // proteção contra mistura de versões (arquivo antigo em cache): recarrega uma vez, buscando tudo de novo
+  if (typeof store.revalidar !== "function" || typeof store.completo !== "function") {
+    let ja = false; try { ja = sessionStorage.getItem("ibr-recarga") === "1"; sessionStorage.setItem("ibr-recarga", "1"); } catch (e) {}
+    if (!ja) { location.reload(); return; }
+  }
+  try { sessionStorage.removeItem("ibr-recarga"); } catch (e) {}
+  const conferencia = typeof store.revalidar === "function" ? store.revalidar() : Promise.resolve(null);
   try { DATA = prepara(await store.loadData()); }
   catch (e) { app.replaceChildren(h("section", { class: "wrap narrow textpage" }, h("h1", { text: "Não foi possível carregar os indicadores" }), h("p", { class: "lede", text: "Recarregue a página em instantes." }))); return; }
   setGovernos(DATA.site.governos);

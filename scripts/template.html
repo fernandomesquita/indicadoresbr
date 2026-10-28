@@ -21,9 +21,10 @@
 <link rel="stylesheet" href="/assets/style.css?v={{V}}">
 <meta name="ibr-dados" content="{{DV}}">
 <link rel="preload" href="/data/resumo.json?v={{DV}}" as="fetch" crossorigin="anonymous">
-<link rel="modulepreload" href="/assets/charts.js">
-<link rel="modulepreload" href="/assets/store.js">
-<link rel="modulepreload" href="/assets/mapa-br.js">
+<script type="importmap">{"imports":{"/assets/charts.js":"/assets/charts.js?v={{V}}","/assets/store.js":"/assets/store.js?v={{V}}","/assets/mapa-br.js":"/assets/mapa-br.js?v={{V}}","/assets/admin.js":"/assets/admin.js?v={{V}}"}}</script>
+<link rel="modulepreload" href="/assets/charts.js?v={{V}}">
+<link rel="modulepreload" href="/assets/store.js?v={{V}}">
+<link rel="modulepreload" href="/assets/mapa-br.js?v={{V}}">
 <link rel="preconnect" href="https://sfroiqakkcphhnsqibsh.supabase.co" crossorigin>
 <script src="/config.js?v={{V}}"></script>
 <script type="module" src="/assets/app.js?v={{V}}"></script>

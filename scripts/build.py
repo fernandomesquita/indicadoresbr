@@ -169,7 +169,7 @@ def build():
         if f.stem not in ids: f.unlink()
     for i in publicos:
         escreve(f"data/i/{i['id']}.json", json.dumps(i, ensure_ascii=False, separators=(",", ":")))
-    v = hashlib.sha1((txt + "".join((ROOT / "assets" / f).read_text(encoding="utf-8") for f in ["app.js", "charts.js", "admin.js", "store.js", "style.css"])).encode()).hexdigest()[:10]
+    v = hashlib.sha1((txt + "".join((ROOT / "assets" / f).read_text(encoding="utf-8") for f in ["app.js", "charts.js", "admin.js", "store.js", "mapa-br.js", "style.css"])).encode()).hexdigest()[:10]
 
     DV_ATUAL[0] = dv
     tpl = (ROOT / "scripts" / "template.html").read_text(encoding="utf-8")
