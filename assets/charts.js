@@ -187,7 +187,7 @@ function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
     ctx.fillStyle = dest.includes(String(r[xi])) ? th.accent2 : th.accent;
     ctx.fillRect(x, Math.min(y0, y1), w, Math.max(1, Math.abs(y1 - y0)));
     ctx.globalAlpha = 1;
-    const lines = sob ? [[ind.colunas[bi], fmtV(back[i], ind)], [ind.colunas[yi], fmtV(vals[i], ind)], ...(back[i] ? [["Executado", nf(0).format(vals[i] / back[i] * 100) + "%"]] : [])] : [[ind.colunas[yi], fmtV(vals[i], ind)]];
+    const lines = sob ? [[ind.colunas[bi], fmtV(back[i], ind)], [ind.colunas[yi], fmtV(vals[i], ind)], ...(back[i] ? [[ind.parcela || "Executado", nf(0).format(vals[i] / back[i] * 100) + "%"]] : [])] : [[ind.colunas[yi], fmtV(vals[i], ind)]];
     hits.push({ kind: "rect", x: plot.x + i * bw, y: plot.y, w: bw, h: plot.h, cx: x + w / 2, cy: Math.min(y0, Y(sob ? Math.max(vals[i], back[i]) : vals[i])), i, title: String(r[xi]), lines });
   });
   rows.forEach((r, i) => {

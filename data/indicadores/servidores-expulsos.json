@@ -1,0 +1,117 @@
+{
+  "id": "servidores-expulsos",
+  "categoria": "corrupcao",
+  "ordem": 6,
+  "visivel": true,
+  "titulo": "Servidores federais expulsos, e quantos por corrupção",
+  "subtitulo": "Demissões, cassações de aposentadoria e destituições de servidores do Executivo federal por ano, e quantas tiveram corrupção como fundamento, de 2003 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Expulsões",
+    "Por corrupção"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "sobrepor": true,
+  "parcela": "Por corrupção",
+  "fonte": {
+    "nome": "Controladoria-Geral da União (CGU)",
+    "url": "https://www.gov.br/cgu/pt-br/assuntos/atividade-disciplinar/relatorios-de-punicoes-expulsivas"
+  },
+  "fontes": [
+    {
+      "nome": "CGU, relatório consolidado de punições expulsivas de 2003 a 2015",
+      "url": "https://www.gov.br/cgu/pt-br/assuntos/atividade-disciplinar/relatorios-de-punicoes-expulsivas/arquivos/consolidado-por-ano-de-2003-a-2015.xls",
+      "o_que_sustenta": "Expulsões e fundamentos de 2003 a 2012."
+    },
+    {
+      "nome": "CGU, relatório de punições expulsivas de dezembro de 2018",
+      "url": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2019/01/governo-federal-expulsa-643-servidores-em-2018-por-praticas-ilicitas/Puniesdezembro2018Estatutrios.pdf",
+      "o_que_sustenta": "Expulsões e fundamentos de 2013 a 2018 (643 em 2018, 65,8% por corrupção)."
+    },
+    {
+      "nome": "CGU, Cadastro de Expulsões da Administração Federal (CEAF), dados abertos no Portal da Transparência",
+      "url": "https://portaldatransparencia.gov.br/download-de-dados/ceaf/20261028",
+      "o_que_sustenta": "Cada expulsão registrada, com data, tipo e fundamento legal, base da contagem de 2019 a 2025."
+    },
+    {
+      "nome": "Lei 8.112/1990 (regime jurídico dos servidores federais)",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8112cons.htm",
+      "o_que_sustenta": "Artigos 117 e 132, que definem as infrações usadas para classificar os casos de corrupção."
+    }
+  ],
+  "como_ler": "A coluna clara é o total de punições expulsivas aplicadas no ano a servidores estatutários civis do Poder Executivo federal: demissão, cassação de aposentadoria e destituição de cargo em comissão. A coluna escura, na frente, é a parte que teve corrupção como fundamento. Empregados de estatais, como Caixa e Correios, ficam de fora. Corrupção segue a regra da própria CGU: punições fundamentadas em valer-se do cargo para proveito próprio ou de outro, receber propina ou vantagem, improbidade administrativa, lesão aos cofres públicos, aplicação irregular de dinheiro público e corrupção (incisos IX, XII e XVI do art. 117 e IV, X e XI do art. 132 da Lei 8.112/1990, e os equivalentes da Lei 4.878/1965, dos policiais federais). Há uma quebra em 2019: até 2018 os números são os publicados pela CGU; de 2019 em diante são contagem do Indicadores BR sobre o cadastro de expulsões, um registro que exclui punições anuladas depois. Em 2020, a contagem dá 422 demissões, 281 por corrupção, perto dos 420 e 285 divulgados pela CGU. Em 2026, até 28 de outubro, foram 237 expulsões. Mais punições podem indicar mais irregularidades ou mais investigação, e o gráfico não separa as duas coisas.",
+  "contexto": [
+    "A Controladoria-Geral da União (CGU) é o órgão central do sistema de correição do Executivo federal: acompanha os processos disciplinares dos ministérios e órgãos e mantém o cadastro das expulsões.",
+    "Em 2003, o governo federal expulsou 268 servidores, 66,4% deles por corrupção. O maior número da série foi o de 2018, com 643 expulsões, das quais 423 (65,8%) por corrupção. Em 2025 foram 375, 58,7% por corrupção. Em todos os anos, a corrupção foi o principal motivo de expulsão, seguida de abandono de cargo, faltas e acumulação ilegal de cargos.",
+    "A expulsão é decidida em processo administrativo disciplinar, com direito a defesa, e pode ser revista na Justiça. O servidor demitido por corrupção fica impedido de voltar ao serviço público federal, e o caso pode gerar também ação penal e de improbidade."
+  ],
+  "glossario": [
+    {
+      "termo": "Cassação de aposentadoria",
+      "definicao": "Perda da aposentadoria por infração cometida quando o servidor estava na ativa."
+    },
+    {
+      "termo": "Destituição de cargo em comissão",
+      "definicao": "Expulsão de quem ocupa cargo de confiança, sem vínculo efetivo."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal (cadastro da CGU)",
+    "onde_buscar": "https://portaldatransparencia.gov.br/download-de-dados/ceaf/20261028",
+    "proxima": "Ano de 2026 completo, em janeiro de 2027",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Expulsões",
+    "Por corrupção",
+    "Por corrupção (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2018: 643 expulsões, 423 por corrupção",
+      "valor_na_fonte": "CGU, relatório de dezembro de 2018: 643 e 65,8%",
+      "fonte": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2019/01/governo-federal-expulsa-643-servidores-em-2018-por-praticas-ilicitas/Puniesdezembro2018Estatutrios.pdf",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2020 (contagem própria): 422 demissões, 281 por corrupção",
+      "valor_na_fonte": "CGU, declaração do ministro: 420 e 285",
+      "fonte": "https://portaldatransparencia.gov.br/download-de-dados/ceaf/20261028",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2003, 268, 178, 66.4],
+    [2004, 319, 201, 63.0],
+    [2005, 287, 204, 71.1],
+    [2006, 373, 255, 68.4],
+    [2007, 438, 297, 67.8],
+    [2008, 372, 243, 65.3],
+    [2009, 433, 291, 67.2],
+    [2010, 512, 356, 69.5],
+    [2011, 533, 361, 67.7],
+    [2012, 505, 315, 62.4],
+    [2013, 531, 379, 71.4],
+    [2014, 547, 363, 66.4],
+    [2015, 540, 332, 61.5],
+    [2016, 550, 344, 62.5],
+    [2017, 506, 336, 66.4],
+    [2018, 643, 423, 65.8],
+    [2019, 602, 364, 60.5],
+    [2020, 553, 395, 71.4],
+    [2021, 544, 314, 57.7],
+    [2022, 607, 315, 51.9],
+    [2023, 476, 267, 56.1],
+    [2024, 363, 201, 55.4],
+    [2025, 375, 220, 58.7]
+  ]
+}

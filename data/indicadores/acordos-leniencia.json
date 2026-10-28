@@ -1,0 +1,90 @@
+{
+  "id": "acordos-leniencia",
+  "categoria": "corrupcao",
+  "ordem": 7,
+  "visivel": true,
+  "titulo": "Acordos de leniência: quanto as empresas se comprometeram a devolver",
+  "subtitulo": "Valor dos acordos de leniência assinados pela CGU e pela AGU por ano, em milhões de reais de 2025, de 2017 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Valor acordado (R$ mi de 2025)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "R$ ",
+  "sufixo": " mi",
+  "casas": 1,
+  "fonte": {
+    "nome": "Controladoria-Geral da União, acordos de leniência celebrados",
+    "url": "https://www.gov.br/cgu/pt-br/assuntos/integridade-privada/acordo-leniencia/acordos-celebrados"
+  },
+  "fontes": [
+    {
+      "nome": "CGU, página de acordos de leniência celebrados",
+      "url": "https://www.gov.br/cgu/pt-br/assuntos/integridade-privada/acordo-leniencia/acordos-celebrados",
+      "o_que_sustenta": "Ano, empresa e valor acordado de cada um dos 37 acordos (total publicado de R$ 20,12 bilhões)."
+    },
+    {
+      "nome": "Portal da Transparência, dados abertos de acordos de leniência",
+      "url": "https://portaldatransparencia.gov.br/download-de-dados/acordos-leniencia/20261028",
+      "o_que_sustenta": "Texto dos termos e parcela de multa de oito acordos de 2017 a 2019."
+    },
+    {
+      "nome": "Lei 12.846/2013 (Lei Anticorrupção)",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm",
+      "o_que_sustenta": "Regras do acordo de leniência."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737: IPCA",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção dos valores para reais de 2025."
+    }
+  ],
+  "como_ler": "Cada coluna é a soma do valor dos acordos de leniência assinados no ano pela Controladoria-Geral da União (CGU) e pela Advocacia-Geral da União (AGU), corrigida pela inflação para reais de 2025; a tabela traz o número de acordos e o valor da época. O valor acordado soma multa, ressarcimento de danos e devolução de enriquecimento ilícito, e costuma ser pago em parcelas ao longo de vários anos, por isso não equivale ao que entrou nos cofres no ano. Não entram acordos feitos por estados, municípios ou pelo Ministério Público. Os números da CGU têm pequenas inconsistências entre a tabela e outros textos oficiais (por exemplo, o acordo da SBM Offshore aparece com R$ 1,61 bilhão na tabela e R$ 549 milhões em outra página); o gráfico usa a tabela de acordos celebrados. Em 2026, até 28 de outubro, foram 3 acordos, somando R$ 31,8 milhões.",
+  "contexto": [
+    "A Lei Anticorrupção, de 2013, permite que a empresa que admite ter praticado atos lesivos contra a administração pública faça um acordo de leniência: colabora com as investigações, devolve recursos e paga multa, em troca de redução das penas.",
+    "De 2017 a 2025, a CGU e a AGU assinaram 34 acordos, que somam R$ 20,09 bilhões em valores da época. O ano de maior valor foi 2019, com 5 acordos e R$ 7,53 bilhões. Os acordos de 2017 a 2019 incluem Odebrecht, Andrade Gutierrez, Camargo Corrêa, OAS, UTC e Braskem.",
+    "Defensores do instrumento argumentam que ele acelera a recuperação de recursos e a obtenção de provas; críticos questionam o tamanho dos descontos e o risco de empresas negociarem penas menores. O valor acordado é um compromisso, e o pagamento efetivo é acompanhado pela CGU."
+  ],
+  "glossario": [
+    {
+      "termo": "Acordo de leniência",
+      "definicao": "Acordo em que a empresa colabora com a investigação e repara o dano em troca de redução das sanções previstas na Lei Anticorrupção."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "A cada acordo assinado",
+    "onde_buscar": "https://www.gov.br/cgu/pt-br/assuntos/integridade-privada/acordo-leniencia/acordos-celebrados",
+    "proxima": "Sem data fixa",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Valor acordado (R$ mi de 2025)",
+    "Acordos",
+    "Valor da época (R$ mi)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "37 acordos de 2017 a 2026, R$ 20,12 bilhões (valores da época)",
+      "valor_na_fonte": "CGU, total publicado: R$ 20.124.173.505,50 (a soma das linhas difere em R$ 10)",
+      "fonte": "https://www.gov.br/cgu/pt-br/assuntos/integridade-privada/acordo-leniencia/acordos-celebrados",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2017, 882.0, 2, 585.7],
+    [2018, 8543.4, 4, 5881.4],
+    [2019, 10549.7, 5, 7533.6],
+    [2020, 1.0, 1, 0.8],
+    [2021, 2220.6, 5, 1772.6],
+    [2022, 3174.9, 8, 2769.5],
+    [2023, 30.0, 2, 27.4],
+    [2024, 305.2, 3, 290.6],
+    [2025, 1230.9, 4, 1230.9]
+  ]
+}

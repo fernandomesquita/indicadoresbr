@@ -22,6 +22,9 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 | `renda-servidor-esfera` | Mês de referência exato do INPC usado pelo Ipea; se o Ipea publicar 2022 em diante por esfera, estender. | Nível em reais de 2025, não a trajetória. |
 | `armas-legais-estados` | Distrito Federal oscila na fonte (68.700 em 2022, contra 243.806 em 2021): pedir confirmação ao FBSP ou à Polícia Federal. Possível quebra de método entre 2022 e 2023. | Valor do DF e salto de 2023. |
 | `efetivo-policial-serie` | Relatórios da Pesquisa Perfil de 2019 a 2022 não estão no site do MJSP; se publicados, preencher o intervalo. | Lacuna de 2019 a 2021. |
+| `servidores-expulsos` | Quebra em 2019: até 2018 números oficiais da CGU; depois, contagem própria no CEAF (cadastro vivo, sem as punições anuladas). O painel Correição em Dados da CGU usa outro universo e outra regra (29,8% por corrupção desde 2019). Pedir à CGU a série oficial de 2019 em diante. | Totais de 2019 a 2025. |
+| `acordos-leniencia` | A CGU diverge dela mesma (SBM Offshore: R$ 1,61 bilhão na tabela e R$ 549 milhões em outra página; soma das linhas R$ 10 acima do total). | Valor de 2018. |
+| `processos-improbidade` | De 2023 em diante o CNJ só publica percentuais. Casos novos por assunto (DataJud) não coletados. Empresas punidas (CEIS e CNEP) ficaram fora: o cadastro é uma fotografia atual, sem as sanções vencidas, e não serve como série anual. | Série termina em 2022. |
 | `populacao-brasil` | Nota da tabela 1286 do Sidra (atrás de desafio do Cloudflare) para explicar por que ela difere da população residente de 1960 a 2000. O gráfico usa a residente. | Nenhum, só registro. |
 
 ## Decisões de método já tomadas (12/10/2026)

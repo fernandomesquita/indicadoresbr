@@ -1,0 +1,103 @@
+{
+  "id": "processos-improbidade",
+  "categoria": "corrupcao",
+  "ordem": 8,
+  "visivel": true,
+  "titulo": "Processos de corrupção na Justiça: quantos são julgados",
+  "subtitulo": "Ações de improbidade administrativa e de crimes contra a administração pública na meta do CNJ: acervo e julgados no ano, de 2014 a 2022",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Acervo da meta",
+    "Julgados no ano"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "sobrepor": true,
+  "parcela": "Julgado",
+  "fonte": {
+    "nome": "Conselho Nacional de Justiça, Relatórios de Metas Nacionais do Poder Judiciário",
+    "url": "https://www.cnj.jus.br/gestao-estrategica-e-planejamento/metas/"
+  },
+  "fontes": [
+    {
+      "nome": "CNJ, Metas Nacionais do Poder Judiciário",
+      "url": "https://www.cnj.jus.br/gestao-estrategica-e-planejamento/metas/",
+      "o_que_sustenta": "Lista dos relatórios anuais de cumprimento das metas."
+    },
+    {
+      "nome": "CNJ, relatórios de Metas Nacionais de 2014 a 2022 (Meta 4)",
+      "url": "https://www.cnj.jus.br/gestao-estrategica-e-planejamento/metas/relatorios-anteriores/",
+      "o_que_sustenta": "Acervo da meta e processos julgados por ramo da Justiça, de 2014 a 2022."
+    },
+    {
+      "nome": "CNJ, Relatório de Metas Nacionais 2022",
+      "url": "https://www.cnj.jus.br/wp-content/uploads/2023/06/relatorio-metas-nacionais-2022.pdf",
+      "o_que_sustenta": "Dado mais recente com números absolutos: 252.001 processos no acervo e 173.620 julgados."
+    },
+    {
+      "nome": "CNJ, Relatório Final de Metas 2009 a 2013",
+      "url": "https://www.cnj.jus.br/wp-content/uploads/2015/02/Relatorio_final_2009_a_2013_Resumo_Executivo_02_06_2014.pdf",
+      "o_que_sustenta": "Meta 18 de 2013, antecessora da Meta 4."
+    },
+    {
+      "nome": "Lei 14.230/2021 (reforma da Lei de Improbidade)",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14230.htm",
+      "o_que_sustenta": "Mudança das regras das ações de improbidade em 2021."
+    }
+  ],
+  "como_ler": "Desde 2013, o Conselho Nacional de Justiça (CNJ) fixa uma meta para que os tribunais julguem as ações de improbidade administrativa e de crimes contra a administração pública, como corrupção, peculato e concussão. A coluna clara é o acervo da meta no ano: os processos que os tribunais tinham de julgar, distribuídos até uma data de corte. A coluna escura é quantos deles foram julgados. A meta muda todo ano (a data de corte e o percentual exigido variam por ramo da Justiça), por isso o tamanho do acervo de um ano não se compara diretamente com o de outro; os saltos de 2018 a 2020, por exemplo, podem refletir mudanças no recorte. A partir de 2023 o CNJ passou a publicar só o percentual de cumprimento de cada ramo, sem os números de processos, e a série de números absolutos termina em 2022. Os números dizem respeito ao desempenho dos tribunais nessa meta, e não ao total de processos de corrupção do país.",
+  "contexto": [
+    "O Conselho Nacional de Justiça acompanha a Meta 4 (Meta 18 em 2013) para dar prioridade ao julgamento de ações de improbidade e de crimes contra a administração pública, que costumam demorar anos. Participam a Justiça Estadual, a Federal, a Militar, a Eleitoral e o Superior Tribunal de Justiça.",
+    "Em 2014, o acervo da meta tinha 197.859 processos, e 109.662 foram julgados. Em 2022, último ano com números absolutos, eram 252.001 processos no acervo e 173.620 julgados, dos quais 40.085 de improbidade e 131.047 de crimes contra a administração pública. Em 2025, pelo percentual publicado, a Justiça Estadual cumpriu 140,77% da meta e a Federal, 119,10%.",
+    "Julgar não significa condenar: os números incluem absolvições, extinções e condenações. A demora desses processos é um dos argumentos no debate sobre a efetividade do combate à corrupção, assim como a reforma da Lei de Improbidade de 2021, que mudou as regras desse tipo de ação."
+  ],
+  "glossario": [
+    {
+      "termo": "Improbidade administrativa",
+      "definicao": "Ato de agente público que causa enriquecimento ilícito, prejuízo ao erário ou fere princípios da administração (Lei 8.429/1992); a ação é cível."
+    },
+    {
+      "termo": "Crimes contra a administração pública",
+      "definicao": "Crimes como corrupção passiva e ativa, peculato e concussão, previstos no Código Penal."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (relatório de metas)",
+    "onde_buscar": "https://www.cnj.jus.br/gestao-estrategica-e-planejamento/metas/",
+    "proxima": "Relatório de metas de 2026, em 2027",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Acervo da meta",
+    "Julgados no ano",
+    "Julgados: improbidade",
+    "Julgados: crimes contra a administração pública"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "371 números transcritos dos relatórios",
+      "valor_na_fonte": "Conferência automática contra o texto dos relatórios do CNJ: sem divergência",
+      "fonte": "https://www.cnj.jus.br/gestao-estrategica-e-planejamento/metas/",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2014, 197859, 109662, 20864, 88798],
+    [2015, 115644, 67652, 20865, 46787],
+    [2016, 130322, 66490, 21048, 45442],
+    [2017, 126237, 67180, 22510, 44670],
+    [2018, 251867, 161681, 38001, 123680],
+    [2019, 331288, 178464, 53991, 121816],
+    [2020, 352284, 182539, 65088, 117364],
+    [2021, 233464, 165622, 37139, 124870],
+    [2022, 252001, 173620, 40085, 131047]
+  ]
+}

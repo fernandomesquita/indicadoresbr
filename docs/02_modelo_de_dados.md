@@ -43,6 +43,7 @@ Um arquivo por indicador. O nome do arquivo é o `id`.
 | `prefixo`, `sufixo` | texto | não | Unidade nos valores (`"R$ "`, `"%"`, `" mi"`). |
 | `casas` | número | não | Casas decimais nos rótulos do gráfico. |
 | `sobrepor` | sim/não | não | Só em `colunas` com duas séries: a primeira (ex.: orçamento previsto) vira barra clara ao fundo e a segunda (ex.: executado) fica na frente, com legenda e o percentual executado no detalhe. |
+| `parcela` | texto | não | Só com `sobrepor`: nome do percentual mostrado no detalhe (padrão: Executado). Ex.: Por corrupção, Julgado. |
 | `escolha` | sim/não | não | Só em `linha`. Na página do indicador, o leitor escolhe quais colunas numéricas aparecem no gráfico (até 5 de cada vez). `series` define as que abrem selecionadas. Serve para tabelas largas, como um ano por linha e um estado por coluna. O PNG sai com a escolha do leitor; os cartões da home mostram as séries iniciais. |
 | `ultimo` | texto | não | Rótulo do dado mais recente no carrossel "Últimos dados" da página inicial, quando o último ponto é parcial ou o eixo não é de anos (ex.: "agosto de 2026", "12 meses até agosto de 2026", "Lula 3, até setembro de 2026"). Séries anuais completas entram no carrossel sem ele; tabelas e gráficos cujo eixo não é de anos só entram com ele. |
 | `ymin`, `ymax` | número | não | Limites mínimos do eixo vertical no gráfico de linha (por exemplo 0 e 100 para porcentagens), para o eixo não exagerar variações pequenas. |
