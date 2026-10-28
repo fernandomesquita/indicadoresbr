@@ -1,0 +1,131 @@
+{
+  "id": "parceiros-comerciais",
+  "categoria": "economia",
+  "ordem": 18,
+  "visivel": true,
+  "titulo": "Os maiores parceiros comerciais do Brasil",
+  "subtitulo": "Participação de cada país na corrente de comércio do Brasil (exportações mais importações), em %, de 1997 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "China",
+    "Estados Unidos",
+    "Argentina",
+    "Alemanha",
+    "Japão"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "MDIC/Secex, Comex Stat (base de dados bruta)",
+    "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta"
+  },
+  "fontes": [
+    {
+      "nome": "MDIC/Secex, Comex Stat, base de dados bruta (arquivos EXP_AAAA.csv e IMP_AAAA.csv, 1997 a 2026)",
+      "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta",
+      "o_que_sustenta": "Exportações e importações por país e por produto, base de todos os valores."
+    },
+    {
+      "nome": "MDIC, séries históricas consolidadas da balança comercial (atualizadas em 06/10/2026)",
+      "url": "https://balanca.mdic.gov.br/balanca/publicacoes_dados_consolidados/pg.html",
+      "o_que_sustenta": "Conferência dos totais anuais, da China e dos Estados Unidos."
+    },
+    {
+      "nome": "MDIC, nota mensal da balança comercial de setembro de 2026",
+      "url": "https://balanca.mdic.gov.br/balanca/publicacoes_dados_consolidados/nota.html",
+      "o_que_sustenta": "Conferência do acumulado de janeiro a setembro de 2026."
+    },
+    {
+      "nome": "MDIC, Exportações brasileiras alcançam US$ 349 bi em 2025 e batem recorde histórico (06/01/2026)",
+      "url": "https://www.gov.br/mdic/pt-br/assuntos/noticias/2026/janeiro/exportacoes-brasileiras-alcancam-us-349-bi-em-2025-e-batem-recorde-historico",
+      "o_que_sustenta": "Resultado preliminar de 2025, depois revisado pela própria base (US$ 348,3 bilhões)."
+    },
+    {
+      "nome": "Conselho Empresarial Brasil-China (CEBC), Alerta nº 198 (jan/2026)",
+      "url": "https://static.poder360.com.br/2026/01/Comercio-Brasil-China-atinge-recorde-de-US-171-bilhoes-em-2025-CEBC-Alerta.pdf",
+      "o_que_sustenta": "Conferência independente da corrente com a China em 2025 (US$ 171 bilhões, 27,2%)."
+    }
+  ],
+  "como_ler": "Cada linha mostra quanto um país representou da corrente de comércio do Brasil em cada ano, somando o que o Brasil vendeu para ele e o que comprou dele, em dólares. Estão no gráfico os cinco países que mais vezes apareceram entre os cinco maiores parceiros de 1997 a 2025. O país considerado é o destino declarado na exportação e a origem declarada na importação, que nem sempre é o país de consumo final: portos de distribuição, como os dos Países Baixos, podem aparecer acima do consumo real. Os valores são de 1997 a 2025, anos fechados; em 2026, até setembro, a China respondeu por 28,3% da corrente. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "A corrente de comércio soma exportações e importações e mede o tamanho da relação comercial do Brasil com cada país. Os dados são da Secretaria de Comércio Exterior (Secex), do Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC), que registra cada operação declarada na alfândega.",
+    "Em 1997, os Estados Unidos eram o maior parceiro, com 20,2% da corrente, e a China tinha 2,0%. A China passou os Estados Unidos em 2009 e chegou a 27,2% em 2025, com US$ 170,9 bilhões de comércio: US$ 99,9 bilhões em exportações brasileiras, sobretudo soja, petróleo e minério de ferro, e US$ 70,9 bilhões em importações. Os Estados Unidos ficaram em segundo, com 13,2%, e a Argentina, em terceiro, com 4,9%.",
+    "A concentração num parceiro tem dois lados: garante mercado para os produtos em que o Brasil é competitivo e deixa as vendas mais sensíveis à economia e às decisões comerciais desse país. Para quem acompanha a economia, a lista de parceiros ajuda a entender o efeito de tarifas, acordos e crises externas sobre exportadores e empregos."
+  ],
+  "glossario": [
+    {
+      "termo": "Corrente de comércio",
+      "definicao": "Soma das exportações e das importações de um país num período."
+    },
+    {
+      "termo": "FOB",
+      "definicao": "Valor da mercadoria no porto de embarque, sem frete e seguro internacionais."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal (MDIC/Secex), com o fechamento do ano em janeiro",
+    "onde_buscar": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta",
+    "proxima": "Janeiro de 2027, com o ano de 2026 fechado",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "China",
+    "Estados Unidos",
+    "Argentina",
+    "Alemanha",
+    "Japão"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "China 2025: 27,2%",
+      "valor_na_fonte": "MDIC: corrente de US$ 170.855,8 milhões, 27,19% do total; CEBC: 27,2%",
+      "fonte": "https://static.poder360.com.br/2026/01/Comercio-Brasil-China-atinge-recorde-de-US-171-bilhoes-em-2025-CEBC-Alerta.pdf",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Total da corrente em 2025: US$ 628.486,9 milhões",
+      "valor_na_fonte": "MDIC: exportação 348.278,5 + importação 280.208,4",
+      "fonte": "https://balanca.mdic.gov.br/balanca/publicacoes_dados_consolidados/pg.html",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [1997, 2.0, 20.2, 12.9, 6.7, 5.8],
+    [1998, 1.8, 21.2, 13.5, 7.5, 5.0],
+    [1999, 1.6, 22.8, 11.4, 7.4, 4.9],
+    [2000, 2.1, 23.3, 11.7, 6.2, 4.9],
+    [2001, 2.8, 23.6, 9.8, 6.4, 4.4],
+    [2002, 3.7, 23.6, 6.5, 6.4, 4.1],
+    [2003, 5.5, 21.5, 7.6, 6.0, 4.0],
+    [2004, 5.8, 19.7, 8.1, 5.7, 3.5],
+    [2005, 6.3, 18.3, 8.4, 5.8, 3.5],
+    [2006, 7.1, 17.0, 8.6, 5.3, 3.4],
+    [2007, 8.3, 15.5, 8.8, 5.6, 3.2],
+    [2008, 9.9, 14.1, 8.3, 5.6, 3.5],
+    [2009, 13.1, 12.7, 8.6, 5.7, 3.4],
+    [2010, 14.7, 12.1, 8.6, 5.4, 3.7],
+    [2011, 16.0, 12.4, 8.2, 5.0, 3.6],
+    [2012, 16.2, 12.7, 7.4, 4.6, 3.4],
+    [2013, 17.6, 12.8, 7.6, 4.6, 3.2],
+    [2014, 17.3, 13.7, 6.3, 4.5, 2.8],
+    [2015, 18.3, 14.0, 6.4, 4.3, 2.7],
+    [2016, 18.3, 14.7, 7.1, 4.4, 2.6],
+    [2017, 20.1, 14.6, 7.2, 3.8, 2.5],
+    [2018, 23.7, 14.7, 6.2, 3.9, 2.2],
+    [2019, 24.4, 15.8, 5.0, 3.8, 2.5],
+    [2020, 27.9, 13.4, 4.5, 3.7, 2.3],
+    [2021, 27.1, 14.1, 4.8, 3.3, 2.1],
+    [2022, 24.8, 14.6, 4.7, 3.1, 2.0],
+    [2023, 27.1, 12.9, 4.9, 3.2, 2.0],
+    [2024, 26.3, 13.5, 4.6, 3.3, 1.8],
+    [2025, 27.2, 13.2, 4.9, 3.3, 1.8]
+  ]
+}

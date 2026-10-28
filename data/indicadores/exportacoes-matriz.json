@@ -1,0 +1,117 @@
+{
+  "id": "exportacoes-matriz",
+  "categoria": "economia",
+  "ordem": 20,
+  "visivel": true,
+  "titulo": "O que o Brasil exporta",
+  "subtitulo": "Exportações por grupo de produtos, em milhões de dólares, de 2016 a 2025",
+  "tipo": "tabela",
+  "x": "",
+  "series": [],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "fonte": {
+    "nome": "MDIC/Secex, Comex Stat (base de dados bruta), grupos da CUCI",
+    "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta"
+  },
+  "fontes": [
+    {
+      "nome": "MDIC/Secex, Comex Stat, base de dados bruta (arquivos EXP_AAAA.csv e IMP_AAAA.csv, 1997 a 2026)",
+      "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta",
+      "o_que_sustenta": "Exportações e importações por país e por produto, base de todos os valores."
+    },
+    {
+      "nome": "MDIC, séries históricas consolidadas da balança comercial (atualizadas em 06/10/2026)",
+      "url": "https://balanca.mdic.gov.br/balanca/publicacoes_dados_consolidados/pg.html",
+      "o_que_sustenta": "Conferência dos totais anuais, da China e dos Estados Unidos."
+    },
+    {
+      "nome": "MDIC, nota mensal da balança comercial de setembro de 2026",
+      "url": "https://balanca.mdic.gov.br/balanca/publicacoes_dados_consolidados/nota.html",
+      "o_que_sustenta": "Conferência do acumulado de janeiro a setembro de 2026."
+    },
+    {
+      "nome": "MDIC, Exportações brasileiras alcançam US$ 349 bi em 2025 e batem recorde histórico (06/01/2026)",
+      "url": "https://www.gov.br/mdic/pt-br/assuntos/noticias/2026/janeiro/exportacoes-brasileiras-alcancam-us-349-bi-em-2025-e-batem-recorde-historico",
+      "o_que_sustenta": "Resultado preliminar de 2025, depois revisado pela própria base (US$ 348,3 bilhões)."
+    },
+    {
+      "nome": "MDIC, arquivo de exportações de 2025 e tabelas de correspondência NCM, CUCI e ISIC",
+      "url": "https://balanca.mdic.gov.br/balanca/bd/comexstat-bd/ncm/EXP_2025.csv",
+      "o_que_sustenta": "Classificação de cada produto (código NCM) no grupo da CUCI usado nas linhas."
+    }
+  ],
+  "como_ler": "Cada linha é um grupo de produtos e cada coluna, um ano, com o valor exportado em milhões de dólares. As linhas são os 14 grupos com maior exportação somada de 2016 a 2025, sempre os mesmos em todos os anos, e Demais produtos fecha o total. Os grupos seguem a Classificação Uniforme para o Comércio Internacional (CUCI), da ONU, no nível de 3 dígitos, a mesma que o Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) usa na lista de principais produtos. Os valores são correntes, sem correção pela inflação, e acompanham os preços internacionais: o salto de 2021 e 2022 reflete também a alta das cotações de soja, petróleo e minério.",
+  "contexto": [
+    "A Secretaria de Comércio Exterior (Secex) registra cada exportação pelo código do produto e publica a base completa. Agrupar os produtos mostra a composição da pauta, ou seja, em que o Brasil ganha a vida no comércio exterior.",
+    "Em 2025, o Brasil exportou US$ 348,3 bilhões. O petróleo bruto foi o principal produto, com US$ 44,5 bilhões, seguido de perto pela soja, com US$ 43,5 bilhões, e pelo minério de ferro, com US$ 29,0 bilhões. Os 14 grupos da tabela responderam por 64,7% do total. De 2016 a 2025, o valor exportado quase dobrou, de US$ 179,5 bilhões para US$ 348,3 bilhões. Pela divisão setorial do MDIC, a indústria de transformação respondeu por US$ 188,4 bilhões em 2025, a indústria extrativa por US$ 80,3 bilhões e a agropecuária por US$ 77,6 bilhões.",
+    "A dependência de poucos produtos básicos, cujos preços variam muito no mercado internacional, é um tema antigo do debate econômico: quem destaca a competitividade do agronegócio e da mineração vê nesses setores a base das contas externas, e quem defende diversificar a pauta argumenta que bens industriais de maior valor agregado dão mais estabilidade e empregos qualificados."
+  ],
+  "glossario": [
+    {
+      "termo": "CUCI",
+      "definicao": "Classificação Uniforme para o Comércio Internacional, da ONU, que agrupa produtos por natureza."
+    },
+    {
+      "termo": "FOB",
+      "definicao": "Valor da mercadoria no porto de embarque, sem frete e seguro internacionais."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (com dados mensais no MDIC)",
+    "onde_buscar": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta",
+    "proxima": "Janeiro de 2027, com o ano de 2026",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Produto",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Total 2025: 348.278",
+      "valor_na_fonte": "MDIC, arquivo de conferência: 348.278.462.500 dólares",
+      "fonte": "https://balanca.mdic.gov.br/balanca/publicacoes_dados_consolidados/pg.html",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Soja 2025: 43536",
+      "valor_na_fonte": "MDIC, tabela de soja: 43.536,0 milhões",
+      "fonte": "https://balanca.mdic.gov.br/balanca/publicacoes_dados_consolidados/pg.html",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Soja", 19331, 25718, 33055, 26077, 28564, 38639, 46558, 53245, 42950, 43536],
+    ["Petróleo bruto", 10074, 16625, 25251, 24200, 19614, 30609, 42554, 42611, 44964, 44537],
+    ["Minério de ferro", 13289, 19199, 20220, 22681, 25780, 44661, 28924, 30593, 29860, 28979],
+    ["Açúcar e melaço", 10446, 11426, 6540, 5196, 8759, 9206, 11038, 15776, 18624, 14130],
+    ["Carne bovina", 4345, 5070, 5456, 6546, 7447, 7967, 11805, 9495, 11658, 16608],
+    ["Farelo de soja e rações", 5475, 5314, 7000, 6238, 6331, 7898, 10958, 12166, 10406, 8645],
+    ["Celulose", 5570, 6345, 8272, 7473, 5984, 6728, 8380, 7936, 10574, 10165],
+    ["Carne de aves", 6128, 6578, 5996, 6487, 5554, 6954, 8888, 8971, 9080, 8816],
+    ["Milho", 3740, 4631, 3994, 7290, 5853, 4189, 12184, 13613, 8177, 8574],
+    ["Óleos combustíveis (derivados de petróleo)", 1152, 1779, 4002, 5864, 5058, 7262, 13032, 11251, 11647, 10333],
+    ["Café não torrado", 4843, 4600, 4360, 4575, 4974, 5805, 8514, 7315, 11338, 14866],
+    ["Semimanufaturados de ferro e aço", 2691, 4175, 5036, 4184, 3212, 6465, 6428, 6292, 4652, 4691],
+    ["Ferro-gusa e ferroligas", 2637, 3241, 3740, 4212, 3769, 5131, 6480, 5698, 5314, 5730],
+    ["Automóveis de passageiros", 4671, 6670, 5141, 3820, 2714, 3278, 4635, 4167, 4290, 5888],
+    ["Demais produtos", 85134, 93618, 93826, 86283, 75567, 96025, 113756, 110569, 113512, 122780],
+    ["Total", 179526, 214988, 231890, 221127, 209180, 280815, 334136, 339696, 337046, 348278]
+  ]
+}
