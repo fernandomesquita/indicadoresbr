@@ -78,10 +78,16 @@
       "ordem": 6
     },
     {
+      "id": "populacao-trabalho",
+      "nome": "População e trabalho",
+      "descricao": "Quantos somos, onde vivemos e como trabalhamos.",
+      "ordem": 7
+    },
+    {
       "id": "mundo",
       "nome": "Mundo",
       "descricao": "O Brasil comparado aos outros países: economia, desenvolvimento, violência e contas públicas.",
-      "ordem": 7
+      "ordem": 8
     }
   ]
 }

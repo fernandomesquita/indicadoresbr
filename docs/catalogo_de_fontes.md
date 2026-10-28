@@ -65,6 +65,14 @@ Gerado por `scripts/build.py` em 2026-10-28. Não edite à mão: mude o indicado
 | `educacao-basica-partido-governador` (oculto): Gasto dos estados com educação básica, pelo partido do governador | [Tesouro Nacional (Siconfi), Inep (Censo Escolar) e TSE; cálculo do Indicadores BR](https://github.com/fernandomesquita/indicadoresbr/blob/main/scripts/calculos/educacao_basica_uf.py) | Anual, junto com o indicador de gasto por aluno por estado. | Atualizar data/aux/governadores_2016_2025.csv e rodar python3 scripts/calculos/educacao_basica_uf.py --indicadores depois das coletas descritas no indicador educacao-basica-por-aluno | Março de 2027, com 2026 completo e os governadores de 2026 conferidos. | 2026-10-12 |
 | `alfabetizacao-estados`: Alfabetização de jovens e adultos por estado | [IBGE, Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua), Educação, Sidra tabela 7113](https://sidra.ibge.gov.br/tabela/7113) | Anual (módulo de educação da PNAD Contínua) | https://sidra.ibge.gov.br/tabela/7113 | Meados de 2027, com os dados de 2026 | 2026-10-28 |
 
+## População e trabalho
+
+| Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |
+|---|---|---|---|---|---|
+| `populacao-brasil`: Quantos somos: a população do Brasil em cada censo | [IBGE, Censos Demográficos (Sidra e Estatísticas do Século XX)](https://sidra.ibge.gov.br/tabela/202) | A cada censo (próximo previsto para 2030); estimativas anuais em agosto | https://sidra.ibge.gov.br/tabela/6579 | Estimativa de 2027, em agosto de 2027 | 2026-10-28 |
+| `populacao-urbana-rural`: Campo e cidade: onde mora o brasileiro | [IBGE, Censos Demográficos (Sidra)](https://sidra.ibge.gov.br/tabela/1288) | A cada censo demográfico | https://sidra.ibge.gov.br/tabela/9923 | Censo de 2030 | 2026-10-28 |
+| `carteira-assinada`: Quantos trabalham com carteira assinada | [IBGE, PNAD Contínua anual (Sidra, tabela 4361)](https://sidra.ibge.gov.br/tabela/4361) | Anual (com dados trimestrais e mensais móveis) | https://sidra.ibge.gov.br/tabela/4361 | Média de 2026, no primeiro semestre de 2027 | 2026-10-28 |
+
 ## Mundo
 
 | Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |
