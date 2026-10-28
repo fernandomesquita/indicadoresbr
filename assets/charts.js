@@ -517,10 +517,10 @@ export function makeChart(ind, wrap, { big = false, still = false } = {}) {
   const c = { ind, wrap, canvas, tip, t: reduced || still ? 1 : 0, hits: [], hover: null, started: still };
   c.paint = () => {
     const w = wrap.clientWidth; if (!w) return;
-    const hh = heightFor(ind, w, big), dpr = Math.min(2.5, window.devicePixelRatio || 1);
+    const hh = heightFor(c.ind, w, big), dpr = Math.min(2.5, window.devicePixelRatio || 1);
     if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(hh * dpr)) { canvas.width = Math.round(w * dpr); canvas.height = Math.round(hh * dpr); canvas.style.height = hh + "px"; }
     const ctx = canvas.getContext("2d"); ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, w, hh);
-    c.hits = []; drawChart(ctx, ind, { x: 0, y: 0, w, h: hh }, themeCSS(), 1, c.t, c.hits, c.hover);
+    c.hits = []; drawChart(ctx, c.ind, { x: 0, y: 0, w, h: hh }, themeCSS(), 1, c.t, c.hits, c.hover);
   };
   c.play = () => {
     if (c.started) return; c.started = true;
@@ -546,6 +546,7 @@ export function makeChart(ind, wrap, { big = false, still = false } = {}) {
     tip.style.left = x + "px"; tip.style.top = Math.max(tip.offsetHeight + 12, ht.cy) + "px"; tip.classList.add("on");
     if (c.hover !== ht.i) { c.hover = ht.i; c.paint(); }
   };
+  c.setInd = novo => { c.ind = novo; c.hover = null; tip.classList.remove("on"); c.paint(); };
   canvas.addEventListener("pointermove", move); canvas.addEventListener("pointerdown", move); canvas.addEventListener("pointerleave", leave);
   CHARTS.add(c);
   return c;

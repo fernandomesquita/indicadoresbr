@@ -271,6 +271,27 @@ function pageCategoria(id) {
   ];
 }
 
+const MAX_ESCOLHA = 5;
+function seletorSeries(ind, onChange) {
+  const xi = ind.colunas.indexOf(ind.x), num = numericCols(ind);
+  const opcoes = ind.colunas.filter((c, k) => k !== xi && num[k]);
+  let sel = (ind.series || []).filter(c => opcoes.includes(c)).slice(0, MAX_ESCOLHA);
+  const aviso = h("span", { class: "pickmsg", "aria-live": "polite" });
+  const chips = opcoes.map(c => {
+    const b = h("button", { type: "button", class: "pick", "aria-pressed": String(sel.includes(c)), text: c });
+    b.addEventListener("click", () => {
+      if (sel.includes(c)) { if (sel.length === 1) { aviso.textContent = "Deixe ao menos uma linha no gráfico."; return; } sel = sel.filter(x => x !== c); }
+      else { sel = [...sel, c]; if (sel.length > MAX_ESCOLHA) { aviso.textContent = `Até ${MAX_ESCOLHA} linhas: ${sel[0]} saiu do gráfico.`; sel = sel.slice(1); } else aviso.textContent = ""; }
+      chips.forEach(ch => ch.setAttribute("aria-pressed", String(sel.includes(ch.textContent))));
+      onChange({ ...ind, series: [...sel] });
+    });
+    return b;
+  });
+  return h("div", { class: "picker", role: "group", "aria-label": "Escolha o que aparece no gráfico" },
+    h("p", { class: "pickhead" }, h("b", { text: "Escolha até " + MAX_ESCOLHA + " para comparar" }), aviso),
+    h("div", { class: "picks" }, chips));
+}
+
 function pageIndicador(id) {
   const ind = visiveis().find(i => i.id === id);
   if (!ind) return page404();
@@ -280,6 +301,9 @@ function pageIndicador(id) {
   const conferido = (ind.atualizacao && ind.atualizacao.ultima_conferencia) || DATA.site.atualizado;
   const chartBox = h("div", { class: ind.tipo === "tabela" ? "tblbox" : "chart big" });
   const tableBox = h("div", { class: "tblbox" });
+  // escolha: o leitor decide quais colunas aparecem na linha (ex.: estados), até 5 de cada vez
+  const cur = { ind };
+  const escolha = ind.tipo === "linha" && ind.escolha ? seletorSeries(ind, novo => { cur.ind = novo; if (cur.chart) cur.chart.setInd(novo); }) : null;
   const fontes = [ind.fonte, ...(ind.fontes || [])].filter((f, i, a) => f && f.nome && a.findIndex(g => (g.url || g.nome) === (f.url || f.nome)) === i);
   const outros = doCat(ind.categoria).filter(i => i.id !== ind.id).slice(0, 3);
   const up = ind.atualizacao || {};
@@ -293,9 +317,9 @@ function pageIndicador(id) {
           recente ? h("li", {}, h("span", { text: "Dado mais recente" }), recente) : null,
           conferido ? h("li", {}, h("span", { text: "Conferido em" }), dataBR(conferido)) : null,
           up.periodicidade ? h("li", {}, h("span", { text: "Atualização" }), resumoPer(up.periodicidade)) : null)),
-      h("div", { class: "dchart" }, chartBox,
+      h("div", { class: "dchart" }, escolha, chartBox,
         h("div", { class: "acts" },
-          ibtn("png", "Baixar PNG", () => openShare(ind), "pri"),
+          ibtn("png", "Baixar PNG", () => openShare(cur.ind), "pri"),
           ibtn("csv", "Baixar CSV", () => baixarCSV(ind)),
           ibtn("link", "Copiar link", ev => copiar(ev.currentTarget, siteURL() + "/indicador/" + ind.id)),
           ibtn("flag", "Reportar erro", () => openReport(ind), "ghost"))),
@@ -319,7 +343,7 @@ function pageIndicador(id) {
   ];
   requestAnimationFrame(() => {
     if (ind.tipo === "tabela") chartBox.append(renderTable(ind, { animate: !reduced, onReport: p => openReport(ind, p) }));
-    else { mountChart(ind, chartBox, { big: true }); tableBox.append(renderTable(ind, { onReport: p => openReport(ind, p) })); }
+    else { cur.chart = mountChart(cur.ind, chartBox, { big: true }); tableBox.append(renderTable(ind, { onReport: p => openReport(ind, p) })); }
     if (ind.tipo === "tabela") tableBox.parentElement.hidden = true;
   });
   return view;
