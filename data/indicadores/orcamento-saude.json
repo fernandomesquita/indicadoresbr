@@ -1,0 +1,125 @@
+{
+  "id": "orcamento-saude",
+  "categoria": "saude",
+  "ordem": 1,
+  "visivel": true,
+  "titulo": "Orçamento federal de saúde: previsto e executado",
+  "subtitulo": "Dotação atualizada e valor liquidado da função Saúde no orçamento da União, em bilhões de reais de 2025, de 2000 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Previsto (dotação atualizada)",
+    "Executado (liquidado)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "R$ ",
+  "sufixo": " bi",
+  "casas": 1,
+  "sobrepor": true,
+  "fonte": {
+    "nome": "Ministério do Planejamento e Orçamento, SIOP",
+    "url": "https://www1.siop.planejamento.gov.br/"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério do Planejamento e Orçamento, Sistema Integrado de Planejamento e Orçamento (SIOP), dados abertos do orçamento federal",
+      "url": "https://www1.siop.planejamento.gov.br/",
+      "o_que_sustenta": "Dotação atualizada e valor liquidado da função Saúde, de 2000 a 2026."
+    },
+    {
+      "nome": "Tesouro Nacional, Siconfi, RREO da União, Anexo 02 (despesa por função), 6º bimestre",
+      "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1",
+      "o_que_sustenta": "Conferência independente do valor liquidado de 2015 a 2025, com diferença abaixo de 0,5%."
+    },
+    {
+      "nome": "IBGE, Anuário Estatístico do Brasil 2024, tabela 7.1.1.2, despesa da União por função",
+      "url": "https://anuario.ibge.gov.br/images/aeb/2024/s7/2_pdf/s7t1102.pdf",
+      "o_que_sustenta": "Conferência do liquidado de 2023 e 2024."
+    },
+    {
+      "nome": "Lei Complementar nº 141/2012, arts. 3º e 4º",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm",
+      "o_que_sustenta": "O que conta e o que não conta como ação e serviço público de saúde para o mínimo constitucional (aposentadorias e pensões não contam)."
+    },
+    {
+      "nome": "Constituição Federal",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "o_que_sustenta": "Pisos de aplicação em saúde (art. 198) e educação (art. 212) e competências em segurança pública (art. 144)."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737: IPCA, número-índice",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção dos valores para reais de 2025 pela média anual do IPCA."
+    }
+  ],
+  "como_ler": "A coluna clara, ao fundo, é o orçamento previsto para a função no fim de cada ano: a lei aprovada pelo Congresso mais os créditos abertos durante o ano. A coluna escura, na frente, é o que foi executado, medido pelo valor liquidado, isto é, a despesa reconhecida depois da entrega do bem ou do serviço. A diferença entre as duas é o orçamento que não chegou a ser gasto no ano. Os valores incluem as despesas entre órgãos do próprio governo, como a contribuição da União para a previdência dos servidores, que fica registrada na mesma função. Os valores corrigidos estão em reais de 2025, pela média anual do Índice Nacional de Preços ao Consumidor Amplo (IPCA), do IBGE; a tabela traz também o valor da época. O ano de 2026 ficou fora do gráfico porque ainda está em execução.",
+  "contexto": [
+    "O orçamento da União separa as despesas por função, que indica a área de governo atendida. A classificação atual vale desde 2000, o que permite comparar toda a série. Os dados vêm do Sistema Integrado de Planejamento e Orçamento (SIOP), do Ministério do Planejamento e Orçamento.",
+    "Em 2025, o orçamento da função Saúde terminou o ano com dotação de R$ 241,2 bilhões, e a União liquidou R$ 218,6 bilhões, 90,6% do previsto. Em 2000, em valores corrigidos, a dotação era de R$ 93,7 bilhões e o liquidado, de R$ 90,5 bilhões. O valor liquidado de 2025 é o maior da série. A menor execução foi a de 2020, com 81,5% da dotação liquidados; na média de 2000 a 2025, a execução foi de 91,8%. Em 2026, até 28 de outubro, a União tinha liquidado R$ 192,1 bilhões de uma dotação de R$ 256,3 bilhões, em valores da época.",
+    "A Constituição obriga a União a aplicar um valor mínimo em ações e serviços públicos de saúde a cada ano (artigo 198). O orçamento da função Saúde inclui despesas que não contam para esse mínimo, como o pagamento de servidores aposentados, por isso os dois números não coincidem. O pico de 2020 e 2021 coincide com a pandemia de covid-19."
+  ],
+  "glossario": [
+    {
+      "termo": "Dotação atualizada",
+      "definicao": "Valor autorizado na lei orçamentária mais os créditos adicionais abertos ao longo do ano."
+    },
+    {
+      "termo": "Liquidado",
+      "definicao": "Despesa reconhecida depois que o bem foi entregue ou o serviço prestado; é a etapa anterior ao pagamento."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária no SIOP; o ano se fecha em janeiro",
+    "onde_buscar": "https://www1.siop.planejamento.gov.br/",
+    "proxima": "Janeiro de 2027, com o ano de 2026 fechado",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Previsto (dotação atualizada)",
+    "Executado (liquidado)",
+    "Previsto, valor da época (R$ bi)",
+    "Executado, valor da época (R$ bi)",
+    "Execução (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2024, liquidado: R$ 196,1 bi (valor da época)",
+      "valor_na_fonte": "RREO da União, Anexo 02: igual ao SIOP, diferença abaixo de 0,5%",
+      "fonte": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["2000", 93.7, 90.5, 21.0, 20.3, 96.5],
+    ["2001", 102.7, 98.7, 24.6, 23.6, 96.1],
+    ["2002", 103.9, 98.0, 27.0, 25.4, 94.3],
+    ["2003", 94.1, 91.2, 28.0, 27.2, 97.0],
+    ["2004", 108.4, 103.8, 34.4, 33.0, 95.8],
+    ["2005", 114.9, 107.5, 39.0, 36.5, 93.5],
+    ["2006", 119.6, 114.8, 42.3, 40.6, 95.9],
+    ["2007", 134.2, 124.8, 49.2, 45.7, 93.0],
+    ["2008", 136.2, 129.5, 52.7, 50.1, 95.1],
+    ["2009", 146.6, 143.2, 59.6, 58.1, 97.6],
+    ["2010", 150.7, 145.0, 64.3, 61.9, 96.2],
+    ["2011", 163.9, 158.8, 74.6, 72.2, 96.9],
+    ["2012", 185.6, 166.7, 89.0, 79.9, 89.8],
+    ["2013", 182.8, 167.5, 93.1, 85.3, 91.6],
+    ["2014", 185.3, 173.7, 100.3, 94.1, 93.8],
+    ["2015", 191.4, 160.3, 113.0, 94.6, 83.7],
+    ["2016", 175.0, 156.5, 112.3, 100.5, 89.4],
+    ["2017", 181.2, 155.5, 120.4, 103.2, 85.8],
+    ["2018", 177.0, 159.1, 121.9, 109.5, 89.9],
+    ["2019", 177.9, 162.1, 127.1, 115.8, 91.1],
+    ["2020", 254.4, 207.4, 187.5, 152.9, 81.5],
+    ["2021", 237.3, 204.5, 189.4, 163.2, 86.2],
+    ["2022", 178.3, 158.1, 155.5, 137.9, 88.7],
+    ["2023", 203.3, 178.0, 185.5, 162.4, 87.6],
+    ["2024", 232.5, 206.0, 221.4, 196.1, 88.6],
+    ["2025", 241.2, 218.6, 241.2, 218.6, 90.6]
+  ]
+}

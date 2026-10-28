@@ -1,0 +1,120 @@
+{
+  "id": "orcamento-educacao",
+  "categoria": "educacao",
+  "ordem": 6,
+  "visivel": true,
+  "titulo": "Orçamento federal de educação: previsto e executado",
+  "subtitulo": "Dotação atualizada e valor liquidado da função Educação no orçamento da União, em bilhões de reais de 2025, de 2000 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Previsto (dotação atualizada)",
+    "Executado (liquidado)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "R$ ",
+  "sufixo": " bi",
+  "casas": 1,
+  "sobrepor": true,
+  "fonte": {
+    "nome": "Ministério do Planejamento e Orçamento, SIOP",
+    "url": "https://www1.siop.planejamento.gov.br/"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério do Planejamento e Orçamento, Sistema Integrado de Planejamento e Orçamento (SIOP), dados abertos do orçamento federal",
+      "url": "https://www1.siop.planejamento.gov.br/",
+      "o_que_sustenta": "Dotação atualizada e valor liquidado da função Educação, de 2000 a 2026."
+    },
+    {
+      "nome": "Tesouro Nacional, Siconfi, RREO da União, Anexo 02 (despesa por função), 6º bimestre",
+      "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1",
+      "o_que_sustenta": "Conferência independente do valor liquidado de 2015 a 2025, com diferença abaixo de 0,5%."
+    },
+    {
+      "nome": "IBGE, Anuário Estatístico do Brasil 2024, tabela 7.1.1.2, despesa da União por função",
+      "url": "https://anuario.ibge.gov.br/images/aeb/2024/s7/2_pdf/s7t1102.pdf",
+      "o_que_sustenta": "Conferência do liquidado de 2023 e 2024."
+    },
+    {
+      "nome": "Constituição Federal",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "o_que_sustenta": "Pisos de aplicação em saúde (art. 198) e educação (art. 212) e competências em segurança pública (art. 144)."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737: IPCA, número-índice",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção dos valores para reais de 2025 pela média anual do IPCA."
+    }
+  ],
+  "como_ler": "A coluna clara, ao fundo, é o orçamento previsto para a função no fim de cada ano: a lei aprovada pelo Congresso mais os créditos abertos durante o ano. A coluna escura, na frente, é o que foi executado, medido pelo valor liquidado, isto é, a despesa reconhecida depois da entrega do bem ou do serviço. A diferença entre as duas é o orçamento que não chegou a ser gasto no ano. Os valores incluem as despesas entre órgãos do próprio governo, como a contribuição da União para a previdência dos servidores, que fica registrada na mesma função. Os valores corrigidos estão em reais de 2025, pela média anual do Índice Nacional de Preços ao Consumidor Amplo (IPCA), do IBGE; a tabela traz também o valor da época. O ano de 2026 ficou fora do gráfico porque ainda está em execução.",
+  "contexto": [
+    "O orçamento da União separa as despesas por função, que indica a área de governo atendida. A classificação atual vale desde 2000, o que permite comparar toda a série. Os dados vêm do Sistema Integrado de Planejamento e Orçamento (SIOP), do Ministério do Planejamento e Orçamento.",
+    "Em 2025, o orçamento da função Educação terminou o ano com dotação de R$ 190,6 bilhões, e a União liquidou R$ 170,1 bilhões, 89,3% do previsto. Em 2000, em valores corrigidos, a dotação era de R$ 51,1 bilhões e o liquidado, de R$ 47,4 bilhões. O maior valor liquidado da série foi o de 2014, com R$ 173,4 bilhões. A menor execução foi a de 2015, com 78,2% da dotação liquidados; na média de 2000 a 2025, a execução foi de 89,4%. Em 2026, até 28 de outubro, a União tinha liquidado R$ 149,4 bilhões de uma dotação de R$ 218,2 bilhões, em valores da época.",
+    "A Constituição obriga a União a aplicar na manutenção e no desenvolvimento do ensino pelo menos 18% da receita de impostos, descontadas as transferências a estados e municípios (artigo 212). O orçamento da função Educação inclui também despesas que não contam para esse mínimo, por isso os dois números não coincidem. A função reúne, entre outras despesas, as universidades e os institutos federais e o apoio da União à educação básica."
+  ],
+  "glossario": [
+    {
+      "termo": "Dotação atualizada",
+      "definicao": "Valor autorizado na lei orçamentária mais os créditos adicionais abertos ao longo do ano."
+    },
+    {
+      "termo": "Liquidado",
+      "definicao": "Despesa reconhecida depois que o bem foi entregue ou o serviço prestado; é a etapa anterior ao pagamento."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária no SIOP; o ano se fecha em janeiro",
+    "onde_buscar": "https://www1.siop.planejamento.gov.br/",
+    "proxima": "Janeiro de 2027, com o ano de 2026 fechado",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Previsto (dotação atualizada)",
+    "Executado (liquidado)",
+    "Previsto, valor da época (R$ bi)",
+    "Executado, valor da época (R$ bi)",
+    "Execução (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2024, liquidado: R$ 144,0 bi (valor da época)",
+      "valor_na_fonte": "RREO da União, Anexo 02: igual ao SIOP, diferença abaixo de 0,5%",
+      "fonte": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["2000", 51.1, 47.4, 11.4, 10.6, 92.8],
+    ["2001", 57.6, 48.6, 13.8, 11.6, 84.4],
+    ["2002", 56.4, 50.9, 14.7, 13.2, 90.2],
+    ["2003", 50.2, 47.8, 14.9, 14.2, 95.2],
+    ["2004", 48.9, 45.8, 15.5, 14.5, 93.7],
+    ["2005", 54.2, 47.7, 18.4, 16.2, 87.9],
+    ["2006", 57.8, 55.6, 20.4, 19.7, 96.2],
+    ["2007", 68.3, 66.5, 25.0, 24.4, 97.2],
+    ["2008", 77.4, 73.0, 30.0, 28.3, 94.3],
+    ["2009", 98.3, 90.3, 39.9, 36.7, 91.9],
+    ["2010", 124.4, 113.7, 53.1, 48.5, 91.4],
+    ["2011", 138.0, 128.5, 62.8, 58.5, 93.1],
+    ["2012", 174.8, 151.4, 83.8, 72.6, 86.6],
+    ["2013", 176.4, 161.5, 89.8, 82.3, 91.6],
+    ["2014", 189.2, 173.4, 102.4, 93.9, 91.7],
+    ["2015", 195.6, 153.0, 115.5, 90.3, 78.2],
+    ["2016", 171.2, 148.8, 109.9, 95.5, 86.9],
+    ["2017", 173.3, 153.8, 115.1, 102.1, 88.7],
+    ["2018", 166.0, 144.5, 114.3, 99.4, 87.0],
+    ["2019", 165.8, 137.9, 118.4, 98.5, 83.2],
+    ["2020", 150.1, 124.9, 110.6, 92.1, 83.2],
+    ["2021", 150.4, 125.6, 120.0, 100.3, 83.5],
+    ["2022", 148.7, 131.4, 129.7, 114.6, 88.3],
+    ["2023", 166.7, 149.1, 152.1, 136.1, 89.5],
+    ["2024", 173.3, 151.3, 165.0, 144.0, 87.3],
+    ["2025", 190.6, 170.1, 190.6, 170.1, 89.3]
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "folha-esferas",
+  "categoria": "politicas-publicas",
+  "ordem": 15,
+  "visivel": true,
+  "titulo": "Quanto União, estados e municípios gastam com servidores",
+  "subtitulo": "Remuneração de servidores ativos por esfera de governo, em bilhões de reais de 2025, de 2010 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "União",
+    "Estados",
+    "Municípios"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "R$ ",
+  "sufixo": " bi",
+  "casas": 1,
+  "fonte": {
+    "nome": "Tesouro Nacional, Estatísticas Fiscais do Governo Geral",
+    "url": "https://www.tesourotransparente.gov.br/publicacoes/boletim-trimestral-de-estatisticas-fiscais-do-governo-geral/2026/23"
+  },
+  "fontes": [
+    {
+      "nome": "Tesouro Nacional, Boletim de Estatísticas Fiscais do Governo Geral, 2º trimestre de 2026, anexo de demonstrativos (tabela 2.3)",
+      "url": "https://thot-arquivos.tesouro.gov.br/publicacao-anexo/29354",
+      "o_que_sustenta": "Remuneração de empregados e benefícios a servidores inativos por esfera, de 2010 a 2025."
+    },
+    {
+      "nome": "Tesouro Nacional, página do Boletim de Estatísticas Fiscais do Governo Geral (publicado em 01/10/2026)",
+      "url": "https://www.tesourotransparente.gov.br/publicacoes/boletim-trimestral-de-estatisticas-fiscais-do-governo-geral/2026/23",
+      "o_que_sustenta": "Metodologia e cobertura de estados e municípios."
+    },
+    {
+      "nome": "Tesouro Nacional, Boletim de Estatísticas Fiscais do Governo Geral 2025, 4º trimestre",
+      "url": "https://cdn.tesouro.gov.br/sistemas-internos/apex/producao/sistemas/thot/arquivos/publicacoes/54232_1694623/Boletim_EFGG_2025_IV.pdf",
+      "o_que_sustenta": "Conferência de 2025: governo central R$ 270,0 bilhões; total revisado depois em 0,5%."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737: IPCA, número-índice",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção dos valores para reais de 2025 pela média anual do IPCA."
+    },
+    {
+      "nome": "Lei Complementar nº 101/2000 (Lei de Responsabilidade Fiscal), art. 19",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm",
+      "o_que_sustenta": "Limites de gasto com pessoal: 50% da receita corrente líquida na União e 60% nos estados e municípios."
+    }
+  ],
+  "como_ler": "Cada linha mostra quanto uma esfera de governo gastou no ano com a remuneração dos servidores ativos, civis e militares, incluindo as contribuições que paga como empregador, corrigido pela inflação. Aposentadorias e pensões de servidores ficam à parte na tabela, que traz também o total das três esferas com e sem os inativos. A União aqui não inclui o Banco Central e segue a metodologia internacional do Fundo Monetário Internacional (FMI), por isso o número difere do gráfico da folha federal, que usa o critério do Tesouro e soma os inativos. Há quebras na série: a base de dados dos estados muda em 2019 e a dos municípios em 2022, quando o gasto municipal salta de R$ 356 bilhões para R$ 421 bilhões em valores da época, em parte por essa troca. Cerca de 10% dos municípios não enviam dados, e o Tesouro estima esses valores. Os números são revistos a cada boletim. Os valores corrigidos estão em reais de 2025, pela média anual do Índice Nacional de Preços ao Consumidor Amplo (IPCA), do IBGE.",
+  "contexto": [
+    "O Tesouro Nacional consolida as contas da União, dos 26 estados, do Distrito Federal e dos 5.570 municípios nas Estatísticas Fiscais do Governo Geral, com a metodologia do Fundo Monetário Internacional (FMI). A série comparável começa em 2010.",
+    "Em 2025, as três esferas gastaram R$ 1.410,1 bilhões com servidores ativos: R$ 588,4 bilhões nos municípios, R$ 551,7 bilhões nos estados e R$ 270,0 bilhões na União. Somando aposentadorias e pensões de servidores, o total chega a R$ 1.980,4 bilhões. Em valores corrigidos, a remuneração dos ativos cresceu 45% de 2010 a 2025, parte disso pela troca de base dos municípios em 2022.",
+    "Desde 2023, os municípios gastam mais com servidores ativos do que os estados, que lideravam no início da série. A Lei de Responsabilidade Fiscal limita o gasto com pessoal a 50% da receita corrente líquida na União e a 60% nos estados e nos municípios."
+  ],
+  "glossario": [
+    {
+      "termo": "Remuneração de empregados",
+      "definicao": "Salários e vencimentos dos servidores ativos mais as contribuições sociais pagas pelo governo como empregador."
+    },
+    {
+      "termo": "Governo geral",
+      "definicao": "Soma da União, dos estados e dos municípios, sem as empresas estatais não dependentes."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Trimestral, com revisões",
+    "onde_buscar": "https://www.gov.br/tesouronacional/pt-br/estatisticas-fiscais-e-planejamento/estatisticas-fiscais-do-governo-geral",
+    "proxima": "Boletim do 3º trimestre de 2026",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "União",
+    "Estados",
+    "Municípios",
+    "Total das três esferas (ativos)",
+    "Total com aposentados e pensionistas"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "União 2025: R$ 270,0 bi",
+      "valor_na_fonte": "Boletim EFGG 2025 IV, tabela 6: 270.027 milhões",
+      "fonte": "https://cdn.tesouro.gov.br/sistemas-internos/apex/producao/sistemas/thot/arquivos/publicacoes/54232_1694623/Boletim_EFGG_2025_IV.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2010, 262.5, 395.7, 315.3, 973.6, 1339.1],
+    [2011, 264.9, 417.7, 339.7, 1022.2, 1401.7],
+    [2012, 261.1, 445.7, 369.9, 1076.7, 1475.0],
+    [2013, 271.1, 476.8, 395.4, 1143.3, 1559.3],
+    [2014, 275.8, 491.6, 412.4, 1179.7, 1619.7],
+    [2015, 283.8, 492.5, 410.2, 1186.5, 1634.5],
+    [2016, 270.1, 468.5, 408.3, 1147.0, 1599.8],
+    [2017, 282.5, 474.5, 414.9, 1171.9, 1658.6],
+    [2018, 281.4, 475.8, 424.1, 1181.4, 1686.8],
+    [2019, 280.4, 482.3, 439.4, 1202.1, 1731.8],
+    [2020, 276.6, 464.7, 455.2, 1196.5, 1747.3],
+    [2021, 262.3, 460.5, 445.9, 1168.7, 1682.8],
+    [2022, 245.8, 495.5, 482.7, 1224.1, 1742.7],
+    [2023, 255.8, 514.6, 524.3, 1294.6, 1845.6],
+    [2024, 252.9, 532.6, 560.7, 1346.1, 1900.9],
+    [2025, 270.0, 551.7, 588.4, 1410.1, 1980.4]
+  ]
+}
