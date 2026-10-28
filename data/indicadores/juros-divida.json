@@ -1,0 +1,134 @@
+{
+  "id": "juros-divida",
+  "categoria": "economia",
+  "ordem": 10,
+  "visivel": true,
+  "titulo": "Juros da dívida pública",
+  "subtitulo": "Juros nominais do setor público consolidado, em % do PIB, por ano, de 2002 aos 12 meses até agosto de 2026",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Juros (% do PIB)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "Banco Central, SGS 5760 e 4616",
+    "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5760/dados?formato=json"
+  },
+  "fontes": [
+    {
+      "nome": "Banco Central, SGS 5760, Necessidades de financiamento do setor público (NFSP) sem desvalorização cambial, juros nominais, setor público consolidado, % do PIB, acumulado em 12 meses",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5760/dados?formato=json",
+      "o_que_sustenta": "Juros em % do PIB: valor de dezembro de cada ano (o ano fechado) e de agosto de 2026 (12 meses até agosto)."
+    },
+    {
+      "nome": "Banco Central, SGS 4616, NFSP sem desvalorização cambial, juros nominais, setor público consolidado, fluxo mensal em R$ milhões",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4616/dados?formato=json",
+      "o_que_sustenta": "Juros em reais: soma dos 12 meses de cada ano e dos 12 meses de setembro de 2025 a agosto de 2026."
+    },
+    {
+      "nome": "Portal de Dados Abertos do Banco Central, ficha da série 5760",
+      "url": "https://dadosabertos.bcb.gov.br/dataset/5760-nfsp-sem-desvalorizacao-cambial--pib---fluxo-acumulado-em-12-meses---juros-nominais---total---",
+      "o_que_sustenta": "Definição da série de juros nominais acumulados em 12 meses em % do PIB."
+    },
+    {
+      "nome": "Portal de Dados Abertos do Banco Central, ficha da série 4616",
+      "url": "https://dadosabertos.bcb.gov.br/dataset/4616-nfsp-sem-desvalorizacao-cambial---fluxo-mensal-corrente---juros-nominais---total---setor-publi",
+      "o_que_sustenta": "Definição da série mensal de juros nominais em reais."
+    },
+    {
+      "nome": "Câmara dos Deputados, Conof, Raio X da dívida, agosto de 2026",
+      "url": "https://www2.camara.leg.br/orcamento-da-uniao/raio-x-do-orcamento/2026/raio-x-da-divida-agosto-de-2026/view",
+      "o_que_sustenta": "Conferência dos juros de 12 meses até agosto de 2026 (R$ 1.182,2 bilhões, 8,9% do PIB), do critério de competência e da taxa implícita da dívida bruta (13,0% ao ano)."
+    }
+  ],
+  "como_ler": "Cada coluna mostra os juros nominais do setor público consolidado (governo federal, Banco Central, INSS, estados, municípios e estatais) em percentual do Produto Interno Bruto (PIB) no ano. A coluna de 2026 é diferente das outras: soma os 12 meses de setembro de 2025 a agosto de 2026, último dado disponível. A tabela traz também o valor em reais correntes, sem correção pela inflação; para comparar anos distantes, use o percentual do PIB. Os juros são contados por competência, ou seja, entram quando são devidos, tenham sido pagos ou somados ao saldo da dívida, e já descontam os juros que o setor público recebe sobre seus ativos. A série usada exclui o efeito do câmbio sobre a dívida, que o Banco Central registra à parte. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "O indicador mostra quanto custa, a cada ano, carregar a dívida pública. O número sai das estatísticas fiscais do Banco Central, que medem as necessidades de financiamento do setor público e as separam em resultado primário e juros. Em 12 meses até agosto de 2026, os juros somaram R$ 1.182,2 bilhões, ou 8,9% do PIB.",
+    "O custo depende de dois fatores: o tamanho da dívida e a taxa que ela paga. Boa parte da dívida federal é corrigida pela Selic, a taxa básica definida pelo Comitê de Política Monetária (Copom) do Banco Central, e por isso o custo sobe e desce com ela; as operações compromissadas do próprio Banco Central, usadas para controlar a quantidade de reais em circulação, também entram na conta. Entre os anos fechados desde 2002, o maior peso foi em 2003 e em 2015 (8,4% do PIB), e o menor, em 2020 (4,1%), quando a Selic chegou a 2% ao ano; os 12 meses até agosto de 2026, com 8,9%, superam todos os anos fechados da série. A taxa implícita da dívida bruta, que é o custo médio dela, ficou em 13,0% ao ano em agosto de 2026, segundo a Consultoria de Orçamento da Câmara.",
+    "Quem defende juros mais altos argumenta que eles são o instrumento para trazer a inflação à meta e que só cairão de forma duradoura com contas públicas mais equilibradas. Quem critica o patamar atual argumenta que os juros respondem pela maior parte do déficit total do setor público e transferem recursos do Orçamento para os detentores de títulos. Para o cidadão, cada ponto do PIB pago em juros equivale a recursos que poderiam ir para outras áreas ou para reduzir a dívida."
+  ],
+  "glossario": [
+    {
+      "termo": "Juros nominais",
+      "definicao": "Custo da dívida no período, contado por competência: entra quando o juro é devido, tenha sido pago ou incorporado ao saldo."
+    },
+    {
+      "termo": "Taxa Selic",
+      "definicao": "Taxa básica de juros da economia, definida pelo Copom a cada 45 dias e usada para corrigir parte dos títulos públicos."
+    },
+    {
+      "termo": "Operações compromissadas",
+      "definicao": "Vendas de títulos pelo Banco Central com compromisso de recompra, usadas para retirar reais de circulação; os juros pagos nelas entram na conta do setor público."
+    },
+    {
+      "termo": "Necessidades de financiamento do setor público (NFSP)",
+      "definicao": "Quanto o setor público precisa tomar emprestado no período: o resultado primário somado aos juros."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal, no fim do mês seguinte ao de referência (estatísticas fiscais do Banco Central)",
+    "onde_buscar": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5760/dados?formato=json e https://api.bcb.gov.br/dados/serie/bcdata.sgs.4616/dados?formato=json",
+    "proxima": "Fim de novembro de 2026, com o dado de outubro; dezembro de 2026 sai no fim de janeiro de 2027",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Juros (% do PIB)",
+    "Juros (R$ bilhões correntes)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2026 (12 meses até agosto): 8.86% e R$ 1182.2 bi",
+      "valor_na_fonte": "8,9% do PIB e R$ 1.182,2 bilhões em 12 meses",
+      "fonte": "https://www2.camara.leg.br/orcamento-da-uniao/raio-x-do-orcamento/2026/raio-x-da-divida-agosto-de-2026/view",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Agosto de 2026 isolado: R$ 105,9 bi",
+      "valor_na_fonte": "SGS 4616, 08/2026 = 105.933,65 milhões",
+      "fonte": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4616/dados?formato=json",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2024: 8,07% e R$ 950,4 bi",
+      "valor_na_fonte": "SGS 5760, 12/2024 = 8,07; soma do SGS 4616 em 2024 = 950.4 bi",
+      "fonte": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5760/dados?formato=json",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2002, 7.61, 113.3],
+    [2003, 8.42, 144.6],
+    [2004, 6.56, 128.5],
+    [2005, 7.28, 158.1],
+    [2006, 6.72, 161.9],
+    [2007, 5.98, 162.5],
+    [2008, 5.32, 165.5],
+    [2009, 5.13, 171.0],
+    [2010, 5.03, 195.4],
+    [2011, 5.41, 236.7],
+    [2012, 4.44, 213.9],
+    [2013, 4.67, 248.9],
+    [2014, 5.39, 311.4],
+    [2015, 8.37, 501.8],
+    [2016, 6.49, 407.0],
+    [2017, 6.09, 400.8],
+    [2018, 5.41, 379.2],
+    [2019, 4.97, 367.3],
+    [2020, 4.11, 312.4],
+    [2021, 4.98, 448.4],
+    [2022, 5.82, 586.4],
+    [2023, 6.56, 718.3],
+    [2024, 8.07, 950.4],
+    [2025, 7.91, 1007.6],
+    [2026, 8.86, 1182.2]
+  ]
+}

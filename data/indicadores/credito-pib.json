@@ -1,7 +1,7 @@
 {
   "id": "credito-pib",
   "categoria": "economia",
-  "ordem": 9,
+  "ordem": 12,
   "visivel": true,
   "titulo": "Crédito bancário a empresas e a famílias",
   "subtitulo": "Saldo do crédito dos bancos a empresas e a famílias, em % do PIB, de 2010 a agosto de 2026",

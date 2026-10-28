@@ -1,7 +1,7 @@
 {
   "id": "petroleo-brent",
   "categoria": "economia",
-  "ordem": 12,
+  "ordem": 15,
   "visivel": true,
   "titulo": "O preço do petróleo",
   "subtitulo": "Barril de petróleo Brent, média anual em dólares, de 2006 a 2025",

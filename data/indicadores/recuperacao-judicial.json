@@ -1,7 +1,7 @@
 {
   "id": "recuperacao-judicial",
   "categoria": "economia",
-  "ordem": 10,
+  "ordem": 13,
   "visivel": true,
   "titulo": "Pedidos de recuperação judicial",
   "subtitulo": "Pedidos de recuperação judicial por ano, de 2012 a 2024",
