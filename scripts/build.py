@@ -107,10 +107,12 @@ def site_url():
     m = re.search(r'SITE_URL:\s*"([^"]*)"', (ROOT / "config.js").read_text(encoding="utf-8"))
     return (m.group(1) if m else "").rstrip("/")
 
+DV_ATUAL = [""]
+
 def pagina(tpl, *, title, og_title, desc, path, og_image, v, noscript=""):
     base = site_url()
     rep = {"{{TITLE}}": html.escape(title), "{{OG_TITLE}}": html.escape(og_title), "{{DESC}}": html.escape(desc),
-           "{{URL}}": html.escape(base + path), "{{OG_IMAGE}}": html.escape(base + og_image), "{{V}}": v, "{{NOSCRIPT}}": noscript}
+           "{{URL}}": html.escape(base + path), "{{OG_IMAGE}}": html.escape(base + og_image), "{{V}}": v, "{{DV}}": DV_ATUAL[0], "{{NOSCRIPT}}": noscript}
     out = tpl
     for k, val in rep.items(): out = out.replace(k, val)
     if path == "/admin/": out = out.replace('<meta name="description"', '<meta name="robots" content="noindex,nofollow">\n<meta name="description"', 1)
@@ -149,8 +151,27 @@ def build():
     pacote = {"site": site["site"], "categorias": cats, "indicadores": publicos}
     txt = json.dumps(pacote, ensure_ascii=False, separators=(",", ":"))
     escreve("data/indicadores.json", txt)
+    dv = hashlib.sha1(txt.encode()).hexdigest()[:10]
+    # resumo leve para a primeira tela (home, categorias, busca): sem textos longos nem lista completa de fontes
+    def leve(i):
+        r = {k: v for k, v in i.items() if k not in ("contexto", "como_ler", "fontes", "glossario", "atualizacao")}
+        r["fontes"] = [{"url": f.get("url", "")} for f in i.get("fontes", []) if f.get("url")]
+        r["glossario"] = [{"termo": g["termo"]} for g in i.get("glossario", [])]
+        a = i.get("atualizacao") or {}
+        r["atualizacao"] = {k: a[k] for k in ("ultima_conferencia", "periodicidade") if a.get(k)}
+        return r
+    escreve("data/resumo.json", json.dumps({**pacote, "indicadores": [leve(i) for i in publicos]}, ensure_ascii=False, separators=(",", ":")))
+    # conteúdo completo de cada indicador, baixado só na página dele
+    pasta = ROOT / "data" / "i"
+    pasta.mkdir(parents=True, exist_ok=True)
+    ids = {i["id"] for i in publicos}
+    for f in pasta.glob("*.json"):
+        if f.stem not in ids: f.unlink()
+    for i in publicos:
+        escreve(f"data/i/{i['id']}.json", json.dumps(i, ensure_ascii=False, separators=(",", ":")))
     v = hashlib.sha1((txt + "".join((ROOT / "assets" / f).read_text(encoding="utf-8") for f in ["app.js", "charts.js", "admin.js", "store.js", "style.css"])).encode()).hexdigest()[:10]
 
+    DV_ATUAL[0] = dv
     tpl = (ROOT / "scripts" / "template.html").read_text(encoding="utf-8")
     og = lambda iid: f"/og/{iid}.png" if (ROOT / "og" / f"{iid}.png").exists() else "/og/site.png"
     nome = site["site"].get("nome", "Indicadores BR")
@@ -203,6 +224,8 @@ def build():
         sql.append(f"insert into public.categorias (id, nome, descricao, ordem) values ({q(c['id'])}, {q(c['nome'])}, {q(c.get('descricao',''))}, {int(c.get('ordem',0))}) on conflict (id) do update set nome = excluded.nome, descricao = excluded.descricao, ordem = excluded.ordem;")
     for i in publicos:
         sql.append(f"insert into public.indicadores (id, categoria, conteudo) values ({q(i['id'])}, {q(i['categoria'])}, {q(json.dumps(i, ensure_ascii=False))}::jsonb) on conflict (id) do update set conteudo = excluded.conteudo;")
+    # versão da carga: o site compara com a cópia publicada para saber se precisa reler o banco
+    sql.append(f"insert into public.config (chave, valor) values ('versao', jsonb_build_object('dados', {q(dv)}, 'em', now())) on conflict (chave) do update set valor = excluded.valor;")
     sql.append("commit;")
     escreve("supabase/seed.sql", "\n".join(sql) + "\n")
     print(f"ok: {len(publicos)} indicadores, {len(cats)} categorias, versão {v}")

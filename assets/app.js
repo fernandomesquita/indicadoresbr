@@ -562,7 +562,7 @@ async function copiar(btn, url) {
 }
 
 /* ------------------------------------------------------------ roteador */
-async function render() {
+async function render({ silencioso = false } = {}) {
   if (!DATA) return;
   const path = location.pathname.replace(/\/+$/, "") || "/";
   clearCharts();
@@ -572,7 +572,7 @@ async function render() {
   if (path === "/admin") {
     document.body.classList.add("is-admin");
     const { renderAdmin } = await import("./admin.js");
-    renderAdmin(app, DATA, { reload: async () => { DATA = await store.loadData(); setGovernos(DATA.site.governos); } });
+    renderAdmin(app, DATA, { reload: async () => { DATA = prepara(await store.loadData({ banco: true })); setGovernos(DATA.site.governos); } });
     window.scrollTo(0, 0); return;
   }
   document.body.classList.remove("is-admin");
@@ -580,25 +580,33 @@ async function render() {
   const m = path.match(/^\/(categoria|indicador)\/([a-z0-9-]+)$/);
   if (path === "/") view = pageHome();
   else if (m && m[1] === "categoria") view = pageCategoria(m[2]);
-  else if (m && m[1] === "indicador") view = pageIndicador(m[2]);
+  else if (m && m[1] === "indicador") { await store.completo(visiveis().find(i => i.id === m[2]), DATA); if ((location.pathname.replace(/\/+$/, "") || "/") !== path) return; view = pageIndicador(m[2]); }
   else if (path === "/sugira") view = pageSugira();
   else if (path === "/contato") view = pageContato();
   else if (path === "/metodo") view = pageMetodo();
   else view = page404();
   app.replaceChildren(...[view].flat(Infinity).filter(Boolean));
+  if (silencioso) return; // redesenho depois da conferência com o banco: sem rolar a página nem contar visita
   window.scrollTo(0, 0);
   focusMain();
   store.registrar({ tipo: "pagina", caminho: path, indicador_id: m && m[1] === "indicador" && DATA.indicadores.some(i => i.id === m[2]) ? m[2] : null });
 }
 
+function prepara(d) {
+  d.site = d.site || {}; d.categorias = (d.categorias || []).sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
+  return d;
+}
 async function boot() {
-  try { DATA = await store.loadData(); }
+  const conferencia = store.revalidar();
+  try { DATA = prepara(await store.loadData()); }
   catch (e) { app.replaceChildren(h("section", { class: "wrap narrow textpage" }, h("h1", { text: "Não foi possível carregar os indicadores" }), h("p", { class: "lede", text: "Recarregue a página em instantes." }))); return; }
-  DATA.site = DATA.site || {}; DATA.categorias = (DATA.categorias || []).sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
   setGovernos(DATA.site.governos);
   try { await document.fonts.ready; } catch (e) {}
   const yr = $("#ano"); if (yr) yr.textContent = new Date().getFullYear();
   montaBuscaTopo();
   render();
+  // o banco é a referência: se houver edição mais nova que a cópia publicada, troca e redesenha
+  const novo = await conferencia;
+  if (novo && (location.pathname.replace(/\/+$/, "") || "/") !== "/admin") { DATA = prepara(novo); setGovernos(DATA.site.governos); render({ silencioso: true }); }
 }
 boot();

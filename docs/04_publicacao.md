@@ -67,3 +67,12 @@ Para refazer em outro domínio:
 ## 4. Período eleitoral
 
 Publicação orgânica é livre. **Não impulsione páginas ou imagens do portal com verba durante a campanha**: a Lei 9.504/1997, art. 57-C, só permite impulsionamento a candidatos, partidos e coligações. Confirme com assessoria jurídica antes de qualquer impulsionamento.
+
+
+## Carregamento rápido (desde 28/10/2026)
+
+- O build gera `data/resumo.json` (versão leve, sem textos longos) e `data/i/<id>.json` (conteúdo completo de cada indicador).
+- O site desenha a primeira tela com o resumo publicado junto com o deploy e baixa o conteúdo completo só na página do indicador.
+- Em segundo plano, o site lê no banco a linha `versao` da tabela `config` (gravada pelo `seed.sql`) e a data da última edição de indicador. Se a versão for outra ou se o admin tiver editado algo depois da carga, ele baixa tudo do banco e redesenha a página sem recarregar.
+- A biblioteca do Supabase só é carregada no /admin; leituras públicas e registros (reports, sugestões, contatos, estatísticas) usam a API REST direto.
+- Por isso, depois de cada publicação, rode o `seed.sql` no banco: até lá, o site mostra a versão publicada e confere o banco a cada visita.

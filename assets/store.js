@@ -22,38 +22,95 @@ async function sb() {
   return client;
 }
 
-async function loadStatic() {
-  const r = await fetch("/data/indicadores.json", { cache: "no-cache" });
-  if (!r.ok) throw new Error("Falha ao carregar /data/indicadores.json (" + r.status + ")");
+// Versão dos dados publicada junto com o site (meta ibr-dados no HTML, gerada pelo build).
+const DV = (document.querySelector('meta[name="ibr-dados"]') || {}).content || "";
+const REST = hasBackend ? CFG.SUPABASE_URL.replace(/\/+$/, "") + "/rest/v1/" : "";
+const HDR = hasBackend ? { apikey: CFG.SUPABASE_ANON_KEY, Authorization: "Bearer " + CFG.SUPABASE_ANON_KEY } : {};
+async function rest(caminho) {
+  const r = await fetch(REST + caminho, { headers: HDR });
+  if (!r.ok) throw new Error("banco respondeu " + r.status);
+  return r.json();
+}
+
+async function loadStatic(arquivo = "resumo") {
+  const r = await fetch(`/data/${arquivo}.json${DV ? "?v=" + DV : ""}`);
+  if (!r.ok) throw new Error(`Falha ao carregar /data/${arquivo}.json (${r.status})`);
   const d = await r.json();
   d.origem = "arquivo";
   return d;
 }
 
-/** Carrega site, categorias e indicadores publicados. */
-export async function loadData({ admin = false } = {}) {
-  if (hasBackend) {
-    try {
-      const c = await sb();
-      const [cfg, cats, inds] = await Promise.all([
-        c.from("config").select("chave,valor"),
-        c.from("categorias").select("*").order("ordem"),
-        admin ? c.from("indicadores").select("id,conteudo,atualizado_em,atualizado_por").order("ordem")
-              : c.from("indicadores").select("id,conteudo,atualizado_em").eq("visivel", true).order("ordem"),
-      ]);
-      for (const x of [cfg, cats, inds]) if (x.error) throw x.error;
-      if (!inds.data.length && !admin) throw new Error("banco vazio");
-      const site = (cfg.data.find(r => r.chave === "site") || {}).valor || {};
-      return {
-        origem: "banco", site,
-        categorias: cats.data.map(c => ({ id: c.id, nome: c.nome, descricao: c.descricao || "", ordem: c.ordem })),
-        indicadores: inds.data.map(r => ({ ...r.conteudo, id: r.id, _atualizado_em: r.atualizado_em, _atualizado_por: r.atualizado_por })),
-      };
-    } catch (e) {
-      console.warn("[Indicadores BR] banco indisponível, usando a cópia em arquivo:", e.message || e);
-    }
+/** Dados completos direto do banco (admin e revalidação). */
+async function loadBanco({ admin = false } = {}) {
+  if (admin) {
+    const c = await sb();
+    const [cfg, cats, inds] = await Promise.all([
+      c.from("config").select("chave,valor"),
+      c.from("categorias").select("*").order("ordem"),
+      c.from("indicadores").select("id,conteudo,atualizado_em,atualizado_por").order("ordem"),
+    ]);
+    for (const x of [cfg, cats, inds]) if (x.error) throw x.error;
+    return montar(cfg.data, cats.data, inds.data);
   }
-  return loadStatic();
+  const [cfg, cats, inds] = await Promise.all([
+    rest("config?select=chave,valor"),
+    rest("categorias?select=*&order=ordem.asc"),
+    rest("indicadores?select=id,conteudo,atualizado_em&visivel=eq.true&order=ordem.asc"),
+  ]);
+  if (!inds.length) throw new Error("banco vazio");
+  return montar(cfg, cats, inds);
+}
+function montar(cfg, cats, inds) {
+  const site = (cfg.find(r => r.chave === "site") || {}).valor || {};
+  return {
+    origem: "banco", completo: true, site,
+    categorias: cats.map(c => ({ id: c.id, nome: c.nome, descricao: c.descricao || "", ordem: c.ordem })),
+    indicadores: inds.map(r => ({ ...r.conteudo, id: r.id, _atualizado_em: r.atualizado_em, _atualizado_por: r.atualizado_por })),
+  };
+}
+
+/**
+ * Carrega site, categorias e indicadores.
+ * Público: desenha na hora com o resumo publicado junto com o site (/data/resumo.json) e confere o banco depois (revalidar).
+ * Admin (ou banco: true): lê tudo do banco.
+ */
+export async function loadData({ admin = false, banco = false } = {}) {
+  if (hasBackend && (admin || banco)) {
+    try { return await loadBanco({ admin }); }
+    catch (e) { if (admin) throw e; console.warn("[Indicadores BR] banco indisponível, usando a cópia em arquivo:", e.message || e); }
+  }
+  try { return await loadStatic("resumo"); }
+  catch (e) { return loadStatic("indicadores"); }
+}
+
+/**
+ * Confere se o banco tem algo mais novo que a cópia publicada: outra versão de carga
+ * ou indicador editado pelo admin depois da carga. Só então baixa o conteúdo completo.
+ * Devolve os dados novos, ou null quando a cópia publicada está em dia.
+ */
+export async function revalidar() {
+  if (!hasBackend) return null;
+  try {
+    const [cfg, ult] = await Promise.all([
+      rest("config?select=valor&chave=eq.versao"),
+      rest("indicadores?select=atualizado_em&order=atualizado_em.desc&limit=1"),
+    ]);
+    const ver = (cfg[0] || {}).valor || {};
+    const editado = ult[0] && ver.em && new Date(ult[0].atualizado_em) > new Date(ver.em);
+    if (ver.dados === DV && !editado) return null;
+    return await loadBanco();
+  } catch (e) { return null; }
+}
+
+/** Conteúdo completo de um indicador (texto, fontes, glossário), para a página do indicador. */
+const CACHE_COMPLETO = new Map();
+export async function completo(ind, DATA) {
+  if (!ind || DATA.completo || ind._completo) return ind;
+  if (!CACHE_COMPLETO.has(ind.id)) CACHE_COMPLETO.set(ind.id, fetch(`/data/i/${ind.id}.json${DV ? "?v=" + DV : ""}`).then(r => r.ok ? r.json() : null).catch(() => null));
+  const full = await CACHE_COMPLETO.get(ind.id);
+  if (!full) return ind;
+  Object.assign(ind, full, { _completo: true });
+  return ind;
 }
 
 /* ------------------------------------------------------------ envios públicos */
@@ -63,10 +120,10 @@ export const palavras = wc;
 async function inserir(tabela, linha) {
   if (!hasBackend) return { ok: false, motivo: "offline" };
   try {
-    const c = await sb();
-    const { error } = await c.from(tabela).insert(linha);
-    if (error) return { ok: false, motivo: error.code === "23514" ? "validacao" : "erro", detalhe: error.message };
-    return { ok: true };
+    const r = await fetch(REST + tabela, { method: "POST", headers: { ...HDR, "Content-Type": "application/json", Prefer: "return=minimal" }, body: JSON.stringify(linha), keepalive: true });
+    if (r.ok) return { ok: true };
+    let err = {}; try { err = await r.json(); } catch (e) {}
+    return { ok: false, motivo: err.code === "23514" ? "validacao" : "erro", detalhe: err.message || ("HTTP " + r.status) };
   } catch (e) { return { ok: false, motivo: "erro", detalhe: e.message }; }
 }
 export function enviarReport({ indicador_id, ponto, motivo, email, pagina }) {
@@ -154,7 +211,7 @@ export function registrar({ tipo, caminho, indicador_id = null, termo = null, re
   if (!hasBackend || semRastreio()) return;
   const row = { tipo, caminho: String(caminho || "/").slice(0, 200), indicador_id, termo: termo ? String(termo).slice(0, 80) : null, resultados, visitante: visitante(), tela: tela(), origem: origem() };
   origemDaVisita = null;
-  sb().then(c => c && c.from("eventos").insert(row)).catch(() => {});
+  inserir("eventos", row).catch(() => {});
 }
 export async function estatisticas(dias = 30) {
   const c = await sb(); if (!c) throw new Error("Banco não configurado.");
