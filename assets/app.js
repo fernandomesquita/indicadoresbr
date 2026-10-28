@@ -109,7 +109,13 @@ function searchBox({ id = "busca", top = false } = {}) {
     out.replaceChildren(...(hits.length ? hits.map(i => h("li", {}, link("/indicador/" + i.id, {}, h("strong", { text: i.titulo }), h("span", { text: (catDe(i.categoria) || {}).nome || "" })))) :
       [h("li", { class: "none" }, "Nenhum indicador encontrado. ", link("/sugira?texto=" + encodeURIComponent(input.value), {}, "Sugira este dado"))]));
     out.hidden = false;
+    ultimaBusca = { termo: q, resultados: hits.length };
+    clearTimeout(tBusca); tBusca = setTimeout(anotaBusca, 1800);
   };
+  let tBusca = null, ultimaBusca = null, anotada = "";
+  const anotaBusca = () => { clearTimeout(tBusca); if (ultimaBusca && ultimaBusca.termo !== anotada) { anotada = ultimaBusca.termo; store.registrar({ tipo: "busca", caminho: location.pathname, ...ultimaBusca }); } };
+  input.addEventListener("blur", anotaBusca);
+  out.addEventListener("mousedown", anotaBusca);
   input.addEventListener("input", run);
   input.addEventListener("focus", () => { if (input.value.trim().length >= 2) run(); });
   input.addEventListener("keydown", e => { if (e.key === "Enter") { const a = out.querySelector("a"); if (a) { e.preventDefault(); a.click(); } } if (e.key === "Escape") { input.value = ""; run(); input.blur(); } });
@@ -334,6 +340,8 @@ function pageMetodo() {
     P("Indicadores por governo ou por partido usam o mesmo critério para todos, explicado na própria página. Faixas de governo nos gráficos servem para localizar o leitor no tempo e não atribuem causa: preços, empregos e crimes dependem de muitos fatores, inclusive de fora do país, do Congresso, do Banco Central e dos governos estaduais."),
     h("h2", { text: "Correções" }),
     P("Qualquer pessoa pode apontar um erro pelo botão Reportar erro, em cada gráfico e em cada linha das tabelas. Cada aviso é conferido contra a fonte. Quando o erro se confirma, corrigimos e registramos a data da conferência na página do indicador."),
+    h("h2", { text: "Estatísticas de acesso" }),
+    P("Contamos as páginas visitadas, as buscas feitas no portal e os downloads de imagens e tabelas, para saber quais dados interessam mais e quais faltam. A contagem é anônima: não guardamos endereço IP, não usamos cookies e não pedimos nenhum dado pessoal. O navegador recebe um código aleatório, trocado todo mês, que serve só para contar visitantes únicos. Navegadores configurados para não serem rastreados ficam fora da contagem."),
     h("h2", { text: "Uso das imagens" }),
     P("Os gráficos podem ser baixados em PNG e compartilhados livremente, desde que a imagem não seja alterada. A fonte e o nome do portal já vão na própria imagem."),
     h("p", {}, link("/contato", { class: "btn" }, "Fale com a equipe"), " ", link("/sugira", { class: "btn" }, "Sugira dados")))];
@@ -502,6 +510,7 @@ async function openShare(ind) {
     const url = cv.toDataURL("image/png");
     img.src = url; save.href = url; save.setAttribute("download", `indicadores-br_${ind.id}_${share.fk}.png`);
   };
+  save.addEventListener("click", () => store.registrar({ tipo: "png", caminho: location.pathname, indicador_id: ind.id }));
   openModal([closeBtn(), h("div", { class: "share" },
     h("div", { class: "pv" }, img),
     h("div", { class: "side" },
@@ -520,6 +529,7 @@ function baixarCSV(ind) {
   const txt = "﻿" + linhas.join("\n") + `\n\nFonte: ${ind.fonte.nome}${ind.fonte.url ? " (" + ind.fonte.url + ")" : ""}\nPortal: ${siteNome()} ${siteURL()}/indicador/${ind.id}\n`;
   const a = h("a", { href: URL.createObjectURL(new Blob([txt], { type: "text/csv;charset=utf-8" })), download: `indicadores-br_${ind.id}.csv` });
   document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  store.registrar({ tipo: "csv", caminho: location.pathname, indicador_id: ind.id });
 }
 async function copiar(btn, url) {
   const lab = btn.lastChild, old = lab.textContent;
@@ -554,6 +564,7 @@ async function render() {
   app.replaceChildren(...[view].flat(Infinity).filter(Boolean));
   window.scrollTo(0, 0);
   focusMain();
+  store.registrar({ tipo: "pagina", caminho: path, indicador_id: m && m[1] === "indicador" && DATA.indicadores.some(i => i.id === m[2]) ? m[2] : null });
 }
 
 async function boot() {

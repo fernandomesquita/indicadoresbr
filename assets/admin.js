@@ -5,8 +5,8 @@ import * as store from "./store.js";
 
 const TYPES = [["colunas", "Colunas"], ["barras", "Barras horizontais"], ["linha", "Linha"], ["dispersao", "Dispersão"], ["tabela", "Tabela"], ["mapa", "Mapa do Brasil (regiões)"]];
 const STATUS = [["novo", "Novo"], ["em_analise", "Em análise"], ["resolvido", "Resolvido"], ["descartado", "Descartado"]];
-const TABS = [["reports", "Reports de erro"], ["sugestoes", "Sugestões"], ["contatos", "Contatos"], ["dados", "Indicadores"], ["config", "Categorias e site"]];
-let A = { tab: "reports", filtro: "novo", sel: null, data: null, novos: {}, msg: null, dirty: new Set() };
+const TABS = [["reports", "Reports de erro"], ["sugestoes", "Sugestões"], ["contatos", "Contatos"], ["estat", "Estatísticas"], ["dados", "Indicadores"], ["config", "Categorias e site"]];
+let A = { dias: 30, tab: "reports", filtro: "novo", sel: null, data: null, novos: {}, msg: null, dirty: new Set() };
 let root, reloadPublic;
 
 const dt = iso => new Date(iso).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" });
@@ -77,6 +77,7 @@ function draw() {
   root.replaceChildren(h("section", { class: "wrap adm" }, head, tabs, h("div", { id: "admmsg" }), body));
   if (A.msg) msg(A.msg.text, A.msg.err), A.msg = null;
   if (["reports", "sugestoes", "contatos"].includes(A.tab)) inbox(body, A.tab);
+  else if (A.tab === "estat") estatisticas(body);
   else if (A.tab === "dados") dados(body);
   else config(body);
 }
@@ -84,6 +85,45 @@ let leaveArmed = 0;
 function confirmLeave() {
   if (Date.now() - leaveArmed < 5000) { A.dirty.clear(); return true; }
   leaveArmed = Date.now(); msg("Há alterações não salvas neste indicador. Clique de novo em outra aba para sair sem salvar.", true); return false;
+}
+
+/* ------------------------------------------------------------ estatísticas de acesso */
+async function estatisticas(body) {
+  const nf = n => Number(n || 0).toLocaleString("pt-BR");
+  const pct = (a, b) => b ? Math.round(a / b * 100) + "%" : "0%";
+  const per = h("div", { class: "seg", role: "group", "aria-label": "Período" }, [[7, "7 dias"], [30, "30 dias"], [90, "90 dias"], [365, "12 meses"]].map(([d, n]) =>
+    h("button", { type: "button", "aria-pressed": String(A.dias === d), onclick: () => { A.dias = d; draw(); } }, n)));
+  const box = h("div", { class: "stat" }, h("p", { class: "hint", text: "Carregando…" }));
+  body.replaceChildren(h("div", { class: "stathead" }, per, h("p", { class: "hint", text: "Contagem anônima: sem IP, sem cookies; visitante único = código aleatório do navegador, trocado todo mês. Acessos de quem está logado no admin não entram." })), box);
+  let d;
+  try { d = await store.estatisticas(A.dias); }
+  catch (e) { box.replaceChildren(h("p", { class: "msg err", text: "Não foi possível carregar as estatísticas: " + (e.message || e) + ". Se a mensagem fala de função inexistente, rode supabase/estatisticas.sql no SQL Editor." })); return; }
+  const t = d.totais || {};
+  const titulo = id => { const i = A.data.indicadores.find(x => x.id === id); return i ? i.titulo : id; };
+  const lista = (titulo_, itens, rot, val, extra) => {
+    const max = Math.max(1, ...itens.map(val));
+    return h("section", { class: "statbox" }, h("h3", { text: titulo_ }),
+      itens.length ? h("ol", { class: "statlist" }, itens.map(x => h("li", {},
+        h("span", { class: "lab" }, rot(x)), h("span", { class: "bar" }, h("i", { style: `width:${(val(x) / max * 100).toFixed(1)}%` })),
+        h("span", { class: "num", text: nf(val(x)) }), extra ? h("span", { class: "ext", text: extra(x) }) : null))) : h("p", { class: "hint", text: "Nada no período." }));
+  };
+  const kpis = h("dl", { class: "kpis" }, [["Visitas", t.visitas], ["Visitantes únicos", t.visitantes], ["Buscas", t.buscas], ["Buscas sem resultado", t.buscas_sem_resultado], ["Imagens baixadas", t.png], ["Tabelas baixadas", t.csv]].map(([k, v]) =>
+    h("div", {}, h("dt", { text: k }), h("dd", { text: nf(v) }))));
+  const dias = d.por_dia || [];
+  const serie = { id: "estat-dia", titulo: "Visitas por dia", tipo: "colunas", x: "Dia", series: ["Visitas"], colunas: ["Dia", "Visitas", "Visitantes"], casas: 0, prefixo: "", sufixo: "", destaque: [],
+    linhas: dias.map(x => [x.dia.slice(8, 10) + "/" + x.dia.slice(5, 7), x.visitas, x.visitantes]) };
+  const chart = h("div", { class: "chart" });
+  const linkInd = id => h("a", { href: "/indicador/" + id, target: "_blank", rel: "noopener", text: titulo(id) });
+  box.replaceChildren(kpis,
+    h("section", { class: "statbox wide" }, h("h3", { text: "Visitas por dia, desde " + d.desde.split("-").reverse().join("/") }), chart),
+    h("div", { class: "statgrid" },
+      lista("Gráficos mais vistos", d.indicadores || [], x => linkInd(x.id), x => x.visitas, x => (x.png || x.csv) ? `${nf(x.png)} PNG · ${nf(x.csv)} CSV` : ""),
+      lista("Páginas mais vistas", d.paginas || [], x => h("a", { href: x.caminho, target: "_blank", rel: "noopener", text: x.caminho }), x => x.visitas, x => nf(x.visitantes) + " visitantes"),
+      lista("O que mais se buscou", d.buscas || [], x => h("span", { text: x.termo }), x => x.vezes, x => x.resultados === 0 ? "sem resultado" : nf(x.resultados) + " resultados"),
+      lista("Buscas sem resultado (dados que os leitores procuram e o site não tem)", d.sem_resultado || [], x => h("span", { text: x.termo }), x => x.vezes),
+      lista("De onde vêm os leitores", d.origens || [], x => h("span", { text: x.origem }), x => x.visitas, x => pct(x.visitas, t.visitas)),
+      lista("Aparelho", d.telas || [], x => h("span", { text: x.tela }), x => x.visitas, x => pct(x.visitas, t.visitas))));
+  if (dias.length) { const c = makeChart(serie, chart, { still: true }); requestAnimationFrame(() => c.paint()); }
 }
 
 /* ------------------------------------------------------------ caixa de entrada */

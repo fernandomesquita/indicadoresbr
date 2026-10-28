@@ -283,6 +283,24 @@ table.tbl{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeri
 .admtabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
 .badge{background:var(--bad);color:#fff;border-radius:999px;font:600 11px var(--f-mono);padding:1px 7px}
 #admmsg .msg{margin-bottom:12px}
+.stathead{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;margin-bottom:16px}
+.stathead .hint{margin:0;max-width:70ch}
+.kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin:0 0 16px}
+.kpis div{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;display:flex;flex-direction:column-reverse;gap:4px}
+.kpis dd{margin:0;font:700 30px/1 var(--f-disp);font-variant-numeric:tabular-nums}
+.kpis dt{font:500 11px/1.3 var(--f-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.statbox{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;min-width:0}
+.statbox.wide{margin-bottom:16px}
+.statbox h3{font:600 15px/1.3 var(--f-body);margin:0 0 10px}
+.statgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.statlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.statlist li{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(60px,1fr) auto;gap:4px 10px;align-items:center;font-size:14px}
+.statlist .lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.statlist .lab a{color:var(--ink)}
+.statlist .bar{height:8px;background:var(--grid);border-radius:4px;overflow:hidden}.statlist .bar i{display:block;height:100%;background:var(--accent)}
+.statlist .num{font:500 13px var(--f-mono);text-align:right;font-variant-numeric:tabular-nums}
+.statlist .ext{grid-column:1/-1;font-size:12px;color:var(--muted);margin-top:-4px}
+@media (max-width:980px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.statgrid{grid-template-columns:1fr}}
 .inbox{display:flex;flex-direction:column;gap:10px;margin-top:12px}
 .item{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:var(--r);padding:14px 16px;display:flex;flex-direction:column;gap:6px}
 .item.st-resolvido{border-left-color:var(--ok)}.item.st-descartado{border-left-color:var(--line)}.item.st-em_analise{border-left-color:var(--accent)}

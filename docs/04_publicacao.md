@@ -28,6 +28,14 @@ O workflow **Sincronizar banco (Supabase)** (`.github/workflows/sincronizar-banc
 
 Sem os segredos, o workflow avisa e não envia nada; a alternativa continua sendo colar `supabase/seed.sql` no SQL Editor. Para enviar tudo de uma vez, rode o workflow manualmente (aba Actions › Sincronizar banco › Run workflow) com o campo de indicadores vazio. Se alguém editou um indicador no `/admin` depois da última sincronização, o envio para e pede `python3 scripts/sync.py baixar` antes.
 
+## 1c. Carga pelo SQL Editor (enquanto os segredos do GitHub não estiverem cadastrados)
+
+Sem os segredos do workflow de sincronização, o banco é atualizado colando no SQL Editor do Supabase o conteúdo de `supabase/seed.sql` gerado pelo build do commit publicado (ou só as linhas dos indicadores alterados). A carga atualiza site, categorias e indicadores e não apaga reports, sugestões, contatos nem estatísticas. Antes, confira se alguém editou indicadores pelo `/admin` (coluna `atualizado_por` diferente de `postgres`); se sim, rode `python3 scripts/sync.py baixar` antes, para não sobrescrever a edição.
+
+## 1d. Estatísticas de acesso
+
+`supabase/estatisticas.sql` cria a tabela `eventos`, o freio contra abuso e a função `estatisticas(dias)`, lida pela aba Estatísticas do `/admin`. Rode uma vez no SQL Editor (pode rodar de novo sem perder dados). A contagem é anônima: sem IP, sem cookies, com código de visitante aleatório trocado todo mês; navegadores com "não rastrear", robôs e navegadores logados no admin não enviam eventos.
+
 ## 2. Site (Vercel ou Netlify)
 
 **Publicado na Vercel em 12/10/2026:** projeto `indicadoresbr` na conta fernandomesquitas-projects, endereço provisório https://indicadoresbr-seven.vercel.app. Cada push na branch `main` publica de novo.

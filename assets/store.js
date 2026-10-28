@@ -122,3 +122,43 @@ export async function salvarCategorias(cats) {
 }
 export async function excluirCategoria(id) { const c = await sb(); const { error } = await c.from("categorias").delete().eq("id", id); if (error) throw error; }
 export async function salvarSite(site) { const c = await sb(); const { error } = await c.from("config").upsert({ chave: "site", valor: site }); if (error) throw error; }
+
+/* ------------------------------------------------------------ estatísticas de acesso */
+// Anônimas: sem IP, sem cookie, sem dado pessoal. O código de visitante é aleatório e muda todo mês
+// (serve só para contar visitantes únicos). Navegadores com "não rastrear" e robôs não enviam nada.
+const semRastreio = () => { try { return navigator.doNotTrack === "1" || window.doNotTrack === "1" || navigator.globalPrivacyControl === true || navigator.webdriver === true || !!localStorage.getItem("ibr-auth"); } catch (e) { return true; } };
+function visitante() {
+  const mes = new Date().toISOString().slice(0, 7);
+  try {
+    const v = JSON.parse(localStorage.getItem("ibr_v") || "null");
+    if (v && v.m === mes && /^[a-z0-9]{8,24}$/.test(v.id)) return v.id;
+    const id = Array.from(crypto.getRandomValues(new Uint8Array(9)), b => (b % 36).toString(36)).join("") + Date.now().toString(36).slice(-4);
+    localStorage.setItem("ibr_v", JSON.stringify({ m: mes, id }));
+    return id;
+  } catch (e) { return null; }
+}
+const tela = () => { const w = Math.min(screen.width || innerWidth, innerWidth || screen.width); return w < 700 ? "celular" : w < 1100 ? "tablet" : "computador"; };
+let origemDaVisita;
+function origem() {
+  if (origemDaVisita !== undefined) return origemDaVisita;
+  let o = null;
+  try {
+    const q = new URLSearchParams(location.search), utm = q.get("utm_source") || q.get("ref");
+    if (utm) o = utm.toLowerCase().slice(0, 60);
+    else if (document.referrer) { const h = new URL(document.referrer).hostname.replace(/^www\./, ""); if (h && h !== location.hostname.replace(/^www\./, "")) o = h.slice(0, 120); }
+  } catch (e) {}
+  origemDaVisita = o; // a origem vai só no primeiro evento da visita
+  return o;
+}
+export function registrar({ tipo, caminho, indicador_id = null, termo = null, resultados = null }) {
+  if (!hasBackend || semRastreio()) return;
+  const row = { tipo, caminho: String(caminho || "/").slice(0, 200), indicador_id, termo: termo ? String(termo).slice(0, 80) : null, resultados, visitante: visitante(), tela: tela(), origem: origem() };
+  origemDaVisita = null;
+  sb().then(c => c && c.from("eventos").insert(row)).catch(() => {});
+}
+export async function estatisticas(dias = 30) {
+  const c = await sb(); if (!c) throw new Error("Banco não configurado.");
+  const { data, error } = await c.rpc("estatisticas", { dias });
+  if (error) throw error;
+  return data;
+}
