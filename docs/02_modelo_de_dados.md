@@ -42,6 +42,7 @@ Um arquivo por indicador. O nome do arquivo é o `id`.
 | `faixasGoverno` | sim/não | não | Faixas de governo atrás de séries anuais (linha e colunas). |
 | `prefixo`, `sufixo` | texto | não | Unidade nos valores (`"R$ "`, `"%"`, `" mi"`). |
 | `casas` | número | não | Casas decimais nos rótulos do gráfico. |
+| `ultimo` | texto | não | Rótulo do dado mais recente no carrossel "Últimos dados" da página inicial, quando o último ponto é parcial ou o eixo não é de anos (ex.: "agosto de 2026", "12 meses até agosto de 2026", "Lula 3, até setembro de 2026"). Séries anuais completas entram no carrossel sem ele; tabelas e gráficos cujo eixo não é de anos só entram com ele. |
 | `ymin`, `ymax` | número | não | Limites mínimos do eixo vertical no gráfico de linha (por exemplo 0 e 100 para porcentagens), para o eixo não exagerar variações pequenas. |
 | `fonte` | `{nome, url}` | sim | Fonte principal. Vai no rodapé da ficha e na imagem PNG. |
 | `fontes` | lista de `{nome, url, o_que_sustenta}` | sim (mínimo 3) | Todas as fontes usadas no texto, cada uma dizendo o que sustenta. |

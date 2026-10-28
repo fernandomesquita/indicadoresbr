@@ -98,9 +98,9 @@ function sugiraBand() {
 
 /* ------------------------------------------------------------ busca */
 const norm = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-function searchBox() {
-  const out = h("ul", { class: "results", role: "listbox", id: "busca-res", hidden: true });
-  const input = h("input", { type: "search", id: "busca", placeholder: "Ex.: inflação, desemprego, Câmara, polícia", autocomplete: "off", "aria-controls": "busca-res", "aria-describedby": "busca-dica" });
+function searchBox({ id = "busca", top = false } = {}) {
+  const out = h("ul", { class: "results", role: "listbox", id: id + "-res", hidden: true });
+  const input = h("input", { type: "search", id, placeholder: top ? "Buscar indicador: inflação, dívida, concursos" : "Ex.: inflação, desemprego, Câmara, polícia", autocomplete: "off", "aria-controls": id + "-res", "aria-describedby": id + "-dica" });
   const run = () => {
     const q = norm(input.value).trim();
     if (q.length < 2) { out.hidden = true; out.replaceChildren(); return; }
@@ -111,8 +111,107 @@ function searchBox() {
     out.hidden = false;
   };
   input.addEventListener("input", run);
-  input.addEventListener("keydown", e => { if (e.key === "Enter") { const a = out.querySelector("a"); if (a) { e.preventDefault(); a.click(); } } if (e.key === "Escape") { input.value = ""; run(); } });
-  return h("div", { class: "search" }, h("label", { for: "busca", text: "Busque um indicador" }), input, h("p", { id: "busca-dica", class: "sr", text: "Os resultados aparecem abaixo enquanto você digita." }), out);
+  input.addEventListener("focus", () => { if (input.value.trim().length >= 2) run(); });
+  input.addEventListener("keydown", e => { if (e.key === "Enter") { const a = out.querySelector("a"); if (a) { e.preventDefault(); a.click(); } } if (e.key === "Escape") { input.value = ""; run(); input.blur(); } });
+  const box = h("div", { class: "search" + (top ? " top" : "") }, h("label", { for: id, class: top ? "sr" : null, text: "Busque um indicador" }), input, h("p", { id: id + "-dica", class: "sr", text: "Os resultados aparecem abaixo enquanto você digita." }), out);
+  box.fechar = () => { out.hidden = true; };
+  return box;
+}
+// busca fixa no topo: montada uma vez e mantida entre as páginas
+let topBusca = null;
+function montaBuscaTopo() {
+  const slot = $("#topsearch");
+  if (!slot || topBusca) return;
+  topBusca = searchBox({ id: "busca-topo", top: true });
+  slot.replaceChildren(topBusca);
+  document.addEventListener("click", e => { if (!topBusca.contains(e.target)) topBusca.fechar(); });
+  topBusca.addEventListener("click", e => { if (e.target.closest("a[data-nav]")) { topBusca.querySelector("input").value = ""; topBusca.fechar(); } });
+}
+
+/* ------------------------------------------------------------ últimos dados (carrossel da home) */
+const SERIE_TIPOS = ["linha", "colunas"];
+function resumoUltimo(ind) {
+  const cols = ind.colunas || [], rows = ind.linhas || [];
+  if (!rows.length) return null;
+  const anual = k => rows.every(r => Number.isInteger(r[k]) && r[k] >= 1800 && r[k] <= 2100);
+  if (SERIE_TIPOS.includes(ind.tipo)) {
+    const xi = cols.indexOf(ind.x), si = cols.indexOf((ind.series || [])[0]);
+    if (xi < 0 || si < 0) return null;
+    if (!ind.ultimo && !anual(xi)) return null; // eixo de partidos, estados etc.: só entra com rótulo próprio
+    const pts = rows.filter(r => isNum(r[si]));
+    if (!pts.length) return null;
+    const ult = pts[pts.length - 1];
+    return { valor: fmtV(ult[si], ind), legenda: cols[si] + " · " + (ind.ultimo || ult[xi]), serie: pts.map(r => r[si]), forma: ind.tipo };
+  }
+  if (ind.tipo === "tabela" && ind.ultimo) {
+    const bi = cols.indexOf(ind.barra), ult = rows[rows.length - 1];
+    const vi = bi >= 0 ? bi : cols.findIndex((c, k) => k > 0 && isNum(ult[k]));
+    if (vi < 0 || !isNum(ult[vi])) return null;
+    return { valor: fmtV(ult[vi], ind), legenda: cols[vi] + " · " + ind.ultimo, serie: null };
+  }
+  return null;
+}
+function sparkline(vals, forma) {
+  const W = 220, H = 52, p = 4, mn = forma === "colunas" ? Math.min(0, ...vals) : Math.min(...vals), mx = Math.max(...vals), rg = (mx - mn) || 1;
+  const y = v => H - p - ((v - mn) / rg) * (H - 2 * p);
+  const ns = "http://www.w3.org/2000/svg", svg = document.createElementNS(ns, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("class", "spark"); svg.setAttribute("aria-hidden", "true"); svg.setAttribute("preserveAspectRatio", "none");
+  const el = (t, a) => { const e = document.createElementNS(ns, t); for (const k in a) e.setAttribute(k, a[k]); svg.append(e); return e; };
+  if (forma === "colunas") {
+    const bw = (W - p * 2) / vals.length;
+    vals.forEach((v, i) => el("rect", { x: p + i * bw + bw * .15, y: Math.min(y(v), y(0)), width: bw * .7, height: Math.max(1, Math.abs(y(0) - y(v))), class: i === vals.length - 1 ? "last" : "" }));
+  } else {
+    const x = i => p + (vals.length > 1 ? i * (W - 2 * p) / (vals.length - 1) : (W - 2 * p) / 2);
+    el("polyline", { points: vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ") });
+  }
+  return svg;
+}
+function ultimosDados(n = 8) {
+  const ordemHome = new Map(DATA.categorias.map((c, k) => [c.id, k]));
+  const lista = visiveis().map(i => ({ i, r: resumoUltimo(i), d: (i.atualizacao || {}).ultima_conferencia || "" })).filter(x => x.r)
+    .sort((a, b) => b.d.localeCompare(a.d) || (ordemHome.get(a.i.categoria) - ordemHome.get(b.i.categoria)) || ((a.i.ordem || 0) - (b.i.ordem || 0)))
+    .slice(0, n);
+  return lista;
+}
+function carrossel() {
+  const itens = ultimosDados();
+  if (!itens.length) return null;
+  let k = 0, timer = null, parado = reduced;
+  const slides = itens.map(({ i, r, d }, n) => h("article", { class: "slide", role: "group", "aria-roledescription": "slide", "aria-label": `${n + 1} de ${itens.length}`, hidden: n !== 0 },
+    h("p", { class: "eyebrow", text: (catDe(i.categoria) || {}).nome || "" }),
+    h("h3", {}, link("/indicador/" + i.id, {}, i.titulo)),
+    h("p", { class: "big", text: r.valor }),
+    h("p", { class: "leg", text: r.legenda }),
+    r.serie && r.serie.length > 1 ? sparkline(r.serie, r.forma) : null,
+    h("p", { class: "sfoot" }, d ? h("span", { text: "Conferido em " + dataBR(d) }) : h("span"), link("/indicador/" + i.id, { class: "ver" }, "Ver indicador"))));
+  const live = h("div", { class: "slides", "aria-live": "off" }, slides);
+  const dots = h("div", { class: "dots" }, itens.map((x, n) => h("button", { type: "button", "aria-label": `Mostrar ${n + 1}: ${x.i.titulo}`, "aria-current": n === 0 ? "true" : null, onclick: () => { para(); mostra(n); } })));
+  const box = h("section", { class: "carrossel", "aria-roledescription": "carrossel", "aria-label": "Últimos dados" },
+    h("div", { class: "chead" }, h("h2", { text: "Últimos dados" }),
+      h("div", { class: "cnav" },
+        h("button", { type: "button", class: "btn ghost", "aria-label": "Anterior", text: "‹", onclick: () => { para(); mostra(k - 1); } }),
+        h("button", { type: "button", class: "btn ghost", "aria-label": "Próximo", text: "›", onclick: () => { para(); mostra(k + 1); } }))),
+    live, dots);
+  function mostra(n) {
+    k = (n + slides.length) % slides.length;
+    slides.forEach((s, j) => { s.hidden = j !== k; });
+    [...dots.children].forEach((b, j) => b.setAttribute("aria-current", j === k ? "true" : "false"));
+  }
+  function para() { parado = true; live.setAttribute("aria-live", "polite"); clearInterval(timer); timer = null; }
+  function anda() {
+    if (parado || timer) return;
+    timer = setInterval(() => {
+      if (!box.isConnected) { clearInterval(timer); timer = null; return; }
+      if (document.hidden || box.matches(":hover") || box.contains(document.activeElement)) return;
+      mostra(k + 1);
+    }, 6000);
+  }
+  let x0 = null;
+  live.addEventListener("pointerdown", e => { x0 = e.clientX; });
+  live.addEventListener("pointerup", e => { if (x0 == null) return; const dx = e.clientX - x0; x0 = null; if (Math.abs(dx) > 40) { para(); mostra(k + (dx < 0 ? 1 : -1)); } });
+  box.addEventListener("keydown", e => { if (e.key === "ArrowRight") { para(); mostra(k + 1); } if (e.key === "ArrowLeft") { para(); mostra(k - 1); } });
+  anda();
+  return box;
 }
 
 /* ------------------------------------------------------------ páginas */
@@ -127,11 +226,11 @@ function pageHome() {
         h("p", { class: "eyebrow", text: "Dados públicos do Brasil" }),
         h("h1", {}, "Os números que explicam o país, ", h("em", { text: "reunidos num lugar só." })),
         h("p", { class: "lede", text: "Os dados oficiais do Brasil estão espalhados por dezenas de órgãos, em planilhas, relatórios e sistemas que não conversam entre si. Cada um tem seu formato, sua data e sua forma de contar. Juntar tudo isso dá trabalho, e é esse trabalho que o " + siteNome() + " faz: coleta cada número na fonte oficial, confere, organiza em séries comparáveis e mostra em gráficos que dá para entender e compartilhar." }),
-        searchBox()),
-      h("dl", { class: "stats" },
-        h("div", {}, h("dt", { text: "indicadores" }), h("dd", { text: String(total.length) })),
-        h("div", {}, h("dt", { text: "fontes consultadas" }), h("dd", { text: String(fontes.size) })),
-        h("div", {}, h("dt", { text: "categorias" }), h("dd", { text: String(DATA.categorias.length) }))))),
+        h("dl", { class: "stats" },
+          h("div", {}, h("dt", { text: "indicadores" }), h("dd", { text: String(total.length) })),
+          h("div", {}, h("dt", { text: "fontes consultadas" }), h("dd", { text: String(fontes.size) })),
+          h("div", {}, h("dt", { text: "categorias" }), h("dd", { text: String(DATA.categorias.length) })))),
+      carrossel())),
     h("section", { class: "wrap how" },
       h("h2", { text: "Como cada indicador é feito" }),
       h("ol", { class: "steps" },
@@ -337,7 +436,7 @@ function pageContato() {
 
 function page404() {
   setMeta("Página não encontrada");
-  return [h("section", { class: "wrap narrow textpage" }, h("h1", { text: "Página não encontrada" }), h("p", { class: "lede", text: "O endereço pode ter mudado. Busque o indicador abaixo ou volte ao início." }), searchBox(), h("p", {}, link("/", { class: "btn" }, "Voltar ao início")))];
+  return [h("section", { class: "wrap narrow textpage" }, h("h1", { text: "Página não encontrada" }), h("p", { class: "lede", text: "O endereço pode ter mudado. Use a busca no topo da página ou volte ao início." }), h("p", {}, link("/", { class: "btn" }, "Voltar ao início")))];
 }
 
 /* ------------------------------------------------------------ modais */
@@ -435,6 +534,7 @@ async function render() {
   clearCharts();
   closeModal();
   renderNav(path);
+  if (topBusca) topBusca.fechar();
   if (path === "/admin") {
     document.body.classList.add("is-admin");
     const { renderAdmin } = await import("./admin.js");
@@ -463,6 +563,7 @@ async function boot() {
   setGovernos(DATA.site.governos);
   try { await document.fonts.ready; } catch (e) {}
   const yr = $("#ano"); if (yr) yr.textContent = new Date().getFullYear();
+  montaBuscaTopo();
   render();
 }
 boot();
