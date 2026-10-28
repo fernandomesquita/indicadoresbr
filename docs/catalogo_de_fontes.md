@@ -73,6 +73,16 @@ Gerado por `scripts/build.py` em 2026-10-28. Não edite à mão: mude o indicado
 | `efetivo-policial-estados`: Policiais militares e civis por estado | [Ministério da Justiça e Segurança Pública, Pesquisa Perfil das Instituições de Segurança Pública](https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/pesquisaperfil/pisp-ano-base-2024.pdf) | Anual (Pesquisa Perfil) | https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/pesquisaperfil | Pesquisa Perfil ano-base 2025 | 2026-10-28 |
 | `efetivo-policial-serie`: Policiais por 100 mil habitantes | [Ministério da Justiça e Segurança Pública, Pesquisa Perfil, e IBGE, Estadic](https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/pesquisa-perfil) | Anual (Pesquisa Perfil) | https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/pesquisaperfil | Pesquisa Perfil ano-base 2025 | 2026-10-28 |
 
+## Corrupção
+
+| Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |
+|---|---|---|---|---|---|
+| `ipc-brasil`: Índice de Percepção da Corrupção: a nota do Brasil | [Transparency International, Índice de Percepção da Corrupção](https://www.transparency.org/en/cpi/2025) | Anual, publicado em janeiro ou fevereiro | https://www.transparency.org/en/cpi/2025 | Edição 2026, no início de 2027 | 2026-10-28 |
+| `ipc-comparacao`: Percepção da corrupção: o Brasil e outros países | [Transparency International, Índice de Percepção da Corrupção](https://www.transparency.org/en/cpi/2025) | Anual | https://www.transparency.org/en/cpi/2025 | Edição 2026, no início de 2027 | 2026-10-28 |
+| `ipc-paises-2025`: Ranking mundial da percepção da corrupção | [Transparency International, Índice de Percepção da Corrupção 2025](https://www.transparency.org/en/cpi/2025) | Anual | https://www.transparency.org/en/cpi/2025 | Edição 2026, no início de 2027 | 2026-10-28 |
+| `controle-corrupcao-banco-mundial`: Controle da corrupção, pelo Banco Mundial | [Banco Mundial, Indicadores Mundiais de Governança (atualização 2026)](https://www.worldbank.org/en/publication/worldwide-governance-indicators) | Anual, em setembro | https://www.worldbank.org/en/publication/worldwide-governance-indicators | Atualização 2027, com dados de 2026 | 2026-10-28 |
+| `ipc-brasil-1995-2011`: Percepção da corrupção no Brasil, de 1995 a 2011 (método antigo) | [Transparency International, arquivo histórico do Índice de Percepção da Corrupção](https://www.transparency.org/en/cpi/2011) | Série encerrada em 2011 | https://www.transparency.org/en/cpi/2011 | Não se aplica | 2026-10-28 |
+
 ## Saúde
 
 | Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |

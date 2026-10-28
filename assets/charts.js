@@ -420,7 +420,8 @@ export function renderTable(ind, { animate = false, onReport = null } = {}) {
   const thead = h("thead", {}, h("tr", {}, cols.map((c, k) => [h("th", { class: numCol[k] ? "n" : "", scope: "col", text: c }), k === bi ? h("th", { "aria-hidden": "true" }) : null]), onReport ? h("th", { class: "rep", scope: "col" }, h("span", { class: "sr", text: "Reportar" })) : null));
   const nums = [];
   const tbody = h("tbody", {}, rows.map((r, i) => {
-    const tr = h("tr", { style: `--i:${animate ? Math.min(i, 30) : 0}` });
+    const marcado = (ind.destaque || []).length && r.some(v => typeof v === "string" && ind.destaque.includes(v));
+    const tr = h("tr", { class: marcado ? "hl" : null, style: `--i:${animate ? Math.min(i, 30) : 0}` });
     cols.forEach((c, k) => {
       const v = r[k];
       if (numCol[k]) { const sp = h("span", { text: animate && isNum(v) && !reduced ? fmtCell(0, cd[k]) : fmtCell(v, cd[k]) }); if (isNum(v)) nums.push([sp, v, cd[k]]); tr.append(h(k === 0 ? "th" : "td", { class: "n" + (isNum(v) && v < 0 ? " neg" : ""), scope: k === 0 ? "row" : null }, sp)); }

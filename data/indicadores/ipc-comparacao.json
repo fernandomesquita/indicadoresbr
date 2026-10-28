@@ -1,0 +1,103 @@
+{
+  "id": "ipc-comparacao",
+  "categoria": "corrupcao",
+  "ordem": 2,
+  "visivel": true,
+  "titulo": "Percepção da corrupção: o Brasil e outros países",
+  "subtitulo": "Nota no Índice de Percepção da Corrupção, de 0 (muito corrupto) a 100 (muito íntegro), de 2012 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Brasil",
+    "Chile",
+    "Uruguai",
+    "Argentina",
+    "México"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Transparency International, Índice de Percepção da Corrupção",
+    "url": "https://www.transparency.org/en/cpi/2025"
+  },
+  "fontes": [
+    {
+      "nome": "Transparency International, Corruption Perceptions Index 2025",
+      "url": "https://www.transparency.org/en/cpi/2025",
+      "o_que_sustenta": "Página oficial da edição 2025, publicada em 10/02/2026: escala, número de países e média global."
+    },
+    {
+      "nome": "Transparency International, arquivo de dados do IPC 2025 (CPI2025_Results.xlsx)",
+      "url": "https://images.transparencycdn.org/images/CPI2025_Results.xlsx",
+      "o_que_sustenta": "Notas e posições de todos os países de 2012 a 2025 e médias regionais de 2016 a 2025."
+    },
+    {
+      "nome": "Transparency International, nota metodológica e perguntas frequentes do IPC 2025",
+      "url": "https://images.transparencycdn.org/images/CPI-2025-Methodology.zip",
+      "o_que_sustenta": "Como o índice é calculado e a regra de comparação entre anos."
+    },
+    {
+      "nome": "Transparência Internacional Brasil, Índice de Percepção da Corrupção",
+      "url": "https://transparenciainternacional.org.br/ipc/",
+      "o_que_sustenta": "Conferência da nota e da posição do Brasil em 2025 e em anos anteriores."
+    }
+  ],
+  "como_ler": "Cada linha é a nota de um país no Índice de Percepção da Corrupção, da Transparency International. Use os botões acima do gráfico para escolher até 5 países. Diferenças de um ou dois pontos ficam dentro da margem de erro. A comparação entre anos vale a partir de 2012, quando a Transparência Internacional mudou o método; a série de 1995 a 2011, em escala de 0 a 10, está no indicador próprio e não deve ser emendada a esta.",
+  "contexto": [
+    "A comparação mostra o Brasil ao lado de vizinhos da América do Sul, do México, dos Estados Unidos e dos outros países do grupo dos Brics (China, Índia, Rússia e África do Sul).",
+    "Em 2025, Uruguai (73) e Chile (63) tiveram as maiores notas da América do Sul no grupo; o Brasil teve 35, a Argentina 36 e o México 27. Entre os Brics, a China teve 43, a África do Sul 41, a Índia 39 e a Rússia 22.",
+    "As notas dos países mudam devagar, e boa parte das variações anuais fica dentro da margem de erro. Tendências de vários anos dizem mais do que a diferença entre duas edições."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual",
+    "onde_buscar": "https://www.transparency.org/en/cpi/2025",
+    "proxima": "Edição 2026, no início de 2027",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Brasil",
+    "Argentina",
+    "Chile",
+    "Uruguai",
+    "México",
+    "Colômbia",
+    "Estados Unidos",
+    "China",
+    "Índia",
+    "Rússia",
+    "África do Sul"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Notas de 2012 a 2025",
+      "valor_na_fonte": "Abas Historical e Timeseries do arquivo oficial: iguais",
+      "fonte": "https://images.transparencycdn.org/images/CPI2025_Results.xlsx",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2012, 43, 35, 72, 72, 34, 36, 73, 39, 36, 28, 43],
+    [2013, 42, 34, 71, 73, 34, 36, 73, 40, 36, 28, 42],
+    [2014, 43, 34, 73, 73, 35, 37, 74, 36, 38, 27, 44],
+    [2015, 38, 32, 70, 74, 31, 37, 76, 37, 38, 29, 44],
+    [2016, 40, 36, 66, 71, 30, 37, 74, 40, 40, 29, 45],
+    [2017, 37, 39, 67, 70, 29, 37, 75, 41, 40, 29, 43],
+    [2018, 35, 40, 67, 70, 28, 36, 71, 39, 41, 28, 43],
+    [2019, 35, 45, 67, 71, 29, 37, 69, 41, 41, 28, 44],
+    [2020, 38, 42, 67, 71, 31, 39, 67, 42, 40, 30, 44],
+    [2021, 38, 38, 67, 73, 31, 39, 67, 45, 40, 29, 44],
+    [2022, 38, 38, 67, 74, 31, 39, 69, 45, 40, 28, 43],
+    [2023, 36, 37, 66, 73, 31, 40, 69, 42, 39, 26, 41],
+    [2024, 34, 37, 63, 76, 26, 39, 65, 43, 38, 22, 41],
+    [2025, 35, 36, 63, 73, 27, 37, 64, 43, 39, 22, 41]
+  ]
+}
