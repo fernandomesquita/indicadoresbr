@@ -104,6 +104,13 @@
     "onde_buscar": "Atualizar data/aux/governadores_2016_2025.csv e rodar python3 scripts/calculos/educacao_basica_uf.py --indicadores depois das coletas descritas no indicador educacao-basica-por-aluno",
     "ultima_conferencia": "2026-10-12"
   },
+  "colunas": [
+    "Partido",
+    "Estados-ano",
+    "UFs",
+    "Por aluno (R$)",
+    "Na despesa do estado (%)"
+  ],
   "checagem": [
     {
       "valor_no_portal": "Sergipe, 2018: Belivaldo Chagas, PSB",
@@ -124,146 +131,25 @@
       "ok": true
     }
   ],
-  "colunas": [
-    "Partido",
-    "Estados-ano",
-    "UFs",
-    "Por aluno (R$)",
-    "Na despesa do estado (%)"
-  ],
   "linhas": [
-    [
-      "DEM",
-      9,
-      "GO, MT, SP",
-      11510,
-      13.2
-    ],
-    [
-      "MDB",
-      33,
-      "AL, DF, ES, PA, RJ, RO, RS, SC, SE, TO",
-      13237,
-      13.6
-    ],
-    [
-      "NOVO",
-      7,
-      "MG",
-      10331,
-      12.0
-    ],
-    [
-      "PCdoB",
-      5,
-      "MA",
-      11343,
-      14.5
-    ],
-    [
-      "PDT",
-      10,
-      "AM, AP, CE, MT",
-      12523,
-      19.4
-    ],
-    [
-      "PHS",
-      5,
-      "TO",
-      13020,
-      13.4
-    ],
-    [
-      "PL",
-      6,
-      "RJ, SC",
-      15215,
-      11.3
-    ],
-    [
-      "PP",
-      13,
-      "AC, GO, RR",
-      14649,
-      16.9
-    ],
-    [
-      "PROS",
-      1,
-      "PR",
-      10467,
-      15.3
-    ],
-    [
-      "PSB",
-      30,
-      "DF, ES, MA, PB, PE, RO, SE, SP",
-      12515,
-      13.3
-    ],
-    [
-      "PSC",
-      8,
-      "AM, RJ",
-      11610,
-      12.2
-    ],
-    [
-      "PSD",
-      18,
-      "AM, PR, RN, SC, SE",
-      12348,
-      14.4
-    ],
-    [
-      "PSDB",
-      26,
-      "GO, MS, PA, PE, PR, RS, SP",
-      14863,
-      12.9
-    ],
-    [
-      "PSL",
-      12,
-      "RO, RR, SC",
-      11696,
-      16.0
-    ],
-    [
-      "PT",
-      37,
-      "AC, BA, CE, MG, PI, RN",
-      12601,
-      12.5
-    ],
-    [
-      "PTB",
-      1,
-      "RS",
-      14898,
-      12.0
-    ],
-    [
-      "Republicanos",
-      7,
-      "MA, SP, TO",
-      15266,
-      12.8
-    ],
-    [
-      "Solidariedade",
-      3,
-      "AP",
-      18308,
-      19.5
-    ],
-    [
-      "União",
-      12,
-      "AM, GO, MT, RO",
-      14991,
-      15.1
-    ]
+    ["DEM", 9, "GO, MT, SP", 11510, 13.2],
+    ["MDB", 33, "AL, DF, ES, PA, RJ, RO, RS, SC, SE, TO", 13237, 13.6],
+    ["NOVO", 7, "MG", 10331, 12.0],
+    ["PCdoB", 5, "MA", 11343, 14.5],
+    ["PDT", 10, "AM, AP, CE, MT", 12523, 19.4],
+    ["PHS", 5, "TO", 13020, 13.4],
+    ["PL", 6, "RJ, SC", 15215, 11.3],
+    ["PP", 13, "AC, GO, RR", 14649, 16.9],
+    ["PROS", 1, "PR", 10467, 15.3],
+    ["PSB", 30, "DF, ES, MA, PB, PE, RO, SE, SP", 12515, 13.3],
+    ["PSC", 8, "AM, RJ", 11610, 12.2],
+    ["PSD", 18, "AM, PR, RN, SC, SE", 12348, 14.4],
+    ["PSDB", 26, "GO, MS, PA, PE, PR, RS, SP", 14863, 12.9],
+    ["PSL", 12, "RO, RR, SC", 11696, 16.0],
+    ["PT", 37, "AC, BA, CE, MG, PI, RN", 12601, 12.5],
+    ["PTB", 1, "RS", 14898, 12.0],
+    ["Republicanos", 7, "MA, SP, TO", 15266, 12.8],
+    ["Solidariedade", 3, "AP", 18308, 19.5],
+    ["União", 12, "AM, GO, MT, RO", 14991, 15.1]
   ]
 }

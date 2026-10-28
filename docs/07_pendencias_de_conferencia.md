@@ -7,8 +7,7 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 | Indicador | O que falta | Efeito se mudar |
 |---|---|---|
 | `quadro-servidores` | Estoque de dezembro de 2010 e de dezembro de 2022 no Painel Estatístico de Pessoal (o painel é interativo e não abriu). Hoje Dilma começa em dezembro de 2011 e dez/2022 é cálculo (571.873 de dez/2023 menos 6.874). | Dilma passaria a cobrir dez/2010 a dez/2015; Bolsonaro e Lula 3 podem mudar alguns décimos. |
-| `quadro-servidores`, `ingressos-concurso` | Estoques e ingressos de 2011 a 2022 vêm da Folha Dirigida, que consultou o Painel em outubro de 2022. O Painel revisa a série a cada consulta. | Variações de até 0,3 ponto. |
-| `ingressos-concurso` | Ano de 2022 fechado (hoje vai até setembro). | Média de Bolsonaro. |
+| `quadro-servidores` | Estoques de 2011 a 2022 vêm da Folha Dirigida, que consultou o Painel em outubro de 2022. O Painel revisa a série a cada consulta (em `ingressos-concurso`, a consulta de 28/10/2026 já substituiu a de 2022). | Variações de até 0,3 ponto. |
 | `reajuste-ipca` | Publicação do IBGE com o IPC-r de julho a dezembro de 1994 (hoje lido em agregador) e confirmação oficial de que 9% (2025) e 5% (abril de 2026) valeram para as categorias sem acordo próprio. | Só fonte. |
 | `desemprego-anual` | Planilha anual do IBGE para confirmar 2018 (a conta dá 12,1497, no limite entre 12,1 e 12,2). | Um décimo em 2018. |
 | `partidos-servidor` | Contagem completa por partido na Previdência de 2003 e na Emenda 11 do PLP 39/2020 (a API devolve a lista truncada). PV em 2003 e 2019 e PSDB em 2003 estão fora da conta por isso. Vetos de 2015 e 2020 vêm do Congresso em Foco; buscar o painel da sessão conjunta no portal do Congresso. | Denominador de PV e PSDB. |
