@@ -4,5 +4,5 @@
 window.IBR_CONFIG = {
   SUPABASE_URL: "https://sfroiqakkcphhnsqibsh.supabase.co",
   SUPABASE_ANON_KEY: "sb_publishable_eABa885HK9luU_ZjAsZqlA_c_rxR-Vo", // chave pública (publishable): Project Settings > API Keys
-  SITE_URL: "https://indicadoresbr-seven.vercel.app",           // endereço público, ex.: "https://indicadoresbr.com.br" (usado em links e imagens)
+  SITE_URL: "https://indicadoresbr.com.br",           // endereço público, ex.: "https://indicadoresbr.com.br" (usado em links e imagens)
 };

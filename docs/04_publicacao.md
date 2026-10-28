@@ -47,6 +47,10 @@ Cada commit na branch principal publica de novo automaticamente.
 
 ## 3. Domínio
 
+**Feito em 28/10/2026:** `indicadoresbr.com.br` é o domínio principal na Vercel, e `www.indicadoresbr.com.br` redireciona para ele (308). A zona fica no DNS do Registro.br, em modo avançado, com dois registros: `A @ 216.150.1.1` e `CNAME www fb47cee1bc05f695.vercel-dns-016.com`. `SITE_URL` em `config.js` aponta para `https://indicadoresbr.com.br`. O endereço `indicadoresbr-seven.vercel.app` continua funcionando.
+
+Para refazer em outro domínio:
+
 1. Aponte o domínio no painel da Vercel ou da Netlify (Settings › Domains).
 2. Preencha `SITE_URL` em `config.js` com o endereço final (ex.: `https://indicadoresbr.com.br`).
 3. Rode `python3 scripts/build.py` (atualiza links canônicos, sitemap e prévias de link) e faça o commit.
