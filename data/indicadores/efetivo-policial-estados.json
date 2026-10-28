@@ -1,0 +1,119 @@
+{
+  "id": "efetivo-policial-estados",
+  "categoria": "seguranca-publica",
+  "ordem": 17,
+  "visivel": true,
+  "titulo": "Policiais militares e civis por estado",
+  "subtitulo": "Efetivo ativo da Polícia Militar e da Polícia Civil em 31 de dezembro de 2024, e policiais por 100 mil habitantes",
+  "tipo": "tabela",
+  "x": "Estado",
+  "series": [],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "Policiais por 100 mil habitantes",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "ultimo": "Dezembro de 2024",
+  "fonte": {
+    "nome": "Ministério da Justiça e Segurança Pública, Pesquisa Perfil das Instituições de Segurança Pública",
+    "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/pesquisaperfil/pisp-ano-base-2024.pdf"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Justiça e Segurança Pública, Pesquisa Perfil das Instituições de Segurança Pública, ano-base 2024",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/pesquisaperfil/pisp-ano-base-2024.pdf",
+      "o_que_sustenta": "Efetivo ativo da PM e da Polícia Civil por estado em 2023 e 2024."
+    },
+    {
+      "nome": "Ministério da Justiça e Segurança Pública, relatórios da Pesquisa Perfil, anos-base 2011 a 2018",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/pesquisa-perfil",
+      "o_que_sustenta": "Efetivo por estado de 2011 a 2018."
+    },
+    {
+      "nome": "IBGE, Pesquisa de Informações Básicas Estaduais (Estadic)",
+      "url": "https://ftp.ibge.gov.br/Perfil_Estados/",
+      "o_que_sustenta": "Efetivo por estado em 2022 e conferência de 2013 e 2018."
+    },
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, Raio-X das Forças de Segurança Pública 2026",
+      "url": "https://forumseguranca.org.br/publicacoes/raio-x-das-forcas-de-seguranca-publica-do-brasil-2026/",
+      "o_que_sustenta": "Conferência e dado de março de 2025, citado no contexto."
+    },
+    {
+      "nome": "IBGE, Projeções da População, revisão 2024",
+      "url": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab2_grupo_quinquenal.xlsx",
+      "o_que_sustenta": "População total e feminina por estado, denominador das taxas."
+    }
+  ],
+  "como_ler": "Cada linha é um estado, com o número de policiais militares e civis na ativa em 31 de dezembro de 2024 e a soma por 100 mil habitantes; a tabela está ordenada pela taxa. Não entram bombeiros (menos em São Paulo, em que a PM os inclui), peritos de órgão separado, policiais penais, guardas municipais nem policiais da reserva. Os números vêm da Pesquisa Perfil das Instituições de Segurança Pública, respondida pelas próprias corporações ao Ministério da Justiça. As polícias do Distrito Federal são mantidas pela União. A série desde 2011 está no indicador Policiais por 100 mil habitantes.",
+  "contexto": [
+    "A Constituição atribui aos estados a Polícia Militar, responsável pelo policiamento ostensivo, e a Polícia Civil, responsável pela investigação (artigo 144). O efetivo de cada uma depende de concursos autorizados pelos governos estaduais e das leis que fixam o número de cargos.",
+    "Em dezembro de 2024, o país tinha 403.945 policiais militares e 102.989 policiais civis na ativa, 506.934 no total, ou 238,5 por 100 mil habitantes. Amapá tinha a maior taxa (555,5) e Santa Catarina, a menor (157,3). Pelo levantamento do Fórum Brasileiro de Segurança Pública em portais de transparência, eram 413.319 policiais militares e 96.902 civis em março de 2025.",
+    "O número de policiais por habitante é só uma parte da capacidade de uma polícia: escalas de trabalho, policiais cedidos a outros órgãos, tecnologia e gestão mudam o efeito do efetivo. O indicador Mais polícia, menos mortes? compara o efetivo com as mortes violentas em cada estado."
+  ],
+  "glossario": [
+    {
+      "termo": "Efetivo ativo",
+      "definicao": "Policiais em atividade na corporação, sem contar reserva, reformados e pensionistas."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Pesquisa Perfil)",
+    "onde_buscar": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/pesquisaperfil",
+    "proxima": "Pesquisa Perfil ano-base 2025",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Estado",
+    "Policiais militares",
+    "Policiais civis",
+    "Total",
+    "Policiais por 100 mil habitantes"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "PM 2024: 403.945; PC 2024: 102.989",
+      "valor_na_fonte": "Pesquisa Perfil, ano-base 2024: mesmos totais",
+      "fonte": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/pesquisaperfil/pisp-ano-base-2024.pdf",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Perfil x Estadic, 2013 e 2018",
+      "valor_na_fonte": "Diferenças de até 18% na PM e 29% na Polícia Civil entre as duas pesquisas em alguns estados",
+      "fonte": "https://ftp.ibge.gov.br/Perfil_Estados/",
+      "ok": null
+    }
+  ],
+  "linhas": [
+    ["Amapá", 3218, 1242, 4460, 555.5],
+    ["Distrito Federal", 11080, 3623, 14703, 492.9],
+    ["Roraima", 2496, 810, 3306, 461.2],
+    ["Acre", 2385, 1006, 3391, 385.1],
+    ["Rondônia", 4795, 1526, 6321, 362.0],
+    ["Rio Grande do Norte", 9119, 1837, 10956, 317.9],
+    ["Sergipe", 5616, 1447, 7063, 308.3],
+    ["Alagoas", 7678, 2061, 9739, 302.4],
+    ["Rio de Janeiro", 42142, 7032, 49174, 285.6],
+    ["Ceará", 20883, 4174, 25057, 271.4],
+    ["Espírito Santo", 9335, 1751, 11086, 270.2],
+    ["Paraíba", 8934, 2256, 11190, 270.0],
+    ["Mato Grosso", 6993, 3215, 10208, 266.1],
+    ["Tocantins", 3158, 1039, 4197, 266.1],
+    ["Mato Grosso do Sul", 5405, 1967, 7372, 254.0],
+    ["Amazonas", 8578, 1862, 10440, 243.9],
+    ["Piauí", 6587, 1605, 8192, 242.7],
+    ["Bahia", 30172, 5764, 35936, 242.0],
+    ["São Paulo", 80473, 23380, 103853, 225.9],
+    ["Minas Gerais", 37946, 8991, 46937, 220.1],
+    ["Pará", 15130, 3790, 18920, 218.4],
+    ["Goiás", 11802, 3734, 15536, 211.4],
+    ["Pernambuco", 15729, 4368, 20097, 210.7],
+    ["Rio Grande do Sul", 17767, 5608, 23375, 208.2],
+    ["Maranhão", 11039, 1725, 12764, 182.1],
+    ["Paraná", 15956, 4031, 19987, 169.0],
+    ["Santa Catarina", 9529, 3145, 12674, 157.3]
+  ]
+}

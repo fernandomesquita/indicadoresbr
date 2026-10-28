@@ -1,0 +1,122 @@
+{
+  "id": "veiculos-roubos-furtos-estados",
+  "categoria": "seguranca-publica",
+  "ordem": 13,
+  "visivel": true,
+  "titulo": "Roubos e furtos de veículos por estado",
+  "subtitulo": "Roubos mais furtos de veículos registrados pelas polícias, por 100 mil habitantes, de 2015 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Brasil",
+    "Rio de Janeiro",
+    "São Paulo",
+    "Pernambuco",
+    "Amapá"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "escolha": true,
+  "fonte": {
+    "nome": "Ministério da Justiça e Segurança Pública, Sinesp",
+    "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Justiça e Segurança Pública, Sistema Nacional de Informações de Segurança Pública (Sinesp), base de dados do Validador de Dados Estatísticos (VDE), 2015 a 2025",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados",
+      "o_que_sustenta": "Roubos e furtos de veículos por estado e por ano."
+    },
+    {
+      "nome": "IBGE, Projeções da População, revisão 2024",
+      "url": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab2_grupo_quinquenal.xlsx",
+      "o_que_sustenta": "População total e feminina por estado, denominador das taxas."
+    },
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, Anuário Brasileiro de Segurança Pública 2026",
+      "url": "https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/",
+      "o_que_sustenta": "Dados de 2024 e 2025 por estado, com informações das secretarias estaduais de segurança."
+    },
+    {
+      "nome": "Instituto de Segurança Pública do Rio de Janeiro (ISP), dados abertos",
+      "url": "https://www.ispdados.rj.gov.br/",
+      "o_que_sustenta": "Conferência: roubo de veículo no Rio de Janeiro igual nas três fontes em 2023, 2024 e 2025."
+    }
+  ],
+  "como_ler": "Cada linha soma os roubos (com violência ou ameaça) e os furtos (sem violência) de veículos registrados num estado, por 100 mil habitantes. A tabela traz a soma; os números de cada modalidade estão no texto abaixo. Use os botões acima do gráfico para escolher até 5 estados. Os números são registros policiais (boletins de ocorrência): dependem de a vítima registrar o crime e da forma como cada polícia classifica e informa os casos, por isso a comparação entre estados exige cuidado. A fonte é o Sinesp, do Ministério da Justiça, que recebe os registros mensais dos estados pelo mesmo formulário. Alguns estados não enviaram dados em parte dos anos (Acre, Espírito Santo, Goiás, Paraíba e Paraná em 2015; Acre, Espírito Santo, Goiás e Paraná em 2016; Acre e Espírito Santo em 2017; Acre em 2018; Rondônia em 2019 e 2020); nesses anos, a taxa do Brasil considera só os estados com dado. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "O Sistema Nacional de Informações de Segurança Pública (Sinesp), do Ministério da Justiça e Segurança Pública, recebe dos estados, mês a mês, o número de ocorrências de um conjunto padronizado de crimes, entre eles o roubo e o furto de veículos.",
+    "Em 2025 foram registrados 104.539 roubos e 201.925 furtos de veículos no país. Os roubos de veículo caíram mais da metade desde o pico de 2017, com 283.787 registros. Em 2025, Rio de Janeiro teve a maior taxa de roubos e furtos somados (248,1 por 100 mil) e Amapá, a menor (47,6).",
+    "Roubo e furto de veículo têm subnotificação menor do que outros crimes contra o patrimônio, porque o registro policial é exigido pelas seguradoras e para a baixa do veículo. Por isso essa é uma das medidas mais usadas para comparar crimes patrimoniais entre estados."
+  ],
+  "glossario": [
+    {
+      "termo": "Sinesp",
+      "definicao": "Sistema Nacional de Informações de Segurança Pública, do Ministério da Justiça e Segurança Pública."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal (Sinesp)",
+    "onde_buscar": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados",
+    "proxima": "Ano de 2026 completo, no início de 2027",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Brasil",
+    "Acre",
+    "Alagoas",
+    "Amapá",
+    "Amazonas",
+    "Bahia",
+    "Ceará",
+    "Distrito Federal",
+    "Espírito Santo",
+    "Goiás",
+    "Maranhão",
+    "Mato Grosso",
+    "Mato Grosso do Sul",
+    "Minas Gerais",
+    "Paraná",
+    "Paraíba",
+    "Pará",
+    "Pernambuco",
+    "Piauí",
+    "Rio Grande do Norte",
+    "Rio Grande do Sul",
+    "Rio de Janeiro",
+    "Rondônia",
+    "Roraima",
+    "Santa Catarina",
+    "Sergipe",
+    "São Paulo",
+    "Tocantins"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Roubos de veículo 2025: 104.539",
+      "valor_na_fonte": "Anuário 2026 do FBSP: 104.491 (diferença de 0,05%)",
+      "fonte": "https://forumseguranca.org.br/wp-content/uploads/2026/07/anuario-2026.xlsx",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2015, 261.7, "", 121.4, 158.9, 111.4, 138.2, 161.6, 404.2, "", "", 92.3, 215.0, 177.2, 245.7, "", "", 106.9, 161.7, 131.6, 158.5, 348.3, 282.7, 305.9, 170.7, 254.4, 126.8, 428.2, 141.5],
+    [2016, 277.4, "", 148.1, 133.7, 159.9, 144.0, 169.2, 449.8, "", "", 117.4, 194.4, 178.9, 277.1, "", 111.3, 133.4, 239.9, 169.1, 219.8, 334.4, 343.0, 325.1, 184.2, 255.8, 179.7, 424.2, 162.8],
+    [2017, 274.1, "", 135.8, 129.1, 200.0, 130.6, 180.7, 373.8, "", 386.2, 110.4, 157.3, 167.3, 254.9, 272.7, 111.3, 166.5, 286.0, 174.1, 247.7, 311.9, 409.8, 250.1, 155.1, 210.1, 173.7, 385.6, 169.7],
+    [2018, 242.5, "", 154.5, 128.0, 140.8, 127.7, 150.4, 323.2, 284.9, 290.0, 102.2, 135.4, 164.2, 197.8, 225.0, 120.6, 135.0, 225.9, 215.6, 237.7, 273.4, 395.9, 249.0, 226.4, 156.2, 131.2, 351.3, 168.6],
+    [2019, 203.6, 452.8, 121.5, 188.5, 112.4, 114.4, 107.7, 295.4, 240.9, 174.6, 85.5, 118.2, 146.0, 162.6, 190.4, 105.8, 93.2, 207.5, 208.4, 205.0, 216.4, 321.9, "", 172.6, 143.2, 123.1, 302.8, 162.6],
+    [2020, 155.1, 209.9, 98.5, 93.6, 95.3, 100.0, 140.9, 222.7, 227.5, 113.6, 58.9, 88.1, 118.9, 129.0, 143.2, 112.8, 67.0, 152.8, 185.1, 215.3, 154.2, 222.5, "", 206.7, 119.2, 126.2, 214.4, 134.7],
+    [2021, 159.4, 184.3, 98.2, 107.3, 102.1, 109.0, 129.9, 196.6, 210.9, 97.0, 119.5, 107.4, 120.2, 112.1, 135.1, 123.0, 68.0, 149.3, 192.0, 158.4, 123.4, 225.1, 236.8, 198.6, 116.9, 111.1, 246.9, 110.1],
+    [2022, 179.1, 136.0, 117.2, 94.3, 81.8, 133.0, 148.4, 178.4, 195.3, 94.2, 120.2, 87.3, 141.7, 133.4, 147.9, 140.4, 63.9, 188.9, 209.4, 147.3, 119.1, 244.4, 244.4, 148.2, 120.4, 110.6, 302.6, 114.7],
+    [2023, 167.7, 149.4, 107.8, 77.5, 66.3, 131.0, 150.9, 152.3, 165.7, 75.1, 116.9, 87.8, 112.3, 129.8, 132.3, 131.9, 48.2, 214.9, 196.0, 128.4, 108.3, 225.6, 189.0, 141.4, 103.2, 71.5, 287.3, 68.2],
+    [2024, 160.9, 107.8, 98.2, 68.1, 64.4, 121.9, 132.4, 145.5, 143.1, 58.6, 104.0, 73.4, 104.9, 136.5, 111.7, 122.6, 48.1, 199.4, 159.4, 120.0, 79.6, 280.3, 152.0, 123.6, 89.9, 56.8, 273.4, 99.6],
+    [2025, 143.6, 134.7, 84.6, 47.6, 53.7, 112.8, 110.2, 126.8, 121.6, 48.5, 94.2, 60.5, 63.7, 122.2, 89.0, 150.3, 48.9, 197.7, 147.1, 86.7, 72.7, 248.1, 111.6, 107.9, 81.2, 51.2, 243.8, 104.3]
+  ]
+}

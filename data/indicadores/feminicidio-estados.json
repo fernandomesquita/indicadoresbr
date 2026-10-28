@@ -1,0 +1,143 @@
+{
+  "id": "feminicidio-estados",
+  "categoria": "seguranca-publica",
+  "ordem": 15,
+  "visivel": true,
+  "titulo": "Feminicídios por estado",
+  "subtitulo": "Vítimas de feminicídio registradas pelas polícias por 100 mil mulheres, de 2015 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Brasil",
+    "Acre",
+    "Rondônia",
+    "São Paulo",
+    "Bahia"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 2,
+  "escolha": true,
+  "fonte": {
+    "nome": "Fórum Brasileiro de Segurança Pública, Anuário Brasileiro de Segurança Pública",
+    "url": "https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/"
+  },
+  "fontes": [
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, Anuário Brasileiro de Segurança Pública 2026",
+      "url": "https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/",
+      "o_que_sustenta": "Dados de 2024 e 2025 por estado, com informações das secretarias estaduais de segurança."
+    },
+    {
+      "nome": "Anuário Brasileiro de Segurança Pública 2026, planilha de tabelas",
+      "url": "https://forumseguranca.org.br/wp-content/uploads/2026/07/anuario-2026.xlsx",
+      "o_que_sustenta": "Feminicídios e homicídios de mulheres por estado em 2024 e 2025."
+    },
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, repositório de publicações (edições anteriores do Anuário)",
+      "url": "https://publicacoes.forumseguranca.org.br",
+      "o_que_sustenta": "Anos anteriores, sempre pela edição mais recente que publicou cada ano."
+    },
+    {
+      "nome": "IBGE, Projeções da População, revisão 2024",
+      "url": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab2_grupo_quinquenal.xlsx",
+      "o_que_sustenta": "População total e feminina por estado, denominador das taxas."
+    },
+    {
+      "nome": "Ministério da Justiça e Segurança Pública, Sinesp (base de dados do Validador de Dados Estatísticos)",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados",
+      "o_que_sustenta": "Conferência: feminicídios por estado de 2018 a 2025; 160 de 214 pares estado-ano iguais, e 1.578 contra 1.571 no Brasil em 2025."
+    },
+    {
+      "nome": "Lei 13.104/2015 (Lei do Feminicídio)",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13104.htm",
+      "o_que_sustenta": "Criação do feminicídio como qualificadora do homicídio, em março de 2015."
+    },
+    {
+      "nome": "Lei 14.994/2024",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14994.htm",
+      "o_que_sustenta": "Feminicídio como crime autônomo (art. 121-A do Código Penal), com pena de 20 a 40 anos."
+    }
+  ],
+  "como_ler": "Cada linha mostra quantas mulheres foram vítimas de feminicídio num estado para cada 100 mil mulheres que moram lá. Feminicídio é o homicídio de mulher por razões da condição de sexo feminino, como em violência doméstica e familiar ou por menosprezo à condição de mulher. Use os botões acima do gráfico para escolher até 5 estados. A lei que criou o feminicídio é de março de 2015, e os estados demoraram a registrar o crime separadamente: em 2015 faltam 14 estados, em 2016 faltam 4 e em 2017 faltam 2. Por isso a taxa do Brasil só aparece a partir de 2018, quando os 27 estados passaram a informar. O aumento dos primeiros anos mistura mais casos e mais registros corretos: crimes que antes seriam anotados como homicídio comum passaram a ser classificados como feminicídio. Os números são registros policiais (boletins de ocorrência): dependem de a vítima registrar o crime e da forma como cada polícia classifica e informa os casos, por isso a comparação entre estados exige cuidado. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "A Lei 13.104/2015 incluiu o feminicídio no Código Penal como forma qualificada de homicídio, com pena maior, e a Lei 14.994/2024 o transformou em crime autônomo, com pena de 20 a 40 anos de reclusão. O Fórum Brasileiro de Segurança Pública reúne no Anuário os registros das polícias civis de cada estado.",
+    "Em 2018, primeiro ano com todos os estados, foram 1.229 vítimas, taxa de 1,16 por 100 mil mulheres. Em 2025 foram 1.571, taxa de 1,44, o maior número da série. Em 2025, Acre (3,18), Rondônia (2,87) e Mato Grosso (2,74) tiveram as maiores taxas, e Amazonas a menor (0,93).",
+    "Os feminicídios são parte dos homicídios de mulheres: em 2025, as polícias registraram 3.539 homicídios de mulheres, incluindo os feminicídios. A diferença entre estados reflete também quanto cada polícia investiga e enquadra os casos como feminicídio, por isso uma taxa alta pode indicar mais violência ou registro mais rigoroso."
+  ],
+  "glossario": [
+    {
+      "termo": "Feminicídio",
+      "definicao": "Homicídio de mulher por razões da condição de sexo feminino, que envolve violência doméstica e familiar ou menosprezo ou discriminação à condição de mulher (art. 121-A do Código Penal)."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual",
+    "onde_buscar": "https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/",
+    "proxima": "Anuário 2027, com dados de 2026",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Brasil",
+    "Acre",
+    "Alagoas",
+    "Amapá",
+    "Amazonas",
+    "Bahia",
+    "Ceará",
+    "Distrito Federal",
+    "Espírito Santo",
+    "Goiás",
+    "Maranhão",
+    "Mato Grosso",
+    "Mato Grosso do Sul",
+    "Minas Gerais",
+    "Paraná",
+    "Paraíba",
+    "Pará",
+    "Pernambuco",
+    "Piauí",
+    "Rio Grande do Norte",
+    "Rio Grande do Sul",
+    "Rio de Janeiro",
+    "Rondônia",
+    "Roraima",
+    "Santa Catarina",
+    "Sergipe",
+    "São Paulo",
+    "Tocantins"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil 2025: 1.571 vítimas, taxa 1,44",
+      "valor_na_fonte": "Anuário 2026: 1.571 vítimas; as taxas por estado calculadas batem com as publicadas",
+      "fonte": "https://forumseguranca.org.br/wp-content/uploads/2026/07/anuario-2026.xlsx",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Rio de Janeiro 2025: 105",
+      "valor_na_fonte": "ISP-RJ e Sinesp: 105",
+      "fonte": "https://www.ispdados.rj.gov.br/",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2015, "", "", 0.55, "", "", "", "", 0.34, 2.97, 0.78, "", "", 1.2, "", 0.39, 0.2, 0.59, "", 1.57, 1.7, 1.74, "", "", "", 1.32, "", 0.37, ""],
+    [2016, "", 3.36, 2.19, "", 0.51, 0.24, "", 1.36, 1.78, 0.5, "", 2.94, 2.51, 1.28, 0.35, 1.18, 1.08, 2.33, 1.86, 1.58, 1.68, 0.18, 4.45, 1.11, 1.53, "", 0.26, 5.18],
+    [2017, "", 3.09, 2.06, 0.52, 0.81, 0.99, 0.48, 1.21, 2.11, 0.67, 1.46, "", 2.12, 1.42, 0.71, 1.07, 1.19, 1.57, 1.55, 1.34, 1.45, 0.76, "", 1.08, 1.44, 0.52, 0.52, 4.32],
+    [2018, 1.16, 3.3, 1.27, 0.78, 0.2, 1.01, 0.65, 1.87, 1.7, 1.04, 1.29, 2.44, 3.03, 1.48, 1.19, 1.64, 1.59, 1.52, 1.54, 1.62, 2.02, 0.79, 1.07, 1.38, 1.15, 1.39, 0.59, 0.8],
+    [2019, 1.25, 2.57, 2.65, 1.8, 0.59, 1.34, 0.73, 2.12, 1.73, 1.16, 1.45, 2.22, 2.14, 1.35, 1.52, 1.82, 1.12, 1.17, 1.71, 1.21, 1.69, 0.94, 0.83, 1.97, 1.55, 1.81, 0.79, 1.33],
+    [2020, 1.27, 2.79, 2.11, 2.3, 0.78, 1.49, 0.58, 1.12, 1.28, 1.23, 1.84, 3.47, 2.9, 1.41, 1.24, 1.72, 1.59, 1.53, 1.82, 0.74, 1.39, 0.86, 1.64, 2.85, 1.5, 1.2, 0.76, 1.31],
+    [2021, 1.25, 2.77, 1.5, 1.01, 1.11, 1.23, 0.66, 1.63, 1.85, 1.5, 1.64, 2.37, 2.31, 1.44, 1.26, 1.52, 1.58, 1.77, 2.17, 1.14, 1.66, 0.94, 1.87, 1.55, 1.42, 1.71, 0.58, 2.87],
+    [2022, 1.35, 2.07, 1.86, 2.27, 1.01, 1.41, 0.62, 1.43, 1.69, 1.51, 1.95, 2.55, 3.06, 1.62, 1.29, 1.23, 1.27, 1.46, 1.4, 0.91, 1.92, 1.23, 2.67, 0.9, 1.45, 1.61, 0.83, 1.81],
+    [2023, 1.36, 2.29, 1.08, 1.0, 1.09, 1.51, 0.89, 2.0, 1.68, 1.52, 1.41, 2.45, 2.07, 1.72, 1.35, 1.6, 1.33, 1.66, 1.63, 1.36, 1.47, 1.1, 2.43, 1.75, 1.42, 1.35, 0.93, 2.31],
+    [2024, 1.38, 1.82, 1.32, 0.5, 1.36, 1.44, 0.86, 1.41, 1.96, 1.5, 1.94, 2.47, 2.39, 1.56, 1.8, 1.22, 1.21, 1.57, 2.32, 1.07, 1.26, 1.18, 1.73, 1.98, 1.25, 0.84, 1.07, 1.66],
+    [2025, 1.44, 3.18, 1.8, 2.23, 0.93, 1.33, 0.99, 1.85, 1.66, 1.57, 1.43, 2.74, 2.64, 1.62, 1.43, 1.68, 1.5, 1.77, 2.14, 1.07, 1.38, 1.16, 2.87, 1.65, 1.28, 1.26, 1.14, 2.54]
+  ]
+}

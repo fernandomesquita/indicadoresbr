@@ -18,6 +18,10 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 | `ocupacoes-servico-publico` | RAIS por ocupação depois de 2018 (o Atlas do Ipea só abre até 2018; PDET, FTP e dados abertos do MTE não responderam ao shell em 28/10/2026). | Ano de referência. |
 | `carteira-assinada` | Série da RAIS desde 1985 (vínculos celetistas), bloqueada pelo mesmo motivo; os números de 2023 a 2025 do slide do MTE ainda precisam ser conferidos no documento. | Só complemento. |
 | `servidores-federais`, `quadro-servidores` | Valores do Painel Estatístico de Pessoal lidos na tela em 28/10/2026 (filtros: Ativo, sem GDF). O painel revisa a série: reconferir em janeiro de 2027 com dezembro de 2026. | Décimos nas variações. |
+| `homicidios-estados`, `violencia-regioes`, `mortes-arma-fogo-estados`, `homicidios-bebes-estados` | Refazer 2024 com o microdado final do SIM quando o OpenDataSUS substituir o arquivo de 2024 (o atual é uma extração antiga; usamos o TabNet). Em armas de fogo, a intervenção legal de 2024 (Y35.0) foi derivada do Atlas 2026 menos o TabNet. | Décimos em 2024. |
+| `renda-servidor-esfera` | Mês de referência exato do INPC usado pelo Ipea; se o Ipea publicar 2022 em diante por esfera, estender. | Nível em reais de 2025, não a trajetória. |
+| `armas-legais-estados` | Distrito Federal oscila na fonte (68.700 em 2022, contra 243.806 em 2021): pedir confirmação ao FBSP ou à Polícia Federal. Possível quebra de método entre 2022 e 2023. | Valor do DF e salto de 2023. |
+| `efetivo-policial-serie` | Relatórios da Pesquisa Perfil de 2019 a 2022 não estão no site do MJSP; se publicados, preencher o intervalo. | Lacuna de 2019 a 2021. |
 | `populacao-brasil` | Nota da tabela 1286 do Sidra (atrás de desafio do Cloudflare) para explicar por que ela difere da população residente de 1960 a 2000. O gráfico usa a residente. | Nenhum, só registro. |
 
 ## Decisões de método já tomadas (12/10/2026)

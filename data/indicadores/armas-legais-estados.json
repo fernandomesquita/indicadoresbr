@@ -1,0 +1,140 @@
+{
+  "id": "armas-legais-estados",
+  "categoria": "seguranca-publica",
+  "ordem": 16,
+  "visivel": true,
+  "titulo": "Armas legais por estado",
+  "subtitulo": "Registros de armas de fogo ativos no Sinarm, da Polícia Federal, por 100 mil habitantes, de 2017 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Brasil",
+    "Rio Grande do Sul",
+    "São Paulo",
+    "Bahia",
+    "Goiás"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Polícia Federal (Sinarm), via Anuário Brasileiro de Segurança Pública",
+    "url": "https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/"
+  },
+  "fontes": [
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, Anuário Brasileiro de Segurança Pública 2026, tabela de registros de armas ativos no Sinarm",
+      "url": "https://forumseguranca.org.br/wp-content/uploads/2026/07/anuario-2026.xlsx",
+      "o_que_sustenta": "Registros ativos por estado, de 2017 a 2025, com dados da Polícia Federal."
+    },
+    {
+      "nome": "Polícia Federal, dados abertos do Sinarm",
+      "url": "https://www.gov.br/pf/pt-br/assuntos/armas/dados-abertos",
+      "o_que_sustenta": "Conferência: registros ativos de pessoas físicas por estado em 2025 iguais aos do Anuário (1.319.619)."
+    },
+    {
+      "nome": "Anuários Brasileiros de Segurança Pública 2019 e 2025, tabelas de armas de colecionadores, atiradores e caçadores no Sigma (Exército)",
+      "url": "https://publicacoes.forumseguranca.org.br",
+      "o_que_sustenta": "Armas de CACs por estado em agosto de 2019 e março de 2025, citadas no contexto."
+    },
+    {
+      "nome": "IBGE, Projeções da População, revisão 2024",
+      "url": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab2_grupo_quinquenal.xlsx",
+      "o_que_sustenta": "População total e feminina por estado, denominador das taxas."
+    },
+    {
+      "nome": "Lei 10.826/2003 (Estatuto do Desarmamento)",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.826.htm",
+      "o_que_sustenta": "Regras de registro, posse e porte."
+    },
+    {
+      "nome": "Decreto 11.615/2023",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11615.htm",
+      "o_que_sustenta": "Regulamentação de 2023 que restringiu o acesso a armas e previu a transferência dos registros de CACs para a Polícia Federal."
+    }
+  ],
+  "como_ler": "Cada linha mostra quantos registros de armas de fogo estavam ativos no Sistema Nacional de Armas (Sinarm), da Polícia Federal, para cada 100 mil habitantes do estado. Entram armas de cidadãos, de servidores com porte por função, de empresas de segurança e de órgãos públicos. Ficam de fora as armas de caçadores, atiradores e colecionadores (CACs), registradas até julho de 2025 no Sistema de Gerenciamento Militar de Armas (Sigma), do Exército, e as armas das Forças Armadas e das polícias militares. Use os botões acima do gráfico para escolher até 5 estados. O dado de 2018 é de dezembro de 2017. A partir de 2023 os números de pessoas físicas passaram a vir dos dados abertos da Polícia Federal, e os de empresas e órgãos públicos, de pedido por Lei de Acesso à Informação; parte do salto de 1,56 milhão em 2022 para 2,09 milhões em 2023 pode vir dessa mudança. O Distrito Federal tem taxa muito acima dos demais porque concentra registros de órgãos federais, e oscila de um ano para outro (68.700 em 2022, contra 243.806 em 2021 e 267.276 em 2023), como publicado na fonte. O total do Brasil é a soma dos estados e deixa de fora cerca de 2 mil registros sem estado informado de 2022 a 2024. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Toda arma de fogo legal no Brasil precisa de registro. As de uso civil ficam no Sinarm, da Polícia Federal; as de caçadores, atiradores desportivos e colecionadores (CACs), de militares e de policiais militares ficavam no Sigma, do Exército, até a transferência dos registros de CACs para a Polícia Federal, em julho de 2025.",
+    "Os registros ativos no Sinarm passaram de 637.972 em 2017 para 2.171.213 em 2025, ou 1.017 por 100 mil habitantes. Fora o Distrito Federal, as maiores taxas em 2025 foram as de Acre (2.652), Rondônia (2.516) e Rio Grande do Sul (2.070); a menor foi a de Ceará (393). No Sigma, as armas em acervos de CACs eram 1.516.236 em março de 2025, contra 225.276 com registro ativo em agosto de 2019, pelos dados do Exército publicados no Anuário; os dois números usam critérios diferentes e não se comparam diretamente.",
+    "O número de armas registradas cresceu depois dos decretos de 2019, que facilitaram a compra e o registro, e as regras voltaram a ser restringidas a partir de 2023. Quem defende o acesso às armas argumenta que ele amplia a legítima defesa; quem o critica argumenta que mais armas em circulação aumentam o risco de mortes e de desvio para o crime."
+  ],
+  "glossario": [
+    {
+      "termo": "Sinarm",
+      "definicao": "Sistema Nacional de Armas, da Polícia Federal, que registra as armas de uso civil."
+    },
+    {
+      "termo": "CAC",
+      "definicao": "Caçador, atirador desportivo ou colecionador, categoria com regras próprias de registro."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Anuário)",
+    "onde_buscar": "https://www.gov.br/pf/pt-br/assuntos/armas/dados-abertos",
+    "proxima": "Anuário 2027, com dados de 2026",
+    "ultima_conferencia": "2026-10-28"
+  },
+  "colunas": [
+    "Ano",
+    "Brasil",
+    "Acre",
+    "Alagoas",
+    "Amapá",
+    "Amazonas",
+    "Bahia",
+    "Ceará",
+    "Distrito Federal",
+    "Espírito Santo",
+    "Goiás",
+    "Maranhão",
+    "Mato Grosso",
+    "Mato Grosso do Sul",
+    "Minas Gerais",
+    "Paraná",
+    "Paraíba",
+    "Pará",
+    "Pernambuco",
+    "Piauí",
+    "Rio Grande do Norte",
+    "Rio Grande do Sul",
+    "Rio de Janeiro",
+    "Rondônia",
+    "Roraima",
+    "Santa Catarina",
+    "Sergipe",
+    "São Paulo",
+    "Tocantins"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil 2025: 2.171.213",
+      "valor_na_fonte": "Anuário 2026: 2.171.213",
+      "fonte": "https://forumseguranca.org.br/wp-content/uploads/2026/07/anuario-2026.xlsx",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Pessoas físicas, 27 estados, 2025: 1.319.619",
+      "valor_na_fonte": "Dados abertos da Polícia Federal: 1.319.619",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/dados-abertos",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2017, 311.0, 1009.0, 267.0, 323.0, 198.0, 148.0, 150.0, 1252.0, 360.0, 411.0, 134.0, 582.0, 443.0, 262.0, 422.0, 171.0, 168.0, 193.0, 164.0, 265.0, 572.0, 195.0, 606.0, 402.0, 686.0, 186.0, 300.0, 314.0],
+    [2018, 313.0, 689.0, 308.0, 329.0, 183.0, 135.0, 163.0, 841.0, 401.0, 438.0, 131.0, 562.0, 458.0, 275.0, 446.0, 192.0, 161.0, 193.0, 196.0, 291.0, 632.0, 203.0, 553.0, 356.0, 630.0, 230.0, 306.0, 360.0],
+    [2019, 508.0, 1368.0, 397.0, 614.0, 240.0, 227.0, 194.0, 7861.0, 536.0, 649.0, 198.0, 766.0, 584.0, 388.0, 548.0, 359.0, 236.0, 252.0, 305.0, 407.0, 860.0, 232.0, 937.0, 562.0, 855.0, 327.0, 341.0, 555.0],
+    [2020, 590.0, 1497.0, 505.0, 700.0, 248.0, 281.0, 237.0, 7971.0, 730.0, 758.0, 244.0, 995.0, 683.0, 521.0, 635.0, 407.0, 306.0, 299.0, 341.0, 474.0, 1056.0, 309.0, 1249.0, 681.0, 1034.0, 383.0, 358.0, 638.0],
+    [2021, 709.0, 1817.0, 567.0, 768.0, 284.0, 328.0, 277.0, 8298.0, 1021.0, 899.0, 317.0, 1429.0, 870.0, 676.0, 776.0, 473.0, 416.0, 363.0, 412.0, 564.0, 1292.0, 389.0, 1724.0, 867.0, 1242.0, 498.0, 426.0, 825.0],
+    [2022, 738.0, 1685.0, 606.0, 627.0, 397.0, 343.0, 319.0, 2327.0, 1281.0, 993.0, 324.0, 1702.0, 869.0, 704.0, 877.0, 472.0, 508.0, 543.0, 415.0, 637.0, 1449.0, 540.0, 1781.0, 1124.0, 1367.0, 731.0, 620.0, 992.0],
+    [2023, 985.0, 2464.0, 780.0, 1008.0, 432.0, 420.0, 360.0, 9007.0, 1602.0, 1286.0, 402.0, 2073.0, 1320.0, 866.0, 1222.0, 623.0, 617.0, 556.0, 553.0, 847.0, 1948.0, 527.0, 2386.0, 1637.0, 1768.0, 665.0, 663.0, 1157.0],
+    [2024, 1013.0, 2632.0, 792.0, 1048.0, 459.0, 429.0, 388.0, 9190.0, 1671.0, 1348.0, 420.0, 2065.0, 1368.0, 882.0, 1229.0, 639.0, 630.0, 561.0, 576.0, 853.0, 2031.0, 538.0, 2421.0, 1640.0, 1772.0, 680.0, 691.0, 1171.0],
+    [2025, 1017.0, 2652.0, 828.0, 1070.0, 469.0, 431.0, 393.0, 9116.0, 1691.0, 1355.0, 421.0, 2050.0, 1398.0, 901.0, 1232.0, 631.0, 632.0, 556.0, 586.0, 846.0, 2070.0, 537.0, 2516.0, 1663.0, 1774.0, 688.0, 681.0, 1171.0]
+  ]
+}
