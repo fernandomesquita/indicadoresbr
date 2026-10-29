@@ -1,0 +1,116 @@
+{
+  "id": "pessoal-pib-estados-2002-2016",
+  "categoria": "politicas-publicas",
+  "ordem": 20,
+  "visivel": true,
+  "titulo": "Gasto dos estados com servidores, de 2002 a 2016 (critério antigo)",
+  "subtitulo": "Despesa com pessoal e encargos dos governos estaduais e do Distrito Federal, em % do PIB, pelo critério antigo do Tesouro, de 2002 a 2016",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Brasil (estados)",
+    "Acre",
+    "Amapá",
+    "Rio de Janeiro",
+    "São Paulo"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "escolha": true,
+  "fonte": {
+    "nome": "Tesouro Nacional, base antiga do Programa de Reestruturação e Ajuste Fiscal (2000 a 2016), e IBGE",
+    "url": "https://thot-arquivos.tesouro.gov.br/publicacao-anexo/4291"
+  },
+  "fontes": [
+    {
+      "nome": "Tesouro Nacional, Anexos I e II do Programa de Reestruturação e Ajuste Fiscal, 2000 a 2016 (arquivos do Boletim de Finanças dos Entes Subnacionais 2017)",
+      "url": "https://thot-arquivos.tesouro.gov.br/publicacao-anexo/4291",
+      "o_que_sustenta": "Despesa com pessoal e encargos por estado, de 2000 a 2016, pelo critério antigo."
+    },
+    {
+      "nome": "Tesouro Nacional, Boletim de Finanças dos Entes Subnacionais 2017",
+      "url": "https://www.tesourotransparente.gov.br/publicacoes/boletim-de-financas-dos-entes-subnacionais/2017/114",
+      "o_que_sustenta": "Explicação do critério antigo de contagem dos inativos."
+    },
+    {
+      "nome": "IBGE, Contas Regionais (Sidra, tabela 5938): PIB a preços correntes por unidade da federação",
+      "url": "https://sidra.ibge.gov.br/tabela/5938",
+      "o_que_sustenta": "PIB de cada estado de 2002 a 2023."
+    }
+  ],
+  "como_ler": "Esta é a série histórica pelo critério que o Tesouro Nacional usava até 2016, e não se compara com a série de 2015 em diante. No critério antigo, a despesa com aposentados e pensionistas contava só o repasse que o Tesouro do estado fazia para cobrir o déficit da previdência estadual, e não o total de benefícios pagos. Por isso, nos anos em que as duas séries existem (2015 e 2016), a antiga fica entre 18% abaixo e 27% acima da nova, conforme o estado. A divisão pelo PIB começa em 2002, primeiro ano da série atual do PIB estadual do IBGE. Use os botões acima do gráfico para escolher até 5 estados. O Distrito Federal aparece abaixo do real: a folha da Polícia Militar e do Corpo de Bombeiros é paga pela União, pelo Fundo Constitucional do Distrito Federal, e não passa pelo orçamento do DF. A partir de 2016, o Tesouro passou a contar o repasse do Fundo Constitucional como despesa com inativos do DF. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "O Tesouro Nacional acompanha as contas dos estados desde os acordos de renegociação das dívidas estaduais do fim dos anos 1990, no Programa de Reestruturação e Ajuste Fiscal, e publicou a série completa desse período em 2017.",
+    "Pelo critério antigo, os estados gastaram 5,43% do PIB com pessoal em 2002 e 5,15% em 2014.",
+    "A mudança de critério de 2015 em diante passou a contar o gasto total com aposentadorias e pensões, o que tornou a série mais completa e comparável entre estados; por isso o site mostra as duas separadas."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Série encerrada em 2016",
+    "onde_buscar": "https://thot-arquivos.tesouro.gov.br/publicacao-anexo/4291",
+    "proxima": "Não se aplica",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Ano",
+    "Brasil (estados)",
+    "Acre",
+    "Alagoas",
+    "Amapá",
+    "Amazonas",
+    "Bahia",
+    "Ceará",
+    "Distrito Federal",
+    "Espírito Santo",
+    "Goiás",
+    "Maranhão",
+    "Mato Grosso",
+    "Mato Grosso do Sul",
+    "Minas Gerais",
+    "Paraná",
+    "Paraíba",
+    "Pará",
+    "Pernambuco",
+    "Piauí",
+    "Rio Grande do Norte",
+    "Rio Grande do Sul",
+    "Rio de Janeiro",
+    "Rondônia",
+    "Roraima",
+    "Santa Catarina",
+    "Sergipe",
+    "São Paulo",
+    "Tocantins"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Sobreposição 2015 e 2016",
+      "valor_na_fonte": "Razão entre a série antiga e a nova de 0,82 a 1,27, conforme o estado",
+      "fonte": "https://thot-arquivos.tesouro.gov.br/publicacao-anexo/4291",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2002, 5.43, 19.02, 8.25, 10.16, 6.24, 5.47, 6.7, 8.49, 5.64, 5.79, 7.77, 6.8, 5.41, 7.03, 4.34, 9.1, 7.25, 6.8, 12.1, 9.2, 5.78, 4.12, 9.94, 12.84, 4.42, 9.31, 4.28, 11.09],
+    [2003, 5.17, 18.64, 8.43, 15.29, 6.12, 5.76, 6.67, 3.36, 5.31, 5.12, 8.15, 5.64, 5.11, 6.65, 4.3, 10.09, 7.37, 6.69, 12.53, 9.26, 5.65, 4.3, 8.95, 14.27, 4.35, 9.33, 4.14, 10.03],
+    [2004, 4.89, 18.98, 8.37, 17.02, 5.88, 5.7, 6.38, 3.27, 4.61, 5.5, 7.23, 5.38, 5.77, 5.75, 4.31, 9.96, 6.69, 6.44, 12.12, 9.27, 5.4, 3.45, 8.82, 12.09, 4.16, 9.48, 4.02, 10.92],
+    [2005, 4.93, 19.4, 8.68, 16.73, 6.15, 5.82, 6.31, 3.87, 4.44, 5.74, 6.9, 6.21, 6.68, 5.67, 4.6, 9.57, 6.62, 6.71, 12.03, 9.19, 5.79, 3.44, 9.25, 12.99, 4.28, 10.36, 3.85, 11.61],
+    [2006, 5.05, 20.02, 8.76, 16.75, 5.83, 6.3, 6.2, 4.46, 4.37, 6.1, 6.66, 7.52, 6.99, 5.49, 4.88, 9.24, 7.09, 6.79, 10.63, 9.39, 5.92, 3.6, 10.04, 12.1, 4.31, 11.42, 3.88, 13.88],
+    [2007, 4.95, 19.37, 9.03, 17.36, 5.96, 6.13, 6.28, 4.5, 4.49, 6.08, 7.28, 6.35, 7.09, 5.62, 4.65, 9.49, 6.93, 6.83, 12.34, 9.41, 5.68, 3.52, 9.62, 13.04, 4.06, 11.44, 3.66, 13.5],
+    [2008, 4.98, 18.65, 9.61, 16.6, 6.39, 6.41, 6.14, 4.9, 4.16, 5.37, 6.9, 5.85, 6.26, 5.92, 4.62, 9.25, 7.18, 7.16, 12.01, 9.49, 5.48, 3.48, 8.83, 14.02, 4.06, 11.43, 3.73, 12.25],
+    [2009, 4.96, 18.4, 9.21, 16.3, 6.8, 6.25, 6.22, 3.96, 4.93, 5.32, 7.34, 6.13, 6.62, 5.76, 4.85, 9.65, 7.62, 7.13, 11.45, 9.91, 5.62, 3.37, 8.94, 13.08, 3.87, 11.12, 3.66, 13.01],
+    [2010, 4.89, 17.48, 8.56, 16.74, 6.11, 6.09, 6.19, 3.94, 4.82, 5.68, 7.47, 6.53, 6.4, 5.61, 4.82, 10.06, 6.42, 6.83, 11.15, 9.63, 5.62, 3.64, 8.37, 13.29, 3.99, 10.68, 3.48, 13.24],
+    [2011, 4.88, 17.83, 8.87, 16.39, 6.16, 6.35, 5.96, 4.46, 4.42, 5.52, 7.2, 6.16, 6.11, 5.71, 5.03, 9.51, 6.2, 6.49, 10.91, 9.54, 5.38, 3.45, 8.73, 14.06, 4.17, 10.89, 3.46, 15.03],
+    [2012, 5.02, 18.44, 8.69, 17.41, 6.74, 6.49, 6.4, 4.53, 4.55, 5.58, 7.0, 5.99, 6.09, 5.83, 5.07, 9.69, 7.0, 6.32, 10.3, 9.7, 5.49, 3.72, 9.25, 15.87, 4.22, 10.58, 3.56, 14.59],
+    [2013, 5.07, 18.34, 8.79, 15.77, 6.48, 6.23, 6.36, 4.68, 5.13, 5.54, 6.92, 5.92, 6.05, 5.68, 5.21, 9.62, 6.8, 6.29, 13.41, 9.64, 5.45, 4.05, 9.5, 14.75, 4.33, 10.17, 3.58, 14.45],
+    [2014, 5.15, 17.78, 9.05, 14.55, 6.97, 6.47, 6.02, 5.01, 5.27, 5.66, 6.82, 6.07, 5.67, 6.03, 5.44, 9.35, 7.38, 6.6, 11.95, 9.73, 5.75, 3.77, 9.25, 14.98, 4.46, 10.86, 3.58, 14.03],
+    [2015, 5.62, 17.79, 8.62, 15.55, 7.31, 6.91, 6.78, 5.31, 5.74, 5.96, 7.71, 6.44, 7.03, 7.45, 5.4, 9.28, 8.05, 6.91, 12.65, 8.99, 6.1, 4.89, 9.23, 16.44, 4.78, 9.96, 3.74, 13.68],
+    [2016, 5.58, 18.71, 8.74, 14.54, 7.17, 6.91, 6.77, 4.65, 6.26, 5.92, 7.52, 6.49, 6.45, 7.34, 5.22, 9.34, 7.99, 6.69, 13.0, 9.63, 6.08, 5.3, 9.17, 16.37, 4.77, 10.83, 3.61, 13.66]
+  ]
+}
