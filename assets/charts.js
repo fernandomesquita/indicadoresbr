@@ -145,15 +145,18 @@ function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   if (!n) return;
   const vals = rows.map(r => isNum(r[yi]) ? r[yi] : 0), back = sob ? rows.map(r => isNum(r[bi]) ? r[bi] : 0) : [];
   const lo = Math.min(0, ...vals, ...back), hi = Math.max(0, ...vals, ...back), sc = nice(lo, hi, 5);
-  const isYearish = rows.every(r => isNum(r[xi]));
+  const isYearish = rows.every(r => isNum(r[xi]) || /^\d{4}\b/.test(String(r[xi]))); // "2026 (até 29/10)" ainda é ano
   const numX = isYearish && ind.faixasGoverno;
   const yw = yLabelWidth(ctx, ind, sc, s);
-  const bandsH = numX ? 20 * s : 0, valH = (sob ? 34 : 20) * s;
+  setFont(ctx, 500, 11.5 * s, F.body);
+  const legSob = sob ? legendRows(ctx, [ind.colunas[bi], ind.colunas[yi]], b.w - yw, 15 * s, 19 * s) : [];
+  const bandsH = numX ? 20 * s : 0, valH = (sob ? 34 + (legSob.length - 1) * 18 : 20) * s;
   const catLabels = rows.map(r => String(r[xi]));
   const bwGuess = (b.w - yw) / n;
   setFont(ctx, 500, 11.5 * s, F.body);
   const twoLines = !isYearish && catLabels.some(l => ctx.measureText(l).width > bwGuess - 4 * s);
-  const botH = (twoLines ? 34 : 20) * s;
+  const sufixo = isYearish && catLabels.some(l => l.length > 4 && !isNum(l));
+  const botH = (twoLines || sufixo ? 34 : 20) * s;
   const plot = { x: b.x + yw, y: b.y + bandsH + valH, w: b.w - yw, h: b.h - bandsH - valH - botH };
   const Y = v => plot.y + plot.h * (1 - (v - sc.lo) / (sc.hi - sc.lo));
   const bw = plot.w / n, gap = Math.max(1 * s, bw * (n > 20 ? .18 : .28));
@@ -169,11 +172,11 @@ function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   if (sob) {
     // legenda das duas séries, acima da área do gráfico
     setFont(ctx, 500, 11.5 * s, F.body); ctx.textBaseline = "middle"; ctx.textAlign = "left";
-    let lx = plot.x; const ly = b.y + bandsH + 9 * s;
-    [[ind.colunas[bi], .3], [ind.colunas[yi], 1]].forEach(([nome, a]) => {
-      ctx.globalAlpha = a; ctx.fillStyle = th.accent; ctx.fillRect(lx, ly - 5 * s, 10 * s, 10 * s); ctx.globalAlpha = 1;
-      ctx.fillStyle = th.ink; ctx.fillText(nome, lx + 15 * s, ly); lx += ctx.measureText(nome).width + 34 * s;
-    });
+    legSob.forEach((linha, r) => linha.forEach(({ nome, j, x, max }) => {
+      const lx = plot.x + x, ly = b.y + bandsH + (9 + r * 18) * s;
+      ctx.globalAlpha = j ? 1 : .3; ctx.fillStyle = th.accent; ctx.fillRect(lx, ly - 5 * s, 10 * s, 10 * s); ctx.globalAlpha = 1;
+      ctx.fillStyle = th.ink; ctx.fillText(fit(ctx, nome, max), lx + 15 * s, ly);
+    }));
     ctx.textBaseline = "alphabetic";
   }
   rows.forEach((r, i) => {
@@ -203,9 +206,10 @@ function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   });
   ctx.fillStyle = th.muted; ctx.textAlign = "center";
   if (isYearish) {
-    const every = xTickEvery(ctx, catLabels, bw, s);
+    const every = xTickEvery(ctx, catLabels.map(l => l.slice(0, 4)), bw, s);
     setFont(ctx, 400, 11.5 * s, F.mono);
-    rows.forEach((r, i) => { if ((n - 1 - i) % every === 0) { const lab = String(r[xi]), lw = ctx.measureText(lab).width; ctx.fillText(lab, Math.max(plot.x + lw / 2, Math.min(b.x + b.w - lw / 2, plot.x + i * bw + bw / 2)), plot.y + plot.h + 16 * s); } });
+    rows.forEach((r, i) => { if ((n - 1 - i) % every === 0) { const full = String(r[xi]), lab = full.slice(0, 4), resto = full.slice(4).trim(), lw = ctx.measureText(lab).width;
+      if (resto) { setFont(ctx, 400, 10.5 * s, F.mono); const rw = ctx.measureText(resto).width; if (rw <= bw * every + 8 * s) ctx.fillText(resto, Math.max(plot.x + rw / 2, Math.min(b.x + b.w - rw / 2, plot.x + i * bw + bw / 2)), plot.y + plot.h + 30 * s); setFont(ctx, 400, 11.5 * s, F.mono); } ctx.fillText(lab, Math.max(plot.x + lw / 2, Math.min(b.x + b.w - lw / 2, plot.x + i * bw + bw / 2)), plot.y + plot.h + 16 * s); } });
   } else {
     setFont(ctx, 500, 11.5 * s, F.body);
     rows.forEach((r, i) => {
@@ -213,6 +217,18 @@ function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
       lines.forEach((l, k) => ctx.fillText(fit(ctx, l, bw - 2 * s), plot.x + i * bw + bw / 2, plot.y + plot.h + (16 + k * 14) * s));
     });
   }
+}
+
+// legenda que quebra em linhas quando não cabe na largura disponível
+function legendRows(ctx, nomes, maxW, sw, gap) {
+  const linhas = [[]]; let x = 0;
+  nomes.forEach((nome, j) => {
+    const w = sw + ctx.measureText(nome).width;
+    if (x > 0 && x + w > maxW) { linhas.push([]); x = 0; }
+    linhas[linhas.length - 1].push({ nome, j, x, max: maxW - x - sw });
+    x += w + gap;
+  });
+  return linhas;
 }
 
 function drawBars(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
@@ -261,7 +277,9 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   if (isNum(ind.ymax)) hi = Math.max(hi, ind.ymax);
   const sc = nice(lo, hi, 5), multi = ys.length > 1;
   const yw = yLabelWidth(ctx, ind, sc, s);
-  const bandsH = ind.faixasGoverno && numX ? 20 * s : 0, legH = multi ? 26 * s : 0;
+  setFont(ctx, 500, 12.5 * s, F.body);
+  const leg = multi ? legendRows(ctx, ys.map(k => ind.colunas[k]), b.w, 20 * s, 20 * s) : [];
+  const bandsH = ind.faixasGoverno && numX ? 20 * s : 0, legH = multi ? (6 + leg.length * 20) * s : 0;
   setFont(ctx, 600, 12 * s, F.mono);
   const lastW = Math.max(...ys.map(k => { const v = [...rows].reverse().find(r => isNum(r[k])); return v ? ctx.measureText(fmtV(v[k], ind)).width : 0; })) + 14 * s;
   const topPad = (multi ? 10 : 24) * s; // espaço para o rótulo do valor máximo não encostar nas faixas
@@ -270,8 +288,12 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   const px = v => plot.x + (v - x0) / (x1 - x0) * plot.w;
   const Y = v => plot.y + plot.h * (1 - (v - sc.lo) / (sc.hi - sc.lo));
   if (multi) {
-    let lx = b.x; setFont(ctx, 500, 12.5 * s, F.body); ctx.textAlign = "left";
-    ys.forEach((k, j) => { ctx.fillStyle = th.series[j % 5]; ctx.fillRect(lx, b.y + 7 * s, 14 * s, 4 * s); ctx.fillStyle = th.ink; ctx.fillText(ind.colunas[k], lx + 20 * s, b.y + 13 * s); lx += ctx.measureText(ind.colunas[k]).width + 40 * s; });
+    setFont(ctx, 500, 12.5 * s, F.body); ctx.textAlign = "left";
+    leg.forEach((linha, r) => linha.forEach(({ nome, j, x, max }) => {
+      const lx = b.x + x, ly = b.y + r * 20 * s;
+      ctx.fillStyle = th.series[j % 5]; ctx.fillRect(lx, ly + 7 * s, 14 * s, 4 * s);
+      ctx.fillStyle = th.ink; ctx.fillText(fit(ctx, nome, max), lx + 20 * s, ly + 13 * s);
+    }));
   }
   if (bandsH) drawBands(ctx, govBands(xs[0], xs[n - 1]), px, plot, th, s, b.y + legH + 13 * s);
   yAxis(ctx, ind, sc, plot, th, s, Y);
