@@ -1,0 +1,106 @@
+{
+  "id": "orcamento-orgaos-2025",
+  "categoria": "orcamento-federal",
+  "ordem": 6,
+  "visivel": true,
+  "titulo": "Quanto cada ministério executou em 2025",
+  "subtitulo": "Despesa executada em 2025 pelos 25 órgãos com maior orçamento, em bilhões de reais",
+  "tipo": "barras",
+  "x": "Órgão",
+  "series": [
+    "Executado (R$ bi)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "R$ ",
+  "sufixo": " bi",
+  "casas": 1,
+  "ultimo": "2025",
+  "fonte": {
+    "nome": "Ministério do Planejamento e Orçamento, SIOP",
+    "url": "https://www1.siop.planejamento.gov.br/"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério do Planejamento e Orçamento, Sistema Integrado de Planejamento e Orçamento (SIOP), dados abertos do orçamento federal (consulta SPARQL)",
+      "url": "https://www1.siop.planejamento.gov.br/sparql/",
+      "o_que_sustenta": "Dotação, empenho, liquidação e pagamento por função, grupo de despesa, resultado primário e órgão, de 2000 a 2026 (2026 atualizado em 29/10/2026)."
+    },
+    {
+      "nome": "SIOP, painel de execução orçamentária",
+      "url": "https://www1.siop.planejamento.gov.br/QvAJAXZfc/opendoc.htm?document=IAS%2FExecucao_Orcamentaria.qvw&host=QVS%40pqlk04&anonymous=true",
+      "o_que_sustenta": "Mesma base, para consulta interativa."
+    },
+    {
+      "nome": "Tesouro Nacional, Siconfi, Relatório Resumido da Execução Orçamentária da União, 6º bimestre de 2025, Anexo 01",
+      "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2025&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2001&co_esfera=U&id_ente=1",
+      "o_que_sustenta": "Conferência: total liquidado de 2025 (R$ 5.154,7 bilhões) e valores por grupo de despesa iguais aos do SIOP."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737: IPCA",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção para reais de 2025."
+    }
+  ],
+  "como_ler": "Cada barra é um órgão orçamentário, em geral um ministério ou um tribunal. Alguns órgãos não são ministérios: Dívida Pública Federal reúne o pagamento de juros e a rolagem da dívida; Transferências a Estados, Distrito Federal e Municípios reúne os fundos de participação e outras transferências obrigatórias; Operações Oficiais de Crédito e Encargos Financeiros da União reúnem financiamentos, subsídios e outras despesas financeiras administradas pelo Ministério da Fazenda. O Ministério da Previdência Social executa as aposentadorias e pensões do INSS. Os números cobrem os orçamentos fiscal e da seguridade social da União (os três Poderes, o Ministério Público e a Defensoria), sem o orçamento de investimento das estatais. Executado é o valor liquidado, isto é, a despesa reconhecida depois da entrega do bem ou serviço; parte do que fica para o ano seguinte é paga como restos a pagar e não aparece no ano de origem. A tabela traz também o valor previsto no fim do ano.",
+  "contexto": [
+    "O orçamento é organizado por órgãos, que respondem pela execução. Os nomes seguem a estrutura do governo em 2025.",
+    "Fora a dívida pública e as transferências, os órgãos com maior execução em 2025 foram o Ministério da Previdência Social, o do Desenvolvimento e Assistência Social, o da Saúde, o da Educação e o da Defesa.",
+    "O tamanho do orçamento de um ministério não mede sua importância nem sua eficiência: a maior parte das despesas dos grandes ministérios é de benefícios e transferências fixados em lei."
+  ],
+  "glossario": [
+    {
+      "termo": "Órgão orçamentário",
+      "definicao": "Unidade do orçamento que agrupa as despesas de um ministério, tribunal ou encargo específico."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária no SIOP; o ano se fecha em janeiro",
+    "onde_buscar": "https://www1.siop.planejamento.gov.br/",
+    "proxima": "2026 completo, em janeiro de 2027",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Órgão",
+    "Executado (R$ bi)",
+    "Previsto (R$ bi)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Total liquidado em 2025: R$ 5.154,7 bilhões",
+      "valor_na_fonte": "RREO da União, 6º bimestre de 2025: R$ 5.154,7 bilhões; pessoal, juros, outras despesas correntes, investimentos, inversões e amortização também iguais",
+      "fonte": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2025&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2001&co_esfera=U&id_ente=1",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Dívida Pública Federal", 2132.4, 2525.8],
+    ["Ministério da Previdência Social", 1047.6, 1051.1],
+    ["Transferências a Estados, Distrito Federal e Municípios", 571.3, 620.9],
+    ["Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome", 294.9, 297.2],
+    ["Ministério da Saúde", 231.5, 254.1],
+    ["Ministério da Educação", 186.2, 206.1],
+    ["Ministério da Defesa", 124.8, 133.4],
+    ["Ministério do Trabalho e Emprego", 116.2, 124.0],
+    ["Operações Oficiais de Crédito", 112.1, 170.4],
+    ["Encargos Financeiros da União", 92.6, 132.9],
+    ["Justiça do Trabalho", 28.8, 30.6],
+    ["Ministério da Justiça e Segurança Pública", 19.9, 23.2],
+    ["Encargos Previdenciários da União", 18.7, 19.1],
+    ["Justiça Federal", 16.9, 17.4],
+    ["Ministério da Fazenda", 13.3, 24.9],
+    ["Ministério dos Transportes", 12.9, 25.2],
+    ["Ministério da Ciência, Tecnologia e Inovação", 11.7, 13.5],
+    ["Ministério das Cidades", 11.0, 14.7],
+    ["Justiça Eleitoral", 10.4, 11.5],
+    ["Ministério da Agricultura e Pecuária", 10.1, 13.1],
+    ["Ministério Público da União", 9.8, 9.9],
+    ["Camara dos Deputados", 7.2, 8.6],
+    ["Senado Federal", 5.9, 6.3],
+    ["Ministério das Relações Exteriores", 5.2, 5.5],
+    ["Ministério da Integração e do Desenvolvimento Regional", 4.9, 11.9]
+  ]
+}

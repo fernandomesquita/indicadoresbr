@@ -54,40 +54,46 @@
       "ordem": 2
     },
     {
+      "id": "orcamento-federal",
+      "nome": "Orçamento federal",
+      "descricao": "Quanto a União prevê e quanto executa, por área, por tipo de despesa e por ministério.",
+      "ordem": 3
+    },
+    {
       "id": "seguranca-publica",
       "nome": "Segurança pública",
       "descricao": "Mortes violentas, efetivo policial e o que os números dizem sobre os estados.",
-      "ordem": 3
+      "ordem": 4
     },
     {
       "id": "corrupcao",
       "nome": "Corrupção",
       "descricao": "Condenações, processos e transparência.",
-      "ordem": 4
+      "ordem": 5
     },
     {
       "id": "saude",
       "nome": "Saúde",
       "descricao": "Atendimento, mortalidade, vacinação e gasto público em saúde.",
-      "ordem": 5
+      "ordem": 6
     },
     {
       "id": "educacao",
       "nome": "Educação",
       "descricao": "Aprendizagem, matrículas, professores e investimento.",
-      "ordem": 6
+      "ordem": 7
     },
     {
       "id": "populacao-trabalho",
       "nome": "População e trabalho",
       "descricao": "Quantos somos, onde vivemos e como trabalhamos.",
-      "ordem": 7
+      "ordem": 8
     },
     {
       "id": "mundo",
       "nome": "Mundo",
       "descricao": "O Brasil comparado aos outros países: economia, desenvolvimento, violência e contas públicas.",
-      "ordem": 8
+      "ordem": 9
     }
   ]
 }

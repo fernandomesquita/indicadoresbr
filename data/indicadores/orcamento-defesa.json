@@ -1,7 +1,7 @@
 {
   "id": "orcamento-defesa",
-  "categoria": "politicas-publicas",
-  "ordem": 16,
+  "categoria": "orcamento-federal",
+  "ordem": 10,
   "visivel": true,
   "titulo": "Orçamento federal de defesa nacional: previsto e executado",
   "subtitulo": "Dotação atualizada e valor liquidado da função Defesa Nacional no orçamento da União, em bilhões de reais de 2025, de 2000 a 2025",

@@ -1,0 +1,107 @@
+{
+  "id": "orcamento-discricionarias",
+  "categoria": "orcamento-federal",
+  "ordem": 2,
+  "visivel": true,
+  "titulo": "Quanto do orçamento o governo pode escolher",
+  "subtitulo": "Despesas discricionárias em % das despesas primárias executadas pela União, de 2000 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Discricionárias (% das primárias)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "Ministério do Planejamento e Orçamento, SIOP",
+    "url": "https://www1.siop.planejamento.gov.br/"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério do Planejamento e Orçamento, Sistema Integrado de Planejamento e Orçamento (SIOP), dados abertos do orçamento federal (consulta SPARQL)",
+      "url": "https://www1.siop.planejamento.gov.br/sparql/",
+      "o_que_sustenta": "Dotação, empenho, liquidação e pagamento por função, grupo de despesa, resultado primário e órgão, de 2000 a 2026 (2026 atualizado em 29/10/2026)."
+    },
+    {
+      "nome": "SIOP, painel de execução orçamentária",
+      "url": "https://www1.siop.planejamento.gov.br/QvAJAXZfc/opendoc.htm?document=IAS%2FExecucao_Orcamentaria.qvw&host=QVS%40pqlk04&anonymous=true",
+      "o_que_sustenta": "Mesma base, para consulta interativa."
+    },
+    {
+      "nome": "Tesouro Nacional, Siconfi, Relatório Resumido da Execução Orçamentária da União, 6º bimestre de 2025, Anexo 01",
+      "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2025&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2001&co_esfera=U&id_ente=1",
+      "o_que_sustenta": "Conferência: total liquidado de 2025 (R$ 5.154,7 bilhões) e valores por grupo de despesa iguais aos do SIOP."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737: IPCA",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção para reais de 2025."
+    }
+  ],
+  "como_ler": "A linha mostra a parte das despesas primárias da União (todas, menos juros e dívida) que é discricionária, isto é, que o governo pode decidir executar ou não. O restante é obrigatório por lei: aposentadorias, benefícios sociais, salários, transferências a estados e municípios e os mínimos de saúde e educação. A classificação é a do resultado primário de cada despesa no orçamento; as discricionárias incluem o Programa de Aceleração do Crescimento (PAC) e as emendas parlamentares. Em 2020, os créditos extraordinários da pandemia entraram como discricionários. Os números cobrem os orçamentos fiscal e da seguridade social da União (os três Poderes, o Ministério Público e a Defensoria), sem o orçamento de investimento das estatais. Executado é o valor liquidado, isto é, a despesa reconhecida depois da entrega do bem ou serviço; parte do que fica para o ano seguinte é paga como restos a pagar e não aparece no ano de origem. Os valores de 2000 a 2025 estão em reais de 2025, corrigidos pela média anual do IPCA. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Quase todo o orçamento federal já chega comprometido por leis e pela Constituição. A parcela discricionária é a que sobra para investimentos, manutenção de órgãos, bolsas, programas e emendas, e é a primeira a ser contingenciada quando a arrecadação fica abaixo do previsto.",
+    "Em 2000, as despesas discricionárias eram 14,2% das primárias. Em 2025, foram 5,9%, ou R$ 168,2 bilhões, contra R$ 2.664,9 bilhões de despesas obrigatórias. O ponto mais alto da série foi 2020 (22,4%) e o mais baixo, 2025 (5,9%).",
+    "A rigidez do orçamento é tema constante no debate fiscal: quem defende revisar as despesas obrigatórias argumenta que elas reduzem a capacidade de investir; quem defende mantê-las lembra que elas financiam a previdência, a assistência social e serviços básicos protegidos pela Constituição."
+  ],
+  "glossario": [
+    {
+      "termo": "Contingenciamento",
+      "definicao": "Bloqueio temporário de despesas discricionárias para cumprir a meta fiscal."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária no SIOP; o ano se fecha em janeiro",
+    "onde_buscar": "https://www1.siop.planejamento.gov.br/",
+    "proxima": "2026 completo, em janeiro de 2027",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Ano",
+    "Discricionárias (% das primárias)",
+    "Discricionárias (R$ bi de 2025)",
+    "Obrigatórias (R$ bi de 2025)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Total liquidado em 2025: R$ 5.154,7 bilhões",
+      "valor_na_fonte": "RREO da União, 6º bimestre de 2025: R$ 5.154,7 bilhões; pessoal, juros, outras despesas correntes, investimentos, inversões e amortização também iguais",
+      "fonte": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2025&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2001&co_esfera=U&id_ente=1",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2000, 14.2, 140.1, 849.9],
+    [2001, 20.6, 148.2, 569.6],
+    [2002, 15.5, 179.1, 975.4],
+    [2003, 10.3, 111.9, 977.4],
+    [2004, 10.8, 127.7, 1059.2],
+    [2005, 11.6, 153.0, 1168.0],
+    [2006, 11.3, 160.0, 1258.3],
+    [2007, 13.8, 215.9, 1352.6],
+    [2008, 12.9, 217.1, 1461.4],
+    [2009, 14.0, 252.0, 1547.6],
+    [2010, 14.2, 273.3, 1652.1],
+    [2011, 12.7, 254.9, 1757.6],
+    [2012, 14.1, 301.2, 1835.4],
+    [2013, 14.0, 313.2, 1931.4],
+    [2014, 12.4, 286.9, 2029.2],
+    [2015, 7.6, 163.1, 1991.9],
+    [2016, 7.2, 156.1, 2003.7],
+    [2017, 6.6, 142.5, 2031.3],
+    [2018, 7.0, 157.0, 2077.1],
+    [2019, 8.4, 196.0, 2131.5],
+    [2020, 22.4, 648.2, 2250.4],
+    [2021, 10.0, 238.0, 2137.5],
+    [2022, 6.2, 153.3, 2331.9],
+    [2023, 6.0, 164.0, 2546.4],
+    [2024, 6.7, 184.0, 2558.4],
+    [2025, 5.9, 168.2, 2664.9]
+  ]
+}

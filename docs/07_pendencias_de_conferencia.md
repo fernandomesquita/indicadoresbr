@@ -43,3 +43,5 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 
 - **`senado-2027`:** projeção. Atualizar depois do 2º turno (25/10/2026) e confirmar com a Agência Senado e o TSE.
 - **`camara-2027`:** 34 deputados eleitos por partidos que não atingiram a cláusula de desempenho podem trocar de partido até a posse (01/02/2027).
+- **`orcamento-2026-execucao` e `emendas-parlamentares`:** 2026 parcial, extraído do SIOP em 29/10/2026. Atualizar mensalmente e fechar o ano em janeiro de 2027, quando 2026 também entra nas séries em reais (corrigir pelo IPCA de 2026).
+- **Categoria `orcamento-federal`:** gerada a partir da consulta SPARQL do SIOP (orçamentos fiscal e da seguridade, sem estatais). Total liquidado de 2025 conferido com o RREO da União (Anexo 01, 6º bimestre): R$ 5.154,7 bi, igual.

@@ -1,0 +1,120 @@
+{
+  "id": "orcamento-federal-total",
+  "categoria": "orcamento-federal",
+  "ordem": 1,
+  "visivel": true,
+  "titulo": "O tamanho do orçamento federal",
+  "subtitulo": "Despesa executada pela União por ano, total e por tipo, em bilhões de reais de 2025, de 2000 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Total",
+    "Despesas financeiras (dívida)",
+    "Despesas primárias obrigatórias",
+    "Despesas primárias discricionárias"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "R$ ",
+  "sufixo": " bi",
+  "casas": 0,
+  "fonte": {
+    "nome": "Ministério do Planejamento e Orçamento, SIOP",
+    "url": "https://www1.siop.planejamento.gov.br/"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério do Planejamento e Orçamento, Sistema Integrado de Planejamento e Orçamento (SIOP), dados abertos do orçamento federal (consulta SPARQL)",
+      "url": "https://www1.siop.planejamento.gov.br/sparql/",
+      "o_que_sustenta": "Dotação, empenho, liquidação e pagamento por função, grupo de despesa, resultado primário e órgão, de 2000 a 2026 (2026 atualizado em 29/10/2026)."
+    },
+    {
+      "nome": "SIOP, painel de execução orçamentária",
+      "url": "https://www1.siop.planejamento.gov.br/QvAJAXZfc/opendoc.htm?document=IAS%2FExecucao_Orcamentaria.qvw&host=QVS%40pqlk04&anonymous=true",
+      "o_que_sustenta": "Mesma base, para consulta interativa."
+    },
+    {
+      "nome": "Tesouro Nacional, Siconfi, Relatório Resumido da Execução Orçamentária da União, 6º bimestre de 2025, Anexo 01",
+      "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2025&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2001&co_esfera=U&id_ente=1",
+      "o_que_sustenta": "Conferência: total liquidado de 2025 (R$ 5.154,7 bilhões) e valores por grupo de despesa iguais aos do SIOP."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737: IPCA",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção para reais de 2025."
+    }
+  ],
+  "como_ler": "A linha de cima é tudo o que a União executou no ano. As outras três dividem esse total: as despesas financeiras são sobretudo juros, amortização e rolagem da dívida pública; as primárias obrigatórias são as que a lei manda pagar, como aposentadorias, benefícios sociais, salários e transferências a estados e municípios; as discricionárias são as que o governo pode escolher executar ou não, como investimentos, custeio da máquina e emendas parlamentares. A rolagem da dívida (pagar títulos que vencem com dinheiro de títulos novos) infla o total: em 2025, foram R$ 1.417,6 bilhões de refinanciamento. Os números cobrem os orçamentos fiscal e da seguridade social da União (os três Poderes, o Ministério Público e a Defensoria), sem o orçamento de investimento das estatais. Executado é o valor liquidado, isto é, a despesa reconhecida depois da entrega do bem ou serviço; parte do que fica para o ano seguinte é paga como restos a pagar e não aparece no ano de origem. Os valores de 2000 a 2025 estão em reais de 2025, corrigidos pela média anual do IPCA. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "O orçamento da União é aprovado pelo Congresso todo ano na Lei Orçamentária Anual e executado pelo governo. O Sistema Integrado de Planejamento e Orçamento (SIOP), do Ministério do Planejamento e Orçamento, publica cada etapa da execução.",
+    "Em 2025, a União executou R$ 5.154,7 bilhões: R$ 2.322 bilhões em despesas financeiras, R$ 2.665 bilhões em despesas obrigatórias e R$ 168 bilhões em despesas discricionárias. Em 2000, em reais de 2025, o total era de R$ 2.751 bilhões.",
+    "As despesas obrigatórias crescem com as regras de benefícios, salários e transferências fixadas em lei, e ocupam espaço das discricionárias, que são as primeiras a ser cortadas quando é preciso cumprir a meta fiscal. O indicador Quanto do orçamento o governo pode escolher mostra essa parcela ao longo do tempo."
+  ],
+  "glossario": [
+    {
+      "termo": "Despesa primária",
+      "definicao": "Toda despesa que não é pagamento de juros e dívida; é a base do resultado primário."
+    },
+    {
+      "termo": "Despesa discricionária",
+      "definicao": "Despesa primária que o governo pode decidir executar ou não, como investimentos e custeio."
+    },
+    {
+      "termo": "Refinanciamento da dívida",
+      "definicao": "Pagamento de títulos que vencem com recursos da emissão de novos títulos."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária no SIOP; o ano se fecha em janeiro",
+    "onde_buscar": "https://www1.siop.planejamento.gov.br/",
+    "proxima": "2026 completo, em janeiro de 2027",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Ano",
+    "Total",
+    "Despesas financeiras (dívida)",
+    "Despesas primárias obrigatórias",
+    "Despesas primárias discricionárias",
+    "Total, valor da época (R$ bi)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Total liquidado em 2025: R$ 5.154,7 bilhões",
+      "valor_na_fonte": "RREO da União, 6º bimestre de 2025: R$ 5.154,7 bilhões; pessoal, juros, outras despesas correntes, investimentos, inversões e amortização também iguais",
+      "fonte": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2025&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2001&co_esfera=U&id_ente=1",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2000, 2751, 1760, 850, 140, 616.4],
+    [2001, 2520, 1803, 570, 148, 603.4],
+    [2002, 2599, 1445, 975, 179, 674.9],
+    [2003, 2942, 1853, 977, 112, 876.5],
+    [2004, 2860, 1673, 1059, 128, 908.2],
+    [2005, 3262, 1941, 1168, 153, 1106.8],
+    [2006, 3348, 1930, 1258, 160, 1183.7],
+    [2007, 3340, 1772, 1353, 216, 1223.8],
+    [2008, 3251, 1573, 1461, 217, 1258.8],
+    [2009, 3487, 1688, 1548, 252, 1416.4],
+    [2010, 3528, 1603, 1652, 273, 1505.0],
+    [2011, 3686, 1674, 1758, 255, 1676.8],
+    [2012, 3837, 1700, 1835, 301, 1839.8],
+    [2013, 3791, 1546, 1931, 313, 1930.4],
+    [2014, 4263, 1947, 2029, 287, 2308.3],
+    [2015, 3903, 1748, 1992, 163, 2304.2],
+    [2016, 4034, 1874, 2004, 156, 2589.5],
+    [2017, 3773, 1599, 2031, 143, 2505.6],
+    [2018, 3888, 1654, 2077, 157, 2676.3],
+    [2019, 3877, 1549, 2132, 196, 2768.3],
+    [2020, 4884, 1985, 2250, 648, 3599.5],
+    [2021, 4919, 2544, 2137, 238, 3926.7],
+    [2022, 4736, 2251, 2332, 153, 4131.6],
+    [2023, 4874, 2164, 2546, 164, 4447.4],
+    [2024, 4977, 2234, 2558, 184, 4739.1],
+    [2025, 5155, 2322, 2665, 168, 5154.7]
+  ]
+}

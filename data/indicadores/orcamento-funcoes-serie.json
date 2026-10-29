@@ -1,0 +1,132 @@
+{
+  "id": "orcamento-funcoes-serie",
+  "categoria": "orcamento-federal",
+  "ordem": 5,
+  "visivel": true,
+  "titulo": "O orçamento federal de cada área desde 2000",
+  "subtitulo": "Despesa executada pela União por função de governo, em bilhões de reais de 2025, de 2000 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Previdência Social",
+    "Assistência Social",
+    "Saúde",
+    "Educação",
+    "Trabalho"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "R$ ",
+  "sufixo": " bi",
+  "casas": 1,
+  "escolha": true,
+  "fonte": {
+    "nome": "Ministério do Planejamento e Orçamento, SIOP",
+    "url": "https://www1.siop.planejamento.gov.br/"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério do Planejamento e Orçamento, Sistema Integrado de Planejamento e Orçamento (SIOP), dados abertos do orçamento federal (consulta SPARQL)",
+      "url": "https://www1.siop.planejamento.gov.br/sparql/",
+      "o_que_sustenta": "Dotação, empenho, liquidação e pagamento por função, grupo de despesa, resultado primário e órgão, de 2000 a 2026 (2026 atualizado em 29/10/2026)."
+    },
+    {
+      "nome": "SIOP, painel de execução orçamentária",
+      "url": "https://www1.siop.planejamento.gov.br/QvAJAXZfc/opendoc.htm?document=IAS%2FExecucao_Orcamentaria.qvw&host=QVS%40pqlk04&anonymous=true",
+      "o_que_sustenta": "Mesma base, para consulta interativa."
+    },
+    {
+      "nome": "Tesouro Nacional, Siconfi, Relatório Resumido da Execução Orçamentária da União, 6º bimestre de 2025, Anexo 01",
+      "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2025&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2001&co_esfera=U&id_ente=1",
+      "o_que_sustenta": "Conferência: total liquidado de 2025 (R$ 5.154,7 bilhões) e valores por grupo de despesa iguais aos do SIOP."
+    },
+    {
+      "nome": "IBGE, Sidra, tabela 1737: IPCA",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção para reais de 2025."
+    }
+  ],
+  "como_ler": "Cada linha é uma função de governo. Use os botões acima do gráfico para escolher até 5 áreas; a tabela traz as 28 funções em todos os anos. Encargos Especiais reúne dívida, transferências constitucionais e outras despesas sem área específica, e tem valores muito maiores que as demais. A classificação funcional é a mesma desde 2000. Os números cobrem os orçamentos fiscal e da seguridade social da União (os três Poderes, o Ministério Público e a Defensoria), sem o orçamento de investimento das estatais. Executado é o valor liquidado, isto é, a despesa reconhecida depois da entrega do bem ou serviço; parte do que fica para o ano seguinte é paga como restos a pagar e não aparece no ano de origem. Os valores de 2000 a 2025 estão em reais de 2025, corrigidos pela média anual do IPCA. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "A série permite acompanhar quanto a União executou em cada área ao longo de 26 anos, com a inflação descontada.",
+    "Em reais de 2025, Previdência Social passou de R$ 417 bilhões em 2000 para R$ 1.102 bilhões em 2025; Assistência Social, de R$ 19,8 bilhões para R$ 289 bilhões, com o Bolsa Família e o Benefício de Prestação Continuada; Saúde, de R$ 90 bilhões para R$ 219 bilhões.",
+    "Mudanças de organização do governo podem mover despesas entre funções de um ano para outro; os totais por área devem ser lidos como tendência."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Diária no SIOP; o ano se fecha em janeiro",
+    "onde_buscar": "https://www1.siop.planejamento.gov.br/",
+    "proxima": "2026 completo, em janeiro de 2027",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Ano",
+    "Legislativa",
+    "Judiciária",
+    "Essencial à Justiça",
+    "Administração",
+    "Defesa Nacional",
+    "Segurança Pública",
+    "Relações Exteriores",
+    "Assistência Social",
+    "Previdência Social",
+    "Saúde",
+    "Trabalho",
+    "Educação",
+    "Cultura",
+    "Direitos da Cidadania",
+    "Urbanismo",
+    "Habitação",
+    "Saneamento",
+    "Gestão Ambiental",
+    "Ciência e Tecnologia",
+    "Agricultura",
+    "Organização Agrária",
+    "Indústria",
+    "Comércio e Serviços",
+    "Comunicações",
+    "Energia",
+    "Transporte",
+    "Desporto e Lazer",
+    "Encargos Especiais"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Total liquidado em 2025: R$ 5.154,7 bilhões",
+      "valor_na_fonte": "RREO da União, 6º bimestre de 2025: R$ 5.154,7 bilhões; pessoal, juros, outras despesas correntes, investimentos, inversões e amortização também iguais",
+      "fonte": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2025&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2001&co_esfera=U&id_ente=1",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2000, 7.8, 28.9, 3.0, 29.4, 47.5, 9.8, 3.3, 19.8, 416.8, 90.5, 27.9, 47.4, 1.1, 1.8, 0.8, 7.2, 0.7, 5.1, 5.6, 22.7, 4.9, 1.4, 8.3, 1.8, 2.3, 14.7, 0.8, 1939.3],
+    [2001, 8.8, 28.0, 3.6, 30.3, 49.7, 10.9, 3.9, 22.1, 449.2, 98.7, 31.1, 48.6, 1.2, 2.4, 2.1, 1.5, 1.0, 7.9, 6.6, 22.9, 5.6, 2.0, 11.6, 1.9, 3.0, 16.5, 1.2, 1647.9],
+    [2002, 9.5, 31.5, 4.0, 31.7, 48.6, 8.5, 5.1, 25.1, 474.5, 98.0, 32.6, 50.9, 0.9, 1.6, 1.9, 0.5, 0.4, 4.9, 5.8, 21.2, 5.3, 1.6, 7.0, 2.2, 30.1, 19.8, 1.0, 1675.0],
+    [2003, 10.3, 28.1, 4.6, 24.7, 38.8, 8.1, 3.9, 28.3, 488.4, 91.2, 31.9, 47.8, 0.8, 1.3, 1.2, 0.4, 0.2, 3.2, 6.7, 21.8, 4.8, 1.5, 6.9, 2.2, 13.1, 10.2, 0.5, 2061.6],
+    [2004, 11.1, 33.2, 6.7, 28.1, 42.7, 8.7, 4.1, 43.7, 521.3, 103.8, 33.7, 45.8, 1.0, 1.7, 3.8, 1.5, 0.2, 3.8, 8.2, 24.0, 8.2, 4.9, 6.6, 1.6, 1.2, 11.5, 0.9, 1898.1],
+    [2005, 11.2, 31.5, 6.9, 26.8, 45.4, 8.9, 4.5, 46.6, 555.5, 107.5, 37.5, 47.7, 1.5, 2.4, 6.2, 1.7, 0.3, 5.9, 9.6, 24.5, 10.6, 4.4, 8.4, 1.4, 1.4, 19.8, 1.2, 2232.4],
+    [2006, 13.5, 41.1, 8.7, 31.3, 47.7, 11.1, 4.0, 61.0, 602.4, 114.8, 46.8, 55.6, 1.6, 2.8, 6.1, 3.3, 0.2, 4.6, 10.8, 28.7, 12.0, 5.8, 7.9, 1.4, 1.3, 19.7, 2.1, 2202.2],
+    [2007, 13.5, 43.8, 10.2, 38.5, 53.4, 14.4, 4.0, 67.5, 639.7, 124.8, 53.9, 66.5, 2.1, 2.6, 12.1, 1.6, 4.2, 8.9, 11.8, 31.0, 13.2, 7.7, 7.9, 2.5, 1.5, 33.4, 3.9, 2065.6],
+    [2008, 13.7, 48.5, 11.8, 38.2, 58.0, 17.0, 5.0, 74.5, 667.8, 129.5, 58.6, 73.0, 2.3, 3.9, 11.2, 2.7, 4.6, 9.7, 13.5, 25.2, 11.7, 5.9, 8.7, 1.4, 1.4, 33.9, 2.5, 1917.0],
+    [2009, 12.7, 50.4, 12.3, 42.1, 64.4, 19.7, 3.8, 82.1, 716.7, 143.2, 72.1, 90.3, 2.8, 3.9, 11.6, 2.5, 7.4, 9.1, 15.2, 36.3, 11.9, 3.9, 9.9, 1.3, 2.0, 40.6, 2.4, 2016.8],
+    [2010, 13.3, 52.5, 12.8, 46.9, 75.7, 22.8, 4.4, 91.7, 765.5, 145.0, 73.7, 113.7, 3.2, 4.3, 11.4, 0.4, 4.1, 8.7, 17.7, 34.5, 10.0, 4.2, 9.0, 2.3, 1.6, 48.4, 2.4, 1947.5],
+    [2011, 13.3, 49.5, 12.8, 42.1, 71.1, 16.9, 4.2, 100.2, 791.5, 158.8, 80.1, 128.5, 3.1, 3.1, 9.4, 1.1, 3.6, 8.2, 15.4, 34.8, 9.3, 4.1, 8.1, 1.9, 1.4, 42.1, 2.5, 2068.9],
+    [2012, 12.6, 50.8, 8.4, 46.2, 77.1, 18.0, 4.8, 118.1, 834.4, 166.7, 88.6, 151.4, 4.0, 2.8, 9.8, 1.2, 5.5, 11.5, 16.3, 34.4, 12.2, 4.5, 8.3, 2.3, 1.7, 46.7, 2.6, 2096.0],
+    [2013, 12.9, 50.5, 9.1, 43.1, 74.2, 17.9, 4.4, 126.9, 876.1, 167.5, 129.9, 161.5, 4.7, 3.0, 9.5, 0.4, 5.8, 13.0, 21.1, 40.2, 14.8, 4.4, 9.8, 2.8, 2.0, 41.0, 4.6, 1939.3],
+    [2014, 12.3, 52.7, 10.3, 39.2, 74.3, 16.5, 4.5, 130.1, 914.8, 173.7, 132.3, 173.4, 3.4, 2.7, 7.7, 0.1, 3.1, 12.5, 15.4, 34.8, 7.9, 4.2, 8.8, 2.8, 2.1, 39.0, 4.5, 2379.9],
+    [2015, 11.4, 49.3, 10.1, 35.0, 61.2, 13.3, 5.2, 119.8, 915.7, 160.3, 110.7, 153.0, 1.5, 1.3, 2.0, 0.0, 0.4, 5.3, 11.1, 31.4, 2.9, 3.4, 1.9, 2.2, 2.7, 19.5, 1.1, 2171.2],
+    [2016, 10.9, 48.7, 9.9, 35.6, 89.6, 13.2, 4.4, 121.9, 926.6, 156.5, 109.1, 148.8, 1.5, 2.9, 2.4, 0.0, 0.6, 5.4, 9.7, 30.9, 3.6, 3.3, 3.7, 2.1, 2.7, 16.0, 0.8, 2273.2],
+    [2017, 10.7, 50.2, 10.6, 38.5, 95.8, 13.8, 4.4, 126.7, 987.1, 155.5, 105.3, 153.8, 1.5, 2.1, 2.8, 0.0, 1.1, 4.7, 9.4, 23.3, 2.8, 3.3, 3.2, 1.8, 2.7, 16.5, 0.5, 1945.1],
+    [2018, 10.5, 51.0, 10.3, 41.6, 103.9, 13.5, 4.6, 127.8, 991.6, 159.1, 103.0, 144.5, 1.5, 1.5, 2.5, 0.0, 0.8, 5.3, 9.5, 23.6, 2.4, 3.1, 3.9, 1.8, 2.7, 16.9, 0.4, 2050.5],
+    [2019, 10.3, 51.4, 10.4, 35.3, 110.5, 13.4, 4.5, 132.9, 1017.5, 162.1, 101.5, 137.9, 1.1, 1.3, 2.0, 0.0, 0.6, 4.7, 9.2, 21.5, 2.0, 2.5, 2.5, 1.7, 3.3, 12.3, 0.2, 2023.8],
+    [2020, 9.8, 49.3, 10.7, 33.9, 104.5, 15.2, 5.2, 559.5, 1037.7, 207.4, 103.0, 124.9, 0.9, 1.3, 1.8, 0.0, 1.1, 5.0, 8.7, 18.2, 1.9, 2.2, 9.4, 2.2, 1.9, 10.9, 0.1, 2557.2],
+    [2021, 9.2, 45.8, 10.0, 31.6, 98.5, 13.8, 4.8, 201.9, 1008.7, 204.5, 82.5, 125.6, 0.8, 0.9, 1.5, 0.0, 0.6, 3.9, 6.3, 21.4, 1.3, 2.1, 2.1, 2.8, 2.1, 8.4, 0.3, 3028.1],
+    [2022, 8.6, 45.6, 9.5, 30.1, 93.6, 14.2, 4.5, 225.7, 1026.4, 158.1, 106.4, 131.4, 0.7, 0.9, 1.7, 0.0, 0.4, 3.5, 9.6, 25.7, 1.7, 2.0, 1.8, 3.7, 1.6, 9.0, 0.3, 2819.6],
+    [2023, 8.9, 46.3, 10.0, 29.7, 90.7, 15.2, 4.3, 290.9, 1067.7, 178.0, 104.9, 149.1, 2.6, 1.0, 1.4, 0.0, 0.2, 4.4, 14.0, 24.2, 3.0, 2.2, 2.3, 2.8, 1.2, 14.2, 0.4, 2804.9],
+    [2024, 9.5, 50.4, 10.3, 28.4, 92.0, 18.4, 5.0, 297.4, 1100.3, 206.0, 114.6, 151.3, 2.2, 1.4, 1.9, 0.0, 0.3, 15.1, 15.8, 22.4, 3.0, 2.3, 3.2, 2.5, 1.1, 15.9, 0.3, 2806.0],
+    [2025, 10.0, 50.4, 10.5, 32.0, 92.1, 15.4, 4.7, 289.2, 1102.5, 218.6, 116.0, 170.1, 2.4, 1.5, 2.0, 0.4, 0.3, 20.4, 19.5, 41.5, 4.4, 2.4, 1.6, 2.5, 1.3, 13.2, 0.5, 2929.4]
+  ]
+}
