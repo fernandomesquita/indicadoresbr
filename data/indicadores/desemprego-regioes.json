@@ -1,0 +1,147 @@
+{
+  "id": "desemprego-regioes",
+  "categoria": "economia",
+  "ordem": 21,
+  "visivel": true,
+  "titulo": "Desemprego por região",
+  "subtitulo": "Taxa de desocupação trimestral, em % da força de trabalho, em cada grande região, do 1º trimestre de 2012 ao 2º trimestre de 2026",
+  "tipo": "linha",
+  "x": "Trimestre",
+  "series": [
+    "Norte",
+    "Nordeste",
+    "Sudeste",
+    "Sul",
+    "Centro-Oeste"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "ultimo": "2º trimestre 2026",
+  "escolha": true,
+  "fonte": {
+    "nome": "IBGE, PNAD Contínua (Sidra, tabela 4099)",
+    "url": "https://sidra.ibge.gov.br/tabela/4099"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Sidra, tabela 4099: taxa de desocupação trimestral por Brasil e grandes regiões",
+      "url": "https://sidra.ibge.gov.br/tabela/4099",
+      "o_que_sustenta": "Taxas trimestrais de todos os trimestres desde 2012, por região."
+    },
+    {
+      "nome": "IBGE, PNAD Contínua: Retrospectiva 2012 a 2025",
+      "url": "https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Principais_destaques_PNAD_continua/2012_2025/PNAD_continua_retrospectiva_2012_2025.pdf",
+      "o_que_sustenta": "Taxa anual oficial do Brasil em 2025 (5,6%), para comparação com as trimestrais."
+    },
+    {
+      "nome": "IBGE, Agência de Notícias: em 2025, vinte unidades da federação registram a menor taxa de desocupação da série",
+      "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/45923-em-2025-vinte-unidades-da-federacao-registram-a-menor-taxa-de-desocupacao-da-serie.html",
+      "o_que_sustenta": "Contexto de 2025 por estado."
+    }
+  ],
+  "como_ler": "Cada linha é a taxa de desocupação de uma grande região a cada trimestre: a parcela da força de trabalho (quem trabalha ou procura trabalho) que estava procurando emprego sem conseguir. Use os botões acima do gráfico para incluir o Brasil ou trocar as regiões. Os dados são da Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua), do IBGE, divulgados por trimestre civil. A taxa costuma subir no primeiro trimestre e cair no fim do ano, por causa das contratações temporárias, por isso compare trimestres iguais de anos diferentes. A taxa anual que o IBGE divulga para o Brasil, usada no indicador Desemprego médio por ano, é calculada de outra forma e pode diferir da média dos quatro trimestres. Em julho de 2025 o IBGE refez a série com a população do Censo 2022.",
+  "contexto": [
+    "O IBGE mede o desemprego pela PNAD Contínua, que entrevista moradores em todo o país e divulga resultados por trimestre para o Brasil, as grandes regiões e os estados.",
+    "No 2º trimestre 2026, a taxa foi de 5,4% no Brasil, 7,6% no Nordeste, 6,1% no Norte, 5,2% no Sudeste, 3,8% no Centro-Oeste e 3,2% no Sul. O pico do Nordeste foi de 18,9% no 1º trimestre 2021; o do Brasil, de 14,9% no 3º trimestre 2020.",
+    "O Nordeste teve a maior taxa e o Sul, a menor, em todos os trimestres da série. As cinco regiões chegaram ao menor desemprego da série no fim de 2025 (no Centro-Oeste, no 2º trimestre de 2026), depois dos picos de 2020 e 2021, durante a pandemia."
+  ],
+  "glossario": [
+    {
+      "termo": "Taxa de desocupação",
+      "definicao": "Percentual de pessoas de 14 anos ou mais que procuravam trabalho e não estavam trabalhando, em relação à força de trabalho."
+    },
+    {
+      "termo": "Força de trabalho",
+      "definicao": "Pessoas ocupadas mais as desocupadas que procuram trabalho."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Trimestral",
+    "onde_buscar": "https://sidra.ibge.gov.br/tabela/4099",
+    "proxima": "3º trimestre de 2026, em novembro de 2026",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Trimestre",
+    "Brasil",
+    "Norte",
+    "Nordeste",
+    "Sudeste",
+    "Sul",
+    "Centro-Oeste"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil, 2º trimestre 2026: 5,4%",
+      "valor_na_fonte": "Sidra 4099: igual",
+      "fonte": "https://sidra.ibge.gov.br/tabela/4099",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["1º tri 2012", 8.0, 9.0, 9.8, 8.0, 5.2, 7.1],
+    ["2º tri 2012", 7.6, 8.2, 9.7, 7.4, 4.9, 6.3],
+    ["3º tri 2012", 7.1, 7.9, 9.4, 6.9, 4.3, 5.7],
+    ["4º tri 2012", 6.9, 7.4, 9.4, 6.7, 4.0, 5.7],
+    ["1º tri 2013", 8.0, 8.7, 11.0, 7.6, 4.8, 6.8],
+    ["2º tri 2013", 7.5, 8.4, 10.1, 7.3, 4.3, 6.0],
+    ["3º tri 2013", 7.0, 7.6, 9.1, 7.1, 4.2, 5.5],
+    ["4º tri 2013", 6.2, 6.6, 8.0, 6.3, 3.9, 4.9],
+    ["1º tri 2014", 7.2, 7.8, 9.4, 7.1, 4.4, 5.9],
+    ["2º tri 2014", 6.9, 7.3, 8.8, 6.9, 4.2, 5.6],
+    ["3º tri 2014", 6.8, 7.0, 8.7, 6.9, 4.3, 5.4],
+    ["4º tri 2014", 6.6, 6.9, 8.3, 6.7, 3.8, 5.4],
+    ["1º tri 2015", 8.0, 8.8, 9.6, 8.1, 5.2, 7.4],
+    ["2º tri 2015", 8.4, 8.7, 10.4, 8.4, 5.6, 7.5],
+    ["3º tri 2015", 9.0, 9.0, 10.9, 9.2, 6.1, 7.6],
+    ["4º tri 2015", 9.1, 8.8, 10.6, 9.7, 5.8, 7.5],
+    ["1º tri 2016", 11.0, 10.6, 12.9, 11.6, 7.4, 9.8],
+    ["2º tri 2016", 11.4, 11.4, 13.4, 11.8, 8.1, 9.8],
+    ["3º tri 2016", 11.9, 11.6, 14.2, 12.4, 8.0, 10.1],
+    ["4º tri 2016", 12.1, 12.9, 14.5, 12.5, 7.8, 11.0],
+    ["1º tri 2017", 13.9, 14.4, 16.4, 14.3, 9.3, 12.2],
+    ["2º tri 2017", 13.1, 12.6, 16.0, 13.7, 8.5, 10.7],
+    ["3º tri 2017", 12.5, 12.3, 15.0, 13.3, 7.9, 9.7],
+    ["4º tri 2017", 11.9, 11.4, 14.0, 12.7, 7.7, 9.4],
+    ["1º tri 2018", 13.2, 12.8, 16.0, 13.9, 8.5, 10.6],
+    ["2º tri 2018", 12.6, 12.2, 15.0, 13.3, 8.2, 9.5],
+    ["3º tri 2018", 12.0, 11.7, 14.6, 12.6, 7.9, 9.0],
+    ["4º tri 2018", 11.7, 11.8, 14.5, 12.3, 7.4, 8.5],
+    ["1º tri 2019", 12.8, 13.2, 15.5, 13.3, 8.2, 10.9],
+    ["2º tri 2019", 12.1, 12.0, 14.8, 12.5, 8.1, 10.4],
+    ["3º tri 2019", 11.9, 11.9, 14.6, 12.0, 8.2, 10.3],
+    ["4º tri 2019", 11.1, 10.7, 13.8, 11.5, 6.8, 9.5],
+    ["1º tri 2020", 12.4, 12.1, 15.8, 12.6, 7.6, 10.7],
+    ["2º tri 2020", 13.6, 12.0, 16.5, 14.2, 9.0, 12.7],
+    ["3º tri 2020", 14.9, 13.3, 18.3, 15.7, 9.5, 13.0],
+    ["4º tri 2020", 14.2, 12.6, 17.5, 15.1, 8.4, 12.1],
+    ["1º tri 2021", 14.9, 15.0, 18.9, 15.4, 8.7, 12.8],
+    ["2º tri 2021", 14.2, 14.1, 18.5, 14.6, 8.2, 11.7],
+    ["3º tri 2021", 12.7, 12.0, 16.4, 13.1, 7.5, 9.8],
+    ["4º tri 2021", 11.1, 11.2, 14.8, 11.3, 6.7, 8.4],
+    ["1º tri 2022", 11.1, 11.7, 15.0, 11.2, 6.5, 8.5],
+    ["2º tri 2022", 9.3, 8.9, 12.7, 9.3, 5.6, 7.0],
+    ["3º tri 2022", 8.7, 8.2, 12.0, 8.7, 5.2, 6.4],
+    ["4º tri 2022", 7.9, 8.0, 10.9, 7.9, 4.5, 6.2],
+    ["1º tri 2023", 8.8, 9.1, 12.3, 8.6, 5.0, 7.0],
+    ["2º tri 2023", 8.0, 8.1, 11.3, 7.9, 4.7, 5.7],
+    ["3º tri 2023", 7.7, 7.7, 10.9, 7.5, 4.6, 5.4],
+    ["4º tri 2023", 7.4, 7.7, 10.5, 7.1, 4.5, 5.7],
+    ["1º tri 2024", 7.9, 8.2, 11.1, 7.6, 4.9, 6.0],
+    ["2º tri 2024", 6.9, 6.9, 9.4, 6.7, 4.6, 5.4],
+    ["3º tri 2024", 6.4, 6.6, 8.7, 6.2, 4.1, 4.9],
+    ["4º tri 2024", 6.2, 6.9, 8.7, 5.9, 3.6, 4.9],
+    ["1º tri 2025", 7.0, 8.2, 9.9, 6.6, 4.2, 5.4],
+    ["2º tri 2025", 5.8, 6.5, 8.2, 5.3, 3.6, 4.6],
+    ["3º tri 2025", 5.6, 6.2, 7.8, 5.3, 3.4, 4.4],
+    ["4º tri 2025", 5.1, 5.8, 7.1, 4.8, 3.1, 3.9],
+    ["1º tri 2026", 6.1, 7.0, 8.4, 5.9, 3.5, 4.8],
+    ["2º tri 2026", 5.4, 6.1, 7.6, 5.2, 3.2, 3.8]
+  ]
+}

@@ -1,6 +1,6 @@
 # Catálogo de fontes
 
-Gerado por `scripts/build.py` em 2026-10-28. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
+Gerado por `scripts/build.py` em 2026-10-29. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
 
 ## Economia
 
@@ -26,6 +26,7 @@ Gerado por `scripts/build.py` em 2026-10-28. Não edite à mão: mude o indicado
 | `parceiros-comerciais`: Os maiores parceiros comerciais do Brasil | [MDIC/Secex, Comex Stat (base de dados bruta)](https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta) | Mensal (MDIC/Secex), com o fechamento do ano em janeiro | https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta | Janeiro de 2027, com o ano de 2026 fechado | 2026-10-28 |
 | `parceiros-comerciais-2025`: Os 10 maiores parceiros comerciais em 2025 | [MDIC/Secex, Comex Stat (base de dados bruta)](https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta) | Anual (com dados mensais no MDIC) | https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta | Janeiro de 2027, com o ano de 2026 | 2026-10-28 |
 | `exportacoes-matriz`: O que o Brasil exporta | [MDIC/Secex, Comex Stat (base de dados bruta), grupos da CUCI](https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta) | Anual (com dados mensais no MDIC) | https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta | Janeiro de 2027, com o ano de 2026 | 2026-10-28 |
+| `desemprego-regioes`: Desemprego por região | [IBGE, PNAD Contínua (Sidra, tabela 4099)](https://sidra.ibge.gov.br/tabela/4099) | Trimestral | https://sidra.ibge.gov.br/tabela/4099 | 3º trimestre de 2026, em novembro de 2026 | 2026-10-29 |
 
 ## Políticas públicas
 
