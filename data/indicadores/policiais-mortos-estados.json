@@ -1,0 +1,125 @@
+{
+  "id": "policiais-mortos-estados",
+  "categoria": "seguranca-publica",
+  "ordem": 20,
+  "visivel": true,
+  "titulo": "Policiais mortos por estado",
+  "subtitulo": "Policiais militares e civis da ativa mortos por crimes, em serviço ou de folga, em cada estado, de 2012 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Rio de Janeiro",
+    "São Paulo",
+    "Pará",
+    "Pernambuco",
+    "Bahia"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Fórum Brasileiro de Segurança Pública, Anuário Brasileiro de Segurança Pública",
+    "url": "https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/"
+  },
+  "fontes": [
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, Anuário Brasileiro de Segurança Pública 2026",
+      "url": "https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/",
+      "o_que_sustenta": "Policiais civis e militares mortos e suicídios de policiais em 2024 e 2025, por estado."
+    },
+    {
+      "nome": "Anuário Brasileiro de Segurança Pública 2026, planilha de tabelas",
+      "url": "https://forumseguranca.org.br/wp-content/uploads/2026/07/anuario-2026.xlsx",
+      "o_que_sustenta": "Tabelas de vitimização policial e painel com a série do Brasil de 2017 a 2025."
+    },
+    {
+      "nome": "Fórum Brasileiro de Segurança Pública, edições de 2014 a 2025 do Anuário (repositório de publicações)",
+      "url": "https://publicacoes.forumseguranca.org.br",
+      "o_que_sustenta": "Anos de 2012 a 2023, cada um pela edição mais recente que o publicou."
+    },
+    {
+      "nome": "Ministério da Justiça e Segurança Pública, Sinesp (base de dados do Validador de Dados Estatísticos)",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados",
+      "o_que_sustenta": "Conferência independente por estado: mortes e suicídios de agentes do Estado, de 2015 em diante."
+    },
+    {
+      "nome": "Instituto de Segurança Pública do Rio de Janeiro (ISP), policiais mortos em serviço",
+      "url": "http://www.ispdados.rj.gov.br/MetodologiaPoliciaisMortosEmServico.html",
+      "o_que_sustenta": "Conferência dos mortos em serviço no Rio de Janeiro."
+    }
+  ],
+  "como_ler": "Cada linha é o número de policiais militares e civis da ativa mortos por crimes num estado a cada ano, em serviço ou de folga; suicídios e acidentes de trânsito ficam de fora. O gráfico abre com os cinco estados com mais mortes somadas no período; use os botões acima para escolher até 5 estados, ou o Brasil. Os números de cada estado são pequenos, e uma variação de poucos casos muda bastante a linha. Os números vêm das secretarias estaduais de segurança, reunidos pelo Fórum Brasileiro de Segurança Pública, e são revistos de uma edição do Anuário para outra; cada ano vem da edição mais recente que o publicou. Contam só policiais militares e civis da ativa. Policiais federais e rodoviários federais, policiais penais, bombeiros e guardas municipais ficam de fora. O Rio de Janeiro mudou bastante de uma edição para outra de 2021 a 2024, e em 2012 e 2022 informou só os mortos em serviço; esses dois anos ficaram em branco no gráfico, e o gráfico usa sempre a edição mais recente. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "A morte de policiais é registrada pelas secretarias estaduais de segurança e reunida pelo Fórum Brasileiro de Segurança Pública no Anuário.",
+    "Somando 2012 a 2025, os estados com mais policiais mortos por crimes foram Rio de Janeiro (853), São Paulo (810), Pará (359), Pernambuco (217) e Bahia (204); no Rio de Janeiro, a soma deixa de fora 2012 e 2022, anos em que o estado informou só os mortos em serviço.",
+    "O número de policiais mortos depende do tamanho do efetivo, da violência de cada estado e de como cada secretaria registra e informa os casos; para comparar estados, a taxa por mil policiais é mais adequada, e o indicador Policiais mortos no Brasil traz a taxa nacional."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual",
+    "onde_buscar": "https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/",
+    "proxima": "Anuário 2027, com dados de 2026",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Ano",
+    "Brasil",
+    "Acre",
+    "Alagoas",
+    "Amapá",
+    "Amazonas",
+    "Bahia",
+    "Ceará",
+    "Distrito Federal",
+    "Espírito Santo",
+    "Goiás",
+    "Maranhão",
+    "Mato Grosso",
+    "Mato Grosso do Sul",
+    "Minas Gerais",
+    "Paraná",
+    "Paraíba",
+    "Pará",
+    "Pernambuco",
+    "Piauí",
+    "Rio Grande do Norte",
+    "Rio Grande do Sul",
+    "Rio de Janeiro",
+    "Rondônia",
+    "Roraima",
+    "Santa Catarina",
+    "Sergipe",
+    "São Paulo",
+    "Tocantins"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Policiais militares mortos por estado",
+      "valor_na_fonte": "Sinesp: 134 de 287 pares estado-ano iguais e 202 com diferença de até 1",
+      "fonte": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2012, 447, 2, 11, 1, 7, 29, "", 14, 6, 7, 6, 17, 4, 16, 53, 4, 45, 39, 7, 2, 1, "", 11, "", 4, 2, 139, 2],
+    [2013, 408, 2, 6, "", 2, 12, 18, 8, 6, 8, 16, 16, 7, 12, 5, 3, 51, 12, 4, 5, 5, 104, 10, "", 6, 1, 89, ""],
+    [2014, 415, "", 4, "", 11, 30, 7, 12, 3, 8, 19, 22, 26, 15, 9, 2, 22, 17, 3, 6, 6, 100, 3, 1, 4, 0, 84, 1],
+    [2015, 368, 3, 8, 0, 7, 20, 10, 16, 4, 3, 8, 4, 5, 1, 19, 5, 21, 27, 8, 9, 14, 98, 1, 1, 1, 7, 66, 2],
+    [2016, 386, 5, 10, 1, 9, 15, 26, 3, 4, 14, 10, 5, 4, 11, 12, 7, 23, 18, 3, 11, 11, 87, 3, 4, 2, 8, 80, 0],
+    [2017, 383, 0, 2, 1, 5, 20, 26, 5, 4, 5, 3, 17, 7, 13, 9, 6, 39, 14, 5, 18, 6, 104, 3, 1, 2, 8, 60, 0],
+    [2018, 313, 0, 1, 5, 2, 14, 11, 2, 6, "", 5, 2, 2, 5, 6, 5, 34, 21, 2, 25, 3, 89, 1, 4, 2, 5, 60, 1],
+    [2019, 172, 1, 3, 1, 1, 8, 2, 0, 0, 6, 1, 3, 1, 6, 1, 2, 28, 9, 2, 12, 6, 41, 2, 0, 0, 2, 34, 0],
+    [2020, 222, 1, 2, 0, 7, 11, 9, 1, 0, 5, 5, 1, 4, 5, 6, 2, 13, 14, 7, 5, 0, 65, 5, 1, 1, 3, 49, 0],
+    [2021, 145, 0, 3, 0, "", 13, 9, 1, 2, 4, 5, 1, 0, 0, 0, 4, 12, 12, 7, 7, 5, 28, 2, 0, 3, 2, 25, 0],
+    [2022, 155, 0, 2, 2, 4, 9, 8, 0, 4, 5, 3, 1, 0, 1, 1, 6, 17, 13, 5, 6, 4, "", 2, 1, 3, 1, 33, 5],
+    [2023, 178, 0, 2, 0, 7, 9, 9, 0, 0, 3, 5, 3, 0, 1, 2, 2, 22, 12, 2, 3, 5, 58, 3, 0, 0, 1, 29, 0],
+    [2024, 144, 0, 4, 0, 2, 11, 12, 1, 0, 2, 4, 2, 1, 5, 2, 2, 17, 4, 4, 1, 5, 28, 0, 0, 1, 0, 32, 4],
+    [2025, 139, 0, 0, 1, 2, 3, 4, 0, 0, 2, 7, 0, 0, 4, 0, 3, 15, 5, 2, 2, 4, 51, 1, 2, 0, 0, 30, 1]
+  ]
+}
