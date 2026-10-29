@@ -96,6 +96,8 @@ Gerado por `scripts/build.py` em 2026-10-29. Não edite à mão: mude o indicado
 | Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |
 |---|---|---|---|---|---|
 | `orcamento-saude`: Orçamento federal de saúde: previsto e executado | [Ministério do Planejamento e Orçamento, SIOP](https://www1.siop.planejamento.gov.br/) | Diária no SIOP; o ano se fecha em janeiro | https://www1.siop.planejamento.gov.br/ | Janeiro de 2027, com o ano de 2026 fechado | 2026-10-28 |
+| `gasto-saude-habitante`: Quanto o poder público gasta com saúde por habitante | [Ministério da Saúde (SIOPS e IDB) e Tesouro Nacional (RREO da União)](https://siops-consulta-publica-api.saude.gov.br/v1/) | Anual (SIOPS fecha o ano no início do ano seguinte) | https://siops-consulta-publica-api.saude.gov.br/v1/ | 2026, a partir de fevereiro de 2027 | 2026-10-29 |
+| `gasto-federal-saude-habitante`: Gasto federal com saúde por habitante, até 2026 | [Ministério do Planejamento e Orçamento, SIOP, e IBGE](https://www1.siop.planejamento.gov.br/) | Diária no SIOP; o ano se fecha em janeiro | https://www1.siop.planejamento.gov.br/ | 2026 completo, em janeiro de 2027 | 2026-10-29 |
 
 ## Educação
 
