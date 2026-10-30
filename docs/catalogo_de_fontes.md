@@ -54,6 +54,8 @@ Gerado por `scripts/build.py` em 2026-10-30. Não edite à mão: mude o indicado
 | `pix`: Pix: quanto e para quê | [Banco Central do Brasil, estatísticas do Pix](https://www.bcb.gov.br/estabilidadefinanceira/estatisticaspix) | Mensal (Banco Central) | https://www.bcb.gov.br/estabilidadefinanceira/estatisticaspix | Outubro de 2026, em novembro | 2026-10-30 |
 | `energia-residencial`: Quanta energia elétrica uma casa consome | [Empresa de Pesquisa Energética (EPE), consumo de energia elétrica](https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica) | Mensal (EPE) | https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica | Outubro de 2026, em novembro | 2026-10-30 |
 | `vendas-combustiveis`: Quanto combustível o país consome | [ANP, vendas de derivados de petróleo e biocombustíveis](https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/vendas-de-derivados-de-petroleo-e-biocombustiveis) | Mensal (ANP) | https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/vendas-de-derivados-de-petroleo-e-biocombustiveis | Outubro de 2026, no fim de novembro | 2026-10-30 |
+| `bens-domicilios`: O que os brasileiros têm em casa | [IBGE, PNAD e PNAD Contínua](https://sidra.ibge.gov.br/tabela/6677) | Anual (PNAD Contínua) | https://sidra.ibge.gov.br/tabela/6677 | 2026, em 2027 | 2026-10-30 |
+| `bens-domicilios-estados`: Bens em casa por estado | [IBGE, PNAD Contínua](https://sidra.ibge.gov.br/tabela/6677) | Anual (PNAD Contínua) | https://sidra.ibge.gov.br/tabela/6677 | 2026, em 2027 | 2026-10-30 |
 
 ## Políticas públicas
 
