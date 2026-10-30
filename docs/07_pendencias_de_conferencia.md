@@ -53,3 +53,7 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **`expectativa-de-vida`, `mortalidade-infantil` e `mortalidade-expectativa-estados`:** a Tábua completa de mortalidade de 2025 sai até 01/12/2026. Atualizar 2025 e conferir se o IBGE revisou anos anteriores.
 - **`cobertura-vacinal`:** usa as estimativas OMS/UNICEF (WUENIC). A poliomielite (via Banco Mundial) vai só até 2024. O TabNet do PNI fica 1,4 a 6,2 pontos acima de 2019 a 2022 por registros tardios.
 - **`mortalidade-materna`:** 2024 ainda não publicado pelo Ministério da Saúde.
+- **Categoria `consumo` (criada em 30/10/2026):** dados mensais (veículos, varejo, endividamento, financiamento imobiliário, cesta básica, passageiros aéreos) vão até setembro ou agosto de 2026; atualizar o contexto de 2026 todo mês. Casamentos e divórcios de 2025 saem em dezembro de 2026.
+- **`consumo-carne`:** a tabela da publicação da Conab (Perspectivas, edição 14) troca a carne bovina de 2024 (36,0) com a de 2025 (36,2); o site usa a planilha. A planilha muda de estimativa de população em 2000 e 2010 sem aviso.
+- **`financiamento-imobiliario`:** unidades do FGTS (2016 a 2025) vêm dos rótulos dos gráficos da coletiva da Abecip de 27/01/2026; procurar série tabulada da Caixa ou do Ministério das Cidades. A Abecip revisou 2024 (de 568,2 para 532,1 mil unidades).
+- **`casamentos-divorcios`:** a taxa de divórcio calculada para 2024 dá 2,75 por mil, e o IBGE publica 2,7; denominador do IBGE não identificado.

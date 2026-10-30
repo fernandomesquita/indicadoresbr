@@ -48,52 +48,58 @@
       "ordem": 1
     },
     {
+      "id": "consumo",
+      "nome": "Consumo",
+      "descricao": "O que as famílias compram, quanto devem e como isso muda com a economia.",
+      "ordem": 2
+    },
+    {
       "id": "politicas-publicas",
       "nome": "Políticas públicas",
       "descricao": "Congresso, serviço público e as decisões que mudam a vida de quem depende do Estado.",
-      "ordem": 2
+      "ordem": 3
     },
     {
       "id": "orcamento-federal",
       "nome": "Orçamento federal",
       "descricao": "Quanto a União prevê e quanto executa, por área, por tipo de despesa e por ministério.",
-      "ordem": 3
+      "ordem": 4
     },
     {
       "id": "seguranca-publica",
       "nome": "Segurança pública",
       "descricao": "Mortes violentas, efetivo policial e o que os números dizem sobre os estados.",
-      "ordem": 4
+      "ordem": 5
     },
     {
       "id": "corrupcao",
       "nome": "Corrupção",
       "descricao": "Condenações, processos e transparência.",
-      "ordem": 5
+      "ordem": 6
     },
     {
       "id": "saude",
       "nome": "Saúde",
       "descricao": "Atendimento, mortalidade, vacinação e gasto público em saúde.",
-      "ordem": 6
+      "ordem": 7
     },
     {
       "id": "educacao",
       "nome": "Educação",
       "descricao": "Aprendizagem, matrículas, professores e investimento.",
-      "ordem": 7
+      "ordem": 8
     },
     {
       "id": "populacao-trabalho",
       "nome": "População e trabalho",
       "descricao": "Quantos somos, onde vivemos, como trabalhamos e como a renda se distribui.",
-      "ordem": 8
+      "ordem": 9
     },
     {
       "id": "mundo",
       "nome": "Mundo",
       "descricao": "O Brasil comparado aos outros países: economia, desenvolvimento, violência e contas públicas.",
-      "ordem": 9
+      "ordem": 10
     }
   ]
 }

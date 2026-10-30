@@ -1,0 +1,98 @@
+{
+  "id": "casamentos-estados",
+  "categoria": "consumo",
+  "ordem": 10,
+  "visivel": true,
+  "titulo": "Casamentos por estado",
+  "subtitulo": "Casamentos civis registrados por mil habitantes de 15 anos ou mais, por estado, em 2024",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "Casamentos por mil hab. de 15 anos ou mais"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 2,
+  "ultimo": "2024",
+  "fonte": {
+    "nome": "IBGE, Estatísticas do Registro Civil",
+    "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9110-estatisticas-do-registro-civil.html"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Estatísticas do Registro Civil, Sidra tabelas 350, 2759 e 4412 (casamentos) e 426, 2997 e 1695 (divórcios)",
+      "url": "https://sidra.ibge.gov.br/tabela/4412",
+      "o_que_sustenta": "Casamentos de 1984 a 2024 e divórcios judiciais de 1984 a 2013."
+    },
+    {
+      "nome": "IBGE, Projeções da População, revisão 2024 (população por idade)",
+      "url": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab2_grupo_quinquenal.xlsx",
+      "o_que_sustenta": "Denominador das taxas por mil habitantes, de 2000 em diante."
+    },
+    {
+      "nome": "IBGE, Informativo Estatísticas do Registro Civil 2024",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/135/rc_2024_v51_informativo.pdf",
+      "o_que_sustenta": "Conferência dos totais de 2024 e das taxas por estado."
+    }
+  ],
+  "como_ler": "Cada barra é o número de casamentos registrados no estado em 2024 para cada mil moradores de 15 anos ou mais. O estado é o do cartório de registro. A taxa é cálculo deste site com a população das Projeções do IBGE; a tabela traz também a taxa publicada pelo IBGE, com uma casa decimal, e o número de casamentos.",
+  "contexto": [
+    "Em 2024, as maiores taxas foram as de Rondônia (8,95) e do Distrito Federal (8,42), e a menor, a do Piauí (3,23). A taxa do Brasil foi de 5,6 por mil.",
+    "A taxa depende também da idade da população e de quantos casais vivem juntos sem casar no papel, o que o registro civil não capta."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (IBGE, em dezembro)",
+    "onde_buscar": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9110-estatisticas-do-registro-civil.html",
+    "proxima": "Dados de 2025, em dezembro de 2026",
+    "ultima_conferencia": "2026-10-30"
+  },
+  "colunas": [
+    "Estado",
+    "Casamentos por mil hab. de 15 anos ou mais",
+    "Taxa publicada pelo IBGE",
+    "Casamentos registrados"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Taxas por estado em 2024",
+      "valor_na_fonte": "Informativo do IBGE: iguais com uma casa nas 27 UFs (Sergipe 3,75, publicado 3,7)",
+      "fonte": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/135/rc_2024_v51_informativo.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Rondônia", 8.95, 8.9, 12158],
+    ["Distrito Federal", 8.42, 8.4, 20236],
+    ["Tocantins", 7.03, 7.0, 8562],
+    ["Acre", 6.98, 7.0, 4566],
+    ["Espírito Santo", 6.92, 6.9, 22747],
+    ["Mato Grosso", 6.77, 6.8, 20040],
+    ["Mato Grosso do Sul", 6.69, 6.7, 15094],
+    ["São Paulo", 6.4, 6.4, 239050],
+    ["Paraná", 6.23, 6.2, 59338],
+    ["Minas Gerais", 5.89, 5.9, 103130],
+    ["Goiás", 5.72, 5.7, 33644],
+    ["Paraíba", 5.6, 5.6, 18472],
+    ["Santa Catarina", 5.54, 5.5, 36111],
+    ["Roraima", 5.49, 5.5, 2813],
+    ["Alagoas", 5.48, 5.5, 13700],
+    ["Pernambuco", 5.19, 5.2, 39316],
+    ["Pará", 5.05, 5.0, 33497],
+    ["Rio de Janeiro", 5.02, 5.0, 70940],
+    ["Ceará", 4.81, 4.8, 35422],
+    ["Amapá", 4.7, 4.7, 2759],
+    ["Bahia", 4.65, 4.7, 55603],
+    ["Amazonas", 4.6, 4.6, 14442],
+    ["Rio Grande do Norte", 4.59, 4.6, 12724],
+    ["Maranhão", 4.17, 4.2, 22471],
+    ["Rio Grande do Sul", 3.96, 4.0, 36615],
+    ["Sergipe", 3.75, 3.7, 6792],
+    ["Piauí", 3.23, 3.2, 8683]
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "casamentos-divorcios",
+  "categoria": "consumo",
+  "ordem": 3,
+  "visivel": true,
+  "titulo": "Casamentos e divórcios no Brasil",
+  "subtitulo": "Casamentos civis registrados e divórcios concedidos por ano, de 1974 a 2024",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Casamentos",
+    "Divórcios"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "fonte": {
+    "nome": "IBGE, Estatísticas do Registro Civil",
+    "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9110-estatisticas-do-registro-civil.html"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Estatísticas do Registro Civil, Sidra tabelas 350, 2759 e 4412 (casamentos) e 426, 2997 e 1695 (divórcios)",
+      "url": "https://sidra.ibge.gov.br/tabela/4412",
+      "o_que_sustenta": "Casamentos de 1984 a 2024 e divórcios judiciais de 1984 a 2013."
+    },
+    {
+      "nome": "IBGE, Estatísticas do Registro Civil, tabelas de resultados de 2007 a 2024 (FTP)",
+      "url": "https://ftp.ibge.gov.br/Registro_Civil/Tabelas_de_Resultados/",
+      "o_que_sustenta": "Divórcios judiciais e escrituras em cartório de 2007 a 2024."
+    },
+    {
+      "nome": "IBGE, Anuários Estatísticos do Brasil de 1985 e 1987-88 (Estatísticas do Século XX)",
+      "url": "https://ftp.ibge.gov.br/seculoxx/",
+      "o_que_sustenta": "Casamentos de 1974 a 1983 e divórcios de 1982 e 1983."
+    },
+    {
+      "nome": "IBGE, Projeções da População, revisão 2024 (população por idade)",
+      "url": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab2_grupo_quinquenal.xlsx",
+      "o_que_sustenta": "Denominador das taxas por mil habitantes, de 2000 em diante."
+    },
+    {
+      "nome": "IBGE, Informativo Estatísticas do Registro Civil 2024",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/135/rc_2024_v51_informativo.pdf",
+      "o_que_sustenta": "Conferência dos totais de 2024 e das taxas por estado."
+    },
+    {
+      "nome": "Lei 11.441/2007",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11441.htm",
+      "o_que_sustenta": "Divórcio por escritura em cartório."
+    },
+    {
+      "nome": "Emenda Constitucional 66/2010",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc66.htm",
+      "o_que_sustenta": "Fim da exigência de separação prévia para o divórcio."
+    },
+    {
+      "nome": "Conselho Nacional de Justiça, Resolução 175/2013",
+      "url": "https://atos.cnj.jus.br/atos/detalhar/1754",
+      "o_que_sustenta": "Casamento civil entre pessoas do mesmo sexo nos cartórios."
+    }
+  ],
+  "como_ler": "A linha dos casamentos conta os casamentos civis registrados em cartório no ano. A dos divórcios soma os divórcios concedidos pela Justiça em primeira instância e, desde 2007, os feitos por escritura em cartório. Os divórcios começam em 1982 nesta série. A tabela separa os dois tipos de divórcio e traz os casamentos entre pessoas do mesmo sexo, contados pelo IBGE desde 2013. As taxas da tabela, por mil habitantes de 15 anos ou mais (casamentos) e de 20 anos ou mais (divórcios), são cálculo deste site com a definição do IBGE e a população das Projeções revisão 2024, que começam em 2000; por estado, conferem com as publicadas pelo IBGE. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "O Brasil registrou 818.990 casamentos em 1974 e 948.925 em 2024. O pico da série foi em 2015, com 1.137.348. Em 2020, ano do início da pandemia, foram 757.179.",
+    "Os divórcios passaram de 30.847 em 1984 para 428.301 em 2024; o maior número foi o de 2023, com 440.827. Em 2024, a taxa foi de 2,75 divórcios por mil pessoas de 20 anos ou mais, contra 1,16 em 2000.",
+    "Duas mudanças na lei facilitaram o divórcio: a Lei 11.441, de 2007, permitiu o divórcio em cartório quando não há filhos menores nem disputa; e a Emenda Constitucional 66, de julho de 2010, acabou com a exigência de separação prévia. Em 2011, os divórcios somaram 347.583, contra 239.070 em 2010.",
+    "Os casamentos entre pessoas do mesmo sexo passaram de 3.700 em 2013, ano em que a Resolução 175 do Conselho Nacional de Justiça obrigou os cartórios a celebrá-los, para 12.187 em 2024."
+  ],
+  "glossario": [
+    {
+      "termo": "Escritura de divórcio",
+      "definicao": "Divórcio feito diretamente em cartório, por acordo do casal, sem processo judicial."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (IBGE, em dezembro)",
+    "onde_buscar": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9110-estatisticas-do-registro-civil.html",
+    "proxima": "Dados de 2025, em dezembro de 2026",
+    "ultima_conferencia": "2026-10-30"
+  },
+  "colunas": [
+    "Ano",
+    "Casamentos",
+    "Divórcios",
+    "Divórcios judiciais",
+    "Divórcios em cartório",
+    "Casamentos entre pessoas do mesmo sexo",
+    "Casamentos por mil hab. de 15 anos ou mais",
+    "Divórcios por mil hab. de 20 anos ou mais"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2024: 948.925 casamentos e 428.301 divórcios",
+      "valor_na_fonte": "IBGE, Informativo Estatísticas do Registro Civil 2024: os mesmos valores",
+      "fonte": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/135/rc_2024_v51_informativo.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [1974, 818990, "", "", "", "", "", ""],
+    [1975, 841216, "", "", "", "", "", ""],
+    [1976, 890357, "", "", "", "", "", ""],
+    [1977, 882360, "", "", "", "", "", ""],
+    [1978, 926801, "", "", "", "", "", ""],
+    [1979, 936986, "", "", "", "", "", ""],
+    [1980, 948164, "", "", "", "", "", ""],
+    [1981, 933522, "", "", "", "", "", ""],
+    [1982, 994246, 27266, 27266, "", "", "", ""],
+    [1983, 866190, 31521, 31521, "", "", "", ""],
+    [1984, 936070, 30847, 30847, "", "", "", ""],
+    [1985, 952294, 35533, 35533, "", "", "", ""],
+    [1986, 1007474, 31185, 31185, "", "", "", ""],
+    [1987, 930893, 30772, 30772, "", "", "", ""],
+    [1988, 951236, 33437, 33437, "", "", "", ""],
+    [1989, 827928, 66070, 66070, "", "", "", ""],
+    [1990, 775239, 77158, 77158, "", "", "", ""],
+    [1991, 743416, 81128, 81128, "", "", "", ""],
+    [1992, 748020, 87242, 87242, "", "", "", ""],
+    [1993, 747151, 93473, 93473, "", "", "", ""],
+    [1994, 763129, 94818, 94818, "", "", "", ""],
+    [1995, 734045, 98766, 98766, "", "", "", ""],
+    [1996, 731920, 95095, 95095, "", "", "", ""],
+    [1997, 724738, 104307, 104307, "", "", "", ""],
+    [1998, 698614, 103860, 103860, "", "", "", ""],
+    [1999, 787530, 121934, 121934, "", "", "", ""],
+    [2000, 731017, 121653, 121653, "", "", 5.97, 1.16],
+    [2001, 709561, 122780, 122780, "", "", 5.68, 1.15],
+    [2002, 714523, 126503, 126503, "", "", 5.6, 1.15],
+    [2003, 748981, 135564, 135564, "", "", 5.76, 1.21],
+    [2004, 806968, 130527, 130527, "", "", 6.09, 1.14],
+    [2005, 835846, 150714, 150714, "", "", 6.2, 1.28],
+    [2006, 889828, 162244, 162244, "", "", 6.48, 1.35],
+    [2007, 916006, 180455, 152291, 28164, "", 6.56, 1.47],
+    [2008, 959901, 188090, 150387, 37703, "", 6.76, 1.51],
+    [2009, 935116, 174747, 136784, 37963, "", 6.47, 1.37],
+    [2010, 977620, 239070, 175712, 63358, "", 6.67, 1.85],
+    [2011, 1026736, 347583, 267399, 80184, "", 6.91, 2.65],
+    [2012, 1041440, 341600, 262651, 78949, "", 6.91, 2.56],
+    [2013, 1052477, 324921, 247652, 77269, 3700, 6.89, 2.4],
+    [2014, 1106440, 341181, 262332, 78849, 4854, 7.14, 2.48],
+    [2015, 1137348, 328960, 253347, 75613, 5614, 7.25, 2.35],
+    [2016, 1095535, 344526, 267268, 77258, 5354, 6.9, 2.43],
+    [2017, 1070376, 373216, 295108, 78108, 5887, 6.67, 2.6],
+    [2018, 1053467, 385246, 306376, 78870, 9520, 6.5, 2.64],
+    [2019, 1024676, 383286, 302883, 80403, 9056, 6.26, 2.6],
+    [2020, 757179, 331185, 249874, 81311, 6433, 4.58, 2.22],
+    [2021, 932502, 386813, 299846, 86967, 9202, 5.59, 2.56],
+    [2022, 970041, 420039, 340459, 79580, 11022, 5.78, 2.75],
+    [2023, 940799, 440827, 360787, 80040, 11198, 5.56, 2.86],
+    [2024, 948925, 428301, 350407, 77894, 12187, 5.56, 2.75]
+  ]
+}

@@ -1,6 +1,6 @@
 # Catálogo de fontes
 
-Gerado por `scripts/build.py` em 2026-10-29. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
+Gerado por `scripts/build.py` em 2026-10-30. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
 
 ## Economia
 
@@ -29,6 +29,21 @@ Gerado por `scripts/build.py` em 2026-10-29. Não edite à mão: mude o indicado
 | `parceiros-comerciais-2025`: Os 10 maiores parceiros comerciais em 2025 | [MDIC/Secex, Comex Stat (base de dados bruta)](https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta) | Anual (com dados mensais no MDIC) | https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta | Janeiro de 2027, com o ano de 2026 | 2026-10-28 |
 | `exportacoes-matriz`: O que o Brasil exporta | [MDIC/Secex, Comex Stat (base de dados bruta), grupos da CUCI](https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta) | Anual (com dados mensais no MDIC) | https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta | Janeiro de 2027, com o ano de 2026 | 2026-10-28 |
 | `desemprego-regioes`: Desemprego por região | [IBGE, PNAD Contínua (Sidra, tabela 4099)](https://sidra.ibge.gov.br/tabela/4099) | Trimestral | https://sidra.ibge.gov.br/tabela/4099 | 3º trimestre de 2026, em novembro de 2026 | 2026-10-29 |
+
+## Consumo
+
+| Indicador | Fonte principal | Periodicidade | Endereço de atualização | Próxima divulgação | Última conferência |
+|---|---|---|---|---|---|
+| `veiculos-novos`: Carros e motos zero vendidos por ano | [Anfavea, Anuário da Indústria Automobilística, e Fenabrave](https://anfavea.com.br/site/conteudos/anuarios/) | Mensal (Anfavea e Fenabrave) | https://anfavea.com.br/site/ | Outubro de 2026, no início de novembro | 2026-10-30 |
+| `financiamento-imobiliario`: Imóveis comprados com financiamento | [Abecip, com dados do Banco Central](https://www.abecip.org.br/) | Mensal (Abecip) | https://www.abecip.org.br/ | Outubro de 2026, no fim de novembro | 2026-10-30 |
+| `casamentos-divorcios`: Casamentos e divórcios no Brasil | [IBGE, Estatísticas do Registro Civil](https://www.ibge.gov.br/estatisticas/sociais/populacao/9110-estatisticas-do-registro-civil.html) | Anual (IBGE, em dezembro) | https://www.ibge.gov.br/estatisticas/sociais/populacao/9110-estatisticas-do-registro-civil.html | Dados de 2025, em dezembro de 2026 | 2026-10-30 |
+| `cesta-basica-horas`: Quantas horas de trabalho custa a cesta básica | [Dieese, Pesquisa Nacional da Cesta Básica de Alimentos](https://www.dieese.org.br/cesta/) | Mensal (Dieese) | https://www.dieese.org.br/cesta/ | Outubro de 2026, no início de novembro | 2026-10-30 |
+| `consumo-carne`: Quanta carne o brasileiro consome | [Conab, Perspectivas para a Agropecuária, edição 14 (setembro de 2026)](https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/perspectivas-para-a-agropecuaria/perspectivas-para-a-agropecuaria-volume-14-safra-2026-2027) | Anual (Conab, Perspectivas para a Agropecuária, em setembro) | https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/perspectivas-para-a-agropecuaria | Edição de 2027 | 2026-10-30 |
+| `vendas-varejo`: Vendas no comércio | [IBGE, Pesquisa Mensal de Comércio](https://www.ibge.gov.br/estatisticas/economicas/comercio/9227-pesquisa-mensal-de-comercio.html) | Mensal (IBGE) | https://www.ibge.gov.br/estatisticas/economicas/comercio/9227-pesquisa-mensal-de-comercio.html | Resultado de setembro de 2026, em novembro | 2026-10-30 |
+| `vendas-varejo-atividades`: O que o comércio vendeu mais e menos em 2025 | [IBGE, Pesquisa Mensal de Comércio](https://www.ibge.gov.br/estatisticas/economicas/comercio/9227-pesquisa-mensal-de-comercio.html) | Mensal (IBGE) | https://www.ibge.gov.br/estatisticas/economicas/comercio/9227-pesquisa-mensal-de-comercio.html | Resultado de setembro de 2026, em novembro | 2026-10-30 |
+| `endividamento-familias`: Endividamento e inadimplência das famílias | [Banco Central do Brasil, estatísticas de crédito (SGS 29037, 29038, 29034, 29035 e 21112)](https://www.bcb.gov.br/estatisticas/estatisticasmonetariascredito) | Mensal (Banco Central) | https://www.bcb.gov.br/estatisticas/estatisticasmonetariascredito | Dados de setembro e outubro de 2026, em novembro | 2026-10-30 |
+| `passageiros-aereos`: Quantas pessoas viajam de avião | [Anac, Dados Estatísticos do Transporte Aéreo](https://sistemas.anac.gov.br/dadosabertos/Voos%20e%20opera%C3%A7%C3%B5es%20a%C3%A9reas/Dados%20Estat%C3%ADsticos%20do%20Transporte%20A%C3%A9reo/) | Mensal (Anac) | https://sistemas.anac.gov.br/dadosabertos/Voos%20e%20opera%C3%A7%C3%B5es%20a%C3%A9reas/Dados%20Estat%C3%ADsticos%20do%20Transporte%20A%C3%A9reo/ | Outubro de 2026, em novembro | 2026-10-30 |
+| `casamentos-estados`: Casamentos por estado | [IBGE, Estatísticas do Registro Civil](https://www.ibge.gov.br/estatisticas/sociais/populacao/9110-estatisticas-do-registro-civil.html) | Anual (IBGE, em dezembro) | https://www.ibge.gov.br/estatisticas/sociais/populacao/9110-estatisticas-do-registro-civil.html | Dados de 2025, em dezembro de 2026 | 2026-10-30 |
 
 ## Políticas públicas
 

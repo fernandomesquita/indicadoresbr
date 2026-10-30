@@ -1,0 +1,111 @@
+{
+  "id": "consumo-carne",
+  "categoria": "consumo",
+  "ordem": 5,
+  "visivel": true,
+  "titulo": "Quanta carne o brasileiro consome",
+  "subtitulo": "Carne bovina, de frango e suína disponível para consumo no país, em quilos por habitante por ano, de 2000 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Frango",
+    "Bovina",
+    "Suína"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": " kg",
+  "casas": 1,
+  "fonte": {
+    "nome": "Conab, Perspectivas para a Agropecuária, edição 14 (setembro de 2026)",
+    "url": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/perspectivas-para-a-agropecuaria/perspectivas-para-a-agropecuaria-volume-14-safra-2026-2027"
+  },
+  "fontes": [
+    {
+      "nome": "Conab, Perspectivas para a Agropecuária, safra 2026/2027, tabela de dados de carnes (planilha)",
+      "url": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/perspectivas-para-a-agropecuaria/perspectivas-para-a-agropecuaria-edicao-14-2026-27/tabela-de-dados-carnes_2026-27.xlsx",
+      "o_que_sustenta": "Produção, importação, exportação, população e disponibilidade por habitante, de 1997 a 2025, e estimativas para 2026 e 2027."
+    },
+    {
+      "nome": "Conab, Perspectivas para a Agropecuária, safra 2026/2027 (publicação)",
+      "url": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/perspectivas-para-a-agropecuaria/perspectivas-para-a-agropecuaria-edicao-14-2026-27/perspectivas_2026-27.pdf",
+      "o_que_sustenta": "Conferência dos valores de 2023 a 2027."
+    },
+    {
+      "nome": "Embrapa Suínos e Aves, Central de Inteligência de Aves e Suínos",
+      "url": "https://www.embrapa.br/suinos-e-aves/cias/estatisticas-frangos",
+      "o_que_sustenta": "Conferência do frango de 2011 a 2025 (a Embrapa republica a Conab)."
+    }
+  ],
+  "como_ler": "Cada linha é a quantidade de carne que ficou no país para consumo, dividida pela população: produção mais importação menos exportação. É o chamado consumo aparente, a medida usada pela Conab; inclui o que vai para restaurantes, indústria e perdas, e por isso não é o que cada pessoa come em casa. A planilha da Conab troca de estimativa de população em 2000 e em 2010, o que mexe um pouco no valor por habitante desses anos; a produção de carne bovina também tem um salto de 17% de 2023 para 2024 na planilha, sem nota explicativa. Associações do setor, como a ABPA, calculam o consumo de frango e de porco com outro método e chegam a valores menores. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2000, cada brasileiro tinha à disposição 34,9 kg de carne bovina, 29,2 kg de frango e 13,9 kg de carne suína por ano. Em 2025, foram 36,2 kg, 51,7 kg e 20,3 kg.",
+    "O frango passou a carne bovina em 2008 e ficou à frente em todos os anos desde então. A bovina teve o menor valor da série em 2022 (28,2 kg) e o maior em 2006 (42,8 kg).",
+    "Para 2026, a Conab estima 34,6 kg de carne bovina, 51,0 kg de frango e 21,1 kg de carne suína por habitante."
+  ],
+  "glossario": [
+    {
+      "termo": "Consumo aparente",
+      "definicao": "Produção mais importação menos exportação, dividida pela população."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Conab, Perspectivas para a Agropecuária, em setembro)",
+    "onde_buscar": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/perspectivas-para-a-agropecuaria",
+    "proxima": "Edição de 2027",
+    "ultima_conferencia": "2026-10-30"
+  },
+  "colunas": [
+    "Ano",
+    "Bovina",
+    "Frango",
+    "Suína",
+    "Total das três"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Frango de 2011 a 2025",
+      "valor_na_fonte": "Embrapa CIAS (fonte Conab): os mesmos 15 valores",
+      "fonte": "https://www.embrapa.br/suinos-e-aves/cias/estatisticas-frangos",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "Bovina 2024: 36,0 kg; 2025: 36,2 kg",
+      "valor_na_fonte": "A tabela da publicação da Conab imprime 36,2 (2024) e 36,0 (2025), invertidos em relação à planilha e à conta disponibilidade dividida por população da própria publicação; o site usa a planilha",
+      "fonte": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/perspectivas-para-a-agropecuaria/perspectivas-para-a-agropecuaria-edicao-14-2026-27/perspectivas_2026-27.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2000, 34.9, 29.2, 13.9, 78.1],
+    [2001, 34.3, 30.1, 13.9, 78.3],
+    [2002, 40.7, 32.7, 13.4, 86.8],
+    [2003, 40.4, 31.5, 12.2, 84.0],
+    [2004, 36.8, 32.5, 11.6, 80.8],
+    [2005, 39.6, 35.1, 11.3, 86.0],
+    [2006, 42.8, 35.4, 12.9, 91.1],
+    [2007, 41.2, 37.1, 12.6, 90.8],
+    [2008, 35.9, 38.6, 13.0, 87.5],
+    [2009, 34.9, 38.2, 13.3, 86.4],
+    [2010, 37.3, 44.5, 14.1, 96.0],
+    [2011, 36.5, 46.5, 15.0, 98.0],
+    [2012, 37.0, 45.4, 15.1, 97.5],
+    [2013, 39.5, 45.3, 15.0, 99.8],
+    [2014, 36.6, 46.0, 16.1, 98.7],
+    [2015, 34.5, 47.6, 16.3, 98.4],
+    [2016, 35.3, 46.8, 15.3, 97.5],
+    [2017, 35.4, 47.4, 16.0, 98.8],
+    [2018, 35.5, 46.6, 16.7, 98.8],
+    [2019, 32.1, 48.8, 16.9, 97.9],
+    [2020, 29.1, 52.6, 17.3, 99.0],
+    [2021, 29.3, 52.5, 18.7, 100.5],
+    [2022, 28.2, 49.9, 20.2, 98.3],
+    [2023, 31.9, 48.2, 20.1, 100.2],
+    [2024, 36.0, 49.3, 19.8, 105.0],
+    [2025, 36.2, 51.7, 20.3, 108.2]
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "vendas-varejo-atividades",
+  "categoria": "consumo",
+  "ordem": 7,
+  "visivel": true,
+  "titulo": "O que o comércio vendeu mais e menos em 2025",
+  "subtitulo": "Variação do volume de vendas em 2025 sobre 2024, por atividade do comércio, em %",
+  "tipo": "barras",
+  "x": "Atividade",
+  "series": [
+    "Variação em 2025 (%)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "ultimo": "2025",
+  "fonte": {
+    "nome": "IBGE, Pesquisa Mensal de Comércio",
+    "url": "https://www.ibge.gov.br/estatisticas/economicas/comercio/9227-pesquisa-mensal-de-comercio.html"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Pesquisa Mensal de Comércio, Sidra tabela 8883 (atividades do varejo ampliado)",
+      "url": "https://sidra.ibge.gov.br/tabela/8883",
+      "o_que_sustenta": "Variação anual por atividade."
+    },
+    {
+      "nome": "IBGE, boletins da Pesquisa Mensal de Comércio (dezembro de 2025 e agosto de 2026)",
+      "url": "https://ftp.ibge.gov.br/Comercio_e_Servicos/Pesquisa_Mensal_de_Comercio/Fasciculo_Indicadores_IBGE/pmc_202608caderno.pdf",
+      "o_que_sustenta": "Conferência das variações anuais e do acumulado de 2026."
+    }
+  ],
+  "como_ler": "Cada barra é quanto o volume vendido por um tipo de comércio cresceu ou caiu em 2025 em relação a 2024, descontada a variação de preços. A tabela traz também o acumulado de janeiro a agosto de 2026 sobre o mesmo período de 2025. O IBGE revisa os números recentes a cada divulgação; quatro atividades de 2025 já mudaram 0,1 ponto desde o boletim de dezembro.",
+  "contexto": [
+    "Em 2025, as maiores altas foram em móveis e eletrodomésticos (4,6%) e farmácia e perfumaria (4,5%). As quedas foram em material de construção (-0,1%), livros e papelaria (-0,9%), atacado de alimentos (-2,4%), veículos, motos e peças (-2,9%).",
+    "Supermercados e alimentos, a maior atividade do varejo, cresceram 0,8%.",
+    "O indicador Vendas no comércio mostra o total do varejo desde 2000."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Mensal (IBGE)",
+    "onde_buscar": "https://www.ibge.gov.br/estatisticas/economicas/comercio/9227-pesquisa-mensal-de-comercio.html",
+    "proxima": "Resultado de setembro de 2026, em novembro",
+    "ultima_conferencia": "2026-10-30"
+  },
+  "colunas": [
+    "Atividade",
+    "Variação em 2025 (%)",
+    "Acumulado de jan. a ago. de 2026 (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Variações de 2025 por atividade",
+      "valor_na_fonte": "Boletim da PMC de dezembro de 2025, tabela 2: iguais, exceto 4 atividades revistas em 0,1 ponto",
+      "fonte": "https://ftp.ibge.gov.br/Comercio_e_Servicos/Pesquisa_Mensal_de_Comercio/Fasciculo_Indicadores_IBGE/pmc_202608caderno.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Móveis e eletrodomésticos", 4.6, 1.2],
+    ["Farmácia e perfumaria", 4.5, 4.6],
+    ["Informática e comunicação", 4.1, 5.7],
+    ["Outros artigos pessoais e domésticos", 2.2, 1.3],
+    ["Tecidos, vestuário e calçados", 1.3, -1.4],
+    ["Supermercados e alimentos", 0.8, 1.4],
+    ["Combustíveis", 0.6, 1.6],
+    ["Material de construção", -0.1, -1.2],
+    ["Livros e papelaria", -0.9, 3.2],
+    ["Atacado de alimentos", -2.4, 1.6],
+    ["Veículos, motos e peças", -2.9, 3.0]
+  ]
+}
