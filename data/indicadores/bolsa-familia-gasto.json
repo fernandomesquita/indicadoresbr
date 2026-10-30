@@ -1,0 +1,107 @@
+{
+  "id": "bolsa-familia-gasto",
+  "categoria": "politicas-publicas",
+  "ordem": 31,
+  "visivel": true,
+  "titulo": "Quanto o governo gasta com o Bolsa Família",
+  "subtitulo": "Despesa executada com os benefícios do Bolsa Família e do Auxílio Brasil, em bilhões de reais de 2025, de 2004 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Gasto (R$ bi de 2025)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "2021",
+    "2022"
+  ],
+  "faixasGoverno": true,
+  "prefixo": "R$ ",
+  "sufixo": " bi",
+  "casas": 1,
+  "fonte": {
+    "nome": "Ministério do Planejamento e Orçamento, SIOP",
+    "url": "https://www1.siop.planejamento.gov.br/sparql/"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério do Planejamento e Orçamento, SIOP, consulta SPARQL do orçamento federal",
+      "url": "https://www1.siop.planejamento.gov.br/sparql/",
+      "o_que_sustenta": "Despesa liquidada nas ações de benefícios do Bolsa Família (006O, 099A e 0B19 de 2004 a 2007; 8442 de 2008 em diante) e do Auxílio Brasil (21DP), e no Auxílio Emergencial (00S4, 00SF e 00SI)."
+    },
+    {
+      "nome": "IBGE, Sidra tabelas 6784 e 1846 (PIB)",
+      "url": "https://sidra.ibge.gov.br/tabela/6784",
+      "o_que_sustenta": "Denominador do gasto em % do PIB."
+    },
+    {
+      "nome": "MDS, relatórios de gestão do Bolsa Família",
+      "url": "https://www.gov.br/mds/pt-br/acesso-a-informacao/auditorias",
+      "o_que_sustenta": "Conferência da ação 8442 em 2010, 2014 e 2016 e dos repasses de 2024."
+    },
+    {
+      "nome": "IBGE, IPCA",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção para reais de 2025."
+    }
+  ],
+  "como_ler": "Cada coluna é a despesa executada (liquidada) no orçamento federal com os benefícios pagos às famílias no ano, corrigida pela inflação para reais de 2025. Não inclui os gastos com a gestão do programa nem com o Cadastro Único. As colunas destacadas são do Auxílio Brasil (2021 e 2022); em 2021 somam os dois programas, e em 2023 o orçamento ainda pagou parte do Bolsa Família pela ação do Auxílio Brasil, que foi somada. O Auxílio Emergencial da pandemia, de 2020 e 2021, é outro programa e não entra nas colunas; a tabela traz o valor dele, junto com o gasto em valores da época e em % do PIB (cálculo deste site com o PIB do IBGE). As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2004, o governo gastou R$ 5,62 bilhões com os benefícios do Bolsa Família, ou R$ 17,7 bilhões em reais de 2025 (0,29% do PIB). Em 2019, foram R$ 45,5 bilhões em reais de 2025 (0,44% do PIB).",
+    "Em 2020, o Bolsa Família gastou menos (R$ 18,9 bilhões, em valores da época) porque o benefício ficou suspenso para as famílias que passaram a receber o Auxílio Emergencial, segundo o relatório de gestão de 2020 do ministério. O Auxílio Emergencial custou R$ 292,9 bilhões naquele ano.",
+    "O gasto subiu com o Auxílio Brasil em 2022 e chegou a 1,52% do PIB em 2023, com o Bolsa Família recriado. Em 2025, foram R$ 158,2 bilhões, 1,24% do PIB."
+  ],
+  "glossario": [
+    {
+      "termo": "Despesa liquidada",
+      "definicao": "Despesa reconhecida depois de o serviço ser prestado ou o benefício ser devido; é a etapa anterior ao pagamento."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária no SIOP; o ano fecha em janeiro",
+    "onde_buscar": "https://www1.siop.planejamento.gov.br/sparql/",
+    "proxima": "2026 completo, em janeiro de 2027",
+    "ultima_conferencia": "2026-10-30"
+  },
+  "colunas": [
+    "Ano",
+    "Gasto (R$ bi de 2025)",
+    "Gasto, valor da época (R$ bi)",
+    "% do PIB",
+    "Auxílio Emergencial, à parte (R$ bi da época)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Ação 8442 em 2010, 2014 e 2016; 2024: R$ 168,2 bilhões",
+      "valor_na_fonte": "Relatórios de gestão do MDS: iguais em 2010, 2014 e 2016; 2024: R$ 168,3 bilhões de repasses",
+      "fonte": "https://www.gov.br/mds/pt-br/acesso-a-informacao/auditorias",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2004, 17.7, 5.62, 0.29, ""],
+    [2005, 18.8, 6.39, 0.29, ""],
+    [2006, 21.6, 7.64, 0.32, ""],
+    [2007, 23.9, 8.76, 0.32, ""],
+    [2008, 27.2, 10.52, 0.34, ""],
+    [2009, 29.2, 11.84, 0.36, ""],
+    [2010, 31.5, 13.46, 0.35, ""],
+    [2011, 36.6, 16.64, 0.38, ""],
+    [2012, 42.8, 20.53, 0.43, ""],
+    [2013, 47.1, 24.0, 0.45, ""],
+    [2014, 48.3, 26.16, 0.45, ""],
+    [2015, 44.7, 26.39, 0.44, ""],
+    [2016, 42.8, 27.49, 0.44, ""],
+    [2017, 41.8, 27.78, 0.42, ""],
+    [2018, 42.7, 29.43, 0.42, ""],
+    [2019, 45.5, 32.48, 0.44, ""],
+    [2020, 25.6, 18.88, 0.25, 292.9],
+    [2021, 31.7, 25.29, 0.28, 59.7],
+    [2022, 129.6, 113.03, 1.12, ""],
+    [2023, 182.3, 166.29, 1.52, ""],
+    [2024, 176.6, 168.2, 1.43, ""],
+    [2025, 158.2, 158.19, 1.24, ""]
+  ]
+}
