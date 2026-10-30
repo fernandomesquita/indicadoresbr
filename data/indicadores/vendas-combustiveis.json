@@ -1,0 +1,109 @@
+{
+  "id": "vendas-combustiveis",
+  "categoria": "consumo",
+  "ordem": 19,
+  "visivel": true,
+  "titulo": "Quanto combustível o país consome",
+  "subtitulo": "Vendas de gasolina, etanol hidratado e óleo diesel pelas distribuidoras, em bilhões de litros por ano, de 1990 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Gasolina",
+    "Etanol hidratado",
+    "Óleo diesel"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": " bi L",
+  "casas": 1,
+  "fonte": {
+    "nome": "ANP, vendas de derivados de petróleo e biocombustíveis",
+    "url": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/vendas-de-derivados-de-petroleo-e-biocombustiveis"
+  },
+  "fontes": [
+    {
+      "nome": "ANP, dados abertos: vendas de combustíveis pelas distribuidoras, em m³, mensal desde 1990 (atualizado em 29/10/2026)",
+      "url": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/arquivos/vdpb/vendas-derivados-petroleo-e-etanol/vendas-combustiveis-m3-1990-2025.csv",
+      "o_que_sustenta": "Vendas anuais de 1990 a 2025 e de janeiro a setembro de 2026."
+    },
+    {
+      "nome": "ANP, Anuário Estatístico 2026, tabelas 3.2 e 4.7",
+      "url": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/anuario-estatistico/arquivos-anuario-estatistico-2026/secao-3/t3-2.xls",
+      "o_que_sustenta": "Conferência de 2016 a 2025."
+    }
+  ],
+  "como_ler": "Cada linha é o volume vendido pelas distribuidoras no ano, em bilhões de litros. A gasolina é a vendida nos postos (gasolina C), que já leva etanol anidro misturado; o etanol hidratado é o vendido puro na bomba; o óleo diesel inclui a mistura obrigatória de biodiesel e é usado sobretudo por caminhões, ônibus e máquinas. A gasolina e o etanol hidratado concorrem entre si nos carros flex, que permitem trocar um pelo outro conforme o preço. Até 2006, os números incluem o consumo das próprias distribuidoras, e a ANP mudou o sistema de coleta em 2007. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2025, as distribuidoras venderam 46,6 bilhões de litros de gasolina, 21,2 bilhões de etanol hidratado e 69,5 bilhões de óleo diesel. Em 1990, foram 11,4, 11,5 e 27,3 bilhões.",
+    "O etanol hidratado teve o menor volume da série em 2003 (3,2 bilhões de litros) e o maior em 2019 (22,5 bilhões).",
+    "De janeiro a setembro de 2026, as vendas cresceram 3,7% na gasolina, 4,4% no etanol hidratado e 1,0% no diesel, em relação ao mesmo período de 2025."
+  ],
+  "glossario": [
+    {
+      "termo": "Gasolina C",
+      "definicao": "Gasolina vendida nos postos, com etanol anidro misturado na proporção fixada pelo governo."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal (ANP)",
+    "onde_buscar": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/vendas-de-derivados-de-petroleo-e-biocombustiveis",
+    "proxima": "Outubro de 2026, no fim de novembro",
+    "ultima_conferencia": "2026-10-30"
+  },
+  "colunas": [
+    "Ano",
+    "Gasolina",
+    "Etanol hidratado",
+    "Óleo diesel"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Gasolina e diesel de 2016 a 2025",
+      "valor_na_fonte": "Anuário Estatístico ANP 2026: os mesmos valores (etanol difere 0,02% em 2017 e 2022)",
+      "fonte": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/anuario-estatistico/arquivos-anuario-estatistico-2026/secao-3/t3-2.xls",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [1990, 11.44, 11.48, 27.27],
+    [1991, 12.69, 10.49, 25.96],
+    [1992, 11.93, 9.7, 25.52],
+    [1993, 13.1, 9.48, 26.54],
+    [1994, 14.6, 9.77, 27.54],
+    [1995, 17.44, 9.96, 28.44],
+    [1996, 20.57, 9.8, 30.15],
+    [1997, 22.06, 8.02, 32.0],
+    [1998, 23.7, 6.2, 34.25],
+    [1999, 23.53, 6.01, 34.59],
+    [2000, 22.63, 4.6, 35.15],
+    [2001, 22.21, 3.5, 37.02],
+    [2002, 22.61, 3.79, 37.67],
+    [2003, 21.79, 3.25, 36.85],
+    [2004, 23.17, 4.51, 39.23],
+    [2005, 23.55, 4.67, 39.17],
+    [2006, 24.01, 6.19, 39.01],
+    [2007, 24.33, 9.37, 41.56],
+    [2008, 25.17, 13.29, 44.76],
+    [2009, 25.41, 16.47, 44.3],
+    [2010, 29.84, 15.07, 49.24],
+    [2011, 35.49, 10.9, 52.26],
+    [2012, 39.7, 9.85, 55.9],
+    [2013, 41.43, 11.75, 58.57],
+    [2014, 44.36, 12.99, 60.03],
+    [2015, 41.14, 17.86, 57.21],
+    [2016, 43.02, 14.59, 54.28],
+    [2017, 44.15, 13.64, 54.77],
+    [2018, 38.35, 19.38, 55.63],
+    [2019, 38.17, 22.54, 57.3],
+    [2020, 35.82, 19.26, 57.47],
+    [2021, 39.32, 16.7, 62.11],
+    [2022, 43.04, 15.47, 63.23],
+    [2023, 46.03, 16.23, 65.52],
+    [2024, 44.41, 21.74, 67.42],
+    [2025, 46.65, 21.24, 69.48]
+  ]
+}

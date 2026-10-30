@@ -1,0 +1,103 @@
+{
+  "id": "energia-residencial",
+  "categoria": "consumo",
+  "ordem": 18,
+  "visivel": true,
+  "titulo": "Quanta energia elétrica uma casa consome",
+  "subtitulo": "Consumo médio de energia elétrica por residência, em kWh por mês, de 2004 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "kWh por mês por residência"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": " kWh",
+  "casas": 0,
+  "fonte": {
+    "nome": "Empresa de Pesquisa Energética (EPE), consumo de energia elétrica",
+    "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica"
+  },
+  "fontes": [
+    {
+      "nome": "EPE, consumo mensal de energia elétrica por classe (planilha, atualizada em 19/10/2026)",
+      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica",
+      "o_que_sustenta": "Consumo residencial, número de unidades consumidoras e consumo médio, de 2004 a setembro de 2026."
+    },
+    {
+      "nome": "EPE, Anuário Estatístico de Energia Elétrica 2026",
+      "url": "https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-160/topico-168/anuario-workbook.xlsx",
+      "o_que_sustenta": "Conferência de 2011 a 2025."
+    },
+    {
+      "nome": "EPE, Resenha Mensal do Mercado de Energia Elétrica, outubro de 2026",
+      "url": "https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-153/topico-803/Resenha%20Mensal%20-%20Outubro%202026%20(base%20Setembro).pdf",
+      "o_que_sustenta": "Conferência do acumulado de 2026."
+    },
+    {
+      "nome": "Ipeadata, série ELETRO_CEERES (Eletrobras)",
+      "url": "https://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='ELETRO_CEERES')",
+      "o_que_sustenta": "Consumo residencial total de 1963 a 2003, citado no texto."
+    }
+  ],
+  "como_ler": "A linha mostra quanto uma residência ligada à rede consome de eletricidade, em média, por mês: o consumo residencial do ano dividido pelo número médio de residências atendidas, como calcula a EPE. A tabela traz o consumo total das residências, em terawatts-hora (TWh), e o número de unidades consumidoras em dezembro. A energia gerada em painéis solares e consumida na própria casa não entra, porque não passa pela rede; com a expansão da geração própria, o consumo da rede subestima um pouco o consumo real. Os dados de 2024 e 2025 foram revistos pela EPE. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2004, uma residência consumia em média 142 kWh por mês. Em 2025, foram 179 kWh; o maior valor da série foi o de 2024, com 180 kWh.",
+    "O consumo total das residências passou de 4,8 TWh em 1963 para 179,6 TWh em 2025, e o número de residências atendidas chegou a 84,5 milhões. De janeiro a setembro de 2026, o consumo residencial cresceu 4,6% sobre o mesmo período de 2025.",
+    "Em 2025, a região com maior consumo médio por residência foi o Sul (217 kWh por mês) e a de menor, o Nordeste (135 kWh)."
+  ],
+  "glossario": [
+    {
+      "termo": "kWh",
+      "definicao": "Quilowatt-hora, unidade de energia usada na conta de luz."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal (EPE)",
+    "onde_buscar": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica",
+    "proxima": "Outubro de 2026, em novembro",
+    "ultima_conferencia": "2026-10-30"
+  },
+  "colunas": [
+    "Ano",
+    "kWh por mês por residência",
+    "Consumo das residências (TWh)",
+    "Residências atendidas em dezembro (milhões)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Consumo, unidades e kWh por mês de 2011 a 2025",
+      "valor_na_fonte": "Anuário Estatístico de Energia Elétrica 2026 da EPE: os mesmos valores",
+      "fonte": "https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-160/topico-168/anuario-workbook.xlsx",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2004, 141.5, 78.5, 46.8],
+    [2005, 143.7, 82.6, 48.6],
+    [2006, 144.2, 85.8, 50.3],
+    [2007, 146.3, 89.9, 52.1],
+    [2008, 148.2, 94.7, 54.2],
+    [2009, 152.5, 100.8, 55.9],
+    [2010, 156.6, 107.2, 58.0],
+    [2011, 157.9, 112.0, 59.9],
+    [2012, 161.2, 117.6, 61.7],
+    [2013, 165.6, 124.9, 63.9],
+    [2014, 169.5, 132.3, 66.0],
+    [2015, 163.4, 131.2, 67.7],
+    [2016, 161.4, 132.9, 69.3],
+    [2017, 159.8, 134.4, 70.9],
+    [2018, 160.4, 137.7, 72.1],
+    [2019, 162.9, 142.4, 73.3],
+    [2020, 167.2, 147.7, 74.5],
+    [2021, 166.8, 150.8, 76.1],
+    [2022, 163.2, 152.3, 78.8],
+    [2023, 172.3, 165.2, 80.9],
+    [2024, 179.8, 176.6, 82.7],
+    [2025, 179.3, 179.6, 84.5]
+  ]
+}

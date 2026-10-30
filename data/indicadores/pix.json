@@ -1,0 +1,84 @@
+{
+  "id": "pix",
+  "categoria": "consumo",
+  "ordem": 17,
+  "visivel": true,
+  "titulo": "Pix: quanto e para quê",
+  "subtitulo": "Transações por Pix, em bilhões por ano, e divisão por tipo de pagador e recebedor, de 2021 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Transações (bilhões)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": " bi",
+  "casas": 1,
+  "fonte": {
+    "nome": "Banco Central do Brasil, estatísticas do Pix",
+    "url": "https://www.bcb.gov.br/estabilidadefinanceira/estatisticaspix"
+  },
+  "fontes": [
+    {
+      "nome": "Banco Central, dados abertos de meios de pagamento (MPV_DadosAbertos), série mensal",
+      "url": "https://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/documentacao",
+      "o_que_sustenta": "Total de transações e valor do Pix, liquidado dentro e fora do sistema do Banco Central."
+    },
+    {
+      "nome": "Banco Central, dados abertos do Pix (Pix_DadosAbertos)",
+      "url": "https://olinda.bcb.gov.br/olinda/servico/Pix_DadosAbertos/versao/v1/documentacao",
+      "o_que_sustenta": "Divisão por natureza (pessoa para pessoa, pessoa para empresa etc.), só das transações liquidadas no sistema do Banco Central."
+    },
+    {
+      "nome": "Banco Central, Relatório de Gestão do Pix 2023-2025",
+      "url": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/relatorio_de_gestao_pix/relatorio_gestao_pix_2026.pdf",
+      "o_que_sustenta": "Conferência dos totais e das participações de 2025."
+    }
+  ],
+  "como_ler": "Cada coluna é o número de transações por Pix no ano. A tabela traz o valor movimentado, em trilhões de reais da época, e a divisão das transações por tipo: de pessoa para pessoa, de pessoa para empresa (compras e contas), de empresa para pessoa (salários, reembolsos) e entre empresas. A divisão por tipo vem da base do Pix liquidado no sistema do Banco Central, que tem cerca de 10% menos transações que o total; ela serve para mostrar a proporção. 2020 ficou fora porque o Pix só começou em novembro.",
+  "contexto": [
+    "O número de transações por Pix passou de 9,4 bilhões em 2021 para 79,7 bilhões em 2025, e o valor movimentado, de R$ 5,20 trilhões para R$ 35,30 trilhões.",
+    "No início, o Pix era sobretudo transferência entre pessoas: 85,2% das transações em novembro e dezembro de 2020. Em 2025, essa parte caiu para 44,1%, e os pagamentos de pessoas a empresas chegaram a 42,9%. De janeiro a setembro de 2026, os pagamentos a empresas passaram as transferências entre pessoas: 46,1% contra 39,9%.",
+    "De janeiro a setembro de 2026, foram 68,0 bilhões de transações, 18,5% a mais que no mesmo período de 2025."
+  ],
+  "glossario": [
+    {
+      "termo": "Pix",
+      "definicao": "Sistema de pagamentos instantâneos do Banco Central, lançado em novembro de 2020."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal (Banco Central)",
+    "onde_buscar": "https://www.bcb.gov.br/estabilidadefinanceira/estatisticaspix",
+    "proxima": "Outubro de 2026, em novembro",
+    "ultima_conferencia": "2026-10-30"
+  },
+  "colunas": [
+    "Ano",
+    "Transações (bilhões)",
+    "Valor (R$ trilhões)",
+    "Pessoa para pessoa (%)",
+    "Pessoa para empresa (%)",
+    "Empresa para pessoa (%)",
+    "Empresa para empresa (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2025: 79,6 bilhões de transações, R$ 35,3 trilhões; 42,9% de pessoa para empresa",
+      "valor_na_fonte": "Relatório de Gestão do Pix: quase 80 bilhões, mais de R$ 35 trilhões, 43% de pessoa para empresa",
+      "fonte": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/relatorio_de_gestao_pix/relatorio_gestao_pix_2026.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2021, 9.43, 5.2, 74.5, 14.3, 8.5, 2.6],
+    [2022, 24.03, 10.89, 68.8, 21.3, 6.9, 2.8],
+    [2023, 41.68, 17.12, 57.8, 31.5, 7.5, 2.9],
+    [2024, 63.42, 26.4, 48.8, 39.3, 8.5, 3.0],
+    [2025, 79.65, 35.3, 44.1, 42.9, 9.1, 3.6]
+  ]
+}

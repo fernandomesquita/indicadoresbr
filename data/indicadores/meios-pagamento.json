@@ -1,0 +1,92 @@
+{
+  "id": "meios-pagamento",
+  "categoria": "consumo",
+  "ordem": 16,
+  "visivel": true,
+  "titulo": "Como os brasileiros pagam",
+  "subtitulo": "Número de transações por meio de pagamento, em bilhões por ano, de 2015 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Pix",
+    "Cartão de crédito",
+    "Cartão de débito",
+    "Boleto",
+    "Cheque"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": " bi",
+  "casas": 1,
+  "escolha": true,
+  "fonte": {
+    "nome": "Banco Central do Brasil, estatísticas de meios de pagamento",
+    "url": "https://www.bcb.gov.br/estabilidadefinanceira/estatisticaspagamentosvarejo"
+  },
+  "fontes": [
+    {
+      "nome": "Banco Central, dados abertos de meios de pagamento (MPV_DadosAbertos), série trimestral",
+      "url": "https://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/documentacao",
+      "o_que_sustenta": "Quantidade de transações por meio de pagamento, de 2015 ao 2º trimestre de 2026; o total do ano é a soma dos trimestres."
+    },
+    {
+      "nome": "Banco Central, Relatório de Gestão do Pix 2023-2025 (10/08/2026)",
+      "url": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/relatorio_de_gestao_pix/relatorio_gestao_pix_2026.pdf",
+      "o_que_sustenta": "Conferência do total de Pix de 2025."
+    }
+  ],
+  "como_ler": "Cada linha é o número de pagamentos e transferências feitos no ano com um meio de pagamento, em bilhões. Cartões contam só transações no Brasil; cheque e boleto incluem os compensados entre bancos diferentes e no mesmo banco. O Pix começou em novembro de 2020. Use os botões para ver cartão pré-pago, TED e saques em dinheiro. O número de transações mostra como as pessoas pagam no dia a dia; o valor movimentado é dominado por transferências grandes entre empresas e está na tabela do Banco Central. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2025, foram 79,7 bilhões de transações por Pix, 22,0 bilhões com cartão de crédito, 16,4 bilhões com cartão de débito e 5,6 bilhões por boleto.",
+    "O cheque caiu de 1,04 bilhão de transações em 2015 para 0,14 bilhão em 2025. O cartão de débito parou de crescer: foram 16,4 bilhões em 2024 e 16,4 bilhões em 2025.",
+    "O indicador Pix: quanto e para quê mostra o crescimento do Pix e quem paga quem."
+  ],
+  "glossario": [
+    {
+      "termo": "TED",
+      "definicao": "Transferência Eletrônica Disponível, transferência entre bancos que existia antes do Pix e continua em uso."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Trimestral (Banco Central)",
+    "onde_buscar": "https://www.bcb.gov.br/estabilidadefinanceira/estatisticaspagamentosvarejo",
+    "proxima": "3º trimestre de 2026",
+    "ultima_conferencia": "2026-10-30"
+  },
+  "colunas": [
+    "Ano",
+    "Pix",
+    "Cartão de crédito",
+    "Cartão de débito",
+    "Cartão pré-pago",
+    "Boleto",
+    "Cheque",
+    "TED",
+    "Saques"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Pix 2025: 79,6 bilhões de transações",
+      "valor_na_fonte": "Relatório de Gestão do Pix: quase 80 bilhões de transações em 2025",
+      "fonte": "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/relatorio_de_gestao_pix/relatorio_gestao_pix_2026.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2015, "", 5.52, 6.21, "", 3.6, 1.04, 0.33, 4.84],
+    [2016, "", 5.88, 6.84, 0.0, 3.53, 0.86, 0.47, 4.48],
+    [2017, "", 6.4, 7.93, 0.03, 3.49, 0.73, 0.6, 4.6],
+    [2018, "", 7.32, 9.02, 0.08, 3.96, 0.63, 0.7, 4.42],
+    [2019, "", 9.6, 10.85, 0.3, 4.44, 0.55, 1.03, 4.61],
+    [2020, 0.18, 9.36, 11.46, 0.84, 5.22, 0.38, 1.83, 4.06],
+    [2021, 9.43, 12.47, 13.52, 2.58, 5.67, 0.31, 1.27, 3.72],
+    [2022, 24.03, 16.13, 15.32, 4.91, 5.91, 0.27, 1.02, 3.45],
+    [2023, 41.68, 18.02, 16.02, 6.66, 5.79, 0.22, 0.89, 3.15],
+    [2024, 63.42, 20.01, 16.42, 7.69, 5.73, 0.18, 0.82, 2.86],
+    [2025, 79.65, 22.02, 16.39, 7.88, 5.6, 0.14, 0.78, 2.59]
+  ]
+}
