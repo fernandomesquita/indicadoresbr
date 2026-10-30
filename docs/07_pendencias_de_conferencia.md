@@ -57,3 +57,4 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **`consumo-carne`:** a tabela da publicação da Conab (Perspectivas, edição 14) troca a carne bovina de 2024 (36,0) com a de 2025 (36,2); o site usa a planilha. A planilha muda de estimativa de população em 2000 e 2010 sem aviso.
 - **`financiamento-imobiliario`:** unidades do FGTS (2016 a 2025) vêm dos rótulos dos gráficos da coletiva da Abecip de 27/01/2026; procurar série tabulada da Caixa ou do Ministério das Cidades. A Abecip revisou 2024 (de 568,2 para 532,1 mil unidades).
 - **`casamentos-divorcios`:** a taxa de divórcio calculada para 2024 dá 2,75 por mil, e o IBGE publica 2,7; denominador do IBGE não identificado.
+- **`casamentos-estados-serie`:** em 1999, a soma dos estados nas tabelas do Sidra (350) dá 788.744 casamentos e o total nacional, 787.530 (1.214 a mais nos estados). De 1984 a 1988, a soma fica até 14 abaixo. Perguntar ao IBGE.
