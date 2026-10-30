@@ -45,3 +45,8 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **`camara-2027`:** 34 deputados eleitos por partidos que não atingiram a cláusula de desempenho podem trocar de partido até a posse (01/02/2027).
 - **`orcamento-2026-execucao` e `emendas-parlamentares`:** 2026 parcial, extraído do SIOP em 29/10/2026. Atualizar mensalmente e fechar o ano em janeiro de 2027, quando 2026 também entra nas séries em reais (corrigir pelo IPCA de 2026).
 - **Categoria `orcamento-federal`:** gerada a partir da consulta SPARQL do SIOP (orçamentos fiscal e da seguridade, sem estatais). Total liquidado de 2025 conferido com o RREO da União (Anexo 01, 6º bimestre): R$ 5.154,7 bi, igual.
+- **`desigualdade-gini`:** a série PGINI do Ipeadata (PNAD anual, encerrada em 2016) difere em até 0,006 dos valores que o Ipea publicou nos Comunicados nº 9 (2008) e nº 30 (2009). Os metadados não explicam a revisão.
+- **`pobreza-brasil` e `pobreza-estados`:** a Síntese de Indicadores Sociais de dezembro de 2026 troca as linhas de 2017 (US$ 2,15 e US$ 6,85) pelas de 2021 (US$ 3,00 e US$ 8,30). Ao atualizar, trocar a série inteira e o texto.
+- **`resultado-primario-governo-central`:** a série atual do Tesouro dá R$ 77,9 bi (2,00% do PIB) para 2010; o boletim de 2011 publicou R$ 79,0 bi (2,16%). O percentual mudou com a revisão do PIB; o valor em reais, com a reorganização posterior da série. Sem documento do Tesouro que detalhe.
+- **`carga-tributaria`:** o dado oficial (Receita Federal) vai até 2024; 2025 só tem a estimativa do Tesouro. Trocar quando a Receita publicar a edição de 2025.
+- **`ensino-medio-completo`:** 2022 usa o valor publicado no Informativo PNAD Contínua Educação 2025 (52,9); a conta pelo Sidra dá 53,0.

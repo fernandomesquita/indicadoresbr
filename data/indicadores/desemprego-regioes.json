@@ -1,7 +1,7 @@
 {
   "id": "desemprego-regioes",
   "categoria": "economia",
-  "ordem": 21,
+  "ordem": 23,
   "visivel": true,
   "titulo": "Desemprego por região",
   "subtitulo": "Taxa de desocupação trimestral, em % da força de trabalho, em cada grande região, do 1º trimestre de 2012 ao 2º trimestre de 2026",

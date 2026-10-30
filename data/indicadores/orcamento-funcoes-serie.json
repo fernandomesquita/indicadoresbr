@@ -1,7 +1,7 @@
 {
   "id": "orcamento-funcoes-serie",
   "categoria": "orcamento-federal",
-  "ordem": 5,
+  "ordem": 7,
   "visivel": true,
   "titulo": "O orçamento federal de cada área desde 2000",
   "subtitulo": "Despesa executada pela União por função de governo, em bilhões de reais de 2025, de 2000 a 2025",

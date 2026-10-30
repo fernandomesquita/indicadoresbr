@@ -1,0 +1,100 @@
+{
+  "id": "ideb-brasil",
+  "categoria": "educacao",
+  "ordem": 10,
+  "visivel": true,
+  "titulo": "A qualidade da educação básica pelo Ideb",
+  "subtitulo": "Índice de Desenvolvimento da Educação Básica do Brasil por etapa, todas as redes, de 2005 a 2025 (escala de 0 a 10)",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Anos iniciais (1º ao 5º ano)",
+    "Anos finais (6º ao 9º ano)",
+    "Ensino médio"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "escolha": true,
+  "fonte": {
+    "nome": "Inep, Ideb",
+    "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados"
+  },
+  "fontes": [
+    {
+      "nome": "Inep, resultados do Ideb 2025, Brasil (planilha)",
+      "url": "https://download.inep.gov.br/ideb/resultados/divulgacao_brasil_ideb_2025.zip",
+      "o_que_sustenta": "Ideb de 2005 a 2025 por etapa e rede, e as metas de 2007 a 2021."
+    },
+    {
+      "nome": "Inep, resultados do Ideb 2025, regiões e estados (planilha)",
+      "url": "https://download.inep.gov.br/ideb/resultados/divulgacao_regioes_ufs_ideb_2025.zip",
+      "o_que_sustenta": "Ideb por estado."
+    },
+    {
+      "nome": "Agência Brasil, 05/08/2026, com os dados divulgados por MEC e Inep",
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-08/ideb-mostra-avanco-da-educacao-basica-no-pais",
+      "o_que_sustenta": "Conferência dos valores nacionais de 2023 e 2025."
+    }
+  ],
+  "como_ler": "O Ideb vai de 0 a 10 e junta duas coisas: o desempenho dos alunos nas provas de português e matemática do Saeb e a taxa de aprovação. Uma escola sobe no Ideb quando os alunos aprendem mais e quando menos alunos são reprovados ou abandonam a escola. É calculado a cada dois anos. Cada linha é uma etapa, somando escolas públicas e privadas. Use os botões para ver as metas fixadas pelo MEC (de 2007 a 2021; não há meta para 2023 e 2025) e os resultados das redes pública e privada. Em 2021, as provas foram aplicadas na pandemia, e o Inep recomenda cautela na comparação. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "De 2005 a 2025, o Ideb dos anos iniciais passou de 3,8 para 6,3; o dos anos finais, de 3,5 para 5,3; e o do ensino médio, de 3,4 para 4,5.",
+    "Os anos iniciais alcançaram a meta em todas as edições de 2007 a 2019 e ficaram abaixo dela em 2021 (5,8, para meta de 6,0). O ensino médio ficou abaixo da meta desde 2013; em 2021, a meta era 5,2 e o resultado, 4,2.",
+    "Em 2025, a rede privada teve Ideb de 5,8 no ensino médio, contra 4,3 na rede pública."
+  ],
+  "glossario": [
+    {
+      "termo": "Saeb",
+      "definicao": "Sistema de Avaliação da Educação Básica: provas de português e matemática aplicadas pelo Inep no 5º e no 9º ano do ensino fundamental e no fim do ensino médio."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "A cada dois anos (Inep)",
+    "onde_buscar": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados",
+    "proxima": "Ideb 2027, em 2028",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Ano",
+    "Anos iniciais (1º ao 5º ano)",
+    "Anos iniciais (1º ao 5º ano): meta",
+    "Anos iniciais (1º ao 5º ano): rede pública",
+    "Anos iniciais (1º ao 5º ano): rede privada",
+    "Anos finais (6º ao 9º ano)",
+    "Anos finais (6º ao 9º ano): meta",
+    "Anos finais (6º ao 9º ano): rede pública",
+    "Anos finais (6º ao 9º ano): rede privada",
+    "Ensino médio",
+    "Ensino médio: meta",
+    "Ensino médio: rede pública",
+    "Ensino médio: rede privada"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2025: 6,3, 5,3 e 4,5",
+      "valor_na_fonte": "Agência Brasil, 05/08/2026, com dados do Inep: os mesmos valores",
+      "fonte": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-08/ideb-mostra-avanco-da-educacao-basica-no-pais",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [2005, 3.8, "", 3.6, 5.9, 3.5, "", 3.2, 5.8, 3.4, "", 3.1, 5.6],
+    [2007, 4.2, 3.9, 4.0, 6.0, 3.8, 3.5, 3.5, 5.8, 3.5, 3.4, 3.2, 5.6],
+    [2009, 4.6, 4.2, 4.4, 6.4, 4.0, 3.7, 3.7, 5.9, 3.6, 3.5, 3.4, 5.6],
+    [2011, 5.0, 4.6, 4.7, 6.5, 4.1, 3.9, 3.9, 6.0, 3.7, 3.7, 3.4, 5.7],
+    [2013, 5.2, 4.9, 4.9, 6.7, 4.2, 4.4, 4.0, 5.9, 3.7, 3.9, 3.4, 5.4],
+    [2015, 5.5, 5.2, 5.3, 6.8, 4.5, 4.7, 4.2, 6.1, 3.7, 4.3, 3.5, 5.3],
+    [2017, 5.8, 5.5, 5.5, 7.1, 4.7, 5.0, 4.4, 6.4, 3.8, 4.7, 3.5, 5.8],
+    [2019, 5.9, 5.7, 5.7, 7.1, 4.9, 5.2, 4.6, 6.4, 4.2, 5.0, 3.9, 6.0],
+    [2021, 5.8, 6.0, 5.5, 7.1, 5.1, 5.5, 4.9, 6.3, 4.2, 5.2, 3.9, 5.6],
+    [2023, 6.0, "", 5.7, 7.2, 5.0, "", 4.7, 6.3, 4.3, "", 4.1, 5.6],
+    [2025, 6.3, "", 6.1, 7.1, 5.3, "", 5.0, 6.4, 4.5, "", 4.3, 5.8]
+  ]
+}

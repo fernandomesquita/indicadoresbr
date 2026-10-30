@@ -1,7 +1,7 @@
 {
   "id": "divida-juros-governo",
   "categoria": "economia",
-  "ordem": 11,
+  "ordem": 13,
   "visivel": true,
   "titulo": "Dívida e juros por governo",
   "subtitulo": "Variação da dívida bruta e da dívida líquida, em pontos percentuais do PIB, e juros médios por ano, em % do PIB, de 2003 a agosto de 2026",

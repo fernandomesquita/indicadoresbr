@@ -1,7 +1,7 @@
 {
   "id": "divida-publica",
   "categoria": "economia",
-  "ordem": 9,
+  "ordem": 11,
   "visivel": true,
   "titulo": "Dívida pública em relação ao PIB",
   "subtitulo": "Dívida bruta do governo geral e dívida líquida do setor público, em % do PIB, em dezembro de cada ano, de 2002 a agosto de 2026",

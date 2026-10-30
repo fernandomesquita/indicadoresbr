@@ -1,7 +1,7 @@
 {
   "id": "exportacoes-matriz",
   "categoria": "economia",
-  "ordem": 20,
+  "ordem": 22,
   "visivel": true,
   "titulo": "O que o Brasil exporta",
   "subtitulo": "Exportações por grupo de produtos, em milhões de dólares, de 2016 a 2025",

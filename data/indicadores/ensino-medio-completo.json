@@ -1,0 +1,71 @@
+{
+  "id": "ensino-medio-completo",
+  "categoria": "educacao",
+  "ordem": 14,
+  "visivel": true,
+  "titulo": "Quantos adultos completaram o ensino médio",
+  "subtitulo": "Percentual das pessoas de 25 anos ou mais com pelo menos o ensino médio completo, de 2016 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Com ensino médio completo ou mais (%)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "IBGE, PNAD Contínua Educação",
+    "url": "https://sidra.ibge.gov.br/tabela/7269"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Sidra, tabela 7269: pessoas de 25 anos ou mais por nível de instrução",
+      "url": "https://sidra.ibge.gov.br/tabela/7269",
+      "o_que_sustenta": "Percentual de 2016 a 2025 (soma de médio completo e superior)."
+    },
+    {
+      "nome": "IBGE, Informativo PNAD Contínua Educação 2025",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/livros/liv102286_informativo.pdf",
+      "o_que_sustenta": "Valores publicados de 2016, 2019, 2022, 2024 e 2025."
+    }
+  ],
+  "como_ler": "Cada coluna é a parte da população adulta (25 anos ou mais) que concluiu pelo menos o ensino médio, a etapa final da educação básica obrigatória. Inclui quem fez faculdade. O IBGE não publicou este dado para 2020 e 2021. Em 2025, o IBGE recalculou toda a série com pesos baseados no Censo 2022; os valores ficaram até 0,4 ponto abaixo dos publicados antes. O valor de 2022 é o publicado pelo IBGE; a conta direta pela tabela do Sidra dá 53,0, pelo arredondamento das contagens.",
+  "contexto": [
+    "Em 2025, 57,4% dos brasileiros de 25 anos ou mais tinham concluído ao menos o ensino médio, contra 46,0% em 2016.",
+    "Isso quer dizer que, em 2025, pouco mais de quatro em cada dez adultos não tinham terminado a educação básica."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (PNAD Contínua Educação)",
+    "onde_buscar": "https://sidra.ibge.gov.br/tabela/7269",
+    "proxima": "2026, em meados de 2027",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Ano",
+    "Com ensino médio completo ou mais (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2025: 57,4%",
+      "valor_na_fonte": "Informativo PNAD Contínua Educação 2025: 57,4%",
+      "fonte": "https://biblioteca.ibge.gov.br/visualizacao/livros/liv102286_informativo.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2016, 46.0],
+    [2017, 47.0],
+    [2018, 48.4],
+    [2019, 49.8],
+    [2022, 52.9],
+    [2023, 54.1],
+    [2024, 55.7],
+    [2025, 57.4]
+  ]
+}

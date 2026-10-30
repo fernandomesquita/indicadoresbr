@@ -146,7 +146,7 @@ function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   const vals = rows.map(r => isNum(r[yi]) ? r[yi] : 0), back = sob ? rows.map(r => isNum(r[bi]) ? r[bi] : 0) : [];
   const lo = Math.min(0, ...vals, ...back), hi = Math.max(0, ...vals, ...back), sc = nice(lo, hi, 5);
   const isYearish = rows.every(r => isNum(r[xi]) || /^\d{4}\b/.test(String(r[xi]))); // "2026 (até 29/10)" ainda é ano
-  const numX = isYearish && ind.faixasGoverno;
+  const numX = rows.every(r => isNum(r[xi])) && ind.faixasGoverno;
   const yw = yLabelWidth(ctx, ind, sc, s);
   setFont(ctx, 500, 11.5 * s, F.body);
   const legSob = sob ? legendRows(ctx, [ind.colunas[bi], ind.colunas[yi]], b.w - yw, 15 * s, 19 * s) : [];

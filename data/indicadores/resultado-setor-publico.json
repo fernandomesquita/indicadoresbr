@@ -1,0 +1,104 @@
+{
+  "id": "resultado-setor-publico",
+  "categoria": "economia",
+  "ordem": 10,
+  "visivel": true,
+  "titulo": "Resultado das contas públicas: primário e nominal",
+  "subtitulo": "Resultado primário e nominal do setor público consolidado em % do PIB, de 2002 a 2025 (positivo é superávit; negativo, déficit)",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Resultado primário",
+    "Resultado nominal"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 2,
+  "fonte": {
+    "nome": "Banco Central do Brasil, estatísticas fiscais (SGS 5793 e 5727)",
+    "url": "https://dadosabertos.bcb.gov.br/dataset/5793-nfsp-sem-desvalorizacao-cambial--pib---fluxo-acumulado-em-12-meses---resultado-primario---tota"
+  },
+  "fontes": [
+    {
+      "nome": "Banco Central, SGS 5793: NFSP sem desvalorização cambial, resultado primário, setor público consolidado, % do PIB, acumulado em 12 meses",
+      "url": "https://dadosabertos.bcb.gov.br/dataset/5793-nfsp-sem-desvalorizacao-cambial--pib---fluxo-acumulado-em-12-meses---resultado-primario---tota",
+      "o_que_sustenta": "Resultado primário, valor de dezembro de cada ano e de setembro de 2026."
+    },
+    {
+      "nome": "Banco Central, SGS 5727: mesma série, resultado nominal",
+      "url": "https://dadosabertos.bcb.gov.br/dataset/5727-nfsp-sem-desvalorizacao-cambial--pib---fluxo-acumulado-em-12-meses---resultado-nominal---total",
+      "o_que_sustenta": "Resultado nominal."
+    },
+    {
+      "nome": "Banco Central, nota de estatísticas fiscais de 30/01/2026",
+      "url": "https://www.bcb.gov.br/content/estatisticas/hist_estatisticasfiscais/202601_Texto_de_estatisticas_fiscais.pdf",
+      "o_que_sustenta": "Conferência de 2024 e 2025."
+    }
+  ],
+  "como_ler": "A linha do resultado primário mostra se as receitas de todo o setor público (União, estados, municípios e estatais, exceto Petrobras e Eletrobras) cobriram as despesas antes dos juros. A do resultado nominal inclui os juros da dívida: é o que o setor público precisou tomar emprestado no ano. Abaixo de zero, há déficit. O Banco Central apura o resultado pela variação da dívida (critério chamado abaixo da linha). A série com a abrangência atual começa em 2002. Os valores de anos antigos mudam quando o IBGE revisa o PIB. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Entre 2002 e 2013, o setor público teve superávit primário todos os anos, e o déficit nominal ficou entre 1,99% e 5,18% do PIB. Desde 2014, o primário só foi positivo em 2021 e 2022.",
+    "Em 2025, o déficit primário foi de 0,43% do PIB e o nominal, de 8,34%: a maior parte do déficit nominal vem dos juros da dívida. Nos 12 meses até setembro de 2026, os déficits foram de 0,52% e 9,51% do PIB.",
+    "Os juros da dívida e a relação entre dívida e PIB estão nos indicadores Juros da dívida pública e Dívida pública em relação ao PIB."
+  ],
+  "glossario": [
+    {
+      "termo": "Resultado nominal",
+      "definicao": "Resultado primário menos os juros da dívida."
+    },
+    {
+      "termo": "Setor público consolidado",
+      "definicao": "União, estados, municípios e empresas estatais, exceto Petrobras e Eletrobras."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal (Banco Central)",
+    "onde_buscar": "https://www.bcb.gov.br/estatisticas/estatisticasfiscais",
+    "proxima": "Resultado de 2026, no fim de janeiro de 2027",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Ano",
+    "Resultado primário",
+    "Resultado nominal"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2025: primário -0,43% e nominal -8,34% do PIB",
+      "valor_na_fonte": "Nota do BC de 30/01/2026: déficit primário de 0,43% e nominal de 8,34%",
+      "fonte": "https://www.bcb.gov.br/content/estatisticas/hist_estatisticasfiscais/202601_Texto_de_estatisticas_fiscais.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2002, 3.19, -4.42],
+    [2003, 3.24, -5.18],
+    [2004, 3.69, -2.88],
+    [2005, 3.74, -3.54],
+    [2006, 3.15, -3.57],
+    [2007, 3.24, -2.74],
+    [2008, 3.33, -1.99],
+    [2009, 1.94, -3.19],
+    [2010, 2.62, -2.41],
+    [2011, 2.94, -2.47],
+    [2012, 2.18, -2.26],
+    [2013, 1.71, -2.96],
+    [2014, -0.56, -5.95],
+    [2015, -1.86, -10.22],
+    [2016, -2.48, -8.98],
+    [2017, -1.68, -7.77],
+    [2018, -1.55, -6.96],
+    [2019, -0.84, -5.81],
+    [2020, -9.24, -13.34],
+    [2021, 0.72, -4.26],
+    [2022, 1.25, -4.57],
+    [2023, -2.28, -8.84],
+    [2024, -0.4, -8.47],
+    [2025, -0.43, -8.34]
+  ]
+}

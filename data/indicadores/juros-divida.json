@@ -1,7 +1,7 @@
 {
   "id": "juros-divida",
   "categoria": "economia",
-  "ordem": 10,
+  "ordem": 12,
   "visivel": true,
   "titulo": "Juros da dívida pública",
   "subtitulo": "Juros nominais do setor público consolidado, em % do PIB, por ano, de 2002 aos 12 meses até agosto de 2026",

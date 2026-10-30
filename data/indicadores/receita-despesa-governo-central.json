@@ -1,0 +1,100 @@
+{
+  "id": "receita-despesa-governo-central",
+  "categoria": "orcamento-federal",
+  "ordem": 3,
+  "visivel": true,
+  "titulo": "Quanto o governo federal arrecada e quanto gasta",
+  "subtitulo": "Receita líquida e despesa primária do governo central em % do PIB, de 1997 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Despesa total",
+    "Receita líquida"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "Tesouro Nacional, Resultado do Tesouro Nacional",
+    "url": "https://www.tesourotransparente.gov.br/publicacoes/boletim-resultado-do-tesouro-nacional-rtn/2026/9"
+  },
+  "fontes": [
+    {
+      "nome": "Tesouro Nacional, Resultado do Tesouro Nacional (RTN) de setembro de 2026, série histórica (tabelas 2.1 e 2.1-A)",
+      "url": "https://www.tesourotransparente.gov.br/publicacoes/boletim-resultado-do-tesouro-nacional-rtn/2026/9",
+      "o_que_sustenta": "Receita líquida, despesa total e resultado primário do governo central, em R$ e em % do PIB, de 1997 a 2025, e os meses de 2026."
+    },
+    {
+      "nome": "Tesouro Nacional, sumários executivos do RTN de dezembro de 2020, dezembro de 2025 e setembro de 2026",
+      "url": "https://www.tesourotransparente.gov.br/publicacoes/boletim-resultado-do-tesouro-nacional-rtn",
+      "o_que_sustenta": "Conferência dos resultados de 2019, 2020, 2024, 2025 e do acumulado de 2026."
+    }
+  ],
+  "como_ler": "A linha da despesa é tudo o que o governo central gastou no ano, menos os juros da dívida; a da receita é o que arrecadou, já descontadas as transferências obrigatórias a estados e municípios. Quando a despesa fica acima da receita, há déficit primário. Os valores estão em % do PIB, o que permite comparar anos distantes. O governo central reúne o Tesouro Nacional, a Previdência Social (INSS) e o Banco Central. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 1997, a receita líquida do governo central era de 14,2% do PIB e a despesa, de 14,0%. Em 2025, foram 18,3% e 18,8%.",
+    "O ponto mais alto da despesa foi 2020, com 25,6% do PIB, pelos gastos com a pandemia. Sem 2020, a despesa ficou entre 14,0% e 19,9% do PIB.",
+    "O indicador Superávit ou déficit do governo federal mostra a diferença entre as duas linhas ano a ano."
+  ],
+  "glossario": [
+    {
+      "termo": "Receita líquida",
+      "definicao": "Receita total do governo central menos as transferências a estados e municípios por repartição de receita."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Mensal (RTN); o ano fecha no fim de janeiro",
+    "onde_buscar": "https://www.tesourotransparente.gov.br/publicacoes/boletim-resultado-do-tesouro-nacional-rtn",
+    "proxima": "Resultado de 2026, no fim de janeiro de 2027",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Ano",
+    "Receita líquida",
+    "Despesa total"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Receita líquida e despesa total de 2024 e 2025",
+      "valor_na_fonte": "Sumário executivo do RTN de dezembro de 2025: os mesmos valores",
+      "fonte": "https://www.tesourotransparente.gov.br/publicacoes/boletim-resultado-do-tesouro-nacional-rtn/2026/9",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [1997, 14.2, 14.0],
+    [1998, 15.6, 14.8],
+    [1999, 16.4, 14.6],
+    [2000, 16.5, 14.8],
+    [2001, 17.3, 15.6],
+    [2002, 18.0, 15.9],
+    [2003, 17.4, 15.1],
+    [2004, 18.1, 15.6],
+    [2005, 18.8, 16.4],
+    [2006, 18.8, 16.8],
+    [2007, 19.0, 16.9],
+    [2008, 18.9, 16.6],
+    [2009, 18.6, 17.4],
+    [2010, 20.2, 18.2],
+    [2011, 18.9, 16.8],
+    [2012, 18.7, 16.9],
+    [2013, 18.7, 17.3],
+    [2014, 17.7, 18.1],
+    [2015, 17.4, 19.4],
+    [2016, 17.4, 19.9],
+    [2017, 17.5, 19.4],
+    [2018, 17.6, 19.3],
+    [2019, 18.2, 19.5],
+    [2020, 15.8, 25.6],
+    [2021, 17.5, 17.9],
+    [2022, 18.4, 18.0],
+    [2023, 17.4, 19.5],
+    [2024, 18.4, 18.7],
+    [2025, 18.3, 18.8]
+  ]
+}

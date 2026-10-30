@@ -1,7 +1,7 @@
 {
   "id": "crescimento-regioes",
   "categoria": "economia",
-  "ordem": 17,
+  "ordem": 19,
   "visivel": true,
   "titulo": "Crescimento da economia por região",
   "subtitulo": "Variação real do Produto Interno Bruto (PIB) de cada grande região em 2023, em %",

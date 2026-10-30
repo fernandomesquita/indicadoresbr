@@ -1,7 +1,7 @@
 {
   "id": "orcamento-discricionarias",
   "categoria": "orcamento-federal",
-  "ordem": 2,
+  "ordem": 4,
   "visivel": true,
   "titulo": "Quanto do orçamento o governo pode escolher",
   "subtitulo": "Despesas discricionárias em % das despesas primárias executadas pela União, de 2000 a 2025",
