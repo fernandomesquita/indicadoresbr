@@ -1,0 +1,100 @@
+{
+  "id": "pobreza-estados",
+  "categoria": "populacao-trabalho",
+  "ordem": 13,
+  "visivel": true,
+  "titulo": "Pobreza por estado",
+  "subtitulo": "Percentual da população abaixo da linha de pobreza do Banco Mundial (US$ 6,85 por dia), por estado, em 2024",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "Pobreza (%)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "ultimo": "2024",
+  "fonte": {
+    "nome": "IBGE, Síntese de Indicadores Sociais 2025",
+    "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Síntese de Indicadores Sociais 2025, tabela 2.18 (pobreza por grandes regiões e estados)",
+      "url": "https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2025/Tabelas/xls/2_Distribuicao_Renda_xls.zip",
+      "o_que_sustenta": "Proporção da população abaixo das linhas de US$ 2,15 e US$ 6,85 por dia, de 2012 a 2024, e o número de pessoas."
+    },
+    {
+      "nome": "IBGE, Síntese de Indicadores Sociais",
+      "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html",
+      "o_que_sustenta": "Publicação e notas de método."
+    },
+    {
+      "nome": "Agência IBGE de Notícias, 03/12/2025",
+      "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-news/45366-8-6-million-persons-got-out-of-poverty-between-2023-and-2024.html",
+      "o_que_sustenta": "Conferência: percentuais e número de pessoas em 2012, 2019, 2021 e 2024."
+    }
+  ],
+  "como_ler": "Cada barra é a parte da população do estado com renda domiciliar abaixo de US$ 6,85 por pessoa por dia (R$ 694 por mês em 2024). A tabela traz também a extrema pobreza (abaixo de US$ 2,15 por dia) e o número de pessoas, em mil. A linha é a mesma em todo o país, sem ajuste pelo custo de vida de cada estado. A PNAD Contínua é uma pesquisa por amostra: nos estados menores, sobretudo na extrema pobreza, a margem de erro é grande, e posições vizinhas podem estar empatadas.",
+  "contexto": [
+    "Em 2024, os maiores percentuais de pobreza estavam no Acre (45,9%) e no Maranhão (45,8%); o menor, em Santa Catarina (8,0%). O Brasil teve 23,1%.",
+    "Por região, a pobreza ia de 11,2% no Sul a 39,4% no Nordeste, que concentrava 22,4 milhões das 48,9 milhões de pessoas abaixo da linha.",
+    "A extrema pobreza foi maior no Maranhão, com 10,1% da população."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (Síntese de Indicadores Sociais, em dezembro)",
+    "onde_buscar": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html",
+    "proxima": "2025, na Síntese de Indicadores Sociais de dezembro de 2026, já com as linhas novas do Banco Mundial",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Estado",
+    "Extrema pobreza (%)",
+    "Pobreza (%)",
+    "Pessoas em extrema pobreza (mil)",
+    "Pessoas na pobreza (mil)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Regiões em 2024",
+      "valor_na_fonte": "Tabela 6 da Síntese 2025: os mesmos valores",
+      "fonte": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Acre", 7.6, 45.9, 65, 395],
+    ["Maranhão", 10.1, 45.8, 701, 3190],
+    ["Ceará", 7.9, 43.3, 730, 3988],
+    ["Alagoas", 6.8, 40.9, 219, 1313],
+    ["Pernambuco", 6.2, 40.2, 592, 3812],
+    ["Amazonas", 5.1, 39.2, 211, 1614],
+    ["Pará", 4.6, 38.6, 400, 3320],
+    ["Paraíba", 4.7, 38.3, 196, 1579],
+    ["Roraima", 6.5, 37.6, 41, 235],
+    ["Piauí", 4.0, 37.3, 134, 1259],
+    ["Sergipe", 4.5, 36.4, 102, 834],
+    ["Amapá", 3.9, 35.8, 31, 284],
+    ["Bahia", 5.7, 35.7, 846, 5293],
+    ["Rio Grande do Norte", 5.2, 33.5, 180, 1153],
+    ["Tocantins", 3.8, 23.9, 60, 372],
+    ["Rondônia", 1.7, 20.5, 29, 355],
+    ["Espírito Santo", 1.7, 18.6, 71, 762],
+    ["Rio de Janeiro", 3.1, 17.9, 527, 3089],
+    ["Mato Grosso do Sul", 1.6, 17.5, 46, 495],
+    ["Minas Gerais", 2.2, 16.8, 467, 3580],
+    ["Goiás", 1.6, 15.9, 120, 1170],
+    ["Distrito Federal", 1.7, 15.3, 51, 456],
+    ["São Paulo", 2.2, 14.0, 1009, 6411],
+    ["Paraná", 1.8, 13.7, 214, 1613],
+    ["Mato Grosso", 1.6, 13.1, 62, 496],
+    ["Rio Grande do Sul", 1.4, 11.1, 152, 1239],
+    ["Santa Catarina", 1.2, 8.0, 98, 640]
+  ]
+}

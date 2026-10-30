@@ -1,0 +1,103 @@
+{
+  "id": "desigualdade-gini-estados",
+  "categoria": "populacao-trabalho",
+  "ordem": 11,
+  "visivel": true,
+  "titulo": "Desigualdade de renda por estado",
+  "subtitulo": "Índice de Gini do rendimento domiciliar per capita em 2025, por estado (quanto maior, mais desigual)",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "Gini 2025"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 3,
+  "ultimo": "2025",
+  "fonte": {
+    "nome": "IBGE, PNAD Contínua",
+    "url": "https://sidra.ibge.gov.br/tabela/7435"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, PNAD Contínua, Sidra tabela 7435: Índice de Gini do rendimento domiciliar per capita",
+      "url": "https://sidra.ibge.gov.br/tabela/7435",
+      "o_que_sustenta": "Gini do Brasil, das regiões e dos estados, de 2012 a 2025."
+    },
+    {
+      "nome": "IBGE, Síntese de Indicadores Sociais 2025, tabela 2.13",
+      "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html",
+      "o_que_sustenta": "Conferência: Gini de 2012 a 2024 igual ao da tabela 7435, no Brasil e nos 27 estados."
+    }
+  ],
+  "como_ler": "Cada barra é a desigualdade de renda dentro de um estado em 2025, medida pelo índice de Gini (0 é igualdade total; 1, desigualdade máxima). A tabela traz também 2019 e 2012. O Gini compara as pessoas dentro do mesmo estado: um estado rico pode ser muito desigual, e um estado pobre pode ser pouco desigual. A PNAD Contínua é uma pesquisa por amostra; nos estados menores, a margem de erro é maior, e estados com diferenças de poucos milésimos podem estar empatados.",
+  "contexto": [
+    "Em 2025, o estado mais desigual foi o Distrito Federal (0,570) e o menos desigual, Santa Catarina (0,425). A média do Brasil foi 0,511.",
+    "Entre 2012 e 2025, o Gini caiu em 22 dos 27 estados. O Distrito Federal foi o mais desigual nos dois anos, com 0,602 em 2012.",
+    "Para saber quantas pessoas vivem com pouca renda em cada estado, veja o indicador Pobreza por estado."
+  ],
+  "glossario": [
+    {
+      "termo": "Índice de Gini",
+      "definicao": "Medida de desigualdade de renda que vai de 0 (todos têm a mesma renda) a 1 (uma pessoa tem toda a renda)."
+    },
+    {
+      "termo": "Rendimento domiciliar per capita",
+      "definicao": "Soma das rendas de todos os moradores do domicílio, de todas as fontes, dividida pelo número de moradores."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (PNAD Contínua, rendimento de todas as fontes)",
+    "onde_buscar": "https://sidra.ibge.gov.br/tabela/7435",
+    "proxima": "2026, no segundo trimestre de 2027",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Estado",
+    "Gini 2025",
+    "Gini 2019",
+    "Gini 2012"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Gini por estado de 2012 a 2024",
+      "valor_na_fonte": "Tabela 2.13 da Síntese de Indicadores Sociais 2025: diferença zero nos 27 estados",
+      "fonte": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Distrito Federal", 0.57, 0.554, 0.602],
+    ["Rio de Janeiro", 0.543, 0.553, 0.529],
+    ["Rio Grande do Norte", 0.54, 0.555, 0.508],
+    ["Sergipe", 0.532, 0.58, 0.569],
+    ["Pernambuco", 0.52, 0.573, 0.574],
+    ["Alagoas", 0.512, 0.525, 0.503],
+    ["Acre", 0.509, 0.56, 0.566],
+    ["Piauí", 0.508, 0.538, 0.496],
+    ["Paraíba", 0.507, 0.563, 0.517],
+    ["Roraima", 0.506, 0.58, 0.549],
+    ["Ceará", 0.506, 0.562, 0.546],
+    ["Amapá", 0.496, 0.513, 0.528],
+    ["Pará", 0.492, 0.528, 0.534],
+    ["Maranhão", 0.491, 0.531, 0.498],
+    ["São Paulo", 0.491, 0.527, 0.511],
+    ["Amazonas", 0.488, 0.567, 0.59],
+    ["Espírito Santo", 0.48, 0.518, 0.489],
+    ["Goiás", 0.479, 0.46, 0.475],
+    ["Minas Gerais", 0.473, 0.487, 0.5],
+    ["Tocantins", 0.472, 0.531, 0.508],
+    ["Paraná", 0.47, 0.476, 0.483],
+    ["Rio Grande do Sul", 0.468, 0.481, 0.495],
+    ["Bahia", 0.466, 0.555, 0.562],
+    ["Rondônia", 0.458, 0.472, 0.488],
+    ["Mato Grosso do Sul", 0.457, 0.484, 0.476],
+    ["Mato Grosso", 0.439, 0.456, 0.488],
+    ["Santa Catarina", 0.425, 0.422, 0.436]
+  ]
+}
