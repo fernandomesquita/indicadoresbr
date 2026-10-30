@@ -348,8 +348,13 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   ctx.fillStyle = th.muted; ctx.textAlign = "center";
   const labels = rows.map(r => String(r[xi])), stepPx = plot.w / n, every = xTickEvery(ctx, labels, stepPx, s);
   setFont(ctx, 400, 11.5 * s, F.mono);
-  rows.forEach((r, i) => { if ((n - 1 - i) % every === 0) ctx.fillText(labels[i], px(xs[i]), plot.y + plot.h + 17 * s); });
-  rows.forEach((r, i) => hits.push({ kind: "strip", x: px(xs[i]) - stepPx / 2, y: plot.y, w: stepPx, h: plot.h, cx: px(xs[i]), cy: Math.min(...ys.map(k => isNum(r[k]) ? Y(r[k]) : plot.y + plot.h)), i, title: labels[i], lines: ys.map(k => [ind.colunas[k], fmtV(r[k], ind)]) }));
+  // rótulos do eixo x: do último para o primeiro, pulando os que encostariam no anterior (anos irregulares, como censos antes de 2000)
+  const tw = Math.max(...labels.map(l => ctx.measureText(l).width)) + 14 * s;
+  const regular = xs.every((v, i) => i === 0 || Math.abs((v - xs[i - 1]) - (xs[1] - xs[0])) < 1e-9);
+  let ultX = Infinity;
+  rows.forEach((r, j) => { const i = n - 1 - j, x = px(xs[i]); if (regular ? (j % every === 0) : (ultX - x >= tw)) { ctx.fillText(labels[i], x, plot.y + plot.h + 17 * s); ultX = x; } });
+  const meio = i => i < 0 ? plot.x - 6 * s : i >= n - 1 ? plot.x + plot.w + 6 * s : (px(xs[i]) + px(xs[i + 1])) / 2;
+  rows.forEach((r, i) => hits.push({ kind: "strip", x: meio(i - 1), y: plot.y, w: meio(i) - meio(i - 1), h: plot.h, cx: px(xs[i]), cy: Math.min(...ys.map(k => isNum(r[k]) ? Y(r[k]) : plot.y + plot.h)), i, title: labels[i], lines: ys.map(k => [ind.colunas[k], fmtV(r[k], ind)]) }));
 }
 
 function drawScatter(ctx, ind, b, th, s, t, hits, hover, xi, ys) {

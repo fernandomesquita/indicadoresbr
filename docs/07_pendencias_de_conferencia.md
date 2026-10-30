@@ -50,3 +50,6 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **`resultado-primario-governo-central`:** a série atual do Tesouro dá R$ 77,9 bi (2,00% do PIB) para 2010; o boletim de 2011 publicou R$ 79,0 bi (2,16%). O percentual mudou com a revisão do PIB; o valor em reais, com a reorganização posterior da série. Sem documento do Tesouro que detalhe.
 - **`carga-tributaria`:** o dado oficial (Receita Federal) vai até 2024; 2025 só tem a estimativa do Tesouro. Trocar quando a Receita publicar a edição de 2025.
 - **`ensino-medio-completo`:** 2022 usa o valor publicado no Informativo PNAD Contínua Educação 2025 (52,9); a conta pelo Sidra dá 53,0.
+- **`expectativa-de-vida`, `mortalidade-infantil` e `mortalidade-expectativa-estados`:** a Tábua completa de mortalidade de 2025 sai até 01/12/2026. Atualizar 2025 e conferir se o IBGE revisou anos anteriores.
+- **`cobertura-vacinal`:** usa as estimativas OMS/UNICEF (WUENIC). A poliomielite (via Banco Mundial) vai só até 2024. O TabNet do PNI fica 1,4 a 6,2 pontos acima de 2019 a 2022 por registros tardios.
+- **`mortalidade-materna`:** 2024 ainda não publicado pelo Ministério da Saúde.

@@ -1,0 +1,90 @@
+{
+  "id": "mortalidade-expectativa-estados",
+  "categoria": "saude",
+  "ordem": 12,
+  "visivel": true,
+  "titulo": "Mortalidade infantil e expectativa de vida por estado",
+  "subtitulo": "Mortes de crianças com menos de 1 ano por mil nascidas vivas e expectativa de vida ao nascer, por estado, em 2024",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "Mortalidade infantil (por mil)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 2,
+  "ultimo": "2024",
+  "fonte": {
+    "nome": "IBGE, Projeções da População, revisão 2024",
+    "url": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab4_indicadores.xlsx"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Projeções da População, revisão 2024, tabela 4 (indicadores)",
+      "url": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab4_indicadores.xlsx",
+      "o_que_sustenta": "Série anual de 2000 a 2023, por sexo e por estado."
+    }
+  ],
+  "como_ler": "As barras mostram a mortalidade infantil de cada estado em 2024, do maior para o menor valor. A tabela traz também a expectativa de vida ao nascer, total e por sexo. Os valores por estado são os das Projeções da População do IBGE (revisão 2024), feitas com o Censo 2022; o IBGE não publica tábua completa anual por estado.",
+  "contexto": [
+    "Em 2024, a mortalidade infantil ia de 8,69 por mil em Santa Catarina a 21,82 por mil em Roraima. A média do Brasil foi de 12,3.",
+    "A maior expectativa de vida foi a do Distrito Federal (79,75 anos) e a menor, a do Amapá (74,32 anos), praticamente igual à de Roraima (74,35).",
+    "Santa Catarina teve a menor mortalidade infantil e a segunda maior expectativa de vida."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (Tábua completa de mortalidade, em novembro ou dezembro)",
+    "onde_buscar": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9126-tabuas-completas-de-mortalidade.html",
+    "proxima": "Tábua de 2025, até 1º de dezembro de 2026",
+    "ultima_conferencia": "2026-10-29"
+  },
+  "colunas": [
+    "Estado",
+    "Mortalidade infantil (por mil)",
+    "Expectativa de vida (anos)",
+    "Expectativa de vida, homens",
+    "Expectativa de vida, mulheres"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Valores de 2024 por estado",
+      "valor_na_fonte": "Tabela 4 das Projeções da População, revisão 2024, lida diretamente do FTP do IBGE",
+      "fonte": "https://ftp.ibge.gov.br/Projecao_da_Populacao/Projecao_da_Populacao_2024/projecoes_2024_tab4_indicadores.xlsx",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Roraima", 21.82, 74.35, 71.81, 77.21],
+    ["Amapá", 19.2, 74.32, 70.26, 78.78],
+    ["Sergipe", 18.24, 76.36, 72.39, 80.25],
+    ["Acre", 17.07, 75.86, 73.38, 78.47],
+    ["Amazonas", 16.56, 75.48, 72.22, 78.98],
+    ["Maranhão", 14.59, 75.62, 72.53, 78.78],
+    ["Pará", 14.58, 76.26, 73.32, 79.4],
+    ["Piauí", 14.58, 76.96, 73.25, 80.76],
+    ["Bahia", 14.28, 75.81, 71.9, 79.81],
+    ["Alagoas", 13.58, 74.39, 71.07, 77.64],
+    ["Mato Grosso", 13.48, 75.71, 72.37, 79.49],
+    ["Mato Grosso do Sul", 13.42, 75.39, 72.33, 78.57],
+    ["Paraíba", 13.0, 76.82, 73.29, 80.26],
+    ["Rio de Janeiro", 12.91, 75.62, 72.36, 78.66],
+    ["Pernambuco", 12.69, 75.52, 71.72, 79.19],
+    ["Tocantins", 12.47, 76.68, 73.42, 80.34],
+    ["Rondônia", 12.12, 76.0, 72.9, 79.45],
+    ["Goiás", 12.0, 76.78, 73.7, 79.95],
+    ["Ceará", 11.39, 77.26, 73.57, 80.93],
+    ["Espírito Santo", 11.2, 77.19, 73.66, 80.77],
+    ["São Paulo", 11.02, 77.02, 73.86, 80.03],
+    ["Minas Gerais", 10.97, 77.51, 74.49, 80.55],
+    ["Rio Grande do Norte", 10.88, 77.83, 74.38, 81.24],
+    ["Distrito Federal", 10.6, 79.75, 76.35, 82.86],
+    ["Paraná", 10.5, 76.85, 73.51, 80.22],
+    ["Rio Grande do Sul", 9.45, 77.16, 73.98, 80.27],
+    ["Santa Catarina", 8.69, 78.27, 75.4, 81.1]
+  ]
+}
