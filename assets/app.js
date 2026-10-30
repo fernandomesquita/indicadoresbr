@@ -535,6 +535,13 @@ async function openShare(ind) {
     img.src = url; save.href = url; save.setAttribute("download", `indicadores-br_${ind.id}_${share.fk}.png`);
   };
   save.addEventListener("click", () => store.registrar({ tipo: "png", caminho: location.pathname, indicador_id: ind.id }));
+  // no celular, quem salva tocando e segurando a imagem não clica no botão: conta uma vez por abertura da janela
+  let contouToque = false;
+  const contaToque = () => { if (!contouToque) { contouToque = true; store.registrar({ tipo: "png", caminho: location.pathname, indicador_id: ind.id }); } };
+  let tToque;
+  img.addEventListener("contextmenu", contaToque);
+  img.addEventListener("touchstart", () => { clearTimeout(tToque); tToque = setTimeout(contaToque, 650); }, { passive: true });
+  ["touchend", "touchmove", "touchcancel"].forEach(ev => img.addEventListener(ev, () => clearTimeout(tToque), { passive: true }));
   openModal([closeBtn(), h("div", { class: "share" },
     h("div", { class: "pv" }, img),
     h("div", { class: "side" },
