@@ -1,0 +1,96 @@
+{
+  "id": "populacao-indigena-estados",
+  "categoria": "populacao-trabalho",
+  "ordem": 21,
+  "visivel": true,
+  "titulo": "Indígenas em cada estado",
+  "subtitulo": "Pessoas indígenas por estado no Censo 2022, dentro e fora de terras indígenas",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "Pessoas indígenas em 2022"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "ultimo": "2022",
+  "fonte": {
+    "nome": "IBGE, Censo 2022",
+    "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Sidra tabelas 9718 e 9719",
+      "url": "https://sidra.ibge.gov.br/tabela/9718",
+      "o_que_sustenta": "Indígenas por estado e residentes em terras indígenas, 2022."
+    },
+    {
+      "nome": "IBGE, Censo 2022, Indígenas: primeiros resultados do universo",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/3103/cd_2022_indigenas.pdf",
+      "o_que_sustenta": "Conferência."
+    }
+  ],
+  "como_ler": "Cada barra é o número de indígenas que moram no estado, somando quem se declarou indígena na cor ou raça e quem se considera indígena. A tabela traz o percentual da população do estado, quantos moram dentro e fora de terras indígenas oficialmente delimitadas e o número de 2010, que tinha método diferente (veja o indicador A população indígena do Brasil).",
+  "contexto": [
+    "O Amazonas tem a maior população indígena, com 490.935 pessoas, 12,46% dos moradores. Em seguida vêm a Bahia (229.443) e o Mato Grosso do Sul (116.469).",
+    "Em proporção da população, os maiores percentuais são os de Roraima (15,34%) e do Amazonas (12,46%).",
+    "O município com mais indígenas é Manaus (71.691), seguido de São Gabriel da Cachoeira (48.256). Há indígenas em 4.833 dos 5.570 municípios do país."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "A cada censo (IBGE)",
+    "onde_buscar": "https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html",
+    "proxima": "Novos recortes do Censo 2022, conforme o IBGE divulgar",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Estado",
+    "Pessoas indígenas em 2022",
+    "% da população do estado",
+    "Em terras indígenas",
+    "Fora de terras indígenas",
+    "Pessoas indígenas em 2010"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Indígenas por estado em 2022",
+      "valor_na_fonte": "Tabelas do Sidra e livro do IBGE: os mesmos valores",
+      "fonte": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/3103/cd_2022_indigenas.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Amazonas", 490935, 12.46, 149080, 341855, 183514],
+    ["Bahia", 229443, 1.62, 17211, 212232, 60120],
+    ["Mato Grosso do Sul", 116469, 4.22, 68682, 47787, 77025],
+    ["Pernambuco", 106646, 1.18, 34314, 72332, 60995],
+    ["Roraima", 97668, 15.34, 71754, 25914, 55922],
+    ["Pará", 80980, 1.0, 41819, 39161, 51217],
+    ["Mato Grosso", 58356, 1.6, 45175, 13181, 51696],
+    ["Maranhão", 57166, 0.84, 41677, 15489, 38831],
+    ["Ceará", 56372, 0.64, 10521, 45851, 20697],
+    ["São Paulo", 55331, 0.12, 4179, 51152, 41981],
+    ["Minas Gerais", 36699, 0.18, 12137, 24562, 31677],
+    ["Rio Grande do Sul", 36102, 0.33, 15724, 20378, 34001],
+    ["Acre", 31694, 3.82, 19583, 12111, 17578],
+    ["Paraná", 30466, 0.27, 13893, 16573, 26559],
+    ["Paraíba", 30140, 0.76, 19044, 11096, 25043],
+    ["Alagoas", 25725, 0.82, 6672, 19053, 16291],
+    ["Santa Catarina", 21773, 0.29, 10792, 10981, 18213],
+    ["Rondônia", 21146, 1.34, 11525, 9621, 13076],
+    ["Tocantins", 20023, 1.32, 15213, 4810, 14118],
+    ["Goiás", 19517, 0.28, 344, 19173, 8583],
+    ["Rio de Janeiro", 16994, 0.11, 546, 16448, 15894],
+    ["Espírito Santo", 14410, 0.38, 4663, 9747, 9585],
+    ["Rio Grande do Norte", 11724, 0.35, 0, 11724, 2597],
+    ["Amapá", 11334, 1.54, 7853, 3481, 7411],
+    ["Piauí", 7202, 0.22, 114, 7088, 2944],
+    ["Distrito Federal", 5811, 0.21, 0, 5811, 6128],
+    ["Sergipe", 4710, 0.21, 329, 4381, 5221]
+  ]
+}

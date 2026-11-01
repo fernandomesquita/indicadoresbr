@@ -1,6 +1,6 @@
 # Catálogo de fontes
 
-Gerado por `scripts/build.py` em 2026-10-30. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
+Gerado por `scripts/build.py` em 2026-10-31. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
 
 ## Economia
 
@@ -180,6 +180,10 @@ Gerado por `scripts/build.py` em 2026-10-30. Não edite à mão: mude o indicado
 | `desigualdade-gini-estados`: Desigualdade de renda por estado | [IBGE, PNAD Contínua](https://sidra.ibge.gov.br/tabela/7435) | Anual (PNAD Contínua, rendimento de todas as fontes) | https://sidra.ibge.gov.br/tabela/7435 | 2026, no segundo trimestre de 2027 | 2026-10-29 |
 | `pobreza-brasil`: Pobreza e extrema pobreza no Brasil | [IBGE, Síntese de Indicadores Sociais 2025](https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html) | Anual (Síntese de Indicadores Sociais, em dezembro) | https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html | 2025, na Síntese de Indicadores Sociais de dezembro de 2026, já com as linhas novas do Banco Mundial | 2026-10-29 |
 | `pobreza-estados`: Pobreza por estado | [IBGE, Síntese de Indicadores Sociais 2025](https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html) | Anual (Síntese de Indicadores Sociais, em dezembro) | https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html | 2025, na Síntese de Indicadores Sociais de dezembro de 2026, já com as linhas novas do Banco Mundial | 2026-10-29 |
+| `populacao-indigena`: A população indígena do Brasil | [IBGE, censos demográficos](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html) | A cada censo (IBGE) | https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html | Novos recortes do Censo 2022, conforme o IBGE divulgar | 2026-10-31 |
+| `populacao-indigena-estados`: Indígenas em cada estado | [IBGE, Censo 2022](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html) | A cada censo (IBGE) | https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html | Novos recortes do Censo 2022, conforme o IBGE divulgar | 2026-10-31 |
+| `populacao-quilombola`: A população quilombola do Brasil | [IBGE, Censo 2022](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html) | A cada censo (IBGE) | https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html | Novos recortes do Censo 2022, conforme o IBGE divulgar | 2026-10-31 |
+| `condicoes-vida-indigenas-quilombolas`: Condições de vida de indígenas e quilombolas | [IBGE, Censo 2022](https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html) | A cada censo (IBGE) | https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html | Novos recortes do Censo 2022, conforme o IBGE divulgar | 2026-10-31 |
 
 ## Mundo
 

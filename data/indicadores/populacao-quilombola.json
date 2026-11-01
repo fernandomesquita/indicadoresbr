@@ -1,0 +1,100 @@
+{
+  "id": "populacao-quilombola",
+  "categoria": "populacao-trabalho",
+  "ordem": 22,
+  "visivel": true,
+  "titulo": "A população quilombola do Brasil",
+  "subtitulo": "Pessoas quilombolas por estado no Censo 2022, dentro e fora de territórios quilombolas",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "Pessoas quilombolas em 2022"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "ultimo": "2022",
+  "fonte": {
+    "nome": "IBGE, Censo 2022",
+    "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Sidra tabelas 9578 e 9723",
+      "url": "https://sidra.ibge.gov.br/tabela/9578",
+      "o_que_sustenta": "Quilombolas por estado e residentes em territórios quilombolas, 2022."
+    },
+    {
+      "nome": "IBGE, Censo 2022, Quilombolas: primeiros resultados do universo",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/3104/cd_2022_quilombolas.pdf",
+      "o_que_sustenta": "Metodologia e conferência."
+    }
+  ],
+  "como_ler": "Cada barra é o número de quilombolas que moram no estado. O Censo 2022 foi o primeiro a contar a população quilombola: a pergunta \"você se considera quilombola?\" foi feita nas localidades quilombolas mapeadas pelo IBGE, dentro e fora dos territórios oficialmente delimitados. Não há dado de censos anteriores para comparar. A tabela traz o percentual da população do estado e a divisão entre quem mora dentro e fora dos territórios.",
+  "contexto": [
+    "O Censo 2022 contou 1.330.186 quilombolas, 0,66% da população. Só 167.769 (12,6%) moravam em territórios quilombolas oficialmente delimitados.",
+    "O Nordeste concentra 906.337 quilombolas, 68% do total. A Bahia (397.502) e o Maranhão (269.168) têm as maiores populações; Acre e Roraima não têm quilombolas.",
+    "Há quilombolas em 1.700 municípios. Em Alcântara (MA), 84,52% dos moradores são quilombolas."
+  ],
+  "glossario": [
+    {
+      "termo": "Quilombola",
+      "definicao": "Pessoa que se reconhece como integrante de comunidade quilombola, grupo com trajetória histórica própria e ancestralidade negra ligada à resistência à escravidão."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "A cada censo (IBGE)",
+    "onde_buscar": "https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html",
+    "proxima": "Novos recortes do Censo 2022, conforme o IBGE divulgar",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Estado",
+    "Pessoas quilombolas em 2022",
+    "% da população do estado",
+    "Em territórios quilombolas",
+    "Fora de territórios quilombolas"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2022: 1.330.186 quilombolas",
+      "valor_na_fonte": "Livro do IBGE, segunda apuração: 1.330.186",
+      "fonte": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/3104/cd_2022_quilombolas.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Bahia", 397502, 2.81, 20771, 376731],
+    ["Maranhão", 269168, 3.97, 29142, 240026],
+    ["Pará", 135603, 1.67, 44560, 91043],
+    ["Minas Gerais", 135315, 0.66, 4576, 130739],
+    ["Pernambuco", 78864, 0.87, 6769, 72095],
+    ["Alagoas", 37724, 1.21, 691, 37033],
+    ["Piauí", 31786, 0.97, 8419, 23367],
+    ["Goiás", 30391, 0.43, 5106, 25285],
+    ["Sergipe", 28163, 1.27, 12748, 15415],
+    ["Ceará", 23994, 0.27, 4609, 19385],
+    ["Rio Grande do Norte", 22371, 0.68, 3450, 18921],
+    ["Rio de Janeiro", 20447, 0.13, 3500, 16947],
+    ["Rio Grande do Sul", 17552, 0.16, 2617, 14935],
+    ["Paraíba", 16765, 0.42, 2922, 13843],
+    ["Espírito Santo", 15659, 0.41, 2793, 12866],
+    ["Tocantins", 13077, 0.87, 1328, 11749],
+    ["Amapá", 12894, 1.76, 4909, 7985],
+    ["Mato Grosso", 11729, 0.32, 958, 10771],
+    ["São Paulo", 11006, 0.02, 4076, 6930],
+    ["Paraná", 7113, 0.06, 648, 6465],
+    ["Santa Catarina", 4449, 0.06, 580, 3869],
+    ["Rondônia", 2925, 0.18, 221, 2704],
+    ["Amazonas", 2812, 0.07, 1231, 1581],
+    ["Mato Grosso do Sul", 2572, 0.09, 1145, 1427],
+    ["Distrito Federal", 305, 0.01, 0, 305],
+    ["Acre", 0, 0, 0, 0],
+    ["Roraima", 0, 0, 0, 0]
+  ]
+}

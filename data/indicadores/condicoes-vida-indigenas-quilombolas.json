@@ -1,0 +1,78 @@
+{
+  "id": "condicoes-vida-indigenas-quilombolas",
+  "categoria": "populacao-trabalho",
+  "ordem": 23,
+  "visivel": true,
+  "titulo": "Condições de vida de indígenas e quilombolas",
+  "subtitulo": "Alfabetização, água, esgoto e coleta de lixo entre indígenas, quilombolas e o total da população, Censo 2022, em %",
+  "tipo": "tabela",
+  "x": "Indicador",
+  "series": [],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "ultimo": "2022",
+  "fonte": {
+    "nome": "IBGE, Censo 2022",
+    "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Censo 2022, Indígenas: alfabetização, registros de nascimento e características dos domicílios",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/3111/cd_2022_indigenas_alfabetizacao.pdf",
+      "o_que_sustenta": "Indicadores dos indígenas e do total da população."
+    },
+    {
+      "nome": "IBGE, Censo 2022, Quilombolas: alfabetização e características dos domicílios",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/3109/cd_2022_quilombolas_alfabetizacao.pdf",
+      "o_que_sustenta": "Indicadores dos quilombolas."
+    },
+    {
+      "nome": "IBGE, Sidra tabelas 9841 e 9793",
+      "url": "https://sidra.ibge.gov.br/tabela/9841",
+      "o_que_sustenta": "Taxas de alfabetização."
+    }
+  ],
+  "como_ler": "Cada linha compara um indicador entre o total da população do Brasil, os indígenas e os quilombolas, no Censo 2022. Água e lixo são em % dos moradores; esgoto é em % dos domicílios (no caso dos indígenas, domicílios com ao menos um morador indígena, sem contar as malocas, habitações coletivas tradicionais). Esgoto adequado é rede geral ou pluvial e fossa séptica ou fossa filtro. A comparação mostra a distância entre os grupos, sem separar o efeito de morar em área rural ou urbana.",
+  "contexto": [
+    "Em 2022, 93,0% dos brasileiros de 15 anos ou mais sabiam ler e escrever. Entre os indígenas, 85,0% (eram 76,6% em 2010); entre os quilombolas, 81,0%.",
+    "A coleta de esgoto adequada chegava a 77,4% dos domicílios do país, 50,1% dos domicílios com moradores indígenas e 32,8% dos domicílios quilombolas."
+  ],
+  "glossario": [
+    {
+      "termo": "Maloca",
+      "definicao": "Habitação coletiva tradicional de alguns povos indígenas."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "A cada censo (IBGE)",
+    "onde_buscar": "https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html",
+    "proxima": "Novos recortes do Censo 2022, conforme o IBGE divulgar",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Indicador",
+    "Brasil (%)",
+    "Indígenas (%)",
+    "Quilombolas (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Alfabetização: 93,0%, 84,95% e 81,01%",
+      "valor_na_fonte": "Livros do IBGE sobre indígenas e quilombolas: os mesmos valores",
+      "fonte": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/3111/cd_2022_indigenas_alfabetizacao.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Alfabetização (pessoas de 15 anos ou mais)", 93.0, 84.95, 81.01],
+    ["Água da rede geral (% dos moradores)", 82.89, 58.14, 53.99],
+    ["Esgoto em rede geral ou fossa séptica (% dos domicílios)", 77.42, 50.15, 32.83],
+    ["Lixo coletado (% dos moradores)", 90.9, 55.27, 51.28]
+  ]
+}
