@@ -181,6 +181,7 @@ body.is-admin .topsearch{display:none}
 .tblbusca>.btn{margin-top:12px}
 .compara{border:1px solid var(--line);border-radius:8px;padding:14px;margin:0 0 16px;background:var(--surface)}
 .compara .picks{margin-bottom:10px}
+.compara .opc .pick{font-size:12px;min-height:28px;padding:5px 9px}
 .compara .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .tbl .sel{width:34px;text-align:center;padding-left:6px;padding-right:6px}
 .tbl .sel input{width:18px;height:18px;accent-color:var(--accent);cursor:pointer}

@@ -126,11 +126,18 @@ function yAxis(ctx, ind, sc, plot, th, s, Y) {
     const y = Math.round(Y(v)) + .5;
     ctx.strokeStyle = v === 0 ? th.muted : th.grid; ctx.lineWidth = v === 0 ? 1.2 * s : 1 * s;
     ctx.beginPath(); ctx.moveTo(plot.x, y); ctx.lineTo(plot.x + plot.w, y); ctx.stroke();
-    ctx.fillStyle = th.muted; ctx.fillText(axisFmt(v, ind, sc.step), plot.x - 8 * s, y);
+    ctx.fillStyle = th.muted; ctx.fillText(axisFmt(v, ind, sc.log ? v : sc.step), plot.x - 8 * s, y);
   });
   ctx.textBaseline = "alphabetic";
 }
-function yLabelWidth(ctx, ind, sc, s) { setFont(ctx, 400, 11.5 * s, F.mono); return Math.max(...sc.ticks.map(v => ctx.measureText(axisFmt(v, ind, sc.step)).width)) + 12 * s; }
+// escala logarítmica (ind.log): marcas em 1, 2 e 5 de cada potência de 10, ou só nas potências quando o intervalo é grande
+function niceLog(lo, hi) {
+  const a = Math.floor(Math.log10(lo)), b = Math.ceil(Math.log10(hi)), ticks = [];
+  const mult = b - a <= 3 ? [1, 2, 5] : [1];
+  for (let e = a; e <= b; e++) mult.forEach(m => { const v = +(m * Math.pow(10, e)).toPrecision(6); if (v >= Math.pow(10, a) && v <= Math.pow(10, b)) ticks.push(v); });
+  return { lo: Math.pow(10, a), hi: Math.pow(10, b), step: Math.min(1, Math.pow(10, a)), ticks, log: true };
+}
+function yLabelWidth(ctx, ind, sc, s) { setFont(ctx, 400, 11.5 * s, F.mono); return Math.max(...sc.ticks.map(v => ctx.measureText(axisFmt(v, ind, sc.log ? v : sc.step)).width)) + 12 * s; }
 function xStep(xs) { return xs.length > 1 ? (xs[xs.length - 1] - xs[0]) / (xs.length - 1) || 1 : 1; }
 function xTickEvery(ctx, labels, avail, s) {
   setFont(ctx, 400, 11.5 * s, F.mono);
@@ -269,24 +276,29 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   if (!n) return;
   const numX = rows.every(r => isNum(r[xi]));
   const xs = rows.map((r, i) => numX ? r[xi] : i);
-  const all = []; ys.forEach(k => rows.forEach(r => { if (isNum(r[k])) all.push(r[k]); }));
+  const LOG = !!ind.log, ok = v => isNum(v) && (!LOG || v > 0);
+  const all = []; ys.forEach(k => rows.forEach(r => { if (ok(r[k])) all.push(r[k]); }));
   if (!all.length) return;
   let lo = Math.min(...all), hi = Math.max(...all);
-  if (lo > 0 && lo < hi * .35) lo = 0;
-  if (isNum(ind.ymin)) lo = Math.min(lo, ind.ymin); // eixo fixo, quando o indicador pede
-  if (isNum(ind.ymax)) hi = Math.max(hi, ind.ymax);
-  const sc = nice(lo, hi, 5), multi = ys.length > 1;
+  if (!LOG) {
+    if (lo > 0 && lo < hi * .35) lo = 0;
+    if (isNum(ind.ymin)) lo = Math.min(lo, ind.ymin); // eixo fixo, quando o indicador pede
+    if (isNum(ind.ymax)) hi = Math.max(hi, ind.ymax);
+  }
+  const sc = LOG ? niceLog(lo, hi) : nice(lo, hi, 5), multi = ys.length > 1;
+  // nome curto ao lado do último valor de cada linha (ind.nomeNaLinha + ind.rotulosLinha)
+  const rotFim = k => { const v = [...rows].reverse().find(r => ok(r[k])); if (!v) return ""; const nm = ind.nomeNaLinha && ind.rotulosLinha ? ind.rotulosLinha[ind.colunas[k]] : ""; return (nm ? nm + " " : "") + fmtV(v[k], ind); };
   const yw = yLabelWidth(ctx, ind, sc, s);
   setFont(ctx, 500, 12.5 * s, F.body);
   const leg = multi ? legendRows(ctx, ys.map(k => ind.colunas[k]), b.w, 20 * s, 20 * s) : [];
   const bandsH = ind.faixasGoverno && numX ? 20 * s : 0, legH = multi ? (6 + leg.length * 20) * s : 0;
   setFont(ctx, 600, 12 * s, F.mono);
-  const lastW = Math.max(...ys.map(k => { const v = [...rows].reverse().find(r => isNum(r[k])); return v ? ctx.measureText(fmtV(v[k], ind)).width : 0; })) + 14 * s;
+  const lastW = Math.max(...ys.map(k => ctx.measureText(rotFim(k)).width)) + 14 * s;
   const topPad = (multi ? 10 : 24) * s; // espaço para o rótulo do valor máximo não encostar nas faixas
   const plot = { x: b.x + yw, y: b.y + legH + bandsH + topPad, w: b.w - yw - lastW, h: b.h - legH - bandsH - topPad - 22 * s };
   const st = xStep(xs), x0 = xs[0] - st * .5, x1 = xs[n - 1] + st * .5;
   const px = v => plot.x + (v - x0) / (x1 - x0) * plot.w;
-  const Y = v => plot.y + plot.h * (1 - (v - sc.lo) / (sc.hi - sc.lo));
+  const Y = LOG ? v => plot.y + plot.h * (1 - (Math.log10(v) - Math.log10(sc.lo)) / (Math.log10(sc.hi) - Math.log10(sc.lo))) : v => plot.y + plot.h * (1 - (v - sc.lo) / (sc.hi - sc.lo));
   if (multi) {
     setFont(ctx, 500, 12.5 * s, F.body); ctx.textAlign = "left";
     leg.forEach((linha, r) => linha.forEach(({ nome, j, x, max }) => {
@@ -300,7 +312,7 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   const e = ease(t);
   ctx.save(); ctx.beginPath(); ctx.rect(plot.x - 6 * s, b.y, (plot.w + 12 * s) * e + 1, b.h); ctx.clip();
   ys.forEach((k, j) => {
-    const color = th.series[j % 5], pts = rows.map((r, i) => isNum(r[k]) ? [px(xs[i]), Y(r[k])] : null);
+    const color = th.series[j % 5], pts = rows.map((r, i) => ok(r[k]) ? [px(xs[i]), Y(r[k])] : null);
     if (!multi) {
       const g = ctx.createLinearGradient(0, plot.y, 0, plot.y + plot.h);
       const hex = /^#[0-9a-f]{6}$/i.test(color);
@@ -318,7 +330,7 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   if (hover != null && rows[hover]) {
     const gx = px(xs[hover]); ctx.strokeStyle = th.muted; ctx.lineWidth = 1 * s; ctx.setLineDash([3 * s, 3 * s]);
     ctx.beginPath(); ctx.moveTo(gx, plot.y); ctx.lineTo(gx, plot.y + plot.h); ctx.stroke(); ctx.setLineDash([]);
-    ys.forEach((k, j) => { const v = rows[hover][k]; if (isNum(v)) { ctx.fillStyle = th.series[j % 5]; ctx.beginPath(); ctx.arc(gx, Y(v), 5 * s, 0, 7); ctx.fill(); } });
+    ys.forEach((k, j) => { const v = rows[hover][k]; if (ok(v)) { ctx.fillStyle = th.series[j % 5]; ctx.beginPath(); ctx.arc(gx, Y(v), 5 * s, 0, 7); ctx.fill(); } });
   }
   if (t > .85) {
     ctx.globalAlpha = clamp01((t - .85) / .15);
@@ -338,7 +350,7 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
         ctx.fillText(lab, Math.max(plot.x + lw / 2, x), above ? y - 10 * s : y + 19 * s);
       });
     } else {
-      const ends = ys.map((k, j) => { const r = [...rows].reverse().find(r => isNum(r[k])); const i = rows.indexOf(r); return r ? { y: Y(r[k]), x: px(xs[i]), txt: fmtV(r[k], ind), j } : null; }).filter(Boolean).sort((a, c) => a.y - c.y);
+      const ends = ys.map((k, j) => { const r = [...rows].reverse().find(r => ok(r[k])); const i = rows.indexOf(r); return r ? { y: Y(r[k]), x: px(xs[i]), txt: rotFim(k), j } : null; }).filter(Boolean).sort((a, c) => a.y - c.y);
       for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 15 * s) ends[i].y = ends[i - 1].y + 15 * s;
       // se os rótulos passarem do pé do gráfico, empurra o bloco para cima
       const pe = plot.y + plot.h - 2 * s;
@@ -357,7 +369,7 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   let ultX = Infinity;
   rows.forEach((r, j) => { const i = n - 1 - j, x = px(xs[i]); if (regular ? (j % every === 0) : (ultX - x >= tw)) { ctx.fillText(labels[i], x, plot.y + plot.h + 17 * s); ultX = x; } });
   const meio = i => i < 0 ? plot.x - 6 * s : i >= n - 1 ? plot.x + plot.w + 6 * s : (px(xs[i]) + px(xs[i + 1])) / 2;
-  rows.forEach((r, i) => hits.push({ kind: "strip", x: meio(i - 1), y: plot.y, w: meio(i) - meio(i - 1), h: plot.h, cx: px(xs[i]), cy: Math.min(...ys.map(k => isNum(r[k]) ? Y(r[k]) : plot.y + plot.h)), i, title: labels[i], lines: ys.map(k => [ind.colunas[k], fmtV(r[k], ind)]) }));
+  rows.forEach((r, i) => hits.push({ kind: "strip", x: meio(i - 1), y: plot.y, w: meio(i) - meio(i - 1), h: plot.h, cx: px(xs[i]), cy: Math.min(...ys.map(k => ok(r[k]) ? Y(r[k]) : plot.y + plot.h)), i, title: labels[i], lines: ys.map(k => [ind.colunas[k], fmtV(r[k], ind)]) }));
 }
 
 function drawScatter(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
@@ -489,13 +501,21 @@ export function renderTableBusca(ind, opts = {}) {
   const chartBox = h("div", { class: "chart big" });
   const btnPNG = h("button", { class: "btn pri", type: "button" }, h("span", { class: "ico", html: ICON.png }), "Baixar gráfico (PNG)");
   const btnLimpa = h("button", { class: "btn ghost", type: "button", text: "Limpar seleção" });
+  const opc = { nome: true, log: false };
+  const chave = (k, txt) => { const b = h("button", { type: "button", class: "pick", "aria-pressed": String(opc[k]), text: txt }); b.addEventListener("click", () => { opc[k] = !opc[k]; b.setAttribute("aria-pressed", String(opc[k])); atualizaPainel(); }); return b; };
+  const opcoes = h("div", { class: "picks opc", role: "group", "aria-label": "Opções do gráfico" }, chave("nome", "Nome em cada linha"), chave("log", "Escala logarítmica"));
+  // nome curto: primeiro nome de urna, sem títulos; se repetir entre os escolhidos, usa dois nomes
+  const TIT = new Set(["professor", "professora", "prof", "pastor", "pastora", "delegado", "delegada", "dr", "dra", "doutor", "doutora", "coronel", "capitao", "capita", "general", "sargento", "cabo", "major", "tenente", "subtenente", "soldado", "padre", "irmao", "irma", "bispo", "missionario", "missionaria", "policial", "juiz", "juiza", "comandante", "deputado", "deputada", "senador", "senadora", "vereador", "vereadora", "prefeito", "prefeita", "coach", "apostolo", "presbitero", "maestro", "engenheiro", "enfermeiro", "enfermeira", "advogado", "advogada", "medico", "medica", "mestre", "frei", "irmaozinho"]);
+  const palavras = r => String(r[G.nome[0]]).split(/\s+/).filter(Boolean);
+  const curto = (r, n) => { const ps = palavras(r), i = ps.findIndex(p => !TIT.has(norm(p).replace(/\./g, ""))); return ps.slice(i < 0 ? 0 : i, (i < 0 ? 0 : i) + n).join(" "); };
+  const curtos = () => { const out = sel.map(r => curto(r, 1)); out.forEach((c, i) => { if (out.filter(x => x === c).length > 1) out[i] = curto(sel[i], 2); }); return out; };
   const painel = G ? h("section", { class: "compara", hidden: true, "aria-label": "Comparação dos selecionados" },
-    h("p", { class: "pickhead" }, h("b", { text: `Comparação (até ${MAX_COMPARA})` }), aviso), chips, chartBox, h("div", { class: "acts" }, btnPNG, btnLimpa)) : null;
+    h("p", { class: "pickhead" }, h("b", { text: `Comparação (até ${MAX_COMPARA})` }), aviso), chips, opcoes, chartBox, h("div", { class: "acts" }, btnPNG, btnLimpa)) : null;
   const derivado = () => {
-    const nomes = sel.map(nomeDe);
+    const nomes = sel.map(nomeDe), cs = curtos(), rot = Object.fromEntries(nomes.map((n, i) => [n, cs[i]]));
     const linhas = G.anos.map((k, a) => [G.rotulos[a], ...sel.map(r => isNum(r[k]) ? Math.round(r[k] * (G.fatores ? G.fatores[a] : 1) / (G.divisor || 1) * 100) / 100 : "")]);
-    return { ...ind, tipo: "linha", x: G.x || "Ano", series: nomes, colunas: [G.x || "Ano", ...nomes], linhas, escolha: false, busca: false, ligar: true, destaque: [], faixasGoverno: false,
-      prefixo: G.prefixo || "", sufixo: G.sufixo || "", casas: G.casas ?? 1, ymin: 0, ymax: undefined, titulo: G.titulo || ind.titulo, subtitulo: G.subtitulo || ind.subtitulo };
+    return { ...ind, tipo: "linha", x: G.x || "Ano", series: nomes, colunas: [G.x || "Ano", ...nomes], linhas, escolha: false, busca: false, ligar: true, log: opc.log, nomeNaLinha: opc.nome, rotulosLinha: rot, destaque: [], faixasGoverno: false,
+      prefixo: G.prefixo || "", sufixo: G.sufixo || "", casas: G.casas ?? 1, ymin: 0, ymax: undefined, titulo: G.titulo || ind.titulo, subtitulo: (G.subtitulo || ind.subtitulo) + (opc.log ? ". Escala logarítmica: cada faixa do eixo vale 10 vezes a anterior" : "") };
   };
   const atualizaPainel = () => {
     if (!G) return;
