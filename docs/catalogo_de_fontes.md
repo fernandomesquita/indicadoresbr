@@ -175,6 +175,10 @@ Gerado por `scripts/build.py` em 2026-11-01. Não edite à mão: mude o indicado
 | `pisa-brasil`: O Brasil no Pisa | [OCDE, Pisa](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/09/pisa-2025-results-volume-i_5265bfb1/73451bc5-en.pdf) | A cada três anos (OCDE) | https://www.oecd.org/en/about/programmes/pisa.html | Pisa 2028 | 2026-10-29 |
 | `pisa-paises-2025`: O Brasil e outros países no Pisa 2025 | [OCDE, Pisa 2025](https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/09/pisa-2025-results-volume-i_5265bfb1/73451bc5-en.pdf) | A cada três anos (OCDE) | https://www.oecd.org/en/about/programmes/pisa.html | Pisa 2028 | 2026-10-29 |
 | `ensino-medio-completo`: Quantos adultos completaram o ensino médio | [IBGE, PNAD Contínua Educação](https://sidra.ibge.gov.br/tabela/7269) | Anual (PNAD Contínua Educação) | https://sidra.ibge.gov.br/tabela/7269 | 2026, em meados de 2027 | 2026-10-29 |
+| `escolaridade-media`: Anos de estudo da população adulta | [IBGE, PNAD e PNAD Contínua](https://sidra.ibge.gov.br/tabela/7126) | Anual (PNAD Contínua Educação, em maio ou junho) | https://sidra.ibge.gov.br/tabela/7126 | PNAD Contínua Educação 2026 | 2026-11-01 |
+| `escolaridade-estados`: Anos de estudo em cada estado | [IBGE, PNAD Contínua Educação](https://sidra.ibge.gov.br/tabela/7126) | Anual (PNAD Contínua Educação) | https://sidra.ibge.gov.br/tabela/7126 | PNAD Contínua Educação 2026 | 2026-11-01 |
+| `nivel-instrucao`: Até onde os adultos estudaram | [IBGE, PNAD Contínua Educação](https://sidra.ibge.gov.br/tabela/7135) | Anual (PNAD Contínua Educação) | https://sidra.ibge.gov.br/tabela/7135 | PNAD Contínua Educação 2026 | 2026-11-01 |
+| `escolaridade-paises`: Anos de estudo no Brasil e em outros países | [PNUD, Relatório de Desenvolvimento Humano 2025](https://hdr.undp.org/data-center/documentation-and-downloads) | Anual (PNUD) | https://hdr.undp.org/data-center/documentation-and-downloads | Relatório de Desenvolvimento Humano 2026 | 2026-11-01 |
 
 ## População e trabalho
 

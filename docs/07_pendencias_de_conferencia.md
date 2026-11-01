@@ -103,3 +103,15 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **Revisão manual**: João Daniel declarou R$ 1,00 em 2010 e R$ 48.237,14 em 2018; João Lyra declara o mesmo bem de R$ 196 milhões em 2006, 2010 e 2014. Nada foi corrigido.
 - **Sem bens**: 233 candidaturas sem bens registrados entram como zero; em 2008, 2010, 2012 e 2016 o TSE separa quem declarou não ter bens.
 - **Ligação entre eleições**: CPF ou título (2024 tem CPF mascarado). 18 linhas sem CPF nem título têm nome igual ao de alguém da tabela e não foram ligadas.
+
+## Escolaridade (coleta de 01/11/2026)
+
+- **PNAD anual e PNAD Contínua não se emendam**: 2015 dá 7,9 anos na PNAD e 9,03 no cálculo do Atlas com a PNAD Contínua. Nenhuma nota do IBGE explica a diferença; o site mostra as duas como séries separadas.
+- **PNAD anual de 1992 a 2000**: não achada em fonte oficial acessível (a série antiga do Ipea não aparece mais no Ipeadata; seriesestatisticas.ibge.gov.br dá 403).
+- **Ensino médio incompleto 2025**: Sidra e gráfico do informativo dão 4,8%; o texto do informativo diz 4,9%. O site usa 4,8%.
+- **Censo 2022 por nível**: as contagens do Sidra dão 32,34% em médio completo e superior incompleto; o release publica 32,2% (os quatro valores do release somam 99,8%). O Censo 2010 por nível não foi conferido em texto.
+- **PNUD**: repete 8,43 para o Brasil em 2021, 2022 e 2023 e interpola os anos 1990 e 2000.
+
+## Supabase
+
+- **Seed acima de 1 MB**: o SQL Editor recusa ("Query is too large"). Desde 01/11/2026 a carga é rodada em duas partes de até 700 mil caracteres, cada uma com begin/commit, com a linha de 'versao' na última parte.

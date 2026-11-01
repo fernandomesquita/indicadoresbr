@@ -1,0 +1,119 @@
+{
+  "id": "escolaridade-media",
+  "categoria": "educacao",
+  "ordem": 15,
+  "visivel": true,
+  "titulo": "Anos de estudo da população adulta",
+  "subtitulo": "Média de anos de estudo das pessoas de 25 anos ou mais, de 2001 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "PNAD (até 2015)",
+    "PNAD Contínua (desde 2016)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": " anos",
+  "casas": 1,
+  "escolha": true,
+  "fonte": {
+    "nome": "IBGE, PNAD e PNAD Contínua",
+    "url": "https://sidra.ibge.gov.br/tabela/7126"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, PNAD Contínua Educação, Sidra tabelas 7126 e 7127",
+      "url": "https://sidra.ibge.gov.br/tabela/7126",
+      "o_que_sustenta": "Média de anos de estudo das pessoas de 25 anos ou mais de 2016 a 2025, por sexo, cor ou raça, região e estado."
+    },
+    {
+      "nome": "IBGE, informativo PNAD Contínua Educação 2025",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/livros/liv102286_informativo.pdf",
+      "o_que_sustenta": "Conferência dos valores de 2016 a 2025 e das notas sobre 2020, 2021 e a reponderação da série com o Censo 2022."
+    },
+    {
+      "nome": "IBGE, Síntese de Indicadores Sociais 2016 e edições de 2002 a 2004 (PNAD)",
+      "url": "https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2016/xls/4_educacao_xls.zip",
+      "o_que_sustenta": "Média de anos de estudo das pessoas de 25 anos ou mais de 2001 a 2015."
+    }
+  ],
+  "como_ler": "Cada ponto é o número médio de anos que as pessoas de 25 anos ou mais estudaram, contando a partir do primeiro ano do ensino fundamental: quem concluiu o ensino médio tem 12 anos de estudo. A idade de 25 anos é usada porque quase todos já terminaram os estudos. As duas linhas vêm de pesquisas diferentes do IBGE e não se emendam: a PNAD anual foi encerrada em 2015 e a PNAD Contínua mede de outro jeito; em 2015, a PNAD dava 7,9 anos, e um cálculo do Ipea com a PNAD Contínua para o mesmo ano dava 9,0. O IBGE não publicou 2020 e 2021, e não houve PNAD em 2010. De 2001 a 2003, a PNAD não cobria a área rural de seis estados do Norte. Use os botões para ver os resultados por sexo, cor ou raça e região, da PNAD Contínua. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2025, os brasileiros de 25 anos ou mais tinham estudado em média 10,2 anos, contra 9,1 em 2016, segundo a PNAD Contínua.",
+    "As mulheres estudaram em média 10,4 anos, e os homens, 10,0. Entre as pessoas brancas, a média foi de 11,1 anos; entre pretas e pardas, de 9,5.",
+    "Na PNAD anual, a média passou de 6,0 anos em 2001 para 7,9 em 2015. O Censo de 2022 mediu 9,6 anos."
+  ],
+  "glossario": [
+    {
+      "termo": "Anos de estudo",
+      "definicao": "Número de séries concluídas com aprovação, a partir do 1º ano do ensino fundamental. Ensino médio completo equivale a 12 anos."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (PNAD Contínua Educação, em maio ou junho)",
+    "onde_buscar": "https://sidra.ibge.gov.br/tabela/7126",
+    "proxima": "PNAD Contínua Educação 2026",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "Ano",
+    "PNAD (até 2015)",
+    "PNAD Contínua (desde 2016)",
+    "Homens",
+    "Mulheres",
+    "Branca",
+    "Preta ou parda",
+    "Norte",
+    "Nordeste",
+    "Sudeste",
+    "Sul",
+    "Centro-Oeste"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2016, 2019, 2022, 2024 e 2025 (Brasil, sexo, cor e regiões em 2025)",
+      "valor_na_fonte": "Informativo PNAD Contínua Educação 2025: iguais",
+      "fonte": "https://biblioteca.ibge.gov.br/visualizacao/livros/liv102286_informativo.pdf",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "PNAD 2004, 2005, 2011, 2014 e 2015",
+      "valor_na_fonte": "Textos das Sínteses de Indicadores Sociais de 2015 e 2016: iguais",
+      "fonte": "https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2016/xls/4_educacao_xls.zip",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "ymax": 12,
+  "linhas": [
+    [2001, 6.0, "", "", "", "", "", "", "", "", "", ""],
+    [2002, 6.1, "", "", "", "", "", "", "", "", "", ""],
+    [2003, 6.3, "", "", "", "", "", "", "", "", "", ""],
+    [2004, 6.4, "", "", "", "", "", "", "", "", "", ""],
+    [2005, 6.5, "", "", "", "", "", "", "", "", "", ""],
+    [2006, 6.7, "", "", "", "", "", "", "", "", "", ""],
+    [2007, 6.9, "", "", "", "", "", "", "", "", "", ""],
+    [2008, 7.0, "", "", "", "", "", "", "", "", "", ""],
+    [2009, 7.2, "", "", "", "", "", "", "", "", "", ""],
+    [2010, "", "", "", "", "", "", "", "", "", "", ""],
+    [2011, 7.3, "", "", "", "", "", "", "", "", "", ""],
+    [2012, 7.6, "", "", "", "", "", "", "", "", "", ""],
+    [2013, 7.7, "", "", "", "", "", "", "", "", "", ""],
+    [2014, 7.8, "", "", "", "", "", "", "", "", "", ""],
+    [2015, 7.9, "", "", "", "", "", "", "", "", "", ""],
+    [2016, "", 9.1, 8.9, 9.2, 10.1, 8.1, 8.4, 7.7, 9.8, 9.4, 9.3],
+    [2017, "", 9.2, 9.0, 9.4, 10.2, 8.4, 8.7, 7.8, 10.0, 9.5, 9.6],
+    [2018, "", 9.4, 9.2, 9.6, 10.4, 8.5, 8.8, 8.1, 10.1, 9.6, 9.7],
+    [2019, "", 9.5, 9.3, 9.7, 10.5, 8.7, 9.0, 8.2, 10.2, 9.8, 9.9],
+    [2020, "", "", "", "", "", "", "", "", "", "", ""],
+    [2021, "", "", "", "", "", "", "", "", "", "", ""],
+    [2022, "", 9.8, 9.6, 10.0, 10.7, 9.1, 9.4, 8.5, 10.6, 10.1, 10.2],
+    [2023, "", 9.9, 9.7, 10.1, 10.8, 9.2, 9.4, 8.7, 10.6, 10.1, 10.5],
+    [2024, "", 10.1, 9.9, 10.3, 11.0, 9.3, 9.7, 8.8, 10.7, 10.3, 10.6],
+    [2025, "", 10.2, 10.0, 10.4, 11.1, 9.5, 9.7, 9.0, 10.9, 10.5, 10.8]
+  ]
+}

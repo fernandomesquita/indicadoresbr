@@ -1,0 +1,84 @@
+{
+  "id": "escolaridade-paises",
+  "categoria": "educacao",
+  "ordem": 18,
+  "visivel": true,
+  "titulo": "Anos de estudo no Brasil e em outros países",
+  "subtitulo": "Média de anos de estudo das pessoas de 25 anos ou mais em 2023, segundo o PNUD",
+  "tipo": "barras",
+  "x": "País",
+  "series": [
+    "Média em 2023 (anos)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Brasil"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": " anos",
+  "casas": 1,
+  "ultimo": "2023",
+  "fonte": {
+    "nome": "PNUD, Relatório de Desenvolvimento Humano 2025",
+    "url": "https://hdr.undp.org/data-center/documentation-and-downloads"
+  },
+  "fontes": [
+    {
+      "nome": "PNUD, Relatório de Desenvolvimento Humano 2025, séries dos índices compostos (CSV)",
+      "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv",
+      "o_que_sustenta": "Média de anos de estudo das pessoas de 25 anos ou mais por país, de 1990 a 2023."
+    }
+  ],
+  "como_ler": "O PNUD calcula a média de anos de estudo com uma régua igual para todos os países, a partir do nível de instrução e da duração oficial de cada etapa. Por isso o número do Brasil (8,4) é diferente do calculado pelo IBGE (10,2 em 2025): use este indicador só para comparar países. Para o Brasil, o PNUD repete em 2022 e 2023 o valor de 2021, o mais recente que tinha. A tabela traz também o valor de 2000.",
+  "contexto": [
+    "Pela régua do PNUD, o Brasil tinha 8,4 anos médios de estudo em 2023, contra 11,3 no Chile e 11,2 na Argentina.",
+    "Em 1990, primeiro ano da série do PNUD, a média do Brasil era de 3,7 anos."
+  ],
+  "glossario": [
+    {
+      "termo": "PNUD",
+      "definicao": "Programa das Nações Unidas para o Desenvolvimento, que calcula o Índice de Desenvolvimento Humano."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (PNUD)",
+    "onde_buscar": "https://hdr.undp.org/data-center/documentation-and-downloads",
+    "proxima": "Relatório de Desenvolvimento Humano 2026",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "País",
+    "Média em 2023 (anos)",
+    "Média em 2000 (anos)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil, Chile, Argentina e México em 2023",
+      "valor_na_fonte": "Anexo estatístico do relatório de 2025, tabela 1: iguais",
+      "fonte": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Alemanha", 14.3, 12.42],
+    ["Estados Unidos", 13.91, 12.96],
+    ["Coreia do Sul", 12.72, 10.62],
+    ["África do Sul", 11.61, 7.46],
+    ["Chile", 11.29, 9.15],
+    ["Argentina", 11.18, 8.8],
+    ["Uruguai", 10.54, 8.32],
+    ["Peru", 10.15, 8.36],
+    ["Portugal", 9.7, 6.79],
+    ["México", 9.35, 6.66],
+    ["América Latina e Caribe (média PNUD)", 9.13, 6.63],
+    ["Colômbia", 9.03, 6.86],
+    ["Paraguai", 8.93, 6.79],
+    ["Mundo (média PNUD)", 8.78, 7.03],
+    ["Brasil", 8.43, 5.27],
+    ["China", 8.04, 6.12],
+    ["Índia", 6.88, 4.14]
+  ]
+}
