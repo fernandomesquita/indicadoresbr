@@ -1,0 +1,101 @@
+{
+  "id": "mortes-trabalho-sus",
+  "categoria": "populacao-trabalho",
+  "ordem": 38,
+  "visivel": true,
+  "titulo": "Mortes no trabalho nas declarações de óbito",
+  "subtitulo": "Mortes por causas externas registradas como acidente de trabalho na declaração de óbito, de 1996 a 2025 (2025 é preliminar)",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Mortes registradas como acidente de trabalho"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "fonte": {
+    "nome": "Ministério da Saúde, SIM",
+    "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/ext10uf.def"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Saúde, Sistema de Informações sobre Mortalidade (SIM), TabNet/DATASUS, óbitos por causas externas",
+      "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/ext10uf.def",
+      "o_que_sustenta": "Mortes por causas externas com o campo acidente de trabalho marcado como sim, e a parte das declarações com o campo ignorado, de 1996 a 2025."
+    },
+    {
+      "nome": "Ministério da Saúde, microdados do SIM de 2023 (OpenDataSUS)",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SIM/csv/Mortalidade_Geral_2023_csv.zip",
+      "o_que_sustenta": "Conferência de 2023: 4.296 mortes, igual ao TabNet."
+    }
+  ],
+  "como_ler": "Cada ponto é o número de mortes por causas externas (acidentes, quedas, choques elétricos, violências) em que a declaração de óbito marca que a morte foi acidente de trabalho. A contagem vale para qualquer trabalhador, com ou sem carteira. O campo costuma ficar em branco: em 2024, 73,8% das mortes por causas externas tinham a resposta ignorada, e em 1996 eram 89,2%. Por isso o número é um piso, e parte da subida pode vir de melhor preenchimento. A tabela traz a proporção de ignorados em cada ano. Os dados são finais até 2024; 2025 é preliminar. A contagem não se soma à da Previdência, que tem outra cobertura. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2024, último ano com dado final, 4.551 mortes foram registradas como acidente de trabalho, o maior número da série. O dado preliminar de 2025 é de 4.624.",
+    "Em 1996, eram 2.321.",
+    "Em 2024, os estados com mais mortes registradas como acidente de trabalho foram São Paulo (682), Minas Gerais (488) e Paraná (455), pelo estado de residência."
+  ],
+  "glossario": [
+    {
+      "termo": "Causas externas",
+      "definicao": "Mortes por acidentes e violências, em oposição às mortes por doença."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (SIM); dado final cerca de um ano e meio depois",
+    "onde_buscar": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/ext10uf.def",
+    "proxima": "Dados finais de 2025",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "Ano",
+    "Mortes registradas como acidente de trabalho",
+    "Campo ignorado (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2023: 4.296",
+      "valor_na_fonte": "Microdados abertos do SIM de 2023: 4.296",
+      "fonte": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SIM/csv/Mortalidade_Geral_2023_csv.zip",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [1996, 2321, 89.2],
+    [1997, 2357, 85.8],
+    [1998, 2162, 88.1],
+    [1999, 2067, 88.2],
+    [2000, 2422, 82.5],
+    [2001, 2517, 81.0],
+    [2002, 2799, 78.9],
+    [2003, 2841, 78.1],
+    [2004, 3011, 77.2],
+    [2005, 2740, 73.9],
+    [2006, 2782, 85.7],
+    [2007, 2992, 85.3],
+    [2008, 3089, 84.6],
+    [2009, 3199, 83.8],
+    [2010, 3503, 82.2],
+    [2011, 3670, 80.8],
+    [2012, 3745, 80.1],
+    [2013, 3867, 80.1],
+    [2014, 3614, 80.0],
+    [2015, 3242, 80.7],
+    [2016, 3136, 80.6],
+    [2017, 3210, 80.5],
+    [2018, 3209, 79.8],
+    [2019, 3487, 78.1],
+    [2020, 3033, 78.7],
+    [2021, 3552, 78.2],
+    [2022, 3815, 77.0],
+    [2023, 4296, 75.5],
+    [2024, 4551, 73.8],
+    [2025, 4624, 74.0]
+  ]
+}

@@ -82,3 +82,15 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **Energia renovável**: a matriz elétrica de 2024 é 88,2% na tabela do BEN 2026 e 88,0% no gráfico da p. 39 do Relatório Síntese. O site usa 88,2%.
 - **Saneamento**: quebra de série entre SNIS (até 2022) e Sinisa (2023 em diante). Por estado, a mudança chega a 35 pontos (Piauí, esgoto coletado: 19,4% em 2022 no SNIS e 54,2% em 2024 no Sinisa). Não publicar série por estado atravessando a quebra.
 - **Emissões**: o MCTI (NIR 2024) vai até 2022 e o SEEG 14 até 2025; os valores dos dois não se comparam diretamente.
+
+## Saúde e segurança no trabalho (coleta de 01/11/2026)
+
+- **Previdência, anos preliminares**: o último ano de cada anuário sobe na edição seguinte (2023: de 2.783 para 3.286 mortes; incapacidade permanente de 6.382 para 16.194). A incapacidade permanente de 2025 (10.787, queda de 39%) é primeira divulgação. Revisar quando sair o AEPS 2026.
+- **Previdência, 2014**: o Suplemento Histórico mantém 704.136 acidentes; AEAT e AEPS de 2015 e 2016 trazem 712.302. O site usa 712.302.
+- **Previdência, 1994**: a incapacidade permanente cobre só janeiro a junho e ficou de fora.
+- **INSS, afastamentos por CID**: em 2020, 65% dos auxílios-doença comuns saíram com CID ignorado; o ano ficou de fora. Em 2016 e 2019 a soma por CID fica até 7% abaixo da tabela por espécie. O salto dos transtornos mentais de 2022 a 2025 não tem explicação oficial nos arquivos coletados.
+- **Previdência, UF ignorada**: 5.284 acidentes em 2021 e 26.490 em 2022.
+- **SmartLab (MPT/OIT)**: não foi possível conferir; o datahub devolveu 401.
+- **Sinan**: sem conferência externa (nenhum boletim nacional achado). Espírito Santo com notas contraditórias no TabNet sobre a cobertura desde 2020; por isso o site não publica Sinan por estado. O agravo "acidente de trabalho" mudou de definição pela Portaria GM/MS 217/2023 e não foi publicado como série.
+- **SIM 2024**: o microdado aberto (21/10/2025) dá 4.473 mortes com acidente de trabalho "sim"; o TabNet (extração final de 02/12/2025) dá 4.551. O site usa o TabNet.
+- **MTE, trabalho escravo e inspeção**: Radar SIT e dados abertos do MTE não responderam (nem pelo navegador). Só há 2025 lido na Agência Gov (2.772 resgatados), não publicado. Coletar a série desde 1995 quando o Radar voltar.

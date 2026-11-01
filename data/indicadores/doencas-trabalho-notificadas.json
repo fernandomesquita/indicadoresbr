@@ -1,0 +1,96 @@
+{
+  "id": "doencas-trabalho-notificadas",
+  "categoria": "populacao-trabalho",
+  "ordem": 37,
+  "visivel": true,
+  "titulo": "Doenças do trabalho notificadas ao SUS",
+  "subtitulo": "Casos de doenças relacionadas ao trabalho notificados pelos serviços de saúde por ano, de 2007 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "LER/DORT",
+    "Transtornos mentais"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Ministério da Saúde, Sinan",
+    "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/lerdorbr.def"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Saúde, Sinan (Sistema de Informação de Agravos de Notificação), TabNet/DATASUS, agravos relacionados ao trabalho",
+      "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/lerdorbr.def",
+      "o_que_sustenta": "Notificações por ano de LER/DORT, transtornos mentais, câncer, dermatoses, perda auditiva induzida por ruído, pneumoconioses e intoxicação exógena relacionada ao trabalho, de 2007 a 2025."
+    }
+  ],
+  "como_ler": "Cada ponto é o número de casos que hospitais, postos e centros de referência em saúde do trabalhador notificaram ao Ministério da Saúde no ano, com a doença ligada ao trabalho. Vale para qualquer trabalhador, com ou sem carteira. O número conta notificações e depende de o serviço de saúde identificar a relação com o trabalho e registrar o caso; ele não é o total de pessoas doentes e não se compara com os afastamentos do INSS. Use os botões para escolher as doenças. Os dados de 2023 a 2025 ainda podem ser revistos. As notas do DATASUS dizem que o Espírito Santo usa outro sistema desde 2020 e, em outro trecho, que os dados do estado foram incluídos; por isso os números por estado não são mostrados. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2025, os serviços de saúde notificaram 15.491 casos de LER/DORT e 6.338 de transtornos mentais relacionados ao trabalho. Em 2007, foram 3.228 e 122.",
+    "As notificações de transtornos mentais ligados ao trabalho passaram de 2.616 em 2022 para 6.338 em 2025.",
+    "Também foram notificados 2.098 casos de câncer, 1.423 de doenças de pele e 15.846 intoxicações relacionadas ao trabalho em 2025."
+  ],
+  "glossario": [
+    {
+      "termo": "LER/DORT",
+      "definicao": "Lesões por esforços repetitivos e distúrbios osteomusculares relacionados ao trabalho, como tendinites e lesões de coluna causadas pela atividade."
+    },
+    {
+      "termo": "Pneumoconiose",
+      "definicao": "Doença do pulmão causada por poeira inalada no trabalho, como a silicose."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Contínua (Sinan); anos recentes sujeitos a revisão",
+    "onde_buscar": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/lerdorbr.def",
+    "proxima": "Fechamento de 2026",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "Ano",
+    "LER/DORT",
+    "Transtornos mentais",
+    "Câncer",
+    "Dermatoses",
+    "Perda auditiva por ruído",
+    "Pneumoconioses",
+    "Intoxicação no trabalho"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Totais anuais dos 7 agravos",
+      "valor_na_fonte": "TabNet/DATASUS; a soma por estado bate com o total do Brasil em todos os anos",
+      "fonte": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/lerdorbr.def",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [2007, 3228, 122, 5, 128, 113, 104, 2071],
+    [2008, 3474, 189, 12, 299, 204, 750, 2576],
+    [2009, 4713, 361, 30, 392, 260, 182, 3045],
+    [2010, 5951, 407, 26, 507, 329, 205, 3132],
+    [2011, 7205, 713, 126, 692, 560, 561, 4073],
+    [2012, 8343, 674, 73, 1016, 414, 223, 4529],
+    [2013, 8134, 723, 146, 991, 712, 265, 6258],
+    [2014, 8341, 891, 169, 693, 914, 228, 6336],
+    [2015, 9408, 1189, 196, 863, 968, 333, 6515],
+    [2016, 9160, 1456, 255, 563, 1216, 237, 5716],
+    [2017, 9886, 1921, 191, 418, 997, 919, 6670],
+    [2018, 8787, 1816, 398, 374, 626, 474, 7447],
+    [2019, 7632, 2379, 791, 487, 745, 538, 8588],
+    [2020, 4360, 1283, 458, 336, 297, 207, 5734],
+    [2021, 5853, 1894, 361, 406, 582, 188, 6301],
+    [2022, 7914, 2616, 1404, 434, 600, 348, 7434],
+    [2023, 13133, 4013, 2510, 656, 508, 395, 12392],
+    [2024, 14122, 5074, 2416, 1247, 672, 358, 13107],
+    [2025, 15491, 6338, 2098, 1423, 556, 437, 15846]
+  ]
+}
