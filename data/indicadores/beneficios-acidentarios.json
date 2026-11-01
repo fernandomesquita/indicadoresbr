@@ -1,0 +1,100 @@
+{
+  "id": "beneficios-acidentarios",
+  "categoria": "populacao-trabalho",
+  "ordem": 35,
+  "visivel": true,
+  "titulo": "Benefícios do INSS por acidente de trabalho",
+  "subtitulo": "Benefícios acidentários concedidos pelo INSS por ano, por tipo, de 1995 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Auxílio-doença acidentário"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Ministério da Previdência Social, AEPS e Suplemento Histórico",
+    "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Previdência Social, Anuário Estatístico da Previdência Social 2025 (tabelas)",
+      "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeps_2025-1.zip",
+      "o_que_sustenta": "Acidentes, consequências e benefícios de 2023 a 2025, Brasil e estados, e o texto oficial sobre a mudança de 2007 e a cobertura dos óbitos."
+    },
+    {
+      "nome": "Ministério da Previdência Social, Suplemento Histórico do AEPS 2023 (e de 2017 para 1994 a 1999)",
+      "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeps_supl_historico_2023.zip",
+      "o_que_sustenta": "Séries históricas de acidentes e de benefícios acidentários."
+    }
+  ],
+  "como_ler": "Cada ponto é o número de benefícios novos concedidos no ano a quem se acidentou ou adoeceu por causa do trabalho. O auxílio-doença acidentário paga o afastamento temporário; o auxílio-acidente é uma indenização mensal para quem fica com sequela que reduz a capacidade de trabalho; a aposentadoria por invalidez (hoje por incapacidade permanente) e a pensão por morte acidentárias cobrem os casos mais graves. A partir de abril de 2007, o INSS passou a conceder benefícios acidentários também sem a comunicação da empresa, quando a perícia vê relação entre a doença e a atividade. Use os botões para ver cada tipo. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2025, o INSS concedeu 226.934 auxílios-doença acidentários, contra 140.998 em 2006 e 356.336 em 2008.",
+    "Em 2020, foram 72.067, o menor número da série.",
+    "Os benefícios acidentários pagos somaram R$ 17,7 bilhões em 2025, com 855.883 benefícios ativos em dezembro (auxílios, aposentadorias e pensões)."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (AEPS)",
+    "onde_buscar": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social",
+    "proxima": "AEPS 2026",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "Ano",
+    "Auxílio-doença acidentário",
+    "Auxílio-acidente",
+    "Aposentadoria por invalidez acidentária",
+    "Pensão por morte acidentária"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2023",
+      "valor_na_fonte": "Suplemento Histórico 2023 e AEPS 2025: iguais nos 28 valores",
+      "fonte": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeps_2025-1.zip",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [1995, 172706, 13027, 4940, 5277],
+    [1996, 159289, 16684, 5758, 3973],
+    [1997, 159272, 18490, 7499, 3869],
+    [1998, 149872, 14780, 6737, 3282],
+    [1999, 136024, 14890, 7801, 2947],
+    [2000, 142588, 13805, 8801, 2613],
+    [2001, 130960, 10277, 7173, 2009],
+    [2002, 180335, 10973, 9687, 2422],
+    [2003, 145769, 8766, 8504, 1904],
+    [2004, 165219, 8707, 9069, 1841],
+    [2005, 156168, 9630, 9658, 1612],
+    [2006, 140998, 10204, 5854, 1525],
+    [2007, 274946, 10395, 4495, 1435],
+    [2008, 356336, 11538, 7839, 1127],
+    [2009, 329914, 13472, 8940, 850],
+    [2010, 327894, 12655, 10261, 778],
+    [2011, 319445, 15068, 11108, 751],
+    [2012, 305208, 16012, 11433, 614],
+    [2013, 304217, 21563, 11655, 497],
+    [2014, 279868, 20883, 10877, 412],
+    [2015, 196761, 16399, 8782, 368],
+    [2016, 228151, 19055, 9572, 401],
+    [2017, 195179, 20253, 9519, 305],
+    [2018, 202406, 21281, 11372, 212],
+    [2019, 195064, 22852, 11281, 260],
+    [2020, 72067, 23048, 3952, 160],
+    [2021, 152999, 21001, 3805, 275],
+    [2022, 148413, 28844, 6126, 284],
+    [2023, 162951, 33324, 5698, 197],
+    [2024, 179991, 41238, 5885, 383],
+    [2025, 226934, 46794, 8586, 412]
+  ]
+}

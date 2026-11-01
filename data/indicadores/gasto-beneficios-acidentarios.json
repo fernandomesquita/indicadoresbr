@@ -1,0 +1,91 @@
+{
+  "id": "gasto-beneficios-acidentarios",
+  "categoria": "populacao-trabalho",
+  "ordem": 36,
+  "visivel": true,
+  "titulo": "Quanto o INSS paga em benefícios por acidente de trabalho",
+  "subtitulo": "Valor pago no ano em benefícios acidentários, em R$ bilhões de 2025 (corrigidos pelo IPCA), de 2005 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "R$ bilhões de 2025"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "R$ ",
+  "sufixo": " bi",
+  "casas": 1,
+  "fonte": {
+    "nome": "Ministério da Previdência Social, AEPS e Suplemento Histórico",
+    "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Previdência Social, Anuário Estatístico da Previdência Social 2025 (tabelas)",
+      "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeps_2025-1.zip",
+      "o_que_sustenta": "Acidentes, consequências e benefícios de 2023 a 2025, Brasil e estados, e o texto oficial sobre a mudança de 2007 e a cobertura dos óbitos."
+    },
+    {
+      "nome": "Ministério da Previdência Social, Suplemento Histórico do AEPS 2023 (e de 2017 para 1994 a 1999)",
+      "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeps_supl_historico_2023.zip",
+      "o_que_sustenta": "Séries históricas de acidentes e de benefícios acidentários."
+    },
+    {
+      "nome": "IBGE, IPCA (Sidra, tabela 1737)",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção dos valores para reais de 2025 pela média anual do índice."
+    }
+  ],
+  "como_ler": "Cada coluna é o valor pago no ano em todos os benefícios acidentários do INSS (auxílios, aposentadorias e pensões), incluindo o 13º, corrigido pela inflação para reais de 2025 pela média anual do IPCA, cálculo deste site. A tabela traz também o valor sem correção e o número de benefícios ativos em dezembro. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2025, o INSS pagou R$ 17,7 bilhões em benefícios acidentários. Em 2005, foram R$ 12,8 bilhões em valores de 2025.",
+    "Segundo o Anuário de 2025, os benefícios acidentários foram 3,70% dos benefícios novos concedidos pelo INSS no ano e 1,87% do valor mensal desses benefícios novos."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (AEPS)",
+    "onde_buscar": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social",
+    "proxima": "AEPS 2026",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "Ano",
+    "R$ bilhões de 2025",
+    "R$ bilhões correntes",
+    "Benefícios ativos em dezembro"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2023",
+      "valor_na_fonte": "Suplemento Histórico 2023 e AEPS 2025: iguais",
+      "fonte": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeps_2025-1.zip",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2005, 12.84, 4.36, 755804],
+    [2006, 12.41, 4.39, 732795],
+    [2007, 13.11, 4.8, 768653],
+    [2008, 13.96, 5.41, 803541],
+    [2009, 14.91, 6.06, 798088],
+    [2010, 15.45, 6.59, 828128],
+    [2011, 16.21, 7.37, 834540],
+    [2012, 16.76, 8.04, 839889],
+    [2013, 17.34, 8.83, 858052],
+    [2014, 17.66, 9.56, 861129],
+    [2015, 17.36, 10.25, 845929],
+    [2016, 17.92, 11.5, 841514],
+    [2017, 17.8, 11.82, 815123],
+    [2018, 17.14, 11.8, 804344],
+    [2019, 16.92, 12.08, 791022],
+    [2020, 16.53, 12.18, 765050],
+    [2021, 16.1, 12.85, 760269],
+    [2022, 16.27, 14.19, 777240],
+    [2023, 16.93, 15.45, 806187],
+    [2024, 17.67, 16.82, 821962],
+    [2025, 17.73, 17.73, 855883]
+  ]
+}

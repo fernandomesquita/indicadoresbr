@@ -1,0 +1,98 @@
+{
+  "id": "mortes-trabalho-estados",
+  "categoria": "populacao-trabalho",
+  "ordem": 33,
+  "visivel": true,
+  "titulo": "Mortes no trabalho por estado",
+  "subtitulo": "Mortes em acidentes de trabalho por 100 mil vínculos de emprego em 2024, por estado",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "Mortes por 100 mil vínculos (2024)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Brasil"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 2,
+  "ultimo": "2024",
+  "fonte": {
+    "nome": "Ministério da Previdência Social, AEAT 2024",
+    "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeat_2024.zip"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Previdência Social, Anuário Estatístico de Acidentes do Trabalho (AEAT) 2024 e edições de 2009 a 2023",
+      "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeat_2024.zip",
+      "o_que_sustenta": "Taxas de incidência e de mortalidade por vínculos empregatícios, Brasil e estados, de 2008 a 2024."
+    },
+    {
+      "nome": "Ministério da Previdência Social, Anuário Estatístico da Previdência Social 2025 (tabelas)",
+      "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeps_2025-1.zip",
+      "o_que_sustenta": "Acidentes, consequências e benefícios de 2023 a 2025, Brasil e estados, e o texto oficial sobre a mudança de 2007 e a cobertura dos óbitos."
+    }
+  ],
+  "como_ler": "Cada barra é o número de mortes em acidentes de trabalho para cada 100 mil vínculos de emprego. As taxas são as publicadas pelo Anuário Estatístico de Acidentes do Trabalho de 2024 e se referem às empresas localizadas no estado. O denominador é o número médio de vínculos de emprego cobertos pelo seguro contra acidente. A tabela traz também os números absolutos de 2025, primeira divulgação. Em estados com poucos empregos formais, como Amapá, Roraima e Acre, a taxa varia muito de um ano para outro. Os dados cobrem só os empregados do regime geral com seguro contra acidente de trabalho; ficam de fora autônomos, servidores com regime próprio, militares e trabalhadores informais.",
+  "contexto": [
+    "Em 2024, Mato Grosso teve a maior taxa de mortes no trabalho (18,42 por 100 mil vínculos), seguido por Rondônia (14,86) e Tocantins (12,61). A taxa do Brasil foi de 6,87.",
+    "As menores taxas foram as da Paraíba (3,40) e do Distrito Federal (3,83).",
+    "Em números absolutos, São Paulo (843) e Minas Gerais (443) tiveram mais mortes em 2025."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (AEAT)",
+    "onde_buscar": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social",
+    "proxima": "AEAT 2025",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "Estado",
+    "Mortes por 100 mil vínculos (2024)",
+    "Acidentes por mil vínculos (2024)",
+    "Mortes (2025)",
+    "Acidentes (2025)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Taxas de 2024 das 27 UFs",
+      "valor_na_fonte": "Recalculadas com o próprio AEAT 2024: iguais",
+      "fonte": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeat_2024.zip",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Mato Grosso", 18.42, 18.17, 176, 20388],
+    ["Rondônia", 14.86, 15.95, 38, 6168],
+    ["Tocantins", 12.61, 9.56, 39, 3401],
+    ["Mato Grosso do Sul", 11, 20.53, 67, 16614],
+    ["Goiás", 9.65, 15.13, 176, 27005],
+    ["Espírito Santo", 9.16, 18.95, 83, 21181],
+    ["Pará", 9.09, 10.72, 109, 14954],
+    ["Paraná", 8.99, 19.88, 372, 73407],
+    ["Santa Catarina", 8.46, 22.92, 250, 65585],
+    ["Maranhão", 8.09, 8.7, 74, 7003],
+    ["Amapá", 7.95, 8.66, 5, 1240],
+    ["Minas Gerais", 7.32, 15.7, 443, 96296],
+    ["Rio Grande do Sul", 6.95, 23.05, 208, 74060],
+    ["Brasil", 6.87, 16.88, 3762, 937988],
+    ["Acre", 6.3, 9.8, 13, 1482],
+    ["Bahia", 6.12, 10.12, 163, 29439],
+    ["Amazonas", 6.09, 15.44, 47, 10859],
+    ["Alagoas", 5.99, 11.14, 34, 6000],
+    ["Pernambuco", 5.53, 11.69, 108, 21456],
+    ["Piauí", 5.5, 8.03, 41, 4305],
+    ["Rio de Janeiro", 5.43, 15.27, 235, 65435],
+    ["São Paulo", 5.26, 19.74, 843, 315784],
+    ["Rio Grande do Norte", 5.01, 10.17, 35, 6710],
+    ["Roraima", 4.6, 13.14, 6, 1704],
+    ["Ceará", 4.46, 11.28, 74, 20184],
+    ["Sergipe", 4.16, 8.38, 26, 4386],
+    ["Distrito Federal", 3.83, 13.66, 47, 15761],
+    ["Paraíba", 3.4, 8.92, 49, 6900]
+  ]
+}

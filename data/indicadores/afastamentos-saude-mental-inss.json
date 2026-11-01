@@ -1,0 +1,92 @@
+{
+  "id": "afastamentos-saude-mental-inss",
+  "categoria": "populacao-trabalho",
+  "ordem": 34,
+  "visivel": true,
+  "titulo": "Afastamentos do trabalho por transtornos mentais e doenças osteomusculares",
+  "subtitulo": "Auxílios-doença concedidos pelo INSS por transtornos mentais e por doenças dos ossos, músculos e articulações, de 2010 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Transtornos mentais (todos os afastamentos)",
+    "Transtornos mentais (ligados ao trabalho)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Ministério da Previdência Social, AEPS",
+    "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Previdência Social, Anuário Estatístico da Previdência Social 2025 (tabelas)",
+      "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeps_2025-1.zip",
+      "o_que_sustenta": "Acidentes, consequências e benefícios de 2023 a 2025, Brasil e estados, e o texto oficial sobre a mudança de 2007 e a cobertura dos óbitos."
+    },
+    {
+      "nome": "Ministério da Previdência Social, página dos anuários estatísticos",
+      "url": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social",
+      "o_que_sustenta": "Edições anteriores do AEPS (2012 a 2024), usadas para 2010 a 2022."
+    }
+  ],
+  "como_ler": "Cada ponto é o número de auxílios-doença (hoje chamados de benefício por incapacidade temporária) concedidos no ano pelo INSS para afastamentos de mais de 15 dias, pelo grupo de doença da Classificação Internacional de Doenças (CID). As linhas \"todos os afastamentos\" contam o auxílio-doença comum, em que o INSS não reconheceu ligação com o trabalho. As linhas \"ligados ao trabalho\" contam o auxílio-doença acidentário, em que a perícia reconheceu essa ligação. Transtornos mentais incluem depressão, ansiedade e outros (CID F); doenças osteomusculares incluem lesões por esforço repetitivo, dores nas costas e outras (CID M). 2020 fica de fora porque 65% dos auxílios-doença comuns concedidos naquele ano não têm a doença informada. Em 2016 e 2019, a soma por doença fica até 7% abaixo do total de benefícios. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2025, o INSS concedeu 530.681 auxílios-doença por transtornos mentais, contra 188.862 em 2010. Desses afastamentos, os ligados ao trabalho foram 15.635 em 2025.",
+    "As doenças osteomusculares geraram 1.001.967 afastamentos comuns em 2025, o grupo com mais concessões entre os dois.",
+    "O total de auxílios-doença comuns concedidos passou de 1.900.728 em 2010 para 3.899.176 em 2025."
+  ],
+  "glossario": [
+    {
+      "termo": "Auxílio-doença acidentário",
+      "definicao": "Benefício do INSS (espécie 91) para quem fica mais de 15 dias afastado por acidente ou doença com ligação reconhecida com o trabalho."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (AEPS)",
+    "onde_buscar": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social",
+    "proxima": "AEPS 2026",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "Ano",
+    "Transtornos mentais (todos os afastamentos)",
+    "Doenças osteomusculares (todos os afastamentos)",
+    "Transtornos mentais (ligados ao trabalho)",
+    "Doenças osteomusculares (ligados ao trabalho)",
+    "Total de auxílios-doença comuns"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2023 a 2025",
+      "valor_na_fonte": "Tabelas 3.15, 5.14 e 5.28 do AEPS 2025 e edições anteriores: iguais nos anos em comum",
+      "fonte": "https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/arquivos/aeps_2025-1.zip",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [2010, 188862, 359758, 12150, 88270, 1900728],
+    [2011, 198743, 381810, 12337, 83837, 2022613],
+    [2012, 202800, 402970, 11597, 77384, 2158346],
+    [2013, 216161, 423417, 12688, 76400, 2273074],
+    [2014, 209930, 439157, 11791, 67772, 2328151],
+    [2015, 161946, 345416, 8884, 45893, 1828337],
+    [2016, 185675, 408993, 10398, 49471, 2197054],
+    [2017, 172901, 374696, 9351, 40224, 2030867],
+    [2018, 209005, 423815, 10537, 41904, 2271033],
+    [2019, 197179, 359599, 10766, 37076, 2075240],
+    [2020, "", "", "", "", ""],
+    [2021, 176177, 303399, 9531, 31431, 1830419],
+    [2022, 192238, 339844, 9626, 29300, 1866763],
+    [2023, 273366, 499348, 10105, 31788, 2416349],
+    [2024, 462502, 843165, 9827, 28859, 3402042],
+    [2025, 530681, 1001967, 15635, 38137, 3899176]
+  ]
+}
