@@ -1,0 +1,107 @@
+{
+  "id": "desmatamento-biomas",
+  "categoria": "meio-ambiente",
+  "ordem": 3,
+  "visivel": true,
+  "titulo": "Desmatamento nos outros biomas",
+  "subtitulo": "Área de vegetação nativa desmatada por ano no Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa, em km², de 2001 a 2026",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Cerrado",
+    "Caatinga"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": " km²",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Inpe, Prodes",
+    "url": "https://terrabrasilis.dpi.inpe.br/app/dashboard/deforestation/biomes/cerrado/increments"
+  },
+  "fontes": [
+    {
+      "nome": "Inpe, Prodes, painéis TerraBrasilis de incrementos do Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa",
+      "url": "https://terrabrasilis.dpi.inpe.br/app/prodes/dashboard/deforestation/files/data/prodes_cerrado.json",
+      "o_que_sustenta": "Área desmatada mapeada em cada período, de 2000 a 2025 (Cerrado até 2026)."
+    },
+    {
+      "nome": "Inpe, nota técnica Prodes Cerrado 2026 (16/10/2026)",
+      "url": "https://data.inpe.br/biomasbr/wp-content/uploads/sites/3/2026/10/NT_PRODESCerrado_2026_revisado.pdf",
+      "o_que_sustenta": "Cerrado: 5.516,69 km² em 2026 e 7.235,27 km² em 2025."
+    },
+    {
+      "nome": "Inpe, notas técnicas Prodes de 2023 a 2025 de Caatinga, Mata Atlântica, Pantanal e Pampa",
+      "url": "https://data.inpe.br/biomasbr/notas-tecnicas/",
+      "o_que_sustenta": "Valores anuais de 2022 a 2025 de cada bioma e a forma de dividir os períodos de mais de um ano nos gráficos."
+    }
+  ],
+  "como_ler": "Cada ponto é a área de vegetação nativa (floresta, cerrado, caatinga, campos) desmatada no ano, segundo o mapeamento do Prodes. Use os botões para escolher os biomas; Pantanal e Pampa têm valores bem menores. Até 2012 no Cerrado, e em alguns períodos até 2016 nos outros biomas, o Inpe mapeou de dois em dois anos (de 2001 a 2004, de quatro em quatro); nesses anos o gráfico mostra a média anual, dividindo a área do período igualmente entre os anos, como o Inpe faz nos gráficos das notas técnicas. Os números são a área mapeada, sem a correção aplicada à taxa da Amazônia, e não se somam a ela. O Cerrado já tem o dado de 2026; os demais biomas, até 2025. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "O Cerrado perdeu 5.517 km² de vegetação nativa em 2026 (agosto de 2025 a julho de 2026), contra 7.235 km² em 2025 e 11.012 km² em 2023, segundo o Inpe.",
+    "Na média de 2001 a 2004, o Cerrado perdia cerca de 27,9 mil km² por ano.",
+    "Em 2025, a Caatinga perdeu 2.290 km²; a Mata Atlântica, 402 km²; o Pampa, 306 km²; e o Pantanal, 291 km²."
+  ],
+  "glossario": [
+    {
+      "termo": "Bioma",
+      "definicao": "Grande região com clima, vegetação e fauna parecidos. O Brasil tem seis: Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Inpe)",
+    "onde_buscar": "https://data.inpe.br/biomasbr/notas-tecnicas/",
+    "proxima": "Prodes 2026 da Caatinga, Mata Atlântica, Pantanal e Pampa",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Ano",
+    "Cerrado",
+    "Caatinga",
+    "Mata Atlântica",
+    "Pantanal",
+    "Pampa"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Cerrado 2023 a 2026; Caatinga 2022 a 2025; Mata Atlântica, Pantanal e Pampa 2022 ou 2023 a 2025",
+      "valor_na_fonte": "Notas técnicas do Inpe: iguais. Onde o painel diverge da nota (Pampa 2024 e 2025, Mata Atlântica 2022 e 2025) o site usa o valor da nota",
+      "fonte": "https://data.inpe.br/biomasbr/wp-content/uploads/sites/3/2026/10/NT_PRODESCerrado_2026_revisado.pdf",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [2001, 26933.0, 12186.4, 5625.9, 1000.1, 2866.0],
+    [2002, 26933.0, 12186.4, 5625.9, 1000.1, 2866.0],
+    [2003, 28770.3, 12186.4, 5625.9, 1000.1, 2866.0],
+    [2004, 28770.3, 12186.4, 5625.9, 1000.1, 2866.0],
+    [2005, 16877.4, 8172.6, 6384.2, 846.0, 2004.4],
+    [2006, 16877.4, 8172.6, 6384.2, 846.0, 2004.4],
+    [2007, 13311.6, 6351.5, 4004.4, 518.4, 1449.7],
+    [2008, 13311.6, 6351.5, 4004.4, 518.4, 1449.7],
+    [2009, 9910.3, 3943.1, 2020.4, 664.9, 1027.9],
+    [2010, 9910.3, 3943.1, 2020.4, 664.9, 1027.9],
+    [2011, 8976.2, 4059.4, 1879.9, 510.4, 1699.8],
+    [2012, 8976.2, 3947.6, 1427.8, 429.8, 1126.0],
+    [2013, 13481.6, 3947.6, 1427.8, 429.8, 1126.0],
+    [2014, 10904.4, 3602.2, 1887.3, 369.7, 2118.7],
+    [2015, 11131.6, 2432.9, 1206.6, 618.5, 924.4],
+    [2016, 7497.1, 2432.9, 1206.6, 618.5, 924.4],
+    [2017, 7117.4, 2246.2, 1166.1, 711.6, 925.9],
+    [2018, 7259.8, 2169.6, 1344.3, 498.5, 917.8],
+    [2019, 6319.0, 1868.2, 1067.4, 514.5, 1027.4],
+    [2020, 7902.6, 2226.1, 790.6, 677.9, 888.6],
+    [2021, 8531.4, 2096.2, 927.0, 824.5, 1526.6],
+    [2022, 10688.6, 2627.6, 1032.8, 789.4, 755.2],
+    [2023, 11011.7, 3169.6, 765.2, 723.1, 654.6],
+    [2024, 8174.2, 3484.4, 475.2, 842.4, 523.1],
+    [2025, 7235.3, 2289.5, 402.4, 291.2, 305.5],
+    [2026, 5516.7, "", "", "", ""]
+  ]
+}

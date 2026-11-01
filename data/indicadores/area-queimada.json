@@ -1,0 +1,96 @@
+{
+  "id": "area-queimada",
+  "categoria": "meio-ambiente",
+  "ordem": 6,
+  "visivel": true,
+  "titulo": "Área queimada no Brasil",
+  "subtitulo": "Área atingida pelo fogo por ano, em km², no Brasil e em cada bioma, de 2003 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Brasil",
+    "Cerrado",
+    "Amazônia"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": " km²",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Inpe, área queimada AQ1km (coleção 2)",
+    "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/area_queimada/colecao2/csv/aq1km_biomas_v2.csv"
+  },
+  "fontes": [
+    {
+      "nome": "Inpe, produto de área queimada AQ1km, coleção 2 (reprocessamento de janeiro de 2026), por bioma",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/area_queimada/colecao2/csv/aq1km_biomas_v2.csv",
+      "o_que_sustenta": "Área queimada mensal e anual de setembro de 2002 a setembro de 2026."
+    },
+    {
+      "nome": "Inpe, boletins mensais Infoqueima",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/Infoqueima/",
+      "o_que_sustenta": "Conferência de agosto e dezembro de 2025 e agosto de 2026."
+    }
+  ],
+  "como_ler": "Cada linha é a área atingida pelo fogo no ano, estimada pelo Inpe com imagens de satélite de 1 km de resolução. Mede a extensão queimada, o que completa a contagem de focos: muitos focos podem corresponder a pouca área, e o contrário. Uma mesma área queimada duas vezes no ano conta duas vezes. A série começa em setembro de 2002; 2002 fica fora por estar incompleto. Use os botões para ver os outros biomas. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "O fogo atingiu 453.358 km² do país em 2025. O maior valor da série foi o de 2007, com 728.747 km². Em 2024, foram 593.069 km².",
+    "O Cerrado teve mais área queimada que a Amazônia em 16 dos 23 anos da série: 227.207 km² em 2025, contra 96.009 km² na Amazônia.",
+    "No Pantanal, a área queimada foi de 42.549 km² em 2020, o maior valor do bioma na série, e de 2.450 km² em 2025."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Mensal (Inpe)",
+    "onde_buscar": "https://terrabrasilis.dpi.inpe.br/queimadas/portal/",
+    "proxima": "Atualização mensal no site",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Ano",
+    "Brasil",
+    "Amazônia",
+    "Cerrado",
+    "Caatinga",
+    "Mata Atlântica",
+    "Pantanal",
+    "Pampa"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Totais anuais",
+      "valor_na_fonte": "A soma dos meses confere com o total anual nos 25 anos; agosto e dezembro de 2025 conferem com o Infoqueima",
+      "fonte": "https://dataserver-coids.inpe.br/queimadas/queimadas/Infoqueima/",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2003, 567170, 219640, 196280, 68458, 70731, 9046, 3015],
+    [2004, 607667, 269088, 225350, 48811, 41454, 20297, 2667],
+    [2005, 605381, 272908, 207638, 55812, 39032, 28039, 1952],
+    [2006, 415481, 185167, 137495, 36939, 45612, 7983, 2285],
+    [2007, 728747, 245438, 351124, 57737, 52891, 19937, 1620],
+    [2008, 398462, 143069, 154679, 47777, 39539, 11597, 1801],
+    [2009, 280529, 117429, 88300, 32060, 26481, 14082, 2177],
+    [2010, 629236, 186025, 335544, 46270, 41435, 18479, 1483],
+    [2011, 316215, 86978, 155722, 29435, 34632, 7985, 1463],
+    [2012, 471482, 126179, 257856, 40955, 29544, 14800, 2148],
+    [2013, 260882, 82576, 123080, 24135, 21988, 7807, 1296],
+    [2014, 361241, 120520, 184784, 23460, 28124, 3230, 1123],
+    [2015, 452623, 173275, 203517, 37542, 27134, 9686, 1469],
+    [2016, 372030, 131796, 163340, 30444, 31298, 12960, 2192],
+    [2017, 408941, 163362, 178534, 25214, 28313, 11738, 1780],
+    [2018, 248017, 95845, 101717, 24318, 21067, 3840, 1230],
+    [2019, 399405, 131458, 169458, 40424, 32692, 22982, 2391],
+    [2020, 418187, 146520, 165589, 30160, 29901, 42549, 3468],
+    [2021, 360926, 100761, 162041, 42590, 34145, 19297, 2092],
+    [2022, 354918, 150626, 147673, 32592, 18699, 3572, 1756],
+    [2023, 404828, 154938, 148265, 65193, 22173, 12804, 1455],
+    [2024, 593069, 223982, 228212, 66101, 46742, 27396, 636],
+    [2025, 453358, 96009, 227207, 95302, 31234, 2450, 1156]
+  ]
+}

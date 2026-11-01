@@ -69,3 +69,16 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **`populacao-indigena`:** série não homogênea (1991 e 2000 só pela cor ou raça, na amostra; 2010 e 2022 somam a pergunta "você se considera indígena?", aplicada em áreas diferentes). 1991 e 2000 no Sidra diferem em 16 e 1 pessoa dos livros do IBGE. Livro de indígenas (alfabetização e domicílios) repete no trecho de esgoto os números do livro de quilombolas; o site usa as tabelas.
 - **`saude-yanomami`:** números de mortes revistos a cada publicação (2023: 308, 363, 428, 435; desnutrição 2023: 29 e 47); 2022 vem de notícia do Ministério (343) e os microdados do Siasi dão 353. Atualizar a cada informe do COE Yanomami.
 - **`mortalidade-infantil-indigena`:** taxa direta SIM/Sinasc, sem correção; cor do óbito é heteroatribuída e a do nascimento é a da mãe. Saúde quilombola: não há série oficial (SIM e Sinasc não têm campo quilombola).
+
+## Meio ambiente (coleta de 31/10/2026)
+
+- **Prodes Amazônia 2022** (11.594 km²): confere com o painel, mas a nota técnica oficial em gov.br/inpe está com acesso restrito. Conferir quando abrir.
+- **Prodes Amazônia 1993 e 1994**: o painel e a resposta do Inpe ao TCU trazem o mesmo valor (14.896 km²) nos dois anos. A razão (provável média de período sem imagem) não foi confirmada em fonte.
+- **Prodes Cerrado 2000 a 2008**: a Tabela 3 da nota "NT_PRODESCerrado_2026_revisado" diverge do painel (linha 2008: 32.269 na nota contra 26.623,12 no painel). O site usa o painel. De 2010 em diante a diferença é de até 3,3 km².
+- **Prodes Pampa 2024 e 2025 e Mata Atlântica 2022 e 2025**: o painel difere das notas (Pampa 2024: 524,19 contra 523,14). O site usa o valor da nota.
+- **Acumulados do Pantanal e da Caatinga**: a soma do painel fica 376,12 km² e 666 km² acima das notas. O site não publica acumulados desses biomas.
+- **Período da Caatinga, Mata Atlântica e Pampa**: o painel diz agosto a julho; as notas de 2023 da Caatinga e da Mata Atlântica dizem janeiro a dezembro. O indicador não afirma o período desses biomas.
+- **Deter**: a soma das classes é cálculo do site sobre o WFS; confere a menos de 2 km² com números do Inpe citados na imprensa (O Hoje, 07/08/2025; Portal Tela, 08/08/2026). Buscar publicação do próprio Inpe.
+- **Energia renovável**: a matriz elétrica de 2024 é 88,2% na tabela do BEN 2026 e 88,0% no gráfico da p. 39 do Relatório Síntese. O site usa 88,2%.
+- **Saneamento**: quebra de série entre SNIS (até 2022) e Sinisa (2023 em diante). Por estado, a mudança chega a 35 pontos (Piauí, esgoto coletado: 19,4% em 2022 no SNIS e 54,2% em 2024 no Sinisa). Não publicar série por estado atravessando a quebra.
+- **Emissões**: o MCTI (NIR 2024) vai até 2022 e o SEEG 14 até 2025; os valores dos dois não se comparam diretamente.

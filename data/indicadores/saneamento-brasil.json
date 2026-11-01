@@ -1,0 +1,97 @@
+{
+  "id": "saneamento-brasil",
+  "categoria": "meio-ambiente",
+  "ordem": 10,
+  "visivel": true,
+  "titulo": "Água e esgoto no Brasil",
+  "subtitulo": "Parte da população atendida com água encanada e com coleta de esgoto, e parte do esgoto que é tratada, em %, de 2008 a 2024",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Água (rede de abastecimento)",
+    "Esgoto coletado",
+    "Esgoto tratado"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "fonte": {
+    "nome": "Ministério das Cidades, SNIS e Sinisa",
+    "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério das Cidades, SNIS, diagnósticos de água e esgotos (2008 a 2022), indicadores IN055, IN056 e IN046",
+      "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos-snis",
+      "o_que_sustenta": "Atendimento com água, coleta e tratamento de esgoto de 2008 a 2022."
+    },
+    {
+      "nome": "Ministério das Cidades, Sinisa, resultados de 2023 e 2024",
+      "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa",
+      "o_que_sustenta": "Os mesmos indicadores em 2023 e 2024, por estado."
+    },
+    {
+      "nome": "Lei 14.026/2020 (Marco Legal do Saneamento), art. 11-B da Lei 11.445/2007",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14026.htm",
+      "o_que_sustenta": "Metas de 99% com água potável e 90% com coleta e tratamento de esgoto até 31 de dezembro de 2033."
+    }
+  ],
+  "como_ler": "A linha da água é a parte da população atendida pela rede de abastecimento; a do esgoto coletado, a parte atendida por rede de coleta. A do esgoto tratado é a parte do esgoto gerado no país (estimado pela água consumida) que passa por tratamento. Os dados são informados pelas empresas de saneamento e pelas prefeituras ao Ministério das Cidades. Em 2023, o antigo SNIS foi substituído pelo Sinisa, que mudou a forma de coletar e calcular os dados (passou a separar áreas urbanas e rurais e a contar soluções como fossas informadas pelas prefeituras); por isso 2023 e 2024 não se comparam perfeitamente com os anos anteriores. O SNIS mede só os municípios que responderam, quase todos para água e a maioria para esgoto. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2024, 84,1% da população era atendida com água encanada e 62,3% com coleta de esgoto, e 51,8% do esgoto era tratado, segundo o Sinisa.",
+    "Em 2008, primeiro ano da série completa do SNIS, eram 81,2%, 43,2% e 34,6%.",
+    "O Marco Legal do Saneamento (Lei 14.026/2020) fixa a meta de 99% da população com água potável e 90% com coleta e tratamento de esgoto até o fim de 2033."
+  ],
+  "glossario": [
+    {
+      "termo": "Sinisa",
+      "definicao": "Sistema Nacional de Informações em Saneamento Básico, que substituiu o SNIS em 2023."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Ministério das Cidades)",
+    "onde_buscar": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa",
+    "proxima": "Sinisa com dados de 2025",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Ano",
+    "Água (rede de abastecimento)",
+    "Esgoto coletado",
+    "Esgoto tratado"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "SNIS 2015, 2019 e 2022; Sinisa 2023 e 2024",
+      "valor_na_fonte": "Diagnósticos do SNIS e relatórios do Sinisa em PDF: os mesmos valores",
+      "fonte": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "ymax": 100,
+  "linhas": [
+    [2008, 81.2, 43.2, 34.6],
+    [2009, 81.7, 44.5, 37.9],
+    [2010, 81.1, 46.2, 37.8],
+    [2011, 82.4, 48.1, 37.5],
+    [2012, 82.7, 48.3, 38.7],
+    [2013, 82.5, 48.6, 39.0],
+    [2014, 83.0, 49.8, 40.8],
+    [2015, 83.3, 50.3, 42.7],
+    [2016, 83.3, 51.9, 44.9],
+    [2017, 83.5, 52.4, 46.0],
+    [2018, 83.6, 53.1, 46.2],
+    [2019, 83.7, 54.1, 49.1],
+    [2020, 84.1, 55.0, 50.8],
+    [2021, 84.2, 55.8, 51.2],
+    [2022, 84.9, 56.0, 52.2],
+    [2023, 83.1, 59.7, 49.4],
+    [2024, 84.1, 62.3, 51.8]
+  ]
+}

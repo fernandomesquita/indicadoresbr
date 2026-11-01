@@ -96,10 +96,16 @@
       "ordem": 9
     },
     {
+      "id": "meio-ambiente",
+      "nome": "Meio ambiente",
+      "descricao": "Desmatamento, queimadas, emissões, energia e saneamento.",
+      "ordem": 10
+    },
+    {
       "id": "mundo",
       "nome": "Mundo",
       "descricao": "O Brasil comparado aos outros países: economia, desenvolvimento, violência e contas públicas.",
-      "ordem": 10
+      "ordem": 11
     }
   ]
 }

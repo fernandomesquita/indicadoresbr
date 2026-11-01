@@ -1,0 +1,82 @@
+{
+  "id": "alertas-desmatamento-deter",
+  "categoria": "meio-ambiente",
+  "ordem": 4,
+  "visivel": true,
+  "titulo": "Alertas de desmatamento",
+  "subtitulo": "Área dos alertas de desmatamento do Deter na Amazônia Legal e no Cerrado, por ano de agosto a julho, em km², de 2017 a 2026",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Amazônia Legal",
+    "Cerrado"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": " km²",
+  "casas": 0,
+  "fonte": {
+    "nome": "Inpe, Deter",
+    "url": "https://terrabrasilis.dpi.inpe.br/app/dashboard/alerts/legal/amazon/aggregated/"
+  },
+  "fontes": [
+    {
+      "nome": "Inpe, Deter, camadas públicas de alertas no TerraBrasilis (deter-amz e deter-cerrado)",
+      "url": "https://terrabrasilis.dpi.inpe.br/geoserver/ows",
+      "o_que_sustenta": "Soma das áreas dos alertas das classes desmatamento por corte raso, desmatamento com vegetação e mineração, por ano de agosto a julho. Cálculo deste site."
+    },
+    {
+      "nome": "Inpe, Metodologia utilizada nos sistemas Prodes e Deter",
+      "url": "https://data.inpe.br/biomasbr/wp-content/uploads/sites/3/2026/04/METODOLOGIA-UTILIZADA-NOS-SISTEMAS-PRODES.pdf",
+      "o_que_sustenta": "Diferença entre o Deter (alertas para a fiscalização) e o Prodes (taxa anual)."
+    }
+  ],
+  "como_ler": "O Deter é o sistema do Inpe que emite alertas diários de desmatamento para orientar a fiscalização. Cada ponto soma a área dos alertas de desmatamento e de mineração num ano de agosto a julho, o mesmo período do Prodes; ficam de fora os alertas de degradação e de cicatriz de queimada. A medida oficial do desmatamento anual é a do Prodes; o Deter serve para acompanhar a tendência ao longo do ano. A soma é cálculo deste site a partir das camadas públicas do Inpe e fica a menos de 2 km² dos números do Inpe divulgados na imprensa para 2024 a 2026. No Cerrado, a camada pública começa em maio de 2018, por isso a série começa em 2019. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "De agosto de 2025 a julho de 2026, os alertas somaram 2.875 km² na Amazônia Legal e 5.121 km² no Cerrado.",
+    "Na Amazônia, o maior valor da série foi o de 2020, com 9.216 km².",
+    "No ano em curso (desde agosto de 2026), os alertas na Amazônia Legal somam 1.021 km² (dados baixados em 31 de outubro de 2026)."
+  ],
+  "glossario": [
+    {
+      "termo": "Deter",
+      "definicao": "Sistema de Detecção de Desmatamento em Tempo Real, do Inpe."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária (alertas); o ano fecha em 31 de julho",
+    "onde_buscar": "https://terrabrasilis.dpi.inpe.br/app/dashboard/alerts/legal/amazon/aggregated/",
+    "proxima": "Ano de agosto de 2026 a julho de 2027",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Ano",
+    "Amazônia Legal",
+    "Cerrado"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Amazônia 2024 a 2026: 4.323, 4.495 e 2.875; Cerrado 7.015, 5.555 e 5.121",
+      "valor_na_fonte": "Números do Inpe na imprensa: 4.321, 4.495 e 2.874; 7.014, 5.555 e 5.119",
+      "fonte": "https://terrabrasilis.dpi.inpe.br/app/dashboard/alerts/legal/amazon/aggregated/",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [2017, 4640, ""],
+    [2018, 4571, ""],
+    [2019, 6845, 5641],
+    [2020, 9216, 3922],
+    [2021, 8781, 4867],
+    [2022, 8592, 5458],
+    [2023, 7953, 6342],
+    [2024, 4323, 7015],
+    [2025, 4495, 5555],
+    [2026, 2875, 5121]
+  ]
+}

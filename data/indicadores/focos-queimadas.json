@@ -1,0 +1,106 @@
+{
+  "id": "focos-queimadas",
+  "categoria": "meio-ambiente",
+  "ordem": 5,
+  "visivel": true,
+  "titulo": "Focos de queimadas",
+  "subtitulo": "Focos de calor detectados por satélite por ano, no Brasil e em cada bioma, de 2003 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Brasil",
+    "Amazônia",
+    "Cerrado"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Inpe, Programa Queimadas",
+    "url": "https://terrabrasilis.dpi.inpe.br/queimadas/portal/"
+  },
+  "fontes": [
+    {
+      "nome": "Inpe, Programa Queimadas, situação atual por bioma (tabela anual estendida)",
+      "url": "https://data.inpe.br/queimadas/portal/csv/download/situacao-atual/biomas/estendida.csv",
+      "o_que_sustenta": "Focos por ano e por bioma pelo satélite de referência, de 1998 a 30/10/2026, e o acumulado do mesmo período de cada ano."
+    },
+    {
+      "nome": "Inpe, boletins mensais Infoqueima",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/Infoqueima/",
+      "o_que_sustenta": "Conferência de dezembro de 2020, 2024 e 2025 e de meses de 2025 e 2026."
+    },
+    {
+      "nome": "Inpe, perguntas frequentes do Programa Queimadas",
+      "url": "http://www.inpe.br/queimadas/portal/informacoes/perguntas-frequentes",
+      "o_que_sustenta": "Satélite de referência: AQUA (sensor MODIS, início da tarde) desde julho de 2002; NOAA-12 antes."
+    }
+  ],
+  "como_ler": "Cada linha é o número de focos de calor detectados no ano pelo satélite de referência do Inpe, o que permite comparar anos. Um foco não é um incêndio: um incêndio grande pode gerar vários focos, e queimadas pequenas ou sob as árvores podem não aparecer. O satélite de referência mudou em julho de 2002, do NOAA-12 para o AQUA, e o número de focos subiu com a troca; por isso o gráfico começa em 2003. Os anos de 1998 a 2001 estão no Programa Queimadas e no texto. Use os botões para ver os outros biomas. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "O maior número de focos no país foi o de 2007, com 393.915, e o menor, o de 2013, com 128.145. Na Amazônia, o máximo foi em 2004 (218.637) e o mínimo em 2025 (43.131).",
+    "De 1º de janeiro a 30 de outubro de 2026, o Inpe registrou 102.105 focos no país, contra 104.076 no mesmo período de 2025. Na Amazônia, foram 48.361, contra 28.435.",
+    "Com o satélite anterior, o país teve 134.612 focos em 1999, 101.530 em 2000 e 145.484 em 2001; esses números não se comparam com os de 2003 em diante."
+  ],
+  "glossario": [
+    {
+      "termo": "Foco de calor",
+      "definicao": "Ponto da superfície com temperatura alta o bastante para indicar fogo, detectado por satélite."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária (Inpe)",
+    "onde_buscar": "https://terrabrasilis.dpi.inpe.br/queimadas/portal/",
+    "proxima": "Atualização mensal no site",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Ano",
+    "Brasil",
+    "Amazônia",
+    "Cerrado",
+    "Caatinga",
+    "Mata Atlântica",
+    "Pantanal",
+    "Pampa"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Focos de 2019, 2024 e 2025",
+      "valor_na_fonte": "Boletins Infoqueima do Inpe: os mesmos valores (2014 a 2018 e 2020 diferem em até 12 focos do boletim de 2020, pelo reprocessamento da base)",
+      "fonte": "https://dataserver-coids.inpe.br/queimadas/queimadas/Infoqueima/",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    [2003, 341237, 174400, 84113, 32773, 44431, 3722, 1798],
+    [2004, 380445, 218637, 93562, 29766, 28114, 8688, 1677],
+    [2005, 362563, 213720, 85747, 26149, 23273, 12536, 1138],
+    [2006, 249179, 144422, 56880, 18490, 24878, 3173, 1336],
+    [2007, 393915, 186480, 137918, 29391, 29211, 9869, 1045],
+    [2008, 211933, 103453, 58934, 23721, 20332, 4545, 948],
+    [2009, 155102, 81682, 35899, 16693, 13939, 5737, 1152],
+    [2010, 319383, 134614, 133394, 21792, 20607, 8020, 956],
+    [2011, 158099, 58186, 61682, 16561, 17207, 3532, 931],
+    [2012, 217234, 86719, 90600, 16717, 14698, 7447, 1053],
+    [2013, 128145, 58688, 44017, 9859, 11384, 3396, 801],
+    [2014, 175892, 82553, 65871, 9496, 15697, 1567, 708],
+    [2015, 216778, 106438, 75094, 15133, 14925, 4458, 730],
+    [2016, 184217, 87761, 58833, 13593, 17519, 5184, 1327],
+    [2017, 207508, 107439, 66762, 11004, 15594, 5773, 936],
+    [2018, 132870, 68345, 39449, 11347, 11296, 1691, 742],
+    [2019, 197632, 89176, 63874, 14960, 18177, 10025, 1420],
+    [2020, 222797, 103161, 63819, 14504, 17512, 22116, 1685],
+    [2021, 184081, 75090, 62728, 17917, 18832, 8258, 1256],
+    [2022, 200763, 115033, 56885, 15538, 10916, 1637, 754],
+    [2023, 189901, 98639, 50713, 21550, 11702, 6580, 717],
+    [2024, 278299, 140346, 81468, 20235, 21328, 14498, 424],
+    [2025, 136393, 43131, 56058, 23424, 12352, 724, 704]
+  ]
+}

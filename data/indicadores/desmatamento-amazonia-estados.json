@@ -1,0 +1,81 @@
+{
+  "id": "desmatamento-amazonia-estados",
+  "categoria": "meio-ambiente",
+  "ordem": 2,
+  "visivel": true,
+  "titulo": "Desmatamento na Amazônia por estado",
+  "subtitulo": "Área desmatada em 2025 em cada estado da Amazônia Legal, em km², com a estimativa de 2026 e a soma desde 1988",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "2025 (km²)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": " km²",
+  "casas": 0,
+  "ultimo": "2025",
+  "fonte": {
+    "nome": "Inpe, Prodes",
+    "url": "https://terrabrasilis.dpi.inpe.br/app/dashboard/deforestation/biomes/legal_amazon/rates"
+  },
+  "fontes": [
+    {
+      "nome": "Inpe, Prodes Amazônia Legal, painel TerraBrasilis (taxas anuais por estado, atualizado em 16/10/2026)",
+      "url": "https://terrabrasilis.dpi.inpe.br/app/prodes/dashboard/deforestation/files/rates2026.json",
+      "o_que_sustenta": "Taxa anual de desmatamento de 1988 a 2026, total e por estado."
+    },
+    {
+      "nome": "Inpe, nota técnica da estimativa Prodes 2026 (16/10/2026)",
+      "url": "https://data.inpe.br/biomasbr/wp-content/uploads/sites/3/2026/10/Nota_tecnica_EstimativaPRODES_AMZ_2026.pdf",
+      "o_que_sustenta": "Estimativa de 3.335 km² para 2026, com 271 de 516 áreas de imagem analisadas, e taxa consolidada de 2025 por estado."
+    },
+    {
+      "nome": "Inpe, nota da taxa consolidada de 2025",
+      "url": "https://data.inpe.br/wp-content/uploads/sites/3/2026/03/A-taxa-consolidada-de-desmatamento-para-os-nove-estados-da-Amazonia-Legal-para-2025-e-de-5.731-km2.pdf",
+      "o_que_sustenta": "Taxa consolidada de 5.731 km² em 2025, por estado."
+    }
+  ],
+  "como_ler": "As barras mostram a taxa consolidada de 2025 (agosto de 2024 a julho de 2025). A tabela traz também a estimativa preliminar de 2026 e a soma das taxas anuais de 1988 a 2025, cálculo deste site.",
+  "contexto": [
+    "O Pará teve a maior área desmatada em 2025 (2.064 km²), seguido por Mato Grosso (1.593 km²) e Amazonas (979 km²).",
+    "De 1988 a 2025, Pará (174.532 km²) e Mato Grosso (156.976 km²) somaram 66% da área desmatada na Amazônia Legal.",
+    "Na estimativa de 2026, Roraima (286 km²) é o único estado com área maior que a de 2025 (285 km²)."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (Inpe)",
+    "onde_buscar": "https://terrabrasilis.dpi.inpe.br/app/dashboard/deforestation/biomes/legal_amazon/rates",
+    "proxima": "Taxa consolidada de 2026",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Estado",
+    "2025 (km²)",
+    "2026, estimativa (km²)",
+    "Soma de 1988 a 2025 (km²)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2025 e 2026 por estado",
+      "valor_na_fonte": "Notas técnicas do Inpe de 2025 e 2026: iguais",
+      "fonte": "https://data.inpe.br/biomasbr/wp-content/uploads/sites/3/2026/10/Nota_tecnica_EstimativaPRODES_AMZ_2026.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Pará", 2064, 1130, 174532],
+    ["Mato Grosso", 1593, 849, 156976],
+    ["Amazonas", 979, 525, 37196],
+    ["Acre", 324, 252, 18882],
+    ["Roraima", 285, 286, 10225],
+    ["Rondônia", 229, 149, 67559],
+    ["Maranhão", 210, 128, 27197],
+    ["Tocantins", 30, 8, 8884],
+    ["Amapá", 17, 8, 1731]
+  ]
+}
