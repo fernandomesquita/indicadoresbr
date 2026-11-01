@@ -82,6 +82,9 @@ Gerado por `scripts/build.py` em 2026-11-01. Não edite à mão: mude o indicado
 | `pessoal-pib-estados-2002-2016`: Gasto dos estados com servidores, de 2002 a 2016 (critério antigo) | [Tesouro Nacional, base antiga do Programa de Reestruturação e Ajuste Fiscal (2000 a 2016), e IBGE](https://thot-arquivos.tesouro.gov.br/publicacao-anexo/4291) | Série encerrada em 2016 | https://thot-arquivos.tesouro.gov.br/publicacao-anexo/4291 | Não se aplica | 2026-10-29 |
 | `bolsa-familia-familias`: Quantas famílias recebem o Bolsa Família | [CGU, Portal da Transparência, e MDS](https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia) | Mensal (Portal da Transparência e MDS) | https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia | Outubro de 2026, em novembro | 2026-10-30 |
 | `bolsa-familia-gasto`: Quanto o governo gasta com o Bolsa Família | [Ministério do Planejamento e Orçamento, SIOP](https://www1.siop.planejamento.gov.br/sparql/) | Diária no SIOP; o ano fecha em janeiro | https://www1.siop.planejamento.gov.br/sparql/ | 2026 completo, em janeiro de 2027 | 2026-10-30 |
+| `patrimonio-eleitos-mediana`: Patrimônio típico dos deputados e senadores eleitos | [TSE, dados abertos de candidatos e bens](https://dadosabertos.tse.jus.br/) | A cada eleição geral | https://dadosabertos.tse.jus.br/ | Eleições de 2026 | 2026-11-01 |
+| `patrimonio-maiores-2022`: Maiores patrimônios declarados pelos eleitos em 2022 | [TSE, dados abertos de candidatos e bens](https://dadosabertos.tse.jus.br/) | A cada eleição geral | https://dadosabertos.tse.jus.br/ | Eleições de 2026 | 2026-11-01 |
+| `patrimonio-parlamentares`: Patrimônio declarado de cada deputado e senador | [TSE, dados abertos de candidatos e bens](https://dadosabertos.tse.jus.br/) | A cada eleição (TSE) | https://dadosabertos.tse.jus.br/ | Eleições gerais de 2026 | 2026-11-01 |
 
 ## Orçamento federal
 

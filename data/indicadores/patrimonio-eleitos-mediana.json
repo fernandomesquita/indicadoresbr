@@ -1,0 +1,83 @@
+{
+  "id": "patrimonio-eleitos-mediana",
+  "categoria": "politicas-publicas",
+  "ordem": 40,
+  "visivel": true,
+  "titulo": "Patrimônio típico dos deputados e senadores eleitos",
+  "subtitulo": "Mediana dos bens declarados ao TSE pelos eleitos em cada eleição, em R$ milhões de 2025 (corrigidos pelo IPCA), de 2006 a 2022",
+  "tipo": "linha",
+  "x": "Eleição",
+  "series": [
+    "Deputados federais",
+    "Senadores"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "R$ ",
+  "sufixo": " mi",
+  "casas": 2,
+  "fonte": {
+    "nome": "TSE, dados abertos de candidatos e bens",
+    "url": "https://dadosabertos.tse.jus.br/"
+  },
+  "fontes": [
+    {
+      "nome": "TSE, Portal de Dados Abertos: candidatos e bens de candidatos, eleições gerais de 2006 a 2022",
+      "url": "https://dadosabertos.tse.jus.br/",
+      "o_que_sustenta": "Patrimônio declarado pelos eleitos para deputado federal e senador em cada eleição."
+    },
+    {
+      "nome": "IBGE, IPCA (Sidra, tabela 1737)",
+      "url": "https://sidra.ibge.gov.br/tabela/1737",
+      "o_que_sustenta": "Correção dos valores para reais de 2025 pela média anual do índice."
+    }
+  ],
+  "como_ler": "A mediana é o valor do meio: metade dos eleitos declarou mais que ele e metade, menos. Ela é usada aqui porque poucos patrimônios muito altos puxariam a média para cima. Os valores foram corrigidos pela inflação até 2025 pela média anual do IPCA do ano da eleição (cálculo deste site). O valor é o declarado pelo candidato ao registrar a candidatura: bens costumam entrar pelo valor de compra, e dívidas não entram. Quem não declarou bens conta como zero. O Senado renova um terço das cadeiras em 2006, 2014 e 2022 (27 eleitos) e dois terços em 2010 e 2018. Em 2018 são 53 senadores, como no resultado atual do TSE: em Mato Grosso, a candidata eleita aparece hoje como inapta, e o senador escolhido na eleição suplementar de 2020 não entra na conta. A tabela traz também os valores sem correção, quantos declararam mais de R$ 1 milhão de 2025 e a soma dos patrimônios.",
+  "contexto": [
+    "Em 2022, a mediana dos deputados federais eleitos foi de R$ 1,17 milhão em valores de 2025, contra R$ 1,60 milhão em 2006.",
+    "Dos 513 deputados eleitos em 2022, 278 declararam mais de R$ 1 milhão em valores de 2025; em 2006, eram 326.",
+    "A soma dos bens declarados pelos deputados eleitos foi de R$ 1,80 bilhão em 2022 e de R$ 3,52 bilhões em 2006, em valores de 2025."
+  ],
+  "glossario": [
+    {
+      "termo": "Mediana",
+      "definicao": "Valor que fica no meio quando todos os valores são postos em ordem."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "A cada eleição geral",
+    "onde_buscar": "https://dadosabertos.tse.jus.br/",
+    "proxima": "Eleições de 2026",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "Eleição",
+    "Deputados federais",
+    "Senadores",
+    "Deputados com mais de R$ 1 milhão",
+    "Senadores com mais de R$ 1 milhão",
+    "Soma dos deputados (R$ mi de 2025)",
+    "Soma dos senadores (R$ mi de 2025)",
+    "Mediana dos deputados (R$ mi da época)",
+    "Mediana dos senadores (R$ mi da época)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Somas nominais de 2006 (R$ 1,25 bi), 2010 e 2018",
+      "valor_na_fonte": "Congresso em Foco: R$ 1,2 bi em 2006; Congresso somado de R$ 1,6 bi em 2010; Senado de 2014 e 2018 somado em R$ 1,01 bi",
+      "fonte": "https://www.congressoemfoco.com.br/noticia/88513/nova-camara-um-em-cada-tres-deputados-e-milionario",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [2006, 1.6, 2.49, 326, 23, 3525, 156, 0.57, 0.88],
+    [2010, 1.66, 2.22, 348, 44, 3042, 756, 0.71, 0.95],
+    [2014, 1.75, 3.69, 358, 24, 2392, 886, 0.95, 2.0],
+    [2018, 1.35, 2.71, 300, 39, 1573, 766, 0.93, 1.87],
+    [2022, 1.17, 1.31, 278, 17, 1800, 162, 1.02, 1.15]
+  ]
+}

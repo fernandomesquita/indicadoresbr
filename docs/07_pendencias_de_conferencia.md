@@ -94,3 +94,12 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **Sinan**: sem conferência externa (nenhum boletim nacional achado). Espírito Santo com notas contraditórias no TabNet sobre a cobertura desde 2020; por isso o site não publica Sinan por estado. O agravo "acidente de trabalho" mudou de definição pela Portaria GM/MS 217/2023 e não foi publicado como série.
 - **SIM 2024**: o microdado aberto (21/10/2025) dá 4.473 mortes com acidente de trabalho "sim"; o TabNet (extração final de 02/12/2025) dá 4.551. O site usa o TabNet.
 - **MTE, trabalho escravo e inspeção**: Radar SIT e dados abertos do MTE não responderam (nem pelo navegador). Só há 2025 lido na Agência Gov (2.772 resgatados), não publicado. Coletar a série desde 1995 quando o Radar voltar.
+
+## Patrimônio de deputados e senadores (coleta de 01/11/2026)
+
+- **Senado 2018**: o TSE dá 53 eleitos; a candidata eleita em MT aparece hoje como "não eleito/inapto" e o senador da eleição suplementar de 2020 (Carlos Fávaro) não entra no agregado de 2018. Ele está na tabela nominal.
+- **Bens de 2002 e 2004**: os arquivos do TSE dão 404; a série começa em 2006.
+- **Divergências com a imprensa**: 2006, 165 deputados acima de R$ 1 milhão segundo o Congresso em Foco contra 161 calculados; 2018, R$ 1,09 bi contra R$ 1,083 bi calculado. O DivulgaCandContas (API) devolveu 403 e não foi conferido.
+- **Revisão manual**: João Daniel declarou R$ 1,00 em 2010 e R$ 48.237,14 em 2018; João Lyra declara o mesmo bem de R$ 196 milhões em 2006, 2010 e 2014. Nada foi corrigido.
+- **Sem bens**: 233 candidaturas sem bens registrados entram como zero; em 2008, 2010, 2012 e 2016 o TSE separa quem declarou não ter bens.
+- **Ligação entre eleições**: CPF ou título (2024 tem CPF mascarado). 18 linhas sem CPF nem título têm nome igual ao de alguém da tabela e não foram ligadas.
