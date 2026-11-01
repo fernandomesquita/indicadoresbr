@@ -1,5 +1,5 @@
 // Indicadores BR · site público
-import { h, ICON, fmtV, fmtCell, isNum, numericCols, colDecs, domain, reduced, renderTable, mountChart, clearCharts, composePNG, FORMATS, setGovernos } from "./charts.js";
+import { h, ICON, fmtV, fmtCell, isNum, numericCols, colDecs, domain, reduced, renderTable, renderTableBusca, mountChart, clearCharts, composePNG, FORMATS, setGovernos } from "./charts.js";
 import * as store from "./store.js";
 
 const CFG = window.IBR_CONFIG || {};
@@ -342,7 +342,7 @@ function pageIndicador(id) {
     sugiraBand(),
   ];
   requestAnimationFrame(() => {
-    if (ind.tipo === "tabela") chartBox.append(renderTable(ind, { animate: !reduced, onReport: p => openReport(ind, p) }));
+    if (ind.tipo === "tabela") chartBox.append(ind.busca ? renderTableBusca(ind, { onReport: p => openReport(ind, p) }) : renderTable(ind, { animate: !reduced, onReport: p => openReport(ind, p) }));
     else { cur.chart = mountChart(cur.ind, chartBox, { big: true }); tableBox.append(renderTable(ind, { onReport: p => openReport(ind, p) })); }
     if (ind.tipo === "tabela") tableBox.parentElement.hidden = true;
   });

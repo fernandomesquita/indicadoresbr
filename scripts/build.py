@@ -159,6 +159,8 @@ def build():
         r["glossario"] = [{"termo": g["termo"]} for g in i.get("glossario", [])]
         a = i.get("atualizacao") or {}
         r["atualizacao"] = {k: a[k] for k in ("ultima_conferencia", "periodicidade") if a.get(k)}
+        # tabela longa com busca: o resumo leva só as primeiras linhas; a página do indicador baixa a tabela inteira
+        if i.get("busca"): r["linhas"] = i["linhas"][:12]
         return r
     escreve("data/resumo.json", json.dumps({**pacote, "indicadores": [leve(i) for i in publicos]}, ensure_ascii=False, separators=(",", ":")))
     # conteúdo completo de cada indicador, baixado só na página dele

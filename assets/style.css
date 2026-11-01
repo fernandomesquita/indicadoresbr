@@ -175,6 +175,10 @@ body.is-admin .topsearch{display:none}
 
 /* tabelas */
 .tblwrap{overflow-x:auto;max-width:100%;position:relative}
+.tblq{width:100%;max-width:420px;border:1.5px solid var(--line);background:var(--surface);color:inherit;border-radius:6px;padding:10px 12px;font-size:16px}
+.tblq:focus{border-color:var(--accent);outline:none}
+.tblinfo{font-size:14px;color:var(--muted);margin:8px 0 10px}
+.tblbusca>.btn{margin-top:12px}
 .tblbox,.dchart,.prose,.side,.card{min-width:0}
 .prose .tbl{width:auto;min-width:min(100%,420px)}
 .prose .tbl td,.prose .tbl th{padding-inline:14px}

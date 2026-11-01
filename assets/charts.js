@@ -470,6 +470,28 @@ export function renderTable(ind, { animate = false, onReport = null } = {}) {
   return h("div", { class: "tblwrap" }, table);
 }
 
+/* tabela longa com busca por nome: mostra 50 linhas por vez e filtra sem acento */
+export function renderTableBusca(ind, opts = {}) {
+  const PASSO = 50, norm = s => String(s ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const idx = ind.linhas.map(r => norm(r.filter(v => typeof v === "string").join(" ")));
+  let lim = PASSO;
+  const input = h("input", { type: "search", class: "tblq", placeholder: ind.busca_dica || "Buscar por nome", autocomplete: "off", "aria-label": ind.busca_dica || "Buscar por nome" });
+  const info = h("p", { class: "tblinfo", "aria-live": "polite" }), box = h("div"), mais = h("button", { class: "btn", type: "button", text: "Mostrar mais" });
+  const desenha = () => {
+    const termos = norm(input.value).trim().split(/\s+/).filter(Boolean);
+    const achadas = termos.length ? ind.linhas.filter((r, i) => termos.every(t => idx[i].includes(t))) : ind.linhas;
+    const vis = achadas.slice(0, lim);
+    box.replaceChildren(renderTable({ ...ind, linhas: vis }, { ...opts, animate: false }));
+    const n = achadas.length, total = ind.linhas.length;
+    info.textContent = !n ? "Nenhum nome encontrado." : termos.length ? `${n.toLocaleString("pt-BR")} ${n === 1 ? "resultado" : "resultados"}${n > vis.length ? `, mostrando ${vis.length}` : ""}.` : `${total.toLocaleString("pt-BR")} linhas, mostrando ${vis.length}. Digite um nome para filtrar.`;
+    mais.hidden = n <= lim;
+  };
+  input.addEventListener("input", () => { lim = PASSO; desenha(); });
+  mais.addEventListener("click", () => { lim += PASSO; desenha(); });
+  desenha();
+  return h("div", { class: "tblbusca" }, input, info, box, mais);
+}
+
 export const ICON = {
   png: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v8m0 0L5 7m3 3 3-3M3 13h10"/></svg>',
   tbl: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M2 7h12M6 7v6"/></svg>',
