@@ -1,0 +1,71 @@
+{
+  "id": "mortes-indigenas-causas",
+  "categoria": "saude",
+  "ordem": 18,
+  "visivel": true,
+  "titulo": "Causas de morte entre indígenas",
+  "subtitulo": "Mortes por suicídio, agressões, desnutrição e malária por 100 mil habitantes, indígenas e total do país, em 2010 e 2022",
+  "tipo": "tabela",
+  "x": "Causa",
+  "series": [],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "ultimo": "2022",
+  "fonte": {
+    "nome": "Ministério da Saúde, SIM, e IBGE, censos (cálculo deste site)",
+    "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/inf10uf.def"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Saúde, SIM, óbitos por causa e cor ou raça (TabNet)",
+      "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/obt10uf.def",
+      "o_que_sustenta": "Mortes por suicídio (X60-X84), agressões (X85-Y09), desnutrição (E40-E46) e malária (B50-B54), de indígenas e do total, de 1996 a 2025."
+    },
+    {
+      "nome": "IBGE, Censos 2010 e 2022, população por cor ou raça (Sidra 9605)",
+      "url": "https://sidra.ibge.gov.br/tabela/9605",
+      "o_que_sustenta": "Denominador das taxas."
+    }
+  ],
+  "como_ler": "Cada linha compara uma causa de morte entre indígenas e o total do país, em mortes por 100 mil habitantes, nos dois anos de censo, os únicos com população por cor ou raça para fazer a conta. A taxa usa a população que se declarou indígena no quesito cor ou raça. São taxas brutas, sem ajuste pela idade: a população indígena é mais jovem que a média, o que muda a comparação de causas que dependem da idade. A última coluna traz o número de mortes de indígenas em 2024. A cor na declaração de óbito é anotada por quem a preenche, e pode haver erro.",
+  "contexto": [
+    "Em 2022, a taxa de suicídio entre indígenas foi de 12,5 por 100 mil, contra 8,1 no total do país. A de morte por desnutrição foi de 8,8, quase quatro vezes a do país (2,2).",
+    "A malária matou 2,36 indígenas por 100 mil em 2022, contra 0,03 no total. Já a taxa de homicídios entre indígenas (16,6) ficou abaixo da do país (21,9).",
+    "Em 2024, o SIM registrou 211 suicídios, 245 homicídios, 112 mortes por desnutrição e 27 por malária entre indígenas."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "A cada censo (taxas); anual (mortes)",
+    "onde_buscar": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/inf10uf.def",
+    "proxima": "Mortes de 2025, dados finais em 2027",
+    "ultima_conferencia": "2026-10-31"
+  },
+  "colunas": [
+    "Causa",
+    "Indígenas 2010",
+    "Total 2010",
+    "Indígenas 2022",
+    "Total 2022",
+    "Mortes de indígenas em 2024"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Taxas de 2010 e 2022",
+      "valor_na_fonte": "Calculadas com óbitos do SIM e população dos censos; refazíveis pelo TabNet e pelo Sidra",
+      "fonte": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/inf10uf.def",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Suicídio", 11.37, 4.95, 12.46, 8.11, 211],
+    ["Agressões (homicídios)", 13.57, 27.4, 16.62, 21.85, 245],
+    ["Desnutrição", 13.08, 3.49, 8.8, 2.24, 112],
+    ["Malária", 0.37, 0.04, 2.36, 0.03, 27]
+  ]
+}
