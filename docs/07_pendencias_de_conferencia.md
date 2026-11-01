@@ -114,7 +114,7 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 
 ## Supabase
 
-- **Seed acima de 1 MB**: o SQL Editor recusa ("Query is too large"). Desde 01/11/2026 a carga é rodada em duas partes de até 700 mil caracteres, cada uma com begin/commit, com a linha de 'versao' na última parte.
+- **Seed acima de 1 MB**: o SQL Editor recusa ("Query is too large"). Desde 01/11/2026 a carga é rodada em partes de até 700 mil caracteres (três desde 01/11/2026), cada uma com begin/commit, com a linha de 'versao' na última parte.
 
 - **Eleição de 2026 (acrescentada em 01/11/2026)**: eleitos pelo resultado do TSE até 01/11/2026 (arquivo atualizado no mesmo dia); a diplomação ainda pode mudar nomes. 513 deputados e 54 senadores. Sem conferência externa dos valores de 2026. Correção pelo IPCA passou a usar como base a média de janeiro a setembro de 2026. Revisar: Misael Varella declarou R$ 315 milhões em 2026 (1º suplente de senador), contra R$ 43 milhões em 2022; Pastor Henrique Vieira, R$ 1,00 em 2016 e R$ 25.900 em 2026. O indicador "patrimonio-maiores-2022" virou "patrimonio-maiores-eleitos" (2026); a linha antiga foi apagada do Supabase.
 
