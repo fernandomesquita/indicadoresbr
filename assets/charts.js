@@ -311,7 +311,7 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
     }
     ctx.strokeStyle = color; ctx.lineWidth = 2.6 * s; ctx.lineJoin = "round"; ctx.lineCap = "round";
     ctx.beginPath(); let pen = false;
-    pts.forEach(p => { if (!p) { pen = false; return; } pen ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); pen = true; }); ctx.stroke();
+    pts.forEach(p => { if (!p) { if (!ind.ligar) pen = false; return; } pen ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); pen = true; }); ctx.stroke();
     if (n <= 24) pts.forEach(p => { if (p) { ctx.fillStyle = th.bg; ctx.beginPath(); ctx.arc(p[0], p[1], 3.2 * s, 0, 7); ctx.fill(); ctx.strokeStyle = color; ctx.lineWidth = 2 * s; ctx.stroke(); } });
   });
   ctx.restore();
@@ -340,6 +340,9 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
     } else {
       const ends = ys.map((k, j) => { const r = [...rows].reverse().find(r => isNum(r[k])); const i = rows.indexOf(r); return r ? { y: Y(r[k]), x: px(xs[i]), txt: fmtV(r[k], ind), j } : null; }).filter(Boolean).sort((a, c) => a.y - c.y);
       for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 15 * s) ends[i].y = ends[i - 1].y + 15 * s;
+      // se os rótulos passarem do pé do gráfico, empurra o bloco para cima
+      const pe = plot.y + plot.h - 2 * s;
+      if (ends.length && ends[ends.length - 1].y > pe) { ends[ends.length - 1].y = pe; for (let i = ends.length - 2; i >= 0; i--) if (ends[i + 1].y - ends[i].y < 15 * s) ends[i].y = ends[i + 1].y - 15 * s; }
       setFont(ctx, 600, 12 * s, F.mono); ctx.textAlign = "left";
       ends.forEach(en => { ctx.fillStyle = th.series[en.j % 5]; ctx.fillText(en.txt, en.x + 8 * s, en.y + 4 * s); });
     }
@@ -470,26 +473,73 @@ export function renderTable(ind, { animate = false, onReport = null } = {}) {
   return h("div", { class: "tblwrap" }, table);
 }
 
-/* tabela longa com busca por nome: mostra 50 linhas por vez e filtra sem acento */
+/* tabela longa com busca por nome: mostra 50 linhas por vez e filtra sem acento.
+   Com ind.busca_grafico, cada linha ganha uma caixa de seleção e até 5 linhas viram um gráfico comparativo. */
+const MAX_COMPARA = 5;
 export function renderTableBusca(ind, opts = {}) {
-  const PASSO = 50, norm = s => String(s ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const PASSO = 50, norm = s => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const idx = ind.linhas.map(r => norm(r.filter(v => typeof v === "string").join(" ")));
-  let lim = PASSO;
+  const G = ind.busca_grafico || null, sel = [];
+  let lim = PASSO, graf = null;
   const input = h("input", { type: "search", class: "tblq", placeholder: ind.busca_dica || "Buscar por nome", autocomplete: "off", "aria-label": ind.busca_dica || "Buscar por nome" });
   const info = h("p", { class: "tblinfo", "aria-live": "polite" }), box = h("div"), mais = h("button", { class: "btn", type: "button", text: "Mostrar mais" });
+  // painel de comparação
+  const nomeDe = r => { const [a, ...resto] = G.nome.map(k => r[k]).filter(Boolean); return resto.length ? `${a} (${resto.join("-")})` : String(a); };
+  const chips = h("div", { class: "picks" }), aviso = h("span", { class: "pickmsg", "aria-live": "polite" });
+  const chartBox = h("div", { class: "chart big" });
+  const btnPNG = h("button", { class: "btn pri", type: "button" }, h("span", { class: "ico", html: ICON.png }), "Baixar gráfico (PNG)");
+  const btnLimpa = h("button", { class: "btn ghost", type: "button", text: "Limpar seleção" });
+  const painel = G ? h("section", { class: "compara", hidden: true, "aria-label": "Comparação dos selecionados" },
+    h("p", { class: "pickhead" }, h("b", { text: `Comparação (até ${MAX_COMPARA})` }), aviso), chips, chartBox, h("div", { class: "acts" }, btnPNG, btnLimpa)) : null;
+  const derivado = () => {
+    const nomes = sel.map(nomeDe);
+    const linhas = G.anos.map((k, a) => [G.rotulos[a], ...sel.map(r => isNum(r[k]) ? Math.round(r[k] * (G.fatores ? G.fatores[a] : 1) / (G.divisor || 1) * 100) / 100 : "")]);
+    return { ...ind, tipo: "linha", x: G.x || "Ano", series: nomes, colunas: [G.x || "Ano", ...nomes], linhas, escolha: false, busca: false, ligar: true, destaque: [], faixasGoverno: false,
+      prefixo: G.prefixo || "", sufixo: G.sufixo || "", casas: G.casas ?? 1, ymin: 0, ymax: undefined, titulo: G.titulo || ind.titulo, subtitulo: G.subtitulo || ind.subtitulo };
+  };
+  const atualizaPainel = () => {
+    if (!G) return;
+    painel.hidden = !sel.length;
+    chips.replaceChildren(...sel.map(r => { const b = h("button", { type: "button", class: "pick", "aria-pressed": "true", title: "Tirar da comparação", text: nomeDe(r) + " ×" }); b.addEventListener("click", () => alterna(r)); return b; }));
+    if (!sel.length) return;
+    const d = derivado();
+    if (!graf) graf = mountChart(d, chartBox, { big: true }); else graf.setInd(d);
+  };
+  const alterna = r => {
+    const i = sel.indexOf(r);
+    if (i >= 0) { sel.splice(i, 1); aviso.textContent = ""; }
+    else if (sel.length >= MAX_COMPARA) { aviso.textContent = `Até ${MAX_COMPARA} de cada vez. Tire alguém para incluir outro nome.`; desenha(); return; }
+    else { sel.push(r); aviso.textContent = ""; }
+    desenha(); atualizaPainel();
+  };
+  btnPNG.addEventListener("click", () => { if (sel.length && opts.onPNG) opts.onPNG(derivado()); });
+  btnLimpa.addEventListener("click", () => { sel.length = 0; aviso.textContent = ""; desenha(); atualizaPainel(); });
   const desenha = () => {
     const termos = norm(input.value).trim().split(/\s+/).filter(Boolean);
     const achadas = termos.length ? ind.linhas.filter((r, i) => termos.every(t => idx[i].includes(t))) : ind.linhas;
     const vis = achadas.slice(0, lim);
-    box.replaceChildren(renderTable({ ...ind, linhas: vis }, { ...opts, animate: false }));
+    const tbl = renderTable({ ...ind, linhas: vis }, { ...opts, animate: false });
+    if (G) {
+      const trh = tbl.querySelector("thead tr"); trh.prepend(h("th", { class: "sel", scope: "col" }, h("span", { class: "sr", text: "Comparar" })));
+      tbl.querySelectorAll("tbody tr").forEach((tr, i) => {
+        const r = vis[i], marcado = sel.includes(r);
+        const cb = h("input", { type: "checkbox", "aria-label": "Comparar " + nomeDe(r) });
+        cb.checked = marcado; if (!marcado && sel.length >= MAX_COMPARA) cb.disabled = true;
+        cb.addEventListener("change", () => alterna(r));
+        tr.prepend(h("td", { class: "sel" }, cb));
+        if (marcado) tr.classList.add("hl");
+      });
+    }
+    box.replaceChildren(tbl);
     const n = achadas.length, total = ind.linhas.length;
     info.textContent = !n ? "Nenhum nome encontrado." : termos.length ? `${n.toLocaleString("pt-BR")} ${n === 1 ? "resultado" : "resultados"}${n > vis.length ? `, mostrando ${vis.length}` : ""}.` : `${total.toLocaleString("pt-BR")} linhas, mostrando ${vis.length}. Digite um nome para filtrar.`;
+    if (G) info.textContent += ` Marque até ${MAX_COMPARA} para comparar num gráfico.`;
     mais.hidden = n <= lim;
   };
   input.addEventListener("input", () => { lim = PASSO; desenha(); });
   mais.addEventListener("click", () => { lim += PASSO; desenha(); });
   desenha();
-  return h("div", { class: "tblbusca" }, input, info, box, mais);
+  return h("div", { class: "tblbusca" }, input, info, painel, box, mais);
 }
 
 export const ICON = {
