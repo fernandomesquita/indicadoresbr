@@ -20,6 +20,7 @@ const dataBR = iso => iso ? String(iso).slice(0, 10).split("-").reverse().join("
 const resumoPer = t => { const c = String(t).split(/[;(.]/)[0].trim(); return c.length > 2 && c.length < 70 ? c : (String(t).length > 70 ? String(t).slice(0, 67).trim() + "…" : String(t)); };
 
 function maisRecente(ind) {
+  if (ind.ultimo) return String(ind.ultimo);
   const xi = ind.colunas.indexOf(ind.x);
   if (xi < 0 || ["tabela", "barras", "dispersao", "mapa"].includes(ind.tipo)) return null;
   const v = ind.linhas.map(r => r[xi]).filter(x => x != null && x !== "");

@@ -117,3 +117,11 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **Seed acima de 1 MB**: o SQL Editor recusa ("Query is too large"). Desde 01/11/2026 a carga é rodada em duas partes de até 700 mil caracteres, cada uma com begin/commit, com a linha de 'versao' na última parte.
 
 - **Eleição de 2026 (acrescentada em 01/11/2026)**: eleitos pelo resultado do TSE até 01/11/2026 (arquivo atualizado no mesmo dia); a diplomação ainda pode mudar nomes. 513 deputados e 54 senadores. Sem conferência externa dos valores de 2026. Correção pelo IPCA passou a usar como base a média de janeiro a setembro de 2026. Revisar: Misael Varella declarou R$ 315 milhões em 2026 (1º suplente de senador), contra R$ 43 milhões em 2022; Pastor Henrique Vieira, R$ 1,00 em 2016 e R$ 25.900 em 2026. O indicador "patrimonio-maiores-2022" virou "patrimonio-maiores-eleitos" (2026); a linha antiga foi apagada do Supabase.
+
+## Efetivo da PF, da PRF e da Receita (coleta de 01/11/2026)
+
+- **Troca de fonte em 2016**: Boletim Estatístico de Pessoal até 2015, cargos ocupados do MGI depois. Na PF o MGI dá de 3,5% a 6% menos que o Boletim em dez/2016 (Delegado: 1.718 contra 1.614); PRF e Receita praticamente iguais.
+- **2013**: posição de novembro (a edição de jan/2014 do Boletim pede login).
+- **Ingressos de 2019 a 2026**: estimativa (pessoa no cargo que não estava no arquivo anterior). 2017 e 2018 sem valor (arquivos quase idênticos). Analista-tributário com 156 entradas em 2022 e 466 em 2025, acima do que os documentos explicam.
+- **Total de efetivos da Receita**: estimativa pelas unidades de lotação no Portal da Transparência; a queda dos administrativos (6.351 em 2016 para 2.400 em 2026) pode misturar saídas e mudança de lotação. Sem número oficial para conferir.
+- **Aposentados e pensões**: não publicados como série (Boletim e MGI não se emendam; aposentadorias por ano contadas no estoque atual subestimam os anos antigos).

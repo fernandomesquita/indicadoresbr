@@ -1,0 +1,106 @@
+{
+  "id": "ingressos-policia-receita",
+  "categoria": "politicas-publicas",
+  "ordem": 16,
+  "visivel": true,
+  "titulo": "Quantos entraram na PF, na PRF e na Receita",
+  "subtitulo": "Servidores que tomaram posse por ano em cada cargo, de 1995 a 2026 (2019 em diante: estimativa)",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "PRF",
+    "Agente da PF",
+    "Auditor-fiscal da Receita"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "escolha": true,
+  "fonte": {
+    "nome": "Ministério da Gestão, Boletim Estatístico de Pessoal e dados abertos de pessoal",
+    "url": "https://www.gov.br/servidor/pt-br/observatorio-de-pessoal-govbr/boletim-estatistico-de-pessoal"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Gestão, Boletim Estatístico de Pessoal de 2017, tabela 4.1",
+      "url": "https://www.gov.br/servidor/pt-br/observatorio-de-pessoal-govbr/boletim-estatistico-de-pessoal",
+      "o_que_sustenta": "Ingressos por concurso público em cada cargo de 1995 a 2016."
+    },
+    {
+      "nome": "MGI, dados abertos de pessoal, arquivos de cargos e carreiras (2017 a 2026)",
+      "url": "https://repositorio.dados.gov.br/segrt/",
+      "o_que_sustenta": "Estimativa de ingressos de 2019 a 2026, cálculo deste site."
+    }
+  ],
+  "como_ler": "Cada ponto é o número de pessoas que entraram no cargo no ano. De 1995 a 2016, é o número de ingressos por concurso publicado pelo Boletim Estatístico de Pessoal. De 2019 em diante, é estimativa deste site: pessoas que aparecem no cargo num ano e não apareciam no ano anterior nos dados do Ministério da Gestão (2026 vai até setembro). 2017 e 2018 ficam sem dado. A estimativa conferiu com as vagas de concursos recentes: 235 auditores-fiscais em 2024, para 230 vagas do concurso de 2023, e 314 policiais rodoviários de janeiro a agosto de 2026, para 321 excedentes autorizados. Use os botões para escolher os cargos. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "De 1995 a 2016, entraram por concurso 7.999 policiais rodoviários federais, 4.841 agentes da PF e 3.891 auditores-fiscais da Receita.",
+    "Pela estimativa, entraram 2.229 policiais rodoviários em 2022 e 908 agentes da PF no mesmo ano."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Mensal (Ministério da Gestão)",
+    "onde_buscar": "https://repositorio.dados.gov.br/segrt/",
+    "proxima": "Posição de dezembro de 2026",
+    "ultima_conferencia": "2026-11-01"
+  },
+  "colunas": [
+    "Ano",
+    "PRF",
+    "Agente da PF",
+    "Escrivão da PF",
+    "Delegado da PF",
+    "Perito da PF",
+    "Papiloscopista da PF",
+    "Auditor-fiscal da Receita",
+    "Analista-tributário da Receita"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Auditor-fiscal 2024: 235; analista-tributário 2024: 458",
+      "valor_na_fonte": "Vagas do concurso de 2023: 230 e 469 (ofício da Receita ao Senado)",
+      "fonte": "https://static.poder360.com.br/2024/12/oficio-senado-receita-federal.pdf",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [1995, 233, 0, 64, 46, 21, 0, 271, 1304],
+    [1996, 942, 264, 40, 132, 76, 0, 1, 135],
+    [1997, 2, 585, 399, 17, 12, 0, 1174, 200],
+    [1998, 0, 63, 29, 14, 5, 0, 133, 503],
+    [1999, 383, 446, 3, 170, 29, 28, 577, 0],
+    [2000, 35, 25, 66, 25, 0, 0, 2, 1],
+    [2001, 20, 15, 2, 4, 0, 0, 0, 0],
+    [2002, 0, 3, 0, 0, 0, 1, 5, 4],
+    [2003, 35, 284, 211, 168, 76, 2, 12, 17],
+    [2004, 365, 22, 25, 21, 16, 0, 241, 502],
+    [2005, 1487, 386, 1, 0, 56, 277, 0, 0],
+    [2006, 839, 641, 266, 164, 120, 0, 723, 1468],
+    [2007, 9, 313, 164, 135, 97, 0, 20, 8],
+    [2008, 2, 341, 31, 92, 41, 1, 0, 0],
+    [2009, 305, 208, 3, 51, 114, 0, 0, 0],
+    [2010, 134, 165, 306, 0, 0, 0, 275, 489],
+    [2011, 149, 3, 1, 1, 0, 0, 77, 44],
+    [2012, 670, 62, 1, 0, 1, 7, 0, 0],
+    [2013, 654, 374, 3, 1, 3, 76, 103, 504],
+    [2014, 485, 1, 236, 49, 31, 0, 108, 387],
+    [2015, 508, 5, 5, 6, 3, 1, 163, 0],
+    [2016, 742, 635, 0, 3, 1, 0, 6, 0],
+    [2017, "", "", "", "", "", "", "", ""],
+    [2018, "", "", "", "", "", "", "", ""],
+    [2019, 25, 204, 76, 149, 53, 28, 18, 3],
+    [2020, 1646, 201, 65, 15, 11, 16, 12, 6],
+    [2021, 67, 27, 10, 163, 84, 2, 21, 3],
+    [2022, 2229, 908, 574, 142, 3, 85, 14, 156],
+    [2023, 68, 494, 91, 111, 3, 18, 8, 22],
+    [2024, 51, 24, 6, 7, 7, 1, 235, 458],
+    [2025, 600, 10, 10, 3, 0, 0, 200, 466],
+    [2026, 314, 633, 4, 2, 1, 1, 8, 7]
+  ]
+}
