@@ -88,6 +88,9 @@ Gerado por `scripts/build.py` em 2026-11-02. Não edite à mão: mude o indicado
 | `patrimonio-eleitos-mediana`: Patrimônio típico dos deputados e senadores eleitos | [TSE, dados abertos de candidatos e bens](https://dadosabertos.tse.jus.br/) | A cada eleição geral | https://dadosabertos.tse.jus.br/ | Eleições de 2030 | 2026-11-01 |
 | `patrimonio-maiores-eleitos`: Maiores patrimônios declarados pelos eleitos em 2026 | [TSE, dados abertos de candidatos e bens](https://dadosabertos.tse.jus.br/) | A cada eleição geral | https://dadosabertos.tse.jus.br/ | Eleições de 2030 | 2026-11-01 |
 | `patrimonio-parlamentares`: Patrimônio declarado de cada deputado e senador | [TSE, dados abertos de candidatos e bens](https://dadosabertos.tse.jus.br/) | A cada eleição (TSE) | https://dadosabertos.tse.jus.br/ | Eleições municipais de 2028 | 2026-11-01 |
+| `aprovacao-presidentes`: Aprovação dos presidentes ao longo do mandato | [Datafolha](https://datafolha.folha.uol.com.br/) | A cada pesquisa (Datafolha) | https://datafolha.folha.uol.com.br/ | Próxima pesquisa do Datafolha | 2026-11-02 |
+| `aprovacao-presidentes-resumo`: Aprovação dos presidentes: primeira, máxima, mínima e última pesquisa | [Datafolha](https://datafolha.folha.uol.com.br/) | A cada pesquisa (Datafolha) | https://datafolha.folha.uol.com.br/ | Próxima pesquisa do Datafolha | 2026-11-02 |
+| `aprovacao-presidentes-pesquisas`: Pesquisas de avaliação dos presidentes | [Datafolha](https://datafolha.folha.uol.com.br/) | A cada pesquisa (Datafolha) | https://datafolha.folha.uol.com.br/ | Próxima pesquisa do Datafolha | 2026-11-02 |
 
 ## Orçamento federal
 

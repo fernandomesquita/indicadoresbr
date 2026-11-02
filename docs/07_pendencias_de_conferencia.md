@@ -132,3 +132,13 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **SIM 2025**: o arquivo do OpenDataSUS só cobre janeiro a agosto de 2025; o TabNet tem o ano completo só para a categoria B34 (2.766). Atualizar quando sair o arquivo completo.
 - **Acumulado do Brasil**: OMS 704.107 (lacuna de relato de 15/05/2023 a 30/12/2024); boletim 162 do MS, 712.038 até 04/05/2024. Imprensa citou 715 mil em março de 2025 (não conferido).
 - **Mundo**: comparável de 2020 a 2022; a partir de 2023 é piso (países deixaram de relatar).
+
+## Aprovação presidencial (coleta de 02/11/2026)
+
+- **Datafolha de 1990 a 2002**: 61 rodadas lidas de gráficos escaneados (transcrição manual), a maioria confirmada nas tabelas comparativas; os gráficos antigos podem não trazer todas as rodadas (FHC 2 em 2002 tinha 4 a mais nas tabelas).
+- **Excluída**: Itamar, segunda rodada de mar/1993 (21/54/21/7, soma 103; rótulos sobrepostos no gráfico).
+- **Datas inferidas**: Collor jun e set/1990 (rótulos "3 meses" e "seis meses de governo").
+- **Bolsonaro dez/2022**: do gráfico da Folha com dados do Datafolha; PDF da rodada não achado.
+- **Lula 2, 11 a 13/08/2009**: tabela de 2025/08 repete os números de maio de 2009; o site usa 67/25/8/1, das outras fontes.
+- **Sarney**: seis rodadas em dez capitais, fora da série nacional.
+- **Segunda fonte**: CNI-Ibope até dez/2020 (correlação 0,986 com o Datafolha); Quaest não coletada.
