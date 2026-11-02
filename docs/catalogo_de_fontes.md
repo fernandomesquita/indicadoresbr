@@ -1,6 +1,6 @@
 # Catálogo de fontes
 
-Gerado por `scripts/build.py` em 2026-11-01. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
+Gerado por `scripts/build.py` em 2026-11-02. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
 
 ## Economia
 
@@ -164,6 +164,11 @@ Gerado por `scripts/build.py` em 2026-11-01. Não edite à mão: mude o indicado
 | `mortes-indigenas-causas`: Causas de morte entre indígenas | [Ministério da Saúde, SIM, e IBGE, censos (cálculo deste site)](http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/inf10uf.def) | A cada censo (taxas); anual (mortes) | http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/inf10uf.def | Mortes de 2025, dados finais em 2027 | 2026-10-31 |
 | `saude-indigena-populacao-atendida`: Quantos indígenas o SUS atende nos distritos indígenas | [Ministério da Saúde, Secretaria de Saúde Indígena (Sesai)](https://www.gov.br/saude/pt-br/composicao/sesai) | Mensal (Ministério da Saúde) | https://demas-dados-abertos.s3.amazonaws.com/csv/mgdi_ms_5oa.csv.zip | Dezembro de 2026 | 2026-10-31 |
 | `saude-yanomami`: Saúde no território Yanomami | [Ministério da Saúde, Sesai e Centro de Operações de Emergências Yanomami](https://www.gov.br/saude/pt-br/composicao/svsa/coes/coe-yanomami/informes/missao-yanomami-informe-09.pdf/@@download/file) | Informes periódicos do Ministério da Saúde | https://www.gov.br/saude/pt-br/composicao/svsa/coes/coe-yanomami/informes | Próximo informe do COE Yanomami | 2026-10-31 |
+| `covid-mortes-brasil-mensal`: Mortes por covid-19 no Brasil por mês | [Ministério da Saúde, SIM e boletins; OMS](https://dadosabertos.saude.gov.br/dataset/sim) | Anual (SIM, dado final cerca de um ano e meio depois); semanal (OMS) | https://dadosabertos.saude.gov.br/dataset/sim | Dados finais de 2025 do SIM | 2026-11-02 |
+| `covid-mortes-anual`: Mortes por covid-19 por ano no Brasil e no mundo | [Ministério da Saúde, SIM e boletins; OMS](https://dadosabertos.saude.gov.br/dataset/sim) | Anual | https://dadosabertos.saude.gov.br/dataset/sim | Dados finais de 2025 do SIM | 2026-11-02 |
+| `covid-mortes-mundo-mensal`: Mortes por covid-19 no mundo por mês | [OMS, painel de covid-19](https://data.who.int/dashboards/covid19/data) | Semanal (OMS) | https://data.who.int/dashboards/covid19/data | Atualização semanal da OMS | 2026-11-02 |
+| `covid-mortes-paises`: Mortes por covid-19 por milhão de habitantes | [OMS, painel de covid-19; ONU, World Population Prospects 2024](https://data.who.int/dashboards/covid19/data) | Semanal (OMS) | https://data.who.int/dashboards/covid19/data | Atualização semanal da OMS | 2026-11-02 |
+| `covid-mortes-estados`: Mortes por covid-19 em cada estado | [Ministério da Saúde, SIM; IBGE, Censo 2022](https://dadosabertos.saude.gov.br/dataset/sim) | Anual (SIM) | https://dadosabertos.saude.gov.br/dataset/sim | Dados finais de 2025 do SIM | 2026-11-02 |
 
 ## Educação
 

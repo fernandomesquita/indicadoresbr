@@ -1,0 +1,158 @@
+{
+  "id": "covid-mortes-brasil-mensal",
+  "categoria": "saude",
+  "ordem": 21,
+  "visivel": true,
+  "titulo": "Mortes por covid-19 no Brasil por mês",
+  "subtitulo": "Mortes por covid-19 por mês, pela data do óbito e pela data em que foram registradas, de março de 2020 a 2026",
+  "tipo": "linha",
+  "x": "Mês",
+  "series": [
+    "Pela data do óbito (declarações de óbito)",
+    "Pela data do registro (Ministério da Saúde)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "escolha": false,
+  "fonte": {
+    "nome": "Ministério da Saúde, SIM e boletins; OMS",
+    "url": "https://dadosabertos.saude.gov.br/dataset/sim"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Saúde, Sistema de Informações sobre Mortalidade (SIM), microdados no OpenDataSUS, causa básica B34.2",
+      "url": "https://dadosabertos.saude.gov.br/dataset/sim",
+      "o_que_sustenta": "Mortes por covid-19 pelo mês em que aconteceram, de 2020 a agosto de 2026, por estado de residência."
+    },
+    {
+      "nome": "Ministério da Saúde, boletins epidemiológicos da covid-19 (2020 a 2024)",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2023",
+      "o_que_sustenta": "Mortes registradas pelas secretarias estaduais por ano epidemiológico de 2020 a 2023 e por mês de maio de 2023 a abril de 2024."
+    },
+    {
+      "nome": "Organização Mundial da Saúde (OMS), painel de covid-19, dados diários por país",
+      "url": "https://data.who.int/dashboards/covid19/data",
+      "o_que_sustenta": "Mortes relatadas por país e no mundo, por data de relato, de 2020 a outubro de 2026; para o Brasil, os números enviados pelo Ministério da Saúde."
+    }
+  ],
+  "como_ler": "A linha das declarações de óbito conta cada morte no mês em que ela aconteceu, com a covid-19 como causa básica (Sistema de Informações sobre Mortalidade). A do Ministério da Saúde conta as mortes no mês em que as secretarias estaduais as registraram, que pode ser semanas depois; essa é a contagem divulgada diariamente durante a pandemia. As declarações de óbito são finais até 2024; o arquivo de 2025 publicado só vai até agosto (de setembro a dezembro de 2025 o gráfico fica vazio), e 2026, de janeiro a agosto, é prévia. Na linha do Ministério, os meses vêm do relato do Brasil à OMS e, de maio de 2023 a abril de 2024, dos boletins mensais do Ministério (grupos de semanas epidemiológicas); de maio a novembro de 2024 não há dado mensal oficial localizado.",
+  "contexto": [
+    "Pelas declarações de óbito, o mês com mais mortes foi mar/2021, com 87.716. Pelo registro do Ministério da Saúde, foi abr/2021, com 84.319.",
+    "De 2020 a 2024, as declarações de óbito somam 718.794 mortes por covid-19.",
+    "Em 2026, de janeiro a agosto, foram 638 mortes pelas declarações de óbito (prévia)."
+  ],
+  "glossario": [
+    {
+      "termo": "Causa básica",
+      "definicao": "A doença ou lesão que iniciou a sequência de eventos que levou à morte, segundo a declaração de óbito."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (SIM, dado final cerca de um ano e meio depois); semanal (OMS)",
+    "onde_buscar": "https://dadosabertos.saude.gov.br/dataset/sim",
+    "proxima": "Dados finais de 2025 do SIM",
+    "ultima_conferencia": "2026-11-02"
+  },
+  "colunas": [
+    "Mês",
+    "Pela data do óbito (declarações de óbito)",
+    "Pela data do registro (Ministério da Saúde)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Totais anuais de 2020 a 2023 pelo Ministério da Saúde",
+      "valor_na_fonte": "Boletim epidemiológico nº 158: soma de 708.638, igual ao acumulado do boletim; declarações de óbito iguais ao TabNet de 2020 a 2023",
+      "fonte": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2023",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    ["mar/2020", 675, 136],
+    ["abr/2020", 12353, 4881],
+    ["mai/2020", 34250, 22861],
+    ["jun/2020", 30544, 29744],
+    ["jul/2020", 31903, 32512],
+    ["ago/2020", 26922, 30328],
+    ["set/2020", 19416, 21596],
+    ["out/2020", 14406, 16911],
+    ["nov/2020", 14711, 13592],
+    ["dez/2020", 27525, 20120],
+    ["jan/2021", 34236, 29985],
+    ["fev/2021", 32254, 30169],
+    ["mar/2021", 87716, 61031],
+    ["abr/2021", 82675, 84319],
+    ["mai/2021", 59387, 62872],
+    ["jun/2021", 52096, 53035],
+    ["jul/2021", 29625, 40405],
+    ["ago/2021", 18316, 24811],
+    ["set/2021", 12105, 16138],
+    ["out/2021", 7980, 12016],
+    ["nov/2021", 4805, 6816],
+    ["dez/2021", 3266, 4539],
+    ["jan/2022", 16180, 7707],
+    ["fev/2022", 20765, 22389],
+    ["mar/2022", 5075, 10328],
+    ["abr/2022", 1135, 3984],
+    ["mai/2022", 1531, 3228],
+    ["jun/2022", 5089, 4395],
+    ["jul/2022", 6550, 7465],
+    ["ago/2022", 2350, 5309],
+    ["set/2022", 739, 2305],
+    ["out/2022", 370, 2164],
+    ["nov/2022", 1841, 1445],
+    ["dez/2022", 4139, 4198],
+    ["jan/2023", 2165, 3025],
+    ["fev/2023", 819, 2188],
+    ["mar/2023", 1087, 1292],
+    ["abr/2023", 966, 1255],
+    ["mai/2023", 789, 1458],
+    ["jun/2023", 587, 673],
+    ["jul/2023", 334, 643],
+    ["ago/2023", 306, 378],
+    ["set/2023", 501, 790],
+    ["out/2023", 879, 846],
+    ["nov/2023", 1052, 1213],
+    ["dez/2023", 789, 617],
+    ["jan/2024", 709, 963],
+    ["fev/2024", 1014, 826],
+    ["mar/2024", 1077, 953],
+    ["abr/2024", 350, 658],
+    ["mai/2024", 145, ""],
+    ["jun/2024", 135, ""],
+    ["jul/2024", 167, ""],
+    ["ago/2024", 298, ""],
+    ["set/2024", 537, ""],
+    ["out/2024", 340, ""],
+    ["nov/2024", 339, ""],
+    ["dez/2024", 478, 81],
+    ["jan/2025", 556, 312],
+    ["fev/2025", 367, 228],
+    ["mar/2025", 264, 112],
+    ["abr/2025", 98, 72],
+    ["mai/2025", 92, 60],
+    ["jun/2025", 80, 47],
+    ["jul/2025", 69, 87],
+    ["ago/2025", 74, 162],
+    ["set/2025", 1, 176],
+    ["out/2025", "", 118],
+    ["nov/2025", "", 80],
+    ["dez/2025", "", 30],
+    ["jan/2026", 136, 87],
+    ["fev/2026", 125, 90],
+    ["mar/2026", 154, 91],
+    ["abr/2026", 81, 37],
+    ["mai/2026", 51, 37],
+    ["jun/2026", 59, 34],
+    ["jul/2026", 25, 15],
+    ["ago/2026", 7, 11],
+    ["set/2026", "", 21],
+    ["out/2026", "", 3]
+  ]
+}

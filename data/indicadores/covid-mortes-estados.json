@@ -1,0 +1,98 @@
+{
+  "id": "covid-mortes-estados",
+  "categoria": "saude",
+  "ordem": 25,
+  "visivel": true,
+  "titulo": "Mortes por covid-19 em cada estado",
+  "subtitulo": "Mortes por covid-19 de 2020 a 2024 por 100 mil habitantes, por estado de residência",
+  "tipo": "barras",
+  "x": "Estado",
+  "series": [
+    "Mortes por 100 mil habitantes (2020 a 2024)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Brasil"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "ultimo": "2020 a 2024",
+  "fonte": {
+    "nome": "Ministério da Saúde, SIM; IBGE, Censo 2022",
+    "url": "https://dadosabertos.saude.gov.br/dataset/sim"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Saúde, Sistema de Informações sobre Mortalidade (SIM), microdados no OpenDataSUS, causa básica B34.2",
+      "url": "https://dadosabertos.saude.gov.br/dataset/sim",
+      "o_que_sustenta": "Mortes por covid-19 pelo mês em que aconteceram, de 2020 a agosto de 2026, por estado de residência."
+    },
+    {
+      "nome": "IBGE, Censo Demográfico 2022, população residente por estado (Sidra, tabela 4709)",
+      "url": "https://sidra.ibge.gov.br/tabela/4709",
+      "o_que_sustenta": "População usada para calcular as mortes por 100 mil habitantes (cálculo deste site)."
+    }
+  ],
+  "como_ler": "Cada barra soma as mortes por covid-19 de 2020 a 2024 de pessoas que moravam no estado, pelas declarações de óbito (dados finais), e divide pela população do Censo de 2022, por 100 mil habitantes (cálculo deste site). A tabela traz também os números absolutos e os anos de 2020 a 2022. A taxa não é ajustada pela idade da população de cada estado.",
+  "contexto": [
+    "De 2020 a 2024, Rio de Janeiro (496,5) e Rondônia (472,8) tiveram as maiores taxas de mortes por covid-19 por 100 mil habitantes; a do Brasil foi de 353,9.",
+    "As menores foram as do Maranhão (202,9) e do Bahia (227,3)."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (SIM)",
+    "onde_buscar": "https://dadosabertos.saude.gov.br/dataset/sim",
+    "proxima": "Dados finais de 2025 do SIM",
+    "ultima_conferencia": "2026-11-02"
+  },
+  "colunas": [
+    "Estado",
+    "Mortes por 100 mil habitantes (2020 a 2024)",
+    "Mortes de 2020 a 2024",
+    "Mortes em 2020",
+    "Mortes em 2021",
+    "Mortes em 2022"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Soma dos estados",
+      "valor_na_fonte": "Igual ao total do Brasil em todos os anos",
+      "fonte": "https://dadosabertos.saude.gov.br/dataset/sim",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Rio de Janeiro", 496.5, 79710, 31927, 41182, 5453],
+    ["Rondônia", 472.8, 7476, 1890, 4871, 604],
+    ["Paraná", 415.3, 47528, 8719, 33020, 4460],
+    ["Goiás", 411.6, 29048, 7616, 18141, 2530],
+    ["Mato Grosso", 410.2, 15007, 4381, 9216, 1186],
+    ["São Paulo", 408.2, 181270, 47520, 110401, 18475],
+    ["Amazonas", 403.2, 15894, 5920, 9141, 677],
+    ["Rio Grande do Sul", 390.1, 42451, 9285, 27227, 4653],
+    ["Mato Grosso do Sul", 374.9, 10336, 2244, 6867, 959],
+    ["Brasil", 353.9, 718794, 212706, 424461, 65764],
+    ["Distrito Federal", 351.8, 9911, 3098, 5859, 727],
+    ["Ceará", 344.8, 30327, 11848, 15754, 2343],
+    ["Roraima", 335.0, 2133, 807, 1221, 92],
+    ["Espírito Santo", 329.7, 12640, 4840, 6292, 1272],
+    ["Minas Gerais", 326.4, 67035, 13445, 44501, 7269],
+    ["Amapá", 319.3, 2343, 1113, 1068, 146],
+    ["Santa Catarina", 300.1, 22841, 5313, 14741, 2250],
+    ["Pernambuco", 296.0, 26814, 11428, 12613, 2250],
+    ["Sergipe", 290.0, 6408, 2342, 3543, 439],
+    ["Tocantins", 288.7, 4363, 1178, 2702, 358],
+    ["Acre", 281.9, 2340, 809, 1305, 167],
+    ["Rio Grande do Norte", 279.2, 9222, 3092, 4972, 975],
+    ["Alagoas", 277.7, 8687, 3589, 4239, 735],
+    ["Paraíba", 268.0, 10652, 3523, 5970, 988],
+    ["Pará", 250.3, 20322, 7907, 10399, 1656],
+    ["Piauí", 249.0, 8146, 2807, 4488, 723],
+    ["Bahia", 227.3, 32140, 10932, 17208, 3406],
+    ["Maranhão", 202.9, 13750, 5133, 7520, 971]
+  ]
+}

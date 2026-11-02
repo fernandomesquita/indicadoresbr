@@ -1,0 +1,80 @@
+{
+  "id": "covid-mortes-anual",
+  "categoria": "saude",
+  "ordem": 22,
+  "visivel": true,
+  "titulo": "Mortes por covid-19 por ano no Brasil e no mundo",
+  "subtitulo": "Mortes por covid-19 no Brasil pela data do óbito, por ano, de 2020 a 2026, com o total do mundo na tabela",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Brasil, pela data do óbito"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 0,
+  "fonte": {
+    "nome": "Ministério da Saúde, SIM e boletins; OMS",
+    "url": "https://dadosabertos.saude.gov.br/dataset/sim"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Saúde, Sistema de Informações sobre Mortalidade (SIM), microdados no OpenDataSUS, causa básica B34.2",
+      "url": "https://dadosabertos.saude.gov.br/dataset/sim",
+      "o_que_sustenta": "Mortes por covid-19 pelo mês em que aconteceram, de 2020 a agosto de 2026, por estado de residência."
+    },
+    {
+      "nome": "Ministério da Saúde, boletins epidemiológicos da covid-19 (2020 a 2024)",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2023",
+      "o_que_sustenta": "Mortes registradas pelas secretarias estaduais por ano epidemiológico de 2020 a 2023 e por mês de maio de 2023 a abril de 2024."
+    },
+    {
+      "nome": "Organização Mundial da Saúde (OMS), painel de covid-19, dados diários por país",
+      "url": "https://data.who.int/dashboards/covid19/data",
+      "o_que_sustenta": "Mortes relatadas por país e no mundo, por data de relato, de 2020 a outubro de 2026; para o Brasil, os números enviados pelo Ministério da Saúde."
+    }
+  ],
+  "como_ler": "Cada coluna é o número de mortes por covid-19 no Brasil no ano, contadas pela data do óbito nas declarações de óbito; 2025 vai de janeiro a agosto, e 2026 é prévia de janeiro a agosto. A tabela traz também os totais do Ministério da Saúde por ano epidemiológico (boletins, até 2023), os números que o Brasil relatou à OMS e o total do mundo relatado à OMS. O total do mundo só é comparável de 2020 a 2022: a OMS deixou de pedir relato diário em agosto de 2023, e o número de países que relatam mortes caiu de mais de 200 para cerca de 30 em 2025. Por isso a parte do Brasil no total do mundo aparece só até 2022. O Brasil não relatou mortes à OMS de maio de 2023 a novembro de 2024.",
+  "contexto": [
+    "Em 2021, o ano com mais mortes, foram 424.461 no Brasil pelas declarações de óbito. Em 2020, 212.706; em 2022, 65.764.",
+    "O Brasil respondeu por 9,9% das mortes relatadas à OMS em 2020, 12,0% em 2021 e 6,0% em 2022.",
+    "O mundo registrou 3.537.358 mortes por covid-19 em 2021, segundo a OMS."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual",
+    "onde_buscar": "https://dadosabertos.saude.gov.br/dataset/sim",
+    "proxima": "Dados finais de 2025 do SIM",
+    "ultima_conferencia": "2026-11-02"
+  },
+  "colunas": [
+    "Ano",
+    "Brasil, pela data do óbito",
+    "Brasil, Ministério da Saúde (boletins, ano epidemiológico)",
+    "Brasil, relatado à OMS",
+    "Mundo, relatado à OMS",
+    "Brasil no total do mundo (%)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil relatado à OMS até 31/12/2022: 693.853",
+      "valor_na_fonte": "Boletim epidemiológico do Ministério da Saúde: 693.853",
+      "fonte": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/covid-19/2023",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["2020", 212706, 194949, 192681, 1936752, 9.9],
+    ["2021", 424461, 424107, 426136, 3537358, 12.0],
+    ["2022", 65764, 74797, 74917, 1246156, 6.0],
+    ["2023", 10274, 14785, "", 294000, ""],
+    ["2024", 5589, "", "", 69197, ""],
+    ["2025 (jan. a ago.)", 1601, "", 1484, 26509, ""],
+    ["2026 (jan. a ago., prévia)", 638, "", 426, 8142, ""]
+  ]
+}

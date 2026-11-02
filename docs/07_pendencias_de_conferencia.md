@@ -125,3 +125,10 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **Ingressos de 2019 a 2026**: estimativa (pessoa no cargo que não estava no arquivo anterior). 2017 e 2018 sem valor (arquivos quase idênticos). Analista-tributário com 156 entradas em 2022 e 466 em 2025, acima do que os documentos explicam.
 - **Total de efetivos da Receita**: estimativa pelas unidades de lotação no Portal da Transparência; a queda dos administrativos (6.351 em 2016 para 2.400 em 2026) pode misturar saídas e mudança de lotação. Sem número oficial para conferir.
 - **Aposentados e pensões**: não publicados como série (Boletim e MGI não se emendam; aposentadorias por ano contadas no estoque atual subestimam os anos antigos).
+
+## Covid-19 (coleta de 02/11/2026)
+
+- **Ministério da Saúde, série mensal**: o arquivo HIST_PAINEL não foi obtido (API da AWS com chave embutida no painel). A série mensal vem do relato do Brasil à OMS e, de maio de 2023 a abril de 2024, dos boletins mensais. Maio a novembro de 2024 sem dado mensal oficial. Completar pelo painel infoms.saude.gov.br no navegador.
+- **SIM 2025**: o arquivo do OpenDataSUS só cobre janeiro a agosto de 2025; o TabNet tem o ano completo só para a categoria B34 (2.766). Atualizar quando sair o arquivo completo.
+- **Acumulado do Brasil**: OMS 704.107 (lacuna de relato de 15/05/2023 a 30/12/2024); boletim 162 do MS, 712.038 até 04/05/2024. Imprensa citou 715 mil em março de 2025 (não conferido).
+- **Mundo**: comparável de 2020 a 2022; a partir de 2023 é piso (países deixaram de relatar).
