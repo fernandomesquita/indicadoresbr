@@ -149,3 +149,10 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **POF 1995-1996**: 11 áreas urbanas; PDF digitalizado, valores transcritos da imagem (4 divergências do OCR resolvidas a 300 dpi). A faixa "mais de 15 SM" é cálculo próprio (três faixas ponderadas pela população).
 - **ENDEF 1974-1975 e POF 1987-1988**: sem recorte de renda nos volumes consultados.
 - **Quintis**: o IBGE não publica aquisição de alimentos por quintil; exigiria microdados.
+
+## Bebida alcoólica (coleta de 08/11/2026)
+
+- **OMS revisou a série em 2026**: o relatório global de 2024 trazia 7,7 L (total) e 6,3 L (registrado) para o Brasil em 2019; a base atual traz 9,70 e 8,37 (mundo: 5,5 contra 5,11). O site usa a base atual, que confere com a base dos ODS da ONU. O total é média de 3 anos (2000 repete 2001 e 2024 repete 2023; o site mostra 2001 a 2023). Registrado: quebra de fonte em 2000; 2006 é pico isolado (10,61 L).
+- **Vigitel**: série revisada no relatório 2006-2024 (pesos do Censo 2022): 2019 de 18,8% para 18,1%, 2023 de 20,8% para 19,9%. Sem dado em 2022; 2020-2021 com coleta simplificada; 2023-2024 majoritariamente por celular. Sem recorte de renda (só escolaridade).
+- **PNS**: consumo abusivo com definições diferentes em 2013 (4+ doses mulheres, 5+ homens) e 2019 (5+ para todos). 2013 no Sidra difere 0,1 ponto do volume impresso (reponderação de 2020).
+- **POF**: despesa de 2002-2003 não coletada (FTP só com coeficientes de variação). Volume de bebida registrado em kg (1 L = 1 kg).

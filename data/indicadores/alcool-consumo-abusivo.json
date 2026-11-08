@@ -1,0 +1,99 @@
+{
+  "id": "alcool-consumo-abusivo",
+  "categoria": "consumo",
+  "ordem": 26,
+  "visivel": true,
+  "titulo": "Consumo abusivo de bebida alcoólica nas capitais",
+  "subtitulo": "Adultos que beberam muito numa mesma ocasião nos últimos 30 dias, em %, nas capitais, de 2006 a 2024",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Total",
+    "Homens",
+    "Mulheres"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "escolha": true,
+  "fonte": {
+    "nome": "Ministério da Saúde, Vigitel",
+    "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigitel/vigitel-brasil-2006-2024.pdf"
+  },
+  "fontes": [
+    {
+      "nome": "Ministério da Saúde, Vigitel Brasil 2006-2024 (relatório publicado em 2025), tabela 29",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigitel/vigitel-brasil-2006-2024.pdf",
+      "o_que_sustenta": "Consumo abusivo de álcool de 2006 a 2024, total e por sexo, idade e escolaridade, nas 26 capitais e no Distrito Federal."
+    }
+  ],
+  "como_ler": "O Vigitel chama de consumo episódico pesado (antes, consumo abusivo) beber, numa mesma ocasião nos últimos 30 dias, 4 doses ou mais, no caso das mulheres, ou 5 doses ou mais, no caso dos homens; uma dose é uma lata de cerveja, uma taça de vinho ou uma dose de destilado. A pesquisa é feita por telefone com adultos de 18 anos ou mais das 26 capitais e do Distrito Federal; não cobre o interior. O Vigitel não pergunta a renda; o recorte socioeconômico disponível é a escolaridade, que os botões mostram, junto com a idade. Não houve pesquisa em 2022. Em 2020 e 2021 a coleta foi simplificada, com cerca de mil entrevistas por cidade em quatro meses, e desde 2023 a maior parte das entrevistas é por celular. O relatório de 2025 revisou os valores de 2010 a 2023 com os pesos do Censo 2022 (2019 passou de 18,8% para 18,1%). As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2024, 20,4% dos adultos das capitais disseram ter bebido de forma abusiva nos últimos 30 dias, contra 15,7% em 2006.",
+    "Entre as mulheres, a parte passou de 7,8% em 2006 para 15,7% em 2024; entre os homens, de 25,0% para 25,9%.",
+    "Em 2024, o consumo abusivo foi de 25,5% entre quem tem curso superior completo e de 13,7% entre quem não completou o ensino fundamental."
+  ],
+  "glossario": [
+    {
+      "termo": "Vigitel",
+      "definicao": "Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico, pesquisa anual do Ministério da Saúde."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Ministério da Saúde)",
+    "onde_buscar": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigitel/",
+    "proxima": "Vigitel com dados de 2025",
+    "ultima_conferencia": "2026-11-08"
+  },
+  "colunas": [
+    "Ano",
+    "Total",
+    "Homens",
+    "Mulheres",
+    "Escolaridade: Até fundamental incompleto",
+    "Escolaridade: Fundamental completo",
+    "Escolaridade: Médio completo",
+    "Escolaridade: Superior completo",
+    "18 a 24 anos",
+    "25 a 34 anos",
+    "35 a 44 anos",
+    "45 a 54 anos",
+    "55 a 64 anos",
+    "65 anos ou mais"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2006, 2024, mulheres em 2024 e superior completo em 2024",
+      "valor_na_fonte": "Texto do relatório Vigitel 2006-2024 e rótulos da figura 29: iguais",
+      "fonte": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigitel/vigitel-brasil-2006-2024.pdf",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [2006, 15.7, 25.0, 7.8, 12.9, 16.0, 17.5, 18.2, 19.0, 21.7, 17.6, 13.2, 6.6, 2.5],
+    [2007, 16.5, 25.5, 8.7, 12.6, 19.0, 18.4, 17.9, 22.3, 21.6, 16.5, 14.3, 9.6, 2.7],
+    [2008, 17.2, 26.1, 9.6, 13.7, 18.2, 19.7, 18.1, 21.3, 22.1, 19.3, 15.2, 10.3, 3.3],
+    [2009, 18.5, 28.3, 10.0, 13.7, 18.1, 20.9, 23.0, 23.4, 23.9, 20.0, 16.8, 10.4, 4.1],
+    [2010, 17.9, 26.9, 10.4, 12.7, 18.0, 20.0, 22.6, 21.9, 23.9, 19.7, 15.9, 10.9, 4.4],
+    [2011, 16.4, 25.3, 8.9, 12.4, 17.2, 17.6, 19.8, 20.1, 21.2, 18.4, 14.7, 10.7, 4.4],
+    [2012, 18.2, 27.7, 10.3, 13.6, 18.9, 19.7, 21.9, 21.4, 24.9, 19.6, 16.6, 12.3, 4.9],
+    [2013, 16.1, 23.9, 9.6, 10.8, 18.0, 17.2, 20.2, 19.0, 22.4, 17.7, 15.0, 10.6, 4.0],
+    [2014, 16.2, 24.6, 9.2, 10.9, 16.0, 18.3, 19.6, 17.8, 23.3, 18.0, 15.2, 11.3, 3.7],
+    [2015, 16.7, 24.8, 10.0, 11.2, 16.4, 18.6, 19.9, 19.8, 23.3, 19.6, 15.4, 11.3, 3.8],
+    [2016, 18.5, 26.7, 11.7, 12.3, 17.5, 20.4, 23.1, 21.8, 25.9, 21.1, 18.2, 12.6, 4.7],
+    [2017, 18.2, 26.0, 11.8, 11.1, 18.6, 20.4, 21.7, 23.6, 27.5, 22.1, 15.9, 10.3, 3.1],
+    [2018, 17.3, 25.3, 10.7, 11.0, 17.7, 19.2, 20.0, 23.0, 24.1, 21.6, 14.8, 11.0, 4.0],
+    [2019, 18.1, 24.5, 12.8, 9.9, 17.7, 21.2, 20.9, 25.9, 26.1, 21.3, 15.9, 11.4, 4.1],
+    [2020, 19.9, 26.0, 14.9, 11.1, 21.8, 21.9, 23.1, 24.6, 30.7, 22.4, 18.3, 13.7, 5.6],
+    [2021, 17.3, 24.2, 11.7, 9.7, 15.6, 18.4, 22.6, 19.2, 25.8, 20.3, 17.6, 13.1, 5.6],
+    [2022, "", "", "", "", "", "", "", "", "", "", "", "", ""],
+    [2023, 19.9, 26.9, 14.1, 12.0, 20.0, 21.5, 23.3, 22.5, 30.2, 25.4, 20.7, 11.6, 5.5],
+    [2024, 20.4, 25.9, 15.7, 13.7, 20.9, 19.8, 25.5, 22.6, 25.6, 26.3, 21.4, 15.4, 8.5]
+  ]
+}
