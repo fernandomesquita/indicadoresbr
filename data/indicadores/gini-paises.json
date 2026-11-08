@@ -1,0 +1,90 @@
+{
+  "id": "gini-paises",
+  "categoria": "mundo",
+  "ordem": 13,
+  "visivel": true,
+  "titulo": "Desigualdade de renda: Brasil e outros países",
+  "subtitulo": "Índice de Gini, de 0 (todos com a mesma renda) a 100 (um só tem tudo), no último ano de cada país",
+  "tipo": "barras",
+  "x": "País",
+  "series": [
+    "Índice de Gini"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Brasil"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "ultimo": "último ano de cada país",
+  "fonte": {
+    "nome": "Banco Mundial, World Development Indicators",
+    "url": "https://data.worldbank.org/"
+  },
+  "fontes": [
+    {
+      "nome": "Banco Mundial, World Development Indicators, Índice de Gini (SI.POV.GINI), base de 08/10/2026",
+      "url": "https://api.worldbank.org/v2/country/BRA;ARG;CHL;COL;MEX;PER;USA;CAN;DEU;FRA;GBR;ITA;ESP;PRT;JPN;KOR;CHN;IND;RUS;ZAF;IDN;TUR;AUS;WLD;LCN;OED;UMC/indicator/SI.POV.GINI?format=json&per_page=20000&date=1960:2026",
+      "o_que_sustenta": "Índice de Gini do Brasil, de 22 países e das médias do mundo, da América Latina e Caribe, da OCDE e dos países de renda média-alta."
+    },
+    {
+      "nome": "Banco Mundial, Poverty and Inequality Platform",
+      "url": "https://pip.worldbank.org/",
+      "o_que_sustenta": "Pesquisa usada em cada país (renda ou consumo) e anos disponíveis."
+    }
+  ],
+  "como_ler": "O índice de Gini mede a concentração da renda ou do consumo por pessoa nas famílias; quanto maior, mais desigual. O Banco Mundial usa a renda em alguns países e o consumo em outros (como Índia e Indonésia), o que afeta a comparação. Para o Brasil, usa a PNAD Contínua do IBGE e dá 50,3 em 2024; o IBGE publica 0,506 para o mesmo ano, numa escala de 0 a 1 e com outro tratamento dos dados. Cada país aparece com o dado mais recente que tem na base; a tabela traz o ano, que varia de país para país.",
+  "contexto": [
+    "Com Gini de 50,3 em 2024, o Brasil é o 3º mais desigual entre os 23 países, atrás de Colômbia (54,4) e África do Sul (54,1).",
+    "O menor índice do grupo é o da Índia (23,0), medido pelo consumo, e não pela renda."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (Banco Mundial)",
+    "onde_buscar": "https://data.worldbank.org/",
+    "proxima": "Próxima atualização da base do Banco Mundial",
+    "ultima_conferencia": "2026-11-08"
+  },
+  "colunas": [
+    "País",
+    "Índice de Gini",
+    "Ano do dado"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil",
+      "valor_na_fonte": "IBGE, PNAD Contínua (Sidra 7435): diferença de até 0,8 ponto de 2012 a 2024, salvo 2020 e 2021",
+      "fonte": "https://api.worldbank.org/v2/country/BRA;ARG;CHL;COL;MEX;PER;USA;CAN;DEU;FRA;GBR;ITA;ESP;PRT;JPN;KOR;CHN;IND;RUS;ZAF;IDN;TUR;AUS;WLD;LCN;OED;UMC/indicator/SI.POV.GINI?format=json&per_page=20000&date=1960:2026",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Colômbia", 54.4, 2024],
+    ["África do Sul", 54.1, 2022],
+    ["Brasil", 50.3, 2024],
+    ["Turquia", 43.7, 2023],
+    ["Chile", 43.0, 2024],
+    ["México", 42.6, 2024],
+    ["Argentina", 42.4, 2024],
+    ["Estados Unidos", 41.8, 2024],
+    ["Peru", 40.1, 2024],
+    ["China", 36.0, 2022],
+    ["Indonésia", 34.4, 2025],
+    ["Itália", 34.3, 2023],
+    ["Portugal", 33.9, 2023],
+    ["Austrália", 33.8, 2020],
+    ["Alemanha", 33.7, 2022],
+    ["Espanha", 33.4, 2023],
+    ["Rússia", 33.0, 2023],
+    ["Coreia do Sul", 32.9, 2021],
+    ["Reino Unido", 32.4, 2021],
+    ["Japão", 32.3, 2020],
+    ["França", 31.8, 2023],
+    ["Canadá", 31.5, 2022],
+    ["Índia", 23.0, 2023]
+  ]
+}

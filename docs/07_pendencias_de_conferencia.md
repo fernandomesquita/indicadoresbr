@@ -156,3 +156,11 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **Vigitel**: série revisada no relatório 2006-2024 (pesos do Censo 2022): 2019 de 18,8% para 18,1%, 2023 de 20,8% para 19,9%. Sem dado em 2022; 2020-2021 com coleta simplificada; 2023-2024 majoritariamente por celular. Sem recorte de renda (só escolaridade).
 - **PNS**: consumo abusivo com definições diferentes em 2013 (4+ doses mulheres, 5+ homens) e 2019 (5+ para todos). 2013 no Sidra difere 0,1 ponto do volume impresso (reponderação de 2020).
 - **POF**: despesa de 2002-2003 não coletada (FTP só com coeficientes de variação). Volume de bebida registrado em kg (1 L = 1 kg).
+
+## Brasil comparado (coleta de 08/11/2026)
+
+- **Base do Banco Mundial de 08/10/2026; FMI WEO de outubro de 2026.** No FMI, 2025 pode ser estimativa em alguns países (a API não marca o último ano observado).
+- **Gini**: o Banco Mundial (PIP) diverge da PNAD Contínua em 2020 (48,8 contra 52,3) e 2021 (52,9 contra 54,3); causa não documentada. Índia e Indonésia medem consumo.
+- **Natalidade, fecundidade e expectativa de vida**: Banco Mundial = ONU (WPP 2024); diferem das projeções do IBGE (2024: natalidade 11,7 contra 12,1; fecundidade 1,55 contra 1,61; expectativa 76,6 contra 76,0).
+- **Não publicados**: juros reais (FR.INR.RINR: taxa de empréstimo bancário menos deflator, cobertura irregular, não serve como ranking) e receita tributária do governo central (GC.TAX.TOTL.GD.ZS: só governo central; 15,4% do PIB para o Brasil contra 32,2% de carga total).
+- **Trabalho escravo (Radar SIT)**: ainda fora do ar em 08/11/2026.

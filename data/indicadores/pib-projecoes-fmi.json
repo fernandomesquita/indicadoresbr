@@ -1,0 +1,100 @@
+{
+  "id": "pib-projecoes-fmi",
+  "categoria": "mundo",
+  "ordem": 6,
+  "visivel": true,
+  "titulo": "Projeções de crescimento do FMI até 2030",
+  "subtitulo": "Crescimento médio do PIB projetado pelo FMI para 2026 a 2030, em % ao ano",
+  "tipo": "barras",
+  "x": "País",
+  "series": [
+    "Média projetada de 2026 a 2030 (%)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Brasil"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "ultimo": "outubro de 2026",
+  "fonte": {
+    "nome": "FMI, World Economic Outlook de outubro de 2026",
+    "url": "https://www.imf.org/en/Publications/WEO"
+  },
+  "fontes": [
+    {
+      "nome": "FMI, World Economic Outlook de outubro de 2026, DataMapper (NGDP_RPCH)",
+      "url": "https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH",
+      "o_que_sustenta": "Crescimento real do PIB observado em 2024 e 2025 e projetado de 2026 a 2030."
+    }
+  ],
+  "como_ler": "Cada barra é a média simples das taxas de crescimento do PIB que o Fundo Monetário Internacional (FMI) projeta para cada ano de 2026 a 2030 (cálculo deste site). A tabela traz cada ano; 2026 em diante é projeção, e 2025 ainda pode ser estimativa do FMI em alguns países. O FMI não calcula médias da OCDE; no lugar entram as economias avançadas e as emergentes e em desenvolvimento, pela classificação do próprio FMI. Projeções mudam a cada edição.",
+  "contexto": [
+    "O FMI projeta que o PIB do Brasil crescerá em média 2,3% ao ano de 2026 a 2030, contra 3,2% do mundo; o Brasil fica em 9º entre 23 países.",
+    "Para 2026, a projeção do FMI para o Brasil é de 2,2%; em 2025, o crescimento foi de 2,3%."
+  ],
+  "glossario": [
+    {
+      "termo": "FMI",
+      "definicao": "Fundo Monetário Internacional, que publica projeções econômicas duas vezes por ano, em abril e outubro."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Semestral (FMI, abril e outubro)",
+    "onde_buscar": "https://www.imf.org/en/Publications/WEO",
+    "proxima": "World Economic Outlook de abril de 2027",
+    "ultima_conferencia": "2026-11-08"
+  },
+  "colunas": [
+    "País",
+    "Média projetada de 2026 a 2030 (%)",
+    "2024",
+    "2025",
+    "2026 (projeção)",
+    "2027 (projeção)",
+    "2028 (projeção)",
+    "2029 (projeção)",
+    "2030 (projeção)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil de 2015 a 2025",
+      "valor_na_fonte": "IBGE, Contas Nacionais: iguais na casa decimal",
+      "fonte": "https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Índia", 6.9, 7.2, 7.8, 7, 7, 6.9, 6.9, 6.8],
+    ["Indonésia", 5.2, 5, 5.1, 5.1, 5.1, 5.2, 5.2, 5.2],
+    ["Economias emergentes e em desenvolvimento (FMI)", 4.1, 4.5, 4.5, 3.7, 4.4, 4.3, 4.1, 4],
+    ["China", 3.9, 5, 5, 4.5, 4, 4, 3.7, 3.3],
+    ["Turquia", 3.7, 3.5, 3.7, 2.7, 3.6, 4, 4, 4],
+    ["Argentina", 3.4, -1.4, 4.5, 2.1, 3.5, 4.2, 3.8, 3.3],
+    ["Mundo", 3.2, 3.5, 3.5, 3.1, 3.4, 3.3, 3.2, 3.1],
+    ["Peru", 3.0, 3.5, 3.4, 3, 2.9, 3.2, 3, 3],
+    ["América Latina e Caribe", 2.7, 2.4, 2.5, 2.3, 2.5, 2.9, 2.9, 2.7],
+    ["Colômbia", 2.5, 1.5, 2.6, 2.2, 2.3, 2.4, 2.6, 2.8],
+    ["Coreia do Sul", 2.5, 2.2, 1.1, 3.3, 2.8, 2.3, 2.1, 1.9],
+    ["Brasil", 2.3, 3.4, 2.3, 2.2, 1.9, 2.4, 2.5, 2.5],
+    ["Estados Unidos", 2.1, 3, 2.3, 2.3, 2.3, 2.1, 1.9, 1.8],
+    ["Chile", 2.0, 2.8, 2.5, 0.6, 2.6, 2.4, 2.3, 2.3],
+    ["Austrália", 1.9, 1, 2, 1.9, 1.6, 1.8, 2, 2.1],
+    ["Espanha", 1.9, 3.7, 2.6, 2.5, 1.8, 1.8, 1.7, 1.7],
+    ["México", 1.9, 1.5, 0.5, 1.5, 1.8, 2.2, 2.1, 2.1],
+    ["Portugal", 1.8, 2.2, 1.9, 2.1, 1.9, 1.8, 1.7, 1.6],
+    ["Economias avançadas (FMI)", 1.7, 2, 2, 2.1, 1.8, 1.7, 1.6, 1.5],
+    ["Canadá", 1.6, 2, 1.9, 1.1, 1.7, 1.7, 1.7, 1.7],
+    ["África do Sul", 1.5, 0.5, 1.1, 1, 1.3, 1.5, 1.7, 1.8],
+    ["Reino Unido", 1.4, 1.1, 1.2, 1.3, 1.2, 1.6, 1.5, 1.4],
+    ["Alemanha", 1.0, 0, 0.2, 1.3, 1.1, 1.1, 0.9, 0.7],
+    ["Rússia", 1.0, 4.9, 1, 0.9, 0.9, 1, 1, 1],
+    ["França", 0.9, 1.4, 0.9, 0.4, 0.7, 1.2, 1.1, 1.1],
+    ["Itália", 0.7, 0.8, 0.5, 0.8, 0.6, 0.7, 0.6, 0.6],
+    ["Japão", 0.6, 0.1, 1.2, 0.7, 0.7, 0.6, 0.6, 0.6]
+  ]
+}

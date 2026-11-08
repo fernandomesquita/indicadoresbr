@@ -1,0 +1,88 @@
+{
+  "id": "gasto-educacao-paises",
+  "categoria": "mundo",
+  "ordem": 18,
+  "visivel": true,
+  "titulo": "Gasto público com educação: Brasil e outros países",
+  "subtitulo": "Gasto público em educação, em % do PIB, no último ano de cada país",
+  "tipo": "barras",
+  "x": "País",
+  "series": [
+    "Gasto público em educação"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Brasil"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "ultimo": "último ano de cada país",
+  "fonte": {
+    "nome": "Banco Mundial, World Development Indicators",
+    "url": "https://data.worldbank.org/"
+  },
+  "fontes": [
+    {
+      "nome": "Banco Mundial, World Development Indicators, Gasto público em educação (SE.XPD.TOTL.GD.ZS), base de 08/10/2026",
+      "url": "https://api.worldbank.org/v2/country/BRA;ARG;CHL;COL;MEX;PER;USA;CAN;DEU;FRA;GBR;ITA;ESP;PRT;JPN;KOR;CHN;IND;RUS;ZAF;IDN;TUR;AUS;WLD;LCN;OED;UMC/indicator/SE.XPD.TOTL.GD.ZS?format=json&per_page=20000&date=1960:2026",
+      "o_que_sustenta": "Gasto público em educação do Brasil, de 22 países e das médias do mundo, da América Latina e Caribe, da OCDE e dos países de renda média-alta."
+    }
+  ],
+  "como_ler": "Soma o gasto dos governos (federal, estaduais e municipais) com educação, em proporção do PIB, pelos dados da Unesco. A comparação não leva em conta o tamanho da população em idade escolar nem o PIB por pessoa, que mudam muito entre os países. Cada país aparece com o dado mais recente que tem na base; a tabela traz o ano, que varia de país para país.",
+  "contexto": [
+    "O Brasil gastou 5,6% do PIB com educação em 2022, o 3º maior entre os 23 países com dado."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "Anual (Banco Mundial)",
+    "onde_buscar": "https://data.worldbank.org/",
+    "proxima": "Próxima atualização da base do Banco Mundial",
+    "ultima_conferencia": "2026-11-08"
+  },
+  "colunas": [
+    "País",
+    "Gasto público em educação",
+    "Ano do dado"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Brasil",
+      "valor_na_fonte": "Base do Banco Mundial",
+      "fonte": "https://api.worldbank.org/v2/country/BRA;ARG;CHL;COL;MEX;PER;USA;CAN;DEU;FRA;GBR;ITA;ESP;PRT;JPN;KOR;CHN;IND;RUS;ZAF;IDN;TUR;AUS;WLD;LCN;OED;UMC/indicator/SE.XPD.TOTL.GD.ZS?format=json&per_page=20000&date=1960:2026",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["África do Sul", 6.0, 2024],
+    ["Reino Unido", 5.9, 2021],
+    ["Brasil", 5.6, 2022],
+    ["Coreia do Sul", 5.4, 2022],
+    ["Estados Unidos", 5.4, 2021],
+    ["Colômbia", 5.3, 2020],
+    ["França", 5.3, 2022],
+    ["Alemanha", 5.2, 2022],
+    ["OCDE", 5.1, 2022],
+    ["Austrália", 5.1, 2022],
+    ["Argentina", 5.0, 2023],
+    ["Chile", 4.9, 2022],
+    ["Canadá", 4.8, 2022],
+    ["Espanha", 4.6, 2022],
+    ["Portugal", 4.6, 2022],
+    ["Peru", 4.4, 2024],
+    ["Rússia", 4.2, 2023],
+    ["Itália", 4.1, 2022],
+    ["México", 4.1, 2022],
+    ["Índia", 4.1, 2022],
+    ["China", 3.9, 2023],
+    ["América Latina e Caribe", 3.8, 2023],
+    ["Mundo", 3.6, 2023],
+    ["Renda média-alta", 3.6, 2023],
+    ["Japão", 3.3, 2021],
+    ["Turquia", 3.1, 2022],
+    ["Indonésia", 1.3, 2023]
+  ]
+}
