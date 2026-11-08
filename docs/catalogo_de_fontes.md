@@ -1,6 +1,6 @@
 # Catálogo de fontes
 
-Gerado por `scripts/build.py` em 2026-11-02. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
+Gerado por `scripts/build.py` em 2026-11-08. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
 
 ## Economia
 
@@ -56,6 +56,9 @@ Gerado por `scripts/build.py` em 2026-11-02. Não edite à mão: mude o indicado
 | `vendas-combustiveis`: Quanto combustível o país consome | [ANP, vendas de derivados de petróleo e biocombustíveis](https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/vendas-de-derivados-de-petroleo-e-biocombustiveis) | Mensal (ANP) | https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/vendas-de-derivados-de-petroleo-e-biocombustiveis | Outubro de 2026, no fim de novembro | 2026-10-30 |
 | `bens-domicilios`: O que os brasileiros têm em casa | [IBGE, PNAD e PNAD Contínua](https://sidra.ibge.gov.br/tabela/6677) | Anual (PNAD Contínua) | https://sidra.ibge.gov.br/tabela/6677 | 2026, em 2027 | 2026-10-30 |
 | `bens-domicilios-estados`: Bens em casa por estado | [IBGE, PNAD Contínua](https://sidra.ibge.gov.br/tabela/6677) | Anual (PNAD Contínua) | https://sidra.ibge.gov.br/tabela/6677 | 2026, em 2027 | 2026-10-30 |
+| `carne-faixa-renda`: Consumo de carne por faixa de renda | [IBGE, Pesquisa de Orçamentos Familiares (POF)](https://ftp.ibge.gov.br/Orcamentos_Familiares/) | A cada edição da POF | https://ftp.ibge.gov.br/Orcamentos_Familiares/ | Próxima edição da POF | 2026-11-08 |
+| `carne-faixa-renda-2017`: Consumo de carne em cada faixa de renda em 2017-2018 | [IBGE, POF 2017-2018](https://biblioteca.ibge.gov.br/visualizacao/livros/liv101704.pdf) | A cada edição da POF | https://ftp.ibge.gov.br/Orcamentos_Familiares/ | Próxima edição da POF | 2026-11-08 |
+| `carne-consumo-pessoal-renda`: Quanta carne cada faixa de renda come por dia | [IBGE, POF 2017-2018: análise do consumo alimentar pessoal](https://biblioteca.ibge.gov.br/visualizacao/livros/liv101742.pdf) | A cada edição da POF | https://biblioteca.ibge.gov.br/visualizacao/livros/liv101742.pdf | Próxima edição da POF | 2026-11-08 |
 
 ## Políticas públicas
 

@@ -142,3 +142,10 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **Lula 2, 11 a 13/08/2009**: tabela de 2025/08 repete os números de maio de 2009; o site usa 67/25/8/1, das outras fontes.
 - **Sarney**: seis rodadas em dez capitais, fora da série nacional.
 - **Segunda fonte**: CNI-Ibope até dez/2020 (correlação 0,986 com o Datafolha); Quaest não coletada.
+
+## Carne por faixa de renda (coleta de 08/11/2026)
+
+- **POF 2017-2018 por classe**: o PDF (liv101704) só imprime o total; as classes vêm da planilha do FTP, conferidas pela coluna Total e pela tabela por região. Sem tabela no Sidra para 2017-2018.
+- **POF 1995-1996**: 11 áreas urbanas; PDF digitalizado, valores transcritos da imagem (4 divergências do OCR resolvidas a 300 dpi). A faixa "mais de 15 SM" é cálculo próprio (três faixas ponderadas pela população).
+- **ENDEF 1974-1975 e POF 1987-1988**: sem recorte de renda nos volumes consultados.
+- **Quintis**: o IBGE não publica aquisição de alimentos por quintil; exigiria microdados.
