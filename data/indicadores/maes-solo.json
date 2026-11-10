@@ -1,0 +1,84 @@
+{
+  "id": "maes-solo",
+  "categoria": "populacao-trabalho",
+  "ordem": 40,
+  "visivel": true,
+  "titulo": "Mães solo no Brasil",
+  "subtitulo": "Domicílios chefiados por mulher sem cônjuge com filhos de até 14 anos, em milhões, de 2012 a 2024",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Mães solo",
+    "Pais solo"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": " mi",
+  "casas": 2,
+  "escolha": true,
+  "fonte": {
+    "nome": "IBGE, Síntese de Indicadores Sociais 2025",
+    "url": "https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2025/Tabelas/xls/2_Distribuicao_Renda_xls.zip"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Síntese de Indicadores Sociais 2025 (PNAD Contínua), tabelas 2.17 e 2.27",
+      "url": "https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2025/Tabelas/xls/2_Distribuicao_Renda_xls.zip",
+      "o_que_sustenta": "Domicílios de mulher sem cônjuge com filhos de até 14 anos, por cor ou raça, e pobreza dos moradores por tipo de domicílio, de 2012 a 2024."
+    }
+  ],
+  "como_ler": "Cada ponto é o número de domicílios em que a pessoa responsável é uma mulher que vive sem cônjuge e com pelo menos um filho de até 14 anos, pela PNAD Contínua. Ficam de fora as mães sozinhas com filhos de 15 anos ou mais e as que moram na casa de outra pessoa (com os pais, por exemplo); com filhos de qualquer idade, os Censos contam cerca de 7,8 milhões de famílias (veja o indicador Famílias de mães solo ao longo do tempo). Use os botões para ver as mães solo pretas ou pardas, as brancas (as demais cores não são publicadas), os pais solo na mesma situação e a parte do total de domicílios. De 2022 para 2023 a série dá um salto (de 5,74% para 6,44% dos domicílios) que aparece nas duas últimas edições da publicação do IBGE. As faixas de governo localizam os anos e não atribuem causa.",
+  "contexto": [
+    "Em 2024, 4,95 milhões de domicílios eram chefiados por mães solo com filhos de até 14 anos, 6,4% do total, contra 3,34 milhões (5,5%) em 2012.",
+    "As mães solo pretas ou pardas eram 3,40 milhões em 2024, 68,6% do total de mães solo; em 2012, eram 61,2%.",
+    "Os pais solo com filhos de até 14 anos eram 540 mil domicílios em 2024."
+  ],
+  "glossario": [
+    {
+      "termo": "Mãe solo",
+      "definicao": "Mãe que cria os filhos sem cônjuge ou companheiro morando junto, seja solteira, separada, divorciada ou viúva."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (Síntese de Indicadores Sociais, em novembro ou dezembro)",
+    "onde_buscar": "https://www.ibge.gov.br/estatisticas/sociais/trabalho/9221-sintese-de-indicadores-sociais.html",
+    "proxima": "Síntese de Indicadores Sociais 2026",
+    "ultima_conferencia": "2026-11-10"
+  },
+  "colunas": [
+    "Ano",
+    "Mães solo",
+    "Mães solo pretas ou pardas",
+    "Mães solo brancas",
+    "Pais solo",
+    "Mães solo (% dos domicílios)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "2023: 6,44% dos domicílios",
+      "valor_na_fonte": "Síntese de Indicadores Sociais 2024 e 2025: 6,44% (o número absoluto da edição de 2025 é menor por reponderação; o site usa a de 2025)",
+      "fonte": "https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2025/Tabelas/xls/2_Distribuicao_Renda_xls.zip",
+      "ok": true
+    }
+  ],
+  "ymin": 0,
+  "linhas": [
+    [2012, 3.34, 2.04, 1.27, 0.38, 5.45],
+    [2013, 3.42, 2.11, 1.29, 0.35, 5.45],
+    [2014, 3.53, 2.16, 1.35, 0.37, 5.49],
+    [2015, 3.45, 2.18, 1.25, 0.36, 5.26],
+    [2016, 3.53, 2.22, 1.28, 0.38, 5.29],
+    [2017, 3.48, 2.26, 1.19, 0.37, 5.17],
+    [2018, 3.63, 2.39, 1.19, 0.42, 5.28],
+    [2019, 3.77, 2.49, 1.23, 0.4, 5.4],
+    [2020, 3.94, 2.6, 1.32, 0.38, 5.58],
+    [2021, 4.22, 2.77, 1.41, 0.43, 5.94],
+    [2022, 4.21, 2.76, 1.41, 0.5, 5.74],
+    [2023, 4.9, 3.39, 1.45, 0.53, 6.44],
+    [2024, 4.95, 3.4, 1.49, 0.54, 6.4]
+  ]
+}

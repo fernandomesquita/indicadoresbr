@@ -164,3 +164,11 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 - **Natalidade, fecundidade e expectativa de vida**: Banco Mundial = ONU (WPP 2024); diferem das projeções do IBGE (2024: natalidade 11,7 contra 12,1; fecundidade 1,55 contra 1,61; expectativa 76,6 contra 76,0).
 - **Não publicados**: juros reais (FR.INR.RINR: taxa de empréstimo bancário menos deflator, cobertura irregular, não serve como ranking) e receita tributária do governo central (GC.TAX.TOTL.GD.ZS: só governo central; 15,4% do PIB para o Brasil contra 32,2% de carga total).
 - **Trabalho escravo (Radar SIT)**: ainda fora do ar em 08/11/2026.
+
+## Mães solo (populacao-trabalho, ordens 40 a 44), conferido em 10/11/2026
+
+- **Definições diferentes, números diferentes.** PNAD Contínua (SIS 2025, tab. 2.27): responsável sem cônjuge com filhos de até 14 anos, 4,95 mi de domicílios em 2024. Censo 2022 (famílias, tab. Sidra 10176 e apresentação de 05/11/2025): 13,5% das famílias, cerca de 7,8 mi, filhos de qualquer idade e sem outros parentes. Censo 2022 (domicílios, Sidra 9882): 10,3 mi, filhos ou enteados de qualquer idade, com qualquer outro morador. PNAD anual (SIS 2016): arranjos com ou sem parentes, 2004 a 2015.
+- **Salto 2022 para 2023** na PNAD Contínua (5,74% para 6,44%) aparece nas edições de 2024 e 2025 da SIS. Não explicado pelo IBGE; nenhuma causa atribuída.
+- **Transcritos de gráfico:** Censo 2000 (11,6%) e 2022 (13,5%) das famílias; % dos domicílios chefiados por mulher por UF.
+- **Arpen 2017:** 94.230 registros sem pai (3,33%), muito abaixo dos vizinhos; retirado do gráfico.
+- **Não coletado:** CadÚnico (VIS DATA e CECAD redirecionam para login), Censo 2022 por cor, idade e escolaridade da mãe (tabelas Sidra 10176, 10177 e 9879 exigem códigos de classificação), Censo 1991, estimativas FGV IBRE.

@@ -1,6 +1,6 @@
 # Catálogo de fontes
 
-Gerado por `scripts/build.py` em 2026-11-08. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
+Gerado por `scripts/build.py` em 2026-11-09. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
 
 ## Economia
 
@@ -224,6 +224,11 @@ Gerado por `scripts/build.py` em 2026-11-08. Não edite à mão: mude o indicado
 | `gasto-beneficios-acidentarios`: Quanto o INSS paga em benefícios por acidente de trabalho | [Ministério da Previdência Social, AEPS e Suplemento Histórico](https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social) | Anual (AEPS) | https://www.gov.br/previdencia/pt-br/assuntos/previdencia-social/Dados-estatisticos-previdencia-social-e-inss/anuarios-da-previdencia-social | AEPS 2026 | 2026-11-01 |
 | `doencas-trabalho-notificadas`: Doenças do trabalho notificadas ao SUS | [Ministério da Saúde, Sinan](http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/lerdorbr.def) | Contínua (Sinan); anos recentes sujeitos a revisão | http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/lerdorbr.def | Fechamento de 2026 | 2026-11-01 |
 | `mortes-trabalho-sus`: Mortes no trabalho nas declarações de óbito | [Ministério da Saúde, SIM](http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/ext10uf.def) | Anual (SIM); dado final cerca de um ano e meio depois | http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/ext10uf.def | Dados finais de 2025 | 2026-11-01 |
+| `maes-solo`: Mães solo no Brasil | [IBGE, Síntese de Indicadores Sociais 2025](https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2025/Tabelas/xls/2_Distribuicao_Renda_xls.zip) | Anual (Síntese de Indicadores Sociais, em novembro ou dezembro) | https://www.ibge.gov.br/estatisticas/sociais/trabalho/9221-sintese-de-indicadores-sociais.html | Síntese de Indicadores Sociais 2026 | 2026-11-10 |
+| `maes-solo-familias`: Famílias de mães solo ao longo do tempo | [IBGE, Censos Demográficos e Síntese de Indicadores Sociais](https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/ceae9194efd93875393399287b9d34f6.pdf) | A cada Censo | https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html | Próximo Censo | 2026-11-10 |
+| `maes-solo-estados`: Mães solo em cada estado | [IBGE, Censo 2022](https://sidra.ibge.gov.br/tabela/9882) | A cada Censo | https://sidra.ibge.gov.br/tabela/9882 | Próximo Censo | 2026-11-10 |
+| `maes-solo-pobreza`: Pobreza nas famílias de mães solo | [IBGE, Síntese de Indicadores Sociais 2025](https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2025/Tabelas/xls/2_Distribuicao_Renda_xls.zip) | Anual (Síntese de Indicadores Sociais) | https://www.ibge.gov.br/estatisticas/sociais/trabalho/9221-sintese-de-indicadores-sociais.html | Síntese de Indicadores Sociais 2026 | 2026-11-10 |
+| `registros-sem-nome-do-pai`: Bebês registrados sem o nome do pai | [Arpen Brasil, Portal da Transparência do Registro Civil](https://transparencia.registrocivil.org.br/painel-registral/pais-ausentes) | Contínua (portal dos cartórios) | https://transparencia.registrocivil.org.br/painel-registral/pais-ausentes | Atualização contínua | 2026-11-10 |
 
 ## Meio ambiente
 
