@@ -226,6 +226,43 @@ function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   }
 }
 
+// barras agrupadas: cada categoria (linha da tabela) ganha uma barra por série, com legenda no topo
+const BAR_SUB = 13, BAR_GAP = 18, BAR_LEG = 22;
+function drawBarsGrupo(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
+  const rows = ind.linhas.filter(r => ys.some(k => isNum(r[k]))), n = rows.length, k = ys.length;
+  if (!n) return;
+  const vals = rows.flatMap(r => ys.map(c => isNum(r[c]) ? r[c] : 0)), lo = Math.min(0, ...vals), hi = Math.max(0, ...vals) || 1;
+  setFont(ctx, 500, 11.5 * s, F.body);
+  const leg = legendRows(ctx, ys.map(c => ind.colunas[c]), b.w, 15 * s, 19 * s), legH = leg.length * 18 * s + 6 * s;
+  ctx.textBaseline = "middle"; ctx.textAlign = "left";
+  leg.forEach((linha, r) => linha.forEach(({ nome, j, x, max }) => {
+    const ly = b.y + (8 + r * 18) * s; ctx.fillStyle = th.series[j % 5]; ctx.fillRect(b.x + x, ly - 5 * s, 10 * s, 10 * s);
+    ctx.fillStyle = th.ink; ctx.fillText(fit(ctx, nome, max), b.x + x + 15 * s, ly);
+  }));
+  setFont(ctx, 500, 13 * s, F.body);
+  const labW = Math.min(Math.max(...rows.map(r => ctx.measureText(String(r[xi])).width)) + 14 * s, b.w * .4);
+  setFont(ctx, 500, 11 * s, F.mono);
+  const valW = Math.max(...vals.map(v => ctx.measureText(fmtV(v, ind)).width)) + 10 * s;
+  const plot = { x: b.x + labW, y: b.y + legH, w: b.w - labW - valW, h: b.h - legH };
+  const X = v => plot.x + (v - lo) / (hi - lo) * plot.w;
+  const rh = plot.h / n, sub = Math.min((rh - BAR_GAP * s * .6) / k, BAR_SUB * s * 1.4), bh = sub * .82;
+  rows.forEach((r, i) => {
+    const e = ease(t * 1.5 - (i / n) * .5), top = plot.y + i * rh + (rh - sub * k) / 2, cy = top + sub * k / 2;
+    setFont(ctx, 500, 13 * s, F.body); ctx.fillStyle = th.ink; ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    ctx.fillText(fit(ctx, String(r[xi]), labW - 12 * s), b.x, cy);
+    if (hover != null && hover !== i) ctx.globalAlpha = .55;
+    ys.forEach((c, j) => {
+      if (!isNum(r[c])) return;
+      const y = top + j * sub, x0 = X(0), x1 = X(r[c] * e);
+      ctx.fillStyle = th.series[j % 5]; ctx.fillRect(Math.min(x0, x1), y, Math.max(1, Math.abs(x1 - x0)), bh);
+      if (e > .3) { setFont(ctx, 500, 11 * s, F.mono); ctx.fillStyle = th.ink; ctx.textAlign = "left"; ctx.fillText(fmtV(r[c], ind), Math.max(x0, x1) + 6 * s, y + bh / 2); }
+    });
+    ctx.globalAlpha = 1;
+    hits.push({ kind: "rect", x: b.x, y: plot.y + i * rh, w: b.w, h: rh, cx: X(Math.max(...ys.map(c => isNum(r[c]) ? r[c] : 0))), cy: top, i, title: String(r[xi]), lines: ys.filter(c => isNum(r[c])).map(c => [ind.colunas[c], fmtV(r[c], ind)]) });
+  });
+  ctx.textBaseline = "alphabetic";
+}
+
 // legenda que quebra em linhas quando não cabe na largura disponível
 function legendRows(ctx, nomes, maxW, sw, gap) {
   const linhas = [[]]; let x = 0;
@@ -239,6 +276,7 @@ function legendRows(ctx, nomes, maxW, sw, gap) {
 }
 
 function drawBars(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
+  if (ys.length > 1) return drawBarsGrupo(ctx, ind, b, th, s, t, hits, hover, xi, ys);
   const yi = ys[0], rows = ind.linhas.filter(r => isNum(r[yi])), n = rows.length;
   if (!n) return;
   const vals = rows.map(r => r[yi]), lo = Math.min(0, ...vals), hi = Math.max(0, ...vals) || 1;
@@ -626,6 +664,7 @@ function drawMap(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
 /* ------------------------------------------------------------ gráfico na tela */
 const CHARTS = new Set();
 export function heightFor(ind, w, big) {
+  if (ind.tipo === "barras" && (ind.series || []).length > 1) { const n = ind.linhas.length, k = ind.series.length; return Math.round(n * (k * BAR_SUB * 1.4 + BAR_GAP) + BAR_LEG * (w < 500 ? 2.6 : 1.6)); }
   if (ind.tipo === "barras") { const n = ind.linhas.length; return Math.max(160, n * (w < 500 ? 30 : big ? 36 : 32) + 8); }
   if (ind.tipo === "mapa") return Math.round(Math.max(300, Math.min(big ? 600 : 420, w * MAPA_BR.h / MAPA_BR.w + 34)));
   return Math.round(Math.max(250, Math.min(big ? 460 : 390, w * (big ? .5 : .56))));

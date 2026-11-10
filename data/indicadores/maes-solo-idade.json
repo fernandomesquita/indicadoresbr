@@ -1,0 +1,74 @@
+{
+  "id": "maes-solo-idade",
+  "categoria": "populacao-trabalho",
+  "ordem": 44,
+  "visivel": true,
+  "titulo": "Idade das mães solo",
+  "subtitulo": "Famílias de mães solo, de casais com filhos e todas as famílias, pela idade da pessoa responsável, em %, no Censo 2022",
+  "tipo": "barras",
+  "x": "Grupo",
+  "series": [
+    "Mães solo",
+    "Casais com filhos",
+    "Todas as famílias"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "ultimo": "2022",
+  "fonte": {
+    "nome": "IBGE, Censo 2022, microdados da amostra",
+    "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Censo 2022, microdados da amostra (acesso público), registro de famílias",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/",
+      "o_que_sustenta": "Tipo de família, sexo, idade, cor ou raça e nível de instrução da pessoa responsável e rendimento familiar por pessoa de cada família da amostra, com o peso amostral (cálculo deste site)."
+    },
+    {
+      "nome": "IBGE, Sidra, tabelas 10176 e 10182 (Censo 2022)",
+      "url": "https://sidra.ibge.gov.br/tabela/10176",
+      "o_que_sustenta": "Totais publicados de famílias por sexo e cor ou raça da pessoa responsável, usados para conferir os microdados."
+    }
+  ],
+  "como_ler": "Cada barra é a parte das famílias de cada tipo em que a pessoa responsável está em cada faixa de idade; em cada tipo, as barras somam 100%. Como os filhos contam em qualquer idade, entram também mães mais velhas que moram com filhos adultos. As mães solo, aqui, são as famílias formadas por mulher sem cônjuge com filhos de qualquer idade, morando ou não com outros parentes, nas famílias únicas ou principais de cada domicílio. As contas são deste site, com os microdados da amostra do Censo 2022 que o IBGE abriu ao público em setembro de 2026; os totais dos microdados ficam cerca de 0,5% acima dos publicados pelo IBGE, por causa do controle de sigilo da versão pública, e por isso o indicador mostra só percentuais. A tabela traz também os pais solo.",
+  "contexto": [
+    "No Censo 2022, 27,7% das mães solo tinham 60 anos ou mais, e 8,7% tinham até 29 anos.",
+    "Entre os responsáveis por famílias de casal com filhos, 11,3% tinham 60 anos ou mais."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "A cada Censo",
+    "onde_buscar": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/",
+    "proxima": "Próximo Censo",
+    "ultima_conferencia": "2026-11-10"
+  },
+  "colunas": [
+    "Grupo",
+    "Mães solo",
+    "Casais com filhos",
+    "Todas as famílias",
+    "Pais solo"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Famílias com mulher responsável, por cor ou raça",
+      "valor_na_fonte": "Microdados: 11,51 mi brancas, 3,55 mi pretas, 13,25 mi pardas; Sidra 10176: 11,50 mi, 3,53 mi e 13,16 mi",
+      "fonte": "https://sidra.ibge.gov.br/tabela/10176",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Até 29 anos", 8.7, 12.6, 13.1, 2.6],
+    ["30 a 39 anos", 19.3, 29.1, 21.4, 11.1],
+    ["40 a 49 anos", 24.6, 29.6, 22.7, 23.0],
+    ["50 a 59 anos", 19.7, 17.4, 18.8, 24.7],
+    ["60 anos ou mais", 27.7, 11.3, 24.0, 38.5]
+  ]
+}

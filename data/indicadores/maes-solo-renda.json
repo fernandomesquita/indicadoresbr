@@ -1,0 +1,83 @@
+{
+  "id": "maes-solo-renda",
+  "categoria": "populacao-trabalho",
+  "ordem": 46,
+  "visivel": true,
+  "titulo": "Renda das famílias de mães solo",
+  "subtitulo": "Famílias com renda de até meio salário mínimo por pessoa, em %, por tipo de família, no Censo 2022",
+  "tipo": "barras",
+  "x": "Tipo de família",
+  "series": [
+    "Até meio salário mínimo por pessoa (%)"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [
+    "Todas as mães solo",
+    "Todas as famílias"
+  ],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "ultimo": "2022",
+  "fonte": {
+    "nome": "IBGE, Censo 2022, microdados da amostra",
+    "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Censo 2022, microdados da amostra (acesso público), registro de famílias",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/",
+      "o_que_sustenta": "Tipo de família, sexo, idade, cor ou raça e nível de instrução da pessoa responsável e rendimento familiar por pessoa de cada família da amostra, com o peso amostral (cálculo deste site)."
+    },
+    {
+      "nome": "IBGE, Sidra, tabelas 10176 e 10182 (Censo 2022)",
+      "url": "https://sidra.ibge.gov.br/tabela/10176",
+      "o_que_sustenta": "Totais publicados de famílias por sexo e cor ou raça da pessoa responsável, usados para conferir os microdados."
+    }
+  ],
+  "como_ler": "Cada barra é a parte das famílias de cada tipo em que a renda mensal da família, dividida pelo número de pessoas, era de até R$ 606, meio salário mínimo de julho de 2022, mês de referência do Censo. A renda soma o que os integrantes da família recebem de todas as fontes, como trabalho, aposentadorias, pensões, aluguéis e programas sociais. A tabela traz também a parte com até um quarto de salário mínimo (R$ 303) e a renda mediana por pessoa, o valor que divide as famílias de cada tipo em duas metades. A cor é a da mãe. As mães solo, aqui, são as famílias formadas por mulher sem cônjuge com filhos de qualquer idade, morando ou não com outros parentes, nas famílias únicas ou principais de cada domicílio. As contas são deste site, com os microdados da amostra do Censo 2022 que o IBGE abriu ao público em setembro de 2026; os totais dos microdados ficam cerca de 0,5% acima dos publicados pelo IBGE, por causa do controle de sigilo da versão pública, e por isso o indicador mostra só percentuais. ",
+  "contexto": [
+    "No Censo 2022, 41,8% das famílias de mães solo viviam com até meio salário mínimo por pessoa, contra 31,6% das de casal com filhos e 28,7% do total de famílias.",
+    "Entre as mães solo pardas, eram 49,3%; entre as pretas, 48,3%; e entre as brancas, 30,4%.",
+    "A renda mediana por pessoa era de R$ 800 nas famílias de mães solo e de R$ 1.100 no total de famílias."
+  ],
+  "glossario": [
+    {
+      "termo": "Mediana",
+      "definicao": "Valor do meio: metade das famílias tem renda por pessoa abaixo dele e metade acima."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "A cada Censo",
+    "onde_buscar": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/",
+    "proxima": "Próximo Censo",
+    "ultima_conferencia": "2026-11-10"
+  },
+  "colunas": [
+    "Tipo de família",
+    "Até meio salário mínimo por pessoa (%)",
+    "Até um quarto de salário mínimo por pessoa (%)",
+    "Renda mediana por pessoa (R$)"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Famílias por tipo",
+      "valor_na_fonte": "Microdados: 13,7% de famílias de mãe sem cônjuge com filhos e sem parentes; apresentação do IBGE de 05/11/2025: 13,5%",
+      "fonte": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/ceae9194efd93875393399287b9d34f6.pdf",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Mães solo pretas", 48.3, 22.9, 650],
+    ["Mães solo pardas", 49.3, 24.4, 625],
+    ["Mães solo brancas", 30.4, 13.4, 1053],
+    ["Todas as mães solo", 41.8, 19.9, 800],
+    ["Pais solo", 28.7, 11.0, 1071],
+    ["Casais com filhos", 31.6, 12.3, 950],
+    ["Casais sem filhos", 16.9, 6.7, 1406],
+    ["Todas as famílias", 28.7, 11.7, 1100]
+  ]
+}

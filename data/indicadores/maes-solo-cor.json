@@ -1,0 +1,74 @@
+{
+  "id": "maes-solo-cor",
+  "categoria": "populacao-trabalho",
+  "ordem": 43,
+  "visivel": true,
+  "titulo": "Cor ou raça das mães solo",
+  "subtitulo": "Famílias de mães solo, de casais com filhos e todas as famílias, pela cor ou raça da pessoa responsável, em %, no Censo 2022",
+  "tipo": "barras",
+  "x": "Grupo",
+  "series": [
+    "Mães solo",
+    "Casais com filhos",
+    "Todas as famílias"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "ultimo": "2022",
+  "fonte": {
+    "nome": "IBGE, Censo 2022, microdados da amostra",
+    "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/"
+  },
+  "fontes": [
+    {
+      "nome": "IBGE, Censo 2022, microdados da amostra (acesso público), registro de famílias",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/",
+      "o_que_sustenta": "Tipo de família, sexo, idade, cor ou raça e nível de instrução da pessoa responsável e rendimento familiar por pessoa de cada família da amostra, com o peso amostral (cálculo deste site)."
+    },
+    {
+      "nome": "IBGE, Sidra, tabelas 10176 e 10182 (Censo 2022)",
+      "url": "https://sidra.ibge.gov.br/tabela/10176",
+      "o_que_sustenta": "Totais publicados de famílias por sexo e cor ou raça da pessoa responsável, usados para conferir os microdados."
+    }
+  ],
+  "como_ler": "Cada barra é a parte das famílias de cada tipo em que a pessoa responsável se declarou de cada cor ou raça; em cada tipo, as barras somam 100%. As mães solo, aqui, são as famílias formadas por mulher sem cônjuge com filhos de qualquer idade, morando ou não com outros parentes, nas famílias únicas ou principais de cada domicílio. As contas são deste site, com os microdados da amostra do Censo 2022 que o IBGE abriu ao público em setembro de 2026; os totais dos microdados ficam cerca de 0,5% acima dos publicados pelo IBGE, por causa do controle de sigilo da versão pública, e por isso o indicador mostra só percentuais. A tabela traz também os pais solo.",
+  "contexto": [
+    "No Censo 2022, 60,5% das mães solo eram pretas ou pardas (13,7% pretas e 46,7% pardas), contra 57,9% dos responsáveis por famílias de casal com filhos e 56,4% do total de famílias.",
+    "As brancas eram 38,7% das mães solo."
+  ],
+  "glossario": [],
+  "atualizacao": {
+    "periodicidade": "A cada Censo",
+    "onde_buscar": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/",
+    "proxima": "Próximo Censo",
+    "ultima_conferencia": "2026-11-10"
+  },
+  "colunas": [
+    "Grupo",
+    "Mães solo",
+    "Casais com filhos",
+    "Todas as famílias",
+    "Pais solo"
+  ],
+  "checagem": [
+    {
+      "valor_no_portal": "Famílias com mulher responsável, por cor ou raça",
+      "valor_na_fonte": "Microdados: 11,51 mi brancas, 3,55 mi pretas, 13,25 mi pardas; Sidra 10176: 11,50 mi, 3,53 mi e 13,16 mi",
+      "fonte": "https://sidra.ibge.gov.br/tabela/10176",
+      "ok": true
+    }
+  ],
+  "linhas": [
+    ["Preta", 13.7, 11.5, 11.8, 13.9],
+    ["Parda", 46.7, 46.4, 44.6, 45.4],
+    ["Branca", 38.7, 41.0, 42.6, 39.7],
+    ["Amarela", 0.4, 0.4, 0.5, 0.5],
+    ["Indígena", 0.5, 0.6, 0.5, 0.5]
+  ]
+}

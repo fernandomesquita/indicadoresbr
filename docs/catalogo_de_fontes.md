@@ -1,6 +1,6 @@
 # Catálogo de fontes
 
-Gerado por `scripts/build.py` em 2026-11-09. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
+Gerado por `scripts/build.py` em 2026-11-10. Não edite à mão: mude o indicador em `data/indicadores/` e rode o build.
 
 ## Economia
 
@@ -227,6 +227,10 @@ Gerado por `scripts/build.py` em 2026-11-09. Não edite à mão: mude o indicado
 | `maes-solo`: Mães solo no Brasil | [IBGE, Síntese de Indicadores Sociais 2025](https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2025/Tabelas/xls/2_Distribuicao_Renda_xls.zip) | Anual (Síntese de Indicadores Sociais, em novembro ou dezembro) | https://www.ibge.gov.br/estatisticas/sociais/trabalho/9221-sintese-de-indicadores-sociais.html | Síntese de Indicadores Sociais 2026 | 2026-11-10 |
 | `maes-solo-familias`: Famílias de mães solo ao longo do tempo | [IBGE, Censos Demográficos e Síntese de Indicadores Sociais](https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/ceae9194efd93875393399287b9d34f6.pdf) | A cada Censo | https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html | Próximo Censo | 2026-11-10 |
 | `maes-solo-estados`: Mães solo em cada estado | [IBGE, Censo 2022](https://sidra.ibge.gov.br/tabela/9882) | A cada Censo | https://sidra.ibge.gov.br/tabela/9882 | Próximo Censo | 2026-11-10 |
+| `maes-solo-cor`: Cor ou raça das mães solo | [IBGE, Censo 2022, microdados da amostra](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/) | A cada Censo | https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/ | Próximo Censo | 2026-11-10 |
+| `maes-solo-idade`: Idade das mães solo | [IBGE, Censo 2022, microdados da amostra](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/) | A cada Censo | https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/ | Próximo Censo | 2026-11-10 |
+| `maes-solo-escolaridade`: Escolaridade das mães solo | [IBGE, Censo 2022, microdados da amostra](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/) | A cada Censo | https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/ | Próximo Censo | 2026-11-10 |
+| `maes-solo-renda`: Renda das famílias de mães solo | [IBGE, Censo 2022, microdados da amostra](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/) | A cada Censo | https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/ | Próximo Censo | 2026-11-10 |
 | `maes-solo-pobreza`: Pobreza nas famílias de mães solo | [IBGE, Síntese de Indicadores Sociais 2025](https://ftp.ibge.gov.br/Indicadores_Sociais/Sintese_de_Indicadores_Sociais/Sintese_de_Indicadores_Sociais_2025/Tabelas/xls/2_Distribuicao_Renda_xls.zip) | Anual (Síntese de Indicadores Sociais) | https://www.ibge.gov.br/estatisticas/sociais/trabalho/9221-sintese-de-indicadores-sociais.html | Síntese de Indicadores Sociais 2026 | 2026-11-10 |
 | `registros-sem-nome-do-pai`: Bebês registrados sem o nome do pai | [Arpen Brasil, Portal da Transparência do Registro Civil](https://transparencia.registrocivil.org.br/painel-registral/pais-ausentes) | Contínua (portal dos cartórios) | https://transparencia.registrocivil.org.br/painel-registral/pais-ausentes | Atualização contínua | 2026-11-10 |
 
