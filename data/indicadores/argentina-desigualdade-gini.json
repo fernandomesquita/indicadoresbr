@@ -1,0 +1,212 @@
+{
+  "id": "argentina-desigualdade-gini",
+  "categoria": "argentina",
+  "ordem": 11,
+  "visivel": true,
+  "titulo": "Desigualdade de renda na Argentina",
+  "subtitulo": "Índice de Gini da renda familiar per capita, de 0 (todos iguais) a 1 (um só tem tudo), de 1996 a 2025",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Gini"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 3,
+  "governos": "argentina",
+  "fonte": {
+    "nome": "INDEC, série do coeficiente de Gini (EPH)",
+    "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/serie_coeficiente_gini.xlsx"
+  },
+  "fontes": [
+    {
+      "nome": "INDEC, Coeficiente de Gini da renda per capita familiar das pessoas, total de aglomerados urbanos, 1996 a 2026 (serie_coeficiente_gini.xlsx)",
+      "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/serie_coeficiente_gini.xlsx",
+      "o_que_sustenta": "Gini de outubro de 1996 a 2002 e de cada trimestre do 3º de 2003 ao 2º de 2026."
+    },
+    {
+      "nome": "INDEC, Evolução da distribuição da renda, 2º trimestre de 2026 (informe técnico)",
+      "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ingresos2trim26B36ABAB2C6.pdf",
+      "o_que_sustenta": "Gini do 2º trimestre de 2026 (0,428, provisório)."
+    },
+    {
+      "nome": "Banco Mundial, World Development Indicators, Índice de Gini (SI.POV.GINI)",
+      "url": "https://api.worldbank.org/v2/country/BRA;ARG/indicator/SI.POV.GINI?format=json&per_page=200&date=2015:2026",
+      "o_que_sustenta": "Gini de 2024 da Argentina (42,4) e do Brasil (50,3), usado na comparação."
+    },
+    {
+      "nome": "INDEC, aviso sobre as séries de 2007 a 2015 (nota da série do coeficiente de Gini, EPH)",
+      "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/serie_coeficiente_gini.xlsx",
+      "o_que_sustenta": "O INDEC adverte que as séries publicadas de janeiro de 2007 a dezembro de 2015 devem ser consideradas com reservas, salvo as revisadas em 2016, e cita os decretos 181/15 e 55/16."
+    }
+  ],
+  "como_ler": "A linha mostra o índice de Gini da renda por pessoa, de 1996 a 2025: quanto mais perto de 1, mais desigual. De 1996 a 2002, o valor é o da pesquisa de outubro; desde 2003, é a média dos trimestres disponíveis no ano (cálculo deste site); em 2003 só há o 3º e o 4º trimestres, em 2007 só o 4º, em 2015 o 1º e o 2º, e em 2016 do 2º ao 4º. O INDEC pede reservas com os dados de 2007 a 2015. A pesquisa cobre os grandes aglomerados urbanos. As faixas mostram os presidentes e não atribuem causa.",
+  "contexto": [
+    "O índice de Gini resume a distribuição da renda em um número: 0 se todos tivessem a mesma renda, 1 se uma pessoa concentrasse tudo. O INDEC calcula sobre a renda per capita familiar das pessoas, a mesma usada para medir pobreza.",
+    "A desigualdade subiu nos anos 1990 até 0,522 em 2001 e 0,523 em 2003, depois da crise, caiu com a recuperação do emprego até perto de 0,42 em 2012 a 2015 e oscilou entre 0,42 e 0,45 desde 2016. Em 2024, a média anual foi de 0,442, com pico de 0,467 no 1º trimestre, logo depois da desvalorização; em 2025, ficou em 0,429. No 2º trimestre de 2026, o índice provisório foi de 0,428.",
+    "Na comparação do Banco Mundial, que usa um método próprio e escala de 0 a 100, o Gini de 2024 foi de 42,4 na Argentina e de 50,3 no Brasil. O número do Banco Mundial para a Argentina, como o do INDEC, cobre só as cidades."
+  ],
+  "glossario": [
+    {
+      "termo": "Índice de Gini",
+      "definicao": "Medida de concentração de renda entre 0 (igualdade total) e 1 (concentração total)."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Trimestral (INDEC), com o informe de distribuição da renda.",
+    "onde_buscar": "https://www.indec.gob.ar/ftp/cuadros/sociedad/serie_coeficiente_gini.xlsx",
+    "proxima": "3º trimestre de 2026, em dezembro de 2026; o ano de 2026 entra em março de 2027 (estimativa).",
+    "ultima_conferencia": "2026-11-20"
+  },
+  "checagem": [
+    {
+      "valor_no_portal": "2001: 0,522",
+      "valor_na_fonte": "0,522 (outubro)",
+      "fonte": "INDEC, serie_coeficiente_gini.xlsx",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2024: 0,442",
+      "valor_na_fonte": "média de 0,467, 0,436, 0,435 e 0,430",
+      "fonte": "INDEC e cálculo deste site",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2025: 0,429",
+      "valor_na_fonte": "média de 0,435, 0,424, 0,431 e 0,427",
+      "fonte": "INDEC e cálculo deste site",
+      "ok": true
+    }
+  ],
+  "colunas": [
+    "Ano",
+    "Gini"
+  ],
+  "linhas": [
+    [
+      1996,
+      0.485
+    ],
+    [
+      1997,
+      0.489
+    ],
+    [
+      1998,
+      0.497
+    ],
+    [
+      1999,
+      0.491
+    ],
+    [
+      2000,
+      0.51
+    ],
+    [
+      2001,
+      0.522
+    ],
+    [
+      2002,
+      0.518
+    ],
+    [
+      2003,
+      0.523
+    ],
+    [
+      2004,
+      0.506
+    ],
+    [
+      2005,
+      0.496
+    ],
+    [
+      2006,
+      0.488
+    ],
+    [
+      2007,
+      0.472
+    ],
+    [
+      2008,
+      0.458
+    ],
+    [
+      2009,
+      0.454
+    ],
+    [
+      2010,
+      0.444
+    ],
+    [
+      2011,
+      0.433
+    ],
+    [
+      2012,
+      0.424
+    ],
+    [
+      2013,
+      0.421
+    ],
+    [
+      2014,
+      0.423
+    ],
+    [
+      2015,
+      0.415
+    ],
+    [
+      2016,
+      0.436
+    ],
+    [
+      2017,
+      0.427
+    ],
+    [
+      2018,
+      0.43
+    ],
+    [
+      2019,
+      0.442
+    ],
+    [
+      2020,
+      0.443
+    ],
+    [
+      2021,
+      0.433
+    ],
+    [
+      2022,
+      0.42
+    ],
+    [
+      2023,
+      0.433
+    ],
+    [
+      2024,
+      0.442
+    ],
+    [
+      2025,
+      0.429
+    ]
+  ]
+}

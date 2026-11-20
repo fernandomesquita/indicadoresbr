@@ -1,0 +1,246 @@
+{
+  "id": "argentina-pobreza",
+  "categoria": "argentina",
+  "ordem": 8,
+  "visivel": true,
+  "titulo": "Pobreza na Argentina",
+  "subtitulo": "Pessoas abaixo das linhas de pobreza e de indigência, em % da população de 31 aglomerados urbanos, por semestre, do 2º semestre de 2016 ao 1º semestre de 2026",
+  "tipo": "linha",
+  "x": "Semestre",
+  "series": [
+    "Pobreza",
+    "Indigência"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": false,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "ymin": 0,
+  "escolha": true,
+  "ultimo": "1º semestre de 2026",
+  "fonte": {
+    "nome": "INDEC, Incidência da pobreza e da indigência em 31 aglomerados urbanos (EPH)",
+    "url": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-46-152"
+  },
+  "fontes": [
+    {
+      "nome": "INDEC, quadros do informe de pobreza (cuadros_informe_pobreza_09_26.xls), quadro 1",
+      "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/cuadros_informe_pobreza_09_26.xls",
+      "o_que_sustenta": "Pessoas e domicílios abaixo das linhas de pobreza e de indigência, do 2º semestre de 2016 ao 1º semestre de 2026."
+    },
+    {
+      "nome": "INDEC, Incidência da pobreza e da indigência, 1º semestre de 2026 (informe técnico de 24/09/2026)",
+      "url": "https://www.indec.gob.ar/uploads/informesdeprensa/eph_pobreza_09_2670733F4C4D.pdf",
+      "o_que_sustenta": "Resultado do 1º semestre de 2026 (32,3% das pessoas, 9,7 milhões), cestas básicas e método."
+    },
+    {
+      "nome": "INDEC, metodologia de cálculo das linhas de pobreza e indigência (EPH, 2022)",
+      "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/EPH_metodologia_22_pobreza.pdf",
+      "o_que_sustenta": "Definição da cesta básica alimentar e da cesta básica total."
+    },
+    {
+      "nome": "INDEC, aviso sobre as séries de 2007 a 2015 (nota da série do coeficiente de Gini, EPH)",
+      "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/serie_coeficiente_gini.xlsx",
+      "o_que_sustenta": "O INDEC adverte que as séries publicadas de janeiro de 2007 a dezembro de 2015 devem ser consideradas com reservas, salvo as revisadas em 2016, e cita os decretos 181/15 e 55/16."
+    }
+  ],
+  "como_ler": "Cada ponto é a porcentagem de pessoas que vivem em domicílios com renda abaixo da linha de pobreza (linha de cima) ou de indigência (linha de baixo), por semestre, do 2º semestre de 2016 ao 1º semestre de 2026. A pesquisa cobre os 31 maiores aglomerados urbanos, onde vivem cerca de 30 milhões de pessoas; a zona rural e as cidades pequenas ficam fora. Use os botões para ver as taxas por domicílio. A série começa em 2016 porque o INDEC refez o método naquele ano; os números anteriores, calculados com outras cestas e, de 2007 a 2015, sob reservas do próprio INDEC, não são comparáveis. O resultado do 1º semestre de 2026 é provisório.",
+  "contexto": [
+    "A linha de indigência é o valor da cesta básica alimentar, o mínimo de comida para cobrir as necessidades de energia e proteína; a linha de pobreza é a cesta básica total, que soma roupas, transporte, saúde, educação e outros gastos. As cestas são ajustadas pelo tamanho e pela composição de cada família e atualizadas todo mês pela inflação.",
+    "A pobreza caiu de 30,3% no fim de 2016 para 25,7% no 2º semestre de 2017, subiu com a crise de 2018 e a pandemia até 42,0% no 2º semestre de 2020 e ficou entre 36% e 42% até 2023. No 1º semestre de 2024, depois da desvalorização de dezembro de 2023 e da inflação de 25,5% naquele mês, chegou a 52,9%, o maior nível da série, com 18,1% de indigentes. Com a queda da inflação, recuou para 38,1% no 2º semestre de 2024, 31,6% no 1º semestre de 2025 e 28,2% no 2º semestre de 2025. No 1º semestre de 2026, subiu para 32,3% (9,7 milhões de pessoas), com 7,5% de indigência.",
+    "Como as cestas acompanham a inflação mês a mês e a renda é captada em pesos correntes, a pobreza argentina reage depressa a saltos de preços: sobe quando a inflação corre à frente dos salários e cai quando a renda recupera. Comparações com o Brasil exigem cuidado, porque cada país usa a própria linha de pobreza."
+  ],
+  "glossario": [
+    {
+      "termo": "Cesta básica total (CBT)",
+      "definicao": "Valor mensal de alimentos e outros bens e serviços essenciais; define a linha de pobreza."
+    },
+    {
+      "termo": "Cesta básica alimentar (CBA)",
+      "definicao": "Valor mensal mínimo de alimentos; define a linha de indigência."
+    },
+    {
+      "termo": "EPH",
+      "definicao": "Encuesta Permanente de Hogares, a pesquisa domiciliar contínua do INDEC."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Semestral (INDEC): o 1º semestre sai em setembro, o 2º em março.",
+    "onde_buscar": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-46-152 (arquivo cuadros_informe_pobreza_MM_AA.xls)",
+    "proxima": "2º semestre de 2026, no fim de março de 2027 (estimativa).",
+    "ultima_conferencia": "2026-11-20"
+  },
+  "checagem": [
+    {
+      "valor_no_portal": "1º sem 2024: 52,9%",
+      "valor_na_fonte": "52,9",
+      "fonte": "INDEC, quadro 1",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2º sem 2025: 28,2%",
+      "valor_na_fonte": "28,2",
+      "fonte": "INDEC, quadro 1",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "1º sem 2026: 32,3% e 7,5%",
+      "valor_na_fonte": "32,3 e 7,5 (provisório)",
+      "fonte": "INDEC, informe técnico de 24/09/2026",
+      "ok": true
+    }
+  ],
+  "colunas": [
+    "Semestre",
+    "Pobreza",
+    "Indigência",
+    "Domicílios pobres",
+    "Domicílios indigentes"
+  ],
+  "linhas": [
+    [
+      "2º sem 2016",
+      30.3,
+      6.1,
+      21.5,
+      4.5
+    ],
+    [
+      "1º sem 2017",
+      28.6,
+      6.2,
+      20.4,
+      4.5
+    ],
+    [
+      "2º sem 2017",
+      25.7,
+      4.8,
+      17.9,
+      3.5
+    ],
+    [
+      "1º sem 2018",
+      27.3,
+      4.9,
+      19.6,
+      3.8
+    ],
+    [
+      "2º sem 2018",
+      32.0,
+      6.7,
+      23.4,
+      4.8
+    ],
+    [
+      "1º sem 2019",
+      35.4,
+      7.7,
+      25.4,
+      5.5
+    ],
+    [
+      "2º sem 2019",
+      35.5,
+      8.0,
+      25.9,
+      5.7
+    ],
+    [
+      "1º sem 2020",
+      40.9,
+      10.5,
+      30.4,
+      8.1
+    ],
+    [
+      "2º sem 2020",
+      42.0,
+      10.5,
+      31.6,
+      7.8
+    ],
+    [
+      "1º sem 2021",
+      40.6,
+      10.7,
+      31.2,
+      8.2
+    ],
+    [
+      "2º sem 2021",
+      37.3,
+      8.2,
+      27.9,
+      6.1
+    ],
+    [
+      "1º sem 2022",
+      36.5,
+      8.8,
+      27.7,
+      6.8
+    ],
+    [
+      "2º sem 2022",
+      39.2,
+      8.1,
+      29.6,
+      6.2
+    ],
+    [
+      "1º sem 2023",
+      40.1,
+      9.3,
+      29.6,
+      6.8
+    ],
+    [
+      "2º sem 2023",
+      41.7,
+      11.9,
+      31.8,
+      8.7
+    ],
+    [
+      "1º sem 2024",
+      52.9,
+      18.1,
+      42.5,
+      13.6
+    ],
+    [
+      "2º sem 2024",
+      38.1,
+      8.2,
+      28.6,
+      6.4
+    ],
+    [
+      "1º sem 2025",
+      31.6,
+      6.9,
+      24.1,
+      5.6
+    ],
+    [
+      "2º sem 2025",
+      28.2,
+      6.3,
+      21.0,
+      4.8
+    ],
+    [
+      "1º sem 2026",
+      32.3,
+      7.5,
+      24.4,
+      5.6
+    ]
+  ]
+}

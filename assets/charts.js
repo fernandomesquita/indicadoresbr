@@ -82,10 +82,17 @@ export const EXPORT_THEMES = {
 };
 
 /* ------------------------------------------------------------ faixas de governo */
-let GOVERNOS = [];
-export function setGovernos(g) { GOVERNOS = Array.isArray(g) ? g : []; }
-function govBands(x0, x1) {
-  const g = GOVERNOS, out = [];
+// GOVERNOS: faixas do Brasil (site.governos). GOVERNOS_PAIS: faixas de outros países (site.governosPais),
+// usadas quando o indicador traz "governos": "<chave>". Chave sem faixas cadastradas não desenha nada,
+// para nunca pôr governos brasileiros atrás de dados de outro país.
+let GOVERNOS = [], GOVERNOS_PAIS = {};
+export function setGovernos(g, porPais) {
+  GOVERNOS = Array.isArray(g) ? g : [];
+  GOVERNOS_PAIS = porPais && typeof porPais === "object" ? porPais : {};
+}
+const governosDe = ind => ind && ind.governos ? (Array.isArray(GOVERNOS_PAIS[ind.governos]) ? GOVERNOS_PAIS[ind.governos] : []) : GOVERNOS;
+function govBands(x0, x1, g = GOVERNOS) {
+  const out = [];
   g.forEach((r, i) => {
     let a = r.de - 0.5, b = r.ate + 0.5;
     if (g[i - 1] && g[i - 1].ate === r.de) a = r.de;
@@ -170,7 +177,7 @@ function drawCols(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
   if (numX) {
     const xs = rows.map(r => r[xi]), st = xStep(xs), x0 = xs[0];
     const px = v => plot.x + ((v - x0) / st + .5) * bw;
-    drawBands(ctx, govBands(xs[0], xs[xs.length - 1]), px, plot, th, s, b.y + 13 * s);
+    drawBands(ctx, govBands(xs[0], xs[xs.length - 1], governosDe(ind)), px, plot, th, s, b.y + 13 * s);
   }
   yAxis(ctx, ind, sc, plot, th, s, Y);
   const dest = (ind.destaque || []).map(String);
@@ -345,7 +352,7 @@ function drawLine(ctx, ind, b, th, s, t, hits, hover, xi, ys) {
       ctx.fillStyle = th.ink; ctx.fillText(fit(ctx, nome, max), lx + 20 * s, ly + 13 * s);
     }));
   }
-  if (bandsH) drawBands(ctx, govBands(xs[0], xs[n - 1]), px, plot, th, s, b.y + legH + 13 * s);
+  if (bandsH) drawBands(ctx, govBands(xs[0], xs[n - 1], governosDe(ind)), px, plot, th, s, b.y + legH + 13 * s);
   yAxis(ctx, ind, sc, plot, th, s, Y);
   const e = ease(t);
   ctx.save(); ctx.beginPath(); ctx.rect(plot.x - 6 * s, b.y, (plot.w + 12 * s) * e + 1, b.h); ctx.clip();

@@ -18,7 +18,7 @@ class H(http.server.SimpleHTTPRequestHandler):
 JS = """async ({ids}) => {
   const m = await import('/assets/charts.js');
   const d = await (await fetch('/data/indicadores.json')).json();
-  m.setGovernos(d.site.governos);
+  m.setGovernos(d.site.governos, d.site.governosPais);
   await document.fonts.ready;
   const out = {};
   for (const ind of d.indicadores) {

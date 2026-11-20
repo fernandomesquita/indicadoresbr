@@ -1,0 +1,248 @@
+{
+  "id": "argentina-reservas",
+  "categoria": "argentina",
+  "ordem": 7,
+  "visivel": true,
+  "titulo": "Reservas internacionais da Argentina",
+  "subtitulo": "Reservas brutas do Banco Central no último dia útil de cada ano, em US$ bilhões, de 1996 a 17/11/2026",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Reservas"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "US$ ",
+  "sufixo": " bi",
+  "casas": 1,
+  "governos": "argentina",
+  "ultimo": "17/11/2026",
+  "fonte": {
+    "nome": "BCRA, reservas internacionais",
+    "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/1"
+  },
+  "fontes": [
+    {
+      "nome": "BCRA, API de estatísticas monetárias, variável 1 (reservas internacionais, em milhões de US$), consulta de 20/11/2026",
+      "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/1?desde=1996-01-01&hasta=2026-12-31&limit=3000",
+      "o_que_sustenta": "Saldo diário desde 03/01/1996; o portal usa o último dia com dado em cada ano."
+    },
+    {
+      "nome": "BCRA, Início da fase 3 do programa econômico (11/04/2025)",
+      "url": "https://www.bcra.gob.ar/noticias/inicio-de-la-fase-3-del-programa-economico/",
+      "o_que_sustenta": "Novo acordo com o FMI e outros financiamentos anunciados para reforçar as reservas em 2025."
+    },
+    {
+      "nome": "BCRA, catálogo de variáveis da API de estatísticas monetárias",
+      "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias",
+      "o_que_sustenta": "Definição e unidade da série."
+    }
+  ],
+  "como_ler": "Cada coluna é o saldo das reservas internacionais brutas do Banco Central da República Argentina no último dia útil de cada ano, em bilhões de dólares, de 1996 a 2025, e a última é 17/11/2026. Reservas brutas incluem recursos que não são de livre uso, como depósitos em dólar dos bancos no Banco Central, a troca de moedas (swap) com a China e empréstimos recentes. Por isso o número líquido, que desconta esses itens, é bem menor e é o que o mercado acompanha; ele não tem série oficial única. As faixas mostram os presidentes e não atribuem causa.",
+  "contexto": [
+    "As reservas são o estoque de dólares, ouro e outros ativos externos do Banco Central. Servem para pagar importações e dívida em moeda estrangeira e para segurar o câmbio em momentos de pressão.",
+    "As reservas passaram de US$ 34,2 bilhões no fim de 2000 para US$ 10,5 bilhões em 2002, depois do fim da conversibilidade, e subiram até US$ 52,1 bilhões em 2010. Caíram até US$ 25,6 bilhões em 2015, chegaram ao recorde de US$ 65,8 bilhões em 2018, com o empréstimo do FMI, e desceram a US$ 23,1 bilhões no fim de 2023. Com compras do Banco Central e novo empréstimo do FMI em 2025, terminaram 2025 em US$ 41,1 bilhões e estavam em US$ 49,7 bilhões em 17/11/2026.",
+    "Reservas baixas deixam o país vulnerável a corridas contra o peso e a falta de dólares para importar. É por isso que o saldo das reservas pesa nas negociações com o FMI e no preço dos títulos argentinos."
+  ],
+  "glossario": [
+    {
+      "termo": "Reservas brutas",
+      "definicao": "Todo o estoque de ativos externos do Banco Central, sem descontar compromissos de curto prazo em moeda estrangeira."
+    },
+    {
+      "termo": "Swap",
+      "definicao": "Acordo de troca de moedas entre bancos centrais; o da China com a Argentina soma parte das reservas brutas."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária (BCRA).",
+    "onde_buscar": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/1",
+    "proxima": "Fechamento de 2026, no início de janeiro de 2027.",
+    "ultima_conferencia": "2026-11-20"
+  },
+  "checagem": [
+    {
+      "valor_no_portal": "2018: US$ 65,8 bi",
+      "valor_na_fonte": "65.786 (28/12/2018)",
+      "fonte": "BCRA, variável 1",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2023: US$ 23,1 bi",
+      "valor_na_fonte": "23.073 (29/12/2023)",
+      "fonte": "BCRA, variável 1",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "17/11/2026: US$ 49,7 bi",
+      "valor_na_fonte": "49.741",
+      "fonte": "BCRA, variável 1",
+      "ok": true
+    }
+  ],
+  "colunas": [
+    "Ano",
+    "Reservas",
+    "Data"
+  ],
+  "linhas": [
+    [
+      1996,
+      23.3,
+      "30/12/1996"
+    ],
+    [
+      1997,
+      29.8,
+      "31/12/1997"
+    ],
+    [
+      1998,
+      31.7,
+      "30/12/1998"
+    ],
+    [
+      1999,
+      33.1,
+      "31/12/1999"
+    ],
+    [
+      2000,
+      34.2,
+      "31/12/2000"
+    ],
+    [
+      2001,
+      15.2,
+      "31/12/2001"
+    ],
+    [
+      2002,
+      10.5,
+      "31/12/2002"
+    ],
+    [
+      2003,
+      14.1,
+      "31/12/2003"
+    ],
+    [
+      2004,
+      19.6,
+      "31/12/2004"
+    ],
+    [
+      2005,
+      28.1,
+      "31/12/2005"
+    ],
+    [
+      2006,
+      32.0,
+      "29/12/2006"
+    ],
+    [
+      2007,
+      46.2,
+      "28/12/2007"
+    ],
+    [
+      2008,
+      46.4,
+      "31/12/2008"
+    ],
+    [
+      2009,
+      48.0,
+      "31/12/2009"
+    ],
+    [
+      2010,
+      52.1,
+      "30/12/2010"
+    ],
+    [
+      2011,
+      46.4,
+      "30/12/2011"
+    ],
+    [
+      2012,
+      43.3,
+      "31/12/2012"
+    ],
+    [
+      2013,
+      30.6,
+      "30/12/2013"
+    ],
+    [
+      2014,
+      31.4,
+      "30/12/2014"
+    ],
+    [
+      2015,
+      25.6,
+      "31/12/2015"
+    ],
+    [
+      2016,
+      39.3,
+      "30/12/2016"
+    ],
+    [
+      2017,
+      55.1,
+      "29/12/2017"
+    ],
+    [
+      2018,
+      65.8,
+      "28/12/2018"
+    ],
+    [
+      2019,
+      44.8,
+      "30/12/2019"
+    ],
+    [
+      2020,
+      39.4,
+      "30/12/2020"
+    ],
+    [
+      2021,
+      39.7,
+      "30/12/2021"
+    ],
+    [
+      2022,
+      44.6,
+      "30/12/2022"
+    ],
+    [
+      2023,
+      23.1,
+      "29/12/2023"
+    ],
+    [
+      2024,
+      29.6,
+      "30/12/2024"
+    ],
+    [
+      2025,
+      41.1,
+      "30/12/2025"
+    ],
+    [
+      2026,
+      49.7,
+      "17/11/2026"
+    ]
+  ]
+}

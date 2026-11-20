@@ -8,13 +8,15 @@
     "nome": "Indicadores BR",
     "atualizado": "2026-10-12",
     "destaques": ["ipca-anual", "camara-2027", "mvi-anual"],
-    "governos": [{ "de": 1995, "ate": 2002, "rotulo": "FHC" }, "..."]
+    "governos": [{ "de": 1995, "ate": 2002, "rotulo": "FHC" }, "..."],
+    "governosPais": { "argentina": [{ "de": 1984, "ate": 1989, "rotulo": "Alfonsín" }, "..."] }
   },
   "categorias": [{ "id": "economia", "nome": "Economia", "descricao": "...", "ordem": 1 }]
 }
 ```
 
 - `destaques`: indicadores da seção "Para começar" da página inicial.
+- `governosPais`: faixas de governo de outros países, por chave (`argentina`). Um indicador usa essas faixas com `faixasGoverno: true` e `governos: "<chave>"`. Se a chave não existir aqui, o gráfico fica sem faixas (nunca cai nas faixas do Brasil).
 - `governos`: faixas desenhadas atrás das séries anuais quando o indicador tem `faixasGoverno: true`. Quando um governo termina no ano em que outro começa (2016), a divisa fica no meio daquele ano.
 - O `id` de uma categoria vira endereço (`/categoria/economia`). Não mude depois de publicado.
 
@@ -40,6 +42,8 @@ Um arquivo por indicador. O nome do arquivo é o `id`.
 | `barra` | texto | tabela | Coluna que ganha barra animada. |
 | `destaque` | lista | não | Rótulos pintados com a cor de destaque (colunas, barras, dispersão). |
 | `faixasGoverno` | sim/não | não | Faixas de governo atrás de séries anuais (linha e colunas). |
+| `governos` | texto | não | Chave de `site.governosPais` (ex.: `argentina`) para desenhar as faixas de governo de outro país. Sem o campo, valem as faixas do Brasil. |
+| `log` | sim/não | não | Só em `linha`: eixo vertical em escala logarítmica, para séries que crescem por múltiplos (ex.: câmbio da Argentina). Valores zero ou negativos não aparecem; diga isso no subtítulo e no `como_ler`. |
 | `prefixo`, `sufixo` | texto | não | Unidade nos valores (`"R$ "`, `"%"`, `" mi"`). |
 | `casas` | número | não | Casas decimais nos rótulos do gráfico. |
 | `sobrepor` | sim/não | não | Só em `colunas` com duas séries: a primeira (ex.: orçamento previsto) vira barra clara ao fundo e a segunda (ex.: executado) fica na frente, com legenda e o percentual executado no detalhe. |

@@ -1,0 +1,132 @@
+{
+  "id": "argentina-renda-media",
+  "categoria": "argentina",
+  "ordem": 9,
+  "visivel": true,
+  "titulo": "Renda média por pessoa na Argentina",
+  "subtitulo": "Renda familiar per capita média por mês, média dos quatro trimestres de cada ano, em milhares de pesos do 2º trimestre de 2026, de 2017 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Renda média"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "$ ",
+  "sufixo": " mil",
+  "casas": 0,
+  "governos": "argentina",
+  "fonte": {
+    "nome": "INDEC, Evolução da distribuição da renda (EPH), corrigida pelo IPC nacional (cálculo deste site)",
+    "url": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-60"
+  },
+  "fontes": [
+    {
+      "nome": "INDEC, População segundo a renda per capita familiar, por trimestre (pob_ingreso_pc_fliar_2t26.xls)",
+      "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/pob_ingreso_pc_fliar_2t26.xls",
+      "o_que_sustenta": "Renda per capita familiar média da população total, em pesos correntes, do 2º trimestre de 2016 ao 2º trimestre de 2026."
+    },
+    {
+      "nome": "INDEC, série do IPC nacional (serie_ipc_divisiones.csv)",
+      "url": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv",
+      "o_que_sustenta": "Índice usado para levar os valores a pesos do 2º trimestre de 2026."
+    },
+    {
+      "nome": "INDEC, Evolução da distribuição da renda, 2º trimestre de 2026 (informe técnico)",
+      "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ingresos2trim26B36ABAB2C6.pdf",
+      "o_que_sustenta": "Definições da renda per capita familiar e resultado do 2º trimestre de 2026."
+    },
+    {
+      "nome": "INDEC, recomendações de uso dos quadros de renda",
+      "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/recomendacion_cuadros_ingresos.pdf",
+      "o_que_sustenta": "Cuidados na comparação de rendas entre trimestres."
+    }
+  ],
+  "como_ler": "Cada coluna é a renda média mensal por pessoa em um ano, em milhares de pesos, de 2017 a 2025: a renda total de cada domicílio dividida pelo número de moradores, na média da população dos 31 aglomerados urbanos da pesquisa. O INDEC publica o valor de cada trimestre em pesos da época; o portal corrige cada trimestre pela média do IPC nacional no trimestre, leva tudo a pesos do 2º trimestre de 2026 e faz a média dos quatro trimestres do ano. A série começa em 2017 porque o IPC nacional, usado na correção, começa em dezembro de 2016. A renda declarada na pesquisa costuma ficar abaixo da real, sobretudo entre os mais ricos; o indicador serve melhor para comparar anos do que para medir o nível. As faixas mostram os presidentes e não atribuem causa.",
+  "contexto": [
+    "A renda per capita familiar soma salários, aposentadorias, programas sociais, aluguéis e outras entradas de todos os moradores do domicílio e divide pelo número de pessoas. É a mesma renda que o INDEC usa para medir pobreza e desigualdade.",
+    "Em pesos do 2º trimestre de 2026, a renda média por pessoa caiu de $838.299 por mês em 2017 para $664.600 em 2020, na sequência da crise de 2018 e da pandemia, ficou perto desse nível até 2023 e chegou ao menor valor da série em 2024 ($624.900), quando a inflação do começo do ano correu à frente dos salários. Em 2025, subiu para $759.681, 21,6% acima de 2024 e 9,4% abaixo de 2017 (cálculo deste site). No 1º semestre de 2026, a média dos dois trimestres ficou 1,0% abaixo da do 1º semestre de 2025.",
+    "Como os preços subiram mais de 100 vezes desde 2017, comparar rendas em pesos correntes não diz nada; só a correção pela inflação mostra se o poder de compra subiu ou caiu. Para comparar com o Brasil, seria preciso converter por paridade de poder de compra, e o portal não faz essa conversão."
+  ],
+  "glossario": [
+    {
+      "termo": "Renda per capita familiar",
+      "definicao": "Renda total do domicílio dividida pelo número de moradores."
+    },
+    {
+      "termo": "Pesos do 2º trimestre de 2026",
+      "definicao": "Valores corrigidos pela inflação para refletir o poder de compra do peso entre abril e junho de 2026."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Trimestral (INDEC), cerca de três meses depois do fim do trimestre.",
+    "onde_buscar": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-60 (arquivo pob_ingreso_pc_fliar_Nt AA.xls) e o IPC nacional",
+    "proxima": "3º trimestre de 2026, em dezembro de 2026; o ano de 2026 entra com o 4º trimestre, em março de 2027 (estimativa).",
+    "ultima_conferencia": "2026-11-20"
+  },
+  "checagem": [
+    {
+      "valor_no_portal": "2º tri 2026 nominal: $ 688.496",
+      "valor_na_fonte": "688.496 (população total)",
+      "fonte": "INDEC, pob_ingreso_pc_fliar_2t26.xls",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "1º tri 2017 nominal: $ 7.529",
+      "valor_na_fonte": "7.529",
+      "fonte": "INDEC, pob_ingreso_pc_fliar_2t26.xls",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2025 em pesos do 2º tri 2026: $ 759,7 mil",
+      "valor_na_fonte": "média de 775.924, 714.444, 799.851 e 748.503 (cálculo)",
+      "fonte": "INDEC e cálculo deste site",
+      "ok": true
+    }
+  ],
+  "colunas": [
+    "Ano",
+    "Renda média"
+  ],
+  "linhas": [
+    [
+      2017,
+      838.3
+    ],
+    [
+      2018,
+      815.8
+    ],
+    [
+      2019,
+      748.9
+    ],
+    [
+      2020,
+      664.6
+    ],
+    [
+      2021,
+      677.8
+    ],
+    [
+      2022,
+      664.5
+    ],
+    [
+      2023,
+      663.3
+    ],
+    [
+      2024,
+      624.9
+    ],
+    [
+      2025,
+      759.7
+    ]
+  ]
+}

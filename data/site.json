@@ -38,7 +38,56 @@
       "ipca-anual",
       "camara-2027",
       "mvi-anual"
-    ]
+    ],
+    "governosPais": {
+      "argentina": [
+        {
+          "de": 1984,
+          "ate": 1989,
+          "rotulo": "Alfonsín"
+        },
+        {
+          "de": 1989,
+          "ate": 1999,
+          "rotulo": "Menem"
+        },
+        {
+          "de": 2000,
+          "ate": 2001,
+          "rotulo": "De la Rúa"
+        },
+        {
+          "de": 2002,
+          "ate": 2003,
+          "rotulo": "Duhalde"
+        },
+        {
+          "de": 2003,
+          "ate": 2007,
+          "rotulo": "N. Kirchner"
+        },
+        {
+          "de": 2008,
+          "ate": 2015,
+          "rotulo": "C. Kirchner"
+        },
+        {
+          "de": 2016,
+          "ate": 2019,
+          "rotulo": "Macri"
+        },
+        {
+          "de": 2020,
+          "ate": 2023,
+          "rotulo": "A. Fernández"
+        },
+        {
+          "de": 2024,
+          "ate": 2027,
+          "rotulo": "Milei"
+        }
+      ]
+    }
   },
   "categorias": [
     {
@@ -106,6 +155,12 @@
       "nome": "Mundo",
       "descricao": "O Brasil comparado aos outros países: crescimento, renda, população, saúde, desigualdade, violência e contas públicas.",
       "ordem": 11
+    },
+    {
+      "id": "argentina",
+      "nome": "Argentina",
+      "descricao": "O vizinho em números oficiais: inflação, atividade, dívida, câmbio, pobreza, renda, emprego e segurança.",
+      "ordem": 12
     }
   ]
 }

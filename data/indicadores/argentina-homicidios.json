@@ -1,0 +1,200 @@
+{
+  "id": "argentina-homicidios",
+  "categoria": "argentina",
+  "ordem": 12,
+  "visivel": true,
+  "titulo": "Homicídios na Argentina",
+  "subtitulo": "Vítimas de homicídio doloso por 100 mil habitantes, de 2000 a 2025",
+  "tipo": "colunas",
+  "x": "Ano",
+  "series": [
+    "Homicídios"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "governos": "argentina",
+  "fonte": {
+    "nome": "Ministério da Segurança Nacional, Sistema Nacional de Informação Criminal (SNIC)",
+    "url": "https://www.argentina.gob.ar/seguridad/estadisticascriminales"
+  },
+  "fontes": [
+    {
+      "nome": "SNIC, taxa de vítimas de homicídios dolosos, total do país, via API Series de Tiempo (série t_snic_1_victimas_arg)",
+      "url": "https://apis.datos.gob.ar/series/api/series/?ids=t_snic_1_victimas_arg&format=csv",
+      "o_que_sustenta": "Taxa anual de vítimas por 100 mil habitantes, de 2000 a 2025."
+    },
+    {
+      "nome": "Ministério da Segurança Nacional, apresentação das Estatísticas Criminais 2025",
+      "url": "https://www.argentina.gob.ar/node/503473",
+      "o_que_sustenta": "Taxa de 4,4 em 2023 e 3,6 em 2025 e queda de 7,3% sobre 2024, segundo o ministério."
+    },
+    {
+      "nome": "Ministério da Segurança Nacional, Estatísticas criminais",
+      "url": "https://www.argentina.gob.ar/seguridad/estadisticascriminales",
+      "o_que_sustenta": "Página oficial do SNIC, com relatórios e bases por província."
+    },
+    {
+      "nome": "Banco Mundial, série VC.IHR.PSRC.P5 (homicídios intencionais por 100 mil habitantes), com dados do UNODC",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/VC.IHR.PSRC.P5?format=json&per_page=20000&date=2015:2025",
+      "o_que_sustenta": "Taxas de 2023 de Argentina, Bolívia, Brasil e Chile usadas na comparação."
+    }
+  ],
+  "como_ler": "Cada coluna é o número de vítimas de homicídio doloso (com intenção de matar) para cada 100 mil habitantes, de 2000 a 2025. Os dados vêm dos registros policiais e judiciais das províncias reunidos pelo Sistema Nacional de Informação Criminal (SNIC). A taxa não inclui mortes em confronto com a polícia nem homicídios culposos, como os de trânsito; por isso não é diretamente comparável às mortes violentas intencionais do Brasil, que somam outras categorias. As faixas mostram os presidentes e não atribuem causa.",
+  "contexto": [
+    "O SNIC é mantido pelo Ministério da Segurança Nacional desde o começo dos anos 2000 e conta vítimas de homicídio doloso registradas nas 24 jurisdições do país.",
+    "A taxa subiu de 7,6 em 2000 para 9,5 em 2002, no auge da crise econômica, caiu para perto de 5,5 de 2005 a 2007, voltou a 7,6 em 2014 e desceu desde então: 5,1 em 2019, 4,2 em 2022, 4,4 em 2023, 3,9 em 2024 e 3,6 em 2025, o menor valor da série, segundo o ministério. ",
+    "Nos dados de 2023 compilados pelo Escritório das Nações Unidas sobre Drogas e Crime (UNODC), a Argentina (4,5 por 100 mil) e a Bolívia (4,4) tiveram as menores taxas entre os países sul-americanos da comparação, contra 19,3 no Brasil e 6,3 no Chile."
+  ],
+  "glossario": [
+    {
+      "termo": "Homicídio doloso",
+      "definicao": "Morte causada com intenção de matar ou assumindo o risco de matar."
+    },
+    {
+      "termo": "SNIC",
+      "definicao": "Sistema Nacional de Informação Criminal, a estatística oficial de crimes da Argentina."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (SNIC), no primeiro semestre do ano seguinte.",
+    "onde_buscar": "https://www.argentina.gob.ar/seguridad/estadisticascriminales",
+    "proxima": "Estatísticas criminais 2026, por volta de junho de 2027 (estimativa).",
+    "ultima_conferencia": "2026-11-20"
+  },
+  "checagem": [
+    {
+      "valor_no_portal": "2023: 4,4",
+      "valor_na_fonte": "4,4 (ministério) e 4,43 (série)",
+      "fonte": "SNIC",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2024: 3,9",
+      "valor_na_fonte": "3,90 (série; o ministério divulgou 3,8 em 2025 e revisou)",
+      "fonte": "SNIC",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2025: 3,6",
+      "valor_na_fonte": "3,6 (ministério) e 3,61 (série)",
+      "fonte": "SNIC",
+      "ok": true
+    }
+  ],
+  "colunas": [
+    "Ano",
+    "Homicídios"
+  ],
+  "linhas": [
+    [
+      2000,
+      7.6
+    ],
+    [
+      2001,
+      8.5
+    ],
+    [
+      2002,
+      9.5
+    ],
+    [
+      2003,
+      7.8
+    ],
+    [
+      2004,
+      6.1
+    ],
+    [
+      2005,
+      5.7
+    ],
+    [
+      2006,
+      5.4
+    ],
+    [
+      2007,
+      5.4
+    ],
+    [
+      2008,
+      5.9
+    ],
+    [
+      2009,
+      6.6
+    ],
+    [
+      2010,
+      5.8
+    ],
+    [
+      2011,
+      6.1
+    ],
+    [
+      2012,
+      6.4
+    ],
+    [
+      2013,
+      7.5
+    ],
+    [
+      2014,
+      7.6
+    ],
+    [
+      2015,
+      6.6
+    ],
+    [
+      2016,
+      6.0
+    ],
+    [
+      2017,
+      5.3
+    ],
+    [
+      2018,
+      5.4
+    ],
+    [
+      2019,
+      5.1
+    ],
+    [
+      2020,
+      5.3
+    ],
+    [
+      2021,
+      4.6
+    ],
+    [
+      2022,
+      4.2
+    ],
+    [
+      2023,
+      4.4
+    ],
+    [
+      2024,
+      3.9
+    ],
+    [
+      2025,
+      3.6
+    ]
+  ]
+}

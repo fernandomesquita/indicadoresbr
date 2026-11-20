@@ -27,6 +27,15 @@ O que ficou aberto depois da conferência de 12/10/2026. As divergências numér
 | `processos-improbidade` | De 2023 em diante o CNJ só publica percentuais. Casos novos por assunto (DataJud) não coletados. Empresas punidas (CEIS e CNEP) ficaram fora: o cadastro é uma fotografia atual, sem as sanções vencidas, e não serve como série anual. | Série termina em 2022. |
 | `populacao-brasil` | Nota da tabela 1286 do Sidra (atrás de desafio do Cloudflare) para explicar por que ela difere da população residente de 1960 a 2000. O gráfico usa a residente. | Nenhum, só registro. |
 
+## Argentina (categoria criada em 20/11/2026)
+
+- **Fontes e acesso.** BCRA pela API `https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/<variável>` (28 inflação interanual, 5 dólar atacadista A 3500, 1 reservas); INDEC pelos arquivos de `https://www.indec.gob.ar/ftp/cuadros/...` (os endereços certos aparecem em `https://www.indec.gob.ar/Nivel4/Tema/<a>/<b>/<c>`, por exemplo `3/5/31` para o IPC); Secretaria de Finanças pela planilha trimestral da dívida (aba A.4.7); séries antigas do INDEC, do SNIC e da DEIS pela API `https://apis.datos.gob.ar/series/api/series/?ids=<id>&format=csv`. O site `economia.gob.ar` falha na verificação do certificado a partir do ambiente de coleta.
+- **`argentina-inflacao-anual`:** a série do BCRA repete os índices oficiais de 2007 a 2015 (sob reservas do INDEC) e preenche novembro de 2015 a abril de 2016 com índice que o BCRA não documenta na página da série. Confirmar com o BCRA qual índice foi usado nesses meses.
+- **`argentina-desemprego`:** 1982 a 2002 (EPH pontual) e 2003 a 2016 vêm da API Series de Tiempo (fonte INDEC). Os anos de 2017 a 2025 foram conferidos com o quadro 1.1 do INDEC; conferir 2003 a 2016 com os informes trimestrais originais.
+- **`argentina-renda-media`:** a renda per capita familiar média do INDEC foi corrigida pela média trimestral do IPC nacional (cálculo deste site). 2016 fica fora porque o IPC nacional começa em dezembro de 2016.
+- **`argentina-homicidios`:** a taxa de 2024 na série (3,90) difere da divulgada pelo ministério em 2025 (3,8); o relatório de 2026 usa 3,9. Conferir no relatório completo do SNIC 2025 quando estiver em PDF.
+- **Faltam:** resultado fiscal do Setor Público Nacional em % do PIB (só há planilhas mensais da Secretaria da Fazenda; montar a série anual), composição do Congresso por bloco (o site da Câmara argentina recusa conexão do ambiente de coleta) e eleições presidenciais desde 1983 (planilhas da Direção Nacional Eleitoral por ano; 2023 só em base por mesa de 1 GB, sem o segundo turno).
+
 ## Decisões de método já tomadas (12/10/2026)
 
 - **`partidos-servidor`:** 9 votações. O arcabouço fiscal de 2023 saiu (regra fiscal sem efeito direto sobre o servidor); o congelamento de 2020 entra uma vez (veto de agosto de 2020); a PEC 32 entra pela votação da comissão especial, declarada no texto. Siglas de fusão herdam o voto da antecessora com bancada; se as antecessoras votaram em lados diferentes, a votação sai da conta da sigla. A matriz partido x votação, com fonte por votação, está em `data/aux/partidos-servidor_matriz.json`.

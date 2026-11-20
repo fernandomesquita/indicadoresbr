@@ -1,0 +1,235 @@
+{
+  "id": "argentina-divida-publica",
+  "categoria": "argentina",
+  "ordem": 5,
+  "visivel": true,
+  "titulo": "Dívida pública da Argentina",
+  "subtitulo": "Dívida bruta da Administração Central, total e externa, em % do PIB, no fim de cada ano, de 2000 a junho de 2026",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Dívida bruta",
+    "Dívida externa"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "%",
+  "casas": 1,
+  "governos": "argentina",
+  "ymin": 0,
+  "ultimo": "junho de 2026",
+  "fonte": {
+    "nome": "Ministério da Economia da Argentina, Secretaria de Finanças, Dívida da Administração Central",
+    "url": "https://www.argentina.gob.ar/economia/finanzas/datos-trimestrales-de-la-deuda"
+  },
+  "fontes": [
+    {
+      "nome": "Secretaria de Finanças, Dívida pública em 30/06/2026 (deuda_publica_30-06-2026_0.xlsx), planilha A.4.7, indicadores de sustentabilidade",
+      "url": "https://www.argentina.gob.ar/sites/default/files/deuda_publica_30-06-2026_0.xlsx",
+      "o_que_sustenta": "Dívida bruta, dívida externa e participação da moeda estrangeira, em % do PIB e em % do total, de 2000 ao 2º trimestre de 2026."
+    },
+    {
+      "nome": "Secretaria de Finanças, Dados trimestrais da dívida",
+      "url": "https://www.argentina.gob.ar/economia/finanzas/datos-trimestrales-de-la-deuda",
+      "o_que_sustenta": "Página oficial com as planilhas trimestrais e a apresentação gráfica."
+    },
+    {
+      "nome": "Secretaria de Finanças, Apresentação gráfica da dívida, 2º trimestre de 2026",
+      "url": "https://www.argentina.gob.ar/sites/default/files/presentacion_grafica_2do_trim_26.pdf",
+      "o_que_sustenta": "Composição da dívida por moeda e por credor."
+    },
+    {
+      "nome": "Lei 25.561, de emergência pública e reforma do regime cambial (2002)",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/norma-71477",
+      "o_que_sustenta": "Fim da conversibilidade em 2002."
+    }
+  ],
+  "como_ler": "A linha de cima é a dívida bruta da Administração Central (o Tesouro nacional e órgãos do governo federal), em porcentagem do PIB, no fim de cada ano, de 2000 a 2025, e o último ponto é junho de 2026. A linha de baixo é a parte devida a credores de fora do país. A conta é do Ministério da Economia: a dívida em moeda estrangeira é convertida em pesos pela cotação do fim do período e dividida pelo PIB em pesos. Por isso, uma desvalorização forte faz a razão saltar mesmo sem nova dívida, como em 2002 e em 2023. O total inclui a dívida que ficou fora das renegociações de 2005 e 2010; sem ela, a razão de 2025 cai de 78,1% para 77,7%. Províncias e Banco Central ficam fora.",
+  "contexto": [
+    "A dívida bruta soma títulos, empréstimos de organismos como o Fundo Monetário Internacional (FMI) e adiantamentos do Banco Central ao Tesouro, sem descontar os ativos do governo. Em 2025, 57,8% dela estava em moeda estrangeira, contra 71,8% em 2023 (Secretaria de Finanças).",
+    "A razão saltou de 53,7% em 2001 para 166,7% em 2002, com o calote, a desvalorização e a recessão, e caiu com as renegociações de 2005 e 2010 e o crescimento, até 38,9% em 2011. Voltou a subir de 2018 em diante, com a crise cambial e o empréstimo do FMI, passou de 100% em 2020 e chegou a 154,5% em 2023, ano da desvalorização de dezembro. Recuou para 78,1% em 2025 e 71,4% em junho de 2026.",
+    "A dívida em moeda estrangeira é a parte sensível: o governo precisa de dólares de exportações ou de novos empréstimos para pagá-la, e cada desvalorização aumenta o peso dela medido em pesos. A queda da participação da moeda estrangeira, de 71,8% em 2023 para 52,3% em junho de 2026, reduz essa exposição."
+  ],
+  "glossario": [
+    {
+      "termo": "Administração Central",
+      "definicao": "Tesouro nacional e órgãos do governo federal argentino, sem províncias, municípios e Banco Central."
+    },
+    {
+      "termo": "Dívida externa",
+      "definicao": "Parte da dívida em mãos de credores que vivem ou têm sede fora do país, em qualquer moeda."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Trimestral (Secretaria de Finanças), cerca de três meses depois do fim do trimestre.",
+    "onde_buscar": "https://www.argentina.gob.ar/economia/finanzas/datos-trimestrales-de-la-deuda (planilha A.4.7)",
+    "proxima": "3º trimestre de 2026, por volta de dezembro de 2026 (estimativa).",
+    "ultima_conferencia": "2026-11-20"
+  },
+  "checagem": [
+    {
+      "valor_no_portal": "2002: 166,7%",
+      "valor_na_fonte": "1,6666",
+      "fonte": "Planilha A.4.7",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2023: 154,5%",
+      "valor_na_fonte": "1,5451",
+      "fonte": "Planilha A.4.7",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "jun/2026: 71,4%",
+      "valor_na_fonte": "0,7138",
+      "fonte": "Planilha A.4.7",
+      "ok": true
+    }
+  ],
+  "colunas": [
+    "Ano",
+    "Dívida bruta",
+    "Dívida externa"
+  ],
+  "linhas": [
+    [
+      2000,
+      45.7,
+      28.6
+    ],
+    [
+      2001,
+      53.7,
+      31.5
+    ],
+    [
+      2002,
+      166.7,
+      95.3
+    ],
+    [
+      2003,
+      139.2,
+      79.2
+    ],
+    [
+      2004,
+      118.1,
+      68.5
+    ],
+    [
+      2005,
+      80.5,
+      31.8
+    ],
+    [
+      2006,
+      70.6,
+      24.1
+    ],
+    [
+      2007,
+      62.1,
+      21.8
+    ],
+    [
+      2008,
+      53.8,
+      16.7
+    ],
+    [
+      2009,
+      55.4,
+      16.7
+    ],
+    [
+      2010,
+      43.5,
+      14.6
+    ],
+    [
+      2011,
+      38.9,
+      12.0
+    ],
+    [
+      2012,
+      40.4,
+      11.2
+    ],
+    [
+      2013,
+      43.5,
+      11.8
+    ],
+    [
+      2014,
+      44.7,
+      12.6
+    ],
+    [
+      2015,
+      52.6,
+      13.9
+    ],
+    [
+      2016,
+      53.1,
+      17.7
+    ],
+    [
+      2017,
+      56.5,
+      22.8
+    ],
+    [
+      2018,
+      85.2,
+      41.3
+    ],
+    [
+      2019,
+      89.8,
+      43.3
+    ],
+    [
+      2020,
+      103.8,
+      47.0
+    ],
+    [
+      2021,
+      80.8,
+      32.1
+    ],
+    [
+      2022,
+      84.8,
+      30.9
+    ],
+    [
+      2023,
+      154.5,
+      57.9
+    ],
+    [
+      2024,
+      82.5,
+      23.5
+    ],
+    [
+      2025,
+      78.1,
+      26.7
+    ],
+    [
+      2026,
+      71.4,
+      24.0
+    ]
+  ]
+}

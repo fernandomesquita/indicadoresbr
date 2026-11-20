@@ -63,7 +63,7 @@ function loginView() {
 async function carregarDados() {
   A.data = await store.loadData({ admin: true });
   A.data.categorias.sort((a, b) => a.ordem - b.ordem);
-  setGovernos(A.data.site.governos);
+  setGovernos(A.data.site.governos, A.data.site.governosPais);
   try { A.novos = await store.contarNovos(); } catch (e) { A.novos = {}; }
 }
 
@@ -323,7 +323,7 @@ function config(body) {
     h("button", { class: "btn pri", type: "button", onclick: async () => {
       const novo = { ...s, nome: nome.value.trim() || "Indicadores BR", destaques: dest.value.split(",").map(x => x.trim()).filter(Boolean),
         governos: gov.value.split("\n").map(l => l.split(";")).filter(p => p.length >= 3 && isFinite(+p[0]) && isFinite(+p[1])).map(p => ({ de: +p[0], ate: +p[1], rotulo: p.slice(2).join(";").trim() })) };
-      try { await store.salvarSite(novo); D.site = novo; setGovernos(novo.governos); await reloadPublic(); msg("Configurações salvas."); } catch (e) { msg("Não foi possível salvar: " + e.message, true); }
+      try { await store.salvarSite(novo); D.site = novo; setGovernos(novo.governos, novo.governosPais); await reloadPublic(); msg("Configurações salvas."); } catch (e) { msg("Não foi possível salvar: " + e.message, true); }
     } }, "Salvar configurações")));
 }
 

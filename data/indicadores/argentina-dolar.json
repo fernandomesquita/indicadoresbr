@@ -1,0 +1,219 @@
+{
+  "id": "argentina-dolar",
+  "categoria": "argentina",
+  "ordem": 6,
+  "visivel": true,
+  "titulo": "O dólar oficial na Argentina",
+  "subtitulo": "Cotação de referência do dólar no atacado (Comunicação A 3500 do BCRA) no último dia útil de cada ano, em pesos, de 2002 a 19/11/2026. Escala logarítmica",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Dólar"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "$ ",
+  "sufixo": "",
+  "casas": 2,
+  "governos": "argentina",
+  "log": true,
+  "ultimo": "19/11/2026",
+  "fonte": {
+    "nome": "BCRA, tipo de câmbio atacadista de referência (Comunicação A 3500)",
+    "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/5"
+  },
+  "fontes": [
+    {
+      "nome": "BCRA, API de estatísticas monetárias, variável 5 (tipo de câmbio atacadista de referência), consulta de 20/11/2026",
+      "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/5?desde=2002-01-01&hasta=2026-12-31&limit=3000",
+      "o_que_sustenta": "Cotação diária desde 04/03/2002; o portal usa o último dia com dado em cada ano."
+    },
+    {
+      "nome": "Lei 25.561, de emergência pública e reforma do regime cambial (2002)",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/norma-71477",
+      "o_que_sustenta": "Fim da paridade de 1 peso por 1 dólar."
+    },
+    {
+      "nome": "BCRA, Início da fase 3 do programa econômico (11/04/2025)",
+      "url": "https://www.bcra.gob.ar/noticias/inicio-de-la-fase-3-del-programa-economico/",
+      "o_que_sustenta": "Flutuação entre bandas de 1.000 a 1.400 pesos e fim da maior parte das restrições cambiais."
+    }
+  ],
+  "como_ler": "Cada ponto é quantos pesos valia um dólar no mercado oficial no último dia útil do ano, de 2002 a 2025, e o último ponto é 19/11/2026. A escala é logarítmica: cada faixa do eixo vale 10 vezes a anterior, e a mesma inclinação significa a mesma alta em porcentagem. Na escala comum, os anos até 2017 ficariam colados no zero. A cotação é a de referência do Banco Central para o atacado; de 2011 a 2015 e de 2019 a abril de 2025 houve restrições à compra de dólares, e circulou uma cotação paralela, mais alta, que não tem registro oficial e fica fora. As faixas mostram os presidentes e não atribuem causa.",
+  "contexto": [
+    "De 1991 a 2001, a lei da conversibilidade fixou 1 peso por 1 dólar. A Lei 25.561, de janeiro de 2002, acabou com a paridade, e o dólar terminou aquele ano a 3,36 pesos.",
+    "A cotação ficou entre 2,9 e 4,3 pesos até 2011, subiu mais rápido de 2012 em diante e saltou em dezembro de 2015 (13,01 no fim do ano), em 2018 (37,81) e em dezembro de 2023, quando passou de 366,50 em 12/12/2023 para 799,98 em 13/12/2023, dois dias depois da posse de Milei; o ano fechou a 808,48. Em 14/04/2025, o Banco Central passou a deixar o dólar flutuar entre bandas de 1.000 a 1.400 pesos, corrigidas todo mês, e acabou com a maior parte das restrições à compra por pessoas físicas. O dólar fechou 2025 a 1.459,42 e valia 1.562,99 em 19/11/2026.",
+    "O dólar é a referência de preço de imóveis, carros e boa parte das economias das famílias argentinas. Cada desvalorização encarece importados e combustíveis e costuma se espalhar pela inflação nos meses seguintes."
+  ],
+  "glossario": [
+    {
+      "termo": "Comunicação A 3500",
+      "definicao": "Norma do Banco Central argentino que define a cotação de referência do dólar no mercado atacadista."
+    },
+    {
+      "termo": "Escala logarítmica",
+      "definicao": "Eixo em que cada marca vale 10 vezes a anterior; serve para comparar altas em porcentagem."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Diária (BCRA).",
+    "onde_buscar": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/5",
+    "proxima": "Fechamento de 2026, no início de janeiro de 2027.",
+    "ultima_conferencia": "2026-11-20"
+  },
+  "checagem": [
+    {
+      "valor_no_portal": "2002: 3,36",
+      "valor_na_fonte": "3,363 (31/12/2002)",
+      "fonte": "BCRA, variável 5",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2023: 808,48",
+      "valor_na_fonte": "808,4833 (29/12/2023)",
+      "fonte": "BCRA, variável 5",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "19/11/2026: 1.562,99",
+      "valor_na_fonte": "1.562,9893",
+      "fonte": "BCRA, variável 5",
+      "ok": true
+    }
+  ],
+  "colunas": [
+    "Ano",
+    "Dólar",
+    "Data da cotação"
+  ],
+  "linhas": [
+    [
+      2002,
+      3.36,
+      "31/12/2002"
+    ],
+    [
+      2003,
+      2.93,
+      "31/12/2003"
+    ],
+    [
+      2004,
+      2.97,
+      "31/12/2004"
+    ],
+    [
+      2005,
+      3.03,
+      "31/12/2005"
+    ],
+    [
+      2006,
+      3.07,
+      "29/12/2006"
+    ],
+    [
+      2007,
+      3.15,
+      "28/12/2007"
+    ],
+    [
+      2008,
+      3.45,
+      "31/12/2008"
+    ],
+    [
+      2009,
+      3.8,
+      "31/12/2009"
+    ],
+    [
+      2010,
+      3.98,
+      "30/12/2010"
+    ],
+    [
+      2011,
+      4.3,
+      "30/12/2011"
+    ],
+    [
+      2012,
+      4.92,
+      "31/12/2012"
+    ],
+    [
+      2013,
+      6.52,
+      "30/12/2013"
+    ],
+    [
+      2014,
+      8.55,
+      "30/12/2014"
+    ],
+    [
+      2015,
+      13.01,
+      "31/12/2015"
+    ],
+    [
+      2016,
+      15.85,
+      "30/12/2016"
+    ],
+    [
+      2017,
+      18.77,
+      "29/12/2017"
+    ],
+    [
+      2018,
+      37.81,
+      "28/12/2018"
+    ],
+    [
+      2019,
+      59.9,
+      "30/12/2019"
+    ],
+    [
+      2020,
+      84.14,
+      "30/12/2020"
+    ],
+    [
+      2021,
+      102.75,
+      "30/12/2021"
+    ],
+    [
+      2022,
+      177.13,
+      "30/12/2022"
+    ],
+    [
+      2023,
+      808.48,
+      "29/12/2023"
+    ],
+    [
+      2024,
+      1032.5,
+      "30/12/2024"
+    ],
+    [
+      2025,
+      1459.42,
+      "30/12/2025"
+    ],
+    [
+      2026,
+      1562.99,
+      "19/11/2026"
+    ]
+  ]
+}

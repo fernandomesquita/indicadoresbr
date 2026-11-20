@@ -1,0 +1,228 @@
+{
+  "id": "argentina-mortalidade-infantil",
+  "categoria": "argentina",
+  "ordem": 13,
+  "visivel": true,
+  "titulo": "Mortalidade infantil na Argentina",
+  "subtitulo": "Mortes de crianças antes de completar 1 ano por mil nascidos vivos, de 1990 a 2024",
+  "tipo": "linha",
+  "x": "Ano",
+  "series": [
+    "Mortalidade infantil"
+  ],
+  "rotulo": "",
+  "tendencia": false,
+  "barra": "",
+  "destaque": [],
+  "faixasGoverno": true,
+  "prefixo": "",
+  "sufixo": "",
+  "casas": 1,
+  "governos": "argentina",
+  "ymin": 0,
+  "fonte": {
+    "nome": "Ministério da Saúde da Argentina, Direção de Estatísticas e Informação em Saúde (DEIS)",
+    "url": "https://www.argentina.gob.ar/salud/deis"
+  },
+  "fontes": [
+    {
+      "nome": "DEIS, taxa de mortalidade infantil da Argentina, via API Series de Tiempo (série tmi_arg)",
+      "url": "https://apis.datos.gob.ar/series/api/series/?ids=tmi_arg&format=csv",
+      "o_que_sustenta": "Taxa anual de 1990 a 2024."
+    },
+    {
+      "nome": "DEIS, base de dados aberta da mortalidade infantil (1990 em diante)",
+      "url": "http://datos.salud.gob.ar/dataset/2eff770c-1c2b-4a22-9281-c3b5e9412086/resource/c1253897-d507-41f7-a3e1-6ed756e7243b/download/tasa-mortalidad-infantil-deis-1990-2023.csv",
+      "o_que_sustenta": "Taxas nacionais e por província publicadas pela DEIS."
+    },
+    {
+      "nome": "Ministério da Saúde, Direção de Estatísticas e Informação em Saúde",
+      "url": "https://www.argentina.gob.ar/salud/deis",
+      "o_que_sustenta": "Página oficial das estatísticas vitais."
+    }
+  ],
+  "como_ler": "A linha mostra quantas crianças morreram antes de completar 1 ano para cada mil nascidas vivas, de 1990 a 2024, segundo as estatísticas vitais do Ministério da Saúde. O número de cada ano usa os óbitos e os nascimentos registrados naquele ano. As faixas mostram os presidentes e não atribuem causa.",
+  "contexto": [
+    "A mortalidade infantil é um dos indicadores mais usados para medir condições de vida, porque depende de pré-natal, parto, vacinação, saneamento e nutrição.",
+    "A taxa caiu de 25,6 em 1990 para 16,6 em 2000 e 11,9 em 2010, com uma interrupção em 2002, ano da crise, e chegou a 8,0 em 2021. Desde então oscila: 8,4 em 2022, 8,0 em 2023 e 8,5 em 2024.",
+    "Quanto menor o número de nascimentos, mais a taxa se move com pequenas variações no número de óbitos. Diferenças de alguns décimos entre anos próximos devem ser lidas com cuidado."
+  ],
+  "glossario": [
+    {
+      "termo": "Nascido vivo",
+      "definicao": "Criança que, ao nascer, apresenta qualquer sinal de vida, independentemente da duração da gestação."
+    }
+  ],
+  "atualizacao": {
+    "periodicidade": "Anual (DEIS), cerca de um ano e meio depois do fim do ano.",
+    "onde_buscar": "https://www.argentina.gob.ar/salud/deis",
+    "proxima": "Ano de 2025, em 2027 (estimativa).",
+    "ultima_conferencia": "2026-11-20"
+  },
+  "checagem": [
+    {
+      "valor_no_portal": "1990: 25,6",
+      "valor_na_fonte": "25,6",
+      "fonte": "DEIS, série tmi_arg",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2023: 8,0",
+      "valor_na_fonte": "8,0",
+      "fonte": "DEIS, série tmi_arg",
+      "ok": true
+    },
+    {
+      "valor_no_portal": "2024: 8,5",
+      "valor_na_fonte": "8,5",
+      "fonte": "DEIS, série tmi_arg",
+      "ok": true
+    }
+  ],
+  "colunas": [
+    "Ano",
+    "Mortalidade infantil"
+  ],
+  "linhas": [
+    [
+      1990,
+      25.6
+    ],
+    [
+      1991,
+      24.7
+    ],
+    [
+      1992,
+      23.9
+    ],
+    [
+      1993,
+      22.9
+    ],
+    [
+      1994,
+      22.0
+    ],
+    [
+      1995,
+      22.2
+    ],
+    [
+      1996,
+      20.9
+    ],
+    [
+      1997,
+      18.8
+    ],
+    [
+      1998,
+      19.1
+    ],
+    [
+      1999,
+      17.6
+    ],
+    [
+      2000,
+      16.6
+    ],
+    [
+      2001,
+      16.3
+    ],
+    [
+      2002,
+      16.8
+    ],
+    [
+      2003,
+      16.5
+    ],
+    [
+      2004,
+      14.4
+    ],
+    [
+      2005,
+      13.3
+    ],
+    [
+      2006,
+      12.9
+    ],
+    [
+      2007,
+      13.3
+    ],
+    [
+      2008,
+      12.5
+    ],
+    [
+      2009,
+      12.1
+    ],
+    [
+      2010,
+      11.9
+    ],
+    [
+      2011,
+      11.7
+    ],
+    [
+      2012,
+      11.1
+    ],
+    [
+      2013,
+      10.8
+    ],
+    [
+      2014,
+      10.6
+    ],
+    [
+      2015,
+      9.7
+    ],
+    [
+      2016,
+      9.7
+    ],
+    [
+      2017,
+      9.3
+    ],
+    [
+      2018,
+      8.8
+    ],
+    [
+      2019,
+      9.2
+    ],
+    [
+      2020,
+      8.4
+    ],
+    [
+      2021,
+      8.0
+    ],
+    [
+      2022,
+      8.4
+    ],
+    [
+      2023,
+      8.0
+    ],
+    [
+      2024,
+      8.5
+    ]
+  ]
+}

@@ -580,7 +580,7 @@ async function render({ silencioso = false } = {}) {
   if (path === "/admin") {
     document.body.classList.add("is-admin");
     const { renderAdmin } = await import("./admin.js");
-    renderAdmin(app, DATA, { reload: async () => { DATA = prepara(await store.loadData({ banco: true })); setGovernos(DATA.site.governos); } });
+    renderAdmin(app, DATA, { reload: async () => { DATA = prepara(await store.loadData({ banco: true })); setGovernos(DATA.site.governos, DATA.site.governosPais); } });
     window.scrollTo(0, 0); return;
   }
   document.body.classList.remove("is-admin");
@@ -614,13 +614,13 @@ async function boot() {
   const conferencia = typeof store.revalidar === "function" ? store.revalidar() : Promise.resolve(null);
   try { DATA = prepara(await store.loadData()); }
   catch (e) { app.replaceChildren(h("section", { class: "wrap narrow textpage" }, h("h1", { text: "Não foi possível carregar os indicadores" }), h("p", { class: "lede", text: "Recarregue a página em instantes." }))); return; }
-  setGovernos(DATA.site.governos);
+  setGovernos(DATA.site.governos, DATA.site.governosPais);
   try { await document.fonts.ready; } catch (e) {}
   const yr = $("#ano"); if (yr) yr.textContent = new Date().getFullYear();
   montaBuscaTopo();
   render();
   // o banco é a referência: se houver edição mais nova que a cópia publicada, troca e redesenha
   const novo = await conferencia;
-  if (novo && (location.pathname.replace(/\/+$/, "") || "/") !== "/admin") { DATA = prepara(novo); setGovernos(DATA.site.governos); render({ silencioso: true }); }
+  if (novo && (location.pathname.replace(/\/+$/, "") || "/") !== "/admin") { DATA = prepara(novo); setGovernos(DATA.site.governos, DATA.site.governosPais); render({ silencioso: true }); }
 }
 boot();
